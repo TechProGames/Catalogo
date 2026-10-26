@@ -32,7 +32,7 @@
         },
         "marca": {
           "fonte": "",
-          "escala": 0.8,
+          "escala": 0.95,
           "cor": "",
           "negrito": true,
           "italico": true,
@@ -40,7 +40,7 @@
         },
         "slogan": {
           "fonte": "",
-          "escala": 1,
+          "escala": 1.2,
           "cor": "",
           "negrito": false,
           "italico": false,
@@ -48,7 +48,7 @@
         },
         "insta": {
           "fonte": "",
-          "escala": 1,
+          "escala": 1.85,
           "cor": "",
           "negrito": true,
           "italico": false,
@@ -131,7 +131,7 @@
         "pc": {
           "logo": {
             "modo": "livre",
-            "x": 100,
+            "x": 0,
             "y": 0,
             "w": 0,
             "al": "esquerda",
@@ -139,61 +139,61 @@
           },
           "marca": {
             "modo": "livre",
-            "x": 0,
-            "y": 52,
-            "w": 492,
+            "x": 48.3,
+            "y": 14,
+            "w": 544,
             "al": "esquerda",
-            "hc": 0
+            "hc": 68
           },
           "slogan": {
             "modo": "livre",
-            "x": 0,
-            "y": 122,
-            "w": 348,
+            "x": 39.3,
+            "y": 99,
+            "w": 418,
             "al": "esquerda",
-            "hc": 0
+            "hc": 61
           },
           "insta": {
             "modo": "livre",
-            "x": 0,
-            "y": 197,
-            "w": 163,
+            "x": 33.6,
+            "y": 185,
+            "w": 310,
             "al": "esquerda",
-            "hc": 0
+            "hc": 28
           }
         },
         "cel": {
           "logo": {
             "modo": "livre",
-            "x": 96.6,
-            "y": 93,
+            "x": 100,
+            "y": 106,
             "w": 0,
             "al": "esquerda",
             "h": 167
           },
           "marca": {
             "modo": "livre",
-            "x": 44.1,
+            "x": 100,
             "y": 37,
-            "w": 291,
+            "w": 328,
             "al": "esquerda",
-            "hc": 0
+            "hc": 63
           },
           "slogan": {
             "modo": "livre",
-            "x": 10.5,
+            "x": 12.7,
             "y": 121,
-            "w": 204,
+            "w": 228,
             "al": "esquerda",
             "hc": 0
           },
           "insta": {
             "modo": "livre",
-            "x": 7.5,
-            "y": 236,
-            "w": 163,
+            "x": 23.5,
+            "y": 267,
+            "w": 302,
             "al": "esquerda",
-            "hc": 0
+            "hc": 30
           }
         }
       }
