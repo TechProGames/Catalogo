@@ -105,7 +105,7 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
 .loja-grid.pc{grid-template-columns:minmax(0,1fr) minmax(400px,48%)}
 .logo-campo{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:8px}
 .logo-prev{width:220px;height:120px;border-radius:12px;border:1px dashed var(--line);background:repeating-conic-gradient(#121826 0 25%,#0d121d 0 50%) 0 0/16px 16px;display:grid;place-items:center;color:var(--mut);font-size:13px;overflow:hidden;padding:6px}
-.logo-prev img{max-width:100%;max-height:100%;object-fit:contain}
+.logo-prev img{max-width:100%;max-height:106px;width:auto;height:auto;object-fit:contain}
 .check{display:flex;gap:8px;align-items:center;margin-top:12px;cursor:pointer}
 .check input{width:18px;height:18px;accent-color:var(--azul);flex:none}
 .paletas{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
@@ -254,25 +254,37 @@ dialog form{padding:18px}
               <p class="dica">Enviada em alta resolução (até 1600 px).<br>PNG com fundo transparente fica melhor.</p>
             </div>
           </div>
-          <div class="campo"><label for="t-logo">Tamanho da logo no site <output id="o-logo"></output></label>
-            <input type="range" id="t-logo" min="60" max="300" step="10" data-tema="logoAltura"></div>
-          <div class="campo"><span class="rot">Posição da logo no</span>
+          <label class="check"><input type="checkbox" id="ocultar-nome"> Esconder o nome da loja no topo (quando a logo já tem o nome)</label>
+        </div>
+
+        <div class="bloco" id="bloco-pos">
+          <h2>Posições no topo</h2>
+          <p class="dica">Na pré-visualização, a logo e os textos do topo aparecem em <b>caixas tracejadas</b>: <b>arraste a caixa</b> para mover e puxe o <b>quadradinho do canto</b> para mudar o tamanho. Cada aparelho guarda as suas posições.</p>
+          <div class="campo"><span class="rot">Aparelho</span>
             <div class="seg-larga" id="logo-disp">
               <button type="button" data-disp="pc">🖥 Computador</button><button type="button" data-disp="cel">📱 Celular</button>
             </div>
-            <label class="check" id="cel-igual-box"><input type="checkbox" id="cel-igual"> No celular, usar a mesma posição do computador</label>
+            <label class="check" id="cel-igual-box"><input type="checkbox" id="cel-igual"> No celular, usar as mesmas posições do computador</label>
+          </div>
+          <div class="campo"><span class="rot">Item</span>
+            <div class="seg-larga" id="pos-el"></div>
           </div>
           <div class="campo"><span class="rot">Posição</span>
             <div class="seg-larga" id="logo-modo">
               <button type="button" data-modo="esquerda">Esquerda</button><button type="button" data-modo="centro">Centro</button><button type="button" data-modo="direita">Direita</button><button type="button" data-modo="livre">Livre ✥</button>
             </div>
-            <p class="dica">Para colocar em qualquer lugar: <b>arraste a logo na pré-visualização</b> (muda para Livre sozinho). A prévia mostra o mesmo aparelho escolhido acima, e a posição é salva para ele.</p>
           </div>
           <div class="dois" id="logo-livre">
             <div class="campo"><label for="t-lx">Horizontal <output id="o-lx"></output></label><input type="range" id="t-lx" min="0" max="100" step="0.5"></div>
             <div class="campo"><label for="t-ly">Distância do topo <output id="o-ly"></output></label><input type="range" id="t-ly" min="0" max="800" step="1"></div>
           </div>
-          <label class="check"><input type="checkbox" id="ocultar-nome"> Esconder o nome da loja no topo (quando a logo já tem o nome)</label>
+          <div class="campo"><label for="t-tam" id="rot-tam">Tamanho <output id="o-tam"></output></label><input type="range" id="t-tam" min="0" max="1100" step="1"></div>
+          <div class="campo" id="pos-al-campo"><span class="rot">Alinhar o texto dentro da caixa</span>
+            <div class="seg-larga" id="pos-al">
+              <button type="button" data-al="esquerda">Esquerda</button><button type="button" data-al="centro">Centro</button><button type="button" data-al="direita">Direita</button>
+            </div>
+          </div>
+          <div class="acoes"><button class="btn link" id="pos-reset">Voltar este item ao padrão</button></div>
         </div>
 
         <div class="bloco">
@@ -424,7 +436,7 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=5"></script>
+<script src="comum.js?v=6"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -638,12 +650,15 @@ window.addEventListener('message', e => {
   if (e.origin !== location.origin || !e.data) return;
   const m = e.data;
   if (m.tipo === 'catalogo-pronto') enviarPrevia();
-  if (m.tipo === 'logo-pos' && m.pos) {
-    const pos = normPos({...m.pos, modo: 'livre'});
-    if (m.disp === 'cel') dados.loja.tema.logoPosCel = pos; else dados.loja.tema.logoPos = pos;
+  if (m.tipo === 'pos-elemento' && m.pos && ELEM_TOPO.some(x => x.k === m.el)) {
+    const P = dados.loja.tema.posicoes, pos = normPos(m.pos, m.el, dados.loja.tema.logoAltura);
+    if (m.disp === 'cel') { if (!P.cel) P.cel = JSON.parse(JSON.stringify(P.pc)); P.cel[m.el] = pos; }
+    else P.pc[m.el] = pos;
+    posEl = m.el;
     if (m.disp && m.disp !== dispPrevia) definirDisp(m.disp); else renderLogoPos();
     marcarSujo();
   }
+  if (m.tipo === 'elemento-clicado' && ELEM_TOPO.some(x => x.k === m.el)) { posEl = m.el; renderLogoPos(); }
   if (m.tipo === 'texto-clicado' && TEXTOS.some(d => d.k === m.chave)) {
     txAlvo = m.chave; renderTexto();
     if (previaCheia()) {           // celular: mostra um atalho em vez de fechar a prévia
@@ -678,27 +693,41 @@ function renderLoja() {
   saidas(); renderLogoPos(); renderTexto();
 }
 
-// posição da logo
+// posições dos itens do topo (logo, nome, frase, Instagram), separadas por aparelho
+let posEl = 'logo';
 const editandoCel = () => dispPrevia === 'cel';
-function posEditada(criar) {           // posição do aparelho escolhido; no celular cria uma cópia própria se pedir
-  const t = dados.loja.tema;
-  if (!editandoCel()) return t.logoPos;
-  if (!t.logoPosCel && criar) t.logoPosCel = {...t.logoPos};
-  return t.logoPosCel || t.logoPos;
+$('pos-el').innerHTML = ELEM_TOPO.map(e => `<button type="button" data-el="${e.k}">${esc(e.nome)}</button>`).join('');
+function posEditada(criar) {           // posição do item no aparelho escolhido; no celular cria uma cópia própria se pedir
+  const P = dados.loja.tema.posicoes;
+  if (!editandoCel()) return P.pc[posEl];
+  if (!P.cel && criar) P.cel = JSON.parse(JSON.stringify(P.pc));
+  return (P.cel || P.pc)[posEl];
 }
 function renderLogoPos() {
-  const lp = posEditada(false);
+  const lp = posEditada(false), logo = posEl === 'logo';
   document.querySelectorAll('#logo-disp button').forEach(b => b.classList.toggle('on', b.dataset.disp === dispPrevia));
+  document.querySelectorAll('#pos-el button').forEach(b => b.classList.toggle('on', b.dataset.el === posEl));
   $('cel-igual-box').hidden = !editandoCel();
-  $('cel-igual').checked = !dados.loja.tema.logoPosCel;
+  $('cel-igual').checked = !dados.loja.tema.posicoes.cel;
   document.querySelectorAll('#logo-modo button').forEach(b => b.classList.toggle('on', b.dataset.modo === lp.modo));
   $('logo-livre').hidden = lp.modo !== 'livre';
   $('t-lx').value = lp.x; $('t-ly').value = lp.y;
   $('o-lx').textContent = Math.round(lp.x) + '%';
   $('o-ly').textContent = lp.y + ' px';
+  $('rot-tam').firstChild.textContent = logo ? 'Altura da logo ' : 'Largura da caixa ';
+  $('t-tam').min = logo ? 20 : 0; $('t-tam').max = logo ? 600 : 1100;
+  $('t-tam').value = logo ? lp.h : lp.w;
+  $('o-tam').textContent = logo ? lp.h + ' px' : (lp.w ? lp.w + ' px' : 'automática');
+  $('pos-al-campo').hidden = logo || lp.modo !== 'livre';
+  document.querySelectorAll('#pos-al button').forEach(b => b.classList.toggle('on', b.dataset.al === lp.al));
 }
+$('pos-el').addEventListener('click', e => { const b = e.target.closest('[data-el]'); if (b) { posEl = b.dataset.el; renderLogoPos(); } });
 $('logo-modo').addEventListener('click', e => {
   const b = e.target.closest('[data-modo]'); if (!b) return;
+  // para "Livre", a prévia calcula o lugar atual do item, para ele não pular
+  if (b.dataset.modo === 'livre' && posEditada(false).modo !== 'livre' && $('previa').contentWindow && $('previa').src) {
+    $('previa').contentWindow.postMessage({tipo: 'tornar-livre', el: posEl}, location.origin); return;
+  }
   posEditada(true).modo = b.dataset.modo; renderLogoPos(); marcarSujo();
 });
 ['t-lx', 't-ly'].forEach(id => $(id).addEventListener('input', () => {
@@ -706,9 +735,23 @@ $('logo-modo').addEventListener('click', e => {
   lp.modo = 'livre'; lp.x = Number($('t-lx').value); lp.y = Number($('t-ly').value);
   renderLogoPos(); marcarSujo();
 }));
-
+$('t-tam').addEventListener('input', () => {
+  const lp = posEditada(true), v = Number($('t-tam').value);
+  if (posEl === 'logo') lp.h = v; else lp.w = v;
+  renderLogoPos(); marcarSujo();
+});
+$('pos-al').addEventListener('click', e => {
+  const b = e.target.closest('[data-al]'); if (!b) return;
+  posEditada(true).al = b.dataset.al; renderLogoPos(); marcarSujo();
+});
+$('pos-reset').onclick = () => {
+  const P = dados.loja.tema.posicoes;
+  const novo = normPos(null, posEl, dados.loja.tema.logoAltura);
+  if (editandoCel()) { if (!P.cel) P.cel = JSON.parse(JSON.stringify(P.pc)); P.cel[posEl] = novo; } else P.pc[posEl] = novo;
+  renderLogoPos(); marcarSujo();
+};
 $('cel-igual').addEventListener('change', e => {
-  dados.loja.tema.logoPosCel = e.target.checked ? null : {...dados.loja.tema.logoPos};
+  dados.loja.tema.posicoes.cel = e.target.checked ? null : JSON.parse(JSON.stringify(dados.loja.tema.posicoes.pc));
   renderLogoPos(); marcarSujo();
 });
 
@@ -746,7 +789,6 @@ $('tx-reset').onclick = () => {
 };
 function saidas() {
   const t = dados.loja.tema;
-  $('o-logo').textContent = t.logoAltura + ' px';
   $('o-etit').textContent = Math.round(t.escTitulo * 100) + '%';
   $('o-etxt').textContent = Math.round(t.escTexto * 100) + '%';
 }
@@ -772,7 +814,7 @@ $('paletas').addEventListener('click', e => {
 });
 $('tema-padrao').onclick = () => {
   if (!confirm('Voltar fontes, tamanhos, cores e o estilo de todos os textos para o padrão?')) return;
-  dados.loja.tema = mesclarTema({logoAltura: dados.loja.tema.logoAltura, logoPos: dados.loja.tema.logoPos}); renderLoja(); marcarSujo();
+  dados.loja.tema = mesclarTema({logoAltura: dados.loja.tema.logoAltura, posicoes: dados.loja.tema.posicoes}); renderLoja(); marcarSujo();
 };
 $('logo-arq').addEventListener('change', async e => {
   const f = e.target.files[0]; e.target.value = ''; if (!f) return;

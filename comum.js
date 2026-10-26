@@ -58,11 +58,31 @@ const TEXTOS = [
   {k: 'rodape', nome: 'Rodapé', sel: '.rodape', base: 'txt', negrito: false, italico: false, maiusculas: false}
 ];
 
-function normPos(p) {
-  const lp = Object.assign({modo: 'esquerda', x: 50, y: 0}, p && typeof p === 'object' ? p : {});
-  if (!['esquerda', 'centro', 'direita', 'livre'].includes(lp.modo)) lp.modo = 'esquerda';
-  lp.x = Math.min(100, Math.max(0, +lp.x || 0)); lp.y = Math.max(0, Math.round(+lp.y || 0));
-  return {modo: lp.modo, x: lp.x, y: lp.y};
+// Itens do topo do site que podem ser posicionados livremente (cada aparelho tem as suas posições).
+const ELEM_TOPO = [
+  {k: 'logo', nome: 'Logo'},
+  {k: 'marca', nome: 'Nome da loja'},
+  {k: 'slogan', nome: 'Frase'},
+  {k: 'insta', nome: 'Instagram'}
+];
+// modo: esquerda | centro | direita (no fluxo normal) ou livre (x = % da largura do conteúdo, y = px do topo)
+// w = largura da caixa em px (0 = automática); al = alinhamento do texto na caixa; h = altura da logo
+function normPos(p, k = 'logo', hPadrao = 140) {
+  const o = Object.assign({modo: 'esquerda', x: 0, y: 0, w: 0, al: 'esquerda'}, p && typeof p === 'object' ? p : {});
+  const r = {
+    modo: ['esquerda', 'centro', 'direita', 'livre'].includes(o.modo) ? o.modo : 'esquerda',
+    x: Math.min(100, Math.max(0, +o.x || 0)),
+    y: Math.max(0, Math.round(+o.y || 0)),
+    w: Math.max(0, Math.round(+o.w || 0)),
+    al: ['esquerda', 'centro', 'direita'].includes(o.al) ? o.al : 'esquerda'
+  };
+  if (k === 'logo') r.h = Math.min(800, Math.max(20, Math.round(+o.h || hPadrao)));
+  return r;
+}
+function normPosicoes(ps, hPadrao) {
+  const r = {};
+  for (const e of ELEM_TOPO) r[e.k] = normPos(ps && ps[e.k], e.k, hPadrao);
+  return r;
 }
 const LARGURA_CELULAR = 699;   // até essa largura (px) o site usa o layout e a posição de logo do celular
 
@@ -89,10 +109,18 @@ function mesclarTema(t) {
   }
   r.textos = tx;
   delete r.italico; delete r.maiusculas;
-  // posição da logo: esquerda, centro, direita ou livre (x em % da largura, y em px do topo)
-  // logoPos = computador; logoPosCel = celular (null = igual ao computador)
-  r.logoPos = normPos(t.logoPos);
-  r.logoPosCel = t.logoPosCel ? normPos(t.logoPosCel) : null;
+  // posições do topo: pc = computador; cel = celular (null = igual ao computador)
+  const h = r.logoAltura, P = t.posicoes;
+  if (P && P.pc) {
+    const pc = normPosicoes(P.pc, h);
+    r.posicoes = {pc, cel: P.cel ? normPosicoes({...P.pc, ...P.cel}, h) : null};
+  } else {                                   // versões antigas: só a logo tinha posição
+    const pc = normPosicoes({logo: t.logoPos}, h);
+    let cel = null;
+    if (t.logoPosCel) { cel = JSON.parse(JSON.stringify(pc)); cel.logo = normPos(t.logoPosCel, 'logo', h); }
+    r.posicoes = {pc, cel};
+  }
+  delete r.logoPos; delete r.logoPosCel;
   return r;
 }
 
