@@ -8,7 +8,7 @@
     "logo": "imagens/logo-mvpt91fuc59c.png",
     "ocultarNome": false,
     "tema": {
-      "fonteTitulo": "Bebas Neue",
+      "fonteTitulo": "Press Start 2P",
       "fonteTexto": "Rajdhani",
       "escTitulo": 1,
       "escTexto": 1,
@@ -24,7 +24,7 @@
       "textos": {
         "marca2": {
           "fonte": "",
-          "escala": 1,
+          "escala": 0.95,
           "cor": "",
           "negrito": false,
           "italico": false,
@@ -32,7 +32,7 @@
         },
         "marca": {
           "fonte": "",
-          "escala": 1,
+          "escala": 0.8,
           "cor": "",
           "negrito": true,
           "italico": true,
@@ -79,7 +79,7 @@
           "maiusculas": true
         },
         "nome": {
-          "fonte": "",
+          "fonte": "Rajdhani",
           "escala": 1,
           "cor": "",
           "negrito": true,
@@ -103,7 +103,7 @@
           "maiusculas": false
         },
         "gb": {
-          "fonte": "",
+          "fonte": "Poppins",
           "escala": 1,
           "cor": "",
           "negrito": true,
@@ -111,7 +111,7 @@
           "maiusculas": false
         },
         "preco": {
-          "fonte": "",
+          "fonte": "Poppins",
           "escala": 1,
           "cor": "",
           "negrito": true,
@@ -129,7 +129,7 @@
       },
       "logoPos": {
         "modo": "livre",
-        "x": 100,
+        "x": 89.3,
         "y": 0
       },
       "logoPosCel": null
@@ -768,50 +768,6 @@
       "etiquetas": [
         "destaque"
       ]
-    },
-    {
-      "id": "desbloqueio",
-      "nome": "Desbloqueio",
-      "descricao": "Desbloqueio de video games atuais e retrô.",
-      "categoria": "mvpowg5l0tnt",
-      "unidade": "R$",
-      "valor": null,
-      "imagens": [],
-      "disponivel": true,
-      "etiquetas": []
-    },
-    {
-      "id": "manutencao",
-      "nome": "Manutenção preventiva",
-      "descricao": "Limpeza interna e troca de pasta térmica para consoles atuais e retrô.",
-      "categoria": "mvpowg5l0tnt",
-      "unidade": "R$",
-      "valor": null,
-      "imagens": [],
-      "disponivel": true,
-      "etiquetas": []
-    },
-    {
-      "id": "instalacao-jogos",
-      "nome": "Instalação de jogos",
-      "descricao": "Instalamos os jogos que você escolher.",
-      "categoria": "mvpowg5l0tnt",
-      "unidade": "R$",
-      "valor": null,
-      "imagens": [],
-      "disponivel": true,
-      "etiquetas": []
-    },
-    {
-      "id": "reparo",
-      "nome": "Reparo",
-      "descricao": "Diagnóstico e conserto do seu video game.",
-      "categoria": "mvpowg5l0tnt",
-      "unidade": "R$",
-      "valor": null,
-      "imagens": [],
-      "disponivel": true,
-      "etiquetas": []
     }
   ]
 }
