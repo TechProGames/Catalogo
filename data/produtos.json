@@ -1,18 +1,18 @@
 {
   "loja": {
     "nome": "Tech Pro",
-    "slogan": "Video games, acessórios e serviços. Escolha o que te interessa e envie pelo WhatsApp.",
+    "slogan": "Video Games, Celulares, Acessórios e Serviços. Escolha o que te interessa e envie pelo WhatsApp.",
     "whatsapp": "22997819949",
     "instagram": "tech_pro_rj",
     "rodape": "Pagamento: Pix, dinheiro ou cartão em até 12x.\nAceitamos video game inferior ou com defeito como parte do pagamento.",
     "logo": "imagens/logo-mvpoxjuqeap5.png",
     "ocultarNome": false,
     "tema": {
-      "fonteTitulo": "Barlow Condensed",
-      "fonteTexto": "Barlow",
+      "fonteTitulo": "Bebas Neue",
+      "fonteTexto": "Rajdhani",
       "escTitulo": 1,
       "escTexto": 1,
-      "logoAltura": 140,
+      "logoAltura": 300,
       "italico": true,
       "maiusculas": true,
       "cores": {
