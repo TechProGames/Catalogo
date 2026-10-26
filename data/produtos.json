@@ -953,10 +953,10 @@
     {
       "id": "ps4slim",
       "nome": "PS4 Slim desbloqueado",
-      "descricao": "Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
-      "categoria": "mvpp04ewy3z3",
+      "categoria": "mvppz6od3kqu",
       "unidade": "R$",
       "valor": 1700,
+      "descricao": "Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "imagens": [
         "imagens/ps4-slim-desbloqueado-mvpo2urn.jpg",
         "imagens/ps4-slim-desbloqueado-mvpp7i59av16.jpg",
@@ -966,7 +966,9 @@
       "etiquetas": [
         "destaque"
       ],
-      "extras": []
+      "extras": [
+        "mvpq1pc930fl"
+      ]
     }
   ]
 }
