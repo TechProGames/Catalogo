@@ -951,6 +951,20 @@
   ],
   "produtos": [
     {
+      "id": "mvpvevqzvat1",
+      "nome": "Fifa 27",
+      "categoria": "mvpuaq2oo9s9>mvpq1pc930fl>mvpq7dn0mmrl",
+      "unidade": "GB",
+      "valor": 80,
+      "descricao": "",
+      "imagens": [
+        "imagens/fifa-27-mvpvf2h5gakz.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": []
+    },
+    {
       "id": "ps4slim",
       "nome": "PS4 Slim desbloqueado",
       "categoria": "mvppz6od3kqu",
