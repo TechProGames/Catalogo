@@ -195,6 +195,11 @@
   },
   "categorias": [
     {
+      "id": "mvpuaq2oo9s9",
+      "nome": "Jogos",
+      "filhas": []
+    },
+    {
       "id": "mvpowg5lfyyx",
       "nome": "Consoles",
       "filhas": [
@@ -350,6 +355,21 @@
           ]
         }
       ]
+    },
+    {
+      "id": "mvpubccaipr5",
+      "nome": "Computadores",
+      "filhas": []
+    },
+    {
+      "id": "mvpuav81y2tz",
+      "nome": "Notebooks",
+      "filhas": []
+    },
+    {
+      "id": "mvpp34i3n8v6",
+      "nome": "Celulares",
+      "filhas": []
     },
     {
       "id": "mvpowg5l0tnt",
@@ -796,11 +816,6 @@
           "filhas": []
         }
       ]
-    },
-    {
-      "id": "mvpp34i3n8v6",
-      "nome": "Celulares",
-      "filhas": []
     }
   ],
   "etiquetas": [
