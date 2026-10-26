@@ -23,7 +23,6 @@ const FONTES = {
 const TEMA_PADRAO = {
   fonteTitulo: 'Barlow Condensed', fonteTexto: 'Barlow',
   escTitulo: 1, escTexto: 1, logoAltura: 140,
-  italico: true, maiusculas: true,
   cores: {fundo: '#07090f', cartao: '#101624', texto: '#eef2fa', textoSec: '#8592aa', principal: '#2b8cff', destaque: '#ff2d55'}
 };
 
@@ -41,6 +40,24 @@ const NOMES_CORES = {fundo: 'Fundo', cartao: 'Cartões', texto: 'Texto', textoSe
 const novoId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
 const norm = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
+// Textos do catálogo que podem ter fonte, tamanho, cor e estilo próprios.
+// A ordem importa: o mais específico vem antes (usado para saber em qual texto o usuário clicou na prévia).
+const TEXTOS = [
+  {k: 'marca2', nome: 'Nome da loja — última palavra', sel: '.marca span', base: 'tit', soCor: true},
+  {k: 'marca', nome: 'Nome da loja', sel: '.marca', base: 'tit', negrito: true, italico: true, maiusculas: true},
+  {k: 'slogan', nome: 'Frase de apresentação', sel: '.slogan', base: 'txt', negrito: false, italico: false, maiusculas: false},
+  {k: 'insta', nome: 'Instagram', sel: '.insta', base: 'txt', negrito: true, italico: false, maiusculas: false},
+  {k: 'categorias', nome: 'Botões de categoria', sel: '.chip', base: 'txt', negrito: true, italico: false, maiusculas: false},
+  {k: 'secao', nome: 'Títulos das categorias', sel: '.sec-tit', base: 'tit', negrito: true, italico: true, maiusculas: true},
+  {k: 'subsecao', nome: 'Subtítulos das subcategorias', sel: '.sub-tit', base: 'txt', negrito: true, italico: false, maiusculas: true},
+  {k: 'nome', nome: 'Nome do produto', sel: '.nome', base: 'tit', negrito: true, italico: false, maiusculas: false},
+  {k: 'desc', nome: 'Descrição do produto', sel: '.desc', base: 'txt', negrito: false, italico: false, maiusculas: false},
+  {k: 'opcoes', nome: 'Opções do produto (garantia, oferta…)', sel: '.opcoes li', base: 'txt', negrito: true, italico: false, maiusculas: false},
+  {k: 'gb', nome: 'Valor em GB', sel: '.preco.gb', base: 'tit', negrito: true, italico: false, maiusculas: false},
+  {k: 'preco', nome: 'Preço', sel: '.preco:not(.gb)', base: 'tit', negrito: true, italico: false, maiusculas: false},
+  {k: 'rodape', nome: 'Rodapé', sel: '.rodape', base: 'txt', negrito: false, italico: false, maiusculas: false}
+];
+
 function mesclarTema(t) {
   t = t && typeof t === 'object' ? t : {};
   const r = Object.assign({}, TEMA_PADRAO, t);
@@ -48,6 +65,27 @@ function mesclarTema(t) {
   if (!(r.fonteTitulo in FONTES)) r.fonteTitulo = TEMA_PADRAO.fonteTitulo;
   if (!(r.fonteTexto in FONTES)) r.fonteTexto = TEMA_PADRAO.fonteTexto;
   for (const k of ['escTitulo', 'escTexto', 'logoAltura']) if (!isFinite(+r[k])) r[k] = TEMA_PADRAO[k];
+  // estilo de cada texto (versões antigas tinham só "italico" e "maiusculas" gerais)
+  const antigos = t.textos || {}, tx = {};
+  for (const d of TEXTOS) {
+    const v = {fonte: '', escala: 1, cor: '', negrito: !!d.negrito, italico: !!d.italico, maiusculas: !!d.maiusculas};
+    if (!t.textos && (d.k === 'marca' || d.k === 'secao')) {
+      if (t.italico === false) v.italico = false;
+      if (t.maiusculas === false) v.maiusculas = false;
+    }
+    Object.assign(v, antigos[d.k] || {});
+    if (v.fonte && !(v.fonte in FONTES)) v.fonte = '';
+    v.escala = isFinite(+v.escala) && +v.escala > 0 ? +v.escala : 1;
+    if (v.cor && !/^#[0-9a-f]{6}$/i.test(v.cor)) v.cor = '';
+    tx[d.k] = v;
+  }
+  r.textos = tx;
+  delete r.italico; delete r.maiusculas;
+  // posição da logo: esquerda, centro, direita ou livre (x em % da largura, y em px do topo)
+  const lp = Object.assign({modo: 'esquerda', x: 50, y: 20}, t.logoPos || {});
+  if (!['esquerda', 'centro', 'direita', 'livre'].includes(lp.modo)) lp.modo = 'esquerda';
+  lp.x = Math.min(100, Math.max(0, +lp.x || 0)); lp.y = Math.max(0, +lp.y || 0);
+  r.logoPos = lp;
   return r;
 }
 
@@ -103,7 +141,8 @@ function normalizarCatalogo(d) {
 
 // ---------- tema ----------
 function urlFontes(t) {
-  const fams = [...new Set([t.fonteTitulo, t.fonteTexto])].filter(f => f in FONTES);
+  const usadas = [t.fonteTitulo, t.fonteTexto, ...Object.values(t.textos || {}).map(v => v.fonte)];
+  const fams = [...new Set(usadas)].filter(f => f && f in FONTES);
   return 'https://fonts.googleapis.com/css2?' +
     fams.map(f => 'family=' + f.replace(/ /g, '+') + (FONTES[f] ? ':' + FONTES[f] : '')).join('&') + '&display=swap';
 }
@@ -119,10 +158,23 @@ function aplicarTema(tema) {
     '--bg': c.fundo, '--card': c.cartao, '--txt': c.texto, '--mut': c.textoSec, '--azul': c.principal, '--verm': c.destaque,
     '--sobre-azul': corSobre(c.principal), '--sobre-verm': corSobre(c.destaque),
     '--f-tit': `"${t.fonteTitulo}","Arial Narrow",sans-serif`, '--f-txt': `"${t.fonteTexto}",system-ui,sans-serif`,
-    '--esc-tit': t.escTitulo, '--esc-txt': t.escTexto, '--logo-h': t.logoAltura + 'px',
-    '--tit-estilo': t.italico ? 'italic' : 'normal', '--tit-caixa': t.maiusculas ? 'uppercase' : 'none'
+    '--esc-tit': t.escTitulo, '--esc-txt': t.escTexto, '--logo-h': t.logoAltura + 'px'
   };
   for (const k in v) r.setProperty(k, String(v[k]));
+  // regras de cada texto
+  let css = '';
+  for (const d of TEXTOS) {
+    const x = t.textos[d.k];
+    r.setProperty('--e-' + d.k, String(x.escala));
+    let p = '';
+    if (x.fonte) p += `font-family:"${x.fonte}",${d.base === 'tit' ? '"Arial Narrow",' : ''}sans-serif;`;
+    if (!d.soCor) p += `font-weight:${x.negrito ? (d.base === 'tit' ? 800 : 700) : 400};font-style:${x.italico ? 'italic' : 'normal'};text-transform:${x.maiusculas ? 'uppercase' : 'none'};`;
+    if (x.cor) p += `color:${x.cor};`;
+    if (p) css += `${d.sel}{${p}}\n`;
+  }
+  let s = document.getElementById('estilo-textos');
+  if (!s) { s = document.createElement('style'); s.id = 'estilo-textos'; document.head.appendChild(s); }
+  s.textContent = css;
   let l = document.getElementById('fontes-tema');
   if (!l) { l = document.createElement('link'); l.rel = 'stylesheet'; l.id = 'fontes-tema'; document.head.appendChild(l); }
   const u = urlFontes(t); if (l.getAttribute('href') !== u) l.href = u;

@@ -91,6 +91,13 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
 .no-linha .inp:hover{border-color:var(--line)}
 .no-linha .inp:focus{background:var(--bg);border-color:var(--azul)}
 .no-linha small{color:var(--mut);white-space:nowrap;padding:0 4px;font-size:12px}
+.no-tog{width:26px;height:30px;border:0;background:none;color:var(--mut);cursor:pointer;font-size:15px;flex:none;transition:transform .15s}
+.no-tog:hover{color:var(--txt)}
+.no-tog.sem{visibility:hidden}
+.no.fechado>.no-linha .no-tog{transform:rotate(-90deg)}
+.no.fechado>.filhas{display:none}
+.qtd-sub{color:var(--azul2);font-size:12px;font-weight:700;white-space:nowrap;padding:0 4px}
+.no:not(.fechado)>.no-linha .qtd-sub{display:none}
 .filhas{margin-left:14px;padding-left:10px;border-left:2px solid var(--line)}
 @media(max-width:560px){.no-linha small{display:none}.no-linha .ib{width:30px;height:30px}.filhas{margin-left:8px;padding-left:6px}}
 /* loja / aparência */
@@ -122,8 +129,21 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
   .previa-box.tela{display:flex;flex-direction:column;position:fixed;inset:0;z-index:40;border-radius:0;top:0}
   .previa-box.tela iframe{flex:1;height:auto;min-height:0}
   #fechar-previa{display:grid}
+  .previa-box.tela .previa-edit:not([hidden]){display:flex;gap:10px;align-items:center;justify-content:space-between;padding:10px 4px 2px;font-size:14px}
   #ver-previa{display:inline-flex;position:fixed;right:16px;bottom:calc(86px + env(safe-area-inset-bottom));z-index:11;box-shadow:0 8px 24px rgba(0,0,0,.5)}
 }
+.seg-larga{display:flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg-larga button{flex:1;border:0;background:var(--bg);padding:9px 10px;font-weight:700;cursor:pointer;color:var(--mut);border-right:1px solid var(--line);white-space:nowrap}
+.seg-larga button:last-child{border-right:0}
+.seg-larga button.on{background:var(--azul);color:#fff}
+.tx-cor{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.tx-cor .cor.desl{opacity:.45}
+.estilos{display:flex;gap:6px;flex-wrap:wrap}
+.estilos button{border:1px solid var(--line);background:var(--bg);border-radius:9px;padding:8px 12px;cursor:pointer;color:var(--mut);font-weight:600}
+.estilos button.on{border-color:var(--azul);background:rgba(43,140,255,.15);color:var(--azul2)}
+.pisca{animation:pisca 1.2s}
+@keyframes pisca{0%,100%{box-shadow:0 0 0 0 transparent}40%{box-shadow:0 0 0 3px var(--azul)}}
+.previa-edit{display:none}
 .linkcat{display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:var(--bg);border:1px dashed var(--line);border-radius:10px;padding:10px 12px;margin-top:12px;font-size:14px}
 .linkcat code{color:var(--azul2);word-break:break-all;flex:1;min-width:180px}
 /* barra e avisos */
@@ -198,8 +218,9 @@ dialog form{padding:18px}
   <!-- CATEGORIAS -->
   <section class="painel estreito" id="aba-categorias" hidden>
     <div class="bloco">
-      <h2>Categorias</h2>
-      <p class="dica">Use <b>＋</b> para criar uma subcategoria dentro de qualquer categoria, quantos níveis quiser. A ordem aqui é a ordem do catálogo. Clique no nome para renomear.</p>
+      <div class="topo-lista"><h2>Categorias</h2>
+        <div><button class="btn link" id="cat-recolher">Recolher tudo</button><button class="btn link" id="cat-expandir">Expandir tudo</button></div></div>
+      <p class="dica">Clique na setinha <b>▾</b> para recolher uma categoria. Use <b>＋</b> para criar uma subcategoria dentro de qualquer categoria, quantos níveis quiser. A ordem aqui é a ordem do catálogo. Clique no nome para renomear.</p>
       <form class="add-linha" id="form-cat">
         <input class="inp" id="nova-cat" placeholder="Nova categoria principal (ex.: Jogos)">
         <button class="btn">Adicionar</button>
@@ -224,6 +245,16 @@ dialog form{padding:18px}
           </div>
           <div class="campo"><label for="t-logo">Tamanho da logo no site <output id="o-logo"></output></label>
             <input type="range" id="t-logo" min="60" max="300" step="10" data-tema="logoAltura"></div>
+          <div class="campo"><span class="rot">Posição da logo</span>
+            <div class="seg-larga" id="logo-modo">
+              <button type="button" data-modo="esquerda">Esquerda</button><button type="button" data-modo="centro">Centro</button><button type="button" data-modo="direita">Direita</button><button type="button" data-modo="livre">Livre ✥</button>
+            </div>
+            <p class="dica">Para colocar em qualquer lugar: <b>arraste a logo na pré-visualização</b> (muda para Livre sozinho), ou use os controles abaixo.</p>
+          </div>
+          <div class="dois" id="logo-livre">
+            <div class="campo"><label for="t-lx">Horizontal <output id="o-lx"></output></label><input type="range" id="t-lx" min="0" max="100" step="0.5"></div>
+            <div class="campo"><label for="t-ly">Distância do topo <output id="o-ly"></output></label><input type="range" id="t-ly" min="0" max="1500" step="1"></div>
+          </div>
           <label class="check"><input type="checkbox" id="ocultar-nome"> Esconder o nome da loja no topo (quando a logo já tem o nome)</label>
         </div>
 
@@ -232,16 +263,39 @@ dialog form{padding:18px}
           <div class="campo"><span class="rot">Paletas prontas</span><div class="paletas" id="paletas"></div></div>
           <div class="campo"><span class="rot">Cores</span><div class="cores" id="cores"></div></div>
           <div class="dois">
-            <div class="campo"><label for="t-ftit">Fonte dos títulos</label><select id="t-ftit" data-tema="fonteTitulo"></select></div>
-            <div class="campo"><label for="t-ftxt">Fonte dos textos</label><select id="t-ftxt" data-tema="fonteTexto"></select></div>
+            <div class="campo"><label for="t-ftit">Fonte base dos títulos</label><select id="t-ftit" data-tema="fonteTitulo"></select></div>
+            <div class="campo"><label for="t-ftxt">Fonte base dos textos</label><select id="t-ftxt" data-tema="fonteTexto"></select></div>
             <div class="campo"><label for="t-etit">Tamanho dos títulos <output id="o-etit"></output></label>
               <input type="range" id="t-etit" min="0.6" max="1.6" step="0.05" data-tema="escTitulo"></div>
             <div class="campo"><label for="t-etxt">Tamanho dos textos <output id="o-etxt"></output></label>
               <input type="range" id="t-etxt" min="0.85" max="1.3" step="0.05" data-tema="escTexto"></div>
           </div>
-          <label class="check"><input type="checkbox" data-tema="italico"> Títulos inclinados (itálico)</label>
-          <label class="check"><input type="checkbox" data-tema="maiusculas"> Títulos em MAIÚSCULAS</label>
-          <div class="acoes"><button class="btn link" id="tema-padrao">Restaurar aparência padrão</button></div>
+          <p class="dica">A fonte e o tamanho base valem para todos os textos. Para mudar um texto só, use o bloco <b>Textos</b> abaixo.</p>
+          <div class="acoes"><button class="btn link" id="tema-padrao">Restaurar toda a aparência ao padrão</button></div>
+        </div>
+
+        <div class="bloco" id="bloco-textos">
+          <h2>Textos</h2>
+          <p class="dica">Escolha o texto abaixo, ou <b>clique nele na pré-visualização</b>, e ajuste fonte, tamanho, cor e estilo só dele.</p>
+          <div class="campo"><label for="tx-alvo">Texto</label><select id="tx-alvo"></select></div>
+          <div class="dois">
+            <div class="campo"><label for="tx-fonte">Fonte</label><select id="tx-fonte"></select></div>
+            <div class="campo"><label for="tx-esc">Tamanho <output id="o-tx"></output></label><input type="range" id="tx-esc" min="0.5" max="2.5" step="0.05"></div>
+          </div>
+          <div class="campo"><span class="rot">Cor</span>
+            <div class="tx-cor">
+              <label class="cor" id="tx-cor-box"><input type="color" id="tx-cor">Cor própria</label>
+              <label class="check" style="margin:0"><input type="checkbox" id="tx-auto"> Automática (segue a paleta)</label>
+            </div>
+          </div>
+          <div class="campo" id="tx-estilos-campo"><span class="rot">Estilo</span>
+            <div class="estilos" id="tx-estilos">
+              <button type="button" data-est="negrito"><b>B</b> Negrito</button>
+              <button type="button" data-est="italico"><i>I</i> Itálico</button>
+              <button type="button" data-est="maiusculas">AA Maiúsculas</button>
+            </div>
+          </div>
+          <div class="acoes"><button class="btn link" id="tx-reset">Voltar este texto ao padrão</button></div>
         </div>
 
         <div class="bloco">
@@ -260,6 +314,7 @@ dialog form{padding:18px}
         <div class="previa-topo"><div><b>Pré-visualização</b><br><small>Como o cliente vai ver (ainda não publicado)</small></div>
           <button class="ib" id="fechar-previa" aria-label="Fechar prévia">✕</button></div>
         <iframe id="previa" title="Pré-visualização do catálogo"></iframe>
+        <div class="previa-edit" id="previa-edit" hidden><span>Editar: <b id="previa-edit-txt"></b></span><button class="btn" id="previa-edit-ir">Editar este texto</button></div>
       </aside>
     </div>
     <button class="btn" id="ver-previa">👁 Ver prévia</button>
@@ -347,7 +402,7 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=3"></script>
+<script src="comum.js?v=4"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -528,9 +583,32 @@ function enviarPrevia() {
   d.produtos.forEach(p => p.imagens = p.imagens.map(urlFoto));
   f.contentWindow.postMessage({tipo: 'catalogo-previa', dados: d}, location.origin);
 }
-window.addEventListener('message', e => { if (e.origin === location.origin && e.data && e.data.tipo === 'catalogo-pronto') enviarPrevia(); });
-$('ver-previa').onclick = () => { $('previa-box').classList.add('tela'); enviarPrevia(); };
+const previaCheia = () => $('previa-box').classList.contains('tela');
+window.addEventListener('message', e => {
+  if (e.origin !== location.origin || !e.data) return;
+  const m = e.data;
+  if (m.tipo === 'catalogo-pronto') enviarPrevia();
+  if (m.tipo === 'logo-pos' && m.pos) {
+    dados.loja.tema.logoPos = {modo: 'livre', x: +m.pos.x || 0, y: +m.pos.y || 0};
+    renderLogoPos(); marcarSujo();
+  }
+  if (m.tipo === 'texto-clicado' && TEXTOS.some(d => d.k === m.chave)) {
+    txAlvo = m.chave; renderTexto();
+    if (previaCheia()) {           // celular: mostra um atalho em vez de fechar a prévia
+      $('previa-edit-txt').textContent = TEXTOS.find(d => d.k === m.chave).nome;
+      $('previa-edit').hidden = false;
+    } else piscarTextos();
+  }
+});
+function piscarTextos() {
+  const b = $('bloco-textos');
+  b.classList.remove('pisca'); void b.offsetWidth; b.classList.add('pisca');
+  const r = b.getBoundingClientRect();
+  if (r.top < 60 || r.top > innerHeight - 120) b.scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+$('ver-previa').onclick = () => { $('previa-box').classList.add('tela'); $('previa-edit').hidden = true; enviarPrevia(); };
 $('fechar-previa').onclick = () => $('previa-box').classList.remove('tela');
+$('previa-edit-ir').onclick = () => { $('previa-box').classList.remove('tela'); setTimeout(piscarTextos, 50); };
 
 // ---------- aba Loja ----------
 function renderLoja() {
@@ -545,8 +623,60 @@ function renderLoja() {
   });
   $('cores').innerHTML = Object.keys(NOMES_CORES).map(k =>
     `<label class="cor"><input type="color" data-cor="${k}" value="${esc(t.cores[k])}">${NOMES_CORES[k]}</label>`).join('');
-  saidas();
+  saidas(); renderLogoPos(); renderTexto();
 }
+
+// posição da logo
+function renderLogoPos() {
+  const lp = dados.loja.tema.logoPos;
+  document.querySelectorAll('#logo-modo button').forEach(b => b.classList.toggle('on', b.dataset.modo === lp.modo));
+  $('logo-livre').hidden = lp.modo !== 'livre';
+  $('t-lx').value = lp.x; $('t-ly').value = lp.y;
+  $('o-lx').textContent = Math.round(lp.x) + '%';
+  $('o-ly').textContent = lp.y + ' px';
+}
+$('logo-modo').addEventListener('click', e => {
+  const b = e.target.closest('[data-modo]'); if (!b) return;
+  dados.loja.tema.logoPos.modo = b.dataset.modo; renderLogoPos(); marcarSujo();
+});
+['t-lx', 't-ly'].forEach(id => $(id).addEventListener('input', () => {
+  const lp = dados.loja.tema.logoPos;
+  lp.modo = 'livre'; lp.x = Number($('t-lx').value); lp.y = Number($('t-ly').value);
+  renderLogoPos(); marcarSujo();
+}));
+
+// estilo de cada texto
+let txAlvo = 'marca';
+const defTexto = k => TEXTOS.find(d => d.k === k);
+$('tx-alvo').innerHTML = TEXTOS.map(d => `<option value="${d.k}">${esc(d.nome)}</option>`).join('');
+function renderTexto() {
+  const d = defTexto(txAlvo), v = dados.loja.tema.textos[txAlvo], t = dados.loja.tema;
+  $('tx-alvo').value = txAlvo;
+  const base = d.base === 'tit' ? t.fonteTitulo : t.fonteTexto;
+  $('tx-fonte').innerHTML = `<option value="">Automática (${esc(base)})</option>` + Object.keys(FONTES).map(f => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
+  $('tx-fonte').value = v.fonte;
+  $('tx-esc').value = v.escala; $('o-tx').textContent = Math.round(v.escala * 100) + '%';
+  $('tx-auto').checked = !v.cor;
+  $('tx-cor').value = v.cor || t.cores[d.base === 'tit' && d.k !== 'marca2' ? 'texto' : d.k === 'marca2' ? 'destaque' : 'textoSec'];
+  $('tx-cor-box').classList.toggle('desl', !v.cor);
+  $('tx-estilos-campo').hidden = !!d.soCor;
+  document.querySelectorAll('#tx-estilos button').forEach(b => b.classList.toggle('on', !!v[b.dataset.est]));
+}
+const txAtual = () => dados.loja.tema.textos[txAlvo];
+$('tx-alvo').addEventListener('change', e => { txAlvo = e.target.value; renderTexto(); });
+$('tx-fonte').addEventListener('change', e => { txAtual().fonte = e.target.value; marcarSujo(); });
+$('tx-esc').addEventListener('input', e => { txAtual().escala = Number(e.target.value); $('o-tx').textContent = Math.round(e.target.value * 100) + '%'; marcarSujo(); });
+$('tx-cor').addEventListener('input', e => { txAtual().cor = e.target.value; $('tx-auto').checked = false; $('tx-cor-box').classList.remove('desl'); marcarSujo(); });
+$('tx-auto').addEventListener('change', e => { txAtual().cor = e.target.checked ? '' : $('tx-cor').value; renderTexto(); marcarSujo(); });
+$('tx-cor-box').addEventListener('click', () => { if ($('tx-auto').checked) { $('tx-auto').checked = false; txAtual().cor = $('tx-cor').value; renderTexto(); marcarSujo(); } });
+$('tx-estilos').addEventListener('click', e => {
+  const b = e.target.closest('[data-est]'); if (!b) return;
+  txAtual()[b.dataset.est] = !txAtual()[b.dataset.est]; renderTexto(); marcarSujo();
+});
+$('tx-reset').onclick = () => {
+  const novo = mesclarTema({}).textos[txAlvo];
+  dados.loja.tema.textos[txAlvo] = novo; renderTexto(); marcarSujo();
+};
 function saidas() {
   const t = dados.loja.tema;
   $('o-logo').textContent = t.logoAltura + ' px';
@@ -563,6 +693,7 @@ $('ocultar-nome').addEventListener('change', e => { dados.loja.ocultarNome = e.t
 document.querySelectorAll('[data-tema]').forEach(i => i.addEventListener('input', () => {
   dados.loja.tema[i.dataset.tema] = i.type === 'checkbox' ? i.checked : i.type === 'range' ? Number(i.value) : i.value;
   saidas(); marcarSujo();
+  if (i.tagName === 'SELECT') renderTexto();
 }));
 $('cores').addEventListener('input', e => {
   const k = e.target.dataset.cor; if (!k) return;
@@ -573,8 +704,8 @@ $('paletas').addEventListener('click', e => {
   dados.loja.tema.cores = {...PALETAS[+b.dataset.paleta].cores}; renderLoja(); marcarSujo();
 });
 $('tema-padrao').onclick = () => {
-  if (!confirm('Voltar fontes, tamanhos e cores para o padrão?')) return;
-  dados.loja.tema = mesclarTema({logoAltura: dados.loja.tema.logoAltura}); renderLoja(); marcarSujo();
+  if (!confirm('Voltar fontes, tamanhos, cores e o estilo de todos os textos para o padrão?')) return;
+  dados.loja.tema = mesclarTema({logoAltura: dados.loja.tema.logoAltura, logoPos: dados.loja.tema.logoPos}); renderLoja(); marcarSujo();
 };
 $('logo-arq').addEventListener('change', async e => {
   const f = e.target.files[0]; e.target.value = ''; if (!f) return;
@@ -591,10 +722,16 @@ $('logo-arq').addEventListener('change', async e => {
 $('logo-rem').onclick = () => { if (dados.loja.logo) remover.push(dados.loja.logo); dados.loja.logo = ''; marcarSujo(); renderLoja(); };
 
 // ---------- aba Categorias (árvore) ----------
+const fechadosCat = new Set(ler('catalogo-admin-cat-fechadas', []));
+const salvarFechados = () => gravar('catalogo-admin-cat-fechadas', [...fechadosCat]);
+function contarSubs(no) { return no.filhas.reduce((n, f) => n + 1 + contarSubs(f), 0); }
 function htmlNo(no) {
-  return `<div class="no" data-no="${esc(no.id)}">
+  const nSub = contarSubs(no);
+  return `<div class="no${no.filhas.length && fechadosCat.has(no.id) ? ' fechado' : ''}" data-no="${esc(no.id)}">
     <div class="no-linha">
+      <button class="no-tog${no.filhas.length ? '' : ' sem'}" data-c="tog" title="Recolher / expandir" aria-label="Recolher ou expandir">▾</button>
       <input class="inp" data-nome value="${esc(no.nome)}" aria-label="Nome da categoria" placeholder="Sem nome">
+      ${nSub ? `<span class="qtd-sub">+${nSub} sub</span>` : ''}
       <small>${contarArvore(no)} itens</small>
       <button class="ib" data-c="filha" title="Criar subcategoria dentro desta">＋</button>
       <button class="ib" data-c="sobe" title="Subir">↑</button>
@@ -617,6 +754,8 @@ function criarCategoria(nome, pai) {
   const c = {id: novoId(), nome, filhas: []};
   irmaos(pai).push(c); marcarSujo(); return c;
 }
+$('cat-recolher').onclick = () => { todosNos().forEach(x => { if (x.no.filhas.length) fechadosCat.add(x.no.id); }); salvarFechados(); renderCategorias(); };
+$('cat-expandir').onclick = () => { fechadosCat.clear(); salvarFechados(); renderCategorias(); };
 $('form-cat').addEventListener('submit', e => {
   e.preventDefault();
   if (criarCategoria($('nova-cat').value, null)) { $('nova-cat').value = ''; renderCategorias(); renderLista(); }
@@ -631,7 +770,14 @@ $('arvore').addEventListener('click', e => {
   const b = e.target.closest('[data-c]'); if (!b) return;
   const x = acharNo(b.closest('.no').dataset.no); if (!x) return;
   const lista = irmaos(x.pai), i = lista.indexOf(x.no), a = b.dataset.c;
+  if (a === 'tog') {
+    const el = b.closest('.no');
+    el.classList.toggle('fechado');
+    el.classList.contains('fechado') ? fechadosCat.add(x.no.id) : fechadosCat.delete(x.no.id);
+    salvarFechados(); return;
+  }
   if (a === 'filha') {
+    fechadosCat.delete(x.no.id); salvarFechados();
     let nome = 'Nova subcategoria', n = 2;
     while (x.no.filhas.some(f => f.nome === nome)) nome = 'Nova subcategoria ' + n++;
     const c = {id: novoId(), nome, filhas: []};
