@@ -24,8 +24,9 @@ Os produtos ficam em `data/produtos.json` e as fotos em `imagens/`, dentro do pr
 - O painel tem 4 abas: **Produtos** (lista agrupada e recolhida por categoria), **Categorias** (categorias dentro de categorias, sem limite de níveis), **Loja** (logo, cores, fontes, tamanhos e dados, com pré-visualização ao vivo) e **Conexão** (token e backup).
 - Clique na foto, no nome ou no ✎ de um produto para editar.
 - As **opções** no fim da edição (ex.: 90 dias de garantia, Em oferta, Último disponível) aparecem listadas embaixo do produto. Dá para renomear, apagar e criar novas.
-- Na aba **Loja**, arraste a logo na pré-visualização para colocá-la em qualquer lugar, e clique em qualquer texto da pré-visualização para mudar fonte, tamanho, cor e estilo só dele.
+- Na aba **Loja**, escolha 📱 Celular ou 🖥 Computador na pré-visualização (⛶ amplia) e arraste a logo para colocá-la em qualquer lugar — cada aparelho guarda a sua posição, e clique em qualquer texto da pré-visualização para mudar fonte, tamanho, cor e estilo só dele.
 - Na aba **Categorias**, a setinha ▾ recolhe uma categoria e suas subcategorias.
+- No catálogo, ao tocar numa categoria as subcategorias abrem numa lista vertical; o caminho escolhido aparece na linha com setas.
 - No catálogo, o cliente toca no produto para ver fotos grandes, descrição completa e opções.
 - Cada produto pode ter até 10 fotos (viram carrossel no catálogo) e valor em **R$** ou em **GB**.
 - Depois de mexer, clique em **Publicar no site**. O catálogo dos clientes atualiza em cerca de 1 minuto.

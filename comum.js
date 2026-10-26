@@ -47,7 +47,7 @@ const TEXTOS = [
   {k: 'marca', nome: 'Nome da loja', sel: '.marca', base: 'tit', negrito: true, italico: true, maiusculas: true},
   {k: 'slogan', nome: 'Frase de apresentação', sel: '.slogan', base: 'txt', negrito: false, italico: false, maiusculas: false},
   {k: 'insta', nome: 'Instagram', sel: '.insta', base: 'txt', negrito: true, italico: false, maiusculas: false},
-  {k: 'categorias', nome: 'Botões de categoria', sel: '.chip', base: 'txt', negrito: true, italico: false, maiusculas: false},
+  {k: 'categorias', nome: 'Botões de categoria', sel: '.chip, .sub-item b', base: 'txt', negrito: true, italico: false, maiusculas: false},
   {k: 'secao', nome: 'Títulos das categorias', sel: '.sec-tit', base: 'tit', negrito: true, italico: true, maiusculas: true},
   {k: 'subsecao', nome: 'Subtítulos das subcategorias', sel: '.sub-tit', base: 'txt', negrito: true, italico: false, maiusculas: true},
   {k: 'nome', nome: 'Nome do produto', sel: '.nome', base: 'tit', negrito: true, italico: false, maiusculas: false},
@@ -57,6 +57,14 @@ const TEXTOS = [
   {k: 'preco', nome: 'Preço', sel: '.preco:not(.gb)', base: 'tit', negrito: true, italico: false, maiusculas: false},
   {k: 'rodape', nome: 'Rodapé', sel: '.rodape', base: 'txt', negrito: false, italico: false, maiusculas: false}
 ];
+
+function normPos(p) {
+  const lp = Object.assign({modo: 'esquerda', x: 50, y: 0}, p && typeof p === 'object' ? p : {});
+  if (!['esquerda', 'centro', 'direita', 'livre'].includes(lp.modo)) lp.modo = 'esquerda';
+  lp.x = Math.min(100, Math.max(0, +lp.x || 0)); lp.y = Math.max(0, Math.round(+lp.y || 0));
+  return {modo: lp.modo, x: lp.x, y: lp.y};
+}
+const LARGURA_CELULAR = 699;   // até essa largura (px) o site usa o layout e a posição de logo do celular
 
 function mesclarTema(t) {
   t = t && typeof t === 'object' ? t : {};
@@ -82,10 +90,9 @@ function mesclarTema(t) {
   r.textos = tx;
   delete r.italico; delete r.maiusculas;
   // posição da logo: esquerda, centro, direita ou livre (x em % da largura, y em px do topo)
-  const lp = Object.assign({modo: 'esquerda', x: 50, y: 20}, t.logoPos || {});
-  if (!['esquerda', 'centro', 'direita', 'livre'].includes(lp.modo)) lp.modo = 'esquerda';
-  lp.x = Math.min(100, Math.max(0, +lp.x || 0)); lp.y = Math.max(0, +lp.y || 0);
-  r.logoPos = lp;
+  // logoPos = computador; logoPosCel = celular (null = igual ao computador)
+  r.logoPos = normPos(t.logoPos);
+  r.logoPosCel = t.logoPosCel ? normPos(t.logoPosCel) : null;
   return r;
 }
 
