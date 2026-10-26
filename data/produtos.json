@@ -12,11 +12,46 @@
     {
       "id": "mvpowg5lfyyx",
       "nome": "Consoles",
-      "subs": []
+      "subs": [
+        {
+          "id": "mvpp04ewy3z3",
+          "nome": "Playstation 4"
+        },
+        {
+          "id": "mvpp0jwykj1v",
+          "nome": "Playstation 3"
+        },
+        {
+          "id": "mvpp0oeupa6x",
+          "nome": "Playstation 2"
+        },
+        {
+          "id": "mvpp29dg2tnh",
+          "nome": "Xbox 360"
+        }
+      ]
     },
     {
       "id": "mvpowg5l0tnt",
       "nome": "Serviços",
+      "subs": [
+        {
+          "id": "mvpp1yjnjf3n",
+          "nome": "Controles"
+        },
+        {
+          "id": "mvpp2js2lsh3",
+          "nome": "Consoles"
+        },
+        {
+          "id": "mvpp2pf7i4fi",
+          "nome": "Celulares"
+        }
+      ]
+    },
+    {
+      "id": "mvpp34i3n8v6",
+      "nome": "Celulares",
       "subs": []
     }
   ],
