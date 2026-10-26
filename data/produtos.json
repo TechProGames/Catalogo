@@ -128,10 +128,11 @@
         }
       },
       "logoPos": {
-        "modo": "centro",
-        "x": 50,
-        "y": 20
-      }
+        "modo": "livre",
+        "x": 66.9,
+        "y": 8
+      },
+      "logoPosCel": null
     }
   },
   "categorias": [
