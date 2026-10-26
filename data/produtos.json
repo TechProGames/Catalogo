@@ -162,11 +162,11 @@
         "cel": {
           "logo": {
             "modo": "livre",
-            "x": 98.6,
-            "y": 103,
+            "x": 96.8,
+            "y": 99,
             "w": 0,
             "al": "esquerda",
-            "h": 127
+            "h": 147
           },
           "marca": {
             "modo": "livre",
