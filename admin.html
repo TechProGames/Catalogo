@@ -10,51 +10,63 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;1,800&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07090f;--bg2:#0c111b;--card:#101624;--line:#1e2840;--txt:#eef2fa;--mut:#8592aa;--azul:#2b8cff;--azul2:#7cc0ff;--verm:#ff2d55;--ok:#2ecc71;--alerta:#ffb020}
+:root{--bg:#07090f;--bg2:#0c111b;--card:#101624;--line:#1e2840;--txt:#eef2fa;--mut:#8592aa;--azul:#2b8cff;--azul2:#7cc0ff;--verm:#ff2d55;--ok:#2ecc71;--alerta:#ffb020;--cond:"Barlow Condensed","Arial Narrow",sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--txt);font:15px/1.45 Barlow,system-ui,sans-serif;min-height:100vh;padding-bottom:110px}
 button,input,textarea,select{font:inherit;color:inherit}
 a{color:var(--azul2)}
 .wrap{max-width:860px;margin:0 auto;padding:0 16px}
-header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 0 14px;flex-wrap:wrap}
-h1{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-style:italic;font-weight:800;font-size:34px;text-transform:uppercase;line-height:1}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0 12px;flex-wrap:wrap}
+h1{font-family:var(--cond);font-style:italic;font-weight:800;font-size:32px;text-transform:uppercase;line-height:1}
 h1 span{color:var(--verm)}
-h2{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;font-size:21px;letter-spacing:.3px}
+h2{font-family:var(--cond);font-weight:700;font-size:21px;letter-spacing:.3px}
+/* abas */
+.abas{position:sticky;top:0;z-index:6;display:flex;gap:4px;background:rgba(7,9,15,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:8px 0 10px;margin-bottom:6px;overflow-x:auto;scrollbar-width:none}
+.abas::-webkit-scrollbar{display:none}
+.abas button{flex:1 0 auto;justify-content:center;border:1px solid var(--line);background:var(--bg2);border-radius:10px;padding:9px 12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mut);display:flex;gap:7px;align-items:center}
+.abas button.on{background:var(--azul);border-color:var(--azul);color:#fff}
+.abas .bolinha{width:8px;height:8px;border-radius:50%;background:var(--verm)}
+.abas .bolinha.ok{background:var(--ok)}
+.painel[hidden]{display:none}
 .bloco{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px}
-details.bloco summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
-details.bloco summary::-webkit-details-marker{display:none}
-details.bloco summary::after{content:"＋";color:var(--mut)}
-details[open].bloco summary::after{content:"－"}
-.pill{font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;background:#2a3247;color:var(--mut);margin-left:8px;vertical-align:middle}
+.pill{font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;background:#222b40;color:var(--mut);margin-left:6px;vertical-align:middle}
 .pill.ok{background:rgba(46,204,113,.15);color:var(--ok)}
 .campo{margin-top:12px}
-.campo label{display:block;font-size:13px;color:var(--mut);margin-bottom:5px;font-weight:600}
-.campo input,.campo textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;outline:none;resize:vertical}
-.campo input:focus,.campo textarea:focus{border-color:var(--azul)}
+.campo label,.rot{display:block;font-size:13px;color:var(--mut);margin-bottom:5px;font-weight:600}
+.campo input,.campo textarea,.campo select,.inp{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;outline:none;resize:vertical}
+.campo input:focus,.campo textarea:focus,.campo select:focus,.inp:focus{border-color:var(--azul)}
+.campo select:disabled{opacity:.5}
 .dois{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
 @media(max-width:560px){.dois{grid-template-columns:1fr}}
-.dica{font-size:13px;color:var(--mut);margin-top:10px}
+.dica{font-size:13px;color:var(--mut);margin-top:8px}
 .dica ol{padding-left:18px;margin-top:4px}
-.btn{border:0;background:var(--azul);color:#fff;border-radius:10px;padding:10px 16px;font-weight:700;cursor:pointer;white-space:nowrap}
+.btn{border:0;background:var(--azul);color:#fff;border-radius:10px;padding:10px 16px;font-weight:700;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none}
 .btn:disabled{opacity:.5;cursor:default}
 .btn.sec{background:transparent;border:1px solid var(--line);color:var(--txt)}
 .btn.sec:hover{border-color:var(--azul)}
-.btn.perigo{background:transparent;border:1px solid rgba(255,45,85,.4);color:var(--verm)}
 .btn.link{background:none;padding:6px 4px;color:var(--mut);text-decoration:underline;font-weight:500}
 .acoes{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;align-items:center}
-.linkcat{display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:var(--bg);border:1px dashed var(--line);border-radius:10px;padding:10px 12px;margin-top:12px;font-size:14px}
-.linkcat code{color:var(--azul2);word-break:break-all;flex:1;min-width:180px}
 .topo-lista{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-.filtro{flex:1;min-width:160px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:9px 12px;outline:none;margin-top:12px}
+.vazio{color:var(--mut);text-align:center;padding:26px 0}
+/* lista de produtos agrupada */
+.filtro{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;outline:none;margin:12px 0 4px}
+.grupo{border:1px solid var(--line);border-radius:12px;margin-top:10px;background:var(--bg2);overflow:hidden}
+.grupo>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:12px 14px;font-weight:700;user-select:none}
+.grupo>summary::-webkit-details-marker{display:none}
+.grupo>summary::before{content:"›";display:inline-block;width:14px;color:var(--mut);font-size:20px;line-height:1;transition:transform .15s}
+.grupo[open]>summary::before{transform:rotate(90deg)}
+.grupo>summary .nome-g{flex:1}
+.grupo .corpo{padding:0 14px 8px;border-top:1px solid var(--line)}
+.sub-rot{font-size:12px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;color:var(--azul2);margin:12px 0 0}
 .linha{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
 .linha:last-child{border-bottom:0}
-.linha .th{width:54px;height:54px;border-radius:10px;object-fit:cover;flex:none;background:#141d31;display:grid;place-items:center;font:800 italic 20px "Barlow Condensed","Arial Narrow",sans-serif;color:#33425f}
+.th{width:52px;height:52px;border-radius:10px;object-fit:cover;flex:none;background:#141d31;display:grid;place-items:center;font:italic 800 20px var(--cond);color:#33425f}
 .linha .t{flex:1;min-width:0}
 .linha .t b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600}
 .linha .t small{color:var(--mut)}
 .linha.off .th,.linha.off .t{opacity:.45}
 .mini-btns{display:flex;gap:4px;flex:none;align-items:center}
-.ib{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--bg2);cursor:pointer;display:grid;place-items:center;color:var(--mut)}
+.ib{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--bg);cursor:pointer;display:grid;place-items:center;color:var(--mut);flex:none}
 .ib:hover{color:var(--txt);border-color:var(--azul)}
 .ib.del:hover{border-color:var(--verm);color:var(--verm)}
 .sw{position:relative;width:40px;height:24px;flex:none}
@@ -63,24 +75,55 @@ details[open].bloco summary::after{content:"－"}
 .sw span::after{content:"";position:absolute;width:18px;height:18px;left:3px;top:3px;border-radius:50%;background:#fff;transition:.2s}
 .sw input:checked+span{background:var(--ok)}
 .sw input:checked+span::after{transform:translateX(16px)}
-@media(max-width:560px){.linha{flex-wrap:wrap}.linha .t{flex:1 1 calc(100% - 66px)}.mini-btns{width:100%;justify-content:flex-end;gap:6px}.mini-btns .sw{margin-right:auto}h1{font-size:28px}}
-.vazio{color:var(--mut);text-align:center;padding:30px 0}
+@media(max-width:560px){.linha{flex-wrap:wrap}.linha .t{flex:1 1 calc(100% - 66px)}.mini-btns{width:100%;justify-content:flex-end;gap:6px}.mini-btns .sw{margin-right:auto}h1{font-size:27px}}
+/* categorias */
+.add-linha{display:flex;gap:8px;margin-top:12px}
+.add-linha .inp{flex:1}
+.cat-bloco{border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:12px;background:var(--bg2)}
+.cat-topo{display:flex;gap:6px;align-items:center}
+.cat-topo .inp{flex:1;font-weight:700}
+.cat-topo small{color:var(--mut);white-space:nowrap;padding:0 4px}
+.subs{margin:10px 0 0 18px;padding-left:12px;border-left:2px solid var(--line)}
+.sub-linha{display:flex;gap:6px;align-items:center;margin-top:6px}
+.sub-linha .inp{flex:1;padding:8px 10px}
+.subs .add-linha{margin-top:8px}
+.subs .add-linha .inp{padding:8px 10px}
+@media(max-width:560px){.cat-topo small{display:none}}
+/* loja */
+.logo-campo{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.logo-prev{width:200px;height:110px;border-radius:12px;border:1px dashed var(--line);background:repeating-conic-gradient(#121826 0 25%,#0d121d 0 50%) 0 0/16px 16px;display:grid;place-items:center;color:var(--mut);font-size:13px;overflow:hidden}
+.logo-prev img{max-width:100%;max-height:100%;object-fit:contain}
+.check{display:flex;gap:8px;align-items:center;margin-top:12px;cursor:pointer}
+.check input{width:18px;height:18px;accent-color:var(--azul)}
+.linkcat{display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:var(--bg);border:1px dashed var(--line);border-radius:10px;padding:10px 12px;margin-top:12px;font-size:14px}
+.linkcat code{color:var(--azul2);word-break:break-all;flex:1;min-width:180px}
+/* barra e avisos */
 .salvar-barra{position:fixed;left:0;right:0;bottom:0;z-index:10;background:rgba(12,17,27,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom));transform:translateY(110%);transition:transform .25s}
 .salvar-barra.on{transform:none}
 .salvar-barra .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0}
 .salvar-barra p{color:var(--alerta);font-weight:600;font-size:14px}
-.toast{position:fixed;left:50%;top:16px;transform:translate(-50%,-150%);z-index:50;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--azul);border-radius:10px;padding:12px 16px;max-width:min(92vw,520px);box-shadow:0 10px 40px rgba(0,0,0,.5);transition:transform .25s;font-weight:500}
+.toast{position:fixed;left:50%;top:16px;transform:translate(-50%,-160%);z-index:60;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--azul);border-radius:10px;padding:12px 16px;max-width:min(92vw,520px);box-shadow:0 10px 40px rgba(0,0,0,.5);transition:transform .25s;font-weight:500}
 .toast.on{transform:translate(-50%,0)}
 .toast.ok{border-left-color:var(--ok)}
 .toast.erro{border-left-color:var(--verm)}
-dialog{margin:auto;border:1px solid var(--line);border-radius:16px;background:var(--bg2);color:var(--txt);width:min(560px,94vw);max-height:92vh;padding:0}
+/* formulário */
+dialog{margin:auto;border:1px solid var(--line);border-radius:16px;background:var(--bg2);color:var(--txt);width:min(580px,94vw);max-height:92vh;padding:0}
 dialog::backdrop{background:rgba(0,0,0,.65)}
 dialog form{padding:18px}
-.foto-campo{display:flex;gap:14px;align-items:center;margin-top:12px}
-.foto-prev{width:96px;height:96px;border-radius:12px;background:#141d31;flex:none;overflow:hidden;display:grid;place-items:center;color:#33425f;font:800 italic 28px "Barlow Condensed","Arial Narrow",sans-serif}
-.foto-prev img{width:100%;height:100%;object-fit:cover}
-.check{display:flex;gap:8px;align-items:center;margin-top:12px;cursor:pointer}
-.check input{width:18px;height:18px;accent-color:var(--azul)}
+.galeria{display:flex;gap:8px;flex-wrap:wrap}
+.g-item{position:relative;width:84px;height:84px;border-radius:10px;overflow:hidden;background:#141d31;border:1px solid var(--line)}
+.g-item img{width:100%;height:100%;object-fit:cover}
+.g-item .capa{position:absolute;left:4px;bottom:4px;background:var(--azul);color:#fff;font-size:10px;font-weight:800;text-transform:uppercase;padding:2px 6px;border-radius:5px}
+.g-item button{position:absolute;top:4px;width:24px;height:24px;border-radius:6px;border:0;background:rgba(0,0,0,.7);color:#fff;cursor:pointer;font-size:14px;line-height:1}
+.g-item .rm{right:4px}
+.g-item .esq{left:4px}
+.g-add{width:84px;height:84px;border-radius:10px;border:1px dashed var(--line);display:grid;place-items:center;text-align:center;font-size:12px;color:var(--mut);cursor:pointer;font-weight:600}
+.g-add:hover{border-color:var(--azul);color:var(--azul2)}
+.valor-linha{display:flex;gap:8px}
+.seg{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;flex:none}
+.seg button{border:0;background:var(--bg);padding:0 14px;font-weight:800;cursor:pointer;color:var(--mut)}
+.seg button.on{background:var(--azul);color:#fff}
+.valor-linha input{flex:1}
 .dlg-pe{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
 </style>
 </head>
@@ -93,59 +136,99 @@ dialog form{padding:18px}
     <button class="btn" id="publicar-topo">Publicar no site</button>
   </header>
 
-  <details class="bloco" id="conexao">
-    <summary><h2>Conexão com o GitHub <span class="pill" id="estado">desconectado</span></h2></summary>
-    <div class="dois">
-      <div class="campo"><label for="owner">Usuário do GitHub</label><input id="owner" autocomplete="off" placeholder="seu-usuario"></div>
-      <div class="campo"><label for="repo">Repositório</label><input id="repo" autocomplete="off" placeholder="catalogo"></div>
-      <div class="campo"><label for="branch">Branch</label><input id="branch" autocomplete="off" placeholder="main"></div>
-      <div class="campo"><label for="token">Token de acesso</label><input id="token" type="password" autocomplete="off" placeholder="github_pat_…"></div>
-    </div>
-    <div class="acoes">
-      <button class="btn" id="conectar">Conectar e carregar</button>
-      <button class="btn link" id="desconectar">Esquecer token deste aparelho</button>
-    </div>
-    <div class="dica">
-      O token fica salvo só neste navegador. Para criar:
-      <ol>
-        <li>Abra <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com → Fine-grained token</a>.</li>
-        <li>Em <b>Repository access</b>, escolha <b>Only select repositories</b> e marque o repositório do catálogo.</li>
-        <li>Em <b>Permissions → Contents</b>, escolha <b>Read and write</b>. Gere e cole aqui.</li>
-      </ol>
-    </div>
-    <div class="linkcat" id="linkcat" hidden>
-      <span>Link para os clientes:</span><code id="url-cat"></code>
-      <button class="btn sec" id="copiar">Copiar</button>
-      <a class="btn sec" id="abrir-cat" target="_blank" rel="noopener" style="text-decoration:none">Abrir</a>
-    </div>
-  </details>
+  <nav class="abas" id="abas">
+    <button data-aba="produtos" class="on">Produtos</button>
+    <button data-aba="categorias">Categorias</button>
+    <button data-aba="loja">Loja</button>
+    <button data-aba="conexao">Conexão <i class="bolinha" id="bolinha"></i></button>
+  </nav>
 
-  <details class="bloco">
-    <summary><h2>Dados da loja</h2></summary>
-    <div class="dois">
-      <div class="campo"><label for="l-nome">Nome da loja</label><input id="l-nome" data-loja="nome"></div>
-      <div class="campo"><label for="l-zap">WhatsApp que recebe os pedidos</label><input id="l-zap" data-loja="whatsapp" inputmode="tel" placeholder="22 99999-9999"></div>
-      <div class="campo"><label for="l-insta">Instagram</label><input id="l-insta" data-loja="instagram" placeholder="@sualoja"></div>
-      <div class="campo"><label for="l-slogan">Frase de apresentação</label><input id="l-slogan" data-loja="slogan"></div>
+  <!-- PRODUTOS -->
+  <section class="painel" id="aba-produtos">
+    <div class="bloco">
+      <div class="topo-lista">
+        <h2>Produtos <span class="pill" id="contagem">0</span></h2>
+        <button class="btn" id="novo">+ Novo produto</button>
+      </div>
+      <input class="filtro" id="filtro" type="search" placeholder="Buscar produto…">
+      <div id="lista"><p class="vazio">Carregando…</p></div>
     </div>
-    <div class="campo"><label for="l-rodape">Rodapé (pagamento, trocas, endereço…)</label><textarea id="l-rodape" data-loja="rodape" rows="3"></textarea></div>
-  </details>
-
-  <section class="bloco">
-    <div class="topo-lista">
-      <h2>Produtos <span class="pill" id="contagem">0</span></h2>
-      <button class="btn" id="novo">+ Novo produto</button>
-    </div>
-    <input class="filtro" id="filtro" type="search" placeholder="Filtrar a lista…">
-    <div id="lista"><p class="vazio">Carregando…</p></div>
   </section>
 
-  <section class="bloco">
-    <h2>Backup</h2>
-    <p class="dica">Baixe uma cópia do catálogo para guardar, ou restaure de uma cópia anterior.</p>
-    <div class="acoes">
-      <button class="btn sec" id="baixar">Baixar backup (.json)</button>
-      <label class="btn sec">Restaurar backup<input type="file" id="importar" accept=".json,application/json" hidden></label>
+  <!-- CATEGORIAS -->
+  <section class="painel" id="aba-categorias" hidden>
+    <div class="bloco">
+      <h2>Categorias e subcategorias</h2>
+      <p class="dica">A ordem aqui é a ordem em que aparecem no catálogo. Renomear não afeta os produtos já cadastrados.</p>
+      <form class="add-linha" id="form-cat">
+        <input class="inp" id="nova-cat" placeholder="Nova categoria (ex.: Jogos de PS4)">
+        <button class="btn">Adicionar</button>
+      </form>
+      <div id="cats-lista"></div>
+    </div>
+  </section>
+
+  <!-- LOJA -->
+  <section class="painel" id="aba-loja" hidden>
+    <div class="bloco">
+      <h2>Logo</h2>
+      <div class="logo-campo">
+        <div class="logo-prev" id="logo-prev">Sem logo</div>
+        <div>
+          <label class="btn sec">Enviar logo<input type="file" id="logo-arq" accept="image/*" hidden></label>
+          <button class="btn link" id="logo-rem" hidden>Remover logo</button>
+          <p class="dica">PNG com fundo transparente fica melhor.</p>
+        </div>
+      </div>
+      <label class="check"><input type="checkbox" id="ocultar-nome"> Esconder o nome da loja no topo (quando a logo já tem o nome)</label>
+    </div>
+    <div class="bloco">
+      <h2>Dados da loja</h2>
+      <div class="dois">
+        <div class="campo"><label for="l-nome">Nome da loja</label><input id="l-nome" data-loja="nome"></div>
+        <div class="campo"><label for="l-zap">WhatsApp que recebe os pedidos</label><input id="l-zap" data-loja="whatsapp" inputmode="tel" placeholder="22 99999-9999"></div>
+        <div class="campo"><label for="l-insta">Instagram</label><input id="l-insta" data-loja="instagram" placeholder="@sualoja"></div>
+        <div class="campo"><label for="l-slogan">Frase de apresentação</label><input id="l-slogan" data-loja="slogan"></div>
+      </div>
+      <div class="campo"><label for="l-rodape">Rodapé (pagamento, trocas, endereço…)</label><textarea id="l-rodape" data-loja="rodape" rows="3"></textarea></div>
+    </div>
+  </section>
+
+  <!-- CONEXÃO -->
+  <section class="painel" id="aba-conexao" hidden>
+    <div class="bloco">
+      <h2>Conexão com o GitHub <span class="pill" id="estado">desconectado</span></h2>
+      <div class="dois">
+        <div class="campo"><label for="owner">Usuário do GitHub</label><input id="owner" autocomplete="off" placeholder="seu-usuario"></div>
+        <div class="campo"><label for="repo">Repositório</label><input id="repo" autocomplete="off" placeholder="catalogo"></div>
+        <div class="campo"><label for="branch">Branch</label><input id="branch" autocomplete="off" placeholder="main"></div>
+        <div class="campo"><label for="token">Token de acesso</label><input id="token" type="password" autocomplete="off" placeholder="github_pat_…"></div>
+      </div>
+      <div class="acoes">
+        <button class="btn" id="conectar">Conectar e carregar</button>
+        <button class="btn link" id="desconectar">Esquecer token deste aparelho</button>
+      </div>
+      <div class="dica">
+        O token fica salvo só neste navegador. Para criar:
+        <ol>
+          <li>Abra <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com → Fine-grained token</a>.</li>
+          <li>Em <b>Repository access</b>, escolha <b>Only select repositories</b> e marque o repositório do catálogo.</li>
+          <li>Em <b>Permissions → Contents</b>, escolha <b>Read and write</b>. Gere e cole aqui.</li>
+        </ol>
+      </div>
+      <div class="linkcat" id="linkcat" hidden>
+        <span>Link para os clientes:</span><code id="url-cat"></code>
+        <button class="btn sec" id="copiar">Copiar</button>
+        <a class="btn sec" id="abrir-cat" target="_blank" rel="noopener">Abrir</a>
+      </div>
+    </div>
+    <div class="bloco">
+      <h2>Backup</h2>
+      <p class="dica">Baixe uma cópia do catálogo para guardar, ou restaure de uma cópia anterior.</p>
+      <div class="acoes">
+        <button class="btn sec" id="baixar">Baixar backup (.json)</button>
+        <label class="btn sec">Restaurar backup<input type="file" id="importar" accept=".json,application/json" hidden></label>
+      </div>
     </div>
   </section>
 </div>
@@ -158,17 +241,23 @@ dialog form{padding:18px}
 <dialog id="dlg">
   <form id="form" method="dialog" novalidate>
     <h2 id="dlg-tit">Novo produto</h2>
-    <div class="foto-campo">
-      <div class="foto-prev" id="foto-prev"></div>
-      <div>
-        <label class="btn sec">Escolher foto<input type="file" id="foto" accept="image/*" hidden></label>
-        <button type="button" class="btn link" id="foto-rem">Remover foto</button>
-      </div>
+    <div class="campo">
+      <span class="rot">Fotos — a primeira é a capa</span>
+      <div class="galeria" id="galeria"></div>
+      <input type="file" id="fotos-arq" accept="image/*" multiple hidden>
     </div>
     <div class="campo"><label for="f-nome">Nome *</label><input id="f-nome" name="nome" required></div>
     <div class="dois">
-      <div class="campo"><label for="f-cat">Categoria</label><input id="f-cat" name="categoria" list="cats" placeholder="Ex.: Consoles"></div>
-      <div class="campo"><label for="f-preco">Preço (R$)</label><input id="f-preco" name="preco" inputmode="decimal" placeholder="Vazio = sob consulta"></div>
+      <div class="campo"><label for="f-cat">Categoria</label><select id="f-cat"></select></div>
+      <div class="campo"><label for="f-sub">Subcategoria</label><select id="f-sub"></select></div>
+    </div>
+    <div class="campo">
+      <label for="f-valor">Valor</label>
+      <div class="valor-linha">
+        <div class="seg" id="seg-un"><button type="button" data-un="R$">R$</button><button type="button" data-un="GB">GB</button></div>
+        <input id="f-valor" name="valor" inputmode="decimal">
+      </div>
+      <p class="dica" id="valor-dica"></p>
     </div>
     <div class="campo"><label for="f-desc">Descrição</label><textarea id="f-desc" name="descricao" rows="3"></textarea></div>
     <label class="check"><input type="checkbox" name="disponivel"> Disponível para os clientes</label>
@@ -179,27 +268,30 @@ dialog form{padding:18px}
     </div>
   </form>
 </dialog>
-<datalist id="cats"></datalist>
 
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const brl = v => Number(v).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
+const num = v => Number(v).toLocaleString('pt-BR', {maximumFractionDigits: 2});
 const norm = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const slug = s => norm(s).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40) || 'item';
 const iniciais = n => String(n || '?').split(/\s+/).filter(Boolean).slice(0, 2).map(w => w[0]).join('').toUpperCase();
 const novoId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
 const ler = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d } catch (e) { return d } };
 const gravar = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)) } catch (e) {} };
+const ehExterna = c => /^(https?:|data:)/.test(c || '');
+const MAX_FOTOS = 10;
 
 const CAMINHO = 'data/produtos.json';
 let cfg = Object.assign({owner: '', repo: '', branch: 'main', token: ''}, ler('catalogo-github', {}));
-let dados = {loja: {}, produtos: []};
+let dados = {loja: {}, categorias: [], produtos: []};
 let sha = null, sujo = false, conectado = false;
-let remover = [];            // imagens a apagar depois de publicar
-const previewLocal = {};     // fotos recém-enviadas, para aparecerem na hora
+let remover = [];             // imagens a apagar depois de publicar
+const previewLocal = {};      // imagens recém-enviadas, para aparecerem na hora
+const abertos = new Set(ler('catalogo-admin-abertos', []));
 
-// ---------- utilidades de interface ----------
+// ---------- avisos ----------
 let tToast;
 function aviso(msg, tipo = '') {
   const t = $('toast'); t.textContent = msg; t.className = 'toast on ' + tipo;
@@ -208,6 +300,14 @@ function aviso(msg, tipo = '') {
 function marcarSujo(v = true) { sujo = v; $('barra').classList.toggle('on', v); }
 window.addEventListener('beforeunload', e => { if (sujo) { e.preventDefault(); e.returnValue = ''; } });
 
+// ---------- abas ----------
+function irAba(n) {
+  document.querySelectorAll('#abas button').forEach(b => b.classList.toggle('on', b.dataset.aba === n));
+  document.querySelectorAll('.painel').forEach(p => p.hidden = p.id !== 'aba-' + n);
+  gravar('catalogo-admin-aba', n);
+}
+$('abas').addEventListener('click', e => { const b = e.target.closest('button'); if (b) irAba(b.dataset.aba); });
+
 // ---------- GitHub ----------
 const paraB64 = txt => {
   const b = new TextEncoder().encode(txt); let s = '';
@@ -215,81 +315,106 @@ const paraB64 = txt => {
   return btoa(s);
 };
 const deB64 = b64 => new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\s/g, '')), c => c.charCodeAt(0)));
-
 function erroGH(status, msg) {
   if (status === 401) return 'Token inválido ou expirado.';
   if (status === 403) return 'O token não tem permissão de escrita neste repositório (Contents: Read and write).';
   if (status === 404) return 'Repositório, branch ou permissão não encontrados. Confira usuário, nome do repositório e se o token tem acesso a ele.';
-  if (status === 409) return 'O catálogo mudou no GitHub desde que você abriu o painel. Clique em "Conectar e carregar" para pegar a versão atual.';
+  if (status === 409) return 'O catálogo mudou no GitHub desde que você abriu o painel. Vá em Conexão → "Conectar e carregar" para pegar a versão atual.';
   return `Erro do GitHub (${status})${msg ? ': ' + msg : ''}`;
 }
+const repoURL = () => `https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}`;
 async function gh(caminho, opt = {}) {
-  const base = `https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/contents/` + caminho.split('/').map(encodeURIComponent).join('/');
-  const url = opt.method ? base : base + '?ref=' + encodeURIComponent(cfg.branch);
-  const r = await fetch(url, {
+  const base = repoURL() + '/contents/' + caminho.split('/').map(encodeURIComponent).join('/');
+  const r = await fetch(opt.method ? base : base + '?ref=' + encodeURIComponent(cfg.branch), {
     method: opt.method || 'GET', cache: 'no-store',
     headers: {Authorization: 'Bearer ' + cfg.token, Accept: 'application/vnd.github+json'},
     body: opt.body ? JSON.stringify(opt.body) : undefined
   });
   if (r.status === 404 && !opt.method) {
-    // arquivo ainda não existe; checa se o repositório existe
-    const rr = await fetch(`https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}`, {headers: {Authorization: 'Bearer ' + cfg.token}, cache: 'no-store'});
+    const rr = await fetch(repoURL(), {headers: {Authorization: 'Bearer ' + cfg.token}, cache: 'no-store'});
     if (!rr.ok) throw new Error(erroGH(rr.status));
     return null;
   }
   if (!r.ok) { let m = ''; try { m = (await r.json()).message } catch (e) {} throw new Error(erroGH(r.status, m)); }
   return r.json();
 }
-function urlFoto(caminho) {
-  if (!caminho) return '';
-  if (previewLocal[caminho]) return previewLocal[caminho];
-  if (/^(https?:|data:)/.test(caminho)) return caminho;
-  if (cfg.owner && cfg.repo) return `https://raw.githubusercontent.com/${cfg.owner}/${cfg.repo}/${cfg.branch}/${caminho}`;
+async function subirImagem(dataURL, base) {
+  const ext = dataURL.startsWith('data:image/png') ? 'png' : 'jpg';
+  const caminho = `imagens/${slug(base)}-${novoId()}.${ext}`;
+  await gh(caminho, {method: 'PUT', body: {message: 'Adiciona imagem: ' + base, content: dataURL.split(',')[1], branch: cfg.branch}});
+  previewLocal[caminho] = dataURL;
   return caminho;
+}
+function urlFoto(c) {
+  if (!c) return '';
+  if (previewLocal[c]) return previewLocal[c];
+  if (ehExterna(c)) return c;
+  if (cfg.owner && cfg.repo) return `https://raw.githubusercontent.com/${cfg.owner}/${cfg.repo}/${cfg.branch}/${c}`;
+  return c;
 }
 function urlCatalogo() {
   if (!cfg.owner || !cfg.repo) return '';
   const o = cfg.owner.toLowerCase();
   return cfg.repo.toLowerCase() === o + '.github.io' ? `https://${o}.github.io/` : `https://${o}.github.io/${cfg.repo}/`;
 }
+function exigirConexao() {
+  if (conectado) return true;
+  irAba('conexao'); aviso('Conecte ao GitHub primeiro.', 'erro'); return false;
+}
 
 // ---------- dados ----------
+// Aceita o formato antigo (categoria em texto, "preco", "imagem") e converte.
 function normalizar(d) {
   d = d && typeof d === 'object' ? d : {};
-  const loja = Object.assign({nome: '', slogan: '', whatsapp: '', instagram: '', rodape: ''}, d.loja || {});
-  const produtos = (Array.isArray(d.produtos) ? d.produtos : []).map(p => ({
-    id: p.id || novoId(), nome: p.nome || '', categoria: p.categoria || '',
-    preco: typeof p.preco === 'number' && isFinite(p.preco) ? p.preco : null,
-    descricao: p.descricao || '', imagem: p.imagem || '',
-    disponivel: p.disponivel !== false, destaque: !!p.destaque
+  const loja = Object.assign({nome: '', slogan: '', whatsapp: '', instagram: '', rodape: '', logo: '', ocultarNome: false}, d.loja || {});
+  const categorias = (Array.isArray(d.categorias) ? d.categorias : []).map(c => ({
+    id: String(c.id || novoId()), nome: String(c.nome || ''),
+    subs: (Array.isArray(c.subs) ? c.subs : []).map(s => ({id: String(s.id || novoId()), nome: String(s.nome || '')}))
   }));
-  return {loja, produtos};
+  const acharCat = v => {
+    if (!v) return '';
+    let c = categorias.find(x => x.id === v) || categorias.find(x => norm(x.nome) === norm(v));
+    if (!c) { c = {id: novoId(), nome: String(v), subs: []}; categorias.push(c); }
+    return c.id;
+  };
+  const produtos = (Array.isArray(d.produtos) ? d.produtos : []).map(p => {
+    const categoria = acharCat(p.categoria);
+    const cat = categorias.find(c => c.id === categoria);
+    const subcategoria = cat && cat.subs.some(s => s.id === p.subcategoria) ? p.subcategoria : '';
+    const imagens = Array.isArray(p.imagens) ? p.imagens.filter(Boolean) : (p.imagem ? [p.imagem] : []);
+    const v = typeof p.valor === 'number' ? p.valor : p.preco;
+    return {
+      id: String(p.id || novoId()), nome: p.nome || '', categoria, subcategoria,
+      unidade: p.unidade === 'GB' ? 'GB' : 'R$', valor: typeof v === 'number' && isFinite(v) ? v : null,
+      descricao: p.descricao || '', imagens, disponivel: p.disponivel !== false, destaque: !!p.destaque
+    };
+  });
+  return {loja, categorias, produtos};
 }
-function lerPreco(txt) {
-  let s = String(txt || '').replace(/[R$\s]/g, '');
+function lerNumero(txt) {
+  let s = String(txt || '').replace(/[R$\sGBgb]/g, '');
   if (!s) return null;
   if (s.includes(',')) s = s.replace(/\./g, '').replace(',', '.');
   else if ((s.match(/\./g) || []).length > 1 || /\.\d{3}$/.test(s)) s = s.replace(/\./g, '');
   const n = Number(s);
   return isFinite(n) && n >= 0 ? Math.round(n * 100) / 100 : NaN;
 }
+const textoValor = p => p.unidade === 'GB' ? (p.valor != null ? num(p.valor) + ' GB' : 'GB não informado') : (p.valor != null ? brl(p.valor) : 'sob consulta');
+const catPorId = id => dados.categorias.find(c => c.id === id);
+const subPorId = (c, id) => c ? c.subs.find(s => s.id === id) : null;
 
+// ---------- carregar / publicar ----------
 async function conectar() {
-  cfg = {
-    owner: $('owner').value.trim(), repo: $('repo').value.trim(),
-    branch: $('branch').value.trim() || 'main', token: $('token').value.trim()
-  };
+  cfg = {owner: $('owner').value.trim(), repo: $('repo').value.trim(), branch: $('branch').value.trim() || 'main', token: $('token').value.trim()};
   if (!cfg.owner || !cfg.repo || !cfg.token) { aviso('Preencha usuário, repositório e token.', 'erro'); return false; }
   if (sujo && !confirm('Você tem alterações não publicadas. Carregar do GitHub vai descartá-las. Continuar?')) return false;
   $('conectar').disabled = true; $('conectar').textContent = 'Conectando…';
   try {
     const f = await gh(CAMINHO);
-    if (f) { dados = normalizar(JSON.parse(deB64(f.content))); sha = f.sha; }
-    else { sha = null; aviso('Conectado. Ainda não há catálogo no repositório — ele será criado no primeiro "Publicar".', 'ok'); }
+    if (f) { dados = normalizar(JSON.parse(deB64(f.content))); sha = f.sha; aviso('Conectado! Catálogo carregado.', 'ok'); }
+    else { sha = null; dados = normalizar(dados); aviso('Conectado. O catálogo será criado no primeiro "Publicar".', 'ok'); }
     gravar('catalogo-github', cfg);
     conectado = true; remover = []; marcarSujo(false);
-    if (f) aviso('Conectado! Catálogo carregado do GitHub.', 'ok');
-    $('conexao').open = false;
     renderTudo();
     return true;
   } catch (e) {
@@ -298,9 +423,8 @@ async function conectar() {
     $('conectar').disabled = false; $('conectar').textContent = 'Conectar e carregar';
   }
 }
-
 async function publicar() {
-  if (!conectado) { $('conexao').open = true; aviso('Conecte ao GitHub antes de publicar.', 'erro'); return; }
+  if (!exigirConexao()) return;
   const btns = [$('publicar'), $('publicar-topo')];
   btns.forEach(b => { b.disabled = true; b.textContent = 'Publicando…'; });
   try {
@@ -309,7 +433,8 @@ async function publicar() {
     const r = await gh(CAMINHO, {method: 'PUT', body: corpo});
     sha = r.content.sha;
     marcarSujo(false);
-    const lixo = remover.splice(0).filter(c => c && !/^(https?:|data:)/.test(c) && !dados.produtos.some(p => p.imagem === c));
+    const emUso = new Set([dados.loja.logo, ...dados.produtos.flatMap(p => p.imagens)]);
+    const lixo = [...new Set(remover.splice(0))].filter(c => c && !ehExterna(c) && !emUso.has(c));
     for (const c of lixo) {
       try { const f = await gh(c); if (f) await gh(c, {method: 'DELETE', body: {message: 'Remove imagem', sha: f.sha, branch: cfg.branch}}); } catch (e) {}
     }
@@ -321,60 +446,198 @@ async function publicar() {
   }
 }
 
-// ---------- interface ----------
-function estadoConexao() {
-  const e = $('estado');
-  e.textContent = conectado ? 'conectado' : 'desconectado';
-  e.classList.toggle('ok', conectado);
-  const u = urlCatalogo();
-  $('linkcat').hidden = !u;
-  $('url-cat').textContent = u; $('abrir-cat').href = u;
+// ---------- imagens ----------
+function reduzir(file, max, png) {
+  return new Promise((ok, erro) => {
+    const url = URL.createObjectURL(file), img = new Image();
+    img.onload = () => {
+      const k = Math.min(1, max / Math.max(img.naturalWidth, img.naturalHeight));
+      const c = document.createElement('canvas');
+      c.width = Math.round(img.naturalWidth * k); c.height = Math.round(img.naturalHeight * k);
+      const g = c.getContext('2d');
+      if (!png) { g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); }
+      g.drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(url);
+      ok(png ? c.toDataURL('image/png') : c.toDataURL('image/jpeg', 0.85));
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); erro(new Error('Não consegui ler a imagem ' + file.name + '. Use JPG ou PNG.')); };
+    img.src = url;
+  });
 }
+
+// ---------- aba Loja ----------
 function renderLoja() {
   document.querySelectorAll('[data-loja]').forEach(i => { i.value = dados.loja[i.dataset.loja] || ''; });
+  $('ocultar-nome').checked = !!dados.loja.ocultarNome;
+  const l = dados.loja.logo;
+  $('logo-prev').innerHTML = l ? `<img src="${esc(urlFoto(l))}" alt="Logo">` : 'Sem logo';
+  $('logo-rem').hidden = !l;
 }
-document.querySelectorAll('[data-loja]').forEach(i => i.addEventListener('input', () => {
-  dados.loja[i.dataset.loja] = i.value; marcarSujo();
-}));
+document.querySelectorAll('[data-loja]').forEach(i => i.addEventListener('input', () => { dados.loja[i.dataset.loja] = i.value; marcarSujo(); }));
+$('ocultar-nome').addEventListener('change', e => { dados.loja.ocultarNome = e.target.checked; marcarSujo(); });
+$('logo-arq').addEventListener('change', async e => {
+  const f = e.target.files[0]; e.target.value = ''; if (!f) return;
+  if (!exigirConexao()) return;
+  $('logo-prev').textContent = 'Enviando…';
+  try {
+    const png = f.type !== 'image/jpeg';
+    const caminho = await subirImagem(await reduzir(f, 700, png), 'logo');
+    if (dados.loja.logo) remover.push(dados.loja.logo);
+    dados.loja.logo = caminho; marcarSujo();
+    aviso('Logo enviada. Clique em Publicar para aparecer no site.', 'ok');
+  } catch (err) { aviso(err.message, 'erro'); }
+  renderLoja();
+});
+$('logo-rem').onclick = () => { if (dados.loja.logo) remover.push(dados.loja.logo); dados.loja.logo = ''; marcarSujo(); renderLoja(); };
 
-function renderLista() {
-  const termo = norm($('filtro').value);
-  const ps = dados.produtos;
-  $('contagem').textContent = ps.length;
-  $('cats').innerHTML = [...new Set(ps.map(p => p.categoria).filter(Boolean))].map(c => `<option value="${esc(c)}">`).join('');
-  const vis = ps.filter(p => !termo || norm(p.nome + ' ' + p.categoria + ' ' + p.descricao).includes(termo));
-  if (!ps.length) { $('lista').innerHTML = '<p class="vazio">Nenhum produto ainda. Clique em “+ Novo produto”.</p>'; return; }
-  if (!vis.length) { $('lista').innerHTML = '<p class="vazio">Nada encontrado com esse filtro.</p>'; return; }
-  $('lista').innerHTML = vis.map(p => `
-    <div class="linha${p.disponivel ? '' : ' off'}" data-id="${esc(p.id)}">
-      ${p.imagem ? `<img class="th" src="${esc(urlFoto(p.imagem))}" alt="">` : `<div class="th">${esc(iniciais(p.nome))}</div>`}
-      <div class="t"><b>${p.destaque ? '★ ' : ''}${esc(p.nome)}</b>
-        <small>${esc(p.categoria || 'Sem categoria')} · ${p.preco != null ? brl(p.preco) : 'sob consulta'}${p.disponivel ? '' : ' · oculto como esgotado'}</small></div>
-      <div class="mini-btns">
-        <label class="sw" title="Disponível"><input type="checkbox" data-acao="disp" ${p.disponivel ? 'checked' : ''}><span></span></label>
-        <button class="ib ord" data-acao="sobe" title="Subir">↑</button>
-        <button class="ib ord" data-acao="desce" title="Descer">↓</button>
-        <button class="ib" data-acao="editar" title="Editar">✎</button>
-        <button class="ib del" data-acao="apagar" title="Apagar">✕</button>
+// ---------- aba Categorias ----------
+function contar(catId, subId) {
+  return dados.produtos.filter(p => p.categoria === catId && (subId === undefined || p.subcategoria === subId)).length;
+}
+function renderCategorias() {
+  const cs = dados.categorias;
+  if (!cs.length) { $('cats-lista').innerHTML = '<p class="vazio">Nenhuma categoria ainda.</p>'; return; }
+  $('cats-lista').innerHTML = cs.map(c => `
+    <div class="cat-bloco" data-cat="${esc(c.id)}">
+      <div class="cat-topo">
+        <input class="inp" data-nome-cat value="${esc(c.nome)}" aria-label="Nome da categoria">
+        <small>${contar(c.id)} itens</small>
+        <button class="ib" data-c="sobe" title="Subir">↑</button>
+        <button class="ib" data-c="desce" title="Descer">↓</button>
+        <button class="ib del" data-c="apagar" title="Apagar categoria">✕</button>
+      </div>
+      <div class="subs">
+        ${c.subs.map(s => `
+          <div class="sub-linha" data-sub="${esc(s.id)}">
+            <input class="inp" data-nome-sub value="${esc(s.nome)}" aria-label="Nome da subcategoria">
+            <button class="ib" data-c="sub-sobe" title="Subir">↑</button>
+            <button class="ib del" data-c="sub-apagar" title="Apagar subcategoria">✕</button>
+          </div>`).join('')}
+        <form class="add-linha" data-add-sub>
+          <input class="inp" placeholder="Nova subcategoria">
+          <button class="btn sec">+ Sub</button>
+        </form>
       </div>
     </div>`).join('');
 }
-function renderTudo() { renderLoja(); renderLista(); estadoConexao(); }
-$('filtro').addEventListener('input', renderLista);
+function novaCategoria(nome) {
+  nome = String(nome || '').trim(); if (!nome) return null;
+  if (dados.categorias.some(c => norm(c.nome) === norm(nome))) { aviso('Já existe uma categoria com esse nome.', 'erro'); return null; }
+  const c = {id: novoId(), nome, subs: []};
+  dados.categorias.push(c); marcarSujo(); return c;
+}
+function novaSub(c, nome) {
+  nome = String(nome || '').trim(); if (!c || !nome) return null;
+  if (c.subs.some(s => norm(s.nome) === norm(nome))) { aviso('Já existe essa subcategoria.', 'erro'); return null; }
+  const s = {id: novoId(), nome}; c.subs.push(s); marcarSujo(); return s;
+}
+$('form-cat').addEventListener('submit', e => {
+  e.preventDefault();
+  if (novaCategoria($('nova-cat').value)) { $('nova-cat').value = ''; renderCategorias(); renderLista(); }
+});
+$('cats-lista').addEventListener('submit', e => {
+  e.preventDefault();
+  const c = catPorId(e.target.closest('.cat-bloco').dataset.cat);
+  const inp = e.target.querySelector('input');
+  if (novaSub(c, inp.value)) { renderCategorias(); renderLista(); }
+});
+$('cats-lista').addEventListener('input', e => {
+  const c = catPorId(e.target.closest('.cat-bloco').dataset.cat); if (!c) return;
+  if (e.target.matches('[data-nome-cat]')) c.nome = e.target.value;
+  if (e.target.matches('[data-nome-sub]')) { const s = subPorId(c, e.target.closest('.sub-linha').dataset.sub); if (s) s.nome = e.target.value; }
+  marcarSujo();
+});
+$('cats-lista').addEventListener('change', () => renderLista());
+$('cats-lista').addEventListener('click', e => {
+  const b = e.target.closest('[data-c]'); if (!b) return;
+  const cs = dados.categorias, i = cs.findIndex(c => c.id === b.closest('.cat-bloco').dataset.cat), c = cs[i];
+  if (!c) return;
+  const a = b.dataset.c;
+  if (a === 'sobe' && i > 0) [cs[i - 1], cs[i]] = [cs[i], cs[i - 1]];
+  else if (a === 'desce' && i < cs.length - 1) [cs[i + 1], cs[i]] = [cs[i], cs[i + 1]];
+  else if (a === 'apagar') {
+    const n = contar(c.id);
+    if (!confirm(`Apagar a categoria "${c.nome}"?` + (n ? `\n${n} produto(s) ficarão "Sem categoria".` : ''))) return;
+    dados.produtos.forEach(p => { if (p.categoria === c.id) { p.categoria = ''; p.subcategoria = ''; } });
+    cs.splice(i, 1);
+  } else if (a.startsWith('sub-')) {
+    const j = c.subs.findIndex(s => s.id === b.closest('.sub-linha').dataset.sub), s = c.subs[j];
+    if (a === 'sub-sobe' && j > 0) [c.subs[j - 1], c.subs[j]] = [c.subs[j], c.subs[j - 1]];
+    if (a === 'sub-apagar') {
+      const n = contar(c.id, s.id);
+      if (!confirm(`Apagar a subcategoria "${s.nome}"?` + (n ? `\n${n} produto(s) continuam em "${c.nome}", sem subcategoria.` : ''))) return;
+      dados.produtos.forEach(p => { if (p.subcategoria === s.id) p.subcategoria = ''; });
+      c.subs.splice(j, 1);
+    }
+  } else return;
+  marcarSujo(); renderCategorias(); renderLista();
+});
 
+// ---------- aba Produtos (lista agrupada) ----------
+function linhaProduto(p) {
+  const c = catPorId(p.categoria), s = subPorId(c, p.subcategoria);
+  const info = [textoValor(p), p.imagens.length > 1 ? p.imagens.length + ' fotos' : '', p.disponivel ? '' : 'esgotado'].filter(Boolean).join(' · ');
+  return `
+    <div class="linha${p.disponivel ? '' : ' off'}" data-id="${esc(p.id)}">
+      ${p.imagens[0] ? `<img class="th" src="${esc(urlFoto(p.imagens[0]))}" alt="">` : `<div class="th">${esc(iniciais(p.nome))}</div>`}
+      <div class="t"><b>${p.destaque ? '★ ' : ''}${esc(p.nome)}</b><small>${esc(info)}</small></div>
+      <div class="mini-btns">
+        <label class="sw" title="Disponível"><input type="checkbox" data-acao="disp" ${p.disponivel ? 'checked' : ''}><span></span></label>
+        <button class="ib" data-acao="sobe" title="Subir">↑</button>
+        <button class="ib" data-acao="desce" title="Descer">↓</button>
+        <button class="ib" data-acao="editar" title="Editar">✎</button>
+        <button class="ib del" data-acao="apagar" title="Apagar">✕</button>
+      </div>
+    </div>`;
+}
+function renderLista() {
+  const termo = norm($('filtro').value), ps = dados.produtos;
+  $('contagem').textContent = ps.length;
+  if (!ps.length) { $('lista').innerHTML = '<p class="vazio">Nenhum produto ainda. Clique em “+ Novo produto”.</p>'; return; }
+  const vis = ps.filter(p => !termo || norm(p.nome + ' ' + p.descricao).includes(termo));
+  if (!vis.length) { $('lista').innerHTML = '<p class="vazio">Nada encontrado.</p>'; return; }
+  const grupos = [...dados.categorias, {id: '', nome: 'Sem categoria', subs: []}];
+  let html = '';
+  for (const g of grupos) {
+    const doGrupo = vis.filter(p => p.categoria === g.id);
+    if (!doGrupo.length) continue;
+    const chave = g.id || '_';
+    let corpo = '';
+    const semSub = doGrupo.filter(p => !g.subs.some(s => s.id === p.subcategoria));
+    if (semSub.length) corpo += (g.subs.length ? '<p class="sub-rot">Sem subcategoria</p>' : '') + semSub.map(linhaProduto).join('');
+    for (const s of g.subs) {
+      const its = doGrupo.filter(p => p.subcategoria === s.id);
+      if (its.length) corpo += `<p class="sub-rot">${esc(s.nome)}</p>` + its.map(linhaProduto).join('');
+    }
+    html += `<details class="grupo" data-g="${esc(chave)}"${termo || abertos.has(chave) ? ' open' : ''}>
+      <summary><span class="nome-g">${esc(g.nome || 'Sem nome')}</span><span class="pill">${doGrupo.length}</span></summary>
+      <div class="corpo">${corpo}</div></details>`;
+  }
+  $('lista').innerHTML = html;
+}
+$('filtro').addEventListener('input', renderLista);
+$('lista').addEventListener('toggle', e => {
+  if (!e.target.matches('.grupo') || norm($('filtro').value)) return;
+  const k = e.target.dataset.g;
+  e.target.open ? abertos.add(k) : abertos.delete(k);
+  gravar('catalogo-admin-abertos', [...abertos]);
+}, true);
 $('lista').addEventListener('click', e => {
   const b = e.target.closest('[data-acao]'); if (!b || b.dataset.acao === 'disp') return;
-  const id = b.closest('.linha').dataset.id, ps = dados.produtos, i = ps.findIndex(p => p.id === id);
-  if (i < 0) return;
+  const ps = dados.produtos, i = ps.findIndex(p => p.id === b.closest('.linha').dataset.id), p = ps[i];
+  if (!p) return;
   const a = b.dataset.acao;
-  if (a === 'editar') return abrirForm(ps[i]);
+  const mesmoBloco = x => x.categoria === p.categoria && x.subcategoria === p.subcategoria;
+  if (a === 'editar') return abrirForm(p);
   if (a === 'apagar') {
-    if (!confirm(`Apagar "${ps[i].nome}"?`)) return;
-    if (ps[i].imagem) remover.push(ps[i].imagem);
-    ps.splice(i, 1);
+    if (!confirm(`Apagar "${p.nome}"?`)) return;
+    remover.push(...p.imagens); ps.splice(i, 1);
+  } else if (a === 'sobe' || a === 'desce') {
+    let j = i;
+    do { j += a === 'sobe' ? -1 : 1; } while (j >= 0 && j < ps.length && !mesmoBloco(ps[j]));
+    if (j < 0 || j >= ps.length) return;
+    [ps[i], ps[j]] = [ps[j], ps[i]];
   }
-  if (a === 'sobe' && i > 0) [ps[i - 1], ps[i]] = [ps[i], ps[i - 1]];
-  if (a === 'desce' && i < ps.length - 1) [ps[i + 1], ps[i]] = [ps[i], ps[i + 1]];
   marcarSujo(); renderLista();
 });
 $('lista').addEventListener('change', e => {
@@ -384,91 +647,140 @@ $('lista').addEventListener('change', e => {
 });
 
 // ---------- formulário do produto ----------
-let editando = null, fotoNova = null; // fotoNova: dataURL | 'remover' | null
 const form = $('form');
+let editando = null, fotosForm = [], unidadeForm = 'R$';   // fotosForm: [{path}] ou [{data}]
 
-function mostrarFoto(src, nome) {
-  $('foto-prev').innerHTML = src ? `<img src="${esc(src)}" alt="">` : esc(iniciais(nome || '?'));
-  $('foto-rem').hidden = !src;
+function renderGaleria() {
+  $('galeria').innerHTML = fotosForm.map((f, i) => `
+    <div class="g-item">
+      <img src="${esc(f.data || urlFoto(f.path))}" alt="">
+      ${i ? `<button type="button" class="esq" data-g="${i}" title="Mover para a esquerda">‹</button>` : '<span class="capa">capa</span>'}
+      <button type="button" class="rm" data-rm="${i}" title="Remover">✕</button>
+    </div>`).join('') + (fotosForm.length < MAX_FOTOS ? '<label class="g-add" for="fotos-arq">+ Adicionar<br>fotos</label>' : '');
 }
+$('galeria').addEventListener('click', e => {
+  const rm = e.target.closest('[data-rm]'), esq = e.target.closest('[data-g]');
+  if (rm) fotosForm.splice(+rm.dataset.rm, 1);
+  else if (esq) { const i = +esq.dataset.g; [fotosForm[i - 1], fotosForm[i]] = [fotosForm[i], fotosForm[i - 1]]; }
+  else return;
+  renderGaleria();
+});
+$('fotos-arq').addEventListener('change', async e => {
+  const arqs = [...e.target.files]; e.target.value = '';
+  const livres = MAX_FOTOS - fotosForm.length;
+  if (arqs.length > livres) aviso(`Máximo de ${MAX_FOTOS} fotos por produto.`, 'erro');
+  for (const f of arqs.slice(0, livres)) {
+    try { fotosForm.push({data: await reduzir(f, 1000, false)}); } catch (err) { aviso(err.message, 'erro'); }
+  }
+  renderGaleria();
+});
+
+function preencherCats(catId, subId) {
+  $('f-cat').innerHTML = '<option value="">— Sem categoria —</option>' +
+    dados.categorias.map(c => `<option value="${esc(c.id)}">${esc(c.nome)}</option>`).join('') +
+    '<option value="__nova">+ Nova categoria…</option>';
+  $('f-cat').value = catId || '';
+  preencherSubs(subId);
+}
+function preencherSubs(subId) {
+  const c = catPorId($('f-cat').value);
+  $('f-sub').disabled = !c;
+  $('f-sub').innerHTML = '<option value="">— Nenhuma —</option>' +
+    (c ? c.subs.map(s => `<option value="${esc(s.id)}">${esc(s.nome)}</option>`).join('') + '<option value="__nova">+ Nova subcategoria…</option>' : '');
+  $('f-sub').value = c && subPorId(c, subId) ? subId : '';
+}
+$('f-cat').addEventListener('change', () => {
+  if ($('f-cat').value === '__nova') {
+    const c = novaCategoria(prompt('Nome da nova categoria:'));
+    if (c) renderCategorias();
+    preencherCats(c ? c.id : '');
+  } else preencherSubs('');
+});
+$('f-sub').addEventListener('change', () => {
+  if ($('f-sub').value !== '__nova') return;
+  const s = novaSub(catPorId($('f-cat').value), prompt('Nome da nova subcategoria:'));
+  if (s) renderCategorias();
+  preencherSubs(s ? s.id : '');
+});
+
+function definirUnidade(u) {
+  unidadeForm = u;
+  document.querySelectorAll('#seg-un button').forEach(b => b.classList.toggle('on', b.dataset.un === u));
+  $('f-valor').placeholder = u === 'GB' ? 'Ex.: 45,5' : 'Ex.: 1.299,90';
+  $('valor-dica').textContent = u === 'GB'
+    ? 'Tamanho em GB. No catálogo o cliente vê a soma de GB do que escolheu.'
+    : 'Deixe vazio para mostrar "Preço sob consulta".';
+}
+$('seg-un').addEventListener('click', e => { const b = e.target.closest('[data-un]'); if (b) definirUnidade(b.dataset.un); });
+
 function abrirForm(p) {
-  editando = p || null; fotoNova = null; form.reset();
+  editando = p || null; form.reset();
   $('dlg-tit').textContent = p ? 'Editar produto' : 'Novo produto';
   form.nome.value = p?.nome || '';
-  form.categoria.value = p?.categoria || '';
-  form.preco.value = p?.preco != null ? p.preco.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2}) : '';
+  form.valor.value = p?.valor != null ? p.valor.toLocaleString('pt-BR', {minimumFractionDigits: p.unidade === 'GB' ? 0 : 2, maximumFractionDigits: 2}) : '';
   form.descricao.value = p?.descricao || '';
   form.disponivel.checked = p ? p.disponivel : true;
   form.destaque.checked = !!p?.destaque;
-  mostrarFoto(p?.imagem ? urlFoto(p.imagem) : '', p?.nome);
+  fotosForm = (p?.imagens || []).map(path => ({path}));
+  preencherCats(p?.categoria, p?.subcategoria);
+  definirUnidade(p?.unidade || 'R$');
+  renderGaleria();
   $('dlg').showModal();
   if (!p) form.nome.focus();
 }
 $('novo').onclick = () => abrirForm(null);
 $('cancelar').onclick = () => $('dlg').close();
 
-function reduzir(file, max = 1000) {
-  return new Promise((ok, erro) => {
-    const url = URL.createObjectURL(file), img = new Image();
-    img.onload = () => {
-      const k = Math.min(1, max / Math.max(img.naturalWidth, img.naturalHeight));
-      const c = document.createElement('canvas');
-      c.width = Math.round(img.naturalWidth * k); c.height = Math.round(img.naturalHeight * k);
-      const g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height);
-      g.drawImage(img, 0, 0, c.width, c.height);
-      URL.revokeObjectURL(url); ok(c.toDataURL('image/jpeg', 0.85));
-    };
-    img.onerror = () => { URL.revokeObjectURL(url); erro(new Error('Não consegui ler essa imagem. Tente uma foto JPG ou PNG.')); };
-    img.src = url;
-  });
-}
-$('foto').addEventListener('change', async e => {
-  const f = e.target.files[0]; if (!f) return;
-  try { fotoNova = await reduzir(f); mostrarFoto(fotoNova); } catch (err) { aviso(err.message, 'erro'); }
-  e.target.value = '';
-});
-$('foto-rem').onclick = () => { fotoNova = 'remover'; mostrarFoto('', form.nome.value); };
-
 form.addEventListener('submit', async e => {
   e.preventDefault();
   const nome = form.nome.value.trim();
   if (!nome) { form.nome.focus(); aviso('Dê um nome ao produto.', 'erro'); return; }
-  const preco = lerPreco(form.preco.value);
-  if (Number.isNaN(preco)) { form.preco.focus(); aviso('Preço inválido. Use algo como 1.299,90 ou deixe vazio.', 'erro'); return; }
+  const valor = lerNumero(form.valor.value);
+  if (Number.isNaN(valor)) { form.valor.focus(); aviso('Valor inválido. Use algo como 1.299,90 ou deixe vazio.', 'erro'); return; }
+  const novas = fotosForm.filter(f => f.data);
+  if (novas.length && !conectado) { aviso('Conecte ao GitHub (aba Conexão) para enviar fotos.', 'erro'); return; }
 
-  let imagem = editando?.imagem || '';
-  if (fotoNova === 'remover') {
-    if (imagem) remover.push(imagem);
-    imagem = '';
-  } else if (fotoNova) {
-    if (!conectado) { aviso('Conecte ao GitHub para enviar fotos.', 'erro'); $('conexao').open = true; return; }
-    const btn = $('salvar'); btn.disabled = true; btn.textContent = 'Enviando foto…';
-    try {
-      const caminho = `imagens/${slug(nome)}-${Date.now().toString(36)}.jpg`;
-      await gh(caminho, {method: 'PUT', body: {message: 'Adiciona foto: ' + nome, content: fotoNova.split(',')[1], branch: cfg.branch}});
-      previewLocal[caminho] = fotoNova;
-      if (imagem) remover.push(imagem);
-      imagem = caminho;
-    } catch (err) {
-      aviso(err.message, 'erro'); return;
-    } finally {
-      btn.disabled = false; btn.textContent = 'Salvar produto';
+  const btn = $('salvar'); btn.disabled = true;
+  try {
+    let n = 0;
+    for (const f of fotosForm) {
+      if (!f.data) continue;
+      btn.textContent = `Enviando foto ${++n} de ${novas.length}…`;
+      f.path = await subirImagem(f.data, nome);
+      delete f.data;
     }
+  } catch (err) {
+    aviso(err.message, 'erro'); renderGaleria(); return;
+  } finally {
+    btn.disabled = false; btn.textContent = 'Salvar produto';
   }
+  const imagens = fotosForm.map(f => f.path);
+  if (editando) remover.push(...editando.imagens.filter(c => !imagens.includes(c)));
 
+  const categoria = $('f-cat').value.startsWith('__') ? '' : $('f-cat').value;
+  const subcategoria = $('f-sub').value.startsWith('__') ? '' : $('f-sub').value;
   const p = {
-    id: editando?.id || novoId(), nome,
-    categoria: form.categoria.value.trim(), preco,
-    descricao: form.descricao.value.trim(), imagem,
+    id: editando?.id || novoId(), nome, categoria, subcategoria,
+    unidade: unidadeForm, valor, descricao: form.descricao.value.trim(), imagens,
     disponivel: form.disponivel.checked, destaque: form.destaque.checked
   };
   const i = editando ? dados.produtos.findIndex(x => x.id === editando.id) : -1;
   if (i >= 0) dados.produtos[i] = p; else dados.produtos.unshift(p);
-  $('dlg').close(); marcarSujo(); renderLista();
+  abertos.add(categoria || '_'); gravar('catalogo-admin-abertos', [...abertos]);
+  $('dlg').close(); marcarSujo(); renderLista(); renderCategorias();
   aviso(editando ? 'Produto atualizado. Lembre de publicar.' : 'Produto adicionado. Lembre de publicar.');
 });
 
-// ---------- botões gerais ----------
+// ---------- conexão e backup ----------
+function estadoConexao() {
+  $('estado').textContent = conectado ? 'conectado' : 'desconectado';
+  $('estado').classList.toggle('ok', conectado);
+  $('bolinha').classList.toggle('ok', conectado);
+  const u = urlCatalogo();
+  $('linkcat').hidden = !u; $('url-cat').textContent = u; $('abrir-cat').href = u;
+}
+function renderTudo() { renderLoja(); renderCategorias(); renderLista(); estadoConexao(); }
+
 $('conectar').onclick = conectar;
 $('publicar').onclick = publicar;
 $('publicar-topo').onclick = publicar;
@@ -481,9 +793,8 @@ $('copiar').onclick = async () => {
   catch (e) { aviso('Não deu para copiar automaticamente. Selecione o link e copie.', 'erro'); }
 };
 $('baixar').onclick = () => {
-  const blob = new Blob([JSON.stringify(dados, null, 2)], {type: 'application/json'});
   const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(dados, null, 2)], {type: 'application/json'}));
   a.download = `catalogo-backup-${new Date().toISOString().slice(0, 10)}.json`;
   a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 };
@@ -500,7 +811,6 @@ $('importar').addEventListener('change', async e => {
 
 // ---------- início ----------
 (async function iniciar() {
-  // Se o painel estiver no GitHub Pages, já preenche usuário e repositório.
   const h = location.hostname;
   if (!cfg.owner && h.endsWith('.github.io')) {
     cfg.owner = h.split('.')[0];
@@ -509,12 +819,10 @@ $('importar').addEventListener('change', async e => {
   }
   $('owner').value = cfg.owner; $('repo').value = cfg.repo;
   $('branch').value = cfg.branch || 'main'; $('token').value = cfg.token;
+  irAba(ler('catalogo-admin-aba', 'produtos'));
 
-  if (cfg.owner && cfg.repo && cfg.token) {
-    if (await conectar()) return;
-  }
-  $('conexao').open = true;
-  // Sem conexão: mostra o catálogo publicado só para visualização.
+  if (cfg.owner && cfg.repo && cfg.token && await conectar()) return;
+  irAba('conexao');
   try {
     const r = await fetch(CAMINHO + '?v=' + Date.now(), {cache: 'no-store'});
     if (r.ok) dados = normalizar(await r.json());

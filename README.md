@@ -21,8 +21,10 @@ Os produtos ficam em `data/produtos.json` e as fotos em `imagens/`, dentro do pr
 
 ## Uso no dia a dia
 
-- Cadastre/edite produtos no painel e clique em **Publicar no site**. O catálogo dos clientes atualiza em cerca de 1 minuto.
-- Preço vazio aparece como "Preço sob consulta".
+- O painel tem 4 abas: **Produtos** (lista agrupada por categoria), **Categorias** (crie categorias e subcategorias à vontade), **Loja** (logo e dados) e **Conexão** (token e backup).
+- Cada produto pode ter até 10 fotos (viram carrossel no catálogo) e valor em **R$** ou em **GB**.
+- Depois de mexer, clique em **Publicar no site**. O catálogo dos clientes atualiza em cerca de 1 minuto.
+- Valor em R$ vazio aparece como "Preço sob consulta". Itens em GB mostram a soma de GB do que o cliente escolheu.
 - Desligar a chave de um produto deixa ele como **Esgotado** (aparece, mas não dá para selecionar).
 - As fotos são reduzidas automaticamente (máx. 1000 px) antes de subir.
 - Mande para os clientes só o link do catálogo (sem `admin.html`).
