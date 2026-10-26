@@ -25,7 +25,7 @@ Os produtos ficam em `data/produtos.json` e as fotos em `imagens/`, dentro do pr
 - Clique na foto, no nome ou no ✎ de um produto para editar.
 - As **opções** no fim da edição (ex.: 90 dias de garantia, Em oferta, Último disponível) aparecem listadas embaixo do produto. Dá para renomear, apagar e criar novas.
 - Na aba **Loja**, escolha 📱 Celular ou 🖥 Computador na pré-visualização (⛶ amplia). A logo, o nome, a frase e o Instagram aparecem em caixas tracejadas: arraste para mover e puxe o quadradinho do canto para mudar o tamanho — cada aparelho guarda as suas posições. Clique em qualquer texto da pré-visualização para mudar fonte, tamanho, cor e estilo só dele.
-- Na aba **Categorias**, a setinha ▾ recolhe uma categoria e suas subcategorias, e o 🔗 faz uma categoria usar as mesmas subcategorias de outra (os produtos continuam separados).
+- Na aba **Categorias**, a setinha ▾ recolhe uma categoria e suas subcategorias, e o 🔗 adiciona caminhos de outras categorias (quantos quiser): "usar as subcategorias de" ou "incluir inteira". Os itens são os mesmos nos dois caminhos — cadastrar por qualquer um deles dá no mesmo.
 - Na edição do produto, em **Itens para o cliente escolher junto**, escolha o caminho até uma categoria (ex.: Jogos › PS4 › Mídia física); na janela do produto o cliente vê só o nome final com os itens para adicionar.
 - No catálogo, ao tocar numa categoria as subcategorias abrem numa lista compacta logo abaixo dela; o caminho escolhido aparece na linha com setas.
 - No catálogo, o cliente toca no produto para ver fotos grandes, descrição completa e opções.

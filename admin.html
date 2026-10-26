@@ -98,7 +98,12 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
 .no.fechado>.filhas{display:none}
 .qtd-sub{color:var(--azul2);font-size:12px;font-weight:700;white-space:nowrap;padding:0 4px}
 .no:not(.fechado)>.no-linha .qtd-sub{display:none}
-.no-usa{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;margin:5px 0 0 34px;font-size:13px;color:var(--mut)}
+.usa-lista{margin:5px 0 0 34px;display:flex;flex-direction:column;gap:5px}
+.no-usa{display:grid;grid-template-columns:auto auto minmax(0,1fr) auto;gap:4px 8px;align-items:center;font-size:13px;color:var(--mut);border:1px dashed var(--line);border-radius:9px;padding:5px 6px 5px 10px}
+.no-usa select{min-width:0;width:100%}
+.no-usa .usa-prev{grid-column:2/4;font-size:12px}
+.no-usa .ib{width:28px;height:28px}
+@media(max-width:560px){.usa-lista{margin-left:8px}.no-usa{grid-template-columns:auto minmax(0,1fr) auto}.no-usa [data-usa-id]{grid-column:2/3}.no-usa .usa-prev{grid-column:2/3}}
 .no-usa select{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 8px;max-width:100%}
 .no-usa .usa-prev{color:var(--azul2);font-weight:600}
 .extra-linha{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:10px;padding:7px 8px 7px 12px;margin-bottom:6px;background:var(--bg)}
@@ -239,7 +244,7 @@ dialog form{padding:18px}
     <div class="bloco">
       <div class="topo-lista"><h2>Categorias</h2>
         <div><button class="btn link" id="cat-recolher">Recolher tudo</button><button class="btn link" id="cat-expandir">Expandir tudo</button></div></div>
-      <p class="dica">Clique na setinha <b>▾</b> para recolher uma categoria. Use <b>＋</b> para criar uma subcategoria dentro de qualquer categoria, quantos níveis quiser. A ordem aqui é a ordem do catálogo. Clique no nome para renomear.</p>
+      <p class="dica">Clique na setinha <b>▾</b> para recolher uma categoria. Use <b>🔗</b> para reaproveitar outras categorias (quantas quiser): os itens aparecem nos dois caminhos. Use <b>＋</b> para criar uma subcategoria dentro de qualquer categoria, quantos níveis quiser. A ordem aqui é a ordem do catálogo. Clique no nome para renomear.</p>
       <form class="add-linha" id="form-cat">
         <input class="inp" id="nova-cat" placeholder="Nova categoria principal (ex.: Jogos)">
         <button class="btn">Adicionar</button>
@@ -451,7 +456,7 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=7"></script>
+<script src="comum.js?v=8"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -568,13 +573,16 @@ function caminhoExp(id) {
 }
 // depois de mexer nas categorias: produtos e listas que apontavam para algo que sumiu sobem para o nível que ainda existe
 function repararCategorias() {
-  const ids = new Set(nosExp().map(x => x.no.id));
-  const subir = c => { while (c && !ids.has(c)) c = c.includes(SEP_ID) ? c.slice(0, c.lastIndexOf(SEP_ID)) : ''; return c; };
-  dados.produtos.forEach(p => { p.categoria = subir(p.categoria); p.extras = (p.extras || []).filter(x => ids.has(x)); });
-  todosNos().forEach(x => { if (x.no.usa && !acharNo(x.no.usa)) x.no.usa = ''; });
+  const reais = new Set(todosNos().map(x => x.no.id));
+  todosNos().forEach(x => { x.no.usa = (x.no.usa || []).filter(u => !u.id || reais.has(u.id)); });
+  const exp = new Set(nosExp().map(x => x.no.id));
+  dados.produtos.forEach(p => {
+    if (!reais.has(p.categoria)) p.categoria = '';
+    p.extras = (p.extras || []).filter(x => exp.has(x));
+  });
 }
 const irmaos = pai => pai ? pai.filhas : dados.categorias;
-function contarArvore(no) { const e = acharNoExp(no.id); const ids = new Set(idsDe(e ? e.no : no)); return dados.produtos.filter(p => ids.has(p.categoria)).length; }
+function contarArvore(no) { const e = acharNoExp(no.id); const ids = new Set(e ? origensDe(e.no) : idsDe(no)); return dados.produtos.filter(p => ids.has(p.categoria)).length; }
 
 // ---------- carregar / publicar ----------
 async function conectar() {
@@ -868,16 +876,24 @@ $('logo-rem').onclick = () => { if (dados.loja.logo) remover.push(dados.loja.log
 // ---------- aba Categorias (árvore) ----------
 const fechadosCat = new Set(ler('catalogo-admin-cat-fechadas', []));
 const salvarFechados = () => gravar('catalogo-admin-cat-fechadas', [...fechadosCat]);
-const linkAberto = new Set();
+// caminhos reaproveitados: uma categoria pode puxar quantas outras quiser (mostram os mesmos itens das originais)
 function htmlUsa(no) {
-  if (!no.usa && !linkAberto.has(no.id)) return '';
+  if (!no.usa || !no.usa.length) return '';
   const proibidos = new Set(idsDe(no));
-  const opcoes = todosNos().filter(x => !proibidos.has(x.no.id) && x.no.filhas.length)
-    .map(x => `<option value="${esc(x.no.id)}"${x.no.id === no.usa ? ' selected' : ''}>${esc(caminhoExp(x.no.id))}</option>`).join('');
-  const alvo = no.usa ? acharNo(no.usa) : null;
-  return `<div class="no-usa">↪ Usar também as subcategorias de
-    <select data-usa><option value="">— nenhuma —</option>${opcoes}</select>
-    ${alvo ? `<span class="usa-prev">(${alvo.no.filhas.map(f => esc(f.nome)).join(', ')})</span>` : ''}</div>`;
+  const opcoes = sel => todosNos().filter(x => !proibidos.has(x.no.id))
+    .map(x => `<option value="${esc(x.no.id)}"${x.no.id === sel ? ' selected' : ''}>${esc(caminhoExp(x.no.id))}</option>`).join('');
+  return `<div class="usa-lista">${no.usa.map((u, i) => {
+    const alvo = u.id ? acharNo(u.id) : null;
+    const prev = alvo ? (u.modo === 'inteira' ? alvo.no.nome : alvo.no.filhas.map(f => f.nome).join(', ')) : '';
+    return `<div class="no-usa" data-i="${i}"><span>↪</span>
+      <select data-usa-modo aria-label="Como reaproveitar">
+        <option value="filhas"${u.modo !== 'inteira' ? ' selected' : ''}>usar as subcategorias de</option>
+        <option value="inteira"${u.modo === 'inteira' ? ' selected' : ''}>incluir inteira a categoria</option>
+      </select>
+      <select data-usa-id aria-label="Categoria de origem"><option value="">— escolha o caminho —</option>${opcoes(u.id)}</select>
+      <button class="ib del" data-c="rm-usa" title="Remover este caminho">✕</button>
+      ${prev ? `<span class="usa-prev">→ ${esc(prev)}</span>` : ''}</div>`;
+  }).join('')}</div>`;
 }
 function contarSubs(no) { return no.filhas.reduce((n, f) => n + 1 + contarSubs(f), 0); }
 function htmlNo(no) {
@@ -889,7 +905,7 @@ function htmlNo(no) {
       ${nSub ? `<span class="qtd-sub">+${nSub} sub</span>` : ''}
       <small>${contarArvore(no)} itens</small>
       <button class="ib" data-c="filha" title="Criar subcategoria dentro desta">＋</button>
-      <button class="ib" data-c="link" title="Usar as subcategorias de outra categoria">🔗</button>
+      <button class="ib" data-c="link" title="Adicionar um caminho de outra categoria (reaproveitar)">🔗</button>
       <button class="ib" data-c="sobe" title="Subir">↑</button>
       <button class="ib" data-c="desce" title="Descer">↓</button>
       <button class="ib del" data-c="apagar" title="Apagar">✕</button>
@@ -923,9 +939,12 @@ $('arvore').addEventListener('input', e => {
   if (x) { x.no.nome = e.target.value; marcarSujo(); }
 });
 $('arvore').addEventListener('change', e => {
-  if (e.target.matches('[data-usa]')) {
-    const x = acharNo(e.target.closest('.no').dataset.no);
-    if (x) { x.no.usa = e.target.value; if (!x.no.usa) linkAberto.delete(x.no.id); repararCategorias(); marcarSujo(); renderCategorias(); }
+  if (e.target.matches('[data-usa-id], [data-usa-modo]')) {
+    const x = acharNo(e.target.closest('.no').dataset.no), i = +e.target.closest('.no-usa').dataset.i;
+    if (x && x.no.usa[i]) {
+      if (e.target.matches('[data-usa-id]')) x.no.usa[i].id = e.target.value; else x.no.usa[i].modo = e.target.value;
+      repararCategorias(); marcarSujo(); renderCategorias();
+    }
   }
   renderLista();
 });
@@ -939,9 +958,14 @@ $('arvore').addEventListener('click', e => {
     el.classList.contains('fechado') ? fechadosCat.add(x.no.id) : fechadosCat.delete(x.no.id);
     salvarFechados(); return;
   }
-  if (a === 'link') {
-    linkAberto.has(x.no.id) && !x.no.usa ? linkAberto.delete(x.no.id) : linkAberto.add(x.no.id);
+  if (a === 'link') {               // novo caminho (fica vazio até escolher a categoria de origem)
+    x.no.usa = x.no.usa || [];
+    if (!x.no.usa.some(u => !u.id)) x.no.usa.push({id: '', modo: 'filhas'});
     renderCategorias(); return;
+  }
+  if (a === 'rm-usa') {
+    x.no.usa.splice(+b.closest('.no-usa').dataset.i, 1);
+    repararCategorias(); marcarSujo(); renderCategorias(); renderLista(); return;
   }
   if (a === 'filha') {
     fechadosCat.delete(x.no.id); salvarFechados();
@@ -957,7 +981,7 @@ $('arvore').addEventListener('click', e => {
     const n = contarArvore(x.no), sub = x.no.filhas.length;
     const destino = x.pai ? `"${x.pai.nome}"` : '"Sem categoria"';
     if (!confirm(`Apagar "${x.no.nome}"${sub ? ' e todas as subcategorias dentro dela' : ''}?` + (n ? `\n${n} produto(s) vão para ${destino}.` : ''))) return;
-    const e = acharNoExp(x.no.id), ids = new Set(idsDe(e ? e.no : x.no));
+    const ids = new Set(idsDe(x.no));
     dados.produtos.forEach(p => { if (ids.has(p.categoria)) p.categoria = x.pai ? x.pai.id : ''; });
     lista.splice(i, 1);
     repararCategorias();
@@ -996,8 +1020,8 @@ function renderLista() {
   if (!ps.length) { $('lista').innerHTML = '<p class="vazio">Nenhum produto ainda. Clique em “+ Novo produto”.</p>'; return; }
   const vis = ps.filter(p => !termo || norm(p.nome + ' ' + p.descricao).includes(termo));
   if (!vis.length) { $('lista').innerHTML = '<p class="vazio">Nada encontrado.</p>'; return; }
-  const exp = arvoreExp(), existentes = new Set(percorrer(exp).map(x => x.no.id));
-  let html = exp.map(c => htmlGrupo(c, vis, termo)).join('');
+  const existentes = new Set(todosNos().map(x => x.no.id));     // aqui cada produto aparece uma vez, no lugar real
+  let html = dados.categorias.map(c => htmlGrupo(c, vis, termo)).join('');
   const soltos = vis.filter(p => !existentes.has(p.categoria));
   if (soltos.length) html += `<details class="grupo" data-g="_"${termo || abertos.has('_') ? ' open' : ''}>
     <summary><span class="nome-g">Sem categoria</span><span class="pill">${soltos.length}</span></summary>
@@ -1067,8 +1091,10 @@ $('fotos-arq').addEventListener('change', async e => {
 const opcoesArvore = (excluir = []) => nosExp().filter(x => !excluir.includes(x.no.id)).map(x =>
   `<option value="${esc(x.no.id)}">${'    '.repeat(x.nivel)}${x.nivel ? '└ ' : ''}${esc(x.no.nome || 'Sem nome')}</option>`).join('');
 function preencherCats(id) {
-  catForm = id && acharNoExp(id) ? id : '';
-  const atual = acharNoExp(catForm), real = atual && !atual.no.virtual ? acharNo(catForm) : null;
+  // um caminho reaproveitado aponta para a categoria real
+  const esc0 = id && acharNoExp(id);
+  catForm = esc0 ? esc0.no.origens[0] : '';
+  const real = catForm ? acharNo(catForm) : null;
   $('f-cat').innerHTML = '<option value="">— Sem categoria —</option>' + opcoesArvore() +
     '<option value="__raiz">＋ Nova categoria principal…</option>' +
     (real ? `<option value="__filha">＋ Nova subcategoria dentro de “${esc(real.no.nome)}”…</option>` : '');

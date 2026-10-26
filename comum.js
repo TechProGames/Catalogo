@@ -126,24 +126,40 @@ function mesclarTema(t) {
 }
 
 // ---------- árvore de categorias (sem limite de níveis) ----------
+// usa: lista de caminhos reaproveitados, cada um {id, modo}
+//   modo 'filhas'  = as subcategorias da outra categoria entram aqui
+//   modo 'inteira' = a outra categoria entra inteira, como subcategoria
+function normUsa(u) {
+  const l = Array.isArray(u) ? u : (u ? [u] : []);
+  return l.map(x => typeof x === 'string' ? {id: x, modo: 'filhas'} : (x && typeof x === 'object' ? {id: String(x.id || ''), modo: x.modo === 'inteira' ? 'inteira' : 'filhas'} : null))
+    .filter(x => x && x.id);
+}
 function arvore(l) {
   return (Array.isArray(l) ? l : []).filter(c => c && typeof c === 'object').map(c => ({
-    id: String(c.id || novoId()), nome: String(c.nome ?? ''), filhas: arvore(c.filhas || c.subs),
-    usa: c.usa ? String(c.usa) : ''            // reaproveita as subcategorias de outra categoria
+    id: String(c.id || novoId()), nome: String(c.nome ?? ''), filhas: arvore(c.filhas || c.subs), usa: normUsa(c.usa)
   }));
 }
-// Monta a árvore "como o cliente vê": uma categoria que usa as subcategorias de outra ganha cópias vivas delas.
-// As cópias têm id composto (categoria>subcategoria), então os produtos de cada lado continuam separados.
+// Monta a árvore "como o cliente vê". Caminhos reaproveitados viram atalhos: mostram OS MESMOS itens da categoria original.
+// Cada nó expandido tem "origens" (ids reais cujos produtos ele mostra). Nós com o mesmo nome no mesmo nível são juntados.
 const SEP_ID = '>';
 function expandirArvore(lista) {
   const porId = new Map(percorrer(lista).map(x => [x.no.id, x.no]));
+  function juntar(filhas, c) {
+    const x = filhas.find(f => norm(f.nome) === norm(c.nome));
+    if (!x) { filhas.push(c); return; }
+    for (const o of c.origens) if (!x.origens.includes(o)) x.origens.push(o);
+    for (const g of c.filhas) juntar(x.filhas, g);
+  }
   function exp(no, id, virtual, pilha) {
-    const filhas = no.filhas.map(f => exp(f, virtual ? id + SEP_ID + f.id : f.id, virtual, [...pilha, f.id]));
-    if (no.usa && porId.has(no.usa) && !pilha.includes(no.usa) && pilha.length < 12) {
-      for (const f of porId.get(no.usa).filhas)
-        if (!filhas.some(x => norm(x.nome) === norm(f.nome))) filhas.push(exp(f, id + SEP_ID + f.id, true, [...pilha, no.usa, f.id]));
+    const filhas = [];
+    for (const f of no.filhas) juntar(filhas, exp(f, virtual ? id + SEP_ID + f.id : f.id, virtual, [...pilha, f.id]));
+    for (const u of no.usa || []) {
+      const alvo = porId.get(u.id);
+      if (!alvo || pilha.includes(u.id) || pilha.length > 14) continue;
+      const fontes = u.modo === 'inteira' ? [alvo] : alvo.filhas;
+      for (const f of fontes) juntar(filhas, exp(f, id + SEP_ID + f.id, true, [...pilha, u.id, f.id]));
     }
-    return {id, nome: no.nome, filhas, usa: no.usa || '', virtual, origem: no.id};
+    return {id, nome: no.nome, filhas, usa: no.usa || [], virtual, origens: [no.id]};
   }
   return lista.map(c => exp(c, c.id, false, [c.id]));
 }
@@ -152,6 +168,7 @@ function percorrer(lista, pai = null, nivel = 0, out = []) {
   return out;
 }
 const idsDe = no => [no.id, ...no.filhas.flatMap(idsDe)];
+const origensDe = no => [...(no.origens || [no.id]), ...no.filhas.flatMap(origensDe)];
 
 // Lê o produtos.json em qualquer versão (antiga ou nova) e devolve no formato atual.
 function normalizarCatalogo(d) {
@@ -162,18 +179,25 @@ function normalizarCatalogo(d) {
   loja.tema = mesclarTema(li.tema);
 
   const categorias = arvore(d.categorias);
-  let idsValidos = new Set(percorrer(expandirArvore(categorias)).map(x => x.no.id));
-  const existe = id => !!id && idsValidos.has(id);
+  const reais = new Set(percorrer(categorias).map(x => x.no.id));
+  const nosExp = new Set(percorrer(expandirArvore(categorias)).map(x => x.no.id));
+  // o produto fica sempre na categoria real (um caminho reaproveitado aponta para ela)
+  const real = v => {
+    v = String(v || '');
+    if (reais.has(v)) return v;
+    if (v.includes(SEP_ID)) { const ult = v.slice(v.lastIndexOf(SEP_ID) + 1); if (reais.has(ult)) return ult; }
+    return '';
+  };
   const acharCat = v => {
     if (!v) return '';
-    v = String(v);
-    if (existe(v)) return v;
-    // subcategoria reaproveitada que deixou de existir: sobe para o nível mais próximo que ainda existe
-    if (v.includes(SEP_ID)) { let x = v; while (x.includes(SEP_ID)) { x = x.slice(0, x.lastIndexOf(SEP_ID)); if (existe(x)) return x; } }
+    const r = real(v); if (r) return r;
+    if (String(v).includes(SEP_ID)) return '';
     let c = categorias.find(x => norm(x.nome) === norm(v));
-    if (!c) { c = {id: novoId(), nome: String(v), filhas: [], usa: ''}; categorias.push(c); idsValidos.add(c.id); }
+    if (!c) { c = {id: novoId(), nome: String(v), filhas: [], usa: []}; categorias.push(c); reais.add(c.id); nosExp.add(c.id); }
     return c.id;
   };
+  // listas de "escolher junto" podem apontar para um caminho reaproveitado
+  const extraValido = v => { v = String(v || ''); if (nosExp.has(v)) return v; return real(v); };
 
   const etiquetas = Array.isArray(d.etiquetas)
     ? d.etiquetas.filter(e => e && typeof e === 'object').map(e => ({id: String(e.id || novoId()), nome: String(e.nome ?? '')}))
@@ -184,13 +208,13 @@ function normalizarCatalogo(d) {
     const etq = Array.isArray(p.etiquetas) ? p.etiquetas.map(String) : (p.destaque ? ['destaque'] : []);
     return {
       id: String(p.id || novoId()), nome: String(p.nome || ''), descricao: String(p.descricao || ''),
-      categoria: existe(String(p.subcategoria || '')) ? String(p.subcategoria) : acharCat(p.categoria),
+      categoria: real(p.subcategoria) || acharCat(p.categoria),
       unidade: p.unidade === 'GB' ? 'GB' : 'R$',
       valor: typeof v === 'number' && isFinite(v) ? v : null,
       imagens: Array.isArray(p.imagens) ? p.imagens.filter(Boolean) : (p.imagem ? [p.imagem] : []),
       disponivel: p.disponivel !== false,
       etiquetas: etiquetas.filter(e => etq.includes(e.id)).map(e => e.id),
-      extras: (Array.isArray(p.extras) ? p.extras.map(String) : []).filter((x, i, a) => existe(x) && a.indexOf(x) === i)
+      extras: (Array.isArray(p.extras) ? p.extras : []).map(extraValido).filter((x, i, a) => x && a.indexOf(x) === i)
     };
   });
   return {loja, categorias, etiquetas, produtos};

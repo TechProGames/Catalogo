@@ -245,7 +245,7 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=7"></script>
+<script src="comum.js?v=8"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -361,7 +361,7 @@ function cabecalho() {
 
 // ---------- navegação: categorias numa linha, subcategorias numa segunda linha com o caminho ----------
 let listaAberta = false;
-const contarNo = no => { const ids = new Set(idsDe(no)); return produtos.filter(p => ids.has(p.categoria)).length; };
+const contarNo = no => { const ids = new Set(origensDe(no)); return produtos.filter(p => ids.has(p.categoria)).length; };
 const itens = n => n === 1 ? '1 item' : n + ' itens';
 function niveis() {
   if (!categorias.length) { $('niveis').innerHTML = ''; $('lista-sub').hidden = true; return; }
@@ -480,14 +480,14 @@ function ligarSlides(raiz) {
 // Mostra uma categoria: primeiro os itens dela, depois cada subcategoria com o caminho como subtítulo.
 function blocoNo(no, lista, rotulo) {
   let html = '';
-  const diretos = lista.filter(p => p.categoria === no.id);
+  const diretos = lista.filter(p => no.origens.includes(p.categoria));
   if (diretos.length) html += (rotulo ? `<h3 class="sub-tit">${esc(rotulo)}</h3>` : '') + `<div class="grade">${diretos.map(card).join('')}</div>`;
   for (const f of no.filhas) html += blocoNo(f, lista, rotulo ? rotulo + ' › ' + f.nome : f.nome);
   return html;
 }
 function render() {
   const m = mapa(), atual = caminhoSel.length ? m.get(caminhoSel[caminhoSel.length - 1]).no : null;
-  const permitidos = atual ? new Set(idsDe(atual)) : null;
+  const permitidos = atual ? new Set(origensDe(atual)) : null;
   const lista = produtos.filter(p => (!permitidos || permitidos.has(p.categoria)) &&
     (!termo || norm(p.nome + ' ' + p.descricao).includes(termo)));
   if (!lista.length) {
@@ -498,7 +498,7 @@ function render() {
   if (atual) html = blocoNo(atual, lista, '');
   else {
     for (const c of categorias) {
-      const ids = new Set(idsDe(c));
+      const ids = new Set(origensDe(c));
       if (lista.some(p => ids.has(p.categoria))) html += `<section><h2 class="sec-tit">${esc(c.nome)}</h2>${blocoNo(c, lista, '')}</section>`;
     }
     const outros = lista.filter(p => !m.has(p.categoria));
@@ -521,7 +521,7 @@ function blocoExtras(p) {
   const m = mapa();
   return (p.extras || []).map(id => {
     const x = m.get(id); if (!x) return '';
-    const ids = new Set(idsDe(x.no));
+    const ids = new Set(origensDe(x.no));
     const its = produtos.filter(q => q.id !== p.id && ids.has(q.categoria));
     if (!its.length) return '';
     return `<section class="extra">
