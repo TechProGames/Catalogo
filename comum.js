@@ -77,6 +77,7 @@ function normPos(p, k = 'logo', hPadrao = 140) {
     al: ['esquerda', 'centro', 'direita'].includes(o.al) ? o.al : 'esquerda'
   };
   if (k === 'logo') r.h = Math.min(800, Math.max(20, Math.round(+o.h || hPadrao)));
+  else r.hc = Math.max(0, Math.round(+o.hc || 0));      // altura da caixa do texto (0 = automática)
   return r;
 }
 function normPosicoes(ps, hPadrao) {
@@ -127,8 +128,24 @@ function mesclarTema(t) {
 // ---------- árvore de categorias (sem limite de níveis) ----------
 function arvore(l) {
   return (Array.isArray(l) ? l : []).filter(c => c && typeof c === 'object').map(c => ({
-    id: String(c.id || novoId()), nome: String(c.nome ?? ''), filhas: arvore(c.filhas || c.subs)
+    id: String(c.id || novoId()), nome: String(c.nome ?? ''), filhas: arvore(c.filhas || c.subs),
+    usa: c.usa ? String(c.usa) : ''            // reaproveita as subcategorias de outra categoria
   }));
+}
+// Monta a árvore "como o cliente vê": uma categoria que usa as subcategorias de outra ganha cópias vivas delas.
+// As cópias têm id composto (categoria>subcategoria), então os produtos de cada lado continuam separados.
+const SEP_ID = '>';
+function expandirArvore(lista) {
+  const porId = new Map(percorrer(lista).map(x => [x.no.id, x.no]));
+  function exp(no, id, virtual, pilha) {
+    const filhas = no.filhas.map(f => exp(f, virtual ? id + SEP_ID + f.id : f.id, virtual, [...pilha, f.id]));
+    if (no.usa && porId.has(no.usa) && !pilha.includes(no.usa) && pilha.length < 12) {
+      for (const f of porId.get(no.usa).filhas)
+        if (!filhas.some(x => norm(x.nome) === norm(f.nome))) filhas.push(exp(f, id + SEP_ID + f.id, true, [...pilha, no.usa, f.id]));
+    }
+    return {id, nome: no.nome, filhas, usa: no.usa || '', virtual, origem: no.id};
+  }
+  return lista.map(c => exp(c, c.id, false, [c.id]));
 }
 function percorrer(lista, pai = null, nivel = 0, out = []) {
   for (const no of lista) { out.push({no, pai, nivel}); percorrer(no.filhas, no, nivel + 1, out); }
@@ -145,12 +162,16 @@ function normalizarCatalogo(d) {
   loja.tema = mesclarTema(li.tema);
 
   const categorias = arvore(d.categorias);
-  const existe = id => !!id && percorrer(categorias).some(n => n.no.id === id);
+  let idsValidos = new Set(percorrer(expandirArvore(categorias)).map(x => x.no.id));
+  const existe = id => !!id && idsValidos.has(id);
   const acharCat = v => {
     if (!v) return '';
-    if (existe(String(v))) return String(v);
+    v = String(v);
+    if (existe(v)) return v;
+    // subcategoria reaproveitada que deixou de existir: sobe para o nível mais próximo que ainda existe
+    if (v.includes(SEP_ID)) { let x = v; while (x.includes(SEP_ID)) { x = x.slice(0, x.lastIndexOf(SEP_ID)); if (existe(x)) return x; } }
     let c = categorias.find(x => norm(x.nome) === norm(v));
-    if (!c) { c = {id: novoId(), nome: String(v), filhas: []}; categorias.push(c); }
+    if (!c) { c = {id: novoId(), nome: String(v), filhas: [], usa: ''}; categorias.push(c); idsValidos.add(c.id); }
     return c.id;
   };
 
@@ -168,7 +189,8 @@ function normalizarCatalogo(d) {
       valor: typeof v === 'number' && isFinite(v) ? v : null,
       imagens: Array.isArray(p.imagens) ? p.imagens.filter(Boolean) : (p.imagem ? [p.imagem] : []),
       disponivel: p.disponivel !== false,
-      etiquetas: etiquetas.filter(e => etq.includes(e.id)).map(e => e.id)
+      etiquetas: etiquetas.filter(e => etq.includes(e.id)).map(e => e.id),
+      extras: (Array.isArray(p.extras) ? p.extras.map(String) : []).filter((x, i, a) => existe(x) && a.indexOf(x) === i)
     };
   });
   return {loja, categorias, etiquetas, produtos};

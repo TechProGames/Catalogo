@@ -98,6 +98,14 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
 .no.fechado>.filhas{display:none}
 .qtd-sub{color:var(--azul2);font-size:12px;font-weight:700;white-space:nowrap;padding:0 4px}
 .no:not(.fechado)>.no-linha .qtd-sub{display:none}
+.no-usa{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;margin:5px 0 0 34px;font-size:13px;color:var(--mut)}
+.no-usa select{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 8px;max-width:100%}
+.no-usa .usa-prev{color:var(--azul2);font-weight:600}
+.extra-linha{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:10px;padding:7px 8px 7px 12px;margin-bottom:6px;background:var(--bg)}
+.extra-linha div{flex:1;min-width:0}
+.extra-linha b{display:block}
+.extra-linha small{color:var(--mut);font-size:12px}
+#f-extra{width:100%;background:var(--bg);border:1px dashed var(--line);border-radius:10px;padding:9px 10px;color:var(--azul2);font-weight:600}
 .filhas{margin-left:14px;padding-left:10px;border-left:2px solid var(--line)}
 @media(max-width:560px){.no-linha small{display:none}.no-linha .ib{width:30px;height:30px}.filhas{margin-left:8px;padding-left:6px}}
 /* loja / aparência */
@@ -279,6 +287,7 @@ dialog form{padding:18px}
             <div class="campo"><label for="t-ly">Distância do topo <output id="o-ly"></output></label><input type="range" id="t-ly" min="0" max="800" step="1"></div>
           </div>
           <div class="campo"><label for="t-tam" id="rot-tam">Tamanho <output id="o-tam"></output></label><input type="range" id="t-tam" min="0" max="1100" step="1"></div>
+          <div class="campo" id="pos-altc-campo"><label for="t-altc">Altura da caixa <output id="o-altc"></output></label><input type="range" id="t-altc" min="0" max="600" step="1"></div>
           <div class="campo" id="pos-al-campo"><span class="rot">Alinhar o texto dentro da caixa</span>
             <div class="seg-larga" id="pos-al">
               <button type="button" data-al="esquerda">Esquerda</button><button type="button" data-al="centro">Centro</button><button type="button" data-al="direita">Direita</button>
@@ -427,7 +436,13 @@ dialog form{padding:18px}
           <button type="button" class="btn sec" id="add-etq">+ Adicionar</button>
         </div>
       </div>
-      <p class="dica">As opções marcadas aparecem como selos na foto do produto. Renomear ou apagar uma opção vale para todos os produtos.</p>
+      <p class="dica">As opções marcadas aparecem listadas embaixo do produto. Renomear ou apagar uma opção vale para todos os produtos.</p>
+    </div>
+    <div class="campo">
+      <span class="rot">Itens para o cliente escolher junto (opcional)</span>
+      <div id="extras-lista"></div>
+      <select id="f-extra" aria-label="Adicionar lista de itens"></select>
+      <p class="dica">Escolha o caminho até a categoria final (ex.: Jogos › PS4 › Mídia física). Na janela deste produto, o cliente vê só o nome final, com os itens dela para adicionar junto.</p>
     </div>
     <div class="dlg-pe">
       <button type="button" class="btn sec" id="cancelar">Cancelar</button>
@@ -436,7 +451,7 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=6"></script>
+<script src="comum.js?v=7"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -541,8 +556,25 @@ function lerNumero(txt) {
 const textoValor = p => p.unidade === 'GB' ? (p.valor != null ? num(p.valor) + ' GB' : 'GB não informado') : (p.valor != null ? brl(p.valor) : 'sob consulta');
 const todosNos = () => percorrer(dados.categorias);
 const acharNo = id => todosNos().find(x => x.no.id === id);
+// árvore como o cliente vê (com as subcategorias reaproveitadas)
+const arvoreExp = () => expandirArvore(dados.categorias);
+const nosExp = () => percorrer(arvoreExp());
+const acharNoExp = id => nosExp().find(x => x.no.id === id);
+function caminhoExp(id) {
+  const nos = nosExp(), nomes = [];
+  let x = nos.find(n => n.no.id === id);
+  while (x) { nomes.unshift(x.no.nome || 'Sem nome'); const pai = x.pai; x = pai ? nos.find(n => n.no === pai) : null; }
+  return nomes.join(' › ');
+}
+// depois de mexer nas categorias: produtos e listas que apontavam para algo que sumiu sobem para o nível que ainda existe
+function repararCategorias() {
+  const ids = new Set(nosExp().map(x => x.no.id));
+  const subir = c => { while (c && !ids.has(c)) c = c.includes(SEP_ID) ? c.slice(0, c.lastIndexOf(SEP_ID)) : ''; return c; };
+  dados.produtos.forEach(p => { p.categoria = subir(p.categoria); p.extras = (p.extras || []).filter(x => ids.has(x)); });
+  todosNos().forEach(x => { if (x.no.usa && !acharNo(x.no.usa)) x.no.usa = ''; });
+}
 const irmaos = pai => pai ? pai.filhas : dados.categorias;
-function contarArvore(no) { const ids = new Set(idsDe(no)); return dados.produtos.filter(p => ids.has(p.categoria)).length; }
+function contarArvore(no) { const e = acharNoExp(no.id); const ids = new Set(idsDe(e ? e.no : no)); return dados.produtos.filter(p => ids.has(p.categoria)).length; }
 
 // ---------- carregar / publicar ----------
 async function conectar() {
@@ -719,6 +751,8 @@ function renderLogoPos() {
   $('t-tam').value = logo ? lp.h : lp.w;
   $('o-tam').textContent = logo ? lp.h + ' px' : (lp.w ? lp.w + ' px' : 'automática');
   $('pos-al-campo').hidden = logo || lp.modo !== 'livre';
+  $('pos-altc-campo').hidden = logo;
+  if (!logo) { $('t-altc').value = lp.hc || 0; $('o-altc').textContent = lp.hc ? lp.hc + ' px' : 'automática'; }
   document.querySelectorAll('#pos-al button').forEach(b => b.classList.toggle('on', b.dataset.al === lp.al));
 }
 $('pos-el').addEventListener('click', e => { const b = e.target.closest('[data-el]'); if (b) { posEl = b.dataset.el; renderLogoPos(); } });
@@ -735,6 +769,7 @@ $('logo-modo').addEventListener('click', e => {
   lp.modo = 'livre'; lp.x = Number($('t-lx').value); lp.y = Number($('t-ly').value);
   renderLogoPos(); marcarSujo();
 }));
+$('t-altc').addEventListener('input', () => { posEditada(true).hc = Number($('t-altc').value); renderLogoPos(); marcarSujo(); });
 $('t-tam').addEventListener('input', () => {
   const lp = posEditada(true), v = Number($('t-tam').value);
   if (posEl === 'logo') lp.h = v; else lp.w = v;
@@ -833,6 +868,17 @@ $('logo-rem').onclick = () => { if (dados.loja.logo) remover.push(dados.loja.log
 // ---------- aba Categorias (árvore) ----------
 const fechadosCat = new Set(ler('catalogo-admin-cat-fechadas', []));
 const salvarFechados = () => gravar('catalogo-admin-cat-fechadas', [...fechadosCat]);
+const linkAberto = new Set();
+function htmlUsa(no) {
+  if (!no.usa && !linkAberto.has(no.id)) return '';
+  const proibidos = new Set(idsDe(no));
+  const opcoes = todosNos().filter(x => !proibidos.has(x.no.id) && x.no.filhas.length)
+    .map(x => `<option value="${esc(x.no.id)}"${x.no.id === no.usa ? ' selected' : ''}>${esc(caminhoExp(x.no.id))}</option>`).join('');
+  const alvo = no.usa ? acharNo(no.usa) : null;
+  return `<div class="no-usa">↪ Usar também as subcategorias de
+    <select data-usa><option value="">— nenhuma —</option>${opcoes}</select>
+    ${alvo ? `<span class="usa-prev">(${alvo.no.filhas.map(f => esc(f.nome)).join(', ')})</span>` : ''}</div>`;
+}
 function contarSubs(no) { return no.filhas.reduce((n, f) => n + 1 + contarSubs(f), 0); }
 function htmlNo(no) {
   const nSub = contarSubs(no);
@@ -843,10 +889,12 @@ function htmlNo(no) {
       ${nSub ? `<span class="qtd-sub">+${nSub} sub</span>` : ''}
       <small>${contarArvore(no)} itens</small>
       <button class="ib" data-c="filha" title="Criar subcategoria dentro desta">＋</button>
+      <button class="ib" data-c="link" title="Usar as subcategorias de outra categoria">🔗</button>
       <button class="ib" data-c="sobe" title="Subir">↑</button>
       <button class="ib" data-c="desce" title="Descer">↓</button>
       <button class="ib del" data-c="apagar" title="Apagar">✕</button>
     </div>
+    ${htmlUsa(no)}
     ${no.filhas.length ? `<div class="filhas">${no.filhas.map(htmlNo).join('')}</div>` : ''}
   </div>`;
 }
@@ -874,7 +922,13 @@ $('arvore').addEventListener('input', e => {
   const x = acharNo(e.target.closest('.no').dataset.no);
   if (x) { x.no.nome = e.target.value; marcarSujo(); }
 });
-$('arvore').addEventListener('change', () => renderLista());
+$('arvore').addEventListener('change', e => {
+  if (e.target.matches('[data-usa]')) {
+    const x = acharNo(e.target.closest('.no').dataset.no);
+    if (x) { x.no.usa = e.target.value; if (!x.no.usa) linkAberto.delete(x.no.id); repararCategorias(); marcarSujo(); renderCategorias(); }
+  }
+  renderLista();
+});
 $('arvore').addEventListener('click', e => {
   const b = e.target.closest('[data-c]'); if (!b) return;
   const x = acharNo(b.closest('.no').dataset.no); if (!x) return;
@@ -884,6 +938,10 @@ $('arvore').addEventListener('click', e => {
     el.classList.toggle('fechado');
     el.classList.contains('fechado') ? fechadosCat.add(x.no.id) : fechadosCat.delete(x.no.id);
     salvarFechados(); return;
+  }
+  if (a === 'link') {
+    linkAberto.has(x.no.id) && !x.no.usa ? linkAberto.delete(x.no.id) : linkAberto.add(x.no.id);
+    renderCategorias(); return;
   }
   if (a === 'filha') {
     fechadosCat.delete(x.no.id); salvarFechados();
@@ -899,9 +957,10 @@ $('arvore').addEventListener('click', e => {
     const n = contarArvore(x.no), sub = x.no.filhas.length;
     const destino = x.pai ? `"${x.pai.nome}"` : '"Sem categoria"';
     if (!confirm(`Apagar "${x.no.nome}"${sub ? ' e todas as subcategorias dentro dela' : ''}?` + (n ? `\n${n} produto(s) vão para ${destino}.` : ''))) return;
-    const ids = new Set(idsDe(x.no));
+    const e = acharNoExp(x.no.id), ids = new Set(idsDe(e ? e.no : x.no));
     dados.produtos.forEach(p => { if (ids.has(p.categoria)) p.categoria = x.pai ? x.pai.id : ''; });
     lista.splice(i, 1);
+    repararCategorias();
   } else return;
   marcarSujo(); renderCategorias(); renderLista();
 });
@@ -937,8 +996,8 @@ function renderLista() {
   if (!ps.length) { $('lista').innerHTML = '<p class="vazio">Nenhum produto ainda. Clique em “+ Novo produto”.</p>'; return; }
   const vis = ps.filter(p => !termo || norm(p.nome + ' ' + p.descricao).includes(termo));
   if (!vis.length) { $('lista').innerHTML = '<p class="vazio">Nada encontrado.</p>'; return; }
-  const existentes = new Set(todosNos().map(x => x.no.id));
-  let html = dados.categorias.map(c => htmlGrupo(c, vis, termo)).join('');
+  const exp = arvoreExp(), existentes = new Set(percorrer(exp).map(x => x.no.id));
+  let html = exp.map(c => htmlGrupo(c, vis, termo)).join('');
   const soltos = vis.filter(p => !existentes.has(p.categoria));
   if (soltos.length) html += `<details class="grupo" data-g="_"${termo || abertos.has('_') ? ' open' : ''}>
     <summary><span class="nome-g">Sem categoria</span><span class="pill">${soltos.length}</span></summary>
@@ -1005,15 +1064,29 @@ $('fotos-arq').addEventListener('change', async e => {
 });
 
 // categoria: uma lista só, com a árvore indentada
+const opcoesArvore = (excluir = []) => nosExp().filter(x => !excluir.includes(x.no.id)).map(x =>
+  `<option value="${esc(x.no.id)}">${'    '.repeat(x.nivel)}${x.nivel ? '└ ' : ''}${esc(x.no.nome || 'Sem nome')}</option>`).join('');
 function preencherCats(id) {
-  catForm = id && acharNo(id) ? id : '';
-  const atual = acharNo(catForm);
-  $('f-cat').innerHTML = '<option value="">— Sem categoria —</option>' +
-    todosNos().map(x => `<option value="${esc(x.no.id)}">${'    '.repeat(x.nivel)}${x.nivel ? '└ ' : ''}${esc(x.no.nome || 'Sem nome')}</option>`).join('') +
+  catForm = id && acharNoExp(id) ? id : '';
+  const atual = acharNoExp(catForm), real = atual && !atual.no.virtual ? acharNo(catForm) : null;
+  $('f-cat').innerHTML = '<option value="">— Sem categoria —</option>' + opcoesArvore() +
     '<option value="__raiz">＋ Nova categoria principal…</option>' +
-    (atual ? `<option value="__filha">＋ Nova subcategoria dentro de “${esc(atual.no.nome)}”…</option>` : '');
+    (real ? `<option value="__filha">＋ Nova subcategoria dentro de “${esc(real.no.nome)}”…</option>` : '');
   $('f-cat').value = catForm;
 }
+// listas de "escolher junto"
+let extrasForm = [];
+function renderExtras() {
+  $('extras-lista').innerHTML = extrasForm.map((id, i) => {
+    const x = acharNoExp(id);
+    return `<div class="extra-linha"><div><b>${esc(x ? x.no.nome : '?')}</b><small>${esc(caminhoExp(id))}</small></div>
+      <button type="button" class="ib del" data-rm-extra="${i}" title="Remover esta lista">✕</button></div>`;
+  }).join('');
+  $('f-extra').innerHTML = '<option value="">＋ Adicionar lista de itens (escolha o caminho)…</option>' + opcoesArvore(extrasForm);
+  $('f-extra').value = '';
+}
+$('f-extra').addEventListener('change', () => { const v = $('f-extra').value; if (v && !extrasForm.includes(v)) extrasForm.push(v); renderExtras(); });
+$('extras-lista').addEventListener('click', e => { const b = e.target.closest('[data-rm-extra]'); if (b) { extrasForm.splice(+b.dataset.rmExtra, 1); renderExtras(); } });
 $('f-cat').addEventListener('change', () => {
   const v = $('f-cat').value;
   if (v === '__raiz' || v === '__filha') {
@@ -1081,6 +1154,8 @@ function abrirForm(p) {
   form.disponivel.checked = p ? p.disponivel : true;
   fotosForm = (p?.imagens || []).map(path => ({path}));
   etqForm = new Set(p?.etiquetas || []);
+  extrasForm = [...(p?.extras || [])];
+  renderExtras();
   preencherCats(p?.categoria);
   definirUnidade(p?.unidade || 'R$');
   renderGaleria(); renderEtqs();
@@ -1120,14 +1195,16 @@ form.addEventListener('submit', async e => {
     id: editando?.id || novoId(), nome, categoria: catForm,
     unidade: unidadeForm, valor, descricao: form.descricao.value.trim(), imagens,
     disponivel: form.disponivel.checked,
-    etiquetas: dados.etiquetas.filter(x => etqForm.has(x.id)).map(x => x.id)
+    etiquetas: dados.etiquetas.filter(x => etqForm.has(x.id)).map(x => x.id),
+    extras: extrasForm.filter(id => acharNoExp(id))
   };
   const i = editando ? dados.produtos.findIndex(x => x.id === editando.id) : -1;
   if (i >= 0) dados.produtos[i] = p; else dados.produtos.unshift(p);
   // deixa aberto o caminho até o produto salvo
-  let x = acharNo(catForm);
+  const nosE = nosExp();
+  let x = nosE.find(n => n.no.id === catForm);
   if (!x) abertos.add('_');
-  while (x) { abertos.add(x.no.id); x = x.pai ? acharNo(x.pai.id) : null; }
+  while (x) { abertos.add(x.no.id); const pai = x.pai; x = pai ? nosE.find(n => n.no === pai) : null; }
   gravar('catalogo-admin-abertos', [...abertos]);
   $('dlg').close(); marcarSujo(); renderLista(); renderCategorias();
   aviso(editando ? 'Produto atualizado. Lembre de publicar.' : 'Produto adicionado. Lembre de publicar.');
