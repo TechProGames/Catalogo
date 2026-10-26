@@ -179,14 +179,14 @@
           "logo": {
             "modo": "livre",
             "x": 100,
-            "y": 100,
+            "y": 98,
             "w": 0,
             "al": "esquerda",
             "h": 167
           },
           "marca": {
             "modo": "livre",
-            "x": 100,
+            "x": 88.4,
             "y": 37,
             "w": 328,
             "al": "esquerda",
@@ -194,17 +194,17 @@
           },
           "slogan": {
             "modo": "livre",
-            "x": 5.5,
-            "y": 126,
-            "w": 228,
+            "x": 4.4,
+            "y": 107,
+            "w": 172,
             "al": "esquerda",
-            "hc": 60
+            "hc": 111
           },
           "insta": {
             "modo": "livre",
-            "x": 11,
-            "y": 225,
-            "w": 302,
+            "x": 4.1,
+            "y": 228,
+            "w": 216,
             "al": "esquerda",
             "hc": 30
           }
