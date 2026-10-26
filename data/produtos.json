@@ -4,56 +4,82 @@
     "slogan": "Video games, acessórios e serviços. Escolha o que te interessa e envie pelo WhatsApp.",
     "whatsapp": "22997819949",
     "instagram": "tech_pro_rj",
-    "rodape": "Pagamento: Pix, dinheiro ou cartão em até 12x.\nAceitamos video game inferior ou com defeito como parte do pagamento."
+    "rodape": "Pagamento: Pix, dinheiro ou cartão em até 12x.\nAceitamos video game inferior ou com defeito como parte do pagamento.",
+    "logo": "imagens/logo-mvpoxjuqeap5.png",
+    "ocultarNome": true
   },
+  "categorias": [
+    {
+      "id": "mvpowg5lfyyx",
+      "nome": "Consoles",
+      "subs": []
+    },
+    {
+      "id": "mvpowg5l0tnt",
+      "nome": "Serviços",
+      "subs": []
+    }
+  ],
   "produtos": [
     {
       "id": "ps4slim",
       "nome": "PS4 Slim desbloqueado",
-      "categoria": "Consoles",
-      "preco": 1700,
+      "categoria": "mvpowg5lfyyx",
+      "subcategoria": "",
+      "unidade": "R$",
+      "valor": 1700,
       "descricao": "Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
-      "imagem": "imagens/ps4-slim-desbloqueado-mvpo2urn.jpg",
+      "imagens": [
+        "imagens/ps4-slim-desbloqueado-mvpo2urn.jpg"
+      ],
       "disponivel": true,
       "destaque": true
     },
     {
       "id": "manutencao",
       "nome": "Manutenção preventiva",
-      "categoria": "Serviços",
-      "preco": null,
+      "categoria": "mvpowg5l0tnt",
+      "subcategoria": "",
+      "unidade": "R$",
+      "valor": null,
       "descricao": "Limpeza interna e troca de pasta térmica para consoles atuais e retrô.",
-      "imagem": "",
+      "imagens": [],
       "disponivel": true,
       "destaque": false
     },
     {
       "id": "desbloqueio",
       "nome": "Desbloqueio",
-      "categoria": "Serviços",
-      "preco": null,
+      "categoria": "mvpowg5l0tnt",
+      "subcategoria": "",
+      "unidade": "R$",
+      "valor": null,
       "descricao": "Desbloqueio de video games atuais e retrô.",
-      "imagem": "",
+      "imagens": [],
       "disponivel": true,
       "destaque": false
     },
     {
       "id": "instalacao-jogos",
       "nome": "Instalação de jogos",
-      "categoria": "Serviços",
-      "preco": null,
+      "categoria": "mvpowg5l0tnt",
+      "subcategoria": "",
+      "unidade": "R$",
+      "valor": null,
       "descricao": "Instalamos os jogos que você escolher.",
-      "imagem": "",
+      "imagens": [],
       "disponivel": true,
       "destaque": false
     },
     {
       "id": "reparo",
       "nome": "Reparo",
-      "categoria": "Serviços",
-      "preco": null,
+      "categoria": "mvpowg5l0tnt",
+      "subcategoria": "",
+      "unidade": "R$",
+      "valor": null,
       "descricao": "Diagnóstico e conserto do seu video game.",
-      "imagem": "",
+      "imagens": [],
       "disponivel": true,
       "destaque": false
     }
