@@ -28,7 +28,8 @@
           "cor": "",
           "negrito": false,
           "italico": false,
-          "maiusculas": false
+          "maiusculas": false,
+          "escalaCel": null
         },
         "marca": {
           "fonte": "",
@@ -36,7 +37,8 @@
           "cor": "",
           "negrito": true,
           "italico": true,
-          "maiusculas": true
+          "maiusculas": true,
+          "escalaCel": 0.85
         },
         "slogan": {
           "fonte": "",
@@ -44,7 +46,8 @@
           "cor": "",
           "negrito": false,
           "italico": false,
-          "maiusculas": false
+          "maiusculas": false,
+          "escalaCel": 1
         },
         "insta": {
           "fonte": "",
@@ -52,7 +55,8 @@
           "cor": "",
           "negrito": true,
           "italico": false,
-          "maiusculas": false
+          "maiusculas": false,
+          "escalaCel": 1.3
         },
         "categorias": {
           "fonte": "",
@@ -60,7 +64,8 @@
           "cor": "",
           "negrito": true,
           "italico": false,
-          "maiusculas": false
+          "maiusculas": false,
+          "escalaCel": null
         },
         "secao": {
           "fonte": "",
@@ -68,7 +73,8 @@
           "cor": "",
           "negrito": true,
           "italico": true,
-          "maiusculas": true
+          "maiusculas": true,
+          "escalaCel": null
         },
         "subsecao": {
           "fonte": "",
@@ -76,7 +82,8 @@
           "cor": "",
           "negrito": true,
           "italico": false,
-          "maiusculas": true
+          "maiusculas": true,
+          "escalaCel": null
         },
         "nome": {
           "fonte": "Rajdhani",
@@ -84,7 +91,8 @@
           "cor": "",
           "negrito": true,
           "italico": false,
-          "maiusculas": false
+          "maiusculas": false,
+          "escalaCel": null
         },
         "desc": {
           "fonte": "",
@@ -92,7 +100,8 @@
           "cor": "",
           "negrito": false,
           "italico": false,
-          "maiusculas": false
+          "maiusculas": false,
+          "escalaCel": null
         },
         "opcoes": {
           "fonte": "",
@@ -100,7 +109,8 @@
           "cor": "",
           "negrito": true,
           "italico": false,
-          "maiusculas": false
+          "maiusculas": false,
+          "escalaCel": null
         },
         "gb": {
           "fonte": "Poppins",
@@ -108,7 +118,8 @@
           "cor": "",
           "negrito": true,
           "italico": false,
-          "maiusculas": false
+          "maiusculas": false,
+          "escalaCel": null
         },
         "preco": {
           "fonte": "Poppins",
@@ -116,7 +127,8 @@
           "cor": "",
           "negrito": true,
           "italico": false,
-          "maiusculas": false
+          "maiusculas": false,
+          "escalaCel": null
         },
         "rodape": {
           "fonte": "",
@@ -124,7 +136,8 @@
           "cor": "",
           "negrito": false,
           "italico": false,
-          "maiusculas": false
+          "maiusculas": false,
+          "escalaCel": null
         }
       },
       "posicoes": {
@@ -166,7 +179,7 @@
           "logo": {
             "modo": "livre",
             "x": 100,
-            "y": 106,
+            "y": 100,
             "w": 0,
             "al": "esquerda",
             "h": 167
@@ -181,22 +194,24 @@
           },
           "slogan": {
             "modo": "livre",
-            "x": 12.7,
-            "y": 121,
+            "x": 5.5,
+            "y": 126,
             "w": 228,
             "al": "esquerda",
-            "hc": 0
+            "hc": 60
           },
           "insta": {
             "modo": "livre",
-            "x": 23.5,
-            "y": 267,
+            "x": 11,
+            "y": 225,
             "w": 302,
             "al": "esquerda",
             "hc": 30
           }
         }
-      }
+      },
+      "escTituloCel": null,
+      "escTextoCel": null
     }
   },
   "categorias": [
