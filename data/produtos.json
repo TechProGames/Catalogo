@@ -129,8 +129,8 @@
       },
       "logoPos": {
         "modo": "livre",
-        "x": 66.9,
-        "y": 8
+        "x": 100,
+        "y": 0
       },
       "logoPosCel": null
     }
