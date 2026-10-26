@@ -1,6 +1,6 @@
 # Catálogo online (GitHub Pages)
 
-Duas páginas, sem servidor e sem custo:
+Arquivos: `index.html` (catálogo), `admin.html` (painel), `comum.js` (código usado pelos dois) e `data/produtos.json` (seus produtos).
 
 - **`index.html`** — o catálogo que você manda para os clientes. Eles buscam, filtram por categoria, escolhem itens e quantidades e enviam a lista pronta para o seu WhatsApp.
 - **`admin.html`** — o seu painel. Cadastra, edita, apaga, reordena, marca como esgotado/destaque, envia fotos e publica tudo direto no repositório.
@@ -21,11 +21,13 @@ Os produtos ficam em `data/produtos.json` e as fotos em `imagens/`, dentro do pr
 
 ## Uso no dia a dia
 
-- O painel tem 4 abas: **Produtos** (lista agrupada por categoria), **Categorias** (crie categorias e subcategorias à vontade), **Loja** (logo e dados) e **Conexão** (token e backup).
+- O painel tem 4 abas: **Produtos** (lista agrupada e recolhida por categoria), **Categorias** (categorias dentro de categorias, sem limite de níveis), **Loja** (logo, cores, fontes, tamanhos e dados, com pré-visualização ao vivo) e **Conexão** (token e backup).
+- Clique na foto, no nome ou no ✎ de um produto para editar.
+- As **opções** no fim da edição (ex.: Destaque, Lacrado, Garantia) aparecem como selos na foto. Dá para renomear, apagar e criar novas.
 - Cada produto pode ter até 10 fotos (viram carrossel no catálogo) e valor em **R$** ou em **GB**.
 - Depois de mexer, clique em **Publicar no site**. O catálogo dos clientes atualiza em cerca de 1 minuto.
 - Valor em R$ vazio aparece como "Preço sob consulta". Itens em GB mostram a soma de GB do que o cliente escolheu.
-- Desligar a chave de um produto deixa ele como **Esgotado** (aparece, mas não dá para selecionar).
+- Desligar a chave (ou desmarcar "Disponível") de um produto deixa ele como **Esgotado** (aparece, mas não dá para selecionar).
 - As fotos são reduzidas automaticamente (máx. 1000 px) antes de subir.
 - Mande para os clientes só o link do catálogo (sem `admin.html`).
 
