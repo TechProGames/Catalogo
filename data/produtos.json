@@ -201,12 +201,6 @@
   },
   "categorias": [
     {
-      "id": "mvpuaq2oo9s9",
-      "nome": "Jogos",
-      "filhas": [],
-      "usa": "mvppzqrxg5mh"
-    },
-    {
       "id": "mvpowg5lfyyx",
       "nome": "Consoles",
       "filhas": [
@@ -391,6 +385,12 @@
         }
       ],
       "usa": ""
+    },
+    {
+      "id": "mvpuaq2oo9s9",
+      "nome": "Jogos",
+      "filhas": [],
+      "usa": "mvppzqrxg5mh"
     },
     {
       "id": "mvpubccaipr5",
@@ -947,16 +947,24 @@
     {
       "id": "destaque",
       "nome": "Destaque"
+    },
+    {
+      "id": "mvpvkud0etok",
+      "nome": "90 Dias de Garantia"
+    },
+    {
+      "id": "mvpvkxhzkieq",
+      "nome": "Oferta"
     }
   ],
   "produtos": [
     {
       "id": "mvpvevqzvat1",
       "nome": "Fifa 27",
+      "descricao": "",
       "categoria": "mvpuaq2oo9s9>mvpq1pc930fl>mvpq7dn0mmrl",
       "unidade": "GB",
       "valor": 80,
-      "descricao": "",
       "imagens": [
         "imagens/fifa-27-mvpvf2h5gakz.jpg"
       ],
@@ -978,7 +986,9 @@
       ],
       "disponivel": true,
       "etiquetas": [
-        "destaque"
+        "destaque",
+        "mvpvkud0etok",
+        "mvpvkxhzkieq"
       ],
       "extras": [
         "mvpq1pc930fl"
