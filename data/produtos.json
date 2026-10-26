@@ -127,12 +127,70 @@
           "maiusculas": false
         }
       },
-      "logoPos": {
-        "modo": "livre",
-        "x": 89.3,
-        "y": 0
-      },
-      "logoPosCel": null
+      "posicoes": {
+        "pc": {
+          "logo": {
+            "modo": "livre",
+            "x": 100,
+            "y": 0,
+            "w": 0,
+            "al": "esquerda",
+            "h": 222
+          },
+          "marca": {
+            "modo": "livre",
+            "x": 0,
+            "y": 52,
+            "w": 492,
+            "al": "esquerda"
+          },
+          "slogan": {
+            "modo": "livre",
+            "x": 0,
+            "y": 122,
+            "w": 348,
+            "al": "esquerda"
+          },
+          "insta": {
+            "modo": "livre",
+            "x": 0,
+            "y": 197,
+            "w": 163,
+            "al": "esquerda"
+          }
+        },
+        "cel": {
+          "logo": {
+            "modo": "livre",
+            "x": 98.6,
+            "y": 103,
+            "w": 0,
+            "al": "esquerda",
+            "h": 127
+          },
+          "marca": {
+            "modo": "livre",
+            "x": 0,
+            "y": 52,
+            "w": 275,
+            "al": "esquerda"
+          },
+          "slogan": {
+            "modo": "livre",
+            "x": 0,
+            "y": 122,
+            "w": 204,
+            "al": "esquerda"
+          },
+          "insta": {
+            "modo": "livre",
+            "x": 1.7,
+            "y": 236,
+            "w": 163,
+            "al": "esquerda"
+          }
+        }
+      }
     }
   },
   "categorias": [
