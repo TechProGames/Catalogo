@@ -142,21 +142,24 @@
             "x": 0,
             "y": 52,
             "w": 492,
-            "al": "esquerda"
+            "al": "esquerda",
+            "hc": 0
           },
           "slogan": {
             "modo": "livre",
             "x": 0,
             "y": 122,
             "w": 348,
-            "al": "esquerda"
+            "al": "esquerda",
+            "hc": 0
           },
           "insta": {
             "modo": "livre",
             "x": 0,
             "y": 197,
             "w": 163,
-            "al": "esquerda"
+            "al": "esquerda",
+            "hc": 0
           }
         },
         "cel": {
@@ -173,21 +176,24 @@
             "x": 44.1,
             "y": 37,
             "w": 291,
-            "al": "esquerda"
+            "al": "esquerda",
+            "hc": 0
           },
           "slogan": {
             "modo": "livre",
             "x": 10.5,
             "y": 121,
             "w": 204,
-            "al": "esquerda"
+            "al": "esquerda",
+            "hc": 0
           },
           "insta": {
             "modo": "livre",
             "x": 7.5,
             "y": 236,
             "w": 163,
-            "al": "esquerda"
+            "al": "esquerda",
+            "hc": 0
           }
         }
       }
@@ -197,7 +203,8 @@
     {
       "id": "mvpuaq2oo9s9",
       "nome": "Jogos",
-      "filhas": []
+      "filhas": [],
+      "usa": "mvppzqrxg5mh"
     },
     {
       "id": "mvpowg5lfyyx",
@@ -210,7 +217,8 @@
             {
               "id": "mvppz6od3kqu",
               "nome": "Consoles",
-              "filhas": []
+              "filhas": [],
+              "usa": ""
             },
             {
               "id": "mvppzqrxg5mh",
@@ -219,7 +227,8 @@
                 {
                   "id": "mvpq16wsi3w8",
                   "nome": "Mídia Física (ORIGINAL)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpq1pc930fl",
@@ -228,28 +237,35 @@
                     {
                       "id": "mvpq7dn0mmrl",
                       "nome": "PS4",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     },
                     {
                       "id": "mvpq7fwkxyoq",
                       "nome": "PS2",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     },
                     {
                       "id": "mvpq7hn2zcex",
                       "nome": "PS1",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     },
                     {
                       "id": "mvpq7k2jz2f3",
                       "nome": "RETROARCH",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     }
-                  ]
+                  ],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             }
-          ]
+          ],
+          "usa": ""
         },
         {
           "id": "mvpp0jwykj1v",
@@ -262,7 +278,8 @@
                 {
                   "id": "mvpq2m2dsgb2",
                   "nome": "Mídia Física (ORIGINAL)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpq2r8pq55b",
@@ -271,28 +288,35 @@
                     {
                       "id": "mvpq6bmvkc1z",
                       "nome": "PS3",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     },
                     {
                       "id": "mvpq6lo5yt6p",
                       "nome": "PS2",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     },
                     {
                       "id": "mvpq6rrppnzs",
                       "nome": "PS1",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     },
                     {
                       "id": "mvpq6ufqihqk",
                       "nome": "RETROARCH (EMULADORES)",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     }
-                  ]
+                  ],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             }
-          ]
+          ],
+          "usa": ""
         },
         {
           "id": "mvpp0oeupa6x",
@@ -305,16 +329,20 @@
                 {
                   "id": "mvpq3mm3s516",
                   "nome": "DVD (DISCO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpq3zedykmm",
                   "nome": "OPL (PEN-DRIVE / HD EXTERNO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             }
-          ]
+          ],
+          "usa": ""
         },
         {
           "id": "mvpp29dg2tnh",
@@ -331,45 +359,56 @@
                     {
                       "id": "mvpq80krshmq",
                       "nome": "XBOX 360",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     },
                     {
                       "id": "mvpq89tgm439",
                       "nome": "XBOX CLÁSSICO",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     },
                     {
                       "id": "mvpq8g3ctrqp",
                       "nome": "PS1",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     },
                     {
                       "id": "mvpq8n7mj0in",
                       "nome": "EMULADORES",
-                      "filhas": []
+                      "filhas": [],
+                      "usa": ""
                     }
-                  ]
+                  ],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             }
-          ]
+          ],
+          "usa": ""
         }
-      ]
+      ],
+      "usa": ""
     },
     {
       "id": "mvpubccaipr5",
       "nome": "Computadores",
-      "filhas": []
+      "filhas": [],
+      "usa": ""
     },
     {
       "id": "mvpuav81y2tz",
       "nome": "Notebooks",
-      "filhas": []
+      "filhas": [],
+      "usa": ""
     },
     {
       "id": "mvpp34i3n8v6",
       "nome": "Celulares",
-      "filhas": []
+      "filhas": [],
+      "usa": ""
     },
     {
       "id": "mvpowg5l0tnt",
@@ -386,49 +425,59 @@
                 {
                   "id": "mvpqcuc8dzph",
                   "nome": "Drift - Analógicos Originais  (UM LADO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqe225qlv4",
                   "nome": "Drift - Analógicos Originais  (DOIS LADOS)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqe908tnl2",
                   "nome": "Drift - Analógicos TMR/HALL  (UM LADO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqep0fa7ij",
                   "nome": "Drift - Analógicos TMR/HALL (DOIS LADOS)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqewpbroz3",
                   "nome": "Reparo de Placa",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqfbuc41as",
                   "nome": "Conector USB",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqfo0qzw3f",
                   "nome": "Botões Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqfynqczs3",
                   "nome": "Borracha dos Analógicos",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqgqqbs8ig",
                   "nome": "Gatilhos Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             },
             {
               "id": "mvpq9lgxexa8",
@@ -437,49 +486,59 @@
                 {
                   "id": "mvpqhwli0q1a",
                   "nome": "Drift - Analógicos Originais  (UM LADO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqi1erhbfz",
                   "nome": "Drift - Analógicos Originais  (DOIS LADOS)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqicwxzrya",
                   "nome": "Drift - Analógicos TMR/HALL  (UM LADO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqihl84v9c",
                   "nome": "Drift - Analógicos TMR/HALL (DOIS LADOS)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqil4tn3xv",
                   "nome": "Reparo de Placa",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqipdnqhky",
                   "nome": "Conector USB",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqitdgvawy",
                   "nome": "Botões Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqixfslgwu",
                   "nome": "Borracha dos Analógicos",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqj06gskol",
                   "nome": "Gatilhos Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             },
             {
               "id": "mvpq9nobmp51",
@@ -488,39 +547,47 @@
                 {
                   "id": "mvpqj53iz3ii",
                   "nome": "Drift - Analógicos Originais  (UM LADO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqjb09hrlh",
                   "nome": "Drift - Analógicos Originais  (DOIS LADOS)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqjg6mutqc",
                   "nome": "Reparo de Placa",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqjih1q69v",
                   "nome": "Conector USB",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqjm335i0z",
                   "nome": "Botões Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqjq3lyoc8",
                   "nome": "Borracha dos Analógicos",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqjttqwpe3",
                   "nome": "Gatilhos Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             },
             {
               "id": "mvpq9plbbdnf",
@@ -529,49 +596,59 @@
                 {
                   "id": "mvpqk0yskx9o",
                   "nome": "Drift - Analógicos Originais  (UM LADO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqk3mc8cor",
                   "nome": "Drift - Analógicos Originais  (DOIS LADOS)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqkb3woqa0",
                   "nome": "Drift - Analógicos TMR/HALL  (UM LADO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqkfhvwjo6",
                   "nome": "Drift - Analógicos TMR/HALL (DOIS LADOS)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqkiyx4vt1",
                   "nome": "Reparo de Placa",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqkl99o67w",
                   "nome": "Conector USB",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqknxki1iu",
                   "nome": "Botões Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqksjavldd",
                   "nome": "Borracha dos Analógicos",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqkvhz5rn1",
                   "nome": "Gatilhos Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             },
             {
               "id": "mvpq9yw352eh",
@@ -580,49 +657,59 @@
                 {
                   "id": "mvpql161603w",
                   "nome": "Drift - Analógicos Originais  (UM LADO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpql3w31yx1",
                   "nome": "Drift - Analógicos Originais  (DOIS LADOS)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpql6jwoxl7",
                   "nome": "Drift - Analógicos TMR/HALL  (UM LADO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqlaq4up9z",
                   "nome": "Drift - Analógicos TMR/HALL (DOIS LADOS)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqld4is4hq",
                   "nome": "Reparo de Placa",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqlfd7o0s3",
                   "nome": "Conector USB",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqlj3r0vd1",
                   "nome": "Botões Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqlljil752",
                   "nome": "Borracha dos Analógicos",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqloidgm1r",
                   "nome": "Gatilhos Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             },
             {
               "id": "mvpqa3ftrhwo",
@@ -631,36 +718,44 @@
                 {
                   "id": "mvpqlsli7c8x",
                   "nome": "Drift - Analógicos Originais  (UM LADO)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqlwrylmau",
                   "nome": "Drift - Analógicos Originais  (DOIS LADOS)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqm3wj6tlg",
                   "nome": "Reparo de Placa",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqm83tqc79",
                   "nome": "Botões Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqmckjcb1f",
                   "nome": "Borracha dos Analógicos",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqmg2f0hks",
                   "nome": "Gatilhos Falhando / Não Funciona",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             }
-          ]
+          ],
+          "usa": ""
         },
         {
           "id": "mvpp2js2lsh3",
@@ -673,14 +768,17 @@
                 {
                   "id": "mvpqof29gqzp",
                   "nome": "Preventiva",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqoo9yputy",
                   "nome": "Reparo",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             },
             {
               "id": "mvpqmz4h4rdb",
@@ -689,19 +787,23 @@
                 {
                   "id": "mvpqovnujpve",
                   "nome": "Preventiva",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqp7vu49bf",
                   "nome": "Reparo",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqp9c21zuk",
                   "nome": "Desbloqueio",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             },
             {
               "id": "mvpqn5klwiqi",
@@ -710,19 +812,23 @@
                 {
                   "id": "mvpqpclh503k",
                   "nome": "Preventiva",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqpgdq0utc",
                   "nome": "Reparo",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqplcdzyh3",
                   "nome": "Desbloqueio",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             },
             {
               "id": "mvpqn7nrirnu",
@@ -731,19 +837,23 @@
                 {
                   "id": "mvpqpsah99cl",
                   "nome": "Preventiva",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqput54tgh",
                   "nome": "Reparo",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqpypp2jkl",
                   "nome": "Desbloqueio (OPL)",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             },
             {
               "id": "mvpqncl9wggb",
@@ -752,14 +862,17 @@
                 {
                   "id": "mvpqq95r7fje",
                   "nome": "Preventiva",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqqc9ns7ar",
                   "nome": "Reparo",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             },
             {
               "id": "mvpqnkrlsio6",
@@ -768,14 +881,17 @@
                 {
                   "id": "mvpqqjvb4slj",
                   "nome": "Preventiva",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqqm53vmup",
                   "nome": "Reparo",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             },
             {
               "id": "mvpqnnd1osy2",
@@ -784,38 +900,47 @@
                 {
                   "id": "mvpqqppaow6a",
                   "nome": "Preventiva",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqqsgaq19m",
                   "nome": "Reparo",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqqz5vrpxo",
                   "nome": "Desbloqueio RGH 3.0",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 },
                 {
                   "id": "mvpqr4ani26a",
                   "nome": "Desbloqueio EXPLOIT USB",
-                  "filhas": []
+                  "filhas": [],
+                  "usa": ""
                 }
-              ]
+              ],
+              "usa": ""
             }
-          ]
+          ],
+          "usa": ""
         },
         {
           "id": "mvpp2pf7i4fi",
           "nome": "Celulares",
-          "filhas": []
+          "filhas": [],
+          "usa": ""
         },
         {
           "id": "mvpqajwpbxwf",
           "nome": "Notebooks",
-          "filhas": []
+          "filhas": [],
+          "usa": ""
         }
-      ]
+      ],
+      "usa": ""
     }
   ],
   "etiquetas": [
@@ -840,7 +965,8 @@
       "disponivel": true,
       "etiquetas": [
         "destaque"
-      ]
+      ],
+      "extras": []
     }
   ]
 }
