@@ -11,9 +11,9 @@
       "id": "ps4slim",
       "nome": "PS4 Slim desbloqueado",
       "categoria": "Consoles",
-      "preco": null,
+      "preco": 1700,
       "descricao": "Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
-      "imagem": "",
+      "imagem": "imagens/ps4-slim-desbloqueado-mvpo2urn.jpg",
       "disponivel": true,
       "destaque": true
     },
