@@ -65,22 +65,12 @@
       "valor": 1700,
       "descricao": "Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "imagens": [
-        "imagens/ps4-slim-desbloqueado-mvpo2urn.jpg"
+        "imagens/ps4-slim-desbloqueado-mvpo2urn.jpg",
+        "imagens/ps4-slim-desbloqueado-mvpp7i59av16.jpg",
+        "imagens/ps4-slim-desbloqueado-mvpp7jrthzfd.jpg"
       ],
       "disponivel": true,
       "destaque": true
-    },
-    {
-      "id": "manutencao",
-      "nome": "Manutenção preventiva",
-      "categoria": "mvpowg5l0tnt",
-      "subcategoria": "",
-      "unidade": "R$",
-      "valor": null,
-      "descricao": "Limpeza interna e troca de pasta térmica para consoles atuais e retrô.",
-      "imagens": [],
-      "disponivel": true,
-      "destaque": false
     },
     {
       "id": "desbloqueio",
@@ -90,6 +80,18 @@
       "unidade": "R$",
       "valor": null,
       "descricao": "Desbloqueio de video games atuais e retrô.",
+      "imagens": [],
+      "disponivel": true,
+      "destaque": false
+    },
+    {
+      "id": "manutencao",
+      "nome": "Manutenção preventiva",
+      "categoria": "mvpowg5l0tnt",
+      "subcategoria": "",
+      "unidade": "R$",
+      "valor": null,
+      "descricao": "Limpeza interna e troca de pasta térmica para consoles atuais e retrô.",
       "imagens": [],
       "disponivel": true,
       "destaque": false
