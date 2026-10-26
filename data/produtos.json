@@ -1,0 +1,61 @@
+{
+  "loja": {
+    "nome": "Tech Pro",
+    "slogan": "Video games, acessórios e serviços. Escolha o que te interessa e envie pelo WhatsApp.",
+    "whatsapp": "22997819949",
+    "instagram": "tech_pro_rj",
+    "rodape": "Pagamento: Pix, dinheiro ou cartão em até 12x.\nAceitamos video game inferior ou com defeito como parte do pagamento."
+  },
+  "produtos": [
+    {
+      "id": "ps4slim",
+      "nome": "PS4 Slim desbloqueado",
+      "categoria": "Consoles",
+      "preco": null,
+      "descricao": "Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
+      "imagem": "",
+      "disponivel": true,
+      "destaque": true
+    },
+    {
+      "id": "manutencao",
+      "nome": "Manutenção preventiva",
+      "categoria": "Serviços",
+      "preco": null,
+      "descricao": "Limpeza interna e troca de pasta térmica para consoles atuais e retrô.",
+      "imagem": "",
+      "disponivel": true,
+      "destaque": false
+    },
+    {
+      "id": "desbloqueio",
+      "nome": "Desbloqueio",
+      "categoria": "Serviços",
+      "preco": null,
+      "descricao": "Desbloqueio de video games atuais e retrô.",
+      "imagem": "",
+      "disponivel": true,
+      "destaque": false
+    },
+    {
+      "id": "instalacao-jogos",
+      "nome": "Instalação de jogos",
+      "categoria": "Serviços",
+      "preco": null,
+      "descricao": "Instalamos os jogos que você escolher.",
+      "imagem": "",
+      "disponivel": true,
+      "destaque": false
+    },
+    {
+      "id": "reparo",
+      "nome": "Reparo",
+      "categoria": "Serviços",
+      "preco": null,
+      "descricao": "Diagnóstico e conserto do seu video game.",
+      "imagem": "",
+      "disponivel": true,
+      "destaque": false
+    }
+  ]
+}
