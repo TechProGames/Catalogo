@@ -162,29 +162,29 @@
         "cel": {
           "logo": {
             "modo": "livre",
-            "x": 88.9,
-            "y": 96,
+            "x": 96.6,
+            "y": 93,
             "w": 0,
             "al": "esquerda",
             "h": 167
           },
           "marca": {
             "modo": "livre",
-            "x": 34.1,
+            "x": 44.1,
             "y": 37,
             "w": 291,
             "al": "esquerda"
           },
           "slogan": {
             "modo": "livre",
-            "x": 0,
-            "y": 122,
+            "x": 10.5,
+            "y": 121,
             "w": 204,
             "al": "esquerda"
           },
           "insta": {
             "modo": "livre",
-            "x": 1.7,
+            "x": 7.5,
             "y": 236,
             "w": 163,
             "al": "esquerda"
