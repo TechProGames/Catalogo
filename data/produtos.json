@@ -12,9 +12,7 @@
       "fonteTexto": "Rajdhani",
       "escTitulo": 1,
       "escTexto": 1,
-      "logoAltura": 300,
-      "italico": true,
-      "maiusculas": true,
+      "logoAltura": 200,
       "cores": {
         "fundo": "#07090f",
         "cartao": "#101624",
@@ -22,6 +20,117 @@
         "textoSec": "#8592aa",
         "principal": "#2b8cff",
         "destaque": "#ff2d55"
+      },
+      "textos": {
+        "marca2": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": false,
+          "italico": false,
+          "maiusculas": false
+        },
+        "marca": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": true,
+          "italico": true,
+          "maiusculas": true
+        },
+        "slogan": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": false,
+          "italico": false,
+          "maiusculas": false
+        },
+        "insta": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": true,
+          "italico": false,
+          "maiusculas": false
+        },
+        "categorias": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": true,
+          "italico": false,
+          "maiusculas": false
+        },
+        "secao": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": true,
+          "italico": true,
+          "maiusculas": true
+        },
+        "subsecao": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": true,
+          "italico": false,
+          "maiusculas": true
+        },
+        "nome": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": true,
+          "italico": false,
+          "maiusculas": false
+        },
+        "desc": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": false,
+          "italico": false,
+          "maiusculas": false
+        },
+        "opcoes": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": true,
+          "italico": false,
+          "maiusculas": false
+        },
+        "gb": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": true,
+          "italico": false,
+          "maiusculas": false
+        },
+        "preco": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": true,
+          "italico": false,
+          "maiusculas": false
+        },
+        "rodape": {
+          "fonte": "",
+          "escala": 1,
+          "cor": "",
+          "negrito": false,
+          "italico": false,
+          "maiusculas": false
+        }
+      },
+      "logoPos": {
+        "modo": "centro",
+        "x": 50,
+        "y": 20
       }
     }
   },
