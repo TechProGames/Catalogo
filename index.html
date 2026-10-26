@@ -23,7 +23,12 @@ body{position:relative;background:var(--bg);color:var(--txt);font:1rem/1.45 var(
   background-image:radial-gradient(900px 420px at 90% -10%,color-mix(in srgb,var(--azul) 18%,transparent),transparent 60%),radial-gradient(700px 360px at -10% 0%,color-mix(in srgb,var(--verm) 12%,transparent),transparent 60%);background-attachment:fixed}
 button,input,textarea{font:inherit;color:inherit}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-header.wrap{position:relative;padding-top:26px;padding-bottom:18px}
+.palco-topo{position:relative;overflow-x:clip}
+/* o topo é desenhado numa largura fixa (390 px no celular, 1100 px no computador) e depois ampliado/reduzido por igual,
+   para ficar idêntico ao que foi montado no painel em qualquer tela */
+header.wrap{position:relative;padding-top:26px;padding-bottom:18px;margin:0;max-width:none;width:1100px;transform-origin:0 0}
+:root{--marca-px:68px}
+@media (max-width:699px){:root{--marca-px:42px}}
 /* logo */
 .logo{display:block;height:auto;max-height:var(--logo-h);max-width:min(100%,calc(var(--logo-h) * 4));object-fit:contain;margin-bottom:12px}
 /* posições dos itens do topo (definidas no painel) */
@@ -32,7 +37,7 @@ header.wrap>.direita{margin-left:auto}
 header.wrap>.livre{position:absolute;margin:0;z-index:4;max-width:calc(100% - 32px)}
 .logo.livre{max-width:min(calc(100% - 32px),calc(var(--logo-h) * 4))}
 /* textos (o tamanho de cada um pode ser ajustado no painel: --e-*) */
-.marca{font-family:var(--f-tit);font-style:italic;font-weight:800;text-transform:uppercase;font-size:calc(clamp(42px,10vw,68px) * var(--esc-tit) * var(--e-marca,1));line-height:.95;text-shadow:0 0 20px color-mix(in srgb,var(--azul) 55%,transparent)}
+.marca{font-family:var(--f-tit);font-style:italic;font-weight:800;text-transform:uppercase;font-size:calc(var(--marca-px) * var(--esc-tit) * var(--e-marca,1));line-height:.95;text-shadow:0 0 20px color-mix(in srgb,var(--azul) 55%,transparent)}
 .marca span{color:var(--verm);font-size:calc(1em * var(--e-marca2,1));text-shadow:0 0 20px color-mix(in srgb,var(--verm) 60%,transparent)}
 .slogan{color:var(--mut);margin-top:10px;max-width:560px;font-size:calc(1rem * var(--e-slogan,1))}
 .insta{display:block;width:fit-content;margin-top:10px;color:var(--azul2);text-decoration:none;font-weight:700;font-size:calc(.875rem * var(--e-insta,1))}
@@ -202,12 +207,12 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
 </style>
 </head>
 <body>
-<header class="wrap">
+<div class="palco-topo" id="palco"><header class="wrap">
   <img class="logo" id="logo" alt="" hidden draggable="false">
   <h1 class="marca" id="marca"></h1>
   <p class="slogan" id="slogan"></p>
   <a class="insta" id="insta" target="_blank" rel="noopener" hidden></a>
-</header>
+</header></div>
 
 <div class="filtros"><div class="wrap">
   <div class="campo-busca">
@@ -245,7 +250,7 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=8"></script>
+<script src="comum.js?v=9"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -327,6 +332,16 @@ function posicionarTopo(ps = posicoesAtuais()) {
   ajustarTopo();
 }
 // o cabeçalho cresce para os itens livres nunca ficarem escondidos atrás da busca
+let escTopo = 1;
+function escalarTopo() {
+  const palco = $('palco'), h = $('logo').parentElement, W = palco.clientWidth;
+  const cel = mqCel.matches, design = cel ? 390 : 1100;
+  escTopo = cel ? W / design : Math.min(1, W / design);
+  h.style.width = design + 'px';
+  h.style.transform = escTopo === 1 ? '' : `scale(${escTopo})`;
+  h.style.marginLeft = Math.max(0, (W - design * escTopo) / 2) + 'px';
+  palco.style.height = Math.ceil(h.offsetHeight * escTopo) + 'px';
+}
 function ajustarTopo() {
   const h = $('logo').parentElement;
   h.style.minHeight = '';
@@ -336,6 +351,7 @@ function ajustarTopo() {
     if (!el.hidden && el.classList.contains('livre')) fundo = Math.max(fundo, el.offsetTop + el.offsetHeight + 16);
   }
   if (fundo) h.style.minHeight = fundo + 'px';
+  escalarTopo();
   atualizarCaixas();
 }
 function atualizarCaixas() {}      // substituída na pré-visualização do painel
@@ -678,8 +694,11 @@ if (PREVIA) {
   const caixas = {};
   const largUtil = () => topo.clientWidth - 32;
   const xDe = (L, w) => { const W = largUtil(); return W > w ? Math.round(1000 * Math.min(Math.max(L, 0), W - w) / (W - w)) / 10 : 0; };
+  const relTopo = el => {          // posição do elemento dentro do topo, nas medidas do desenho
+    const hr = topo.getBoundingClientRect(), r = el.getBoundingClientRect(), s = escTopo;
+    return {left: (r.left - hr.left) / s, top: (r.top - hr.top) / s, width: r.width / s, height: r.height / s};
+  };
   atualizarCaixas = () => {
-    const hr = topo.getBoundingClientRect();
     for (const e of ELEM_TOPO) {
       const el = $(e.k);
       let c = caixas[e.k];
@@ -690,8 +709,8 @@ if (PREVIA) {
       }
       const vis = !el.hidden && el.offsetWidth > 0;
       c.hidden = !vis; if (!vis) continue;
-      const r = el.getBoundingClientRect();
-      Object.assign(c.style, {left: (r.left - hr.left) + 'px', top: (r.top - hr.top) + 'px', width: r.width + 'px', height: r.height + 'px'});
+      const r = relTopo(el);
+      Object.assign(c.style, {left: r.left + 'px', top: r.top + 'px', width: r.width + 'px', height: r.height + 'px'});
     }
   };
   function enviarPos(k, p) {
@@ -705,11 +724,11 @@ if (PREVIA) {
       e.preventDefault(); e.stopPropagation();
       const k = c.dataset.el, el = $(k), tam = !!e.target.closest('.alca');
       c.setPointerCapture(e.pointerId); c.classList.add('ativa');
-      const p0 = {...posicoesAtuais()[k]}, r0 = el.getBoundingClientRect(), h0 = topo.getBoundingClientRect();
+      const p0 = {...posicoesAtuais()[k]}, r0 = relTopo(el);
       const sx = e.clientX, sy = e.clientY;
       let p = {...p0}, moveu = false;
       const mover = ev => {
-        const dx = ev.clientX - sx, dy = ev.clientY - sy;
+        const dx = (ev.clientX - sx) / escTopo, dy = (ev.clientY - sy) / escTopo;
         if (!moveu && Math.abs(dx) + Math.abs(dy) < 4) return;
         moveu = true;
         if (tam) {
@@ -719,11 +738,11 @@ if (PREVIA) {
             if (Math.abs(dy) > 3) p.hc = Math.max(16, Math.round(r0.height + dy));
           }
         } else {
-          p.modo = 'livre'; p.y = Math.round(Math.max(0, r0.top - h0.top + dy));
+          p.modo = 'livre'; p.y = Math.round(Math.max(0, r0.top + dy));
         }
         aplicarPos(k, p);
         if (p.modo === 'livre') {     // mantém a borda esquerda onde o usuário quer
-          const L = r0.left - h0.left - 16 + (tam ? 0 : dx);
+          const L = r0.left - 16 + (tam ? 0 : dx);
           p.x = xDe(L, el.offsetWidth); aplicarPos(k, p);
         }
         ajustarTopo();
@@ -746,9 +765,9 @@ if (PREVIA) {
   window.addEventListener('message', e => {
     if (e.origin !== location.origin || !e.data || e.data.tipo !== 'tornar-livre') return;
     const k = e.data.el, el = $(k); if (!el) return;
-    const hr = topo.getBoundingClientRect(), r = el.getBoundingClientRect();
-    const p = {...posicoesAtuais()[k], modo: 'livre', y: Math.round(r.top - hr.top)};
-    aplicarPos(k, p); p.x = xDe(r.left - hr.left - 16, el.offsetWidth); aplicarPos(k, p); ajustarTopo();
+    const r = relTopo(el);
+    const p = {...posicoesAtuais()[k], modo: 'livre', y: Math.round(r.top)};
+    aplicarPos(k, p); p.x = xDe(r.left - 16, el.offsetWidth); aplicarPos(k, p); ajustarTopo();
     enviarPos(k, p);
   });
 }

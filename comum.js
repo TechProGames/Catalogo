@@ -94,6 +94,9 @@ function mesclarTema(t) {
   if (!(r.fonteTitulo in FONTES)) r.fonteTitulo = TEMA_PADRAO.fonteTitulo;
   if (!(r.fonteTexto in FONTES)) r.fonteTexto = TEMA_PADRAO.fonteTexto;
   for (const k of ['escTitulo', 'escTexto', 'logoAltura']) if (!isFinite(+r[k])) r[k] = TEMA_PADRAO[k];
+  // tamanhos do celular (null = igual ao computador)
+  const numOuNulo = v => (v !== null && v !== undefined && v !== '' && isFinite(+v) && +v > 0) ? +v : null;
+  r.escTituloCel = numOuNulo(t.escTituloCel); r.escTextoCel = numOuNulo(t.escTextoCel);
   // estilo de cada texto (versões antigas tinham só "italico" e "maiusculas" gerais)
   const antigos = t.textos || {}, tx = {};
   for (const d of TEXTOS) {
@@ -105,6 +108,7 @@ function mesclarTema(t) {
     Object.assign(v, antigos[d.k] || {});
     if (v.fonte && !(v.fonte in FONTES)) v.fonte = '';
     v.escala = isFinite(+v.escala) && +v.escala > 0 ? +v.escala : 1;
+    v.escalaCel = numOuNulo(v.escalaCel);        // tamanho no celular (null = igual ao computador)
     if (v.cor && !/^#[0-9a-f]{6}$/i.test(v.cor)) v.cor = '';
     tx[d.k] = v;
   }
@@ -239,14 +243,17 @@ function aplicarTema(tema) {
     '--bg': c.fundo, '--card': c.cartao, '--txt': c.texto, '--mut': c.textoSec, '--azul': c.principal, '--verm': c.destaque,
     '--sobre-azul': corSobre(c.principal), '--sobre-verm': corSobre(c.destaque),
     '--f-tit': `"${t.fonteTitulo}","Arial Narrow",sans-serif`, '--f-txt': `"${t.fonteTexto}",system-ui,sans-serif`,
-    '--esc-tit': t.escTitulo, '--esc-txt': t.escTexto, '--logo-h': t.logoAltura + 'px'
+    '--logo-h': t.logoAltura + 'px'
   };
   for (const k in v) r.setProperty(k, String(v[k]));
+  // tamanhos: um conjunto para computador e outro para celular
+  const cel = v2 => v2 ?? null;
+  let pc = `--esc-tit:${t.escTitulo};--esc-txt:${t.escTexto};`, ce = `--esc-tit:${cel(t.escTituloCel) ?? t.escTitulo};--esc-txt:${cel(t.escTextoCel) ?? t.escTexto};`;
+  for (const d of TEXTOS) { const x = t.textos[d.k]; pc += `--e-${d.k}:${x.escala};`; ce += `--e-${d.k}:${x.escalaCel ?? x.escala};`; }
+  let css = `:root{${pc}}\n@media (max-width:${LARGURA_CELULAR}px){:root{${ce}}}\n`;
   // regras de cada texto
-  let css = '';
   for (const d of TEXTOS) {
     const x = t.textos[d.k];
-    r.setProperty('--e-' + d.k, String(x.escala));
     let p = '';
     if (x.fonte) p += `font-family:"${x.fonte}",${d.base === 'tit' ? '"Arial Narrow",' : ''}sans-serif;`;
     if (!d.soCor) p += `font-weight:${x.negrito ? (d.base === 'tit' ? 800 : 700) : 400};font-style:${x.italico ? 'italic' : 'normal'};text-transform:${x.maiusculas ? 'uppercase' : 'none'};`;

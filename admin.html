@@ -136,6 +136,7 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
 .previa-topo{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px;flex-wrap:wrap}
 .previa-topo small{color:var(--mut)}
 .previa-acoes{display:flex;gap:6px;align-items:center}
+.disp-rot{font-size:11px;font-weight:700;color:var(--azul2);background:rgba(43,140,255,.12);border-radius:5px;padding:1px 6px}
 .seg-larga.mini button{padding:6px 10px;font-size:13px}
 .previa-tela{position:relative;overflow:hidden;border-radius:10px;background:#05070b;height:calc(100vh - 160px);min-height:460px}
 .previa-tela iframe{position:absolute;top:0;left:0;border:0;transform-origin:0 0;background:#000}
@@ -308,12 +309,12 @@ dialog form{padding:18px}
           <div class="dois">
             <div class="campo"><label for="t-ftit">Fonte base dos títulos</label><select id="t-ftit" data-tema="fonteTitulo"></select></div>
             <div class="campo"><label for="t-ftxt">Fonte base dos textos</label><select id="t-ftxt" data-tema="fonteTexto"></select></div>
-            <div class="campo"><label for="t-etit">Tamanho dos títulos <output id="o-etit"></output></label>
-              <input type="range" id="t-etit" min="0.6" max="1.6" step="0.05" data-tema="escTitulo"></div>
-            <div class="campo"><label for="t-etxt">Tamanho dos textos <output id="o-etxt"></output></label>
-              <input type="range" id="t-etxt" min="0.85" max="1.3" step="0.05" data-tema="escTexto"></div>
+            <div class="campo"><label for="t-etit">Tamanho dos títulos <span class="disp-rot"></span> <output id="o-etit"></output></label>
+              <input type="range" id="t-etit" min="0.6" max="1.6" step="0.05"></div>
+            <div class="campo"><label for="t-etxt">Tamanho dos textos <span class="disp-rot"></span> <output id="o-etxt"></output></label>
+              <input type="range" id="t-etxt" min="0.85" max="1.3" step="0.05"></div>
           </div>
-          <p class="dica">A fonte e o tamanho base valem para todos os textos. Para mudar um texto só, use o bloco <b>Textos</b> abaixo.</p>
+          <p class="dica">A fonte base vale para todos os textos. Os <b>tamanhos valem para o aparelho escolhido na pré-visualização</b> (📱 celular ou 🖥 computador) — mudar um não mexe no outro. Para mudar um texto só, use o bloco <b>Textos</b> abaixo.</p>
           <div class="acoes"><button class="btn link" id="tema-padrao">Restaurar toda a aparência ao padrão</button></div>
         </div>
 
@@ -323,7 +324,7 @@ dialog form{padding:18px}
           <div class="campo"><label for="tx-alvo">Texto</label><select id="tx-alvo"></select></div>
           <div class="dois">
             <div class="campo"><label for="tx-fonte">Fonte</label><select id="tx-fonte"></select></div>
-            <div class="campo"><label for="tx-esc">Tamanho <output id="o-tx"></output></label><input type="range" id="tx-esc" min="0.5" max="2.5" step="0.05"></div>
+            <div class="campo"><label for="tx-esc">Tamanho <span class="disp-rot"></span> <output id="o-tx"></output></label><input type="range" id="tx-esc" min="0.5" max="2.5" step="0.05"></div>
           </div>
           <div class="campo"><span class="rot">Cor</span>
             <div class="tx-cor">
@@ -456,7 +457,7 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=8"></script>
+<script src="comum.js?v=9"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -670,6 +671,7 @@ function ajustarPrevia() {
   $('previa-escala').textContent = `${larg}px · ${Math.round(s * 100)}%`;
 }
 function definirDisp(d) {
+  setTimeout(() => { saidas(); renderTexto(); }, 0);
   dispPrevia = d; gravar('catalogo-admin-disp', d);
   document.querySelectorAll('#previa-disp button, #logo-disp button').forEach(b => b.classList.toggle('on', b.dataset.disp === d));
   document.querySelector('.loja-grid').classList.toggle('pc', d === 'pc');
@@ -808,7 +810,8 @@ function renderTexto() {
   const base = d.base === 'tit' ? t.fonteTitulo : t.fonteTexto;
   $('tx-fonte').innerHTML = `<option value="">Automática (${esc(base)})</option>` + Object.keys(FONTES).map(f => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
   $('tx-fonte').value = v.fonte;
-  $('tx-esc').value = v.escala; $('o-tx').textContent = Math.round(v.escala * 100) + '%';
+  const ve = tamCel() ? (v.escalaCel ?? v.escala) : v.escala;
+  $('tx-esc').value = ve; $('o-tx').textContent = Math.round(ve * 100) + '%';
   $('tx-auto').checked = !v.cor;
   $('tx-cor').value = v.cor || t.cores[d.base === 'tit' && d.k !== 'marca2' ? 'texto' : d.k === 'marca2' ? 'destaque' : 'textoSec'];
   $('tx-cor-box').classList.toggle('desl', !v.cor);
@@ -818,7 +821,10 @@ function renderTexto() {
 const txAtual = () => dados.loja.tema.textos[txAlvo];
 $('tx-alvo').addEventListener('change', e => { txAlvo = e.target.value; renderTexto(); });
 $('tx-fonte').addEventListener('change', e => { txAtual().fonte = e.target.value; marcarSujo(); });
-$('tx-esc').addEventListener('input', e => { txAtual().escala = Number(e.target.value); $('o-tx').textContent = Math.round(e.target.value * 100) + '%'; marcarSujo(); });
+$('tx-esc').addEventListener('input', e => {
+  txAtual()[tamCel() ? 'escalaCel' : 'escala'] = Number(e.target.value);
+  $('o-tx').textContent = Math.round(e.target.value * 100) + '%'; marcarSujo();
+});
 $('tx-cor').addEventListener('input', e => { txAtual().cor = e.target.value; $('tx-auto').checked = false; $('tx-cor-box').classList.remove('desl'); marcarSujo(); });
 $('tx-auto').addEventListener('change', e => { txAtual().cor = e.target.checked ? '' : $('tx-cor').value; renderTexto(); marcarSujo(); });
 $('tx-cor-box').addEventListener('click', () => { if ($('tx-auto').checked) { $('tx-auto').checked = false; txAtual().cor = $('tx-cor').value; renderTexto(); marcarSujo(); } });
@@ -830,11 +836,18 @@ $('tx-reset').onclick = () => {
   const novo = mesclarTema({}).textos[txAlvo];
   dados.loja.tema.textos[txAlvo] = novo; renderTexto(); marcarSujo();
 };
+// os tamanhos valem para o aparelho escolhido na pré-visualização (📱 ou 🖥)
+const tamCel = () => typeof dispPrevia !== 'undefined' && dispPrevia === 'cel';
 function saidas() {
-  const t = dados.loja.tema;
-  $('o-etit').textContent = Math.round(t.escTitulo * 100) + '%';
-  $('o-etxt').textContent = Math.round(t.escTexto * 100) + '%';
+  const t = dados.loja.tema, c = tamCel();
+  const et = c ? (t.escTituloCel ?? t.escTitulo) : t.escTitulo, ex = c ? (t.escTextoCel ?? t.escTexto) : t.escTexto;
+  $('t-etit').value = et; $('t-etxt').value = ex;
+  $('o-etit').textContent = Math.round(et * 100) + '%';
+  $('o-etxt').textContent = Math.round(ex * 100) + '%';
+  document.querySelectorAll('.disp-rot').forEach(s => s.textContent = c ? '📱 celular' : '🖥 computador');
 }
+$('t-etit').addEventListener('input', e => { dados.loja.tema[tamCel() ? 'escTituloCel' : 'escTitulo'] = Number(e.target.value); saidas(); marcarSujo(); });
+$('t-etxt').addEventListener('input', e => { dados.loja.tema[tamCel() ? 'escTextoCel' : 'escTexto'] = Number(e.target.value); saidas(); marcarSujo(); });
 const opcoesFonte = Object.keys(FONTES).map(f => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
 $('t-ftit').innerHTML = opcoesFonte; $('t-ftxt').innerHTML = opcoesFonte;
 $('paletas').innerHTML = PALETAS.map((p, i) => `<button type="button" class="paleta" data-paleta="${i}">
