@@ -218,7 +218,18 @@ function normalizarCatalogo(d) {
       imagens: Array.isArray(p.imagens) ? p.imagens.filter(Boolean) : (p.imagem ? [p.imagem] : []),
       disponivel: p.disponivel !== false,
       etiquetas: etiquetas.filter(e => etq.includes(e.id)).map(e => e.id),
-      extras: (Array.isArray(p.extras) ? p.extras : []).map(extraValido).filter((x, i, a) => x && a.indexOf(x) === i)
+      // "escolher junto": cada entrada é um botão {cat, rotulo} que abre a lista numa nova aba
+      extras: (Array.isArray(p.extras) ? p.extras : []).map(e => {
+        const o = typeof e === 'string' ? {cat: e, rotulo: ''} : (e && typeof e === 'object' ? e : {});
+        return {cat: extraValido(o.cat), rotulo: String(o.rotulo || '').trim()};
+      }).filter((x, i, a) => x.cat && a.findIndex(y => y.cat === x.cat) === i),
+      tipo: String(p.tipo || '').trim(),             // categoria do item (Ação, Aventura…)
+      // versões de armazenamento: {id, nome, gb (espaço livre), valor (preço opcional)}
+      armazenamentos: (Array.isArray(p.armazenamentos) ? p.armazenamentos : []).filter(a => a && typeof a === 'object').map(a => ({
+        id: String(a.id || novoId()), nome: String(a.nome || '').trim(),
+        gb: isFinite(+a.gb) && +a.gb > 0 ? +a.gb : 0,
+        valor: a.valor !== null && a.valor !== '' && isFinite(+a.valor) && +a.valor >= 0 ? +a.valor : null
+      })).filter(a => a.nome || a.gb)
     };
   });
   return {loja, categorias, etiquetas, produtos};

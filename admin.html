@@ -110,6 +110,13 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
 .extra-linha div{flex:1;min-width:0}
 .extra-linha b{display:block}
 .extra-linha small{color:var(--mut);font-size:12px}
+.extra-linha .inp{margin-top:6px;padding:7px 9px}
+.arm-linha{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr) auto;gap:6px;align-items:end;margin-bottom:8px}
+.arm-linha label{font-size:11px;color:var(--mut);font-weight:600;display:block;margin-bottom:3px}
+.arm-linha input{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:8px 9px;outline:none}
+.arm-linha input:focus{border-color:var(--azul)}
+#add-arm{margin-bottom:4px}
+@media(max-width:560px){.arm-linha{grid-template-columns:1fr 1fr auto}.arm-linha>div:first-child{grid-column:1/-1}}
 #f-extra{width:100%;background:var(--bg);border:1px dashed var(--line);border-radius:10px;padding:9px 10px;color:var(--azul2);font-weight:600}
 .filhas{margin-left:14px;padding-left:10px;border-left:2px solid var(--line)}
 @media(max-width:560px){.no-linha small{display:none}.no-linha .ib{width:30px;height:30px}.filhas{margin-left:8px;padding-left:6px}}
@@ -431,7 +438,15 @@ dialog form{padding:18px}
       </div>
       <p class="dica" id="valor-dica"></p>
     </div>
+    <div class="campo"><label for="f-tipo">Categoria do item <small style="font-weight:500">(aparece embaixo do nome — ex.: Ação, Aventura, Terror)</small></label>
+      <input id="f-tipo" name="tipo" list="tipos-lista" placeholder="Opcional"><datalist id="tipos-lista"></datalist></div>
     <div class="campo"><label for="f-desc">Descrição</label><textarea id="f-desc" name="descricao" rows="3"></textarea></div>
+    <div class="campo">
+      <span class="rot">Armazenamento (versões) — opcional</span>
+      <div id="arm-lista"></div>
+      <button type="button" class="btn sec" id="add-arm">+ Adicionar versão (ex.: 500 GB, 1 TB)</button>
+      <p class="dica">O cliente escolhe a versão. O <b>espaço livre</b> limita a soma dos itens em GB (jogos) que ele pode escolher. Preço vazio = usa o valor do produto.</p>
+    </div>
     <div class="campo">
       <span class="rot">Opções</span>
       <div class="opcoes">
@@ -448,7 +463,7 @@ dialog form{padding:18px}
       <span class="rot">Itens para o cliente escolher junto (opcional)</span>
       <div id="extras-lista"></div>
       <select id="f-extra" aria-label="Adicionar lista de itens"></select>
-      <p class="dica">Escolha o caminho até a categoria final (ex.: Jogos › PS4 › Mídia física). Na janela deste produto, o cliente vê só o nome final, com os itens dela para adicionar junto.</p>
+      <p class="dica">Escolha o caminho até a categoria (ex.: Jogos › PS4 › Mídia física) e o <b>texto do botão</b>. O cliente vê só o botão; ao clicar, abre uma nova aba já nessa lista, com este produto selecionado.</p>
     </div>
     <div class="dlg-pe">
       <button type="button" class="btn sec" id="cancelar">Cancelar</button>
@@ -457,7 +472,7 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=9"></script>
+<script src="comum.js?v=11"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -579,7 +594,7 @@ function repararCategorias() {
   const exp = new Set(nosExp().map(x => x.no.id));
   dados.produtos.forEach(p => {
     if (!reais.has(p.categoria)) p.categoria = '';
-    p.extras = (p.extras || []).filter(x => exp.has(x));
+    p.extras = (p.extras || []).filter(x => exp.has(x.cat));
   });
 }
 const irmaos = pai => pai ? pai.filhas : dados.categorias;
@@ -1005,7 +1020,7 @@ $('arvore').addEventListener('click', e => {
 // ---------- aba Produtos (lista agrupada e recolhida) ----------
 function linhaProduto(p) {
   const nomesEtq = dados.etiquetas.filter(e => p.etiquetas.includes(e.id)).map(e => e.nome);
-  const info = [textoValor(p), p.imagens.length > 1 ? p.imagens.length + ' fotos' : '', ...nomesEtq, p.disponivel ? '' : 'esgotado'].filter(Boolean).join(' · ');
+  const info = [p.tipo, textoValor(p), p.armazenamentos && p.armazenamentos.length ? p.armazenamentos.map(a => a.nome).join(' / ') : '', p.imagens.length > 1 ? p.imagens.length + ' fotos' : '', ...nomesEtq, p.disponivel ? '' : 'esgotado'].filter(Boolean).join(' · ');
   return `
     <div class="linha${p.disponivel ? '' : ' off'}" data-id="${esc(p.id)}">
       ${p.imagens[0] ? `<img class="th" data-acao="editar" src="${esc(urlFoto(p.imagens[0]))}" alt="Editar ${esc(p.nome)}">` : `<div class="th" data-acao="editar">${esc(iniciais(p.nome))}</div>`}
@@ -1114,17 +1129,35 @@ function preencherCats(id) {
   $('f-cat').value = catForm;
 }
 // listas de "escolher junto"
-let extrasForm = [];
+let extrasForm = [];          // [{cat, rotulo}]
 function renderExtras() {
-  $('extras-lista').innerHTML = extrasForm.map((id, i) => {
-    const x = acharNoExp(id);
-    return `<div class="extra-linha"><div><b>${esc(x ? x.no.nome : '?')}</b><small>${esc(caminhoExp(id))}</small></div>
+  $('extras-lista').innerHTML = extrasForm.map((e, i) => {
+    const x = acharNoExp(e.cat), nomeFinal = x ? x.no.nome : '?';
+    return `<div class="extra-linha"><div><b>${esc(nomeFinal)}</b><small>${esc(caminhoExp(e.cat))}</small>
+      <input class="inp" data-rotulo="${i}" value="${esc(e.rotulo)}" placeholder="Texto do botão (ex.: Adicionar ${esc(nomeFinal)})" aria-label="Texto do botão"></div>
       <button type="button" class="ib del" data-rm-extra="${i}" title="Remover esta lista">✕</button></div>`;
   }).join('');
-  $('f-extra').innerHTML = '<option value="">＋ Adicionar lista de itens (escolha o caminho)…</option>' + opcoesArvore(extrasForm);
+  $('f-extra').innerHTML = '<option value="">＋ Adicionar botão para outra lista (escolha o caminho)…</option>' + opcoesArvore(extrasForm.map(e => e.cat));
   $('f-extra').value = '';
 }
-$('f-extra').addEventListener('change', () => { const v = $('f-extra').value; if (v && !extrasForm.includes(v)) extrasForm.push(v); renderExtras(); });
+$('extras-lista').addEventListener('input', e => { const i = e.target.dataset.rotulo; if (i !== undefined) extrasForm[+i].rotulo = e.target.value; });
+$('f-extra').addEventListener('change', () => {
+  const v = $('f-extra').value, x = acharNoExp(v);
+  if (v && !extrasForm.some(e => e.cat === v)) extrasForm.push({cat: v, rotulo: x ? 'Adicionar ' + x.no.nome : ''});
+  renderExtras();
+});
+let armForm = [];             // [{id, nome, gb, valor}]
+const numBR = v => v === null || v === undefined || v === '' ? '' : Number(v).toLocaleString('pt-BR', {maximumFractionDigits: 2});
+function renderArm() {
+  $('arm-lista').innerHTML = armForm.map((a, i) => `<div class="arm-linha" data-i="${i}">
+    <div><label>Versão</label><input data-k="nome" value="${esc(a.nome)}" placeholder="Ex.: 1 TB"></div>
+    <div><label>Espaço livre (GB)</label><input data-k="gb" inputmode="decimal" value="${esc(numBR(a.gb))}" placeholder="Ex.: 870"></div>
+    <div><label>Preço (R$)</label><input data-k="valor" inputmode="decimal" value="${esc(numBR(a.valor))}" placeholder="Igual ao produto"></div>
+    <button type="button" class="ib del" data-rm-arm="${i}" title="Remover versão">✕</button></div>`).join('');
+}
+$('add-arm').onclick = () => { armForm.push({id: novoId(), nome: '', gb: '', valor: ''}); renderArm(); $('arm-lista').querySelector('.arm-linha:last-child input').focus(); };
+$('arm-lista').addEventListener('input', e => { const l = e.target.closest('.arm-linha'); if (l) armForm[+l.dataset.i][e.target.dataset.k] = e.target.value; });
+$('arm-lista').addEventListener('click', e => { const b = e.target.closest('[data-rm-arm]'); if (b) { armForm.splice(+b.dataset.rmArm, 1); renderArm(); } });
 $('extras-lista').addEventListener('click', e => { const b = e.target.closest('[data-rm-extra]'); if (b) { extrasForm.splice(+b.dataset.rmExtra, 1); renderExtras(); } });
 $('f-cat').addEventListener('change', () => {
   const v = $('f-cat').value;
@@ -1193,8 +1226,12 @@ function abrirForm(p) {
   form.disponivel.checked = p ? p.disponivel : true;
   fotosForm = (p?.imagens || []).map(path => ({path}));
   etqForm = new Set(p?.etiquetas || []);
-  extrasForm = [...(p?.extras || [])];
+  extrasForm = (p?.extras || []).map(e => ({...e}));
   renderExtras();
+  armForm = (p?.armazenamentos || []).map(a => ({...a}));
+  renderArm();
+  form.tipo.value = p?.tipo || '';
+  $('tipos-lista').innerHTML = [...new Set(dados.produtos.map(x => x.tipo).filter(Boolean))].sort().map(t => `<option value="${esc(t)}">`).join('');
   preencherCats(p?.categoria);
   definirUnidade(p?.unidade || 'R$');
   renderGaleria(); renderEtqs();
@@ -1210,6 +1247,13 @@ form.addEventListener('submit', async e => {
   if (!nome) { form.nome.focus(); aviso('Dê um nome ao produto.', 'erro'); return; }
   const valor = lerNumero(form.valor.value);
   if (Number.isNaN(valor)) { form.valor.focus(); aviso('Valor inválido. Use algo como 1.299,90 ou deixe vazio.', 'erro'); return; }
+  const arms = [];
+  for (const a of armForm) {
+    const gb = lerNumero(a.gb), vv = lerNumero(a.valor);
+    if (!String(a.nome).trim() && gb === null) continue;
+    if (Number.isNaN(gb) || Number.isNaN(vv)) { aviso('Confira os números do armazenamento (espaço e preço).', 'erro'); return; }
+    arms.push({id: a.id || novoId(), nome: String(a.nome).trim() || (gb ? num(gb) + ' GB' : ''), gb: gb || 0, valor: vv});
+  }
   const novas = fotosForm.filter(f => f.data);
   if (novas.length && !conectado) { aviso('Conecte ao GitHub (aba Conexão) para enviar fotos.', 'erro'); return; }
 
@@ -1235,7 +1279,9 @@ form.addEventListener('submit', async e => {
     unidade: unidadeForm, valor, descricao: form.descricao.value.trim(), imagens,
     disponivel: form.disponivel.checked,
     etiquetas: dados.etiquetas.filter(x => etqForm.has(x.id)).map(x => x.id),
-    extras: extrasForm.filter(id => acharNoExp(id))
+    extras: extrasForm.filter(e => acharNoExp(e.cat)).map(e => ({cat: e.cat, rotulo: String(e.rotulo || '').trim()})),
+    tipo: form.tipo.value.trim(),
+    armazenamentos: arms
   };
   const i = editando ? dados.produtos.findIndex(x => x.id === editando.id) : -1;
   if (i >= 0) dados.produtos[i] = p; else dados.produtos.unshift(p);
