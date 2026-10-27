@@ -1059,6 +1059,22 @@
   ],
   "produtos": [
     {
+      "id": "mvpz34r1vvd8",
+      "nome": "God of War 2018",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 35,
+      "descricao": "",
+      "imagens": [
+        "imagens/god-of-war-2018-mvpz336xfn4b.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
       "id": "mvpvevqzvat1",
       "nome": "Fifa 27",
       "descricao": "",
