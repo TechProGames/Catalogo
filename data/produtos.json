@@ -226,9 +226,11 @@
             {
               "id": "mvpxjh7llydt",
               "nome": "Console",
-              "filhas": []
+              "filhas": [],
+              "usa": []
             }
-          ]
+          ],
+          "usa": []
         },
         {
           "id": "mvpp04ewy3z3",
@@ -241,7 +243,12 @@
               "usa": []
             }
           ],
-          "usa": []
+          "usa": [
+            {
+              "id": "mvpxcqntjkrc",
+              "modo": "inteira"
+            }
+          ]
         },
         {
           "id": "mvpp0jwykj1v",
@@ -254,7 +261,12 @@
               "usa": []
             }
           ],
-          "usa": []
+          "usa": [
+            {
+              "id": "mvpxeog23adz",
+              "modo": "inteira"
+            }
+          ]
         },
         {
           "id": "mvpp0oeupa6x",
@@ -267,7 +279,12 @@
               "usa": []
             }
           ],
-          "usa": []
+          "usa": [
+            {
+              "id": "mvpxg0tpqw76",
+              "modo": "inteira"
+            }
+          ]
         },
         {
           "id": "mvpp29dg2tnh",
@@ -280,7 +297,12 @@
               "usa": []
             }
           ],
-          "usa": []
+          "usa": [
+            {
+              "id": "mvpxh1dhtf84",
+              "modo": "inteira"
+            }
+          ]
         },
         {
           "id": "mvpxhpybfdlc",
@@ -289,7 +311,8 @@
             {
               "id": "mvpxjmf14i3z",
               "nome": "Console",
-              "filhas": []
+              "filhas": [],
+              "usa": []
             }
           ],
           "usa": []
@@ -301,9 +324,11 @@
             {
               "id": "mvpxjnlhw6rr",
               "nome": "Console",
-              "filhas": []
+              "filhas": [],
+              "usa": []
             }
-          ]
+          ],
+          "usa": []
         },
         {
           "id": "mvpxipq927oo",
@@ -312,9 +337,11 @@
             {
               "id": "mvpxjp0bm7e4",
               "nome": "Console",
-              "filhas": []
+              "filhas": [],
+              "usa": []
             }
-          ]
+          ],
+          "usa": []
         },
         {
           "id": "mvpxix2fhbtr",
@@ -323,9 +350,11 @@
             {
               "id": "mvpxjqboltb0",
               "nome": "Console",
-              "filhas": []
+              "filhas": [],
+              "usa": []
             }
-          ]
+          ],
+          "usa": []
         }
       ],
       "usa": []
