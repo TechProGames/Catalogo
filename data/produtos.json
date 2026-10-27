@@ -1061,16 +1061,18 @@
     {
       "id": "mvpvevqzvat1",
       "nome": "Fifa 27",
+      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 80,
-      "descricao": "",
       "imagens": [
         "imagens/fifa-27-mvpvf2h5gakz.jpg"
       ],
       "disponivel": true,
       "etiquetas": [],
-      "extras": []
+      "extras": [],
+      "tipo": "",
+      "armazenamentos": []
     },
     {
       "id": "ps4slim",
@@ -1091,7 +1093,19 @@
         "mvpvkxhzkieq"
       ],
       "extras": [
-        "mvpp04ewy3z3>mvpxcqntjkrc>mvpxdr6mggrm>mvpxdvp0ubk4"
+        {
+          "cat": "mvpxdr6mggrm",
+          "rotulo": "Adicionar Jogos"
+        }
+      ],
+      "tipo": "Console",
+      "armazenamentos": [
+        {
+          "id": "mvpywib957z6",
+          "nome": "500gb",
+          "gb": 365,
+          "valor": null
+        }
       ]
     }
   ]
