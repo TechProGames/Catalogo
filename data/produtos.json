@@ -19,13 +19,13 @@
         "texto": "#eef2fa",
         "textoSec": "#8592aa",
         "principal": "#2b8cff",
-        "destaque": "#ff2d55"
+        "destaque": "#7e7dca"
       },
       "textos": {
         "marca2": {
           "fonte": "",
           "escala": 1,
-          "cor": "",
+          "cor": "#1515d1",
           "negrito": false,
           "italico": false,
           "maiusculas": false,
