@@ -14,6 +14,13 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--txt);font:15px/1.45 Barlow,system-ui,sans-serif;min-height:100vh;padding-bottom:110px}
 button,input,textarea,select{font:inherit;color:inherit}
+:root{color-scheme:dark}
+html,dialog,.previa-box,#arvore{scrollbar-color:#2e3a55 transparent}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#2e3a55;border-radius:10px;border:2px solid transparent;background-clip:padding-box}
+::-webkit-scrollbar-thumb:hover{background-color:#3d4c6e}
+select option{background:#0c111b;color:#eef2fa}
 a{color:var(--azul2)}
 .wrap{max-width:1180px;margin:0 auto;padding:0 16px}
 header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0 12px;flex-wrap:wrap}
@@ -478,7 +485,7 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=12"></script>
+<script src="comum.js?v=13"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

@@ -21,7 +21,9 @@
 html{-webkit-text-size-adjust:100%;font-size:calc(16px * var(--esc-txt))}
 body{position:relative;background:var(--bg);color:var(--txt);font:1rem/1.45 var(--f-txt);min-height:100vh;padding-bottom:120px;
   background-image:radial-gradient(900px 420px at 90% -10%,color-mix(in srgb,var(--azul) 18%,transparent),transparent 60%),radial-gradient(700px 360px at -10% 0%,color-mix(in srgb,var(--verm) 12%,transparent),transparent 60%);background-attachment:fixed}
-button,input,textarea{font:inherit;color:inherit}
+button,input,textarea,select{font:inherit;color:inherit}
+select option{background:var(--bg2);color:var(--txt)}
+html{scrollbar-color:color-mix(in srgb,var(--txt) 28%,transparent) transparent}
 .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
 .palco-topo{position:relative;overflow-x:clip}
 /* o topo é desenhado numa largura fixa (390 px no celular, 1100 px no computador) e depois ampliado/reduzido por igual,
@@ -172,7 +174,7 @@ header.wrap>.livre{position:absolute;margin:0;z-index:4;max-width:calc(100% - 32
 .campo-busca.mini input{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:9px 12px 9px 34px;outline:none;font-size:.875rem}
 .campo-busca.mini input:focus{border-color:var(--azul)}
 .campo-busca.mini svg{left:11px}
-.ferr-linha select{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:9px 10px;font-size:.875rem;flex:1 1 130px;max-width:220px}
+.ferr-linha select{color:var(--txt);background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:9px 10px;font-size:.875rem;flex:1 1 130px;max-width:220px}
 .para{background:color-mix(in srgb,var(--azul) 12%,var(--bg2));border:1px solid color-mix(in srgb,var(--azul) 45%,transparent);border-radius:12px;padding:10px 12px;font-size:.875rem;display:flex;flex-direction:column;gap:8px}
 .para:empty{display:none}
 .espaco{display:flex;flex-direction:column;gap:5px;font-size:.8125rem;color:var(--azul2);font-weight:600}
@@ -304,7 +306,7 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=12"></script>
+<script src="comum.js?v=13"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

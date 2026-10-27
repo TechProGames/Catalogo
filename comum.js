@@ -264,6 +264,7 @@ function aplicarTema(tema) {
     '--logo-h': t.logoAltura + 'px', '--foto-ar': t.formatoFoto, '--foto-fit': t.ajusteFoto
   };
   for (const k in v) r.setProperty(k, String(v[k]));
+  r.colorScheme = corSobre(c.fundo) === '#ffffff' ? 'dark' : 'light';   // listas e barras de rolagem no modo do tema
   // tamanhos: um conjunto para computador e outro para celular
   const cel = v2 => v2 ?? null;
   let pc = `--esc-tit:${t.escTitulo};--esc-txt:${t.escTexto};`, ce = `--esc-tit:${cel(t.escTituloCel) ?? t.escTitulo};--esc-txt:${cel(t.escTextoCel) ?? t.escTexto};`;
