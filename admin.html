@@ -321,6 +321,12 @@ dialog form{padding:18px}
             <div class="campo"><label for="t-etxt">Tamanho dos textos <span class="disp-rot"></span> <output id="o-etxt"></output></label>
               <input type="range" id="t-etxt" min="0.85" max="1.3" step="0.05"></div>
           </div>
+          <div class="dois">
+            <div class="campo"><label for="t-ffoto">Formato das fotos dos produtos</label><select id="t-ffoto" data-tema="formatoFoto"></select></div>
+            <div class="campo"><label for="t-afoto">Ajuste da foto</label><select id="t-afoto" data-tema="ajusteFoto">
+              <option value="contain">Mostrar a foto inteira (pode sobrar borda)</option>
+              <option value="cover">Preencher o quadro (sem borda, corta as pontas)</option></select></div>
+          </div>
           <p class="dica">A fonte base vale para todos os textos. Os <b>tamanhos valem para o aparelho escolhido na pré-visualização</b> (📱 celular ou 🖥 computador) — mudar um não mexe no outro. Para mudar um texto só, use o bloco <b>Textos</b> abaixo.</p>
           <div class="acoes"><button class="btn link" id="tema-padrao">Restaurar toda a aparência ao padrão</button></div>
         </div>
@@ -472,7 +478,7 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=11"></script>
+<script src="comum.js?v=12"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -864,6 +870,7 @@ function saidas() {
 $('t-etit').addEventListener('input', e => { dados.loja.tema[tamCel() ? 'escTituloCel' : 'escTitulo'] = Number(e.target.value); saidas(); marcarSujo(); });
 $('t-etxt').addEventListener('input', e => { dados.loja.tema[tamCel() ? 'escTextoCel' : 'escTexto'] = Number(e.target.value); saidas(); marcarSujo(); });
 const opcoesFonte = Object.keys(FONTES).map(f => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
+$('t-ffoto').innerHTML = FORMATOS_FOTO.map(f => `<option value="${f.v}">${esc(f.nome)}</option>`).join('');
 $('t-ftit').innerHTML = opcoesFonte; $('t-ftxt').innerHTML = opcoesFonte;
 $('paletas').innerHTML = PALETAS.map((p, i) => `<button type="button" class="paleta" data-paleta="${i}">
   <span class="amostra">${['fundo', 'cartao', 'principal', 'destaque', 'texto'].map(k => `<i style="background:${p.cores[k]}"></i>`).join('')}</span>${esc(p.nome)}</button>`).join('');

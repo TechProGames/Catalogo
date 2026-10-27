@@ -23,6 +23,7 @@ const FONTES = {
 const TEMA_PADRAO = {
   fonteTitulo: 'Barlow Condensed', fonteTexto: 'Barlow',
   escTitulo: 1, escTexto: 1, logoAltura: 140,
+  formatoFoto: '4/5', ajusteFoto: 'contain',          // fotos dos cartões: proporção e "inteira" (contain) ou "preencher" (cover)
   cores: {fundo: '#07090f', cartao: '#101624', texto: '#eef2fa', textoSec: '#8592aa', principal: '#2b8cff', destaque: '#ff2d55'}
 };
 
@@ -35,6 +36,10 @@ const PALETAS = [
   {nome: 'Claro', cores: {fundo: '#f4f6fb', cartao: '#ffffff', texto: '#141a26', textoSec: '#5d6880', principal: '#1f6feb', destaque: '#e11d48'}}
 ];
 
+const FORMATOS_FOTO = [
+  {v: '1/1', nome: 'Quadrada (1:1)'}, {v: '4/5', nome: 'Capa de jogo (4:5)'}, {v: '3/4', nome: 'Retrato (3:4)'},
+  {v: '2/3', nome: 'Pôster (2:3)'}, {v: '9/16', nome: 'Story (9:16)'}
+];
 const NOMES_CORES = {fundo: 'Fundo', cartao: 'Cartões', texto: 'Texto', textoSec: 'Texto secundário', principal: 'Cor principal', destaque: 'Cor de destaque'};
 
 const novoId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
@@ -94,6 +99,8 @@ function mesclarTema(t) {
   if (!(r.fonteTitulo in FONTES)) r.fonteTitulo = TEMA_PADRAO.fonteTitulo;
   if (!(r.fonteTexto in FONTES)) r.fonteTexto = TEMA_PADRAO.fonteTexto;
   for (const k of ['escTitulo', 'escTexto', 'logoAltura']) if (!isFinite(+r[k])) r[k] = TEMA_PADRAO[k];
+  if (!FORMATOS_FOTO.some(f => f.v === r.formatoFoto)) r.formatoFoto = TEMA_PADRAO.formatoFoto;
+  if (!['contain', 'cover'].includes(r.ajusteFoto)) r.ajusteFoto = TEMA_PADRAO.ajusteFoto;
   // tamanhos do celular (null = igual ao computador)
   const numOuNulo = v => (v !== null && v !== undefined && v !== '' && isFinite(+v) && +v > 0) ? +v : null;
   r.escTituloCel = numOuNulo(t.escTituloCel); r.escTextoCel = numOuNulo(t.escTextoCel);
@@ -254,7 +261,7 @@ function aplicarTema(tema) {
     '--bg': c.fundo, '--card': c.cartao, '--txt': c.texto, '--mut': c.textoSec, '--azul': c.principal, '--verm': c.destaque,
     '--sobre-azul': corSobre(c.principal), '--sobre-verm': corSobre(c.destaque),
     '--f-tit': `"${t.fonteTitulo}","Arial Narrow",sans-serif`, '--f-txt': `"${t.fonteTexto}",system-ui,sans-serif`,
-    '--logo-h': t.logoAltura + 'px'
+    '--logo-h': t.logoAltura + 'px', '--foto-ar': t.formatoFoto, '--foto-fit': t.ajusteFoto
   };
   for (const k in v) r.setProperty(k, String(v[k]));
   // tamanhos: um conjunto para computador e outro para celular

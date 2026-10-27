@@ -76,12 +76,12 @@ header.wrap>.livre{position:absolute;margin:0;z-index:4;max-width:calc(100% - 32
 .card:hover{border-color:color-mix(in srgb,var(--azul) 50%,var(--line))}
 .card.sel{border-color:var(--azul);box-shadow:0 0 0 1px var(--azul),0 0 22px color-mix(in srgb,var(--azul) 25%,transparent)}
 .card.off{opacity:.55}
-.foto{aspect-ratio:9/16;background:color-mix(in srgb,var(--card) 70%,#000);position:relative;overflow:hidden}
-/* fotos em 9:16 sem cortar */
-.foto>img{width:100%;height:100%;object-fit:contain;display:block}
+.foto{aspect-ratio:var(--foto-ar,4/5);background:color-mix(in srgb,var(--card) 70%,#000);position:relative;overflow:hidden}
+/* formato e ajuste das fotos vêm do painel (aba Loja) */
+.foto>img{width:100%;height:100%;object-fit:var(--foto-fit,contain);display:block}
 .slides{display:flex;width:100%;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .slides::-webkit-scrollbar{display:none}
-.slides img{flex:0 0 100%;width:100%;height:100%;object-fit:contain;scroll-snap-align:start}
+.slides img{flex:0 0 100%;width:100%;height:100%;object-fit:var(--foto-fit,contain);scroll-snap-align:start}
 .pontos{position:absolute;left:0;right:0;bottom:8px;display:flex;justify-content:center;gap:5px;pointer-events:none}
 .pontos i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.5);box-shadow:0 0 3px rgba(0,0,0,.5);transition:.2s}
 .pontos i.on{background:#fff;width:16px;border-radius:3px}
@@ -136,6 +136,7 @@ header.wrap>.livre{position:absolute;margin:0;z-index:4;max-width:calc(100% - 32
 .det::backdrop{background:rgba(0,0,0,.7)}
 .det[open]{display:grid;grid-template-columns:1fr 1fr}
 .det .foto{aspect-ratio:auto;min-height:100%;max-height:92dvh;background:#000}
+.det .foto>img,.det .slides img{object-fit:contain}
 .det .foto .semfoto{font-size:80px}
 .det .seta{opacity:1}
 .det .n-fotos{right:auto;left:10px}
@@ -303,7 +304,7 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=11"></script>
+<script src="comum.js?v=12"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
