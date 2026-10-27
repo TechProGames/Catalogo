@@ -126,6 +126,7 @@ header.wrap>.livre{position:absolute;margin:0;z-index:4;max-width:calc(100% - 32
 .btn-add:hover{background:color-mix(in srgb,var(--azul) 12%,transparent)}
 .btn-add.on{background:var(--azul);color:var(--sobre-azul)}
 .btn-add:disabled{border-color:var(--line);color:var(--mut);cursor:default;background:none}
+.btn-add.nao-cabe{border-color:color-mix(in srgb,#ff4d4d 55%,transparent);color:#ff7b7b;background:color-mix(in srgb,#ff4d4d 8%,transparent);cursor:not-allowed;font-weight:800;letter-spacing:.4px}
 .qtd{display:flex;align-items:center;justify-content:space-between;background:var(--azul);color:var(--sobre-azul);border-radius:10px;overflow:hidden}
 .qtd button{background:none;border:0;width:44px;height:40px;font-size:22px;font-weight:700;cursor:pointer;color:inherit}
 .qtd button:active{background:rgba(255,255,255,.15)}
@@ -216,6 +217,9 @@ header.wrap>.livre{position:absolute;margin:0;z-index:4;max-width:calc(100% - 32
 /* barra e gaveta da seleção */
 .barra{position:fixed;left:0;right:0;bottom:0;z-index:10;padding:14px 16px calc(14px + env(safe-area-inset-bottom));background:linear-gradient(transparent,color-mix(in srgb,var(--bg) 96%,transparent) 35%);transform:translateY(130%);transition:transform .25s}
 .barra.on{transform:none}
+.espaco-rodape{max-width:560px;margin:0 auto 8px;background:color-mix(in srgb,var(--bg2) 94%,transparent);border:1px solid var(--line);border-radius:12px;padding:8px 12px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.espaco-rodape[hidden]{display:none}
+body.com-espaco{padding-bottom:200px}
 .b-info{display:flex;align-items:baseline;gap:4px 8px;flex-wrap:wrap;min-width:0;text-align:left}
 .b-info small{font-weight:600;opacity:.85;font-size:.8125rem}
 .b-info b{font-size:1rem;white-space:nowrap}
@@ -287,7 +291,7 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
 <div class="aviso-cliente" id="aviso" role="status" aria-live="polite"></div>
 <dialog class="det" id="det" aria-label="Detalhes do produto"></dialog>
 
-<div class="barra" id="barra"><button id="abrir"><span class="b-info" id="b-qtd"></span><span>Ver seleção →</span></button></div>
+<div class="barra" id="barra"><div class="espaco espaco-rodape" id="espaco-rodape" hidden></div><button id="abrir"><span class="b-info" id="b-qtd"></span><span>Ver seleção →</span></button></div>
 <div class="fundo" id="fundo"></div>
 <aside class="gaveta" id="gaveta" aria-label="Sua seleção">
   <div class="g-topo"><h2>Sua seleção</h2><button class="fechar" id="fechar" aria-label="Fechar">×</button></div>
@@ -562,7 +566,13 @@ function metaLinha(p) {
 function botao(p) {
   if (!p.disponivel) return '<button class="btn-add" disabled>Indisponível</button>';
   const q = sel[p.id] || 0, id = esc(p.id);
-  if (ehGB(p)) return q ? `<button class="btn-add on" data-a="x" data-id="${id}">✓ Adicionado</button>` : `<button class="btn-add" data-a="+" data-id="${id}">Adicionar</button>`;
+  if (ehGB(p)) {
+    if (q) return `<button class="btn-add on" data-a="x" data-id="${id}">✓ Adicionado</button>`;
+    const t = somas(itensSel());
+    if (t.limite && temValor(p) && t.gb + p.valor > t.limite)
+      return `<button class="btn-add nao-cabe" data-a="+" data-id="${id}" aria-disabled="true" title="Restam ${num(Math.max(0, t.limite - t.gb))} GB">NÃO CABE</button>`;
+    return `<button class="btn-add" data-a="+" data-id="${id}">Adicionar</button>`;
+  }
   return q
     ? `<div class="qtd"><button data-a="-" data-id="${id}" aria-label="Diminuir">−</button><span>${q}</span><button data-a="+" data-id="${id}" aria-label="Aumentar">+</button></div>`
     : `<button class="btn-add" data-a="+" data-id="${id}">Selecionar</button>`;
@@ -825,12 +835,24 @@ function atualizar() {
     const p = produtos.find(x => x.id === paraProduto);
     if (!p || !sel[p.id]) bp.innerHTML = '';
     else {
-      const pct = t.limite ? Math.min(100, Math.round(100 * t.gb / t.limite)) : 0;
-      bp.innerHTML = `<div class="para-txt">✓ <b>${esc(nomeCompleto(p))}</b> já está na sua seleção. Agora é só escolher abaixo.</div>` +
-        (t.limite ? `<div class="espaco${t.gb > t.limite ? ' estouro' : ''}"><div class="espaco-barra"><i style="width:${pct}%"></i></div>
-          <span>💾 ${num(t.gb)} de ${num(t.limite)} GB usados · restam ${num(Math.max(0, t.limite - t.gb))} GB</span></div>` : '');
+      bp.innerHTML = `<div class="para-txt">✓ <b>${esc(nomeCompleto(p))}</b> já está na sua seleção. Agora é só escolher abaixo.</div>`;
     }
   }
+  // barra de espaço sempre visível no rodapé
+  const er = $('espaco-rodape');
+  if (t.limite) {
+    const pct = Math.min(100, Math.round(100 * t.gb / t.limite));
+    er.hidden = false;
+    er.classList.toggle('estouro', t.gb > t.limite);
+    er.innerHTML = `<div class="espaco-barra"><i style="width:${pct}%"></i></div>
+      <span>💾 ${num(t.gb)} de ${num(t.limite)} GB usados · restam ${num(Math.max(0, t.limite - t.gb))} GB</span>`;
+  } else er.hidden = true;
+  document.body.classList.toggle('com-espaco', !!t.limite && n > 0);
+  // botões dos itens em GB mudam para "NÃO CABE" quando o espaço restante não comporta
+  document.querySelectorAll('[data-acao-de]').forEach(el => {
+    const q = produtos.find(x => x.id === el.dataset.acaoDe);
+    if (q && ehGB(q) && !sel[q.id]) { const h = botao(q); if (el.innerHTML !== h) el.innerHTML = h; }
+  });
   let tot = '';
   if (t.temR || !t.temGB) tot += `<div class="total"><span>Total estimado</span><b>${brl(t.reais)}</b></div>`;
   if (t.temGB) tot += `<div class="total gb"><span>${t.limite ? 'Espaço usado' : 'Total em GB'}</span><b>${num(t.gb)}${t.limite ? ' / ' + num(t.limite) : ''} GB</b></div>`;
