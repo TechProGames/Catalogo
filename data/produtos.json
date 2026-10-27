@@ -1057,9 +1057,227 @@
     {
       "id": "mvpvkxhzkieq",
       "nome": "Oferta"
+    },
+    {
+      "id": "mvr1up8br6dt",
+      "nome": "Legendado ou Dublado em Pt-Br"
     }
   ],
   "produtos": [
+    {
+      "id": "mvr28692bsi3",
+      "nome": "Yu-Gi-Oh! Forbidden Memories",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 1,
+      "descricao": "A história de Yu-Gi-Oh! Forbidden Memories (lançado para PS1 em 1999) se passa em duas eras conectadas: o Antigo Egito e a época atual.\n\nSinopse da História\n\n• O Antigo Egito: O jogo acompanha um jovem príncipe faraó (antepassado de Yugi) que foge do palácio para duelar com plebeus e amigos como Teana e Jono.\n• A Traição de Heishin: O sumo sacerdote Heishin (ou Reichin) usa relíquias e magia negra para dar um golpe de Estado, invadir o castelo e capturar o faraó e a rainha.\n• O Sacrifício e o Enigma: Para impedir que Heishin liberte um mal supremo e obtenha o último Item do Milênio, o conselheiro Simon Muran faz o príncipe quebrar seu pingente. Isso sela a alma de ambos dentro dele, criando o Enigma do Milênio.\n• O Presente e o Torneio: Milênios depois, Yugi Muto (idêntico ao príncipe) resolve o quebra-cabeça, liberta a alma do faraó em sua mente e participa de um torneio mundial de monstros de duelo ao lado de seus amigos Joey e Tea.\n• A Conexão com o Passado: A jornada faz Yugi reviver os duelos e confrontar as sombras do Egito Antigo para impedir que forças malignas regressem, culminando em uma sequência de duelos contra grandes magos e o chefe final Nitemare.",
+      "imagens": [
+        "imagens/yu-gi-oh-forbidden-memories-mvr284nnrezz.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvr26tk227se",
+      "nome": "Woody Woodpecker Racing",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 0.5,
+      "descricao": "Woody Woodpecker Racing é um jogo de corrida de kart no estilo arcade lançado em novembro de 2000 pela Konami para o PlayStation 1 (além de versões para PC e Game Boy Color), baseado na série animada The New Woody Woodpecker Show.\n\nSinopse e Premissa\n\nO jogo não possui uma narrativa profunda ou campanha cinematográfica complexa. A premissa gira em torno de uma grande competição de velocidade que reúne o Pica-Pau (Woody Woodpecker), seus amigos e seus maiores rivais em disputas caóticas por pistas inspiradas em cenários clássicos do desenho animado — incluindo locais como Brasil, Itália e Japão.\n\nPrincipais Características\n\n• Gênero: Corrida de kart estilo Super Mario Kart (com visão traseira em 3D, derrapagens e caixas de itens espalhadas pelas pistas).\n• Personagens Jogáveis: Conta com personagens como Pica-Pau, Winnie Woodpecker, Zeca Urubu (Buzz Buzzard), Picolino (Chilly Willy), Zico e Lico (Knothead e Splinter), Zé Meio-Dia (Dapper Denver Dooley), entre outros.\n• Modos de Jogo: Oferece modos como Quest (Aventura/Campeonato), Time Trial (Contra o Relógio), Single Race (Corrida Simples) e Multiplayer para até 2 jogadores em tela dividida.\n• Mecânicas: Os corredores utilizam ataques especiais e itens peculiares (como tomates e pombos-correio) para atrapalhar os adversários durante o percurso.",
+      "imagens": [
+        "imagens/woody-woodpecker-racing-mvr26rvs4ihg.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Corrida",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvr25dz93diq",
+      "nome": "Toy Story 2 Buzz Lightyear to the Rescue",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 1.5,
+      "descricao": "A sinopse de Toy Story 2: Buzz Lightyear to the Rescue! (lançado para PS1 em 1999) acompanha o patrulheiro espacial Buzz Lightyear em uma missão de resgate para salvar o caubói Woody.\n\nResumo da Trama\n\n• O Sequestro: Woody é roubado de uma venda de garagem (ou da própria casa de Andy) por Al McWhiggin, um colecionador de brinquedos ganancioso que pretende completar sua coleção rara baseada no antigo programa de TV Woody's Roundup.\n• A Missão: Percebendo o desaparecimento do amigo, Buzz Lightyear lidera os demais brinquedos — incluindo Hamm, Rex, Slinky e o Sr. Cabeça de Batata — em uma jornada perigosa para rastrear e resgatar Woody.\n• A Jornada: O jogo é dividido em 15 fases espalhadas por 5 zonas principais, que levam o jogador desde o Quarto do Andy e a vizinhança local até a loja de brinquedos de Al, a cobertura do prédio e, por fim, o terminal e a pista de um aeroporto.\n• O Confronto Final: Ao longo do caminho, Buzz enfrenta diversos inimigos, recupera partes perdidas dos amigos e chega ao clímax para enfrentar o vilão Stinky Pete (o Garimpeiro) e outros chefes para trazer Woody de volta para casa.",
+      "imagens": [
+        "imagens/toy-story-2-buzz-lightyear-to-the-rescue-mvr25cbt76z1.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvr23mk8lwwa",
+      "nome": "The King of Fighters 98",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 0.5,
+      "descricao": "The King of Fighters '98 não possui uma sinopse ou história oficial, pois foi lançado como um \"Dream Match\" (uma partida dos sonhos).\n\nDetalhes do Jogo:\n\n• Sem enredo canônico: O jogo foi criado apenas para reunir os personagens favoritos dos fãs após o encerramento da \"Saga Orochi\" em KOF '97.\n• Reunião de personagens: Inclui lutadores de edições anteriores, até mesmo personagens que haviam morrido na cronologia da história principal.\n• Chefes: O chefe final do jogo é Omega Rugal (a versão ciborgue de Rugal Bernstein).\n• Continuação da história: A narrativa oficial da franquia só continuou no jogo seguinte, The King of Fighters '99, que introduziu o novo protagonista K'",
+      "imagens": [
+        "imagens/the-king-of-fighters-98-mvr23l7hok3j.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Luta",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvr20681uiem",
+      "nome": "Spider-Man",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 1.5,
+      "descricao": "O jogo Spider-Man (2000), lançado para o PlayStation (PS1), gira em torno do Homem-Aranha tentando limpar seu nome após ser incriminado por um impostor.\n\nSinopse Principal\n\n• A Armação: Durante uma exposição científica do Dr. Otto Octavius (Doutor Octopus), um herói idêntico ao Homem-Aranha (que depois se revela ser o Mysterio) rouba o equipamento principal do cientista. Com isso, Peter Parker passa a ser caçado pela polícia de Nova York.\n• A Fuga e os Aliados: Enquanto tenta provar sua inocência e fugir das autoridades (que usam helicópteros e tanques), o herói conta com a ajuda de aliados como a Gata Negra, o Demolidor e o Tocha Humana.\n• A Conspiração do Venom e Carnificina: A trama se complica quando o vilão Venom (Eddie Brock, que culpa o Aranha pela destruição de sua carreira no jornal) sequestra Mary Jane Watson, esposa de Peter Parker.\n• O Plano dos Vilões: Descobre-se que o Doutor Octopus e o simbionte Carnificina (Carnage) estão por trás de um plano maior para liberar um gás tóxico e perigoso sobre toda a cidade de Nova York.\n• O Confronto Final: Após enfrentar diversos inimigos clássicos (como Escorpião e Rino), o Homem-Aranha precisa deter a união monstruosa entre Octopus e Carnificina, conhecida como Monster Ock, na batalha final do jogo.",
+      "imagens": [
+        "imagens/spider-man-mvr204d51xm4.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvr1y3pzf30u",
+      "nome": "Silent Hill",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 1.5,
+      "descricao": "O jogo Silent Hill (lançado para o PlayStation 1 em 1999 pela Konami) acompanha Harry Mason, um escritor e pai viúvo que decide passar férias com sua filha adotiva, Cheryl.\n\nA Premissa e a Busca\n\n• O acidente: Ao se aproximarem da misteriosa cidade turística de Silent Hill, Harry desvia para evitar uma figura na estrada, sofre um acidente e desmaia.\n• O desaparecimento: Quando acorda na névoa densa, percebe que Cheryl sumiu.\n• A descida ao pesadelo: Harry começa a explorar a cidade fantasma em busca da filha, mas logo percebe que Silent Hill não é um lugar normal. A cidade alterna entre a névoa pesada e um mundo alternativo (Otherworld), um cenário industrial sombrio, retorcido e tomado por criaturas grotescas, sangue e ferrugem.\n\nO Culto e a Verdade\n\n• A Ordem: Harry descobre que a cidade é dominada por um culto religioso fanático chamado \"A Ordem\", liderado por Dahlia Gillespie.\n• Alessa Gillespie: Anos antes, Alessa (filha de Dahlia) foi usada em um ritual cruel para dar à luz a uma divindade do culto. Para tentar escapar ou frear o plano, Alessa dividiu sua alma em duas partes. Uma dessas partes acabou sendo encontrada por Harry e sua esposa na beira da estrada: Cheryl.\n• O desfecho: Ao longo da jornada — auxiliado pela policial Cybil Bennett e outros personagens misteriosos —, Harry precisa confrontar os segredos do culto, o sofrimento de Alessa e a verdade sobre a origem da sua filha.\n(O jogo possui múltiplos finais dependendo das ações do jogador ao longo da campanha).",
+      "imagens": [
+        "imagens/silent-hill-mvr1y23zukyr.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Terror",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvr1uw4j0lnk",
+      "nome": "Resident Evil 2",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 2,
+      "descricao": "Em 29 de setembro de 1998, a cidade de Raccoon City é tomada por um surto do Vírus-T, transformando a população em zumbis.\nNesse cenário de caos, dois protagonistas chegam à cidade por motivos diferentes e precisam lutar para sobreviver:\n• Leon S. Kennedy: Um policial novato que chega para o seu primeiro dia de trabalho na Delegacia de Polícia de Raccoon City (R.P.D.).\n• Claire Redfield: Uma jovem estudante que viaja à cidade em busca de notícias de seu irmão mais velho, Chris Redfield (protagonista do primeiro jogo).\n\nPrincipais Pontos da Trama\n\n• O Encontro: Após um acidente de carro causado por um caminhoneiro infectado, Leon e Claire se separam no início da confusão e combinam de se encontrar na delegacia.\n• Aliados e Conspiração:\n\t• Leon encontra Ada Wong, uma mulher misteriosa que diz estar procurando pelo namorado (um pesquisador da Umbrella Corporation).\n\t• Claire encontra Sherry Birkin, uma garotinha perdida fugindo de criaturas mutantes.\n• O Vírus-G: A dupla descobre que o verdadeiro responsável pelo desastre é William Birkin, um cientista da corrupta Umbrella Corporation que desenvolveu o avançado Vírus-G. Após ser traído e baleado por agentes da Umbrella, Birkin injeta o próprio vírus em si mesmo, transformando-se em uma criatura monstruosa e mutante que persegue os protagonistas.\n• O Sistema \"Zapping\": O jogo original para o PlayStation 1 revolucionou com campanhas separadas para Leon e Claire (divididas em cenários A e B), onde as ações tomadas por um jogador em uma campanha afetam e alteram os acontecimentos da história do outro.",
+      "imagens": [
+        "imagens/resident-evil-2-mvr1uuklg1gc.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvr1rmd9say1",
+      "nome": "Medal of Honor",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 1.5,
+      "descricao": "O primeiro Medal of Honor (lançado em 1999 para PlayStation) acompanha o tenente Jimmy Patterson, um piloto de C-47 do exército americano que é recrutado pelo OSS (Escritório de Serviços Estratégicos, a agência de espionagem dos EUA na época).\n\nSinopse e Enredo\n\n• Contexto: A história se passa durante a Segunda Guerra Mundial, entre meados de 1944 e 1945, na Europa ocupada pelas forças da Alemanha Nazista.\n• Missão: Jimmy Patterson é enviado sozinho (ou com apoio pontual da Resistência Francesa) para trás das linhas inimigas em missões de alto risco.\n• Objetivos: O enredo não é sobre grandes batalhas em campo aberto, mas sim sobre operações secretas de sabotagem e infiltração. Jimmy precisa roubar documentos confidenciais, destruir bases e armamentos alemães, sabotar fábricas, resgatar prisioneiros e desmantelar planos táticos do Eixo.\n• Inspiração: Criado conceitualmente por Steven Spielberg (logo após o lançamento do filme O Resgate do Soldado Ryan), o jogo foca em uma abordagem mais séria, realista e cinematográfica da Segunda Guerra, abandonando os elementos de fantasia comuns aos jogos de tiro da época.",
+      "imagens": [
+        "imagens/medal-of-honor-mvr1rl1n427l.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvr1qaqhsibu",
+      "nome": "Jackie Chan Stuntmaster",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 1.5,
+      "descricao": "A sinopse de Jackie Chan Stuntmaster (PlayStation 1, 2000) gira em torno do resgate do avô do protagonista:\n• O ponto de partida: Jackie trabalha como entregador para o negócio de seu avô e recebe a missão de levar um pacote especial até o Templo Shaolin.\n• O incidente: Enquanto jantava em um restaurante, ele percebe que seu avô está sendo interrogado por cinco homens misteriosos.\n• O sequestro: Ao perceberem que estão sendo observados, os criminosos fogem e sequestram o avô de Jackie, levando também o pacote.\n• A jornada:",
+      "imagens": [
+        "imagens/jackie-chan-stuntmaster-mvr1q97jlbr3.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Luta",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvr1nxyto55k",
+      "nome": "Gran Turismo",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 1.5,
+      "descricao": "O Gran Turismo (1997) para o PlayStation 1 não possui uma narrativa ou história tradicional com personagens, mas sim uma proposta de simulação automotiva em formato de RPG de corrida.\n\nComo o jogo funciona (Estrutura e Objetivo)\n\n• Sem enredo fixo: O jogo coloca você na posição de um piloto iniciante cujo objetivo é construir sua carreira no automobilismo.\n• Modo Simulação (GT Mode): É o coração do jogo. Você começa com uma quantia modesta em dinheiro, compra um carro de rua mais simples (como um carro usado ou compacto) e precisa vencer campeonatos para acumular créditos (prize money), comprar carros melhores e realizar modificações de peças (pneus, motor, suspensão).\n• Sistema de Licenças: Para participar de eventos e campeonatos mais avançados, você é obrigado a passar por testes de habilidade prática de direção e frenagem para conquistar diferentes categorias de carteira de motorista (Licenças B, A e Internacional A).\n• Modo Arcade: Focado em partidas rápidas, onde você escolhe livremente um carro licenciado e uma pista para competir contra a Inteligência Artificial (IA) sem a burocracia de gerenciar dinheiro ou licenças.\n• Acervo: O título marcou época por trazer cerca de 140 a 180 veículos licenciados de marcas reais (como Toyota, Honda, Mitsubishi, Subaru e fabricantes americanos/europeus) e 11 pistas distintas.",
+      "imagens": [
+        "imagens/gran-turismo-mvr1nwbnv2kw.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Corrida",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvr1kb3aov75",
+      "nome": "Crash Bandicoot 2",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 0.5,
+      "descricao": "A sinopse de Crash Bandicoot 2: Cortex Strikes Back (lançado para PS1 em 1997) gira em torno de uma armadilha armada pelo arquinimigo do protagonista.\n• A queda de Cortex: Após ser derrotado no primeiro jogo e cair em uma caverna, o Dr. Neo Cortex encontra um enorme Cristal do Poder e planeja um novo plano para controlar o mundo.\n• A manipulação: Um ano depois, Cortex se alia ao ciborgue N. Gin e finge estar arrependido. Ele engana Crash Bandicoot, convencendo-o de que precisa coletar 25 Cristais do Poder para supostamente \"salvar o planeta\" de uma suposta ameaça de Nitrus Brio.\n• A jornada e a verdade: Enquanto Crash viaja pelas Warp Rooms coletando os cristais, sua irmã Coco Bandicoot investiga as verdadeiras intenções de Cortex e descobre que o plano dele é usar os cristais para energizar um novo Cortex Vortex e fazer lavagem cerebral na humanidade.",
+      "imagens": [
+        "imagens/crash-bandicoot-2-mvr1k9fzn6h9.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvr1igeohtu6",
+      "nome": "Tekken 3",
+      "categoria": "mvpxf6jzn463",
+      "unidade": "GB",
+      "valor": 1,
+      "descricao": "A história de Tekken 3 (lançado para PlayStation 1 em 1998) gira em torno do despertar de uma antiga e misteriosa entidade e da busca por vingança de seu novo protagonista, Jin Kazama.\n\nPrincipais pontos da sinopse:\n\n• O Despertar de Ogre: 19 anos após os eventos do segundo torneio, uma força maligna e ancestral conhecida como Ogre (ou Toshin, um Deus da Luta) desperta e começa a atacar vários lutadores poderosas ao redor do mundo para absorver suas almas.\n• O Ataque a Jun Kazama: Ogre ataca a floresta onde vivem Jun Kazama e seu jovem filho, Jin. Jun é dada como desaparecida (ou morta) após o confronto.\n• O Terceiro Torneio: Agora órfão e em busca de vingança, Jin descobre que é neto de Heihachi Mishima. Heihachi o acolhe, treina nas artes marciais Mishima e organiza o The King of Iron Fist Tournament 3 (O Terceiro Torneio do Punho de Ferro) com o objetivo real de atrair Ogre para uma armadilha.\n• O Clímax e a Traição: No desfecho, Jin consegue derrotar Ogre. No entanto, Heihachi trai e tenta matar o próprio neto logo em seguida devido ao poder oculto (o Devil Gene) que corre na família Mishima; porém, Jin desperta esse poder maligno, fere Heihachi e foge.",
+      "imagens": [
+        "imagens/tekken-3-mvr1iesr7evc.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Luta",
+      "armazenamentos": []
+    },
     {
       "id": "mvqtqrnhcxvv",
       "nome": "The Simpsons Hit and Run",
