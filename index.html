@@ -494,11 +494,12 @@ function ligarSlides(raiz) {
 }
 
 // Mostra uma categoria: primeiro os itens dela, depois cada subcategoria com o caminho como subtítulo.
-function blocoNo(no, lista, rotulo) {
+// semAtalhos: na visão geral ("Todos") cada item aparece uma vez só, no lugar original (sem os caminhos reaproveitados)
+function blocoNo(no, lista, rotulo, semAtalhos) {
   let html = '';
-  const diretos = lista.filter(p => no.origens.includes(p.categoria));
+  const diretos = lista.filter(p => semAtalhos ? p.categoria === no.origens[0] : no.origens.includes(p.categoria));
   if (diretos.length) html += (rotulo ? `<h3 class="sub-tit">${esc(rotulo)}</h3>` : '') + `<div class="grade">${diretos.map(card).join('')}</div>`;
-  for (const f of no.filhas) html += blocoNo(f, lista, rotulo ? rotulo + ' › ' + f.nome : f.nome);
+  for (const f of no.filhas) if (!(semAtalhos && f.virtual)) html += blocoNo(f, lista, rotulo ? rotulo + ' › ' + f.nome : f.nome, semAtalhos);
   return html;
 }
 function render() {
@@ -514,8 +515,8 @@ function render() {
   if (atual) html = blocoNo(atual, lista, '');
   else {
     for (const c of categorias) {
-      const ids = new Set(origensDe(c));
-      if (lista.some(p => ids.has(p.categoria))) html += `<section><h2 class="sec-tit">${esc(c.nome)}</h2>${blocoNo(c, lista, '')}</section>`;
+      const sec = blocoNo(c, lista, '', true);
+      if (sec) html += `<section><h2 class="sec-tit">${esc(c.nome)}</h2>${sec}</section>`;
     }
     const outros = lista.filter(p => !m.has(p.categoria));
     if (outros.length) html += `<section>${html ? '<h2 class="sec-tit">Outros</h2>' : ''}<div class="grade">${outros.map(card).join('')}</div></section>`;
