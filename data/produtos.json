@@ -1059,6 +1059,22 @@
   ],
   "produtos": [
     {
+      "id": "mvpz6pp1mqcz",
+      "nome": "Uncharted 4",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "R$",
+      "valor": 55,
+      "descricao": "",
+      "imagens": [
+        "imagens/uncharted-4-mvpz6o4s59xf.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
       "id": "mvpz34r1vvd8",
       "nome": "God of War 2018",
       "categoria": "mvpxdvp0ubk4",
