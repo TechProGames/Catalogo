@@ -1061,6 +1061,278 @@
   ],
   "produtos": [
     {
+      "id": "mvqt6htehqid",
+      "nome": "The Last of Us Remastered",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 60,
+      "descricao": "The Last of Us Remastered (para PS4) acompanha a jornada de Joel, um sobrevivente endurecido, e Ellie, uma adolescente corajosa de 14 anos, em um mundo pós-apocalíptico.\n\nSinopse e Enredo\n\n• O Colapso: Vinte anos após uma pandemia causada por um fungo mutante (Cordyceps) devastar a civilização moderna e transformar grande parte da população em criaturas violentas, os poucos sobreviventes vivem em zonas de quarentena militarizadas ou grupos hostis.\n• A Missão: Joel é contratado para contrabandear Ellie para fora de uma zona de quarentena opressora.\n• A Jornada: O que deveria ser um trabalho simples e rápido se transforma em uma longa e brutal travessia pelos Estados Unidos abandonados, onde ambos precisam lutar contra infectados ferozes e outros humanos desesperados por comida e armas.\n• Relação: Ao longo do caminho, a dupla desenvolve um forte laço de afeto e proteção mútua enquanto enfrentam perigos constantes.",
+      "imagens": [
+        "imagens/the-last-of-us-remastered-mvqt6glw0jlf.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqt56dogtzz",
+      "nome": "The Last of Us Part.2",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 110,
+      "descricao": "The Last of Us Part II (disponível para PlayStation 4) se passa cinco anos após os eventos do primeiro jogo.\n\nSinopse Principal\n\n• A Paz Inicial: Ellie e Joel estão estabelecidos em Jackson, Wyoming, vivendo em uma comunidade próspera e relativamente pacífica de sobreviventes.\n• O Incidente: Um evento violento e traumático rompe essa estabilidade e tira a vida de Joel.\n• A Vingança: Consumida pela dor e pelo ódio, Ellie (agora com 19 anos) parte em uma jornada implacável rumo às ruínas de Seattle para caçar os responsáveis e fazer justiça.\n• Duplo Ponto de Vista: Ao longo da campanha, a narrativa também é contada através dos olhos de Abby Anderson, uma misteriosa sobrevivente ligada ao grupo paramilitar WLF (Washington Liberation Front), cujos objetivos e motivações colidem diretamente com os de Ellie.\n• Conflitos Morais:",
+      "imagens": [
+        "imagens/the-last-of-us-part-2-mvqt54qi7hjq.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqt3rv5bv2h",
+      "nome": "SUPER BOMBERMAN R 2",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 7,
+      "descricao": "Em Super Bomberman R 2 para PS4, os icônicos irmãos Bomberman embarcam em uma nova aventura para salvar o universo e resgatar os Ellons (criaturas misteriosas) após uma nova ameaça e exército inimigo colocarem a paz em risco.\n\nSinopse e Enredo\n\n• Missão principal: Os Bomberman viajam por diferentes planetas explorando regiões, enfrentando chefes e protegendo o universo contra uma força maligna e uma fortaleza repleta de armadilhas.\n• Novos aliados: No caminho, você conta com a ajuda dos Ellons, seres com habilidades especiais que auxiliam na exploração e nos confrontos.",
+      "imagens": [
+        "imagens/super-bomberman-r-2-mvqt3qifnimf.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqt2hyky1r9",
+      "nome": "SNK VS CAPCOM SVC CHAOS",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 1,
+      "descricao": "O SNK vs. Capcom: SVC Chaos para PlayStation 4 é um jogo de luta crossover que reúne 36 personagens icônicos das franquias da SNK (como The King of Fighters, Fatal Fury e Samurai Shodown) e da Capcom (como Street Fighter, Darkstalkers e Mega Man) em combates individuais 1v1.\n\nSinopse e Proposta do Jogo\n\nLançado originalmente para arcades em 2003 e relançado com melhorias para o PS4 em julho de 2024, o título não possui uma campanha narrativa complexa no estilo aventura, mas sim uma colisão de universos onde os maiores heróis e vilões de ambas as empresas se enfrentam em um torneio caótico para provar qual é o maior lutador.",
+      "imagens": [
+        "imagens/snk-vs-capcom-svc-chaos-mvqt2glqvxa8.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Luta",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqt0fh54qme",
+      "nome": "Red Dead Redemption 2",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 98,
+      "descricao": "Sinopse\n\n• O ponto de partida: O jogo acompanha Arthur Morgan e a gangue Van der Linde (liderada por Dutch van der Linde). Após um assalto que deu errado na cidade de Blackwater, a gangue é forçada a fugir pelas montanhas e pelo interior dos Estados Unidos.\n• A fuga e a perseguição: Com agentes federais e os melhores caçadores de recompensas no encalço do grupo, eles precisam realizar novos assaltos e lutar para sobreviver.\n• Conflitos internos: À medida que a pressão aumenta, divisões internas e traições começam a despedaçar a gangue.\n• O dilema do protagonista: Arthur Morgan se vê dividido entre a lealdade à figura paterna de Dutch e o seu próprio senso de honra, enquanto o estilo de vida fora da lei dá lugar ao avanço inevitável da civilização moderna.",
+      "imagens": [
+        "imagens/red-dead-redemption-2-mvqt0dr1ubvw.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqsynz4pesz",
+      "nome": "MultiVersus",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 12,
+      "descricao": "O MultiVersus é um jogo eletrônico de luta de plataforma (estilo crossover) gratuito desenvolvido pela Player First Games e publicado pela Warner Bros. Interactive Entertainment.\n\nSinopse e Premissa\n\nO jogo não possui uma campanha narrativa tradicional com uma única história linear fechada, mas reúne um elenco gigantesco e icônico de várias franquias da Warner Bros. Discovery (como DC Comics, Scooby-Doo, Hora da Aventura, Tom e Jerry, Game of Thrones, Looney Tunes, entre outras) lutando entre si em arenas dinâmicas.\nPara quem busca conteúdo individual ou com história, o jogo conta com o modo \"Fendas\" (Rifts), que funciona como uma experiência PvE (jogador contra inteligência artificial) com desafios temáticos, missões e pequenas narrativas crossover (como o Caos Multiversal).",
+      "imagens": [
+        "imagens/multiversus-mvqsyl51swal.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Luta",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqsx7eabo9a",
+      "nome": "Minecraft Dungeons",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 4,
+      "descricao": "O Minecraft Dungeons para PS4 é um jogo de ação e aventura no estilo dungeon crawler (exploração de masmorras) ambientado no universo de Minecraft, lançado em 26 de maio de 2020.\n\nSinopse e Enredo\n\nA história acompanha um Illager solitário e rejeitado chamado Arch-Illager (Arce-Illager / Arquivilão), que encontra um artefato mágico e corrompido de grande poder conhecido como o Orbe da Dominação.\nCom a influência maligna do orbe, ele ganha poderes sombrios, forma um exército de lacaios e começa a oprimir e expulsar os aldeões de suas vilas por todo o Mundo Superior. O jogador assume o papel de um herói cuja missão é atravessar diferentes regiões, enfrentar hordas de monstros, libertar os aldeões e derrotar o Arch-Illager para destruir o poder do orb",
+      "imagens": [
+        "imagens/minecraft-dungeons-mvqsx5sab1nu.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqsviau2rxo",
+      "nome": "Marvels Spider Man",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 55,
+      "descricao": "Em Marvel's Spider-Man para PlayStation 4, você controla um Peter Parker de 23 anos com oito anos de experiência combatendo o crime em Nova York, que precisa equilibrar sua vida pessoal caótica com a proteção da cidade enquanto enfrenta uma nova e perigosa onda de vilões.\n\nPrincipais pontos da história\n\n• O Início: O jogo começa com Peter conseguindo prender o chefão do crime Wilson Fisk (o Rei do Crime), o que deixa um vácuo de poder no submundo de Nova York.\n• Novos Inimigos: Um novo grupo criminoso chamado Os Demônios Internos (liderado por um vilão misterioso) surge para tomar o controle da cidade.\n• Conexões Pessoais: Peter precisa lidar com sua relação com Mary Jane Watson (que investiga os crimes como jornalista) e com o Dr. Otto Octavius, seu mentor e figura paterna, cuja vida toma um rumo sombrio.\n• O Grande Conflito: A trama se expande com a formação do Sististro Sexteto, forçando o Homem-Aranha a usar toda a sua experiência e sacrifícios pessoais para salvar a metrópole.",
+      "imagens": [
+        "imagens/marvels-spider-man-mvqsvguz47ic.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqstdnuwl8s",
+      "nome": "LEGO Marvel Super Heroes 2​",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 22,
+      "descricao": "Sinopse do Jogo\n\nA história principal gira em torno do vilão viajante do tempo Kang, o Conquistador, que invade e rouba diversas realidades, cidades e locais icônicos do universo Marvel de diferentes épocas e dimensões. Kang une todos esses fragmentos espaciais e temporais para criar um imenso mundo aberto central chamado Chronopolis.\nPara impedir os planos de dominação de Kang, os Super-Heróis e Super-Vilões mais icônicos da Marvel de diferentes eras e realidades — incluindo os Guardiões da Galáxia, Homem-Aranha, Thor, Hulk, Pantera Negra, Capitã Marvel, Doutor Estranho e os heróis de Spider-Gwen e Marvel 2099 — precisam unir forças. Os jogadores viajam por Chronopolis, desde o Antigo Egito e o Velho Oeste até Sakaar e a Nova York de 2099, em uma batalha cósmica para restaurar a ordem no tempo e no espaço.",
+      "imagens": [
+        "imagens/lego-marvel-super-heroes-2-mvqstc8lffsj.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqsqfqnjw8b",
+      "nome": "It Takes Two",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 44,
+      "descricao": "Sinopse e Enredo\n\nA história acompanha Cody e May, um casal em forte crise que decide se divorciar. Quando comunicam a decisão à filha, Rose, a menina fica muito triste e, com duas bonecas que ela mesma fez (uma que se parece com o pai e outra com a mãe) e um livro de autoajuda chamado O Livro do Amor (escrito pelo Dr. Hakim), ela faz um pedido para que eles fiquem juntos.\nMagicamente, a consciência de Cody e May é transportada para os bonecos. Presos nessa nova forma e guiados pelo excêntrico Dr. Hakim — que age como um \"guru do relacionamento\" —, os dois precisam aprender a deixar as diferenças de lado, cooperar e passar por diversos desafios em um mundo fantástico (que transforma a própria casa e o quintal em cenários gigantescos e perigosos) para tentar reverter o feitiço, alcançar a filha e decidir o futuro do casamento.",
+      "imagens": [
+        "imagens/it-takes-two-mvqsqebp9hsv.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqsovqu08il",
+      "nome": "Hollow Knight Silksong",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 4,
+      "descricao": "Sinopse\n\nNa continuação de Hollow Knight, você joga como Hornet, a princesa protetora de Hallownest. Ela é capturada e levada para Pharloom (Fiarlongo), um reino antigo e arruinado, regido por seda e música.\nDiferente do jogo anterior, Hornet consegue falar e é muito mais acrobática. Sua missão é desvendar os mistérios por trás do seu sequestro, lutar contra centenas de novos inimigos e chefes, e escalar o reino perigoso até alcançar a sua superfície.",
+      "imagens": [
+        "imagens/hollow-knight-silksong-mvqsoujad0fr.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqsn193bgm7",
+      "nome": "GTA V",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 55,
+      "descricao": "Grand Theft Auto V (GTA V) é um jogo de ação e aventura em mundo aberto desenvolvido pela Rockstar Games.\n\nSinopse\n\nA história acompanha três protagonistas muito diferentes que precisam unir forças para sobreviver em uma cidade implacável:\n• Michael De Santa: Um ladrão de bancos aposentado que vive na alta sociedade de Los Santos em um acordo de proteção a testemunhas, mas com uma vida familiar infeliz.\n• Franklin Clinton: Um jovem malandro de rua que trabalha cobrando dívidas e busca uma oportunidade maior para mudar de vida.\n• Trevor Philips: Um psicopata violento e imprevisível, antigo parceiro de crimes de Michael, que vive à margem da sociedade.\nQuando os caminhos dos três se cruzam, eles se envolvem com figuras perigosas do submundo do crime, agências corruptas do governo dos EUA e a indústria do entretenimento. Para continuarem vivos e garantirem o futuro, eles precisam planejar e executar uma série de assaltos ousados (golpes) em Los Santos e na região de Blaine County, enquanto lidam com a desconfiança mútua.",
+      "imagens": [
+        "imagens/gta-v-mvqsmzjj326u.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqsky506dpp",
+      "nome": "Ghost of Tsushima",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 55,
+      "descricao": "Ghost of Tsushima (lançado para PS4 em 17 de julho de 2020) é um jogo de ação e aventura em mundo aberto ambientado no Japão feudal, em 1274.\n\nSinopse\n\n• O Contexto: O ano é 1274 e o Império Mongol, liderado pelo implacável general Khotun Khan, inicia uma campanha de conquista e invade a ilha de Tsushima.\n• O Protagonista: Você assume o controle de Jin Sakai, um dos últimos samurais sobreviventes do clã Sakai após a devastadora primeira onda de ataques.\n• O Conflito: Com a derrota inicial e a captura de seu tio, o Lorde Shimura, Jin percebe que as táticas tradicionais e honradas do código samurai não são suficientes para vencer um exército numeroso e impiedoso.\n• A Transformação: Para salvar seu povo e recuperar sua terra, Jin precisa sacrificar suas crenças e sua honra, abandonando o caminho do samurai para abraçar as sombras, táticas furtivas e métodos não convencionais, transformando-se na lenda conhecida como o \"Fantasma\" (Ghost).",
+      "imagens": [
+        "imagens/ghost-of-tsushima-mvqskx063ask.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqsircnmu7l",
+      "nome": "Far Cry 3 Classic Edition",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 12,
+      "descricao": "Far Cry 3 Classic Edition é um jogo de tiro em primeira pessoa (FPS) em mundo aberto desenvolvido pela Ubisoft.\n\nSinopse\n\nVocê assume o papel de Jason Brody, um jovem que está de férias em uma ilha tropical com seus amigos. Durante uma atividade de paraquedismo, eles pousam em uma ilha isolada e perigosa (as Rook Islands) e são capturados por uma milícia de piratas liderada pelo sádico e instável Vaas Montenegro.\nJason consegue escapar, mas seus amigos continuam reféns. Para salvá-los e sobreviver ao ambiente selvagem, ele precisa deixar de lado sua vida comum, aprender táticas de combate com a tribo nativa Rakyat e se transformar em um guerreiro implacável, descobrindo até onde a própria mente consegue ir em meio à loucura da ilha.",
+      "imagens": [
+        "imagens/far-cry-3-classic-edition-mvqsipnkqeoe.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqsgutrreja",
+      "nome": "eFootball PES 2027",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 102,
+      "descricao": "",
+      "imagens": [
+        "imagens/efootball-pes-2027-mvqsgsuxg4l3.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Esporte",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqs8veqdm09",
+      "nome": "Demon Slayer 2",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 25,
+      "descricao": "O jogo Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 acompanha Tanjiro Kamado e seus aliados em confrontos contra demônios.\n\nSinopse e Enredo do Modo História\n\n• Arcos Adaptações: O modo história percorre as principais fases recentes do anime:\n\t• O arco do Distrito de Entretenimento.\n\t• O arco da Aldeia dos Ferreiros.\n\t• O arco do Treinamento dos Hashiras.\n• Modo \"The Path of a Demon Slayer\": Inclui uma recapitulação dos eventos do primeiro jogo (do treinamento de Tanjiro até a batalha no Trem Infinito) para quem deseja relembrar ou conhecer a história inicial.\n• Jogabilidade na História: Campanha individual com exploração leve de mapas, missões secundárias, itens, cutscenes fiéis ao estilo do anime e intensas batalhas contra chefes (Demônios Superiores).",
+      "imagens": [
+        "imagens/demon-slayer-2-mvqs8tsufbpp.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqs5r17z6ha",
+      "nome": "Cuphead",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 5,
+      "descricao": "Sinopse do Jogo\n\n• Enredo: Os irmãos Xicrinho (Cuphead) e Caneco (Mugman) moram na fictícia Ilha do Tinteiro (Inkwell Isle) sob os cuidados do Vovô Chaleira.\n• A dívida: Após fazerem uma aposta arriscada e perderem no Cassino do Diabo, eles precisam entregar suas próprias almas ao Diabo.\n• A missão: Para salvar a si mesmos, eles fazem um acordo e saem em uma jornada de tiro e plataforma (run and gun) para coletar os contratos de alma de diversos chefões poderosos da ilha.\n• Expansão: No conteúdo adicional The Delicious Last Curse (A Deliciosa Última Ceia), os irmãos se unem à nova aventureira Srta. Cálice para ajudar o Chef Pitadinha em uma nova missão.",
+      "imagens": [
+        "imagens/cuphead-mvqs5p91fi6k.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
       "id": "mvqrv7qg1mfd",
       "nome": "Adventure Time Pirates of the Enchiridion",
       "categoria": "mvpxdvp0ubk4",
@@ -1169,7 +1441,7 @@
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
-      "tipo": "",
+      "tipo": "Esporte",
       "armazenamentos": []
     },
     {
