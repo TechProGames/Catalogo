@@ -1059,10 +1059,26 @@
   ],
   "produtos": [
     {
+      "id": "mvpz9fo3vqv1",
+      "nome": "Spider Man Miles Morales",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 44,
+      "descricao": "",
+      "imagens": [
+        "imagens/spider-man-miles-morales-mvpz9ecjma1c.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
       "id": "mvpz83njabho",
       "nome": "Need For Speed Payback",
       "categoria": "mvpxdvp0ubk4",
-      "unidade": "R$",
+      "unidade": "GB",
       "valor": 18,
       "descricao": "",
       "imagens": [
@@ -1078,7 +1094,7 @@
       "id": "mvpz6pp1mqcz",
       "nome": "Uncharted 4",
       "categoria": "mvpxdvp0ubk4",
-      "unidade": "R$",
+      "unidade": "GB",
       "valor": 55,
       "descricao": "",
       "imagens": [
