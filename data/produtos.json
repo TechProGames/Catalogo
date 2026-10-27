@@ -220,57 +220,24 @@
       "nome": "Consoles",
       "filhas": [
         {
+          "id": "mvpxj34clc1b",
+          "nome": "Playstation 5",
+          "filhas": [
+            {
+              "id": "mvpxjh7llydt",
+              "nome": "Console",
+              "filhas": []
+            }
+          ]
+        },
+        {
           "id": "mvpp04ewy3z3",
           "nome": "Playstation 4",
           "filhas": [
             {
               "id": "mvppz6od3kqu",
-              "nome": "Consoles",
+              "nome": "Console",
               "filhas": [],
-              "usa": []
-            },
-            {
-              "id": "mvppzqrxg5mh",
-              "nome": "Jogos PS4",
-              "filhas": [
-                {
-                  "id": "mvpq16wsi3w8",
-                  "nome": "Mídia Física (ORIGINAL)",
-                  "filhas": [],
-                  "usa": []
-                },
-                {
-                  "id": "mvpq1pc930fl",
-                  "nome": "FPKG (DESBLOQUEADO)",
-                  "filhas": [
-                    {
-                      "id": "mvpq7dn0mmrl",
-                      "nome": "PS4",
-                      "filhas": [],
-                      "usa": []
-                    },
-                    {
-                      "id": "mvpq7fwkxyoq",
-                      "nome": "PS2",
-                      "filhas": [],
-                      "usa": []
-                    },
-                    {
-                      "id": "mvpq7hn2zcex",
-                      "nome": "PS1",
-                      "filhas": [],
-                      "usa": []
-                    },
-                    {
-                      "id": "mvpq7k2jz2f3",
-                      "nome": "RETROARCH",
-                      "filhas": [],
-                      "usa": []
-                    }
-                  ],
-                  "usa": []
-                }
-              ],
               "usa": []
             }
           ],
@@ -281,47 +248,9 @@
           "nome": "Playstation 3",
           "filhas": [
             {
-              "id": "mvpq2ef6nu9y",
-              "nome": "Jogos PS3",
-              "filhas": [
-                {
-                  "id": "mvpq2m2dsgb2",
-                  "nome": "Mídia Física (ORIGINAL)",
-                  "filhas": [],
-                  "usa": []
-                },
-                {
-                  "id": "mvpq2r8pq55b",
-                  "nome": "PKG (DESBLOQUEADO)",
-                  "filhas": [
-                    {
-                      "id": "mvpq6bmvkc1z",
-                      "nome": "PS3",
-                      "filhas": [],
-                      "usa": []
-                    },
-                    {
-                      "id": "mvpq6lo5yt6p",
-                      "nome": "PS2",
-                      "filhas": [],
-                      "usa": []
-                    },
-                    {
-                      "id": "mvpq6rrppnzs",
-                      "nome": "PS1",
-                      "filhas": [],
-                      "usa": []
-                    },
-                    {
-                      "id": "mvpq6ufqihqk",
-                      "nome": "RETROARCH (EMULADORES)",
-                      "filhas": [],
-                      "usa": []
-                    }
-                  ],
-                  "usa": []
-                }
-              ],
+              "id": "mvpxfmwke7eo",
+              "nome": "Console",
+              "filhas": [],
               "usa": []
             }
           ],
@@ -332,22 +261,9 @@
           "nome": "Playstation 2",
           "filhas": [
             {
-              "id": "mvpq3flttub5",
-              "nome": "Jogos PS2",
-              "filhas": [
-                {
-                  "id": "mvpq3mm3s516",
-                  "nome": "DVD (DISCO)",
-                  "filhas": [],
-                  "usa": []
-                },
-                {
-                  "id": "mvpq3zedykmm",
-                  "nome": "OPL (PEN-DRIVE / HD EXTERNO)",
-                  "filhas": [],
-                  "usa": []
-                }
-              ],
+              "id": "mvpxfscfysfo",
+              "nome": "Console",
+              "filhas": [],
               "usa": []
             }
           ],
@@ -358,45 +274,58 @@
           "nome": "Xbox 360",
           "filhas": [
             {
-              "id": "mvpq4t560ep9",
-              "nome": "Jogos Xbox 360",
-              "filhas": [
-                {
-                  "id": "mvpq578vcjuu",
-                  "nome": "XEX ou GOD (HD INTERNO / EXTERNO / PENDRIVE)",
-                  "filhas": [
-                    {
-                      "id": "mvpq80krshmq",
-                      "nome": "XBOX 360",
-                      "filhas": [],
-                      "usa": []
-                    },
-                    {
-                      "id": "mvpq89tgm439",
-                      "nome": "XBOX CLÁSSICO",
-                      "filhas": [],
-                      "usa": []
-                    },
-                    {
-                      "id": "mvpq8g3ctrqp",
-                      "nome": "PS1",
-                      "filhas": [],
-                      "usa": []
-                    },
-                    {
-                      "id": "mvpq8n7mj0in",
-                      "nome": "EMULADORES",
-                      "filhas": [],
-                      "usa": []
-                    }
-                  ],
-                  "usa": []
-                }
-              ],
+              "id": "mvpxgf05sfqk",
+              "nome": "Console",
+              "filhas": [],
               "usa": []
             }
           ],
           "usa": []
+        },
+        {
+          "id": "mvpxhpybfdlc",
+          "nome": "Xbox One",
+          "filhas": [
+            {
+              "id": "mvpxjmf14i3z",
+              "nome": "Console",
+              "filhas": []
+            }
+          ],
+          "usa": []
+        },
+        {
+          "id": "mvpxiil1pe7u",
+          "nome": "Xbox One S",
+          "filhas": [
+            {
+              "id": "mvpxjnlhw6rr",
+              "nome": "Console",
+              "filhas": []
+            }
+          ]
+        },
+        {
+          "id": "mvpxipq927oo",
+          "nome": "Xbox Series S",
+          "filhas": [
+            {
+              "id": "mvpxjp0bm7e4",
+              "nome": "Console",
+              "filhas": []
+            }
+          ]
+        },
+        {
+          "id": "mvpxix2fhbtr",
+          "nome": "Xbox Series X",
+          "filhas": [
+            {
+              "id": "mvpxjqboltb0",
+              "nome": "Console",
+              "filhas": []
+            }
+          ]
         }
       ],
       "usa": []
@@ -404,21 +333,135 @@
     {
       "id": "mvpuaq2oo9s9",
       "nome": "Jogos",
-      "filhas": [],
-      "usa": [
+      "filhas": [
         {
-          "id": "mvppzqrxg5mh",
-          "modo": "inteira"
+          "id": "mvpxcqntjkrc",
+          "nome": "Jogos PS4",
+          "filhas": [
+            {
+              "id": "mvpxd7snejed",
+              "nome": "Mídia Física (ORIGINAL)",
+              "filhas": [],
+              "usa": []
+            },
+            {
+              "id": "mvpxdr6mggrm",
+              "nome": "FPKG (DESBLOQUEADO)",
+              "filhas": [
+                {
+                  "id": "mvpxdvp0ubk4",
+                  "nome": "PS4",
+                  "filhas": [],
+                  "usa": []
+                },
+                {
+                  "id": "mvpxdzzqmgjx",
+                  "nome": "PS2",
+                  "filhas": [],
+                  "usa": []
+                },
+                {
+                  "id": "mvpxe3mi640n",
+                  "nome": "PS1",
+                  "filhas": [],
+                  "usa": []
+                },
+                {
+                  "id": "mvpxe7jlrgff",
+                  "nome": "RETROARCH",
+                  "filhas": [],
+                  "usa": []
+                }
+              ],
+              "usa": []
+            }
+          ],
+          "usa": []
         },
         {
-          "id": "mvpq2ef6nu9y",
-          "modo": "inteira"
+          "id": "mvpxeog23adz",
+          "nome": "Jogos PS3",
+          "filhas": [
+            {
+              "id": "mvpxerdul5p5",
+              "nome": "Mídia Física (ORIGINAL)",
+              "filhas": [],
+              "usa": []
+            },
+            {
+              "id": "mvpxev0ksv9z",
+              "nome": "PKG (DESBLOQUEADO)",
+              "filhas": [
+                {
+                  "id": "mvpxezy7qbgx",
+                  "nome": "PS3",
+                  "filhas": [],
+                  "usa": []
+                },
+                {
+                  "id": "mvpxf37m36pd",
+                  "nome": "PS2",
+                  "filhas": [],
+                  "usa": []
+                },
+                {
+                  "id": "mvpxf6jzn463",
+                  "nome": "PS1",
+                  "filhas": [],
+                  "usa": []
+                },
+                {
+                  "id": "mvpxf9pf98qu",
+                  "nome": "RETROARCH (EMULADORES)",
+                  "filhas": [],
+                  "usa": []
+                }
+              ],
+              "usa": []
+            }
+          ],
+          "usa": []
         },
         {
-          "id": "mvpq4t560ep9",
-          "modo": "inteira"
+          "id": "mvpxg0tpqw76",
+          "nome": "Jogos PS2",
+          "filhas": [
+            {
+              "id": "mvpxg45p5gge",
+              "nome": "DVD (DISCO)",
+              "filhas": [],
+              "usa": []
+            },
+            {
+              "id": "mvpxg7ivwzt9",
+              "nome": "OPL (PEN-DRIVE / HD EXTERNO)",
+              "filhas": [],
+              "usa": []
+            }
+          ],
+          "usa": []
+        },
+        {
+          "id": "mvpxh1dhtf84",
+          "nome": "Jogos Xbox 360",
+          "filhas": [
+            {
+              "id": "mvpxh9hoypi6",
+              "nome": "Mídia Física (ORIGINAL)",
+              "filhas": [],
+              "usa": []
+            },
+            {
+              "id": "mvpxh616i8oa",
+              "nome": "XEX ou GOD (HD INTERNO / EXTERNO / PENDRIVE)",
+              "filhas": [],
+              "usa": []
+            }
+          ],
+          "usa": []
         }
-      ]
+      ],
+      "usa": []
     },
     {
       "id": "mvpubccaipr5",
@@ -990,7 +1033,7 @@
       "id": "mvpvevqzvat1",
       "nome": "Fifa 27",
       "descricao": "",
-      "categoria": "mvpq7dn0mmrl",
+      "categoria": "mvpp04ewy3z3",
       "unidade": "GB",
       "valor": 80,
       "imagens": [
@@ -1018,9 +1061,7 @@
         "mvpvkud0etok",
         "mvpvkxhzkieq"
       ],
-      "extras": [
-        "mvpq1pc930fl"
-      ]
+      "extras": []
     }
   ]
 }
