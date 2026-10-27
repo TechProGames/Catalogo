@@ -13,8 +13,8 @@
       "escTitulo": 1,
       "escTexto": 1,
       "logoAltura": 220,
-      "formatoFoto": "4/5",
-      "ajusteFoto": "cover",
+      "formatoFoto": "2/3",
+      "ajusteFoto": "contain",
       "cores": {
         "fundo": "#07090f",
         "cartao": "#101624",
