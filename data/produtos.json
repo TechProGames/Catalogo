@@ -1061,12 +1061,44 @@
   ],
   "produtos": [
     {
+      "id": "mvqrv7qg1mfd",
+      "nome": "Adventure Time Pirates of the Enchiridion",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 2,
+      "descricao": "Adventure Time: Pirates of the Enchiridion é um jogo de RPG e aventura de 2018 desenvolvido pela Climax Studios e publicado pela Outright Games, baseado na série Hora de Aventura do Cartoon Network.\n\nSinopse e Premissa\n\n• O Inundamento: Finn e Jake acordam e descobrem que a pacífica Terra de Ooo foi misteriosamente inundada e está submersa.\n• O Mistério: Alguém roubou ou colocou as mãos em um Enchiridion (o lendário livro dos heróis), e a água tomou conta dos reinos — incluindo o Reino Gelado, que começou a derreter.\n• Navegação e Exploração: Para resolver o enigma, a dupla constrói ou pilota um barco (batizado pelos fãs de \"Jeff\") para navegar pelos mares, investigar pistas e interrogar piratas espalhados por ilhas e territórios inexplorados.\n• Equipe e Combate: Ao longo da jornada, Finn e Jake se juntam a outros personagens icônicos, como BMO e Marceline, utilizando combates táticos em turnos, habilidades especiais e táticas de \"policial bom e policial ruim\" durante interrogatórios para salvar o dia.",
+      "imagens": [
+        "imagens/adventure-time-pirates-of-the-enchiridio-mvqrv694ogi8.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvqrrq2dbhd4",
+      "nome": "Assassin's Creed Valhalla",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 98,
+      "descricao": "Assassin’s Creed Valhalla acompanha a jornada de Eivor Varinsdottir, um(a) guerreiro(a) viking que deixa a Noruega no século IX (por volta de 872–873 d.C.) rumo às Ilhas Britânicas.\n\nPontos Principais da História\n\n• A Expansão Viking: Após ver seus pais serem assassinados por Kjotve e buscar vingança, Eivor e seu irmão adotivo, Sigurd, lideram seu clã em busca de novas terras e um novo lar na Inglaterra.\n• Alianças e Assentamento: Para sobreviver e prosperar na Britânia, Eivor precisa construir o assentamento de Ravensthorpe e forjar alianças políticas com diferentes reinos anglo-saxões.\n• O Conflito Oculto: O grupo se envolve na luta milenar entre os Ocultos (os futuros Assassinos) e a Ordem dos Anciões (os futuros Templários).\n• Mitologia e Revelações: A trama mistura eventos históricos com a mitologia nórdica e elementos da civilização Isu (os \"Precursores\"), revelando laços profundos entre Eivor, Sigurd, Basim e figuras divinas como Odin e Loki.\n• Presente: No mundo moderno, a história dá continuidade ao arco de Layla Hassan lidando com instabilidades no campo magnético da Terra.",
+      "imagens": [
+        "imagens/assassin-s-creed-valhalla-mvqrronyuu72.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
       "id": "mvpz9fo3vqv1",
       "nome": "Spider Man Miles Morales",
-      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 50,
+      "descricao": "A sinopse de Marvel's Spider-Man: Miles Morales gira em torno de Miles Morales, que se muda com a mãe para o bairro de East Harlem e precisa assumir o papel de único Homem-Aranha de Nova York enquanto Peter Parker viaja.\n\nPontos principais da história:\n\n• O Contexto: A história acontece cerca de um ano após os eventos do primeiro jogo da Insomniac Games. Miles está se adaptando à nova vida e aprendendo a usar seus poderes únicos, que incluem descargas bioelétricas (Venom Blast) e camuflagem (invisibilidade).\n• A Ausência de Peter: Peter Parker sai de Nova York por algumas semanas para acompanhar Mary Jane em uma viagem, deixando a responsabilidade de proteger a cidade nas mãos do jovem herói.\n• A Guerra de Facções: O conflito principal envolve uma guerra pelo poder entre a corrupta Roxxon Energy Corporation (que promove um novo combustível chamado Nuforme) e o Underground, um exército criminoso de alta tecnologia liderado por uma vilã conhecida como Tinker (Tinkerer).\n• Conexões Pessoais: Miles descobre que a líder do Underground é, na verdade, Fin Mason, uma amiga de infância. Além disso, ele precisa lidar com interesses corporativos perigosos liderados por Simon Krieger e segredos envolvendo seu tio, Aaron Davis (o Gatuno).",
       "imagens": [
         "imagens/spider-man-miles-morales-mvpz9ecjma1c.jpg"
       ],
@@ -1079,10 +1111,10 @@
     {
       "id": "mvpz83njabho",
       "nome": "Need For Speed Payback",
-      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 30,
+      "descricao": "A sinopse de Need for Speed Payback gira em torno de uma história de traição e vingança ambientada no submundo de Fortune Valley (uma cidade inspirada em Las Vegas).\n\nO Enredo Principal\n\n• A Traição: O jogo acompanha um trio de pilotos e amigos — Tyler Morgan (o piloto), Mac (o especialista em drift e off-road) e Jess (a especialista em fugas). Durante um grande golpe para roubar um supercarro (Koenigsegg Regera) de Lina Navarro, o grupo é traído por ela.\n• O Cartel \"A Casa\": Lina Navarro trabalha para A Casa (The House), um cartel criminoso e poderoso que domina os cassinos, o submundo do crime e até a polícia de Fortune Valley.\n• A Missão de Vingança: Após serem separados pela traição, Tyler e sua equipe se reúnem com um objetivo em comum: derrubar o monopólio de \"A Casa\", vencer as ligas de corridas clandestinas da região e se vingar de Lina Navarro e do cartel.\n• Estilo Cinematográfico: A narrativa tem uma forte pegada de \"filme de ação\" estilo Velozes e Furiosos, com missões explosivas, perseguições policiais e cenas de ação em ritmo acelerado.",
       "imagens": [
         "imagens/need-for-speed-payback-mvpz8285g5eg.jpg"
       ],
@@ -1095,10 +1127,10 @@
     {
       "id": "mvpz6pp1mqcz",
       "nome": "Uncharted 4",
-      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 65,
+      "descricao": "Uncharted 4: A Thief's End (lançado pela Naughty Dog e publicado pela Sony Interactive Entertainment) acompanha Nathan Drake, um caçador de tesouros que está aposentado e vive uma vida tranquila com sua esposa, Elena Fischer.\n\nPontos principais da história:\n\n• O retorno de Sam: A aposentadoria de Nathan é interrompida pelo reaparecimento de seu irmão mais velho, Samuel (Sam), que ele acreditava estar morto há 15 anos após uma fuga de prisão.\n• A dívida perigosa: Sam revela que precisa encontrar o tesouro perdido do pirata Henry Avery na cidade perdida de Libertalia (Madagascar) para pagar uma dívida com um senhor do crime e salvar sua própria vida.\n• A jornada pelo mundo: Junto com seu velho amigo Victor \"Sully\" Sullivan, os irmãos embarcam em uma caça ao tesouro global que os coloca em conflito com outros mercenários rivais, como Rafe Adler e Nadine Ross.\n• Conflito pessoal: A trama equilibra a ação eletrizante com dramas familiares, testando a lealdade de Nathan e forçando-o a decidir o que ele está disposto a sacrificar para salvar quem ama e se reconciliar com o irmão.",
       "imagens": [
         "imagens/uncharted-4-mvpz6o4s59xf.jpg"
       ],
@@ -1111,10 +1143,10 @@
     {
       "id": "mvpz34r1vvd8",
       "nome": "God of War 2018",
-      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 45,
+      "descricao": "A sinopse de God of War (2018) gira em torno de Kratos, o antigo Deus da Guerra grego, que vive exilado no reino nórdico de Midgard.\nApós a morte de sua esposa, Faye, Kratos e seu filho, Atreus, embarcam em uma jornada difícil para cumprir o último desejo dela: espalhar as cinzas no pico mais alto de todos os Nove Reinos.\n\nPrincipais pontos da história:\n\n• O ponto de partida: Logo no início, a paz da dupla é interrompida por um estranho misterioso e extremamente forte com poderes divinos (mais tarde revelado ser Baldur, filho de Odin).\n• A dinâmica de pai e filho: A viagem serve como um teste de convivência. Kratos tenta esconder seu passado violento e ensina o garoto a sobreviver, enquanto Atreus desconhece sua própria natureza divina.\n• Aliados e obstáculos: Ao longo do caminho, eles contam com a ajuda de figuras como a bruxa Freya, os anões ferreiros Brok e Sindri, e a cabeça viva de Mimir (o homem mais inteligente do mundo), além de enfrentarem criaturas mitológicas e deuses nórdicos.\n• A revelação final: Ao chegarem ao destino em Jotunheim (o reino dos gigantes), eles descobrem murais que contam toda a jornada antecipadamente. Atreus descobre que é parte deus, parte mortal e parte gigante, e que seu nome original dado por sua mãe era Loki.",
       "imagens": [
         "imagens/god-of-war-2018-mvpz336xfn4b.jpg"
       ],
@@ -1130,7 +1162,7 @@
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 50,
-      "descricao": "",
+      "descricao": "O EA Sports FC 27 (sucessor da antiga franquia FIFA) não possui uma história linear ou sinopse de campanha tradicional, mas gira em torno de uma grande inovação narrativa e social: The Grounds.\n\nO Conceito e \"Sinopse\" da Experiência\n\n• The Grounds: É um novo hub social em mundo aberto que une ruas, quadras e grandes estádios em uma cidade virtual. Nele, os jogadores criam seus próprios avatares personalizados, interagem com outras pessoas, compram roupas e participam de partidas casuais e minigames (como futebol 2x2 ou 3x3).\n• Presença de Mentores: O modo conta com a aparição e orientação de craques do futebol mundial (como Kylian Mbappé, Chloe Kelly, Paulo Dybala e referências ao clássico Alex Hunter) que atuam como mentores na jornada do seu atleta.\n\nOutros Modos Principais\n\n• Modo Carreira (Manager e Jogador): Recebeu uma reformulação no Mercado de Transferências (com parcerias do TransferRoom), interface de gestão mais densa e o sistema de GER Dinâmico, que reflete a moral, a fase e o preparo físico em tempo real.\n• Football Ultimate Team (FUT): Introduz a Galeria FUT para exibir cartas em 3D/holográficas, além de ajustes nos desafios de montagem de elenco.\n• Clubs: Integrado ao ambiente de mundo aberto do The Grounds com novos arquétipos e amplificadores de atributos.",
       "imagens": [
         "imagens/fifa-27-mvpvf2h5gakz.jpg"
       ],
