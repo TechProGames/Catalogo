@@ -13,6 +13,8 @@
       "escTitulo": 1,
       "escTexto": 1,
       "logoAltura": 220,
+      "formatoFoto": "4/5",
+      "ajusteFoto": "cover",
       "cores": {
         "fundo": "#07090f",
         "cartao": "#101624",
@@ -1061,10 +1063,10 @@
     {
       "id": "mvpz9fo3vqv1",
       "nome": "Spider Man Miles Morales",
+      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 50,
-      "descricao": "",
       "imagens": [
         "imagens/spider-man-miles-morales-mvpz9ecjma1c.jpg"
       ],
@@ -1077,10 +1079,10 @@
     {
       "id": "mvpz83njabho",
       "nome": "Need For Speed Payback",
+      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 30,
-      "descricao": "",
       "imagens": [
         "imagens/need-for-speed-payback-mvpz8285g5eg.jpg"
       ],
@@ -1093,10 +1095,10 @@
     {
       "id": "mvpz6pp1mqcz",
       "nome": "Uncharted 4",
+      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 65,
-      "descricao": "",
       "imagens": [
         "imagens/uncharted-4-mvpz6o4s59xf.jpg"
       ],
@@ -1109,10 +1111,10 @@
     {
       "id": "mvpz34r1vvd8",
       "nome": "God of War 2018",
+      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 45,
-      "descricao": "",
       "imagens": [
         "imagens/god-of-war-2018-mvpz336xfn4b.jpg"
       ],
@@ -1125,10 +1127,10 @@
     {
       "id": "mvpvevqzvat1",
       "nome": "Fifa 27",
+      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 50,
-      "descricao": "",
       "imagens": [
         "imagens/fifa-27-mvpvf2h5gakz.jpg"
       ],
@@ -1141,10 +1143,10 @@
     {
       "id": "ps4slim",
       "nome": "PS4 Slim desbloqueado",
+      "descricao": "Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "categoria": "mvppz6od3kqu",
       "unidade": "R$",
       "valor": 1700,
-      "descricao": "Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "imagens": [
         "imagens/ps4-slim-desbloqueado-mvpo2urn.jpg",
         "imagens/ps4-slim-desbloqueado-mvpp7i59av16.jpg",
