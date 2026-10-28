@@ -1065,6 +1065,156 @@
   ],
   "produtos": [
     {
+      "id": "mvreykj2ogux",
+      "nome": "Kung Fu Panda",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.5,
+      "descricao": "O jogo Kung Fu Panda para PlayStation 2 (lançado em 2008 pela Activision) segue a premissa do filme original, mas com algumas variações na narrativa e nos desafios.\n\nSinopse e Enredo\n\n• O Sonho de Po: Você controla Po, um panda fofo, gordinho e desajeitado que sonha em deixar a loja de macarrão de sua família para se tornar um mestre de artes marciais.\n• A Ameaça de Tai Lung: O grande conflito gira em torno da fuga do perigoso leopardo-das-neves Tai Lung da Prisão de Chorun. Ele quer a todo custo o cobiçado Pergaminho do Dragão.\n• Novos Desafios e Inimigos: Diferente do filme, o jogo expande a jornada com a aparição de outras facções vilanescas, como as Irmãs Wu (leopardos-das-neves), o Grande Gorila, o Clã do Javali Casco Negro e a Gangue do Crocodilo Dourado Imperial.\n• Resgate dos Cinco Furiosos: Em um momento da trama, os heróis dos Cinco Furiosos (Tigresa, Macaco, Garça, Víbora e Louva-a-Deus) são capturados por essas gangues, cabendo a Po (com a ajuda de Mestre Shifu) derrotar os inimigos, salvar seus ídolos e cumprir a profecia para se tornar o Guerreiro Dragão.",
+      "imagens": [
+        "imagens/kung-fu-panda-mvreyjbtgu3a.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrexm8clhy3",
+      "nome": "Justice League Heroes",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.7,
+      "descricao": "Justice League Heroes (lançado em 2006 para PlayStation 2) é um jogo de ação com elementos de RPG que acompanha a Liga da Justiça enfrentando uma conspiração global liderada por vilões clássicos.\n\nSinopse e Enredo\n\n• O Ataque Inicial: A história começa com a Liga da Justiça — formada por Superman, Batman, Mulher-Maravilha, Flash, Lanterna Verde (John Stewart), Caçador de Marte e Zatanna — lidando com ataques coordenados em diferentes partes do mundo.\n• Ameaça de Brainiac: Os heróis descobrem que o androide alienígena Brainiac é o grande mentor por trás das investidas. Ele utiliza exércitos de robôs e conta com a ajuda de vários supervilões (como Gorila Grodd, Nevasca e Abelha-Rainha).\n• A Conspiração Cósmica: Conforme os heróis avançam pelas missões, a trama revela planos maiores envolvendo tecnologia alienígena, ameaças intergaláticas e a participação de outros pesos-pesados do mal, como Darkseid, forçando a equipe a unir forças para impedir a destruição ou dominação da Terra.",
+      "imagens": [
+        "imagens/justice-league-heroes-mvrexknpgezw.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrewnp8lfrq",
+      "nome": "Just Cause",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.8,
+      "descricao": "A sinopse de Just Cause para PlayStation 2 gira em torno de Rico Rodriguez, um agente de operações secretas de uma organização conhecida como The Agency.\n\nDetalhes da História\n\n• O Local: A trama se passa em San Esperito, uma ilha tropical fictícia localizada no Caribe/América do Sul.\n• O Alvo: A ilha é governada por um ditador opressor chamado Salvador Mendoza, que é suspeito de acumular armas de destruição em massa.\n• A Missão: Rico é enviado à ilha pelo seu comandante, Tom Sheldon, com a missão de destituir o regime de Mendoza.\n• A Jogabilidade na Narrativa: Para cumprir o objetivo, Rico precisa incitar uma revolução popular, aliar-se a grupos guerrilheiros locais ou negociar com facções rivais e cartéis de drogas em um vasto mundo aberto.",
+      "imagens": [
+        "imagens/just-cause-mvrewmctksrr.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrevsuf9udb",
+      "nome": "James Cameron's Dark Angel",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 3.2,
+      "descricao": "A sinopse de James Cameron's Dark Angel (lançado para PlayStation 2 e Xbox em novembro de 2002 pela Sierra Entertainment) acompanha Max Guevara, uma super-soldado geneticamente aprimorada criada no projeto militar secreto Manticore.\n\nPrincipais pontos da história:\n\n• Contexto: A trama se passa em uma Seattle distópica do século XXI, em um futuro próximo após um ataque terrorista com pulso eletromagnético (EMP) destruir a economia dos EUA.\n• Objetivo de Max: Ela escapou dos seus criadores quando criança e tenta construir uma nova vida, mas parte em uma missão para recuperar seu passado manipulado, reencontrar sua irmã gêmea e rastrear seus irmãos desaparecidos do projeto.\n• Alianças e Inimigos: Max se une a Logan Cale, um ciberjornalista clandestino e idealista, para lutar contra a opressiva I Corporation (que surgiu das cinzas da Manticore) e expor a corrupção do governo.\n• Jogabilidade: O enredo mistura ação, combate corpo a corpo baseado em instintos de luta e elementos de furtividade.",
+      "imagens": [
+        "imagens/james-cameron-s-dark-angel-mvrevr7njuvy.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvreu6glbv91",
+      "nome": "Indiana Jones and the Emperor's Tomb",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.9,
+      "descricao": "A história de Indiana Jones and the Emperor's Tomb se passa em 1935, logo antes dos eventos do filme Indiana Jones and the Temple of Doom (Indiana Jones e o Templo da Perdição).\n\nPrincipais pontos da sinopse:\n\n• O Artefato: Indiana Jones é contratado pelo governo chinês para encontrar o Coração do Dragão — uma pérola negra mitológica enterrada com o primeiro imperador da China, Qin Shi Huang, que tem o poder de controlar a vontade dos homens.\n• A Missão: Para achar a cripta do imperador, Indy precisa primeiro recuperar fragmentos de um espelho antigo que servem como chave para a entrada do local.\n• Os Inimigos: Ao longo da jornada global, o arqueólogo precisa enfrentar forças do submundo asiático (tríades/mafia local) e soldados nazistas que também estão em busca do artefato para usá-lo com fins malignos.\n• Locais da Jornada: A aventura se passa em diferentes partes do mundo, incluindo passagens por Ceilão (Sri Lanka), Praga, Istambul e China.\n• Jogabilidade: O jogador utiliza o clássico chicote, pistolas e combates corpo a corpo contra mestres de artes marciais e inimigos armados.",
+      "imagens": [
+        "imagens/indiana-jones-and-the-emperor-s-tomb-mvreu54w48eo.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvret5o9gm5p",
+      "nome": "Hot Wheels Beat That!",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 0.5,
+      "descricao": "Hot Wheels: Beat That! é um jogo de corrida arcade desenvolvido pela Eutechnyx e publicado pela Activision em setembro de 2007, focado em transformar a experiência de brincar com carrinhos de brinquedo em alta velocidade.\n\nSinopse e Proposta do Jogo\n\n• Premissa: Diferente de outros jogos da franquia onde os carros ganham escala real, em Beat That! você controla miniaturas em miniatura (ou seja, os carrinhos mantêm seu tamanho de brinquedo) correndo por ambientes domésticos gigantescos.\n• Cenários: As pistas se passam em locais do cotidiano de uma casa em escala ampliada, como um quarto infantil, um sótão, uma pista de boliche e uma área de minigolfe.\n• Veículos: O jogo conta com mais de 30 modelos de veículos autenticamente baseados em carrinhos reais da linha Hot Wheels.\n\nModos de Jogo\n\n• Kick Racing / Quick Race: Corrida tradicional onde o objetivo é cruzar a linha de chegada em primeiro lugar usando atalhos, saltos, loops e armas/power-ups espalhados pela pista.\n• Elimination: Uma prova de consistência onde o último colocado a cada 30 segundos é eliminado da disputa até restar apenas um vencedor.\n• Rampage: O foco muda para causar o máximo de destruição possível no cenário e nos adversários para acumular pontos.\n• Tournament: Um modo progressivo que exige vencer sequências de corridas para conquistar o troféu do campeonato.\n• Multiplayer: Suporte para partidas locais em tela dividida para dois jogadores.",
+      "imagens": [
+        "imagens/hot-wheels-beat-that-mvret4a6vyo9.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Corrida",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvres6x5jo70",
+      "nome": "Hitman 2 Silent Assassin",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.5,
+      "descricao": "Hitman 2: Silent Assassin (lançado em 2002 para PlayStation 2) acompanha o Agente 47, que tenta abandonar sua vida de assassino profissional para buscar paz e expiação.\n\nA Sinopse e o Enredo\n\n• A aposentadoria: O Agente 47 deixa para trás o passado violento e passa a viver tranquilamente como jardineiro em uma igreja na Sicília, na Itália, sob a orientação e amizade do Padre Vittorio.\n• O sequestro: A paz é quebrada quando Padre Vittorio é sequestrado por criminosos locais (liderados por Don Giuseppe Giuliani) em troca de um resgate que 47 não consegue pagar.\n• O retorno à ICA: Desesperado para salvar o amigo, 47 entra em contato com sua antiga agência de assassinatos, a ICA (International Contract Agency). Eles concordam em rastrear o paradeiro do padre, mas em troca exigem que 47 execute uma nova série de contratos ao redor do mundo.\n• A conspiração maior: À medida que as missões avançam — passando por países como Rússia, Japão, Malásia, Índia e Afeganistão —, 47 descobre que está sendo manipulado por uma rede maior de traficantes de armas e figuras do crime internacional (como o mafioso russo Sergei Zavorotko, que busca vingança e segredos ligados à origem e clonagem do próprio 47).",
+      "imagens": [
+        "imagens/hitman-2-silent-assassin-mvres5fso66a.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrereogyf6b",
+      "nome": "Harry Potter and the Half Blood Prince",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.8,
+      "descricao": "O enredo de Harry Potter and the Half-Blood Prince para PlayStation 2 segue os acontecimentos do sexto ano de Harry Potter na Escola de Magia e Bruxaria de Hogwarts, baseado primariamente no filme e secundariamente no livro.\n\nPrincipais pontos da sinopse:\n\n• O Retorno de Voldemort: Com o fortalecimento do Lorde das Trevas no mundo bruxo e trouxa, o Professor Dumbledore começa a preparar Harry para a inevitável batalha final.\n• O Livro Misterioso: Durante as aulas de poções com o novo professor Horace Slughorn, Harry encontra um livro escolar antigo repleto de anotações úteis que o ajudam a se destacar, pertencente a uma figura misteriosa conhecida como o \"Príncipe Mestiço\" (Half-Blood Prince).\n• A Investigação de Draco Malfoy: Harry passa a desconfiar que Draco Malfoy está envolvido em atividades suspeitas e perigosas a mando dos Comensais da Morte.\n• Atividades e Jogabilidade: A campanha alterna entre a exploração livre pelos corredores de Hogwarts, aulas interativas de poções, duelos mágicos no Clube de Duelos e partidas de Quadribol.",
+      "imagens": [
+        "imagens/harry-potter-and-the-half-blood-prince-mvrerdb5rlj0.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvreqnbli9o4",
+      "nome": "Half Life",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 0.5,
+      "descricao": "O Half-Life para PlayStation 2 (lançado em 2001) acompanha a história do físico teórico Gordon Freeman no laboratório subterrâneo de Black Mesa, no Novo México.\n\nSinopse Principal\n\n• O Início: Gordon chega atrasado ao trabalho e veste seu traje de proteção pesado (HEV) para participar de um experimento rotineiro com um cristal anômalo.\n• A Catástrofe: Durante o teste, ocorre uma falha catastrófica chamada Cascata de Ressonância (Resonance Cascade). O experimento abre uma fenda interdimensional que conecta a Terra a um mundo alienígena chamado Xen.\n• A Infestação e o Exército: Criaturas bizarras e hostis começam a se teleportar para dentro das instalações. Para piorar, o governo americano envia uma unidade de forças especiais (H.E.C.U.) não para resgatar os sobreviventes, mas para eliminar todas as criaturas e testemunhas do incidente.\n• A Missão: Controlando Gordon em primeira pessoa (e sem falas), o jogador precisa lutar contra monstros e soldados, atravessar os escombros de Black Mesa e encontrar uma forma de fechar a fenda dimensional.",
+      "imagens": [
+        "imagens/half-life-mvreqlvi46ju.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
       "id": "mvrep157ed9s",
       "nome": "Gun",
       "categoria": "mvpxg7ivwzt9",
