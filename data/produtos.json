@@ -1030,6 +1030,27 @@
   ],
   "produtos": [
     {
+      "id": "mvsf378vkrdv",
+      "cod": "64",
+      "nome": "Borracha dos Analógicos (PAR)",
+      "categoria": "mvpqfynqczs3",
+      "unidade": "R$",
+      "valor": 60,
+      "descricao": "Troca das duas capinhas de borrachas dos analógicos.",
+      "imagens": [
+        "imagens/borracha-dos-analogicos-par-mvsf35ppy9lh.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvsey36vb5pg",
       "cod": "63",
       "nome": "Analógico HALL/TMR (DOIS LADOS)",
