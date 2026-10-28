@@ -1030,6 +1030,121 @@
   ],
   "produtos": [
     {
+      "id": "mvsg8irf8lhy",
+      "cod": "6d",
+      "nome": "Troca do conector USB",
+      "categoria": "mvpqipdnqhky",
+      "unidade": "R$",
+      "valor": 100,
+      "descricao": "Reparo no conector USB, desde não carregar ou não conectar, como mal contato.",
+      "imagens": [
+        "imagens/troca-do-conector-usb-mvsg8hbzcokh.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvsg7ibh7iwc",
+      "cod": "6c",
+      "nome": "Analógico HALL/TMR (DOIS LADOS)",
+      "categoria": "mvpqihl84v9c",
+      "unidade": "R$",
+      "valor": 160,
+      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
+      "imagens": [
+        "imagens/analogico-hall-tmr-dois-lados-mvsg7gn5hh2h.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvsg6qoifl9g",
+      "cod": "6b",
+      "nome": "Analógico HALL/TMR (UM LADO)",
+      "categoria": "mvpqicwxzrya",
+      "unidade": "R$",
+      "valor": 130,
+      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
+      "imagens": [
+        "imagens/analogico-hall-tmr-um-lado-mvsg6p5hu50e.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvsg5w3k2u3s",
+      "cod": "6a",
+      "nome": "Analógico Original (DOIS LADOS)",
+      "categoria": "mvpqi1erhbfz",
+      "unidade": "R$",
+      "valor": 130,
+      "descricao": "Substituição dos dois analógicos pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-dois-lados-mvsg5uovz5zg.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvsg4mnq7ut0",
+      "cod": "69",
+      "nome": "Analógico Original (UM LADO)",
+      "categoria": "mvpqhwli0q1a",
+      "unidade": "R$",
+      "valor": 100,
+      "descricao": "Substituição do analógico pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-um-lado-mvsg4la7ufli.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvsfltngyzlu",
       "cod": "68",
       "nome": "Reparo de Placa",
