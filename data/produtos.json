@@ -1065,6 +1065,88 @@
   ],
   "produtos": [
     {
+      "id": "mvrgb4oigf8p",
+      "nome": "Yakuza 2",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 4.2,
+      "descricao": "A sinopse de Yakuza 2 (lançado para PS2 em 2006) acompanha o ex-yakuza Kazuma Kiryu um ano após os eventos do primeiro jogo, enquanto ele tenta levar uma vida pacífica com a sua afilhada, Haruka.\n\nPrincipais pontos da história:\n\n• O Chamado do Clã Tojo: Yukio Terada, o novo presidente do Clã Tojo (antigo grupo de Kiryu), é assassinado por membros da facção rival Aliança Omi de Osaka. Para evitar uma guerra sangrenta entre as duas maiores facções da máfia japonesa, Kiryu é puxado de volta ao submundo do crime.\n• O Dragão de Kansai: Kiryu viaja até Osaka (Sotembori) e enfrenta Ryuji Goda, conhecido como o \"Dragão de Kansai\" e um dos líderes mais ambiciosos da Aliança Omi, que busca derrubar o Clã Tojo e unificar o Japão sob o seu comando.\n• A Máfia Coreana e Reviravoltas: Ao longo da investigação dividida entre Tóquio (Kamurocho) e Osaka, Kiryu descobre o envolvimento de uma facção da máfia coreana operando nas sombras, além de segredos do passado ligados a Shintaro Kazama (pai adotivo de Kiryu) e eventos ocorridos em 1980.\n• Alianças e Conflito: Kiryu precisa formar alianças improváveis — incluindo com a detetive da polícia Kaoru Sayama — para descobrir quem está realmente manipulando a guerra nos bastidores.",
+      "imagens": [
+        "imagens/yakuza-2-mvrgb3b0dcw8.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrga9107k14",
+      "nome": "X Men Origins Wolverine",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.7,
+      "descricao": "O jogo X-Men Origins: Wolverine para PlayStation 2 segue a mesma premissa básica do filme homônimo, acompanhando o passado violento de James \"Logan\" Howlett (Wolverine) e sua conexão com o programa militar de William Stryker.\n\nPontos principais da sinopse:\n\n• Missão em Angola: A trama começa com Logan e seu meio-irmão, Victor Creed (Dentes de Sabre), integrando a Equipe X — um grupo de operações especiais composto por mutantes e liderado pelo Coronel William Stryker. Eles realizam missões em locais como a África em busca de um valioso depósito mineral (o adamantium).\n• Traição e o Projeto Arma X: Após desentendimentos com os métodos cruéis de Stryker, Logan decide seguir seu próprio caminho. Anos mais tarde, ele é atraído de volta e submetido ao Projeto Arma X, o experimento que reveste seu esqueleto com o indestrutível adamantium e apaga parte de sua memória.\n• Vingança e a Arma XI: Logan busca vingança contra Stryker e Victor Creed, enfrentando diversos mercenários, mutantes e inimigos ao longo do caminho. No desfecho, ele precisa confrontar o mortal Projeto Arma XI (conhecido como Deadpool).\n• Diferenças da versão do PS2: Desenvolvido pela Amaze Entertainment (enquanto as versões de PS3, Xbox 360 e PC foram feitas pela Raven Software), o jogo para PS2 adapta a história de maneira mais resumida e com limitações técnicas próprias do console, mas mantém a essência de um jogo de ação (hack and slash) focado nas garras e no fator de cura do herói.",
+      "imagens": [
+        "imagens/x-men-origins-wolverine-mvrga7qy3dya.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrg9dgzttcu",
+      "nome": "WWE All Stars",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.7,
+      "descricao": "WWE All Stars para PlayStation 2 (lançado em 2011) é um jogo de luta no estilo arcade que coloca grandes lendas do passado da WWE contra os principais superstars da era moderna em combates rápidos e exagerados.\n\nPrincipais Características e Premissa\n\n• Estilo Arcade: Diferente dos jogos focados em simulação (como a série SmackDown vs. Raw), a jogabilidade aqui é exagerada, com visual caricato dos lutadores e golpes sobre-humanos que geram ondas de choque ou saltos de metros de altura.\n• Elenco Histórico: Reúne nomes contemporâneos como John Cena, Triple H, Randy Orton, Rey Mysterio e CM Punk, ao lado de lendas clássicas como Hulk Hogan, The Rock, Stone Cold Steve Austin e Dusty Rhodes.\n• Modos de Jogo:\n\t• Path of Champions: Campanhas temáticas em que o jogador enfrenta sequências de lutas com historinhas (como rotas focadas no The Undertaker, Randy Orton ou na D-Generation X).\n\t• Fantasy Warfare: Confrontos de \"sonho\" que colocam uma Lenda contra um Superstar atual em rivalidades cruzadas.",
+      "imagens": [
+        "imagens/wwe-all-stars-mvrg9bw2tukb.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Luta",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrg86blpmai",
+      "nome": "Wall-E",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2,
+      "descricao": "O jogo WALL-E para PlayStation 2 é um título de ação e plataforma baseado na animação homônima da Pixar.\n\nSinopse e Enredo\n\n• O Cenário: No futuro, a Terra tornou-se um planeta inabitável e coberto por montanhas de lixo após a humanidade deixar o mundo a bordo de gigantescas naves espaciais da corporação Buy n Large (BnL).\n• A Missão: Milhares de robôs compactadores chamados WALL-E foram deixados para limpar o planeta, mas séculos se passaram e apenas um deles continua operando sozinho, transformando lixo em cubos e colecionando pequenas relíquias humanas.\n• A Chegada de EVA: A rotina solitária do robozinho muda quando ele encontra EVA (Ext Vegetation Evaluator), uma robô avançada enviada à Terra para procurar sinais de vida vegetal que permitam o retorno dos humanos.\n• A Jornada: O jogo acompanha WALL-E enquanto ele tenta proteger a nova amiga, embarca em uma aventura por cenários devastados da Terra e viaja pelo cosmos até a nave espacial Axiom, enfrentando desafios, resolvendo quebra-cabeças e revivendo momentos marcantes do filme.",
+      "imagens": [
+        "imagens/wall-e-mvrg84t4cdmy.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrg7hqfhz4g",
+      "nome": "Urban Reign",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.2,
+      "descricao": "Urban Reign é um jogo de luta estilo beat 'em up em 3D lançado pela Namco em 2005 para o PlayStation 2.\n\nSinopse da História\n\n• O Protagonista: Você controla Brad Hawk, um mercenário e lutador de aluguel durão.\n• O Incidente: Brad é contratado por Shun Ying Lee, a líder de uma gangue de Chinatown na cidade de Green Harbor. Ela precisa de ajuda após um membro de seu grupo ser sequestrado por uma gangue rival.\n• A Conspiração: Conforme avança pelas ruas enfrentando várias gangues ao longo de 100 missões, Brad descobre a verdade: o sequestro foi um plano arquitetado pelo corrupto prefeito da cidade, William Bordin.\n• O Plano do Prefeito: Bordin armou o conflito entre as gangues para gerar o caos e espalhar o medo na população. O objetivo dele era contratar uma empresa de segurança privada (ligada a máfias) para \"restaurar a ordem\", usando isso de palanque político para sua campanha a governador.\n• O Desfecho: Ao perceber que Brad está descobrindo seus planos e atrapalhando seus negócios, o prefeito passa a enviar assassinos profissionais para eliminá-lo.",
+      "imagens": [
+        "imagens/urban-reign-mvrg7g55iivm.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Luta",
+      "armazenamentos": []
+    },
+    {
       "id": "mvrg6l7ujf2z",
       "nome": "Transformers The Game",
       "categoria": "mvpxg7ivwzt9",
