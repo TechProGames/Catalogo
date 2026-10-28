@@ -1541,10 +1541,10 @@
     {
       "id": "mvrfv0co1o5e",
       "nome": "Superman Returns",
-      "descricao": "O jogo Superman Returns para PlayStation 2 acompanha a premissa e o enredo geral do filme homônimo de 2006, misturando os eventos do cinema com histórias clássicas dos quadrinhos.\n\nSinopse e Enredo\n\n• O Retorno: O Homem de Aço retorna a Metrópolis após passar anos investigando os restos de seu planeta natal, Krypton. Ao voltar, ele precisa reconquistar a confiança da cidade e lidar com as consequências de sua ausência.\n• Ameaça de Lex Luthor: O arquinimigo Lex Luthor executa planos ambiciosos para criar um novo continente e ameaçar os Estados Unidos, forçando o herói a intervir.\n• Vilões Clássicos: Ao contrário do filme, o jogo expande os confrontos para incluir diversos inimigos icônicos dos quadrinhos, como Bizarro, Metallo, Mongul e Riot.",
       "categoria": "mvpxg7ivwzt9",
-      "unidade": "R$",
+      "unidade": "GB",
       "valor": 1.2,
+      "descricao": "O jogo Superman Returns para PlayStation 2 acompanha a premissa e o enredo geral do filme homônimo de 2006, misturando os eventos do cinema com histórias clássicas dos quadrinhos.\n\nSinopse e Enredo\n\n• O Retorno: O Homem de Aço retorna a Metrópolis após passar anos investigando os restos de seu planeta natal, Krypton. Ao voltar, ele precisa reconquistar a confiança da cidade e lidar com as consequências de sua ausência.\n• Ameaça de Lex Luthor: O arquinimigo Lex Luthor executa planos ambiciosos para criar um novo continente e ameaçar os Estados Unidos, forçando o herói a intervir.\n• Vilões Clássicos: Ao contrário do filme, o jogo expande os confrontos para incluir diversos inimigos icônicos dos quadrinhos, como Bizarro, Metallo, Mongul e Riot.",
       "imagens": [
         "imagens/superman-returns-mvrfuyx5co0s.jpg"
       ],
@@ -1552,11 +1552,11 @@
       "etiquetas": [],
       "extras": [],
       "tipo": "Aventura",
+      "armazenamentos": [],
       "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
-      "armazenamentos": []
+      "formato": "2/3",
+      "ajuste": "contain",
+      "proporcao": ""
     },
     {
       "id": "mvrfu7xuw61v",
