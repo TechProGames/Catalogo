@@ -1030,6 +1030,29 @@
   ],
   "produtos": [
     {
+      "id": "mvsf7sdw2rwq",
+      "cod": "65",
+      "nome": "Botões não FUNCIONA/FALHANDO",
+      "categoria": "mvpqfo0qzw3f",
+      "unidade": "R$",
+      "valor": 130,
+      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
+      "imagens": [
+        "imagens/botoes-nao-funciona-falhando-mvsf7r4bfef3.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvsf378vkrdv",
       "cod": "64",
       "nome": "Borracha dos Analógicos (PAR)",
@@ -1043,7 +1066,7 @@
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
-      "tipo": "",
+      "tipo": "Controle",
       "armazenamentos": [],
       "outras": [],
       "formato": "3/4",
