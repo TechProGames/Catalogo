@@ -1032,10 +1032,10 @@
     {
       "id": "mvrgxxb0ajdx",
       "nome": "PS2 Tunado OPL",
-      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "categoria": "mvpp0oeupa6x",
       "unidade": "R$",
       "valor": 450,
+      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "imagens": [
         "imagens/ps2-tunado-opl-mvrhh62a8geg.jpg",
         "imagens/ps2-tunado-opl-mvrgxw55ijhe.jpg",
@@ -1057,10 +1057,6 @@
         }
       ],
       "tipo": "Console",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [
         {
           "id": "mvrgx0l6proh",
@@ -1068,15 +1064,19 @@
           "gb": 110,
           "valor": null
         }
-      ]
+      ],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "contain",
+      "proporcao": ""
     },
     {
       "id": "mvrguh72pmg4",
       "nome": "PS3 Slim ou Super Slim DESBLOQUEADO",
-      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "categoria": "mvpp0jwykj1v",
       "unidade": "R$",
       "valor": 900,
+      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "imagens": [
         "imagens/ps3-slim-ou-super-slim-desbloqueado-mvrgu91zelw1.jpg",
         "imagens/ps3-slim-ou-super-slim-desbloqueado-mvrguaimgfm5.jpg",
@@ -1100,10 +1100,6 @@
         }
       ],
       "tipo": "Console",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [
         {
           "id": "mvrgtvopdxin",
@@ -1111,15 +1107,19 @@
           "gb": 410,
           "valor": null
         }
-      ]
+      ],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "contain",
+      "proporcao": ""
     },
     {
       "id": "mvrgrzlv3i8i",
       "nome": "PS4 Fat DESBLOQUEADO",
-      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "categoria": "mvpp04ewy3z3",
       "unidade": "R$",
       "valor": 1500,
+      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "imagens": [
         "imagens/ps4-fat-desbloqueado-mvrgry67avwz.jpg",
         "imagens/ps4-fat-desbloqueado-mvrgrwzc27rg.jpg"
@@ -1139,10 +1139,6 @@
         }
       ],
       "tipo": "Console",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [
         {
           "id": "mvrgqvmqzkjr",
@@ -1150,7 +1146,11 @@
           "gb": 365,
           "valor": null
         }
-      ]
+      ],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "contain",
+      "proporcao": ""
     },
     {
       "id": "mvrgb4oigf8p",
@@ -4763,10 +4763,10 @@
     {
       "id": "ps4slim",
       "nome": "PS4 Slim DESBLOQUEADO",
-      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "categoria": "mvpp04ewy3z3",
       "unidade": "R$",
       "valor": 1700,
+      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "imagens": [
         "imagens/ps4-slim-desbloqueado-mvrgps4dj6ge.jpg",
         "imagens/ps4-slim-desbloqueado-mvrgptix9eva.jpg",
@@ -4787,10 +4787,6 @@
         }
       ],
       "tipo": "Console",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [
         {
           "id": "mvpywib957z6",
@@ -4798,7 +4794,11 @@
           "gb": 365,
           "valor": null
         }
-      ]
+      ],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "contain",
+      "proporcao": ""
     }
   ]
 }
