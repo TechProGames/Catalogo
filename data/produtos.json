@@ -1357,10 +1357,10 @@
     {
       "id": "mvrg2o7hm3to",
       "nome": "The Simpsons Hit & Run",
-      "descricao": "A sinopse de The Simpsons: Hit & Run gira em torno de estranhos acontecimentos em Springfield — como vans pretas misteriosas, câmeras em formato de vespa e círculos nas plantações — que a família Simpson e Apu descobrem ser um plano maligno de controle mental.\n\nPrincipais pontos da história:\n\n• A Conspiração: Os alienígenas Kang e Kodos estão distribuindo uma nova versão viciante e ensandecedora do refrigerante Buzz Cola para deixar os moradores loucos.\n• O Reality Show Espacial: O objetivo dos alienígenas é gravar o caos e a destruição em massa em Springfield para transmitir em um reality show intergaláctico.\n• O Plano de Defesa:",
       "categoria": "mvpxg7ivwzt9",
-      "unidade": "R$",
+      "unidade": "GB",
       "valor": 1.2,
+      "descricao": "A sinopse de The Simpsons: Hit & Run gira em torno de estranhos acontecimentos em Springfield — como vans pretas misteriosas, câmeras em formato de vespa e círculos nas plantações — que a família Simpson e Apu descobrem ser um plano maligno de controle mental.\n\nPrincipais pontos da história:\n\n• A Conspiração: Os alienígenas Kang e Kodos estão distribuindo uma nova versão viciante e ensandecedora do refrigerante Buzz Cola para deixar os moradores loucos.\n• O Reality Show Espacial: O objetivo dos alienígenas é gravar o caos e a destruição em massa em Springfield para transmitir em um reality show intergaláctico.\n• O Plano de Defesa:",
       "imagens": [
         "imagens/the-simpsons-hit-run-mvrg2ms0lza0.jpg"
       ],
@@ -1370,11 +1370,11 @@
       ],
       "extras": [],
       "tipo": "Aventura",
+      "armazenamentos": [],
       "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
-      "armazenamentos": []
+      "formato": "2/3",
+      "ajuste": "contain",
+      "proporcao": ""
     },
     {
       "id": "mvrg1q344j7n",
