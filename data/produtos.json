@@ -1085,6 +1085,10 @@
     {
       "id": "mvrgw5m3f80l",
       "nome": "1 Memorycard com OPL"
+    },
+    {
+      "id": "mvrh31a5j3gh",
+      "nome": "Cabo AV"
     }
   ],
   "produtos": [
@@ -1103,11 +1107,11 @@
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok",
-        "mvrgol0q0vrl",
         "mvrgostflpc4",
         "mvrgp39wy27y",
         "mvrgvryl02wk",
-        "mvrgw5m3f80l"
+        "mvrgw5m3f80l",
+        "mvrh31a5j3gh"
       ],
       "extras": [
         {
