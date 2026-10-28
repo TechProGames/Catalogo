@@ -49,24 +49,24 @@ h1{font-family:var(--f-tit);font-style:italic;font-weight:800;font-size:32px;tex
 </head>
 <body>
 <div class="wrap" id="app"><p class="vazio">Carregando pedido…</p></div>
-<script src="comum.js?v=16"></script>
-<script src="pedido.js?v=16"></script>
+<script src="comum.js?v=17"></script>
+<script src="pedido.js?v=17"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const brl = v => Number(v).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
 const num = v => Number(v).toLocaleString('pt-BR', {maximumFractionDigits: 2});
 const ler = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d } catch (e) { return d } };
-let ped = null;
+let ped = null, topoPdf = 'topo-pdf.png';
 
 (async function () {
-  const cod = new URLSearchParams(location.hash.slice(1)).get('p');
-  const c = Pedidos.decodificar(cod);
+  const c = Pedidos.decodificar(location.hash.slice(1));
   if (!c) { $('app').innerHTML = '<p class="vazio">Link de pedido inválido ou incompleto.</p>'; return; }
   let d;
   try { const r = await fetch('data/produtos.json?v=' + Date.now(), {cache: 'no-store'}); d = normalizarCatalogo(await r.json()); }
   catch (e) { $('app').innerHTML = '<p class="vazio">Não foi possível carregar o catálogo.</p>'; return; }
   aplicarTema(d.loja.tema);
+  topoPdf = d.loja.topoPdf || 'topo-pdf.png';
   ped = Pedidos.montar({loja: d.loja, categorias: expandirArvore(d.categorias), produtos: d.produtos}, c);
   ped.link = location.href;
   document.title = `Pedido nº ${ped.id} · ${ped.loja}`;
@@ -105,7 +105,7 @@ function render() {
 async function baixar() {
   const b = $('baixar'); b.disabled = true; b.textContent = 'Gerando PDF…';
   try {
-    const blob = await Pedidos.pdf(ped, {link: ped.link});
+    const blob = await Pedidos.pdf(ped, {link: ped.link, topo: topoPdf});
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob); a.download = `pedido-${ped.id}.pdf`; a.click();
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);

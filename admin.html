@@ -314,6 +314,18 @@ dialog form{padding:18px}
           <label class="check"><input type="checkbox" id="ocultar-nome"> Esconder o nome da loja no topo (quando a logo já tem o nome)</label>
         </div>
 
+        <div class="bloco">
+          <h2>Topo do PDF do pedido</h2>
+          <div class="logo-campo">
+            <div class="logo-prev" id="topo-prev" style="width:280px;height:80px;background:#07090f"></div>
+            <div>
+              <label class="btn sec">Trocar imagem<input type="file" id="topo-arq" accept="image/*" hidden></label>
+              <button class="btn link" id="topo-rem" hidden>Voltar à imagem padrão</button>
+              <p class="dica">Aparece no topo de cada PDF de pedido, ao lado de “Pedido finalizado”. Use uma imagem larga (logo + nome da loja).</p>
+            </div>
+          </div>
+        </div>
+
         <div class="bloco" id="bloco-pos">
           <h2>Posições no topo</h2>
           <p class="dica">Na pré-visualização, a logo e os textos do topo aparecem em <b>caixas tracejadas</b>: <b>arraste a caixa</b> para mover e puxe o <b>quadradinho do canto</b> para mudar o tamanho. Cada aparelho guarda as suas posições.</p>
@@ -424,6 +436,7 @@ dialog form{padding:18px}
       </form>
       <input class="filtro" id="ped-busca" type="search" placeholder="Buscar por cliente, número ou item…">
       <p class="dica" id="ped-onde"></p>
+      <details class="ped" id="ranking"><summary><b>🏆 Mais vendidos</b><small>— o ranking do site é atualizado sempre que você clica em Publicar</small></summary><div class="ped-corpo" id="ranking-lista"></div></details>
       <div id="ped-lista"><p class="vazio">Nenhum pedido ainda.</p></div>
     </div>
     <div class="bloco">
@@ -553,8 +566,8 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=16"></script>
-<script src="pedido.js?v=16"></script>
+<script src="comum.js?v=17"></script>
+<script src="pedido.js?v=17"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -696,6 +709,8 @@ async function conectar() {
     else { sha = null; aviso('Conectado. O catálogo será criado no primeiro "Publicar".', 'ok'); }
     gravar('catalogo-github', cfg);
     conectado = true; remover = []; marcarSujo(false);
+    const n = garantirCodigos();
+    if (n) { marcarSujo(); setTimeout(() => aviso(`Criei códigos curtos para ${n} produto(s) (deixam o link do pedido pequeno). Clique em Publicar no site.`, 'ok'), 1500); }
     renderTudo();
     return true;
   } catch (e) {
@@ -704,11 +719,33 @@ async function conectar() {
     $('conectar').disabled = false; $('conectar').textContent = 'Conectar e carregar';
   }
 }
+// código curto e fixo de cada produto (base 36), usado no link do pedido
+function proximoCod() {
+  const max = dados.produtos.reduce((m, p) => Math.max(m, p.cod ? parseInt(p.cod, 36) : 0), 0);
+  return (Math.max(max, 35) + 1).toString(36);          // começa em "10" (2 letras)
+}
+function garantirCodigos() {
+  const vistos = new Set(); let n = 0;
+  for (const p of dados.produtos) {
+    if (!p.cod || vistos.has(p.cod)) { p.cod = ''; p.cod = proximoCod(); n++; }
+    vistos.add(p.cod);
+  }
+  return n;
+}
+// ranking "Mais vendidos": soma as quantidades pedidas no histórico (só a contagem vai para o site, sem dados de clientes)
+function aplicarVendidos(lista) {
+  const cont = {};
+  for (const ped of lista) for (const l of ped.itens || []) cont[l.id] = (cont[l.id] || 0) + (l.qtd || 1);
+  for (const p of dados.produtos) { if (cont[p.id]) p.vendidos = cont[p.id]; else delete p.vendidos; }
+}
 async function publicar() {
   if (!exigirConexao()) return;
   const btns = [$('publicar'), $('publicar-topo')];
   btns.forEach(b => { b.disabled = true; b.textContent = 'Publicando…'; });
   try {
+    garantirCodigos();
+    try { const h = await Pedidos.carregar(cfg); pedidosCache = h.lista; } catch (e) {}
+    aplicarVendidos(pedidosCache);
     const corpo = {message: 'Atualiza catálogo', content: paraB64(JSON.stringify(dados, null, 2) + '\n'), branch: cfg.branch};
     if (sha) corpo.sha = sha;
     const r = await gh(CAMINHO, {method: 'PUT', body: corpo});
@@ -825,6 +862,8 @@ function renderLoja() {
   $('ocultar-nome').checked = !!l.ocultarNome;
   $('logo-prev').innerHTML = l.logo ? `<img src="${esc(urlFoto(l.logo))}" alt="Logo">` : 'Sem logo';
   $('logo-rem').hidden = !l.logo;
+  $('topo-prev').innerHTML = `<img src="${esc(urlFoto(l.topoPdf || 'topo-pdf.png'))}" alt="Topo do PDF" onerror="this.replaceWith('Sem imagem')">`;
+  $('topo-rem').hidden = !l.topoPdf;
   document.querySelectorAll('[data-tema]').forEach(i => {
     const v = t[i.dataset.tema];
     if (i.type === 'checkbox') i.checked = !!v; else i.value = v;
@@ -983,6 +1022,19 @@ $('logo-arq').addEventListener('change', async e => {
   } catch (err) { aviso(err.message, 'erro'); }
   renderLoja();
 });
+$('topo-arq').addEventListener('change', async e => {
+  const f = e.target.files[0]; e.target.value = ''; if (!f) return;
+  if (!exigirConexao()) return;
+  $('topo-prev').textContent = 'Enviando…';
+  try {
+    const caminho = await subirImagem(await reduzir(f, 1600, false), 'topo-pdf');
+    if (dados.loja.topoPdf) remover.push(dados.loja.topoPdf);
+    dados.loja.topoPdf = caminho; marcarSujo();
+    aviso('Imagem do topo do PDF enviada. Clique em Publicar no site.', 'ok');
+  } catch (err) { aviso(err.message, 'erro'); }
+  renderLoja();
+});
+$('topo-rem').onclick = () => { if (dados.loja.topoPdf) remover.push(dados.loja.topoPdf); dados.loja.topoPdf = ''; marcarSujo(); renderLoja(); };
 $('logo-rem').onclick = () => { if (dados.loja.logo) remover.push(dados.loja.logo); dados.loja.logo = ''; marcarSujo(); renderLoja(); };
 
 // ---------- aba Categorias (árvore) ----------
@@ -1156,7 +1208,7 @@ $('lista').addEventListener('click', e => {
   if (a === 'editar') return abrirForm(p);
   if (a === 'duplicar') {
     const c = JSON.parse(JSON.stringify(p));
-    c.id = novoId(); c.nome = p.nome + ' (cópia)';
+    c.id = novoId(); c.nome = p.nome + ' (cópia)'; c.cod = proximoCod(); delete c.vendidos;
     ps.splice(i + 1, 0, c); marcarSujo(); renderLista();
     aviso('Cópia criada. Escolha a categoria dela e salve.', 'ok');
     return abrirForm(c);
@@ -1433,7 +1485,7 @@ form.addEventListener('submit', async e => {
   if (editando) remover.push(...editando.imagens.filter(c => !imagens.includes(c)));
 
   const p = {
-    id: editando?.id || novoId(), nome, categoria: catForm,
+    id: editando?.id || novoId(), cod: editando?.cod || proximoCod(), vendidos: editando?.vendidos || 0, nome, categoria: catForm,
     unidade: unidadeForm, valor, descricao: form.descricao.value.trim(), imagens,
     disponivel: form.disponivel.checked,
     etiquetas: dados.etiquetas.filter(x => etqForm.has(x.id)).map(x => x.id),
@@ -1508,7 +1560,16 @@ async function carregarPedidos() {
   renderPedidos();
 }
 const fmtData = iso => { const d = new Date(iso); return d.toLocaleDateString('pt-BR') + ' ' + d.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'}); };
+function renderRanking() {
+  const cont = {};
+  for (const ped of pedidosCache) for (const l of ped.itens || []) cont[l.id] = {n: ((cont[l.id] || {}).n || 0) + (l.qtd || 1), nome: l.nome};
+  const top = Object.entries(cont).sort((a, b) => b[1].n - a[1].n).slice(0, 15);
+  $('ranking-lista').innerHTML = top.length ? '<ol style="padding:8px 0 0 22px;display:flex;flex-direction:column;gap:3px">' +
+    top.map(([id, x]) => `<li>${esc((dados.produtos.find(p => p.id === id) || x).nome)} <small style="color:var(--mut)">— ${x.n} ${x.n === 1 ? 'pedido' : 'pedidos'}</small></li>`).join('') + '</ol>'
+    : '<p class="dica">Ainda não há pedidos no histórico.</p>';
+}
 function renderPedidos() {
+  renderRanking();
   const t = norm($('ped-busca').value);
   const lista = pedidosCache.filter(p => !t || norm([p.id, p.cliente.nome, p.cliente.obs, ...p.itens.map(l => l.nome)].join(' ')).includes(t));
   $('ped-qtd').textContent = pedidosCache.length;
@@ -1541,7 +1602,7 @@ $('ped-lista').addEventListener('click', async e => {
   if (b.dataset.pedAcao === 'pdf') {
     b.disabled = true; b.textContent = 'Gerando…';
     try {
-      const blob = await Pedidos.pdf(p, {imagem: urlFoto, link: p.link || ''});
+      const blob = await Pedidos.pdf(p, {imagem: urlFoto, link: p.link || '', topo: urlFoto(dados.loja.topoPdf || 'topo-pdf.png')});
       const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `pedido-${p.id}.pdf`; a.click();
       setTimeout(() => URL.revokeObjectURL(a.href), 2000);
     } catch (err) { aviso('Não consegui gerar o PDF: ' + err.message, 'erro'); }
@@ -1559,7 +1620,7 @@ $('ped-lista').addEventListener('click', async e => {
 });
 $('ped-form').addEventListener('submit', async e => {
   e.preventDefault();
-  const v = $('ped-link').value.trim(), m = /[#&]p=([^&\s]+)/.exec(v), c = m ? Pedidos.decodificar(m[1]) : null;
+  const v = $('ped-link').value.trim(), c = v.includes('#') ? Pedidos.decodificar(v.slice(v.indexOf('#') + 1)) : null;
   if (!c) { aviso('Esse link não parece ser de um pedido.', 'erro'); return; }
   const ped = Pedidos.montar({loja: dados.loja, categorias: arvoreExp(), produtos: dados.produtos}, c);
   ped.link = v;

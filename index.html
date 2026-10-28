@@ -101,6 +101,7 @@ body:not(.previa) #logo,body:not(.previa) #marca{cursor:pointer}
 @media(hover:hover){.foto:hover .seta{opacity:1}}
 .semfoto{width:100%;height:100%;display:grid;place-items:center;font:italic 800 44px var(--f-tit);color:color-mix(in srgb,var(--txt) 18%,var(--card));background:linear-gradient(135deg,var(--bg2),var(--card))}
 .tag{position:absolute;top:8px;left:8px;z-index:1;background:#2a3247;color:#fff;font:700 .6875rem/1 var(--f-txt);letter-spacing:.5px;text-transform:uppercase;padding:5px 8px;border-radius:6px}
+.rank{position:absolute;top:6px;left:6px;z-index:2;background:#fbbf24;color:#2a1a00;font:800 .75rem/1 var(--f-txt);padding:4px 7px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.4)}
 .n-fotos{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.6);color:#fff;font-size:.6875rem;font-weight:700;padding:4px 7px;border-radius:6px;z-index:1}
 .info{padding:10px 10px 8px;display:flex;flex-direction:column;gap:4px;flex:1}
 /* cartão compacto */
@@ -329,8 +330,8 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=16"></script>
-<script src="pedido.js?v=16"></script>
+<script src="comum.js?v=17"></script>
+<script src="pedido.js?v=17"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -522,7 +523,7 @@ function irPara(id, {historico = true} = {}) {
   caminhoSel = id ? caminhoAte(id) : [];
   const atual = noAtual();
   listaAberta = !!(atual && atual.filhas.length);
-  termoCat = termoCatTxt = tipoF = ''; ordem = 'padrao';
+  termoCat = termoCatTxt = tipoF = ''; ordem = 'az';
   if (!id) { termo = ''; $('busca').value = ''; }
   if (historico) marcarUrl();
   niveis(); montarFerramentas(); render();
@@ -558,7 +559,7 @@ function navegar(e) {
   // abre a lista vertical sempre que o nível escolhido tiver subcategorias
   const atual = caminhoSel.length ? mapa().get(caminhoSel[caminhoSel.length - 1]).no : null;
   listaAberta = !!(atual && atual.filhas.length);
-  termoCat = termoCatTxt = tipoF = ''; ordem = 'padrao';
+  termoCat = termoCatTxt = tipoF = ''; ordem = 'az';
   marcarUrl();
   niveis(); montarFerramentas(); render(); manterNoTopo();
 }
@@ -639,10 +640,10 @@ function fotos(p) {
     <div class="pontos">${im.map((_, i) => `<i${i ? '' : ' class="on"'}></i>`).join('')}</div>`;
 }
 const listaOpcoes = p => { const o = nomesOpcoes(p); return o.length ? `<ul class="opcoes">${o.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''; };
-function card(p) {
+function card(p, rank = 0) {
   return `
     <article class="card${sel[p.id] ? ' sel' : ''}${p.disponivel ? '' : ' off'}" data-id="${esc(p.id)}" tabindex="0" aria-label="Ver detalhes de ${esc(p.nome)}">
-      <div class="foto" style="${estiloFoto(p)}">${fotos(p)}${p.disponivel ? '' : '<span class="tag">Esgotado</span>'}</div>
+      <div class="foto" style="${estiloFoto(p)}">${fotos(p)}${p.disponivel ? '' : '<span class="tag">Esgotado</span>'}${rank ? `<span class="rank">★ ${rank}º</span>` : ''}</div>
       <div class="info">
         <h3 class="nome">${esc(p.nome)}</h3>
         ${metaLinha(p)}
@@ -699,7 +700,7 @@ function arrumarRotulos() {
 addEventListener('resize', () => requestAnimationFrame(arrumarRotulos));
 
 // ---------- busca, ordem e filtro dentro da categoria ----------
-let termoCat = '', ordem = 'padrao', tipoF = '';
+let termoCat = '', ordem = 'az', tipoF = '';      // os itens começam em ordem alfabética
 const noAtual = () => caminhoSel.length ? mapa().get(caminhoSel[caminhoSel.length - 1]).no : null;
 function montarFerramentas() {
   const atual = noAtual();
@@ -711,8 +712,8 @@ function montarFerramentas() {
       <div class="campo-busca mini"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <input id="busca-cat" type="search" placeholder="Buscar em ${esc(atual.nome)}…" aria-label="Buscar nesta categoria"></div>
       <select id="ordem" aria-label="Ordenar">
-        <option value="padrao">Ordem da loja</option><option value="az">A → Z</option><option value="za">Z → A</option>
-        <option value="menor">Menor valor</option><option value="maior">Maior valor</option></select>
+        <option value="az">A → Z</option><option value="za">Z → A</option><option value="vendidos">🏆 Mais vendidos</option>
+        <option value="menor">Menor valor</option><option value="maior">Maior valor</option><option value="padrao">Ordem da loja</option></select>
       ${tipos.length ? `<select id="tipo-f" aria-label="Filtrar por tipo"><option value="">Todos os tipos</option>${tipos.map(t => `<option>${esc(t)}</option>`).join('')}</select>` : ''}
     </div>`;
   }
@@ -737,7 +738,17 @@ function ordenar(lista) {
   if (ordem === 'za') l.sort((a, b) => b.nome.localeCompare(a.nome, 'pt'));
   if (ordem === 'menor') l.sort((a, b) => v(a) - v(b));
   if (ordem === 'maior') l.sort((a, b) => (v(b) === Infinity ? -1 : v(b)) - (v(a) === Infinity ? -1 : v(a)));
+  if (ordem === 'vendidos') l.sort((a, b) => (b.vendidos || 0) - (a.vendidos || 0) || a.nome.localeCompare(b.nome, 'pt'));
   return l;
+}
+// A→Z / Z→A / ordem da loja: ordena dentro de cada subcategoria, mantendo os grupos (e o caminho em cima)
+function ordenarDentro(itens) {
+  if (ordem === 'padrao') return itens;
+  const pos = new Map();
+  itens.forEach(x => { const k = x.caminho.map(c => c.id).join('/'); if (!pos.has(k)) pos.set(k, pos.size); });
+  const k = x => pos.get(x.caminho.map(c => c.id).join('/'));
+  const dir = ordem === 'za' ? -1 : 1;
+  return [...itens].sort((a, b) => k(a) - k(b) || dir * a.p.nome.localeCompare(b.p.nome, 'pt'));
 }
 function render() {
   const m = mapa(), atual = noAtual();
@@ -751,13 +762,15 @@ function render() {
     return;
   }
   let html = '';
-  if (atual && (termoCat || tipoF || ordem !== 'padrao')) {
-    // com busca, filtro ou ordem: uma lista só, sem subtítulos
-    html = `<div class="grade">${ordenar(lista.filter((p, i, a) => a.indexOf(p) === i)).map(card).join('')}</div>`;
-  } else if (atual) html = gradeContinua(itensDoNo(atual, lista, []));
+  if (atual && (termoCat || tipoF || ['vendidos', 'menor', 'maior'].includes(ordem))) {
+    // com busca, filtro, mais vendidos ou preço: uma lista só, sem subtítulos
+    const ord = ordenar(lista.filter((p, i, a) => a.indexOf(p) === i));
+    let r = 0;
+    html = `<div class="grade">${ord.map(p => card(p, ordem === 'vendidos' && p.vendidos ? ++r : 0)).join('')}</div>`;
+  } else if (atual) html = gradeContinua(ordenarDentro(itensDoNo(atual, lista, [])));
   else {
     for (const c of categorias) {
-      const its = itensDoNo(c, lista, [], true);
+      const its = ordenarDentro(itensDoNo(c, lista, [], true));
       if (its.length) html += `<section><h2 class="sec-tit">${linkCat(c)}</h2>${gradeContinua(its)}</section>`;
     }
     const outros = lista.filter(p => !m.has(p.categoria));
@@ -967,7 +980,7 @@ $('enviar').onclick = () => {
   const c = {v: 1, id: Pedidos.novoNumero(), t: Date.now(), n: nome, o: obs,
     it: it.map(({p, q}) => { const v = varDe(p); return [p.id, q, v ? v.id : '', ehGB(p) ? null : (temValorP(p) ? valorDe(p) : null)]; })};
   const ped = Pedidos.montar({loja, categorias, produtos}, c);
-  const link = new URL('pedido.html#p=' + Pedidos.codificar(c), location.href).href;
+  const link = new URL('pedido.html#' + Pedidos.codificar(c, produtos), location.href).href;
   ped.link = link;
   let fone = String(loja.whatsapp || '').replace(/\D/g, '');
   if (fone && fone.length <= 11) fone = '55' + fone;
@@ -975,7 +988,7 @@ $('enviar').onclick = () => {
   pedidoAtual = ped; pdfAtual = null;
   $('passo-pdf').hidden = false;
   $('btn-pdf').disabled = true; $('btn-pdf').textContent = 'Preparando o PDF…';
-  Pedidos.pdf(ped, {link}).then(b => {
+  Pedidos.pdf(ped, {link, topo: loja.topoPdf || 'topo-pdf.png'}).then(b => {
     if (pedidoAtual !== ped) return;
     pdfAtual = new File([b], `pedido-${ped.id}.pdf`, {type: 'application/pdf'});
     $('btn-pdf').disabled = false;

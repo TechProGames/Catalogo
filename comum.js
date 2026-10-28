@@ -231,6 +231,8 @@ function normalizarCatalogo(d) {
         return {cat: extraValido(o.cat), rotulo: String(o.rotulo || '').trim()};
       }).filter((x, i, a) => x.cat && a.findIndex(y => y.cat === x.cat) === i),
       tipo: String(p.tipo || '').trim(),             // categoria do item (Ação, Aventura…)
+      cod: /^[0-9a-z]{1,6}$/.test(String(p.cod || '')) ? String(p.cod) : '',     // código curto (usado no link do pedido)
+      vendidos: Number.isInteger(p.vendidos) && p.vendidos > 0 ? p.vendidos : 0,   // quantas vezes foi pedido (ranking "Mais vendidos")
       // outras categorias onde o MESMO item também aparece
       outras: (Array.isArray(p.outras) ? p.outras : []).map(real).filter((x, i, a) => x && a.indexOf(x) === i),
       // foto do cartão: formato fixo ('4/5'…), 'auto' (usa a proporção da foto) ou '' (padrão da loja)

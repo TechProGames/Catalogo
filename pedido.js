@@ -10,11 +10,37 @@ const Pedidos = (() => {
   // ---------- link do pedido (tudo vai no endereço; nada passa por servidor) ----------
   const b64url = s => btoa(unescape(encodeURIComponent(s))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
   const deB64url = s => decodeURIComponent(escape(atob(s.replace(/-/g, '+').replace(/_/g, '/'))));
-  const codificar = c => b64url(JSON.stringify(c));
-  function decodificar(s) {
-    try { const c = JSON.parse(deB64url(String(s || ''))); return c && Array.isArray(c.it) ? c : null; } catch (e) { return null; }
+  // formato curto (v2): "2.<nº>.<itens>.<nome>.<obs>"; cada item = código curto do produto (+ Xqtd, + Vversão)
+  const encParte = t => encodeURIComponent(t || '').replace(/\./g, '%2E');
+  function codificar(c, produtos) {
+    const its = c.it.map(([pid, q, vid]) => {
+      const p = produtos.find(x => x.id === pid); if (!p) return '';
+      let t = p.cod || ('_' + p.id);
+      if (q > 1) t += 'X' + q;
+      const vi = vid ? p.armazenamentos.findIndex(a => a.id === vid) : -1;
+      if (vi > 0) t += 'V' + vi;
+      return t;
+    }).filter(Boolean);
+    return ['2', c.id, its.join('-'), encParte(c.n), encParte(c.o)].join('.').replace(/\.+$/, '');
   }
-  const novoNumero = () => Date.now().toString(36).toUpperCase().slice(-6) + Math.random().toString(36).slice(2, 4).toUpperCase();
+  // aceita o texto depois do "#" (formato curto) ou o antigo "p=…"
+  function decodificar(h) {
+    h = String(h || '').replace(/^#/, '');
+    const m = /(?:^|[#&])p=([^&]+)/.exec(h);
+    if (m) { try { const c = JSON.parse(deB64url(m[1])); return c && Array.isArray(c.it) ? c : null; } catch (e) { return null; } }
+    const ps = h.split('.');
+    if (ps[0] !== '2' || !ps[1]) return null;
+    try {
+      const it = (ps[2] || '').split('-').filter(Boolean).map(t => {
+        const mm = /^(_?[0-9a-z]+)(?:X(\d+))?(?:V(\d+))?$/.exec(t); if (!mm) return null;
+        return [mm[1].startsWith('_') ? mm[1].slice(1) : 'c:' + mm[1], +(mm[2] || 1), mm[3] ? +mm[3] : 0, null];
+      }).filter(Boolean);
+      const seg = parseInt(ps[1].slice(0, 6), 36);
+      return {v: 2, id: ps[1], t: isFinite(seg) ? seg * 1000 : Date.now(), n: decodeURIComponent(ps[3] || ''), o: decodeURIComponent(ps[4] || ''), it};
+    } catch (e) { return null; }
+  }
+  // nº do pedido = momento em que foi feito (segundos, base 36) + 1 letra aleatória
+  const novoNumero = () => Math.floor(Date.now() / 1000).toString(36).toUpperCase() + Math.random().toString(36).slice(2, 3).toUpperCase();
 
   // ---------- monta o pedido a partir do que o cliente escolheu ----------
   // cat = {loja, categorias (árvore expandida), produtos}; compacto = {id, t, n, o, it: [[produto, qtd, versão, valor]]}
@@ -22,9 +48,9 @@ const Pedidos = (() => {
     const nos = percorrer(cat.categorias), porId = new Map(nos.map(x => [x.no.id, x]));
     const caminho = id => { const n = []; let x = porId.get(id); while (x) { n.unshift(x.no.nome); x = x.pai ? porId.get(x.pai.id) : null; } return n.join(' › '); };
     const linhas = c.it.map(([pid, q, vid, vSnap]) => {
-      const p = cat.produtos.find(x => x.id === pid);
+      const p = cat.produtos.find(x => x.id === pid || (x.cod && 'c:' + x.cod === pid));
       if (!p) return null;
-      const v = p.armazenamentos.find(a => a.id === vid) || (p.armazenamentos.length ? p.armazenamentos[0] : null);
+      const v = (typeof vid === 'number' ? p.armazenamentos[vid] : p.armazenamentos.find(a => a.id === vid)) || (p.armazenamentos.length ? p.armazenamentos[0] : null);
       const valorAtual = v && v.valor !== null ? v.valor : p.valor;
       return {
         id: p.id, nome: p.nome, qtd: Math.max(1, +q || 1), versao: v ? v.nome : '', versaoGB: v ? v.gb : 0,
@@ -154,8 +180,10 @@ const Pedidos = (() => {
       const c = document.createElement('canvas');
       c.width = Math.max(1, Math.round(bmp.width * k)); c.height = Math.max(1, Math.round(bmp.height * k));
       const g = c.getContext('2d'); g.fillStyle = '#ffffff'; g.fillRect(0, 0, c.width, c.height); g.drawImage(bmp, 0, 0, c.width, c.height);
-      const b64 = c.toDataURL('image/jpeg', .82).split(',')[1], bin = atob(b64);
-      return {bytes: latin1(bin), w: c.width, h: c.height};
+      const px = g.getImageData(1, 1, 1, 1).data;      // cor do canto (fundo da imagem do topo)
+      const fundo = '#' + [px[0], px[1], px[2]].map(v => v.toString(16).padStart(2, '0')).join('');
+      const b64 = c.toDataURL('image/jpeg', .86).split(',')[1], bin = atob(b64);
+      return {bytes: latin1(bin), w: c.width, h: c.height, fundo};
     } catch (e) { return null; }
   }
   // agrupa por categoria (principais primeiro, depois os adicionais)
@@ -172,20 +200,29 @@ const Pedidos = (() => {
     }
     return gs;
   }
-  async function pdf(ped, {imagem = p => p, link = ''} = {}) {
+  async function pdf(ped, {imagem = p => p, link = '', topo = ''} = {}) {
     const d = new MiniPDF(), M = 36, LW = W - 2 * M;
-    const capas = await Promise.all(ped.itens.map(l => jpeg(l.imagem ? imagem(l.imagem) : '')));
+    const [banner, ...capas] = await Promise.all([jpeg(topo, 1400), ...ped.itens.map(l => jpeg(l.imagem ? imagem(l.imagem) : ''))]);
     const capaDe = new Map(ped.itens.map((l, i) => [l, capas[i]]));
     const azul = '#1f6feb', cinza = '#666666';
     let y;
+    const dt = new Date(ped.data), txtNum = `Pedido nº ${ped.id}`, txtData = dt.toLocaleDateString('pt-BR') + ' ' + dt.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'});
     const cabecalho = () => {
-      d.ret(0, 0, W, 64, '#0c111b');
-      d.texto(M, 30, ped.loja || 'Pedido', {tam: 20, neg: true, cor: '#ffffff'});
-      d.texto(M, 48, 'Pedido de orçamento', {tam: 10, cor: '#9fb2d0'});
-      const dt = new Date(ped.data), txt = `Pedido nº ${ped.id}`, txt2 = dt.toLocaleDateString('pt-BR') + ' ' + dt.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'});
-      d.texto(W - M - d.largura(txt, 11, true), 30, txt, {tam: 11, neg: true, cor: '#ffffff'});
-      d.texto(W - M - d.largura(txt2, 9, false), 46, txt2, {tam: 9, cor: '#9fb2d0'});
-      y = 88;
+      // topo: imagem da loja (logo + nome) à esquerda; "PEDIDO FINALIZADO", nº e data à direita
+      const altBarra = banner ? 96 : 64;
+      d.ret(0, 0, W, altBarra, banner ? banner.fundo : '#0c111b');
+      const etiqueta = 'PEDIDO FINALIZADO', ladoDir = Math.max(d.largura(etiqueta, 9, true) + 16, d.largura(txtNum, 12, true), d.largura(txtData, 9, false));
+      if (banner) {
+        const maxW = W - 2 * M - ladoDir - 16, h0 = altBarra - 16, s = Math.min(h0 / banner.h, maxW / banner.w);
+        d.imagem(banner, M - 6, (altBarra - banner.h * s) / 2, banner.w * s, banner.h * s);
+      } else d.texto(M, 34, ped.loja || 'Pedido', {tam: 20, neg: true, cor: '#ffffff'});
+      const xd = W - M, yb = altBarra / 2 - 18;
+      const we = d.largura(etiqueta, 9, true) + 16;
+      d.ret(xd - we, yb, we, 16, '#22c55e');
+      d.texto(xd - we + 8, yb + 11.5, etiqueta, {tam: 9, neg: true, cor: '#062611'});
+      d.texto(xd - d.largura(txtNum, 12, true), yb + 32, txtNum, {tam: 12, neg: true, cor: '#ffffff'});
+      d.texto(xd - d.largura(txtData, 9, false), yb + 46, txtData, {tam: 9, cor: '#9fb2d0'});
+      y = altBarra + 24;
     };
     const espaco = h => { if (y + h > H - 50) { d.novaPagina(); cabecalho(); } };
     cabecalho();
