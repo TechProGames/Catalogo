@@ -1030,6 +1030,75 @@
   ],
   "produtos": [
     {
+      "id": "mvsfltngyzlu",
+      "cod": "68",
+      "nome": "Reparo de Placa",
+      "categoria": "mvpqewpbroz3",
+      "unidade": "R$",
+      "valor": 250,
+      "descricao": "Controle não liga, desligando do nada, caindo conexão. Qualquer reparo na placa.",
+      "imagens": [
+        "imagens/reparo-de-placa-mvsfls6frer5.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvsfk0vt89e0",
+      "cod": "67",
+      "nome": "Gatilhos L2/R2",
+      "categoria": "mvpqgqqbs8ig",
+      "unidade": "R$",
+      "valor": 140,
+      "descricao": "Reparo dos gatilhos sem pressão ou não funcionando.",
+      "imagens": [
+        "imagens/gatilhos-l2-r2-mvsfjz2yg90d.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvsfh06xcw8n",
+      "cod": "66",
+      "nome": "Troca do conector USB C",
+      "categoria": "mvpqfbuc41as",
+      "unidade": "R$",
+      "valor": 160,
+      "descricao": "Reparo no conector USB C, desde não carregar ou não conectar, como mal contato.",
+      "imagens": [
+        "imagens/troca-do-conector-usb-c-mvsfgyt7zobt.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvsf7sdw2rwq",
       "cod": "65",
       "nome": "Botões não FUNCIONA/FALHANDO",
