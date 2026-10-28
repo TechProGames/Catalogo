@@ -329,7 +329,13 @@ const Pedidos = (() => {
       if (!rr.ok) throw new Error(`Não encontrei o repositório privado "${cfg.pedidosRepo}" (ou o token não tem acesso a ele).`);
       return null;
     }
-    if (!r.ok) throw new Error(r.status === 401 ? 'Token inválido ou expirado.' : r.status === 403 ? 'O token não tem permissão de escrita no repositório dos pedidos.' : r.status === 409 ? 'O histórico mudou em outro aparelho. Tente de novo.' : 'Erro do GitHub (' + r.status + ').');
+    if (metodo === 'GET' && r.status === 409) return null;   // repositório ainda vazio: o arquivo será criado
+    if (!r.ok) {
+      let msg = ''; try { msg = (await r.json()).message || ''; } catch (e) {}
+      // 409 ou 422 "sha" = o arquivo foi gravado ao mesmo tempo por outra aba/aparelho → recarrega e tenta de novo
+      if (r.status === 409 || (r.status === 422 && /sha/i.test(msg))) throw new Error('O histórico mudou em outro aparelho. Tente de novo.');
+      throw new Error(r.status === 401 ? 'Token inválido ou expirado.' : r.status === 403 ? 'O token não tem permissão de escrita no repositório dos pedidos.' : `Erro do GitHub (${r.status}${msg ? ': ' + msg : ''}).`);
+    }
     return r.json();
   }
   async function carregar(cfg) {
@@ -344,14 +350,23 @@ const Pedidos = (() => {
     const r = await ghReq(cfg, 'PUT', corpo);
     return {onde: 'repositorio', sha: r.content.sha};
   }
-  async function adicionar(cfg, ped) {
-    for (let tentativa = 0; tentativa < 2; tentativa++) {
+  let fila = Promise.resolve();   // uma gravação por vez nesta página
+  function adicionar(cfg, ped) {
+    const tarefa = fila.then(() => adicionarAgora(cfg, ped));
+    fila = tarefa.catch(() => {});
+    return tarefa;
+  }
+  async function adicionarAgora(cfg, ped) {
+    for (let tentativa = 0; tentativa < 4; tentativa++) {
       try {
         const {lista, sha} = await carregar(cfg);
         if (lista.some(p => p.id === ped.id)) return {jaExistia: true, onde: usaRepo(cfg) ? 'repositorio' : 'navegador'};
         lista.unshift(ped);
         return await salvarLista(cfg, lista, sha);
-      } catch (e) { if (tentativa || !/mudou/.test(e.message)) throw e; }
+      } catch (e) {
+        if (tentativa === 3 || !/mudou/.test(e.message)) throw e;
+        await new Promise(ok => setTimeout(ok, 700 + Math.random() * 800));
+      }
     }
   }
   return {codificar, decodificar, novoNumero, montar, texto, pdf, grupos, carregar, salvarLista, adicionar, usaRepo};
