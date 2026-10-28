@@ -1061,9 +1061,144 @@
     {
       "id": "mvr1up8br6dt",
       "nome": "Legendado ou Dublado em Pt-Br"
+    },
+    {
+      "id": "mvrgol0q0vrl",
+      "nome": "Cabo HDMI"
+    },
+    {
+      "id": "mvrgostflpc4",
+      "nome": "Cabo de Força"
+    },
+    {
+      "id": "mvrgox0ub7t5",
+      "nome": "Cabo USB"
+    },
+    {
+      "id": "mvrgp39wy27y",
+      "nome": "1 Controle"
+    },
+    {
+      "id": "mvrgvryl02wk",
+      "nome": "HD Externo com Jogos"
+    },
+    {
+      "id": "mvrgw5m3f80l",
+      "nome": "1 Memorycard com OPL"
     }
   ],
   "produtos": [
+    {
+      "id": "mvrgxxb0ajdx",
+      "nome": "PS2 Tunado OPL",
+      "categoria": "mvpxfscfysfo",
+      "unidade": "R$",
+      "valor": 450,
+      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
+      "imagens": [
+        "imagens/ps2-tunado-opl-mvrgxtrogxgt.jpg",
+        "imagens/ps2-tunado-opl-mvrgxv0shhoo.jpg",
+        "imagens/ps2-tunado-opl-mvrgxw55ijhe.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok",
+        "mvrgol0q0vrl",
+        "mvrgostflpc4",
+        "mvrgp39wy27y",
+        "mvrgvryl02wk",
+        "mvrgw5m3f80l"
+      ],
+      "extras": [
+        {
+          "cat": "mvpp0oeupa6x>mvpxg0tpqw76>mvpxg7ivwzt9",
+          "rotulo": "Adicionar Jogos"
+        }
+      ],
+      "tipo": "Console",
+      "armazenamentos": [
+        {
+          "id": "mvrgx0l6proh",
+          "nome": "120gb",
+          "gb": 110,
+          "valor": null
+        }
+      ]
+    },
+    {
+      "id": "mvrguh72pmg4",
+      "nome": "PS3 Slim ou Super Slim DESBLOQUEADO",
+      "categoria": "mvpxfmwke7eo",
+      "unidade": "R$",
+      "valor": 900,
+      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
+      "imagens": [
+        "imagens/ps3-slim-ou-super-slim-desbloqueado-mvrgu91zelw1.jpg",
+        "imagens/ps3-slim-ou-super-slim-desbloqueado-mvrguaimgfm5.jpg",
+        "imagens/ps3-slim-ou-super-slim-desbloqueado-mvrguc16i9q6.jpg",
+        "imagens/ps3-slim-ou-super-slim-desbloqueado-mvrgud3m5137.jpg",
+        "imagens/ps3-slim-ou-super-slim-desbloqueado-mvrguel6dh3q.jpg",
+        "imagens/ps3-slim-ou-super-slim-desbloqueado-mvrgufz0x7xp.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok",
+        "mvrgol0q0vrl",
+        "mvrgostflpc4",
+        "mvrgox0ub7t5",
+        "mvrgp39wy27y"
+      ],
+      "extras": [
+        {
+          "cat": "mvpp0jwykj1v>mvpxeog23adz>mvpxev0ksv9z",
+          "rotulo": "Adicionar PKG (DESBLOQUEADO)"
+        }
+      ],
+      "tipo": "Console",
+      "armazenamentos": [
+        {
+          "id": "mvrgtvopdxin",
+          "nome": "500",
+          "gb": 410,
+          "valor": null
+        }
+      ]
+    },
+    {
+      "id": "mvrgrzlv3i8i",
+      "nome": "PS4 Fat DESBLOQUEADO",
+      "categoria": "mvppz6od3kqu",
+      "unidade": "R$",
+      "valor": 1500,
+      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
+      "imagens": [
+        "imagens/ps4-fat-desbloqueado-mvrgry67avwz.jpg",
+        "imagens/ps4-fat-desbloqueado-mvrgrwzc27rg.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok",
+        "mvrgol0q0vrl",
+        "mvrgostflpc4",
+        "mvrgox0ub7t5",
+        "mvrgp39wy27y"
+      ],
+      "extras": [
+        {
+          "cat": "mvpp04ewy3z3>mvpxcqntjkrc>mvpxdr6mggrm",
+          "rotulo": "Adicionar Jogos"
+        }
+      ],
+      "tipo": "Console",
+      "armazenamentos": [
+        {
+          "id": "mvrgqvmqzkjr",
+          "nome": "500GB",
+          "gb": 365,
+          "valor": null
+        }
+      ]
+    },
     {
       "id": "mvrgb4oigf8p",
       "nome": "Yakuza 2",
@@ -1473,7 +1608,7 @@
     {
       "id": "mvrfq0wps6u2",
       "nome": "Sonic Riders Zero Gravity",
-      "categoria": "",
+      "categoria": "mvpxg7ivwzt9",
       "unidade": "GB",
       "valor": 3.1,
       "descricao": "A sinopse de Sonic Riders: Zero Gravity gira em torno de misteriosos meteoros que caem na Terra e concedem poderes de manipulação da gravidade.\n\nEnredo Principal\n\n• A Queda dos Meteoros: Um meteoro cai na cidade e é encontrado por Tails, que o analisa junto com Sonic e Knuckles. Pouco depois, robôs da corporação MeteoTech são afetados pelo artefato e começam a perseguir o grupo.\n• Os Arcos do Cosmos: Sonic e seus amigos precisam correr contra rivais para coletar cinco anéis lendários que dobram a gravidade, conhecidos como \"Os Arcos do Cosmos\".\n• Disputa de Rivais: Além de fugir e lutar contra os robôs desonestos da MeteoTech, Sonic precisa enfrentar novamente os Babylon Rogues (liderados por Jet the Hawk) e o Dr. Eggman, que também estão atrás do poder gravitacional dos artefatos.\n• Jogabilidade e Inovação: O jogo se passa em corridas de Extreme Gear (pranchas voadoras), introduzindo a mecânica de Zero Gravity, que permite aos personagens controlar a gravidade para fazer curvas e ganhar velocidade.",
@@ -2196,20 +2331,6 @@
       "etiquetas": [],
       "extras": [],
       "tipo": "Corrida",
-      "armazenamentos": []
-    },
-    {
-      "id": "mvregh0dvkx3",
-      "nome": "Freekstyle",
-      "categoria": "",
-      "unidade": "R$",
-      "valor": null,
-      "descricao": "",
-      "imagens": [],
-      "disponivel": true,
-      "etiquetas": [],
-      "extras": [],
-      "tipo": "",
       "armazenamentos": []
     },
     {
@@ -3984,21 +4105,23 @@
     },
     {
       "id": "ps4slim",
-      "nome": "PS4 Slim desbloqueado",
-      "descricao": "Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
+      "nome": "PS4 Slim DESBLOQUEADO",
       "categoria": "mvppz6od3kqu",
       "unidade": "R$",
       "valor": 1700,
+      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "imagens": [
-        "imagens/ps4-slim-desbloqueado-mvpo2urn.jpg",
-        "imagens/ps4-slim-desbloqueado-mvpp7i59av16.jpg",
-        "imagens/ps4-slim-desbloqueado-mvpp7jrthzfd.jpg"
+        "imagens/ps4-slim-desbloqueado-mvrgps4dj6ge.jpg",
+        "imagens/ps4-slim-desbloqueado-mvrgptix9eva.jpg",
+        "imagens/ps4-slim-desbloqueado-mvrgpund7ns9.jpg"
       ],
       "disponivel": true,
       "etiquetas": [
-        "destaque",
         "mvpvkud0etok",
-        "mvpvkxhzkieq"
+        "mvrgol0q0vrl",
+        "mvrgostflpc4",
+        "mvrgox0ub7t5",
+        "mvrgp39wy27y"
       ],
       "extras": [
         {
