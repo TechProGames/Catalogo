@@ -26,6 +26,7 @@ a{color:var(--azul2)}
 header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0 12px;flex-wrap:wrap}
 h1{font-family:var(--cond);font-style:italic;font-weight:800;font-size:32px;text-transform:uppercase;line-height:1}
 h1 span{color:var(--verm)}
+.topo-acoes{display:flex;gap:8px;flex-wrap:wrap}
 h2{font-family:var(--cond);font-weight:700;font-size:21px;letter-spacing:.3px}
 /* abas */
 .abas{position:sticky;top:0;z-index:6;display:flex;gap:4px;background:rgba(7,9,15,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:8px 0 10px;margin-bottom:6px;overflow-x:auto;scrollbar-width:none}
@@ -260,7 +261,11 @@ dialog form{padding:18px}
 <div class="wrap">
   <header>
     <h1>Painel do <span>catálogo</span></h1>
-    <button class="btn" id="publicar-topo">Publicar no site</button>
+    <div class="topo-acoes">
+      <a class="btn sec" id="ver-site" href="./" target="_blank" rel="noopener">🌐 Site dos clientes</a>
+      <button class="btn sec" id="copiar-site" title="Copiar o link do site para mandar aos clientes">📋 Copiar link</button>
+      <button class="btn" id="publicar-topo">Publicar no site</button>
+    </div>
   </header>
 
   <nav class="abas" id="abas">
@@ -1522,6 +1527,13 @@ function renderTudo() { renderLoja(); renderCategorias(); renderLista(); estadoC
 $('conectar').onclick = conectar;
 $('publicar').onclick = publicar;
 $('publicar-topo').onclick = publicar;
+const linkSite = new URL('./', location.href).href;
+$('ver-site').href = linkSite;
+$('copiar-site').onclick = async () => {
+  try { await navigator.clipboard.writeText(linkSite); }
+  catch (e) { const t = document.createElement('textarea'); t.value = linkSite; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); }
+  aviso('Link copiado: ' + linkSite, 'ok');
+};
 $('desconectar').onclick = () => {
   cfg.token = ''; $('token').value = ''; gravar('catalogo-github', cfg);
   conectado = false; estadoConexao(); aviso('Token removido deste aparelho.');
