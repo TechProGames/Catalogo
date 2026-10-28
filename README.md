@@ -37,9 +37,11 @@ Os produtos ficam em `data/produtos.json` e as fotos em `imagens/`, dentro do pr
 - No site, os itens de uma categoria ficam lado a lado (mesmo de subcategorias diferentes), com o caminho em cima; o caminho, os títulos e a logo/nome da loja são links.
 - **Pedidos**: ao tocar em "Enviar pelo WhatsApp", o cliente manda a mensagem (os itens adicionais, como jogos, aparecem como "Jogos listados no PDF anexado") e depois um botão envia o **PDF com as capas** (no celular abre o compartilhamento; no computador baixa o arquivo). A mensagem também leva um **link do pedido completo** (`pedido.html`).
 - **Histórico**: abra o link do pedido num aparelho onde o painel está conectado e ele entra sozinho na aba **Pedidos** (ou cole o link lá). Fica guardado neste navegador ou, se configurar, num repositório **privado** do GitHub — nunca no repositório público do catálogo.
-- **Link curto**: cada produto tem um código curto fixo (criado sozinho pelo painel), e o link do pedido leva só esses códigos.
+- **Link curto**: cada produto tem um código curto fixo (criado sozinho pelo painel), e o link do pedido leva só esses códigos, compactados (ex.: `…/Catalogo/#3.FFSCK2.BAQAAA…`). O link abre direto a página do pedido. Links antigos continuam funcionando.
+- **Limpar seleção**: o 🗑 na barra de baixo (e "Limpar seleção" na lista) esvazia tudo o que o cliente marcou.
+- **Apagar histórico**: na aba **Pedidos**, o ✕ de cada pedido apaga só ele; **🗑 Apagar todos** limpa o histórico inteiro (pede confirmação duas vezes).
 - **Topo do PDF**: usa `topo-pdf.png` (logo + nome da loja). Para trocar, use **Loja › Topo do PDF do pedido**.
-- **Ordem**: os itens aparecem em **A → Z** por padrão; o cliente pode trocar para Z → A, **Mais vendidos**, menor/maior valor ou a ordem da loja.
+- **Ordem**: os itens aparecem em **A → Z** por padrão; o cliente pode trocar para Z → A, **Mais vendidos**, Valor (menor → maior / maior → menor), GB (menor → maior / maior → menor) ou a ordem da loja.
 - **Mais vendidos**: ao **Publicar**, o painel soma o que foi pedido no histórico e publica só a contagem por produto (sem dados de clientes). O ranking também aparece na aba **Pedidos**.
 - Depois de mexer, clique em **Publicar no site**. O catálogo dos clientes atualiza em cerca de 1 minuto.
 - Valor em R$ vazio aparece como "Preço sob consulta". Itens em GB mostram a soma de GB do que o cliente escolheu.

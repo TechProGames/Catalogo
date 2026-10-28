@@ -10,37 +10,64 @@ const Pedidos = (() => {
   // ---------- link do pedido (tudo vai no endereço; nada passa por servidor) ----------
   const b64url = s => btoa(unescape(encodeURIComponent(s))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
   const deB64url = s => decodeURIComponent(escape(atob(s.replace(/-/g, '+').replace(/_/g, '/'))));
-  // formato curto (v2): "2.<nº>.<itens>.<nome>.<obs>"; cada item = código curto do produto (+ Xqtd, + Vversão)
+  // ---------- link curto ----------
+  // v3: "3.<nº>.<itens>.<extras>.<nome>.<obs>"
+  //   itens = "B" + mapa de bits (base64url) dos códigos escolhidos  OU  "L" + códigos de 2 letras colados (o que for menor)
+  //   extras = só para quem tem quantidade > 1 (X) ou versão de armazenamento diferente da 1ª (V): "<cód>X2V1-<cód>X3"
+  // v2 (antigo): "2.<nº>.<cód>-<cód>X2V1-….<nome>.<obs>"
   const encParte = t => encodeURIComponent(t || '').replace(/\./g, '%2E');
+  const BASE = 36;                                   // menor código possível ("10")
+  const b64bits = bytes => btoa(String.fromCharCode(...bytes)).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  const deB64bits = s => Uint8Array.from(atob(s.replace(/-/g, '+').replace(/_/g, '/')), ch => ch.charCodeAt(0));
   function codificar(c, produtos) {
     const its = c.it.map(([pid, q, vid]) => {
-      const p = produtos.find(x => x.id === pid); if (!p) return '';
-      let t = p.cod || ('_' + p.id);
-      if (q > 1) t += 'X' + q;
+      const p = produtos.find(x => x.id === pid); if (!p) return null;
       const vi = vid ? p.armazenamentos.findIndex(a => a.id === vid) : -1;
-      if (vi > 0) t += 'V' + vi;
-      return t;
+      return {cod: p.cod, id: p.id, q: q || 1, vi: vi > 0 ? vi : 0};
     }).filter(Boolean);
-    return ['2', c.id, its.join('-'), encParte(c.n), encParte(c.o)].join('.').replace(/\.+$/, '');
+    const curto = its.length && its.every(x => /^[0-9a-z]{2}$/.test(x.cod || ''));
+    if (!curto) {                                      // algum produto ainda sem código curto: usa o formato antigo
+      const ts = its.map(x => (x.cod || '_' + x.id) + (x.q > 1 ? 'X' + x.q : '') + (x.vi ? 'V' + x.vi : ''));
+      return ['2', c.id, ts.join('-'), encParte(c.n), encParte(c.o)].join('.').replace(/\.+$/, '');
+    }
+    const nums = its.map(x => parseInt(x.cod, 36) - BASE), max = Math.max(...nums);
+    const bits = new Uint8Array(Math.floor(max / 8) + 1);
+    nums.forEach(n => { bits[n >> 3] |= 1 << (n & 7); });
+    const porLista = 'L' + its.map(x => x.cod).join(''), porBits = 'B' + b64bits(bits);
+    const extras = its.filter(x => x.q > 1 || x.vi).map(x => x.cod + (x.q > 1 ? 'X' + x.q : '') + (x.vi ? 'V' + x.vi : '')).join('-');
+    return ['3', c.id, porBits.length < porLista.length ? porBits : porLista, extras, encParte(c.n), encParte(c.o)].join('.').replace(/\.+$/, '');
   }
-  // aceita o texto depois do "#" (formato curto) ou o antigo "p=…"
+  const EPOCA = Date.UTC(2026, 0, 1) / 1000;           // o nº do pedido conta os segundos desde 01/01/2026
   function decodificar(h) {
     h = String(h || '').replace(/^#/, '');
     const m = /(?:^|[#&])p=([^&]+)/.exec(h);
     if (m) { try { const c = JSON.parse(deB64url(m[1])); return c && Array.isArray(c.it) ? c : null; } catch (e) { return null; } }
     const ps = h.split('.');
-    if (ps[0] !== '2' || !ps[1]) return null;
     try {
-      const it = (ps[2] || '').split('-').filter(Boolean).map(t => {
-        const mm = /^(_?[0-9a-z]+)(?:X(\d+))?(?:V(\d+))?$/.exec(t); if (!mm) return null;
-        return [mm[1].startsWith('_') ? mm[1].slice(1) : 'c:' + mm[1], +(mm[2] || 1), mm[3] ? +mm[3] : 0, null];
-      }).filter(Boolean);
-      const seg = parseInt(ps[1].slice(0, 6), 36);
-      return {v: 2, id: ps[1], t: isFinite(seg) ? seg * 1000 : Date.now(), n: decodeURIComponent(ps[3] || ''), o: decodeURIComponent(ps[4] || ''), it};
-    } catch (e) { return null; }
+      if (ps[0] === '3' && ps[1]) {
+        let cods = [];
+        const it = ps[2] || '';
+        if (it[0] === 'L') cods = it.slice(1).match(/.{2}/g) || [];
+        else if (it[0] === 'B') deB64bits(it.slice(1)).forEach((byte, i) => { for (let k = 0; k < 8; k++) if (byte & (1 << k)) cods.push((BASE + i * 8 + k).toString(36)); });
+        const extra = {};
+        for (const t of (ps[3] || '').split('-')) { const mm = /^([0-9a-z]{2})(?:X(\d+))?(?:V(\d+))?$/.exec(t); if (mm) extra[mm[1]] = {q: +(mm[2] || 1), v: +(mm[3] || 0)}; }
+        const seg = parseInt(ps[1].slice(0, 5), 36);
+        return {v: 3, id: ps[1], t: isFinite(seg) ? (seg + EPOCA) * 1000 : Date.now(), n: decodeURIComponent(ps[4] || ''), o: decodeURIComponent(ps[5] || ''),
+          it: cods.map(cd => ['c:' + cd, (extra[cd] || {}).q || 1, (extra[cd] || {}).v || 0, null])};
+      }
+      if (ps[0] === '2' && ps[1]) {
+        const it = (ps[2] || '').split('-').filter(Boolean).map(t => {
+          const mm = /^(_?[0-9a-z]+)(?:X(\d+))?(?:V(\d+))?$/.exec(t); if (!mm) return null;
+          return [mm[1].startsWith('_') ? mm[1].slice(1) : 'c:' + mm[1], +(mm[2] || 1), mm[3] ? +mm[3] : 0, null];
+        }).filter(Boolean);
+        const seg = parseInt(ps[1].slice(0, 6), 36);
+        return {v: 2, id: ps[1], t: isFinite(seg) ? seg * 1000 : Date.now(), n: decodeURIComponent(ps[3] || ''), o: decodeURIComponent(ps[4] || ''), it};
+      }
+    } catch (e) {}
+    return null;
   }
-  // nº do pedido = momento em que foi feito (segundos, base 36) + 1 letra aleatória
-  const novoNumero = () => Math.floor(Date.now() / 1000).toString(36).toUpperCase() + Math.random().toString(36).slice(2, 3).toUpperCase();
+  // nº do pedido (6 letras) = segundos desde 01/01/2026 em base 36 + 1 letra aleatória
+  const novoNumero = () => Math.floor(Date.now() / 1000 - EPOCA).toString(36).toUpperCase().padStart(5, '0') + Math.random().toString(36).slice(2, 3).toUpperCase();
 
   // ---------- monta o pedido a partir do que o cliente escolheu ----------
   // cat = {loja, categorias (árvore expandida), produtos}; compacto = {id, t, n, o, it: [[produto, qtd, versão, valor]]}
