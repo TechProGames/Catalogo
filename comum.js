@@ -231,6 +231,12 @@ function normalizarCatalogo(d) {
         return {cat: extraValido(o.cat), rotulo: String(o.rotulo || '').trim()};
       }).filter((x, i, a) => x.cat && a.findIndex(y => y.cat === x.cat) === i),
       tipo: String(p.tipo || '').trim(),             // categoria do item (Ação, Aventura…)
+      // outras categorias onde o MESMO item também aparece
+      outras: (Array.isArray(p.outras) ? p.outras : []).map(real).filter((x, i, a) => x && a.indexOf(x) === i),
+      // foto do cartão: formato fixo ('4/5'…), 'auto' (usa a proporção da foto) ou '' (padrão da loja)
+      formato: FORMATOS_FOTO.some(f => f.v === p.formato) || p.formato === 'auto' ? p.formato : '',
+      proporcao: /^\d+(\.\d+)?\/\d+(\.\d+)?$/.test(String(p.proporcao || '')) ? String(p.proporcao) : '',
+      ajuste: ['contain', 'cover'].includes(p.ajuste) ? p.ajuste : '',
       // versões de armazenamento: {id, nome, gb (espaço livre), valor (preço opcional)}
       armazenamentos: (Array.isArray(p.armazenamentos) ? p.armazenamentos : []).filter(a => a && typeof a === 'object').map(a => ({
         id: String(a.id || novoId()), nome: String(a.nome || '').trim(),
@@ -239,7 +245,18 @@ function normalizarCatalogo(d) {
       })).filter(a => a.nome || a.gb)
     };
   });
+  produtos.forEach(p => { p.outras = p.outras.filter(c => c !== p.categoria); });
   return {loja, categorias, etiquetas, produtos};
+}
+// todas as categorias (reais) em que o produto aparece
+const catsDe = p => [p.categoria, ...(p.outras || [])].filter(Boolean);
+// proporção/ajuste da foto do cartão (o do produto, ou o padrão da loja)
+function estiloFoto(p, tema) {
+  const ar = p.formato === 'auto' ? (p.proporcao || '') : p.formato;
+  const r = [];
+  if (ar) r.push('--foto-ar:' + ar);
+  if (p.ajuste) r.push('--foto-fit:' + p.ajuste);
+  return r.join(';');
 }
 
 // ---------- tema ----------

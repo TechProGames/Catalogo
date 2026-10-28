@@ -199,6 +199,17 @@ dialog{margin:auto;border:1px solid var(--line);border-radius:16px;background:va
 dialog::backdrop{background:rgba(0,0,0,.65)}
 dialog form{padding:18px}
 .galeria{display:flex;gap:8px;flex-wrap:wrap}
+.capa-cfg{display:flex;gap:16px;align-items:flex-start;margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+.capa-opts{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px}
+.capa-opts select{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:9px;padding:8px 10px}
+.prev-card{width:140px;flex:none;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.prev-foto{aspect-ratio:4/5;background:#0b0f18;overflow:hidden;display:grid;place-items:center;color:#33425f;font:italic 800 26px var(--cond)}
+.prev-foto img{width:100%;height:100%;display:block}
+.prev-info{padding:7px 8px 9px;display:flex;flex-direction:column;gap:2px}
+.prev-info b{font-size:12px;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.prev-info small{font-size:11px;color:var(--mut)}
+.prev-rot{font-size:10px;color:var(--mut);text-align:center;padding:4px 0 0}
+@media(max-width:560px){.capa-cfg{flex-direction:column;align-items:center}.capa-opts{width:100%}}
 .g-item{position:relative;width:84px;height:84px;border-radius:10px;overflow:hidden;background:#141d31;border:1px solid var(--line)}
 .g-item img{width:100%;height:100%;object-fit:cover}
 .g-item .capa{position:absolute;left:4px;bottom:4px;background:var(--azul);color:#fff;font-size:10px;font-weight:800;text-transform:uppercase;padding:2px 6px;border-radius:5px}
@@ -328,12 +339,6 @@ dialog form{padding:18px}
             <div class="campo"><label for="t-etxt">Tamanho dos textos <span class="disp-rot"></span> <output id="o-etxt"></output></label>
               <input type="range" id="t-etxt" min="0.85" max="1.3" step="0.05"></div>
           </div>
-          <div class="dois">
-            <div class="campo"><label for="t-ffoto">Formato das fotos dos produtos</label><select id="t-ffoto" data-tema="formatoFoto"></select></div>
-            <div class="campo"><label for="t-afoto">Ajuste da foto</label><select id="t-afoto" data-tema="ajusteFoto">
-              <option value="contain">Mostrar a foto inteira (pode sobrar borda)</option>
-              <option value="cover">Preencher o quadro (sem borda, corta as pontas)</option></select></div>
-          </div>
           <p class="dica">A fonte base vale para todos os textos. Os <b>tamanhos valem para o aparelho escolhido na pré-visualização</b> (📱 celular ou 🖥 computador) — mudar um não mexe no outro. Para mudar um texto só, use o bloco <b>Textos</b> abaixo.</p>
           <div class="acoes"><button class="btn link" id="tema-padrao">Restaurar toda a aparência ao padrão</button></div>
         </div>
@@ -440,9 +445,25 @@ dialog form{padding:18px}
       <span class="rot">Fotos — a primeira é a capa</span>
       <div class="galeria" id="galeria"></div>
       <input type="file" id="fotos-arq" accept="image/*" multiple hidden>
+      <div class="capa-cfg">
+        <div><div class="prev-card" id="prev-card"></div><div class="prev-rot">Prévia do cartão</div></div>
+        <div class="capa-opts">
+          <label class="rot" for="f-formato" style="margin:0">Formato da capa</label>
+          <select id="f-formato"></select>
+          <span class="rot" style="margin:0">Ajuste</span>
+          <div class="seg-larga" id="f-ajuste"><button type="button" data-aj="contain">Foto inteira</button><button type="button" data-aj="cover">Preencher o quadro</button></div>
+          <p class="dica" id="capa-info" style="margin:0"></p>
+        </div>
+      </div>
     </div>
     <div class="campo"><label for="f-nome">Nome *</label><input id="f-nome" name="nome" required></div>
     <div class="campo"><label for="f-cat">Categoria</label><select id="f-cat"></select></div>
+    <div class="campo">
+      <span class="rot">Também mostrar em (opcional)</span>
+      <div id="outras-lista"></div>
+      <select id="f-outra" aria-label="Adicionar outra categoria"></select>
+      <p class="dica">O <b>mesmo item</b> aparece também nessas categorias (a seleção do cliente é a mesma). Para um item separado, use <b>⧉ Duplicar</b> na lista de produtos.</p>
+    </div>
     <div class="campo">
       <label for="f-valor">Valor</label>
       <div class="valor-linha">
@@ -485,7 +506,7 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=13"></script>
+<script src="comum.js?v=15"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -607,11 +628,12 @@ function repararCategorias() {
   const exp = new Set(nosExp().map(x => x.no.id));
   dados.produtos.forEach(p => {
     if (!reais.has(p.categoria)) p.categoria = '';
+    p.outras = (p.outras || []).filter(c => reais.has(c) && c !== p.categoria);
     p.extras = (p.extras || []).filter(x => exp.has(x.cat));
   });
 }
 const irmaos = pai => pai ? pai.filhas : dados.categorias;
-function contarArvore(no) { const e = acharNoExp(no.id); const ids = new Set(e ? origensDe(e.no) : idsDe(no)); return dados.produtos.filter(p => ids.has(p.categoria)).length; }
+function contarArvore(no) { const e = acharNoExp(no.id); const ids = new Set(e ? origensDe(e.no) : idsDe(no)); return dados.produtos.filter(p => catsDe(p).some(c => ids.has(c))).length; }
 
 // ---------- carregar / publicar ----------
 async function conectar() {
@@ -877,7 +899,6 @@ function saidas() {
 $('t-etit').addEventListener('input', e => { dados.loja.tema[tamCel() ? 'escTituloCel' : 'escTitulo'] = Number(e.target.value); saidas(); marcarSujo(); });
 $('t-etxt').addEventListener('input', e => { dados.loja.tema[tamCel() ? 'escTextoCel' : 'escTexto'] = Number(e.target.value); saidas(); marcarSujo(); });
 const opcoesFonte = Object.keys(FONTES).map(f => `<option value="${esc(f)}">${esc(f)}</option>`).join('');
-$('t-ffoto').innerHTML = FORMATOS_FOTO.map(f => `<option value="${f.v}">${esc(f.nome)}</option>`).join('');
 $('t-ftit').innerHTML = opcoesFonte; $('t-ftxt').innerHTML = opcoesFonte;
 $('paletas').innerHTML = PALETAS.map((p, i) => `<button type="button" class="paleta" data-paleta="${i}">
   <span class="amostra">${['fundo', 'cartao', 'principal', 'destaque', 'texto'].map(k => `<i style="background:${p.cores[k]}"></i>`).join('')}</span>${esc(p.nome)}</button>`).join('');
@@ -1034,7 +1055,7 @@ $('arvore').addEventListener('click', e => {
 // ---------- aba Produtos (lista agrupada e recolhida) ----------
 function linhaProduto(p) {
   const nomesEtq = dados.etiquetas.filter(e => p.etiquetas.includes(e.id)).map(e => e.nome);
-  const info = [p.tipo, textoValor(p), p.armazenamentos && p.armazenamentos.length ? p.armazenamentos.map(a => a.nome).join(' / ') : '', p.imagens.length > 1 ? p.imagens.length + ' fotos' : '', ...nomesEtq, p.disponivel ? '' : 'esgotado'].filter(Boolean).join(' · ');
+  const info = [p.tipo, textoValor(p), p.outras && p.outras.length ? '+' + p.outras.length + (p.outras.length === 1 ? ' categoria' : ' categorias') : '', p.armazenamentos && p.armazenamentos.length ? p.armazenamentos.map(a => a.nome).join(' / ') : '', p.imagens.length > 1 ? p.imagens.length + ' fotos' : '', ...nomesEtq, p.disponivel ? '' : 'esgotado'].filter(Boolean).join(' · ');
   return `
     <div class="linha${p.disponivel ? '' : ' off'}" data-id="${esc(p.id)}">
       ${p.imagens[0] ? `<img class="th" data-acao="editar" src="${esc(urlFoto(p.imagens[0]))}" alt="Editar ${esc(p.nome)}">` : `<div class="th" data-acao="editar">${esc(iniciais(p.nome))}</div>`}
@@ -1044,6 +1065,7 @@ function linhaProduto(p) {
         <button class="ib" data-acao="sobe" title="Subir">↑</button>
         <button class="ib" data-acao="desce" title="Descer">↓</button>
         <button class="ib" data-acao="editar" title="Editar">✎</button>
+        <button class="ib" data-acao="duplicar" title="Duplicar (criar uma cópia para usar em outra categoria)">⧉</button>
         <button class="ib del" data-acao="apagar" title="Apagar">✕</button>
       </div>
     </div>`;
@@ -1083,6 +1105,13 @@ $('lista').addEventListener('click', e => {
   if (!p) return;
   const a = b.dataset.acao;
   if (a === 'editar') return abrirForm(p);
+  if (a === 'duplicar') {
+    const c = JSON.parse(JSON.stringify(p));
+    c.id = novoId(); c.nome = p.nome + ' (cópia)';
+    ps.splice(i + 1, 0, c); marcarSujo(); renderLista();
+    aviso('Cópia criada. Escolha a categoria dela e salve.', 'ok');
+    return abrirForm(c);
+  }
   if (a === 'apagar') {
     if (!confirm(`Apagar "${p.nome}"?`)) return;
     remover.push(...p.imagens); ps.splice(i, 1);
@@ -1104,6 +1133,61 @@ $('lista').addEventListener('change', e => {
 const form = $('form');
 let editando = null, fotosForm = [], unidadeForm = 'R$', catForm = '', etqForm = new Set();
 
+// ---- capa: formato, ajuste e prévia (a última escolha fica salva para os próximos cadastros)
+let formatoForm = 'auto', ajusteForm = 'contain', proporcaoForm = '', medidaCapa = null;
+$('f-formato').innerHTML = '<option value="auto">Automático (proporção da própria foto)</option>' +
+  FORMATOS_FOTO.map(f => `<option value="${f.v}">${esc(f.nome)}</option>`).join('');
+function srcCapa() { const f = fotosForm[0]; return f ? (f.data || urlFoto(f.path)) : ''; }
+function medirCapa() {
+  const src = srcCapa();
+  if (!src) { medidaCapa = null; proporcaoForm = ''; renderPrevia(); return; }
+  const img = new Image();
+  img.onload = () => {
+    if (srcCapa() !== src) return;
+    medidaCapa = {w: img.naturalWidth, h: img.naturalHeight};
+    proporcaoForm = `${img.naturalWidth}/${img.naturalHeight}`;
+    renderPrevia();
+  };
+  img.onerror = () => { medidaCapa = null; renderPrevia(); };
+  img.src = src;
+}
+function nomeProporcao(w, h) {
+  const r = w / h, perto = FORMATOS_FOTO.map(f => { const [a, b] = f.v.split('/').map(Number); return {f, d: Math.abs(a / b - r)}; }).sort((x, y) => x.d - y.d)[0];
+  return perto.d < .03 ? perto.f.nome : `${(r).toFixed(2).replace('.', ',')} : 1`;
+}
+function renderPrevia() {
+  const ar = formatoForm === 'auto' ? (proporcaoForm || '4/5') : formatoForm;
+  const src = srcCapa(), nome = form.nome.value.trim() || 'Nome do produto';
+  const tipo = form.tipo.value.trim(), v = lerNumero(form.valor.value);
+  const valor = v === null || Number.isNaN(v) ? '' : unidadeForm === 'GB' ? num(v) + ' GB' : brl(v);
+  $('prev-card').innerHTML = `<div class="prev-foto" style="aspect-ratio:${ar}">${src ? `<img src="${esc(src)}" alt="" style="object-fit:${ajusteForm}">` : esc(iniciais(nome))}</div>
+    <div class="prev-info"><b>${esc(nome)}</b><small>${esc([tipo, valor].filter(Boolean).join(' · '))}</small></div>`;
+  $('f-formato').value = formatoForm;
+  document.querySelectorAll('#f-ajuste button').forEach(b => b.classList.toggle('on', b.dataset.aj === ajusteForm));
+  $('capa-info').textContent = medidaCapa
+    ? `Foto da capa: ${medidaCapa.w} × ${medidaCapa.h} px (≈ ${nomeProporcao(medidaCapa.w, medidaCapa.h)}).` + (formatoForm === 'auto' ? ' O cartão usa exatamente essa proporção.' : '')
+    : (src ? 'Carregando a foto…' : 'Adicione uma foto para ver a prévia.');
+}
+$('f-formato').addEventListener('change', e => { formatoForm = e.target.value; renderPrevia(); });
+$('f-ajuste').addEventListener('click', e => { const b = e.target.closest('[data-aj]'); if (b) { ajusteForm = b.dataset.aj; renderPrevia(); } });
+['f-nome', 'f-tipo', 'f-valor'].forEach(id => $(id).addEventListener('input', renderPrevia));
+
+// ---- também mostrar em (o mesmo item em outras categorias)
+let outrasForm = [];
+function renderOutras() {
+  outrasForm = outrasForm.filter(c => c && c !== catForm && acharNo(c));
+  $('outras-lista').innerHTML = outrasForm.map((id, i) => `<div class="extra-linha"><div><b>${esc(acharNo(id).no.nome)}</b><small>${esc(caminhoExp(id))}</small></div>
+    <button type="button" class="ib del" data-rm-outra="${i}" title="Tirar desta categoria">✕</button></div>`).join('');
+  $('f-outra').innerHTML = '<option value="">＋ Mostrar também em outra categoria…</option>' + opcoesArvore([catForm, ...outrasForm]);
+  $('f-outra').value = '';
+}
+$('f-outra').addEventListener('change', () => {
+  const x = acharNoExp($('f-outra').value), real = x ? x.no.origens[0] : '';
+  if (real && real !== catForm && !outrasForm.includes(real)) outrasForm.push(real);
+  renderOutras();
+});
+$('outras-lista').addEventListener('click', e => { const b = e.target.closest('[data-rm-outra]'); if (b) { outrasForm.splice(+b.dataset.rmOutra, 1); renderOutras(); } });
+
 function renderGaleria() {
   $('galeria').innerHTML = fotosForm.map((f, i) => `
     <div class="g-item">
@@ -1111,6 +1195,8 @@ function renderGaleria() {
       ${i ? `<button type="button" class="esq" data-g="${i}" title="Mover para a esquerda">‹</button>` : '<span class="capa">capa</span>'}
       <button type="button" class="rm" data-rm="${i}" title="Remover">✕</button>
     </div>`).join('') + (fotosForm.length < MAX_FOTOS ? '<label class="g-add" for="fotos-arq">+ Adicionar<br>fotos</label>' : '');
+  const capa = srcCapa();
+  if (capa !== renderGaleria.ultima) { renderGaleria.ultima = capa; medirCapa(); } else renderPrevia();
 }
 $('galeria').addEventListener('click', e => {
   const rm = e.target.closest('[data-rm]'), esq = e.target.closest('[data-g]');
@@ -1141,6 +1227,7 @@ function preencherCats(id) {
     '<option value="__raiz">＋ Nova categoria principal…</option>' +
     (real ? `<option value="__filha">＋ Nova subcategoria dentro de “${esc(real.no.nome)}”…</option>` : '');
   $('f-cat').value = catForm;
+  if (typeof renderOutras === 'function' && $('outras-lista')) renderOutras();
 }
 // listas de "escolher junto"
 let extrasForm = [];          // [{cat, rotulo}]
@@ -1192,7 +1279,7 @@ function definirUnidade(u) {
     ? 'Tamanho em GB. No catálogo o cliente vê a soma de GB do que escolheu.'
     : 'Deixe vazio para mostrar "Preço sob consulta".';
 }
-$('seg-un').addEventListener('click', e => { const b = e.target.closest('[data-un]'); if (b) definirUnidade(b.dataset.un); });
+$('seg-un').addEventListener('click', e => { const b = e.target.closest('[data-un]'); if (b) { definirUnidade(b.dataset.un); renderPrevia(); } });
 
 // opções (caixinhas) editáveis
 function renderEtqs() {
@@ -1242,6 +1329,14 @@ function abrirForm(p) {
   etqForm = new Set(p?.etiquetas || []);
   extrasForm = (p?.extras || []).map(e => ({...e}));
   renderExtras();
+  outrasForm = [...(p?.outras || [])];
+  const ultimo = ler('catalogo-admin-ultima-capa', null), t = dados.loja.tema;
+  if (p) {                                 // produto existente: o dele (ou o padrão antigo da loja)
+    formatoForm = p.formato || t.formatoFoto; ajusteForm = p.ajuste || t.ajusteFoto; proporcaoForm = p.proporcao || '';
+  } else {                                 // novo: a última configuração usada
+    formatoForm = ultimo ? ultimo.formato : 'auto'; ajusteForm = ultimo ? ultimo.ajuste : 'contain'; proporcaoForm = '';
+  }
+  medidaCapa = null; renderGaleria.ultima = undefined;
   armForm = (p?.armazenamentos || []).map(a => ({...a}));
   renderArm();
   form.tipo.value = p?.tipo || '';
@@ -1295,8 +1390,12 @@ form.addEventListener('submit', async e => {
     etiquetas: dados.etiquetas.filter(x => etqForm.has(x.id)).map(x => x.id),
     extras: extrasForm.filter(e => acharNoExp(e.cat)).map(e => ({cat: e.cat, rotulo: String(e.rotulo || '').trim()})),
     tipo: form.tipo.value.trim(),
-    armazenamentos: arms
+    armazenamentos: arms,
+    outras: outrasForm.filter(c => c && c !== catForm),
+    formato: formatoForm, ajuste: ajusteForm,
+    proporcao: formatoForm === 'auto' ? proporcaoForm : ''
   };
+  gravar('catalogo-admin-ultima-capa', {formato: formatoForm, ajuste: ajusteForm});
   const i = editando ? dados.produtos.findIndex(x => x.id === editando.id) : -1;
   if (i >= 0) dados.produtos[i] = p; else dados.produtos.unshift(p);
   // deixa aberto o caminho até o produto salvo

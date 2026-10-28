@@ -32,7 +32,9 @@ Os produtos ficam em `data/produtos.json` e as fotos em `imagens/`, dentro do pr
 - No catálogo, ao tocar numa categoria as subcategorias abrem numa lista compacta logo abaixo dela; o caminho escolhido aparece na linha com setas.
 - No catálogo, o cliente toca no produto para ver fotos grandes, descrição completa e opções.
 - Cada produto pode ter até 10 fotos (viram carrossel no catálogo) e valor em **R$** ou em **GB**.
-- Na aba **Loja › Aparência**, escolha o **formato das fotos** dos cartões (padrão 4:5, ideal para capas de jogo) e se a foto aparece inteira ou preenche o quadro.
+- O **formato da capa** fica no cadastro de cada produto (Automático = proporção da própria foto, ou 1:1, 4:5, 3:4, 2:3, 9:16), com **prévia do cartão**. Novos produtos começam com a última configuração usada.
+- **Também mostrar em**: o mesmo item aparece em outras categorias. **⧉ Duplicar** (na lista de produtos) cria uma cópia separada.
+- No site, os itens de uma categoria ficam lado a lado (mesmo de subcategorias diferentes), com o caminho em cima; o caminho, os títulos e a logo/nome da loja são links.
 - Depois de mexer, clique em **Publicar no site**. O catálogo dos clientes atualiza em cerca de 1 minuto.
 - Valor em R$ vazio aparece como "Preço sob consulta". Itens em GB mostram a soma de GB do que o cliente escolheu.
 - Desligar a chave (ou desmarcar "Disponível") de um produto deixa ele como **Esgotado** (aparece, mas não dá para selecionar).

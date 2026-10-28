@@ -72,6 +72,15 @@ header.wrap>.livre{position:absolute;margin:0;z-index:4;max-width:calc(100% - 32
 .sec-tit::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,var(--azul),transparent)}
 .sub-tit{font-size:calc(.8125rem * var(--e-subsecao,1));font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--azul2);margin:16px 0 0}
 .grade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:10px 0 4px}
+/* grade contínua: cada cartão leva em cima o caminho da subcategoria (mostrado no 1º de cada grupo e no início de cada linha) */
+.cel{display:flex;flex-direction:column;min-width:0}
+.cel>.card{flex:1}
+.cel-rot{position:relative;z-index:1;height:1.45em;line-height:1.45em;margin-bottom:3px;font-size:calc(.6875rem * var(--e-subsecao,1));font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--azul2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;visibility:hidden}
+.cel-rot.ver{visibility:visible}
+.cel-rot a,.cat-cam a,.sec-tit a{color:inherit;text-decoration:none}
+.cel-rot a:hover,.cat-cam a:hover,.sec-tit a:hover{text-decoration:underline}
+.sep-cam{opacity:.6;margin:0 .3em}
+body:not(.previa) #logo,body:not(.previa) #marca{cursor:pointer}
 @media(min-width:700px){.grade{grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}}
 /* card */
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s,transform .15s;cursor:pointer}
@@ -310,7 +319,7 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=13"></script>
+<script src="comum.js?v=15"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -451,7 +460,7 @@ function cabecalho() {
 
 // ---------- navegação: categorias numa linha, subcategorias numa segunda linha com o caminho ----------
 let listaAberta = false;
-const contarNo = no => { const ids = new Set(origensDe(no)); return produtos.filter(p => ids.has(p.categoria)).length; };
+const contarNo = no => { const ids = new Set(origensDe(no)); return produtos.filter(p => catsDe(p).some(c => ids.has(c))).length; };
 const itens = n => n === 1 ? '1 item' : n + ' itens';
 function niveis() {
   if (!categorias.length) { $('niveis').innerHTML = ''; $('lista-sub').hidden = true; return; }
@@ -497,6 +506,36 @@ function posicionarLista() {
   l.style.top = (r.bottom - f.top + 4) + 'px';
 }
 addEventListener('resize', posicionarLista);
+// leva para uma categoria (ou para o início, com id vazio) e registra no histórico do navegador
+function irPara(id, {historico = true} = {}) {
+  caminhoSel = id ? caminhoAte(id) : [];
+  const atual = noAtual();
+  listaAberta = !!(atual && atual.filhas.length);
+  termoCat = termoCatTxt = tipoF = ''; ordem = 'padrao';
+  if (!id) { termo = ''; $('busca').value = ''; }
+  if (historico) marcarUrl();
+  niveis(); montarFerramentas(); render();
+  if (id) manterNoTopo(); else scrollTo({top: 0, behavior: 'smooth'});
+}
+function marcarUrl() {
+  if (PREVIA) return;
+  const id = caminhoSel[caminhoSel.length - 1] || '';
+  const url = id ? `${location.pathname}?cat=${encodeURIComponent(id)}` : location.pathname;
+  if (location.pathname + location.search !== url) history.pushState({cat: id}, '', url);
+}
+addEventListener('popstate', () => {
+  const id = new URLSearchParams(location.search).get('cat') || '';
+  irPara(mapa().has(id) ? id : '', {historico: false});
+});
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[data-ir]');
+  if (!a || e.ctrlKey || e.metaKey || e.shiftKey || e.button) return;   // Ctrl+clique abre em nova aba normalmente
+  e.preventDefault(); e.stopPropagation();
+  if ($('det').open) $('det').close();
+  irPara(a.dataset.ir);
+}, true);
+// logo e nome da loja voltam para a página inicial
+['logo', 'marca'].forEach(k => $(k).addEventListener('click', () => { if (!PREVIA) irPara(''); }));
 function navegar(e) {
   const b = e.target.closest('button'); if (!b) return;
   if ('lista' in b.dataset) { listaAberta = !listaAberta; niveis(); return; }
@@ -509,6 +548,7 @@ function navegar(e) {
   const atual = caminhoSel.length ? mapa().get(caminhoSel[caminhoSel.length - 1]).no : null;
   listaAberta = !!(atual && atual.filhas.length);
   termoCat = termoCatTxt = tipoF = ''; ordem = 'padrao';
+  marcarUrl();
   niveis(); montarFerramentas(); render(); manterNoTopo();
 }
 $('niveis').addEventListener('click', navegar);
@@ -591,7 +631,7 @@ const listaOpcoes = p => { const o = nomesOpcoes(p); return o.length ? `<ul clas
 function card(p) {
   return `
     <article class="card${sel[p.id] ? ' sel' : ''}${p.disponivel ? '' : ' off'}" data-id="${esc(p.id)}" tabindex="0" aria-label="Ver detalhes de ${esc(p.nome)}">
-      <div class="foto">${fotos(p)}${p.disponivel ? '' : '<span class="tag">Esgotado</span>'}</div>
+      <div class="foto" style="${estiloFoto(p)}">${fotos(p)}${p.disponivel ? '' : '<span class="tag">Esgotado</span>'}</div>
       <div class="info">
         <h3 class="nome">${esc(p.nome)}</h3>
         ${metaLinha(p)}
@@ -608,14 +648,44 @@ function ligarSlides(raiz) {
   }, {passive: true}));
 }
 
-// semAtalhos: na visão geral ("Todos") cada item aparece uma vez só, no lugar original (sem os caminhos reaproveitados)
-function blocoNo(no, lista, rotulo, semAtalhos) {
-  let html = '';
-  const diretos = lista.filter(p => semAtalhos ? p.categoria === no.origens[0] : no.origens.includes(p.categoria));
-  if (diretos.length) html += (rotulo ? `<h3 class="sub-tit">${esc(rotulo)}</h3>` : '') + `<div class="grade">${diretos.map(card).join('')}</div>`;
-  for (const f of no.filhas) if (!(semAtalhos && f.virtual)) html += blocoNo(f, lista, rotulo ? rotulo + ' › ' + f.nome : f.nome, semAtalhos);
-  return html;
+// Junta os itens de uma categoria e de todas as subcategorias, em ordem, cada um com o caminho até ele.
+// semAtalhos: na visão geral ("Todos") cada item aparece uma vez só, na categoria principal dele (sem caminhos reaproveitados)
+function itensDoNo(no, lista, caminho, semAtalhos, vistos = new Set(), out = []) {
+  for (const p of lista) {
+    if (vistos.has(p.id)) continue;
+    const dentro = semAtalhos ? p.categoria === no.origens[0] : catsDe(p).some(c => no.origens.includes(c));
+    if (dentro) { vistos.add(p.id); out.push({p, caminho}); }
+  }
+  for (const f of no.filhas) if (!(semAtalhos && f.virtual)) itensDoNo(f, lista, [...caminho, {id: f.id, nome: f.nome}], semAtalhos, vistos, out);
+  return out;
 }
+const linkCat = c => `<a href="?cat=${encodeURIComponent(c.id)}" data-ir="${esc(c.id)}">${esc(c.nome || 'Sem nome')}</a>`;
+function gradeContinua(itens) {
+  const comRotulo = itens.some(x => x.caminho.length);
+  return `<div class="grade">${itens.map((x, i) => {
+    const chave = x.caminho.map(c => c.id).join('/');
+    return `<div class="cel" data-grupo="${esc(chave)}">${comRotulo ? `<div class="cel-rot" title="${esc(x.caminho.map(c => c.nome).join(' › '))}">${x.caminho.map(linkCat).join('<span class="sep-cam">›</span>')}</div>` : ''}${card(x.p)}</div>`;
+  }).join('')}</div>`;
+}
+// mostra o caminho no 1º cartão de cada grupo e no começo de cada linha; o texto pode ocupar a largura do grupo naquela linha
+function arrumarRotulos() {
+  document.querySelectorAll('#conteudo .grade').forEach(g => {
+    const cels = [...g.children];
+    cels.forEach((c, i) => {
+      const r = c.querySelector('.cel-rot'); if (!r) return;
+      const ant = cels[i - 1];
+      const inicio = !ant || ant.dataset.grupo !== c.dataset.grupo || ant.offsetTop !== c.offsetTop;
+      r.classList.toggle('ver', inicio && !!c.dataset.grupo);
+      r.style.width = '';
+      if (inicio) {
+        let fim = c;
+        for (let j = i + 1; j < cels.length && cels[j].dataset.grupo === c.dataset.grupo && cels[j].offsetTop === c.offsetTop; j++) fim = cels[j];
+        r.style.width = (fim.offsetLeft + fim.offsetWidth - c.offsetLeft) + 'px';
+      }
+    });
+  });
+}
+addEventListener('resize', () => requestAnimationFrame(arrumarRotulos));
 
 // ---------- busca, ordem e filtro dentro da categoria ----------
 let termoCat = '', ordem = 'padrao', tipoF = '';
@@ -625,7 +695,7 @@ function montarFerramentas() {
   let html = paraProduto ? '<div class="para" id="banner-para"></div>' : '';
   if (atual) {
     const ids = new Set(origensDe(atual));
-    const tipos = [...new Set(produtos.filter(p => ids.has(p.categoria) && p.tipo).map(p => p.tipo))].sort((a, b) => a.localeCompare(b, 'pt'));
+    const tipos = [...new Set(produtos.filter(p => catsDe(p).some(c => ids.has(c)) && p.tipo).map(p => p.tipo))].sort((a, b) => a.localeCompare(b, 'pt'));
     html += `<div class="ferr-linha">
       <div class="campo-busca mini"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <input id="busca-cat" type="search" placeholder="Buscar em ${esc(atual.nome)}…" aria-label="Buscar nesta categoria"></div>
@@ -661,7 +731,7 @@ function ordenar(lista) {
 function render() {
   const m = mapa(), atual = noAtual();
   const permitidos = atual ? new Set(origensDe(atual)) : null;
-  const lista = produtos.filter(p => (!permitidos || permitidos.has(p.categoria)) &&
+  const lista = produtos.filter(p => (!permitidos || catsDe(p).some(c => permitidos.has(c))) &&
     (!termo || norm(p.nome + ' ' + p.descricao + ' ' + p.tipo).includes(termo)) &&
     (!atual || !termoCat || norm(p.nome + ' ' + p.descricao + ' ' + p.tipo).includes(termoCat)) &&
     (!atual || !tipoF || p.tipo === tipoF));
@@ -673,17 +743,18 @@ function render() {
   if (atual && (termoCat || tipoF || ordem !== 'padrao')) {
     // com busca, filtro ou ordem: uma lista só, sem subtítulos
     html = `<div class="grade">${ordenar(lista.filter((p, i, a) => a.indexOf(p) === i)).map(card).join('')}</div>`;
-  } else if (atual) html = blocoNo(atual, lista, '');
+  } else if (atual) html = gradeContinua(itensDoNo(atual, lista, []));
   else {
     for (const c of categorias) {
-      const sec = blocoNo(c, lista, '', true);
-      if (sec) html += `<section><h2 class="sec-tit">${esc(c.nome)}</h2>${sec}</section>`;
+      const its = itensDoNo(c, lista, [], true);
+      if (its.length) html += `<section><h2 class="sec-tit">${linkCat(c)}</h2>${gradeContinua(its)}</section>`;
     }
     const outros = lista.filter(p => !m.has(p.categoria));
     if (outros.length) html += `<section>${html ? '<h2 class="sec-tit">Outros</h2>' : ''}<div class="grade">${outros.map(card).join('')}</div></section>`;
   }
   $('conteudo').innerHTML = html;
   ligarSlides($('conteudo'));
+  arrumarRotulos();
 }
 
 // ---------- detalhes do produto ----------
@@ -729,7 +800,7 @@ function abrirDetalhe(p) {
     <button class="det-fechar" data-fechar-det aria-label="Fechar">×</button>
     <div class="foto">${fotos(p)}${p.disponivel ? '' : '<span class="tag">Esgotado</span>'}</div>
     <div class="det-corpo">
-      ${p.categoria ? `<span class="cat-cam">${esc(caminhoTexto(p.categoria))}</span>` : ''}
+      ${p.categoria ? `<span class="cat-cam">${caminhoAte(p.categoria).map(id => linkCat(mapa().get(id).no)).join('<span class="sep-cam">›</span>')}</span>` : ''}
       <h2 class="nome">${esc(p.nome)}</h2>
       ${metaLinha(p)}
       ${textoValor(p)}
