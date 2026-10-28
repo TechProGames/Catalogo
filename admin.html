@@ -125,6 +125,23 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
 #add-arm{margin-bottom:4px}
 @media(max-width:560px){.arm-linha{grid-template-columns:1fr 1fr auto}.arm-linha>div:first-child{grid-column:1/-1}}
 #f-extra{width:100%;background:var(--bg);border:1px dashed var(--line);border-radius:10px;padding:9px 10px;color:var(--azul2);font-weight:600}
+.ped{border:1px solid var(--line);border-radius:12px;margin-top:10px;background:var(--bg2);overflow:hidden}
+.ped>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:11px 14px;flex-wrap:wrap}
+.ped>summary::-webkit-details-marker{display:none}
+.ped>summary b{font-size:15px}
+.ped>summary small{color:var(--mut)}
+.ped>summary .ped-tot{margin-left:auto;font-weight:800}
+.ped .ped-corpo{padding:4px 14px 14px;border-top:1px solid var(--line)}
+.ped-grupo{margin-top:12px}
+.ped-grupo h4{font-size:12px;letter-spacing:.7px;text-transform:uppercase;color:var(--azul2);margin-bottom:6px}
+.ped-grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px}
+.ped-it{background:var(--card);border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.ped-it .cp{aspect-ratio:4/5;background:#0a0e17;display:grid;place-items:center;font-size:11px;color:var(--mut)}
+.ped-it .cp img{width:100%;height:100%;object-fit:contain}
+.ped-it div.t{padding:5px 6px 7px;font-size:11px;line-height:1.25}
+.ped-it div.t small{color:var(--mut);display:block}
+.ped-totais{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:14px}
+.ped-totais b{font-size:15px}
 .filhas{margin-left:14px;padding-left:10px;border-left:2px solid var(--line)}
 @media(max-width:560px){.no-linha small{display:none}.no-linha .ib{width:30px;height:30px}.filhas{margin-left:8px;padding-left:6px}}
 /* loja / aparência */
@@ -250,6 +267,7 @@ dialog form{padding:18px}
     <button data-aba="produtos" class="on">Produtos</button>
     <button data-aba="categorias">Categorias</button>
     <button data-aba="loja">Loja</button>
+    <button data-aba="pedidos">Pedidos</button>
     <button data-aba="conexao">Conexão <i class="bolinha" id="bolinha"></i></button>
   </nav>
 
@@ -394,6 +412,35 @@ dialog form{padding:18px}
     <div class="fundo-previa" id="fundo-previa" hidden></div>
   </section>
 
+  <!-- PEDIDOS -->
+  <section class="painel estreito" id="aba-pedidos" hidden>
+    <div class="bloco">
+      <div class="topo-lista"><h2>Histórico de pedidos <span class="pill" id="ped-qtd">0</span></h2>
+        <button class="btn sec" id="ped-recarregar">↻ Atualizar</button></div>
+      <p class="dica">Cada mensagem de pedido no WhatsApp traz um link. <b>Ao abrir esse link neste aparelho, o pedido entra aqui sozinho.</b> Também dá para colar o link abaixo.</p>
+      <form class="add-linha" id="ped-form">
+        <input class="inp" id="ped-link" placeholder="Cole aqui o link do pedido (…/pedido.html#p=…)">
+        <button class="btn">Adicionar</button>
+      </form>
+      <input class="filtro" id="ped-busca" type="search" placeholder="Buscar por cliente, número ou item…">
+      <p class="dica" id="ped-onde"></p>
+      <div id="ped-lista"><p class="vazio">Nenhum pedido ainda.</p></div>
+    </div>
+    <div class="bloco">
+      <h2>Onde guardar o histórico</h2>
+      <p class="dica">O repositório do catálogo é <b>público</b>, então os pedidos (com nomes de clientes) <b>não</b> ficam nele. Por padrão ficam <b>neste navegador</b>. Para ver o mesmo histórico no celular e no computador, use um repositório <b>privado</b>:</p>
+      <ol class="dica" style="padding-left:18px">
+        <li>No GitHub, crie um repositório <b>Private</b> (ex.: <code>catalogo-pedidos</code>).</li>
+        <li>Edite o seu token (Settings → Developer settings → Fine-grained tokens), em <b>Repository access</b> marque também esse repositório e salve.</li>
+        <li>Escreva o nome dele abaixo e clique em Salvar.</li>
+      </ol>
+      <div class="add-linha">
+        <input class="inp" id="ped-repo" placeholder="Nome do repositório privado (vazio = só neste navegador)">
+        <button class="btn" id="ped-repo-salvar">Salvar</button>
+      </div>
+    </div>
+  </section>
+
   <!-- CONEXÃO -->
   <section class="painel estreito" id="aba-conexao" hidden>
     <div class="bloco">
@@ -506,7 +553,8 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=15"></script>
+<script src="comum.js?v=16"></script>
+<script src="pedido.js?v=16"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -541,6 +589,7 @@ function irAba(n) {
   document.querySelectorAll('#abas button').forEach(b => b.classList.toggle('on', b.dataset.aba === n));
   document.querySelectorAll('.painel').forEach(p => p.hidden = p.id !== 'aba-' + n);
   gravar('catalogo-admin-aba', n);
+  if (n === 'pedidos') carregarPedidos();
   if (n === 'loja') { if (!$('previa').src) $('previa').src = 'index.html?previa=1'; definirDisp(dispPrevia); }
 }
 $('abas').addEventListener('click', e => { const b = e.target.closest('button'); if (b) irAba(b.dataset.aba); });
@@ -637,7 +686,7 @@ function contarArvore(no) { const e = acharNoExp(no.id); const ids = new Set(e ?
 
 // ---------- carregar / publicar ----------
 async function conectar() {
-  cfg = {owner: $('owner').value.trim(), repo: $('repo').value.trim(), branch: $('branch').value.trim() || 'main', token: $('token').value.trim()};
+  cfg = {owner: $('owner').value.trim(), repo: $('repo').value.trim(), branch: $('branch').value.trim() || 'main', token: $('token').value.trim(), pedidosRepo: cfg.pedidosRepo || ''};
   if (!cfg.owner || !cfg.repo || !cfg.token) { aviso('Preencha usuário, repositório e token.', 'erro'); return false; }
   if (sujo && !confirm('Você tem alterações não publicadas. Carregar do GitHub vai descartá-las. Continuar?')) return false;
   $('conectar').disabled = true; $('conectar').textContent = 'Conectando…';
@@ -665,7 +714,7 @@ async function publicar() {
     const r = await gh(CAMINHO, {method: 'PUT', body: corpo});
     sha = r.content.sha;
     marcarSujo(false);
-    const emUso = new Set([dados.loja.logo, ...dados.produtos.flatMap(p => p.imagens)]);
+    const emUso = new Set([dados.loja.logo, ...dados.produtos.flatMap(p => p.imagens), ...pedidosCache.flatMap(p => p.itens.map(l => l.imagem))]);   // capas usadas no histórico não são apagadas
     const lixo = [...new Set(remover.splice(0))].filter(c => c && !ehExterna(c) && !emUso.has(c));
     for (const c of lixo) {
       try { const f = await gh(c); if (f) await gh(c, {method: 'DELETE', body: {message: 'Remove imagem', sha: f.sha, branch: cfg.branch}}); } catch (e) {}
@@ -1445,6 +1494,97 @@ $('importar').addEventListener('change', async e => {
     aviso('Backup carregado. Clique em Publicar para colocar no site.', 'ok');
   } catch (err) { aviso('Arquivo de backup inválido.', 'erro'); }
 });
+
+// ---------- aba Pedidos ----------
+let pedidosCache = ler('catalogo-pedidos', []), pedidosSha = null;
+async function carregarPedidos() {
+  $('ped-repo').value = cfg.pedidosRepo || '';
+  $('ped-onde').textContent = 'Carregando…';
+  try {
+    const r = await Pedidos.carregar(cfg);
+    pedidosCache = r.lista; pedidosSha = r.sha || null;
+    $('ped-onde').textContent = r.onde === 'repositorio' ? `Guardado no repositório privado “${cfg.pedidosRepo}”.` : 'Guardado neste navegador.';
+  } catch (e) { $('ped-onde').textContent = '⚠ ' + e.message + ' Mostrando o que está neste navegador.'; pedidosCache = ler('catalogo-pedidos', []); }
+  renderPedidos();
+}
+const fmtData = iso => { const d = new Date(iso); return d.toLocaleDateString('pt-BR') + ' ' + d.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'}); };
+function renderPedidos() {
+  const t = norm($('ped-busca').value);
+  const lista = pedidosCache.filter(p => !t || norm([p.id, p.cliente.nome, p.cliente.obs, ...p.itens.map(l => l.nome)].join(' ')).includes(t));
+  $('ped-qtd').textContent = pedidosCache.length;
+  if (!lista.length) { $('ped-lista').innerHTML = `<p class="vazio">${pedidosCache.length ? 'Nada encontrado.' : 'Nenhum pedido ainda.'}</p>`; return; }
+  $('ped-lista').innerHTML = lista.map(p => {
+    const tt = p.totais;
+    return `<details class="ped" data-ped="${esc(p.id)}">
+      <summary><b>${esc(p.cliente.nome || 'Sem nome')}</b><small>nº ${esc(p.id)} · ${fmtData(p.data)} · ${tt.qtd} ${tt.qtd === 1 ? 'item' : 'itens'}</small>
+        <span class="ped-tot">${tt.reais ? brl(tt.reais) : ''}${tt.gb ? `${tt.reais ? ' · ' : ''}${num(tt.gb)} GB` : ''}</span></summary>
+      <div class="ped-corpo">
+        ${p.cliente.obs ? `<p class="dica">Obs.: ${esc(p.cliente.obs)}</p>` : ''}
+        ${Pedidos.grupos(p).map(g => `<div class="ped-grupo"><h4>${esc(g.titulo)} (${g.itens.length})</h4>
+          <div class="ped-grade">${g.itens.map(l => `<div class="ped-it"><div class="cp">${l.imagem ? `<img src="${esc(urlFoto(l.imagem))}" alt="" loading="lazy">` : 'sem foto'}</div>
+            <div class="t">${l.qtd > 1 ? l.qtd + 'x ' : ''}${esc(l.nome)}${l.versao ? ` (${esc(l.versao)})` : ''}
+            <small>${esc(l.unidade === 'GB' ? (l.gb ? num(l.gb) + ' GB' : '') : (l.valor != null ? brl(l.valor * l.qtd) : 'sob consulta'))}</small></div></div>`).join('')}</div></div>`).join('')}
+        <div class="ped-totais">${tt.reais || !tt.gb ? `<span>Total: <b>${brl(tt.reais)}</b></span>` : ''}${tt.gb ? `<span>${tt.limite ? 'Espaço' : 'GB'}: <b>${num(tt.gb)}${tt.limite ? ' de ' + num(tt.limite) : ''} GB</b></span>` : ''}</div>
+        <div class="acoes">
+          <button class="btn" data-ped-acao="pdf">⬇ Baixar PDF</button>
+          ${p.link ? `<a class="btn sec" href="${esc(p.link)}" target="_blank" rel="noopener">Abrir página do pedido</a>` : ''}
+          <button class="btn link" data-ped-acao="apagar">Apagar do histórico</button>
+        </div>
+      </div></details>`;
+  }).join('');
+}
+$('ped-busca').addEventListener('input', renderPedidos);
+$('ped-recarregar').onclick = carregarPedidos;
+$('ped-lista').addEventListener('click', async e => {
+  const b = e.target.closest('[data-ped-acao]'); if (!b) return;
+  const id = b.closest('.ped').dataset.ped, p = pedidosCache.find(x => x.id === id); if (!p) return;
+  if (b.dataset.pedAcao === 'pdf') {
+    b.disabled = true; b.textContent = 'Gerando…';
+    try {
+      const blob = await Pedidos.pdf(p, {imagem: urlFoto, link: p.link || ''});
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `pedido-${p.id}.pdf`; a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    } catch (err) { aviso('Não consegui gerar o PDF: ' + err.message, 'erro'); }
+    b.disabled = false; b.textContent = '⬇ Baixar PDF';
+  }
+  if (b.dataset.pedAcao === 'apagar') {
+    if (!confirm(`Apagar o pedido nº ${p.id} do histórico?`)) return;
+    try {
+      const r = await Pedidos.carregar(cfg);
+      const nova = r.lista.filter(x => x.id !== id);
+      await Pedidos.salvarLista(cfg, nova, r.sha);
+      pedidosCache = nova; renderPedidos(); aviso('Pedido apagado.', 'ok');
+    } catch (err) { aviso(err.message, 'erro'); }
+  }
+});
+$('ped-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const v = $('ped-link').value.trim(), m = /[#&]p=([^&\s]+)/.exec(v), c = m ? Pedidos.decodificar(m[1]) : null;
+  if (!c) { aviso('Esse link não parece ser de um pedido.', 'erro'); return; }
+  const ped = Pedidos.montar({loja: dados.loja, categorias: arvoreExp(), produtos: dados.produtos}, c);
+  ped.link = v;
+  try {
+    const r = await Pedidos.adicionar(cfg, ped);
+    aviso(r.jaExistia ? 'Esse pedido já estava no histórico.' : 'Pedido adicionado ao histórico.', 'ok');
+    $('ped-link').value = ''; carregarPedidos();
+  } catch (err) { aviso(err.message, 'erro'); }
+});
+$('ped-repo-salvar').onclick = async () => {
+  const novo = $('ped-repo').value.trim().replace(/^.*\//, '');
+  const antes = cfg.pedidosRepo || '';
+  if (novo === antes) { aviso('Nada mudou.'); return; }
+  const local = ler('catalogo-pedidos', []);
+  cfg.pedidosRepo = novo; gravar('catalogo-github', cfg);
+  if (novo && local.length) {          // leva os pedidos que estavam no navegador para o repositório privado
+    try {
+      const r = await Pedidos.carregar(cfg);
+      const ids = new Set(r.lista.map(p => p.id));
+      await Pedidos.salvarLista(cfg, [...local.filter(p => !ids.has(p.id)), ...r.lista].sort((a, b) => b.data.localeCompare(a.data)), r.sha);
+      aviso(`Histórico agora no repositório privado “${novo}” (${local.length} pedido(s) copiados deste navegador).`, 'ok');
+    } catch (err) { aviso(err.message, 'erro'); cfg.pedidosRepo = antes; gravar('catalogo-github', cfg); }
+  } else aviso(novo ? `Histórico agora no repositório privado “${novo}”.` : 'Histórico agora fica só neste navegador.', 'ok');
+  carregarPedidos();
+};
 
 // ---------- início ----------
 (async function iniciar() {

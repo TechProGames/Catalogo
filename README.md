@@ -1,6 +1,6 @@
 # Catálogo online (GitHub Pages)
 
-Arquivos: `index.html` (catálogo), `admin.html` (painel), `comum.js` (código usado pelos dois) e `data/produtos.json` (seus produtos).
+Arquivos: `index.html` (catálogo), `admin.html` (painel), `pedido.html` (página do pedido), `comum.js` e `pedido.js` (código compartilhado) e `data/produtos.json` (seus produtos).
 
 - **`index.html`** — o catálogo que você manda para os clientes. Eles buscam, filtram por categoria, escolhem itens e quantidades e enviam a lista pronta para o seu WhatsApp.
 - **`admin.html`** — o seu painel. Cadastra, edita, apaga, reordena, marca como esgotado/destaque, envia fotos e publica tudo direto no repositório.
@@ -35,6 +35,8 @@ Os produtos ficam em `data/produtos.json` e as fotos em `imagens/`, dentro do pr
 - O **formato da capa** fica no cadastro de cada produto (Automático = proporção da própria foto, ou 1:1, 4:5, 3:4, 2:3, 9:16), com **prévia do cartão**. Novos produtos começam com a última configuração usada.
 - **Também mostrar em**: o mesmo item aparece em outras categorias. **⧉ Duplicar** (na lista de produtos) cria uma cópia separada.
 - No site, os itens de uma categoria ficam lado a lado (mesmo de subcategorias diferentes), com o caminho em cima; o caminho, os títulos e a logo/nome da loja são links.
+- **Pedidos**: ao tocar em "Enviar pelo WhatsApp", o cliente manda a mensagem (os itens adicionais, como jogos, aparecem como "Jogos listados no PDF anexado") e depois um botão envia o **PDF com as capas** (no celular abre o compartilhamento; no computador baixa o arquivo). A mensagem também leva um **link do pedido completo** (`pedido.html`).
+- **Histórico**: abra o link do pedido num aparelho onde o painel está conectado e ele entra sozinho na aba **Pedidos** (ou cole o link lá). Fica guardado neste navegador ou, se configurar, num repositório **privado** do GitHub — nunca no repositório público do catálogo.
 - Depois de mexer, clique em **Publicar no site**. O catálogo dos clientes atualiza em cerca de 1 minuto.
 - Valor em R$ vazio aparece como "Preço sob consulta". Itens em GB mostram a soma de GB do que o cliente escolheu.
 - Desligar a chave (ou desmarcar "Disponível") de um produto deixa ele como **Esgotado** (aparece, mas não dá para selecionar).

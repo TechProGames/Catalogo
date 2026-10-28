@@ -261,6 +261,11 @@ body.com-espaco{padding-bottom:200px}
 .total b{font-family:var(--f-tit);font-size:clamp(1.05rem,5vw,1.5rem);white-space:nowrap;text-align:right}
 .total.gb b{color:var(--azul2)}
 .aviso-c{font-size:.8125rem;color:var(--mut);text-align:right}
+.passo-pdf{margin-top:12px;border:1px solid color-mix(in srgb,var(--zap) 45%,transparent);background:color-mix(in srgb,var(--zap) 8%,var(--bg2));border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:8px;font-size:.875rem}
+.passo-pdf[hidden]{display:none}
+.passo-pdf small{color:var(--mut);font-size:.75rem}
+.btn-pdf{border:0;border-radius:10px;padding:11px;font-weight:800;cursor:pointer;background:var(--txt);color:var(--bg)}
+.btn-pdf:disabled{opacity:.6;cursor:default}
 .zap{width:100%;margin-top:12px;border:0;border-radius:14px;padding:15px;background:var(--zap);color:#04290f;font-weight:800;font-size:1rem;cursor:pointer;display:flex;gap:10px;justify-content:center;align-items:center}
 .limpar{display:block;margin:10px auto 0;background:none;border:0;color:var(--mut);text-decoration:underline;cursor:pointer;font-size:.875rem}
 /* modo pré-visualização do painel */
@@ -315,11 +320,17 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"/></svg>
       Enviar pelo WhatsApp
     </button>
+    <div class="passo-pdf" id="passo-pdf" hidden>
+      <p><b>✓ Mensagem aberta no WhatsApp.</b> Agora envie também o PDF com as capas na mesma conversa:</p>
+      <button class="btn-pdf" id="btn-pdf">📎 Enviar o PDF do pedido</button>
+      <small>No celular, escolha a conversa da loja. No computador, o PDF é baixado: é só arrastar para a conversa. A mensagem também leva um link para o pedido completo.</small>
+    </div>
     <button class="limpar" id="limpar">Limpar seleção</button>
   </div>
 </aside>
 
-<script src="comum.js?v=15"></script>
+<script src="comum.js?v=16"></script>
+<script src="pedido.js?v=16"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -947,23 +958,40 @@ $('fundo').onclick = fechar;
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('gaveta').classList.contains('on')) fechar(); });
 $('limpar').onclick = () => { sel = {}; salvarSel(); render(); atualizar(); };
 
+// ---------- envio: mensagem no WhatsApp + PDF do pedido (com as capas) ----------
+let pedidoAtual = null, pdfAtual = null;
 $('enviar').onclick = () => {
   const it = itensSel(); if (!it.length) return;
   const nome = $('nome').value.trim(), obs = $('obs').value.trim();
   gravar('catalogo-nome', nome);
-  const linhas = it.map(({p, q}) => {
-    if (ehGB(p)) return `• ${p.nome}${temValor(p) ? ' — ' + num(p.valor) + ' GB' : ''}`;
-    return `• ${q}x ${nomeCompleto(p)} — ${temValorP(p) ? brl(valorDe(p) * q) : 'sob consulta'}`;
-  });
-  const t = somas(it);
-  let msg = `Olá! Vim pelo catálogo${loja.nome ? ' da ' + loja.nome : ''} e tenho interesse em:\n\n${linhas.join('\n')}\n\n`;
-  if (t.reais) msg += `Total estimado: ${brl(t.reais)}${t.cons ? ' (+ itens sob consulta)' : ''}\n`;
-  if (t.gb) msg += t.limite ? `Espaço usado: ${num(t.gb)} de ${num(t.limite)} GB\n` : `Total em GB: ${num(t.gb)} GB\n`;
-  if (nome) msg += `Nome: ${nome}\n`;
-  if (obs) msg += `Obs.: ${obs}\n`;
+  const c = {v: 1, id: Pedidos.novoNumero(), t: Date.now(), n: nome, o: obs,
+    it: it.map(({p, q}) => { const v = varDe(p); return [p.id, q, v ? v.id : '', ehGB(p) ? null : (temValorP(p) ? valorDe(p) : null)]; })};
+  const ped = Pedidos.montar({loja, categorias, produtos}, c);
+  const link = new URL('pedido.html#p=' + Pedidos.codificar(c), location.href).href;
+  ped.link = link;
   let fone = String(loja.whatsapp || '').replace(/\D/g, '');
   if (fone && fone.length <= 11) fone = '55' + fone;
-  window.open(`https://wa.me/${fone}?text=${encodeURIComponent(msg.trim())}`, '_blank');
+  window.open(`https://wa.me/${fone}?text=${encodeURIComponent(Pedidos.texto(ped, link))}`, '_blank');   // abre já, antes do PDF (evita bloqueio de pop-up)
+  pedidoAtual = ped; pdfAtual = null;
+  $('passo-pdf').hidden = false;
+  $('btn-pdf').disabled = true; $('btn-pdf').textContent = 'Preparando o PDF…';
+  Pedidos.pdf(ped, {link}).then(b => {
+    if (pedidoAtual !== ped) return;
+    pdfAtual = new File([b], `pedido-${ped.id}.pdf`, {type: 'application/pdf'});
+    $('btn-pdf').disabled = false;
+    $('btn-pdf').textContent = podeCompartilhar() ? '📎 Enviar o PDF do pedido' : '📎 Baixar o PDF do pedido';
+  }).catch(() => { $('btn-pdf').textContent = 'Não foi possível gerar o PDF'; });
+};
+const podeCompartilhar = () => !!(pdfAtual && navigator.canShare && navigator.canShare({files: [pdfAtual]}));
+$('btn-pdf').onclick = async () => {
+  if (!pdfAtual) return;
+  if (podeCompartilhar()) {
+    try { await navigator.share({files: [pdfAtual], title: `Pedido nº ${pedidoAtual.id}`}); return; }
+    catch (e) { if (e && e.name === 'AbortError') return; }
+  }
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(pdfAtual); a.download = pdfAtual.name; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
 };
 
 // ---------- recursos da pré-visualização do painel ----------

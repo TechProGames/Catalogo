@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#07090f">
+<title>Pedido</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+:root{--bg:#07090f;--card:#101624;--txt:#eef2fa;--mut:#8592aa;--azul:#2b8cff;--verm:#ff2d55;--sobre-azul:#fff;
+  --f-tit:"Barlow Condensed","Arial Narrow",sans-serif;--f-txt:Barlow,system-ui,sans-serif;
+  --bg2:color-mix(in srgb,var(--bg) 55%,var(--card));--line:color-mix(in srgb,var(--txt) 12%,var(--card));--azul2:color-mix(in srgb,var(--azul) 65%,var(--txt))}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font:15px/1.45 var(--f-txt);min-height:100vh;padding:20px 16px 60px}
+button{font:inherit;color:inherit}
+.wrap{max-width:900px;margin:0 auto}
+.topo{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px}
+h1{font-family:var(--f-tit);font-style:italic;font-weight:800;font-size:32px;text-transform:uppercase;line-height:1}
+.num{color:var(--mut);font-size:14px;margin-top:6px}
+.num b{color:var(--txt)}
+.acoes{display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:0;border-radius:10px;padding:10px 16px;font-weight:700;cursor:pointer;background:var(--azul);color:var(--sobre-azul);text-decoration:none;display:inline-flex;gap:6px;align-items:center}
+.btn.sec{background:transparent;border:1px solid var(--line);color:var(--txt)}
+.btn:disabled{opacity:.6;cursor:default}
+.cliente{margin:16px 0;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.cliente p+p{margin-top:4px;color:var(--mut)}
+.estado{margin-top:12px;font-size:14px;border-radius:10px;padding:9px 12px;border:1px solid var(--line);background:var(--bg2)}
+.estado.ok{border-color:#2ecc7166;color:#7ee2a8}
+.estado.erro{border-color:#ff4d4d77;color:#ff8f8f}
+.estado:empty{display:none}
+.grupo{margin-top:22px}
+.grupo h2{font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--azul2);border-bottom:1px solid var(--line);padding-bottom:6px}
+.grupo h2 small{color:var(--mut);font-weight:600}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:10px}
+.it{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.it .capa{aspect-ratio:4/5;background:#0a0e17;display:grid;place-items:center;color:var(--mut);font-size:12px}
+.it .capa img{width:100%;height:100%;object-fit:contain}
+.it .t{padding:7px 8px 9px}
+.it b{display:block;font-size:13px;line-height:1.2}
+.it small{color:var(--mut);font-size:12px}
+.totais{margin-top:24px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:6px 14px}
+.totais div{display:flex;justify-content:space-between;padding:8px 0}
+.totais div+div{border-top:1px solid var(--line)}
+.totais b{font-family:var(--f-tit);font-size:20px}
+.vazio{color:var(--mut);text-align:center;padding:60px 0}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"><p class="vazio">Carregando pedido…</p></div>
+<script src="comum.js?v=16"></script>
+<script src="pedido.js?v=16"></script>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const brl = v => Number(v).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
+const num = v => Number(v).toLocaleString('pt-BR', {maximumFractionDigits: 2});
+const ler = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d } catch (e) { return d } };
+let ped = null;
+
+(async function () {
+  const cod = new URLSearchParams(location.hash.slice(1)).get('p');
+  const c = Pedidos.decodificar(cod);
+  if (!c) { $('app').innerHTML = '<p class="vazio">Link de pedido inválido ou incompleto.</p>'; return; }
+  let d;
+  try { const r = await fetch('data/produtos.json?v=' + Date.now(), {cache: 'no-store'}); d = normalizarCatalogo(await r.json()); }
+  catch (e) { $('app').innerHTML = '<p class="vazio">Não foi possível carregar o catálogo.</p>'; return; }
+  aplicarTema(d.loja.tema);
+  ped = Pedidos.montar({loja: d.loja, categorias: expandirArvore(d.categorias), produtos: d.produtos}, c);
+  ped.link = location.href;
+  document.title = `Pedido nº ${ped.id} · ${ped.loja}`;
+  render();
+  // no aparelho do lojista (painel conectado), o pedido entra sozinho no histórico
+  const cfg = ler('catalogo-github', {});
+  if (cfg.token) salvar(cfg, true);
+})();
+
+function render() {
+  const dt = new Date(ped.data), t = ped.totais;
+  $('app').innerHTML = `
+    <div class="topo">
+      <div><h1>${esc(ped.loja || 'Pedido')}</h1>
+        <p class="num">Pedido nº <b>${esc(ped.id)}</b> · ${dt.toLocaleDateString('pt-BR')} ${dt.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'})}</p></div>
+      <div class="acoes">
+        <button class="btn" id="baixar">⬇ Baixar PDF</button>
+        <button class="btn sec" id="salvar" hidden>Salvar no histórico</button>
+      </div>
+    </div>
+    <div class="estado" id="estado"></div>
+    ${ped.cliente.nome || ped.cliente.obs ? `<div class="cliente">${ped.cliente.nome ? `<p><b>Cliente:</b> ${esc(ped.cliente.nome)}</p>` : ''}${ped.cliente.obs ? `<p>Obs.: ${esc(ped.cliente.obs)}</p>` : ''}</div>` : ''}
+    ${Pedidos.grupos(ped).map(g => `<section class="grupo"><h2>${esc(g.titulo)} <small>(${g.itens.length})</small></h2>
+      <div class="grade">${g.itens.map(l => `<div class="it"><div class="capa">${l.imagem ? `<img src="${esc(l.imagem)}" alt="" loading="lazy">` : 'sem foto'}</div>
+        <div class="t"><b>${l.qtd > 1 ? l.qtd + 'x ' : ''}${esc(l.nome)}${l.versao ? ` (${esc(l.versao)})` : ''}</b>
+        <small>${esc([l.tipo, l.unidade === 'GB' ? (l.gb ? num(l.gb) + ' GB' : '') : (l.valor != null ? brl(l.valor * l.qtd) : 'sob consulta')].filter(Boolean).join(' · '))}</small></div></div>`).join('')}</div></section>`).join('')}
+    <div class="totais">
+      <div><span>Itens</span><b>${t.qtd}</b></div>
+      ${t.reais || !t.gb ? `<div><span>Total estimado</span><b>${brl(t.reais)}${t.cons ? ' <small>(+ sob consulta)</small>' : ''}</b></div>` : ''}
+      ${t.gb ? `<div><span>${t.limite ? 'Espaço usado' : 'Total em GB'}</span><b>${t.limite ? `${num(t.gb)} de ${num(t.limite)} GB` : num(t.gb) + ' GB'}</b></div>` : ''}
+    </div>`;
+  $('baixar').onclick = baixar;
+  const cfg = ler('catalogo-github', {});
+  if (cfg.token) { $('salvar').hidden = false; $('salvar').onclick = () => salvar(cfg, false); }
+}
+async function baixar() {
+  const b = $('baixar'); b.disabled = true; b.textContent = 'Gerando PDF…';
+  try {
+    const blob = await Pedidos.pdf(ped, {link: ped.link});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = `pedido-${ped.id}.pdf`; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  } finally { b.disabled = false; b.textContent = '⬇ Baixar PDF'; }
+}
+async function salvar(cfg, automatico) {
+  const e = $('estado');
+  e.className = 'estado'; e.textContent = 'Salvando no histórico…';
+  try {
+    const r = await Pedidos.adicionar(cfg, ped);
+    const onde = r.onde === 'repositorio' ? 'no repositório privado' : 'neste navegador';
+    e.className = 'estado ok';
+    e.textContent = r.jaExistia ? `✓ Este pedido já está no histórico (${onde}).` : `✓ Pedido salvo no histórico (${onde}). Veja no painel, aba Pedidos.`;
+  } catch (err) {
+    e.className = 'estado erro'; e.textContent = 'Não consegui salvar no histórico: ' + err.message;
+  }
+}
+</script>
+</body>
+</html>
