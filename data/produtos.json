@@ -1065,6 +1065,412 @@
   ],
   "produtos": [
     {
+      "id": "mvrfobvku6z0",
+      "nome": "Shadow of the Colossus",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.8,
+      "descricao": "Shadow of the Colossus acompanha a jornada de Wander (ou o Andarilho), um jovem que invade as misteriosas e proibidas Terras Proibidas montado em sua égua, Agro.\n\nPrincipais pontos da sinopse:\n\n• O objetivo: Wander carrega o corpo de Mono, uma jovem sacrificada por ter um destino amaldiçoado. Ele deseja desesperadamente trazê-la de volta à vida.\n• O acordo com Dormin: No grande Templo de Adoração, Wander encontra Dormin, uma entidade disincarnada e poderosa. Dormin promete ressuscitar Mono sob uma única condição: Wander deve rastrear e destruir 16 gigantescos colossos espalhados pela região.\n• A mecânica e a reviravolta: Armado apenas com uma espada mágica e um arco, Wander precisa escalar cada criatura colossal e atingir seus pontos fracos. À medida que cada colosso cai, uma energia sombria é liberada e corrompe o corpo de Wander, revelando que os colossos funcionavam como selos para aprisionar a própria entidade Dormin.",
+      "imagens": [
+        "imagens/shadow-of-the-colossus-mvrfoagnz7bi.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfnefkam3w",
+      "nome": "Scooby Doo! and the Spooky Swamp",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.2,
+      "descricao": "Em Scooby-Doo! and the Spooky Swamp (lançado para PS2 e outros consoles), a turma da Mistério S/A — composta por Scooby-Doo, Salsicha, Velma, Daphne e Fred — embarca em uma nova jornada investigativa dividida em três grandes mundos temáticos:\n• O Pântano Assustador: A turma investiga os segredos por trás de uma garota misteriosa que vive no pântano e de uma bruxa/feiticeira local que pede ingredientes especiais após derrotarem feras na floresta.\n• Uma Vila Alpina Nevada: Exploram paisagens geladas, trilham pegadas de lobos e desvendam mistérios em criptas e áreas montanhosas.\n• Uma Cidade Fantasma / México (El Muncho): Uma cidade no deserto com poucos habitantes (como o Xerife e Costington) assombrada por um monstro gigante em formato de caveira chamado El Scaryachi, que tenta espulsar Costington do local.\n\nPontos principais da história e jogabilidade:\n\n• Objetivo: Viajar por esses cenários não lineares para coletar pistas (usando a câmera fotográfica), resolver quebra-cabeças de plataforma, enfrentar monstros e chefões, e desmascarar os vilões por trás dos eventos supostamente sobrenaturais.\n• Mecânicas: O jogador pode alternar livremente entre os cinco personagens (aproveitando as habilidades únicas de cada um, como a força do Fred ou as deduções da Velma) e coletar biscoitos Scooby e moedas para comprar roupas e acessórios.\n• É uma continuação direta do jogo Scooby-Doo! First Frights.",
+      "imagens": [
+        "imagens/scooby-doo-and-the-spooky-swamp-mvrfncvpxjjw.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfmnhmd5va",
+      "nome": "Saint Seiya The Sanctuary",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.7,
+      "descricao": "O jogo Saint Seiya: The Sanctuary (lançado para PlayStation 2 em 2005 pela Bandai e desenvolvido pela Dimps) adapta fielmente a clássica Saga do Santuário (arco das 12 Casas do Zodíaco) do anime e do mangá de Os Cavaleiros do Zodíaco.\n\nSinopse e Enredo\n\n• O Objetivo: A deusa Atena (Saori Kido) foi atingida por uma flecha dourada no peito. Para salvá-la, os cinco Cavaleiros de Bronze protagonistas — Seiya de Pégaso, Shiryu de Dragão, Hyoga de Cisne, Shun de Andrômeda e Ikki de Fênix — têm um limite de 12 horas para subir as doze casas do Santuário.\n• As Barreiras: Em cada uma das casas, eles precisam derrotar os poderosos Cavaleiros de Ouro que protegem o local, superando inimigos mortais até chegarem ao Grande Mestre.\n• Modos de Jogo:\n\t• Modo História: Permite reviver os acontecimentos do anime com cenas renderizadas na engine do jogo, lutas contra chefes e trechos dramáticos.\n\t• Modo Batalha (Guerra dos Mil Dias): Permite duelos versus (1v1) entre os personagens.\n\t• Modo Secreto (Demon Pope Fist): Permite jogar do ponto de vista do Grande Mestre, tentando impedir a ascensão dos Cavaleiros de Bronze.\n• Elenco: O jogo conta com os 5 Cavaleiros de Bronze jogáveis desde o início e mais de 20 personagens secretos desbloqueáveis (incluindo Cavaleiros de Ouro e de Prata).",
+      "imagens": [
+        "imagens/saint-seiya-the-sanctuary-mvrfmlz0jpjr.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfltw09k5s",
+      "nome": "Resident Evil 4",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 4,
+      "descricao": "Resident Evil 4 acompanha o agente especial Leon S. Kennedy em uma missão na zona rural da Espanha para resgatar Ashley Graham, a filha do presidente dos Estados Unidos, que foi sequestrada por um culto religioso.\n\nPrincipais Pontos da Sinopse\n\n• O Contexto: Seis anos após a destruição de Raccoon City, Leon se tornou um agente do governo americano e é enviado sozinho a uma vila remota na Espanha após pistas indicarem o paradeiro de Ashley.\n• A Ameaça (Los Iluminados): Ao chegar, Leon descobre que os moradores locais foram infectados e são controlados por um parasita mental chamado Las Plagas, liderados por uma seita chamada Los Iluminados, comandada por Osmund Saddler.\n• O Plano do Culto: Saddler sequestrou Ashley para infectá-la e enviá-la de volta aos Estados Unidos, permitindo que o culto use a influência dela para espalhar o parasita e dominar o país.\n• Aliados e Complicações: Durante a jornada, Leon conta com o apoio à distância da analista Ingrid Hunnigan, reencontra a enigmática espiã Ada Wong e o pesquisador Luis Sera, enquanto tenta deter o culto e remover o parasita que também foi injetado em seu próprio corpo.",
+      "imagens": [
+        "imagens/resident-evil-4-mvrflskcecu4.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfkhnhqe88",
+      "nome": "Ratatouille",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.5,
+      "descricao": "O jogo Ratatouille para PS2 acompanha a jornada de Remy, um jovem rato com um talento extraordinário e o sonho de se tornar um grande chef de cozinha em Paris.\n\nPrincipais pontos da história e jogabilidade:\n\n• O Início na Fazenda: A aventura começa no interior da França, onde Remy e seu irmão Emile saem em busca de comida para a colônia a pedido de seu pai, Django.\n• A Fuga e o Encontro com Gusteau: Após serem descobertos por uma moradora da fazenda, Remy acaba se perdendo nos esgotos e é guiado pelo espírito de seu ídolo, o falecido chef Auguste Gusteau.\n• Parceria com Linguini: Ao chegar a Paris e parar no topo do restaurante Gusteau, Remy encontra o jovem e atrapalhado ajudante de cozinha Linguini, iniciando a famosa parceria para criar pratos e comandar a cozinha às escondidas.\n• Missões e Objetivos: Diferente do filme, o jogo foca bastante em ajudar a colônia de ratos no esgoto, coletar itens, desviar de humanos (mecânicas de stealth), correr por cenários de Paris e participar de minigames de culinária.\n• Versão Localizada: No Brasil, o jogo ganhou uma versão com dublagem em português brasileiro, contando com parte do elenco oficial de dublagem do filme.",
+      "imagens": [
+        "imagens/ratatouille-mvrfkg7869tb.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfjmpxukn6",
+      "nome": "Prince of Persia Warrior Within",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.8,
+      "descricao": "Ambientado sete anos após Prince of Persia: The Sands of Time, Prince of Persia: Warrior Within acompanha o Príncipe em sua fuga desesperada de uma entidade monstruosa e imortal chamada Dahaka.\n\nPrincipais pontos da sinopse:\n\n• A maldição: Por ter manipulado e liberado as Areias do Tempo no jogo anterior, o Príncipe infringiu as leis do destino. Como punição, ele passa a ser caçado implacavelmente pelo Dahaka, o guardião e encarnação da linha do tempo que busca restaurar a ordem matando-o.\n• A Ilha do Tempo: Para escapar de seu trágico destino, o Príncipe viaja até a misteriosa Ilha do Tempo. O objetivo dele é encontrar e impedir a criadora das Areias, a Imperatriz do Tempo (Kaileena), de dar origem a elas.\n• Viagem no tempo e paradoxos: O jogo utiliza mecânicas de viagem no tempo que permitem ao Príncipe transitar entre o presente e o passado das ruínas da ilha. No entanto, suas tentativas de alterar o passado geram paradoxos graves.\n• Desfecho: A trama possui múltiplos finais dependendo de o jogador coletar ou não itens secretos (como as melhorias de vida e a espada suprema), alterando o confronto final contra Kaileena e o Dahaka.",
+      "imagens": [
+        "imagens/prince-of-persia-warrior-within-mvrfjl763bdg.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfio66xw15",
+      "nome": "Prince of persia the two thrones",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.6,
+      "descricao": "Prince of Persia: The Two Thrones é um jogo de ação e aventura para PlayStation 2 que encerra a trilogia clássica iniciada em The Sands of Time.\n\nSinopse e Enredo\n\n• O Retorno à Babilônia: O Príncipe retorna à sua terra natal a bordo de um navio, acompanhado por Kaileena (a Imperatriz do Tempo), após os eventos de Warrior Within.\n• A Cidade Destruída: Ao chegarem, encontram a Babilônia devastada por uma guerra e sob ataque. O navio é destruído e Kaileena é sequestrada.\n• A Mudança na Linha do Tempo: Como o Príncipe derrotou o Dahaka e impediu a criação das Areias do Tempo no jogo anterior, ele alterou a linha do tempo. Com isso, o Vizir (o vilão do primeiro jogo) continua vivo e é o grande responsável por tomar o poder da Babilônia.\n• O Sacrifício e as Areias: Para salvar o Príncipe, Kaileena é morta pelo Vizir, o que libera novamente as Areias do Tempo no mundo.\n• O Príncipe Sombrio (Dark Prince): As areias infectam o Príncipe, cravando uma corrente mágica em seu braço e fazendo nascer uma segunda personalidade sombria e vingativa dentro dele.\n• O Objetivo: O jogador precisa atravessar a cidade destruída, dominar tanto o Príncipe normal quanto o Príncipe Sombrio, utilizar o novo sistema de assassinatos furtivos (speed kills) e derrotar o Vizir para recuperar o seu reino.",
+      "imagens": [
+        "imagens/prince-of-persia-the-two-thrones-mvrfimjksyqz.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfhz75c5tv",
+      "nome": "Prince of Persia The Sands of Time",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.5,
+      "descricao": "A sinopse de Prince of Persia: The Sands of Time (lançado para PlayStation 2 em 2003) gira em torno de uma traição e de um desastre mágico que transforma um reino em caos:\n\nA História\n\n• A Conquista: O poderoso Rei Shahraman da Pérsia e seu filho, o jovem Príncipe, atacam e derrotam o reino do Marajá na Índia, com a ajuda de um conselheiro traidor chamado Vizier.\n• O Espólio: Durante o saque ao palácio, o Príncipe pega como troféu um misterioso punhal chamado a Adaga do Tempo, enquanto a princesa Farah (filha do Marajá) é feita prisioneira.\n• A Liberação do Mal: Em visita ao palácio do Sultão de Azad, o Vizier engana o Príncipe para que ele use a Adaga do Tempo em uma ampulheta gigante. Isso liberta as Areias do Tempo, um cataclismo que transforma quase todos os habitantes do castelo em monstros de areia sob o controle do Vizier.\n• A Missão: Apenas o Príncipe, a princesa Farah e o próprio Vizier (protegidos por artefatos especiais) escapam dos efeitos imediatos da areia. O Príncipe precisa unir forças com Farah para navegar pelas câmaras amaldiçoadas do palácio, usar os poderes da Adaga do Tempo (como rebobinar, desacelerar e congelar o tempo) e colocar as Areias de volta na ampulheta para salvar o reino.",
+      "imagens": [
+        "imagens/prince-of-persia-the-sands-of-time-mvrfhxoaj8n8.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfh6rufyuv",
+      "nome": "Pirates of the Caribbean At World's End",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.5,
+      "descricao": "O jogo Pirates of the Caribbean: At World's End (lançado para PS2 em 2007) adapta e dá sequência aos eventos dos filmes Piratas do Caribe: O Baú da Morte e Piratas do Caribe: No Fim do Mundo.\n\nSinopse e Enredo\n\n• A Busca e as Alianças: A trama acompanha o Capitão Jack Sparrow envolvido em alianças instáveis enquanto precisa rastrear e reunir os Lordes Piratas da Corte dos Irmãos (Conclave Pirata) na Cidade dos Naufrágios.\n• O Perigo de Davy Jones: O grande objetivo dessa união é encontrar uma forma de deter o extermínio da pirataria liderado pelo terrível Davy Jones e eleger o Rei dos Piratas.\n• Personagens Jogáveis: Os jogadores controlam o Capitão Jack Sparrow, Will Turner e Elizabeth Swann, vivenciando combates de espada dinâmicos, duelos contra vilões e eventos que misturam cenas dos filmes com missões e cenários originais do jogo.",
+      "imagens": [
+        "imagens/pirates-of-the-caribbean-at-world-s-end-mvrfh5adshuj.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfga5juhj1",
+      "nome": "Peter Jackson's King Kong",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.3,
+      "descricao": "O jogo Peter Jackson's King Kong: The Official Game of the Movie reconta a história do filme homônimo de 2005.\n\nSinopse e Enredo\n\n• Chegada à Ilha da Caveira: Uma equipe de cinema viaja para a misteriosa Ilha da Caveira para gravar um filme. Ao chegar, a equipe é atacada por nativos hostis e criaturas pré-históricas, e a atriz Ann Darrow é capturada para ser oferecida como sacrifício a uma gigantesca entidade conhecida como King Kong.\n• Jogabilidade Dual (Jack e Kong):\n\t• O jogador controla Jack Driscoll (em primeira pessoa), um roteirista que precisa desbravar a selva perigosa, gerenciar munição escassa, usar lanças e trabalhar em equipe com os outros sobreviventes para resgatar Ann.\n\t• Em momentos específicos, o jogador assume o controle de King Kong (em terceira pessoa), usando força bruta, agarros ecombates contra grandes predadores, como dinossauros e T-Rexes, para proteger Ann e defender seu território.\n• Nova York: As fases finais do jogo se deslocam para a cidade de Nova York nos anos 1930, onde Kong é exibido em um espetáculo público, consegue se libertar, causa destruição pelas ruas e escala o Empire State Building em um desfecho trágico.",
+      "imagens": [
+        "imagens/peter-jackson-s-king-kong-mvrfg8vkx4r4.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrffc29gw8v",
+      "nome": "Obscure 2",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.2,
+      "descricao": "ObsCure II (também conhecido como Obscure: The Aftermath) é um jogo de survival horror lançado para PlayStation 2 em 2007, ambientado dois anos após os eventos trágicos do primeiro jogo na Leafmore High.\n\nSinopse e Enredo\n\n• O novo cenário: Os sobreviventes do primeiro jogo tentam seguir suas vidas e agora estudam na Fallcreek University, perto da antiga escola.\n• A ameaça das flores negras: O enredo começa quando uma estranha espécie de flor negra surge no campus. Os alunos descobrem que essas plantas liberam esporos que, quando inalados ou consumidos em chás, provocam sonhos vívidos e alucinações (sendo usadas por alguns como entorpecente).\n• A infecção que retorna: A cura utilizada no passado não eliminou totalmente os esporos nos corpos dos sobreviventes, apenas retardou os efeitos — exigindo que Kenny, Shannon e outros tomem medicações diárias.\n• A mutação e o terror: Quando os capullos das flores brotam, o pesadelo se concretiza e criaturas deformadas tomam conta da universidade. Kenny acaba sendo severamente afetado pela mutação, transformando-se em um monstro e antagonista no decorrer da trama, forçando sua irmã Shannon e o novo grupo de amigos a enfrentá-lo.\n• Novos e antigos personagens: O jogador controla um elenco que mistura veteranos (como Shannon e Stan) e novatos como Cory, May, Amy e Sven, lutando para descobrir a origem biológica das plantas e sobreviver à noite.",
+      "imagens": [
+        "imagens/obscure-2-mvrffakamriq.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Terror",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfczqe4pgi",
+      "nome": "Need For Speed Underground 2",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 3,
+      "descricao": "A sinopse de Need for Speed: Underground 2 gira em torno de uma nova jornada no mundo das corridas de rua ilegais.\n• O ponto de partida: O protagonista (que é o mesmo vencedor do primeiro jogo) chega à cidade de Bayview após receber uma mensagem de boas-vindas de Samantha, mas logo sofre uma emboscada e perde o controle do seu carro para uma figura misteriosa ligada a Caleb Reece.\n• A aliada: Sem carro e sem reputação na nova cidade, o jogador conhece Rachel Teller (dublada por Brooke Burke), que lhe empresta um carro básico e serve como guia, apresentando as pistas, as oficinas de tuning e o cenário local.\n• O objetivo: O jogador precisa vencer as disputas de rua, ganhar respeito (rep), assinar com patrocinadores e tunar seus veículos para subir na hierarquia do underground, culminando no confronto direto contra Caleb e sua gangue para dominar a cidade de Bayview.\n• Formato: A história é narrada em estilo de quadrinhos (histórias em quadrinhos/cutscenes estilizadas) e mensagens de texto/e-mails recebidos no celular do piloto.",
+      "imagens": [
+        "imagens/need-for-speed-underground-2-mvrfcy957dhs.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Corrida",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfc15ezdoo",
+      "nome": "Need for Speed Most Wanted Black Edition",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2,
+      "descricao": "A sinopse de Need for Speed: Most Wanted (2005) gira em torno de um piloto de rua que chega à cidade fictícia de Rockport dirigindo uma valiosa BMW M3 GTR.\n\nA História\n\n• A Traição: Durante uma corrida, o protagonista é sabotado por um rival arrogante chamado Razor, que sabota o motor da BMW e a rouba.\n• A Lista Negra (Blacklist): Com o carro e o respeito da cidade, Razor assume o posto número 1 da \"Blacklist\" (a famosa lista dos corredores mais procurados e respeitados de Rockport).\n• A Missão: Sem carro e detido brevemente pela polícia, o protagonista é solto por falta de provas com a ajuda de uma misteriosa mulher chamada Mia. Ela o orienta a conseguir um carro novo, vencer os corredores da Blacklist um por um e recuperar a sua BMW M3 GTR das mãos de Razor.\n• A Perseguição: Além de vencer os rivais nas pistas, o jogador precisa acumular \"reputação\" enfrentando intensas perseguições policiais comandadas pelo implacável Sargento Cross.\n• O Clímax: Após derrotar Razor e recuperar o seu carro, o protagonista vira o alvo máximo da polícia de Rockport, escapando em um salto espetacular de uma ponte antes de sumir do mapa.",
+      "imagens": [
+        "imagens/need-for-speed-most-wanted-black-edition-mvrfbzkho18a.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Corrida",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfar1w1ky8",
+      "nome": "Naruto Shippuden Ultimate Ninja 5",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2,
+      "descricao": "O jogo Naruto Shippuden: Ultimate Ninja 5 (lançado originalmente em 2007) adapta a história do anime desde o retorno de Naruto Uzumaki à Vila da Folha (Konoha) até o confronto com Sasuke Uchiha no esconderijo de Orochimaru.\n\nPontos principais da sinopse e enredo:\n\n• Ponto de Partida: O jogo começa com o retorno de Naruto a Konoha após dois anos e meio de treinamento intenso com Jiraiya.\n• Arcos Abordados: O modo história é dividido em atos principais que cobrem:\n• A Missão de Resgate do Kazekage (salvar Gaara das garras da Akatsuki).\n• A Missão de Reconhecimento da Ponte Tenchi / Arco de Sasuke e Sai (a busca por informações sobre Sasuke).\n• Desenvolvimento: Naruto, Sakura e novos aliados (como Sai e o capitão Yamato) enfrentam membros da organização Akatsuki, reencontram Sasuke em circunstâncias dramáticas e tentam trazê-lo de volta.\n• Estrutura: A campanha no \"Master Mode\" mistura elementos de exploração estilo RPG linear com batalhas clássicas de arena.",
+      "imagens": [
+        "imagens/naruto-shippuden-ultimate-ninja-5-mvrfapodpj1y.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Luta",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrf9lzr6yww",
+      "nome": "Mortal Kombat Shaolin Monks",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 3,
+      "descricao": "Mortal Kombat: Shaolin Monks é um jogo de ação e aventura (beat 'em up) lançado em 2005 para PlayStation 2 e Xbox pela Midway.\n\nSinopse\n\nA história reconta e expande os acontecimentos de Mortal Kombat II, começando logo após o final do primeiro torneio:\n• O Começo: Após ser derrotado por Liu Kang no torneio da Ilha de Shang Tsung, o feiticeiro Shang Tsung, o príncipe Goro e outros vilões escapam para a Dimensão Exterior (Outworld).\n• A Missão: Os monges guerreiros e protagonistas Liu Kang e Kung Lao — membros da Ordem da Luz — decidem perseguir os inimigos para impedir um novo plano maquiavélico.\n• A Jornada: A dupla precisa viajar por diversos cenários hostis da Outworld e de Earthrealm (como a Floresta Viva e o Templo do Fogo), enfrentando hordas de tarkatans, ninjas e chefes icônicos (como Reptile, Baraka e Goro) para frustrar Shang Tsung e, no clímax, derrotar o imperador Shao Kahn e salvar os reinos.",
+      "imagens": [
+        "imagens/mortal-kombat-shaolin-monks-mvrf9khwahwr.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Luta",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrf8ukfdtyh",
+      "nome": "Mortal Kombat Armageddon",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.7,
+      "descricao": "A sinopse de Mortal Kombat: Armageddon gira em torno da ameaça de um evento catastrófico que poderia destruir todos os reinos.\n\nA História Principal (Modo Konquest)\n\n• A Profecia: Argus (deus protetor de Edenia) e Delia (uma poderosa feiticeira) previram que o número excessivo de lutadores de Mortal Kombat e o poder acumulado por eles iriam desestabilizar e destruir o universo.\n• O Plano de Contingência: Para evitar esse apocalipse, eles criaram o elemental de fogo Blaze e colocaram seus filhos gêmeos, Taven e Daegon, em animação suspensa até que o momento crítico chegasse.\n• O Despertar: Quando os irmãos são acordados, eles descobrem que participam de uma missão/competição idealizada pelos pais: quem derrotar Blaze primeiro receberá um grande prêmio dos deuses e se tornará o sucessor de Argus (ou um deus completo).\n• O Conflito: Enquanto o jogador controla Taven em sua jornada pelo modo Konquest, seu irmão Daegon assume um papel antagonista, traindo a família e conspirando com forças do mal (como Shinnok e o clã Red Dragon) para alcançar o poder absoluto e eliminar Taven.",
+      "imagens": [
+        "imagens/mortal-kombat-armageddon-mvrf8t4augte.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrf7vvlkotl",
+      "nome": "Midnight Club 3 DUB Edition Remix",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 3.5,
+      "descricao": "Midnight Club 3: DUB Edition Remix é um jogo de corrida arcade em mundo aberto desenvolvido pela Rockstar San Diego e publicado pela Rockstar Games.\n\nSinopse e Premissa do Jogo\n\nO jogo não possui uma narrativa cinematográfica linear ou complexa com um protagonista fixo de passado trágico. Em vez disso, a história é focada na cultura de rachas urbanas e na ascensão do jogador no mundo do automobilismo ilegal:\n• O Início em San Diego: O jogador começa sua jornada em San Diego como um piloto novato que chama a atenção de oficinas locais e pilotos de rua ao vencer pequenas disputas.\n• Expansão por Outras Cidades: Conforme ganha reputação, dinheiro e veículos melhores, o jogador viaja para outras capitais importantes do automobilismo nos Estados Unidos: Atlanta e Detroit (além de Tóquio, adicionada exclusivamente na versão Remix).\n• Clubes e Rivalidades: Em cada cidade, o jogador interage com mecânicos, líderes de gangues e pilotos patrocinados (muitos associados à famosa revista de customização automotiva DUB Magazine). Para provar que é o melhor, ele precisa desafiar e derrotar diferentes clubes de corrida, participar de campeonatos de rua e dominar torneios de elite.\n• O Objetivo Final: O ápice da carreira é vencer a US Championship Series e os torneios finais de cada localidade, consolidando-se como o rei das ruas da meia-noite.",
+      "imagens": [
+        "imagens/midnight-club-3-dub-edition-remix-mvrf7u5ngzpt.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Corrida",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrf74lzkzzr",
+      "nome": "Metal Slug 3",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 0.5,
+      "descricao": "Em Metal Slug 3, o esquadrão de heróis (Marco, Tarma, Eri e Fio) é enviado a diferentes partes do globo para conter o ressurgimento das forças do General Morden após um período de paz.\nAo longo da missão, os protagonistas descobrem que o exército rebelde se uniu a uma ameaça muito maior: alienígenas (marcianos) que retornaram à Terra com tecnologia avançada. O conflito escala de bases submarinas e florestas repletas de criaturas mutantes até o espaço sideral, onde os heróis precisam impedir uma invasão e resgatar companheiros capturados (incluindo o próprio Morden, que acaba se aliando temporariamente ao grupo contra os alienígenas).\n\nExclusividades da versão de PlayStation 2 (PS2)\n\nA versão para PS2 inclui dois modos extras após a conclusão da campanha principal:\n• Invadindo a Nave-Mãe OVNI (Storming the UFO Mothership): Você controla um soldado do exército de Morden (com escudo, bazuca ou soldado comum) para resgatar aliados e atacar os marcianos.\n• Ilha da Gordura (Fat Island): Um minijogo competitivo para dois jogadores onde o objetivo é comer o máximo de alimentos possível e ganhar peso dentro do tempo limite.",
+      "imagens": [
+        "imagens/metal-slug-3-mvrf735lj9h2.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrf6dzojezj",
+      "nome": "Mega Man X8",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.8,
+      "descricao": "A sinopse de Mega Man X8 (lançado para PS2 em 2004) gira em torno de uma nova geração de robôs e do retorno de um antigo inimigo:\n• O Incidente na Torre Jakob: A história começa com a construção da Jakob Tower (um elevador espacial que liga a Terra à Lua). Durante um acidente/ataque, o diretor do projeto, um Reploid chamado Lumine, é sequestrado por Vile (que retorna misteriosamente).\n• A Nova Geração de Reploids: Os Caçadores de Mavericks (X, Zero e Axl) descobrem que os novos robôs dessa geração possuem a habilidade de copiar o DNA de outros seres (assim como Axl) e que todos foram fabricados contendo cópias do DNA de Sigma em seus sistemas.\n• A Conspiração e a Lua: Conforme a trama avança, os heróis descobrem que Sigma está por trás dos eventos. A batalha final é levada até uma base na Lua, onde X, Zero e Axl derrotam Sigma — mas uma reviravolta revela que Lumine era o verdadeiro cérebro por trás de tudo, apoiando os ideais de dominação de Sigma.\n• O Fim em Aberto: Lumine é derrotado, mas no desfecho Axl é atingido por um ataque misterioso (um tentáculo negro), deixando em dúvida se a infecção ou a ameaça do vírus Sigma foram realmente erradicadas.",
+      "imagens": [
+        "imagens/mega-man-x8-mvrf6cjxxhym.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrf5km0b6tf",
+      "nome": "Max Payne",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 3,
+      "descricao": "Max Payne é um jogo de tiro em terceira pessoa com tema noir, onde você controla Max Payne, um ex-detetive da polícia de Nova York (NYPD).\n\nA História\n\n• A tragédia: Max volta para casa e encontra sua esposa e sua filha recém-nascida brutalmente assassinadas por viciados sob o efeito de uma droga sintética chamada Valquíria (ou Valkyr).\n• A infiltração: Três anos depois, Max entra para a DEA (órgão antidrogas dos EUA) e trabalha infiltrado no submundo do crime para descobrir a origem da droga e os responsáveis pelo massacre.\n• A armadilha: Durante uma investigação com seu parceiro Alex Balder, Alex é assassinado misteriosamente. Max é acusado injustamente pelo crime e passa a ser caçado tanto pela polícia quanto pela máfia.\n• A caçada: Com as costas na parede, Max precisa sobreviver a uma nevasca histórica em Nova York enquanto desvenda uma conspiração militar e corporativa ligada à criação da Valquíria.\n\nPrincipais Características da Versão de PS2\n\n• Bullet Time: Mecânica que desacelera o tempo para realizar tiros em câmera lenta estilo cinematográfico.\n• Tom sombrio: Narrativa contada em formato de quadrinhos (graphic novel) com monólogos dramáticos do próprio protagonista.",
+      "imagens": [
+        "imagens/max-payne-mvrf5j0woo77.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrf4hnxvd26",
+      "nome": "Marvel Ultimate Alliance",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.5,
+      "descricao": "A história de Marvel: Ultimate Alliance gira em torno de uma aliança de super-heróis que se une para deter o Doutor Destino e os Mestres do Mal.\n\nPontos principais da sinopse:\n\n• O Incidente Inicial: O Doutor Destino (junto a uma poderosa seleção de vilões como Ultron, Mandarim, Mefisto e Loki) lança um ataque surpresa contra um aeroporta-aviões da S.H.I.E.L.D..\n• A Convocação: O Coronel Nick Fury pede socorro e reúne uma equipe de heróis principais — inicialmente composta por Homem-Aranha, Capitão América, Thor e Wolverine — para conter a invasão.\n• A Jornada: O grupo expande suas fileiras e viaja por vários locais icônicos do Universo Marvel (como a base da S.H.I.E.L.D., Atlantis, Asgard e o próprio reino da Latvéria) para frustrar os planos de dominação global de Destino.\n• Jogabilidade e Equipe: O jogador controla uma equipe de até quatro heróis (trocando entre eles a qualquer momento) em um formato de RPG de ação.",
+      "imagens": [
+        "imagens/marvel-ultimate-alliance-mvrf4fza8tax.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrf3dm9rphu",
+      "nome": "Manhunt 2",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.8,
+      "descricao": "Manhunt 2 é um jogo de terror psicológico e furtividade desenvolvido pela Rockstar London e lançado em 2007 para PlayStation 2, entre outras plataformas.\n\nSinopse\n\nA história se passa na sombria cidade de Cottonmouth e acompanha Daniel Lamb, um ex-cientista que acorda sem memória em um asilo psiquiátrico de segurança máxima chamado Dixmor Asylum.\n• A Fuga: Um blecaute misterioso destrava as celas do asilo, permitindo que Daniel fuja ao lado de Leo Kasper, um assassino sociopata e frio que passa a guiá-lo em sua jornada.\n• A Verdade por trás da Mente: À medida que tentam descobrir a identidade e o passado de Daniel, revela-se que ele participou de \"The Project\" (O Projeto), um experimento secreto de controle mental inspirado em programas como o MKUltra.\n• O Twist: Leo Kasper não é uma pessoa física real com quem Daniel está andando, mas sim uma segunda personalidade assassina e implacável que foi enxertada na mente de Daniel durante os experimentos do projeto.\n• A Caçada: Perseguidos por agentes e mercenários do misterioso grupo The Project, Daniel precisa lidar com seus próprios atos de violência extrema e com o controle que Leo tenta exercer sobre o seu corpo para recuperar sua vida.",
+      "imagens": [
+        "imagens/manhunt-2-mvrf3c9cfbl2.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Terror",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrf2gih4ux6",
+      "nome": "Fantastic Four",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 3.5,
+      "descricao": "O jogo Fantastic Four (2005) para PlayStation 2 segue a história do primeiro filme do grupo: uma viagem espacial dá errado após os tripulantes serem atingidos por raios cósmicos, concedendo superpoderes a Reed Richards, Susan Storm, Johnny Storm, Ben Grimm e também a Victor Von Doom (Dr. Destino).\n\nSinopse e Premissa\n\n• A Origem: Durante uma missão espacial financiada por Victor Von Doom, a nave é atingida por uma tempestade de radiação cósmica.\n• A Transformação: De volta à Terra, os tripulantes descobrem que sofreram mutações genéticas que lhes deram habilidades únicas.\n• O Conflito: O grupo precisa aprender a controlar seus novos poderes enquanto investiga e enfrenta as maquinações de Victor Von Doom, que se transforma no supervilão Dr. Destino, utilizando robôs e forças de segurança para tentar dominar ou destruir os heróis.\n\nPersonagens e Habilidades\n\n• Senhor Fantástico (Reed Richards): Possui corpo supermaleável para alcançar locais distantes, atacar com membros transformados em martelos e resolver quebra-cabeças e hacks em terminais.\n• Mulher Invisível (Susan Storm): Consegue ficar invisível, criar escudos de energia e usar poderes telecinéticos.\n• Tocha Humana (Johnny Storm): Envolto em chamas de forma contínua, ideal para ataques de fogo e combate à distância.\n• O Coisa (Ben Grimm): Força bruta e grande resistência física, embora seja mais lento, perfeito para destruir obstáculos do cenário.",
+      "imagens": [
+        "imagens/fantastic-four-mvrf2fbv117z.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrezl8zts11",
+      "nome": "Lego Batman",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.3,
+      "descricao": "A história começa com uma fuga em massa no Asilo Arkham. Vários criminosos notórios escapam e se dividem em três grupos de cinco bandidos, cada um liderado por um grande vilão com um plano próprio para dominar ou roubar a cidade de Gotham City:\n• O Charada (com Duas-Caras, Hera Venenosa, Sr. Frio e Cara-de-Barro) planeja roubar as reservas de ouro de Gotham.\n• Outros grupos de vilões icônicos (como o Coringa e o Pinguim) executam seus próprios planos caóticos pela cidade.\nCabe ao Batman e ao seu fiel parceiro Robin investigarem as pistas, usar veículos especiais (como o Batmóvel), trocar de trajes com habilidades únicas e capturar todos os criminosos para restaurar a ordem em Gotham.",
+      "imagens": [
+        "imagens/lego-batman-mvrezjqu5va9.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
       "id": "mvreykj2ogux",
       "nome": "Kung Fu Panda",
       "categoria": "mvpxg7ivwzt9",
