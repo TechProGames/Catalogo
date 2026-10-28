@@ -1030,6 +1030,98 @@
   ],
   "produtos": [
     {
+      "id": "mvsey36vb5pg",
+      "cod": "63",
+      "nome": "Analógico HALL/TMR (DOIS LADOS)",
+      "categoria": "mvpqep0fa7ij",
+      "unidade": "R$",
+      "valor": 200,
+      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
+      "imagens": [
+        "imagens/analogico-hall-tmr-dois-lados-mvsey1t6elwc.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvsewztlu9na",
+      "cod": "62",
+      "nome": "Analógico HALL/TMR (UM LADO)",
+      "categoria": "mvpqe908tnl2",
+      "unidade": "R$",
+      "valor": 180,
+      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
+      "imagens": [
+        "imagens/analogico-hall-tmr-um-lado-mvsewycdloci.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvsetzr9c46x",
+      "cod": "61",
+      "nome": "Analógico Original (DOIS LADOS)",
+      "categoria": "mvpqe225qlv4",
+      "unidade": "R$",
+      "valor": 180,
+      "descricao": "Substituição dos dois analógicos pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-dois-lados-mvsetyiis0d4.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvsernfssipw",
+      "cod": "60",
+      "nome": "Analógico Original (UM LADO)",
+      "categoria": "mvpqcuc8dzph",
+      "unidade": "R$",
+      "valor": 150,
+      "descricao": "Substituição dos dois analógicos pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-1x-mvserlxzgjb9.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvrgxxb0ajdx",
       "nome": "PS2 Tunado OPL",
       "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
