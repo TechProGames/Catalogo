@@ -1065,6 +1065,152 @@
   ],
   "produtos": [
     {
+      "id": "mvrfvu8edyle",
+      "nome": "Syphon Filter Dark Mirror",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.6,
+      "descricao": "Syphon Filter: Dark Mirror é um jogo de tiro em terceira pessoa com forte foco em ação tática e espionagem.\n\nSinopse e Enredo\n\n• O Início: A história começa com o agente especial Gabe Logan (trabalhando para a agência IPCA) enviando um recado para a criminosa Mara Aramov, que logo em seguida é alvo de uma operação letal.\n• A Missão no Alasca: Dois anos depois, Gabe é convocado pelo governo dos Estados Unidos para investigar uma crise na refinaria da Kemsynth Petroleum, no Alasca, que foi tomada por um grupo paramilitar e terrorista chamado Seção Vermelha (Red Section).\n• Conspiração e Armas Genéticas: Ao lado da parceira Lian Xing e da operadora Teresa Lipan, Gabe descobre que a organização está por trás de uma perigosa trama envolvendo armas genéticas, traições políticas e uma rede de conspiração global.\n• Desenvolvimento: Conforme avança, Gabe precisa lidar com segredos do passado, confrontar antigos rivais e alianças duvidosas para impedir que o plano devastador da Seção Vermelha seja concretizado.",
+      "imagens": [
+        "imagens/syphon-filter-dark-mirror-mvrfvsolqgco.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfv0co1o5e",
+      "nome": "Superman Returns",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "R$",
+      "valor": 1.2,
+      "descricao": "O jogo Superman Returns para PlayStation 2 acompanha a premissa e o enredo geral do filme homônimo de 2006, misturando os eventos do cinema com histórias clássicas dos quadrinhos.\n\nSinopse e Enredo\n\n• O Retorno: O Homem de Aço retorna a Metrópolis após passar anos investigando os restos de seu planeta natal, Krypton. Ao voltar, ele precisa reconquistar a confiança da cidade e lidar com as consequências de sua ausência.\n• Ameaça de Lex Luthor: O arquinimigo Lex Luthor executa planos ambiciosos para criar um novo continente e ameaçar os Estados Unidos, forçando o herói a intervir.\n• Vilões Clássicos: Ao contrário do filme, o jogo expande os confrontos para incluir diversos inimigos icônicos dos quadrinhos, como Bizarro, Metallo, Mongul e Riot.",
+      "imagens": [
+        "imagens/superman-returns-mvrfuyx5co0s.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfu7xuw61v",
+      "nome": "SSX 3",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.2,
+      "descricao": "SSX 3 não possui uma história tradicional com vilões ou um roteiro complexo; o jogo é focado no esporte, na liberdade e na superação pessoal em uma grande montanha nevada.\n\nPremissa e Funcionamento\n\n• O Objetivo: O jogador assume o papel de um praticante de snowboard que compete no prestigiado Campeonato SSX.\n• A Montanha: Toda a ação acontece em uma única e gigantesca montanha fictícia dividida em três picos principais. A ideia central é começar no topo (cume) e descer até a base, passando por diferentes pistas, áreas de backcountry, vilas e cenários de neve sem telas de carregamento.\n• Modo Carreira (Conquer the Mountain): O jogador progride pico por pico, vencendo corridas (Race), competições de estilo livre (Freestyle), realizando manobras radicais (Uber Tricks) e completando mais de 100 desafios espalhados pelo mapa para ganhar medalhas de ouro e dinheiro (créditos).\n• Evolução: Com o dinheiro acumulado nas descidas, é possível comprar novos equipamentos, roupas, pranchas e aprimorar os atributos dos personagens (como velocidade, força e fôlego).",
+      "imagens": [
+        "imagens/ssx-3-mvrfu6fz7mml.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Esporte",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrftdvwwrnm",
+      "nome": "SpongeBob SquarePants featuring Nicktoons Globs of Doom",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 1.5,
+      "descricao": "A sinopse de SpongeBob SquarePants featuring Nicktoons: Globs of Doom gira em torno de uma invasão cósmica por uma gosma perigosa e uma aliança inusitada entre heróis e vilões:\n\nA Trama\n\n• A Ameaça: Um misterioso e gigantesco ser do espaço chamado Globulous (feito de uma gosma pegajosa e controladora de matéria) invade os mundos dos Nicktoons com o objetivo de cobrir tudo com sua substância viscosa.\n• A Aliança Forçada: Para deter essa ameaça catastrófica que coloca todos os universos em risco, os heróis principais (como Bob Esponja, Danny Phantom, Jimmy Neutron, Tak e Invader Zim) são obrigados a unir forças com seus antigos inimigos, formando uma aliança com o Evil Syndicate (que inclui vilões como o Plankton).\n• A Jornada: O grupo precisa atravessar 6 mundos diferentes — incluindo a Fenda do Biquíni, Retroville, Parque Amity, Vila Pupununu, Cidade do Zim e o Espaço Sideral — usando armas especiais e combatendo as hordas de monstros de gosma para salvar o planeta.",
+      "imagens": [
+        "imagens/spongebob-squarepants-featuring-nicktoon-mvrftckqn1u5.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfslanpimj",
+      "nome": "Spider Man 2",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.8,
+      "descricao": "A história de Spider-Man 2 para PS2 acompanha Peter Parker tentando equilibrar sua vida pessoal, os estudos e o trabalho enquanto lida com o surgimento do Doutor Octopus (Dr. Otto Octavius), um brilhante cientista e mentor de Peter que enlouquece após um acidente em um experimento de fusão nuclear.\n\nPrincipais pontos da sinopse:\n\n• Conflito pessoal: Dois anos após os eventos do primeiro jogo, Peter sofre com o cansaço, perde empregos (como entregador de pizza), vê sua amada Mary Jane seguir em frente com outra pessoa e lida com o afastamento de seu amigo Harry Osborn, que culpa o Homem-Aranha pela morte do pai (o Duende Verde).\n• A ameaça do Doutor Octopus: Otto Octavius constrói tentáculos mecânicos fundidos ao seu corpo e tenta recriar um perigoso reator de fusão nuclear que ameaça destruir a cidade de Nova York.\n• Vilões secundários: Além do antagonista principal do filme, o jogo expande a trama com missões e confrontos contra outros clássicos dos quadrinhos, como Rino (Rhino), Shocker, Mistério (Mysterio) e a anti-heroína Gata Negra (Black Cat), que flerta com Peter ao longo da aventura.\n• O clímax: O Homem-Aranha precisa deter o plano catastrófico do Doutor Octopus — incluindo a icônica sequência em que tenta frear um trem desgovernado — antes que a cidade seja destruída.",
+      "imagens": [
+        "imagens/spider-man-2-mvrfsjt7hywi.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfrpwdz78l",
+      "nome": "Soulcalibur 3",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 3.5,
+      "descricao": "A história de Soulcalibur III se passa logo após os eventos de Soulcalibur II.\n• O impasse das espadas: Siegfried conseguiu prender as espadas lendárias Soul Edge (a lâmina amaldiçoada) e Soul Calibur (a espada sagrada) em um estado de simbiose chamado Soul's Embrace, trancando o poder de ambas.\n• A ameaça de Zasalamel e Nightmare: Enquanto Siegfried busca redenção e tenta manter as espadas seladas, uma figura misteriosa chamada Zasalamel manipula os acontecimentos para reerguer o poder da Soul Edge. Para isso, ele cria um corpo artificial para Nightmare, espalhando o caos pela Europa.\n• A busca dos guerreiros: Vários heróis e vilões do passado e do presente retornam ou iniciam novas jornadas atraídos pelo rastro de poder da Soul Edge — uns buscando destruí-la, outros querendo salvá-la ou usá-la para fins próprios.\n\nModos de História Principais\n\n• Tales of Souls: O modo história tradicional estilo arcade, onde você escolhe um personagem e acompanha sua trajetória com diálogos, textos e decisões em eventos rápidos (Quick Time Events) que definem diferentes finais.\n• Chronicles of the Sword: Um modo de estratégia e RPG tático em tempo real no qual você cria seu próprio personagem e comanda tropas em um continente dividido por três reinos (Império Grendel, Reino de Daquia e República de Hautes) em meio a disputas de poder.",
+      "imagens": [
+        "imagens/soulcalibur-3-mvrfrof5uf29.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfqr3yt1q7",
+      "nome": "Sonic Unleashed",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 2.2,
+      "descricao": "A sinopse de Sonic Unleashed (compartilhada entre as versões de PS2, Wii, PS3 e Xbox 360) acompanha Sonic em uma jornada global após o Dr. Eggman usar o poder das Esmeraldas do Caos para libertar Dark Gaia, uma entidade maligna adormecida no núcleo da Terra.\n\nPrincipais Pontos da História:\n\n• O Incidente: O Dr. Eggman prende Super Sonic e utiliza a energia das Esmeraldas do Caos em um canhão para despedaçar a Terra e despertar Dark Gaia.\n• A Maldição (Werehog): O processo corrompe as Esmeraldas do Caos e transforma Sonic em uma criatura semelhante a um lobisomem, conhecida como Werehog (durante a noite).\n• O Aliado: Sonic cai em Apotos e conhece Chip (Light Gaia), uma pequena criatura que perdeu a memória e decide ajudá-lo.\n• A Missão: Juntos, Sonic, Tails e Chip precisam viajar pelo mundo para restaurar a energia das Esmeraldas do Caos nos Templos de Gaia, alinhar os continentes e selar Dark Gaia novamente.",
+      "imagens": [
+        "imagens/sonic-unleashed-mvrfqplgeeo8.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfq0wps6u2",
+      "nome": "Sonic Riders Zero Gravity",
+      "categoria": "",
+      "unidade": "GB",
+      "valor": 3.1,
+      "descricao": "A sinopse de Sonic Riders: Zero Gravity gira em torno de misteriosos meteoros que caem na Terra e concedem poderes de manipulação da gravidade.\n\nEnredo Principal\n\n• A Queda dos Meteoros: Um meteoro cai na cidade e é encontrado por Tails, que o analisa junto com Sonic e Knuckles. Pouco depois, robôs da corporação MeteoTech são afetados pelo artefato e começam a perseguir o grupo.\n• Os Arcos do Cosmos: Sonic e seus amigos precisam correr contra rivais para coletar cinco anéis lendários que dobram a gravidade, conhecidos como \"Os Arcos do Cosmos\".\n• Disputa de Rivais: Além de fugir e lutar contra os robôs desonestos da MeteoTech, Sonic precisa enfrentar novamente os Babylon Rogues (liderados por Jet the Hawk) e o Dr. Eggman, que também estão atrás do poder gravitacional dos artefatos.\n• Jogabilidade e Inovação: O jogo se passa em corridas de Extreme Gear (pranchas voadoras), introduzindo a mecânica de Zero Gravity, que permite aos personagens controlar a gravidade para fazer curvas e ganhar velocidade.",
+      "imagens": [
+        "imagens/sonic-riders-zero-gravity-mvrfpzqqbgde.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvr1up8br6dt"
+      ],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvrfpav3w3e9",
+      "nome": "Sonic Mega Collection Plus",
+      "categoria": "mvpxg7ivwzt9",
+      "unidade": "GB",
+      "valor": 4.7,
+      "descricao": "O Sonic Mega Collection Plus para PlayStation 2 não possui uma \"sinopse\" de enredo único, pois trata-se de uma coletânea de 20 jogos clássicos da Sega (lançada pela Sonic Team) em vez de um jogo com uma história inédita.\n\nO que o jogo oferece:\n\n• Foco da Coletânea: Reúne as principais aventuras clássicas de Sonic the Hedgehog, Tails, Knuckles e do vilão Dr. Eggman (Robotnik) originalmente lançadas para o Mega Drive e para o Game Gear.\n• Jogos Incluídos (Total de 20):\n\t• Sonic the Hedgehog (1, 2 e 3)\n\t• Sonic & Knuckles (com suporte aos cartuchos lock-on)\n\t• Sonic Spinball\n\t• Sonic 3D Blast\n\t• Dr. Robotnik's Mean Bean Machine\n\t• Diversos títulos clássicos do Game Gear\n• Conteúdos Bônus (Extras): Scans de capas de quadrinhos da Archie Comics, ilustrações históricas dos personagens e vídeos promocionais (como cenas de Sonic CD).\n• Novidade da Versão Plus: Diferente da versão original do GameCube, esta edição para PS2 adiciona o recurso de salvamento de progresso (save/load) no meio das fases.",
+      "imagens": [
+        "imagens/sonic-mega-collection-plus-mvrfp9i54suu.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": []
+    },
+    {
       "id": "mvrfobvku6z0",
       "nome": "Shadow of the Colossus",
       "categoria": "mvpxg7ivwzt9",
