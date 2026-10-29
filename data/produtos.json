@@ -1030,6 +1030,69 @@
   ],
   "produtos": [
     {
+      "id": "mvtt9f0u0sdn",
+      "cod": "8m",
+      "nome": "Lego Indiana Jones",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 3.7,
+      "descricao": "O jogo LEGO Indiana Jones: The Original Adventures para Xbox 360 é uma adaptação cômica e em formato LEGO dos três primeiros filmes clássicos da franquia: Os Caçadores da Arca Perdida, Indiana Jones e o Templo da Perdição e Indiana Jones e a Última Cruzada.\n\nPrincipais pontos da sinopse e do jogo:\n\n• Enredo baseado nos filmes: O jogador acompanha as aventuras do arqueólogo Indiana Jones desde as selvas da América do Sul até ruínas, tumbas e templos antigos na Índia e em outras partes do mundo, recriando as cenas mais marcantes do cinema.\n• Humor característico: A história é contada sem diálogos falados (apenas com expressões corporais e momentos cômicos típicos dos games LEGO), reiventando momentos tensos dos filmes com leveza e piadas visuais.\n• Jogabilidade: Combina ação, exploração de plataformas em 3D e resolução de quebra-cabeças (puzzles). Cada personagem possui habilidades únicas — por exemplo, Indy usa o chicote para se balançar ou puxar itens, enquanto outros personagens conseguem decifrar hieróglifos, cavar buracos ou escalar.\n• Modo Cooperativo: Permite que um segundo jogador entre ou saia da partida a qualquer momento para jogar em dupla.",
+      "imagens": [
+        "imagens/lego-indiana-jones-mvtt9dbzze3a.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtt655ugrxl",
+      "cod": "8l",
+      "nome": "Lego Batman 2",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 4.2,
+      "descricao": "A história de LEGO Batman 2: DC Super Heroes (disponível para Xbox 360) começa durante uma cerimônia em que Bruce Wayne recebe o prêmio de \"Homem do Ano\" em Gotham City, um evento que é rapidamente interrompido por uma invasão do Coringa e sua gangue.\nDepois de ser capturado e enviado ao Asilo Arkham, o Coringa escapa com a ajuda do bilionário Lex Luthor — que está furioso por ter perdido o prêmio para Bruce Wayne e por apoiar a campanha presidencial do adversário. Juntos, os dois vilões elaboram um plano que utiliza uma arma de desconstrução e produtos químicos roubados para criar uma Kryptonita sintética e manipular as eleições.\nPara impedir essa ameaça, Batman e Robin precisam deixar de lado a rivalidade e unir forças com o Superman e outros membros da Liga da Justiça (como a Mulher-Maravilha e o Lanterna Verde) para salvar Gotham City e o mundo.\nO jogo marcou uma grande mudança na franquia por ser o primeiro da série LEGO a contar com diálogos dublados nas cenas (em vez de apenas mímicas) e por introduzir um mundo aberto explorável em Gotham City.",
+      "imagens": [
+        "imagens/lego-batman-2-mvtt63od8f5y.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtt1vhamwqk",
+      "cod": "8k",
+      "nome": "Left 4 Dead 2",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 4.5,
+      "descricao": "Left 4 Dead 2 para Xbox 360 acompanha um grupo de quatro novos sobreviventes — Coach, Nick, Rochelle e Ellis — que tentam atravessar o sul dos Estados Unidos (começando em Savannah, Geórgia, e terminando em Nova Orleans, Luisiana) em meio a uma pandemia devastadora que transforma humanos em infectados agressivos.\n\nPrincipais pontos da sinopse e enredo\n\n• O Objetivo: O grupo precisa abrir caminho por cenários caóticos — como cidades, pântanos e shoppings — combatendo hordas de zumbis até alcançarem abrigos de transição e, no fim de cada campanha, um veículo de resgate.\n• Novos Sobreviventes:\n\t• Coach: Um ex-treinador de futebol americano do ensino médio.\n\t• Nick: Um jogador profissional de pôquer cínico e desconfiado.\n\t• Rochelle: Uma associada de produção de uma emissora de TV local.\n\t• Ellis: Um mecânico jovem, tagarela e bem-humorado.\n• Conexão e Progressão: Diferente do primeiro jogo, a história de fundo é mais desenvolvida através dos diálogos e se conecta em cinco campanhas principais (começando após os eventos do conteúdo adicional O Sacrifício do jogo anterior).\n• O Diretor de IA: O jogo utiliza um sistema dinâmico chamado \"Diretor\" que monitora o desempenho dos jogadores e altera a quantidade de inimigos, itens e clima em tempo real.",
+      "imagens": [
+        "imagens/left-4-dead-2-mvtt1u35iuv7.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
       "id": "mvtsvzuilrz5",
       "cod": "8j",
       "nome": "Kung Fu Panda Showdown",
