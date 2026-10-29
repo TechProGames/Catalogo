@@ -1030,10 +1030,169 @@
   ],
   "produtos": [
     {
+      "id": "mvtn878i7ac8",
+      "cod": "6o",
+      "nome": "Gatilhos L2/R2",
+      "categoria": "mvpqjttqwpe3",
+      "unidade": "R$",
+      "valor": 100,
+      "descricao": "Reparo dos gatilhos sem pressão ou não funcionando.",
+      "imagens": [
+        "imagens/gatilhos-l2-r2-mvtn85t7k7jv.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtn6wv3ag1q",
+      "cod": "6n",
+      "nome": "Borracha dos Analógicos (PAR)",
+      "categoria": "mvpqksjavldd",
+      "unidade": "R$",
+      "valor": 50,
+      "descricao": "Troca das duas capinhas de borrachas dos analógicos.",
+      "imagens": [
+        "imagens/borracha-dos-analogicos-par-mvtn6vijmpqq.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtn64hjehr9",
+      "cod": "6m",
+      "nome": "Botões não FUNCIONA/FALHANDO",
+      "categoria": "mvpqjm335i0z",
+      "unidade": "R$",
+      "valor": 100,
+      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
+      "imagens": [
+        "imagens/botoes-nao-funciona-falhando-mvtn62wbt771.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtn5d93qh93",
+      "cod": "6l",
+      "nome": "Troca do conector USB",
+      "categoria": "mvpqjih1q69v",
+      "unidade": "R$",
+      "valor": 80,
+      "descricao": "Reparo no conector USB, desde não carregar ou não conectar, como mal contato.",
+      "imagens": [
+        "imagens/troca-do-conector-usb-mvtn5bs9txp7.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtn4ed4d7ry",
+      "cod": "6k",
+      "nome": "Reparo de Placa",
+      "categoria": "mvpqjg6mutqc",
+      "unidade": "R$",
+      "valor": 150,
+      "descricao": "Controle não liga, desligando do nada, caindo conexão. Qualquer reparo na placa.",
+      "imagens": [
+        "imagens/reparo-de-placa-mvtn4ctzf9bh.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtn30loenge",
+      "cod": "6j",
+      "nome": "Analógico Original (DOIS LADOS)",
+      "categoria": "mvpqjb09hrlh",
+      "unidade": "R$",
+      "valor": 110,
+      "descricao": "Substituição dos dois analógicos pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-dois-lados-mvtn2z3nnhnx.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtn213tqz2o",
+      "cod": "6i",
+      "nome": "Analógico Original (UM LADO)",
+      "categoria": "mvpqj53iz3ii",
+      "unidade": "R$",
+      "valor": 80,
+      "descricao": "Substituição do analógico pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-um-lado-mvtn1zqdm5v6.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvtmp3syqw5c",
       "cod": "6h",
       "nome": "Gatilhos L2/R2",
-      "categoria": "mvpqgqqbs8ig",
+      "categoria": "mvpqj06gskol",
       "unidade": "R$",
       "valor": 110,
       "descricao": "Reparo dos gatilhos sem pressão ou não funcionando.",
