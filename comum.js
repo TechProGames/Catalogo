@@ -230,7 +230,8 @@ function normalizarCatalogo(d) {
         const o = typeof e === 'string' ? {cat: e, rotulo: ''} : (e && typeof e === 'object' ? e : {});
         return {cat: extraValido(o.cat), rotulo: String(o.rotulo || '').trim()};
       }).filter((x, i, a) => x.cat && a.findIndex(y => y.cat === x.cat) === i),
-      tipo: String(p.tipo || '').trim(),             // categoria do item (Ação, Aventura…)
+      // categorias do item (Ação, Aventura…) — pode ter várias; "tipo" é o texto pronto para mostrar
+      tipos: (Array.isArray(p.tipos) ? p.tipos : String(p.tipo || '').split(',')).map(t => String(t || '').trim()).filter((t, i, a) => t && a.indexOf(t) === i),
       cod: /^[0-9a-z]{1,6}$/.test(String(p.cod || '')) ? String(p.cod) : '',     // código curto (usado no link do pedido)
       vendidos: Number.isInteger(p.vendidos) && p.vendidos > 0 ? p.vendidos : 0,   // quantas vezes foi pedido (ranking "Mais vendidos")
       // outras categorias onde o MESMO item também aparece
@@ -247,7 +248,7 @@ function normalizarCatalogo(d) {
       })).filter(a => a.nome || a.gb)
     };
   });
-  produtos.forEach(p => { p.outras = p.outras.filter(c => c !== p.categoria); });
+  produtos.forEach(p => { p.outras = p.outras.filter(c => c !== p.categoria); p.tipo = p.tipos.join(', '); });
   return {loja, categorias, etiquetas, produtos};
 }
 // todas as categorias (reais) em que o produto aparece

@@ -334,8 +334,8 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=19"></script>
-<script src="pedido.js?v=19"></script>
+<script src="comum.js?v=22"></script>
+<script src="pedido.js?v=22"></script>
 <script>
 // link de pedido aberto no endereço do catálogo ("…/Catalogo/#3.…"): vai para a página do pedido
 if (/^#[23]\./.test(location.hash)) location.replace('pedido.html' + location.hash);
@@ -714,7 +714,7 @@ function montarFerramentas() {
   if (atual) {
     const ids = new Set(origensDe(atual));
     const daqui = produtos.filter(p => catsDe(p).some(c => ids.has(c)));
-    const tipos = [...new Set(daqui.filter(p => p.tipo).map(p => p.tipo))].sort((a, b) => a.localeCompare(b, 'pt'));
+    const tipos = [...new Set(daqui.flatMap(p => p.tipos))].sort((a, b) => a.localeCompare(b, 'pt'));
     const temR = daqui.some(p => !ehGB(p) && temValorP(p)), temG = daqui.some(p => ehGB(p) && temValor(p));
     if ((!temR && ['menor', 'maior'].includes(ordem)) || (!temG && ['gbmenor', 'gbmaior'].includes(ordem))) ordem = 'az';
     html += `<div class="ferr-linha">
@@ -772,7 +772,7 @@ function render() {
   const lista = produtos.filter(p => (!permitidos || catsDe(p).some(c => permitidos.has(c))) &&
     (!termo || norm(p.nome + ' ' + p.descricao + ' ' + p.tipo).includes(termo)) &&
     (!atual || !termoCat || norm(p.nome + ' ' + p.descricao + ' ' + p.tipo).includes(termoCat)) &&
-    (!atual || !tipoF || p.tipo === tipoF));
+    (!atual || !tipoF || p.tipos.includes(tipoF)));
   if (!lista.length) {
     $('conteudo').innerHTML = `<p class="vazio">${termo || termoCat || tipoF ? 'Nenhum produto encontrado.' : atual ? 'Ainda não há produtos nesta categoria.' : 'Nenhum produto ainda.'}</p>`;
     return;

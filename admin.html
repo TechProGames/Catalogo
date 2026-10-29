@@ -73,10 +73,14 @@ input[type=range]{width:100%;accent-color:var(--azul)}
 .tipo-linha{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap}
 .tipo-sel{flex:1 1 220px;min-width:0}
 .tipo-painel{border-top:1px solid var(--line);padding:8px;display:flex;flex-wrap:wrap;gap:6px;max-height:260px;overflow:auto}
+.tipo-painel[hidden],.arv-painel[hidden]{display:none}
 .tipo-painel button{border:1px solid var(--line);background:var(--bg2);border-radius:20px;padding:6px 12px;font-size:13px;font-weight:600;cursor:pointer}
 .tipo-painel button:hover{border-color:var(--azul)}
 .tipo-painel button.on{background:var(--azul);border-color:var(--azul);color:#fff}
 .tipo-painel button.nenhum:not(.on){color:var(--mut)}
+.tipo-painel .tipo-ok{flex-basis:100%;display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:4px;padding-top:8px;border-top:1px solid var(--line);font-size:12px;color:var(--mut)}
+.tipo-painel .tipo-ok button{border-radius:8px;background:var(--azul);border-color:var(--azul);color:#fff}
+.arv-nome em{font-style:normal;font-size:10px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:var(--azul2);margin-left:8px}
 .tipo-novo{display:flex;gap:6px;flex:1 1 200px;max-width:280px}
 .tipo-novo .inp{flex:1;min-width:0}
 output{color:var(--txt);font-weight:700;margin-left:4px}
@@ -569,7 +573,7 @@ dialog form{padding:18px}
       </div>
       <p class="dica" id="valor-dica"></p>
     </div>
-    <div class="campo"><span class="rot">Categoria do item <small style="font-weight:500">(aparece embaixo do nome e vira filtro — ex.: Ação, Aventura, Terror)</small></span>
+    <div class="campo"><span class="rot">Categoria do item <small style="font-weight:500">(aparece embaixo do nome e vira filtro — pode marcar vários)</small></span>
       <input type="hidden" id="f-tipo" name="tipo">
       <div class="tipo-linha">
         <div class="tipo-sel" id="tipo-sel">
@@ -610,8 +614,8 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=19"></script>
-<script src="pedido.js?v=19"></script>
+<script src="comum.js?v=22"></script>
+<script src="pedido.js?v=22"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -1331,14 +1335,14 @@ function criarArvoreSel(el, o) {
     while (x) { abertos.add(x.no.id); x = x.pai ? nos.find(n => n.no === x.pai) : null; }
   }
   function lista() {
-    const exc = new Set(o.excluir ? o.excluir() : []), atual = o.atual ? o.atual() : null;
+    const exc = new Set(o.excluir ? o.excluir() : []), atual = o.atual ? o.atual() : null, ult = lerUltimas()[o.chave];
     let h = o.vazio ? `<div class="arv-it${!atual ? ' on' : ''}" style="--n:0"><button type="button" class="arv-tg" disabled></button><button type="button" class="arv-nome" data-id="">${esc(o.vazio)}</button></div>` : '';
     (function andar(nos, nivel) {
       for (const no of nos) {
         const tem = no.filhas.length > 0, ab = abertos.has(no.id), off = exc.has(no.id);
         h += `<div class="arv-it${no.id === atual ? ' on' : ''}" style="--n:${nivel}">
           <button type="button" class="arv-tg" data-tg="${esc(no.id)}"${tem ? ` title="${ab ? 'Recolher' : 'Mostrar subcategorias'}"` : ' disabled'}>${tem ? (ab ? '▾' : '▸') : ''}</button>
-          <button type="button" class="arv-nome" data-id="${esc(no.id)}"${off ? ' disabled' : ''}>${esc(no.nome || 'Sem nome')}${tem ? `<small>${no.filhas.length}</small>` : ''}</button></div>`;
+          <button type="button" class="arv-nome" data-id="${esc(no.id)}"${off ? ' disabled' : ''}>${esc(no.nome || 'Sem nome')}${tem ? `<small>${no.filhas.length}</small>` : ''}${no.id === ult && no.id !== atual ? '<em>última usada</em>' : ''}</button></div>`;
         if (tem && ab) andar(no.filhas, nivel + 1);
       }
     })(arvoreExp(), 0);
@@ -1357,8 +1361,12 @@ function criarArvoreSel(el, o) {
     if (atual) abrirCaminho(atual, false);
     if (ult) abrirCaminho(ult, true);
     painel.hidden = false; el.classList.add('aberto'); lista();
-    const on = painel.querySelector('.arv-it.on') || (ult && painel.querySelector(`[data-id="${CSS.escape(ult)}"]`));
-    if (on) painel.scrollTop = Math.max(0, on.closest('.arv-it').offsetTop - painel.offsetTop - 60);
+    // centraliza o item escolhido; sem nada escolhido, a última categoria usada
+    const btn = (atual && painel.querySelector(`[data-id="${CSS.escape(atual)}"]`)) || (ult && painel.querySelector(`[data-id="${CSS.escape(ult)}"]`));
+    if (btn) {
+      const it = btn.closest('.arv-it'), rp = painel.getBoundingClientRect(), ri = it.getBoundingClientRect();
+      painel.scrollTop += ri.top - rp.top - (painel.clientHeight - ri.height) / 2;
+    }
   }
   function fechar() { painel.hidden = true; el.classList.remove('aberto'); }
   caixa.onclick = () => aberto() ? fechar() : abrir();
@@ -1416,18 +1424,22 @@ const extraSel = criarArvoreSel($('f-extra'), {
 
 // ---- categoria do item (filtro): caixa que abre todas as opções + caixa ao lado para criar uma nova
 const tiposNovos = new Set();
-const listaTipos = () => [...new Set([...dados.produtos.map(x => x.tipo).filter(Boolean), ...tiposNovos])].sort((a, b) => a.localeCompare(b, 'pt-BR'));
-function mostrarTipo(t) {
-  $('f-tipo').value = t || '';
-  $('tipo-txt').textContent = t || 'Opcional';
-  $('tipo-caixa').classList.toggle('arv-vazio', !t);
+let tiposForm = [];           // pode ter vários filtros
+const listaTipos = () => [...new Set([...dados.produtos.flatMap(x => x.tipos || []), ...tiposNovos])].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+function mostrarTipo(lista) {
+  tiposForm = [...new Set(lista)];
+  const txt = tiposForm.join(', ');
+  $('f-tipo').value = txt;
+  $('tipo-txt').textContent = txt || 'Opcional';
+  $('tipo-caixa').classList.toggle('arv-vazio', !txt);
   if (!$('tipo-painel').hidden) renderTipos();
 }
 function renderTipos() {
-  const atual = $('f-tipo').value, ts = listaTipos();
-  $('tipo-painel').innerHTML = `<button type="button" class="nenhum${!atual ? ' on' : ''}" data-tipo="">Nenhum</button>` +
-    ts.map(t => `<button type="button" data-tipo="${esc(t)}"${t === atual ? ' class="on"' : ''}>${esc(t)}</button>`).join('') +
-    (ts.length ? '' : '<span class="dica" style="margin:4px">Nenhum filtro ainda — crie um na caixa ao lado.</span>');
+  const ts = listaTipos();
+  $('tipo-painel').innerHTML = `<button type="button" class="nenhum${!tiposForm.length ? ' on' : ''}" data-tipo="">Nenhum</button>` +
+    ts.map(t => `<button type="button" data-tipo="${esc(t)}"${tiposForm.includes(t) ? ' class="on"' : ''}>${tiposForm.includes(t) ? '✓ ' : ''}${esc(t)}</button>`).join('') +
+    (ts.length ? '' : '<span class="dica" style="margin:4px">Nenhum filtro ainda — crie um na caixa ao lado.</span>') +
+    `<div class="tipo-ok"><span>${tiposForm.length ? tiposForm.length + (tiposForm.length > 1 ? ' marcados' : ' marcado') : 'Toque para marcar um ou mais'}</span><button type="button" data-fechar>▴ Minimizar</button></div>`;
 }
 const fecharTipos = () => { $('tipo-painel').hidden = true; $('tipo-sel').classList.remove('aberto'); };
 $('tipo-caixa').onclick = () => {
@@ -1436,15 +1448,18 @@ $('tipo-caixa').onclick = () => {
   renderTipos(); p.hidden = false; $('tipo-sel').classList.add('aberto');
 };
 $('tipo-painel').addEventListener('click', e => {
+  if (e.target.closest('[data-fechar]')) return fecharTipos();
   const b = e.target.closest('[data-tipo]'); if (!b) return;
-  mostrarTipo(b.dataset.tipo); fecharTipos(); renderPrevia();
+  const t = b.dataset.tipo;
+  mostrarTipo(!t ? [] : tiposForm.includes(t) ? tiposForm.filter(x => x !== t) : [...tiposForm, t]);
+  renderPrevia();
 });
 function addTipo() {
-  const t = $('tipo-novo').value.trim().replace(/\s+/g, ' ');
+  const t = $('tipo-novo').value.replace(/,/g, ' ').trim().replace(/\s+/g, ' ');
   if (!t) { $('tipo-novo').focus(); return; }
   const ja = listaTipos().find(x => norm(x) === norm(t)) || t;   // "terror" usa o "Terror" que já existe
   tiposNovos.add(ja); $('tipo-novo').value = '';
-  mostrarTipo(ja); renderPrevia();
+  mostrarTipo([...tiposForm, ja]); renderPrevia();
 }
 $('tipo-add').onclick = addTipo;
 $('tipo-novo').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); addTipo(); } });
@@ -1591,7 +1606,7 @@ function abrirForm(p) {
   medidaCapa = null; renderGaleria.ultima = undefined;
   armForm = (p?.armazenamentos || []).map(a => ({...a}));
   renderArm();
-  fecharTipos(); mostrarTipo(p?.tipo || ''); $('tipo-novo').value = '';
+  fecharTipos(); mostrarTipo(p?.tipos || []); $('tipo-novo').value = '';
   catSel.fechar(); outraSel.fechar(); extraSel.fechar();
   preencherCats(p?.categoria);
   definirUnidade(p?.unidade || 'R$');
@@ -1642,7 +1657,7 @@ form.addEventListener('submit', async e => {
     disponivel: form.disponivel.checked,
     etiquetas: dados.etiquetas.filter(x => etqForm.has(x.id)).map(x => x.id),
     extras: extrasForm.filter(e => acharNoExp(e.cat)).map(e => ({cat: e.cat, rotulo: String(e.rotulo || '').trim()})),
-    tipo: form.tipo.value.trim(),
+    tipos: [...tiposForm], tipo: tiposForm.join(', '),
     armazenamentos: arms,
     outras: outrasForm.filter(c => c && c !== catForm),
     formato: formatoForm, ajuste: ajusteForm,
