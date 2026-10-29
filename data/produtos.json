@@ -1030,6 +1030,27 @@
   ],
   "produtos": [
     {
+      "id": "mvtp8lyy5tyn",
+      "cod": "7d",
+      "nome": "Marvel vs Capcom Origins",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 0.5,
+      "descricao": "Marvel vs. Capcom Origins é uma coletânea de jogos de luta lançada em setembro de 2012 para o Xbox 360 (via Xbox Live Arcade) e PlayStation 3.\n\nO que o jogo inclui:\n\n• Marvel Super Heroes (1995): Jogo de luta 1 contra 1 que utiliza o clássico sistema das Infinity Gems (Gemas do Infinito), permitindo que os personagens ganhem poderes temporários especiais.\n• Marvel vs. Capcom: Clash of Super Heroes (1998): Combates caóticos em duplas (tag team 2 contra 2), introduzindo assistências de personagens (assists) e o Duo Team Attack, que comanda dois heróis na tela ao mesmo tempo.",
+      "imagens": [
+        "imagens/marvel-vs-capcom-origins-mvtp8kkog9vz.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Luta",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
       "id": "mvtoytgq6fat",
       "cod": "7c",
       "nome": "Harry Potter and the Half-Blood Prince",
