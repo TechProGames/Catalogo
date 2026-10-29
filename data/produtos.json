@@ -1002,13 +1002,348 @@
   ],
   "produtos": [
     {
+      "id": "mvtx79x7uxlf",
+      "cod": "9q",
+      "nome": "Analógico HALL/TMR (DOIS LADOS)",
+      "categoria": "mvpqlaq4up9z",
+      "unidade": "R$",
+      "valor": 200,
+      "descricao": "Substituição dos dois analógicos originais, por outros de efeito hall, HALL EFFECT ou TMR.",
+      "imagens": [
+        "imagens/analogico-hall-tmr-dois-lados-mvtx78qkn4jf.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtx6r48o7fk",
+      "cod": "9p",
+      "nome": "Analógico HALL/TMR (UM LADO)",
+      "categoria": "mvpql6jwoxl7",
+      "unidade": "R$",
+      "valor": 180,
+      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
+      "imagens": [
+        "imagens/analogico-hall-tmr-um-lado-mvtx6ps695oj.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtx649gxyyv",
+      "cod": "9o",
+      "nome": "Analógico Original (DOIS LADOS)",
+      "categoria": "mvpql3w31yx1",
+      "unidade": "R$",
+      "valor": 140,
+      "descricao": "Substituição dos dois analógicos pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-dois-lados-mvtx633czusq.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtx553xmez8",
+      "cod": "9n",
+      "nome": "Analógico Original (UM LADO)",
+      "categoria": "mvpql161603w",
+      "unidade": "R$",
+      "valor": 110,
+      "descricao": "Substituição do analógico pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-um-lado-mvtx53lxew59.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtx3i1lxcme",
+      "cod": "9m",
+      "nome": "Gatilhos L2/R2",
+      "categoria": "mvpqkvhz5rn1",
+      "unidade": "R$",
+      "valor": 140,
+      "descricao": "Reparo dos gatilhos sem pressão ou não funcionando.",
+      "imagens": [
+        "imagens/gatilhos-l2-r2-mvtx3go6n6v1.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtx1fmzc1yc",
+      "cod": "9l",
+      "nome": "Borracha dos Analógicos (PAR)",
+      "categoria": "mvpqksjavldd",
+      "unidade": "R$",
+      "valor": 60,
+      "descricao": "Troca das duas capinhas de borrachas dos analógicos.",
+      "imagens": [
+        "imagens/borracha-dos-analogicos-par-mvtx1ebl5dp3.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtx0t6baxm0",
+      "cod": "9k",
+      "nome": "Botões não FUNCIONA/FALHANDO",
+      "categoria": "mvpqknxki1iu",
+      "unidade": "R$",
+      "valor": 130,
+      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
+      "imagens": [
+        "imagens/botoes-nao-funciona-falhando-mvtx0rk9dv8c.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtwzwdyxf7d",
+      "cod": "9j",
+      "nome": "Troca do conector USB C",
+      "categoria": "mvpqkl99o67w",
+      "unidade": "R$",
+      "valor": 160,
+      "descricao": "Reparo no conector USB C, desde não carregar ou não conectar, como mal contato.",
+      "imagens": [
+        "imagens/troca-do-conector-usb-c-mvtwzv2mbijt.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtwz2k1lw2x",
+      "cod": "9i",
+      "nome": "Reparo de Placa",
+      "categoria": "mvpqkiyx4vt1",
+      "unidade": "R$",
+      "valor": 250,
+      "descricao": "Controle não liga, desligando do nada, caindo conexão. Qualquer reparo na placa.",
+      "imagens": [
+        "imagens/reparo-de-placa-mvtwz14puum1.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtwyfgpmvx6",
+      "cod": "9h",
+      "nome": "Analógico HALL/TMR (DOIS LADOS)",
+      "categoria": "mvpqkfhvwjo6",
+      "unidade": "R$",
+      "valor": 200,
+      "descricao": "Substituição dos dois analógicos originais, por outros de efeito hall, HALL EFFECT ou TMR.",
+      "imagens": [
+        "imagens/analogico-hall-tmr-dois-lados-mvtwye6u2mxh.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtwxm9ysu86",
+      "cod": "9g",
+      "nome": "Analógico HALL/TMR (UM LADO)",
+      "categoria": "mvpqkb3woqa0",
+      "unidade": "R$",
+      "valor": 180,
+      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
+      "imagens": [
+        "imagens/analogico-hall-tmr-um-lado-mvtwxkws8kmc.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtwwloi9ivp",
+      "cod": "9f",
+      "nome": "Analógico Original (DOIS LADOS)",
+      "categoria": "mvpqk0yskx9o",
+      "unidade": "R$",
+      "valor": 180,
+      "descricao": "Substituição dos dois analógicos pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-dois-lados-mvtwwkecps6a.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtwvqu9qhpv",
+      "cod": "9e",
+      "nome": "Analógico Original (UM LADO)",
+      "categoria": "mvpqk3mc8cor",
+      "unidade": "R$",
+      "valor": 150,
+      "descricao": "Substituição do analógico pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-um-lado-mvtwvpc4shgq.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
       "id": "mvtw90tpubfz",
-      "cod": "9d",
       "nome": "UFC Undisputed 3",
+      "descricao": "O UFC Undisputed 3 para Xbox 360 não possui um modo história linear com narrativa cinematográfica, mas sim uma simulação esportiva de Artes Marciais Mistas (MMA) focada na reprodução autêntica do Ultimate Fighting Championship e do extinto evento japonês PRIDE FC.\n\nPrincipais pontos e modos de jogo:\n\n• Modo Carreira: Você cria o seu próprio lutador ou escolhe um atleta real e começa a jornada nas divisões de acesso, passando pelo WEC até assinar com o UFC (ou PRIDE), treinando atributos, aprendendo novos golpes, gerenciando cansaço e buscando o cinturão.\n• Modo PRIDE FC: Um dos maiores diferenciais do jogo, permitindo lutar sob as regras clássicas do evento japonês (que incluem tiros de meta, soccer kicks e joelhadas na cabeça no chão) dentro do tradicional ringue em vez do octógono.\n• Elenco: Mais de 150 lutadores disponíveis divididos por categorias de peso, incluindo lendas do esporte e a capa estampada por Anderson Silva.\n• Jogabilidade: Oferece controles tradicionais ou um sistema simplificado para iniciantes, com mecânicas profundas de trocação, grappling e um sistema reformulado de finalizações (submissions).",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 6.9,
-      "descricao": "O UFC Undisputed 3 para Xbox 360 não possui um modo história linear com narrativa cinematográfica, mas sim uma simulação esportiva de Artes Marciais Mistas (MMA) focada na reprodução autêntica do Ultimate Fighting Championship e do extinto evento japonês PRIDE FC.\n\nPrincipais pontos e modos de jogo:\n\n• Modo Carreira: Você cria o seu próprio lutador ou escolhe um atleta real e começa a jornada nas divisões de acesso, passando pelo WEC até assinar com o UFC (ou PRIDE), treinando atributos, aprendendo novos golpes, gerenciando cansaço e buscando o cinturão.\n• Modo PRIDE FC: Um dos maiores diferenciais do jogo, permitindo lutar sob as regras clássicas do evento japonês (que incluem tiros de meta, soccer kicks e joelhadas na cabeça no chão) dentro do tradicional ringue em vez do octógono.\n• Elenco: Mais de 150 lutadores disponíveis divididos por categorias de peso, incluindo lendas do esporte e a capa estampada por Anderson Silva.\n• Jogabilidade: Oferece controles tradicionais ou um sistema simplificado para iniciantes, com mecânicas profundas de trocação, grappling e um sistema reformulado de finalizações (submissions).",
       "imagens": [
         "imagens/ufc-undisputed-3-mvtw8zcwi56p.jpg"
       ],
@@ -1019,21 +1354,21 @@
         "Ação",
         "Luta"
       ],
-      "tipo": "Ação, Luta",
-      "armazenamentos": [],
+      "cod": "9d",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Luta"
     },
     {
       "id": "mvtw731v6tyu",
-      "cod": "9c",
       "nome": "SpongeBob HeroPants",
+      "descricao": "SpongeBob HeroPants é um jogo de ação e aventura em plataforma 3D que se passa logo após os eventos do filme Bob Esponja: Um Herói Fora D'Água.\n\nSinopse e Enredo\n\n• O Início: A história começa quando Bob Esponja acredita que terá um dia normal de trabalho indo até o Siri Cascudo. Ao lado de Sandy e Patrick, ele descobre que o local está uma confusão e o Sr. Siriguejo, Lula Molusco e Plankton estão sendo perseguidos por objetos estranhos.\n• A Reviravolta: Bob Esponja inicialmente culpa Plankton pela bagunça, mas uma entidade chamada Bolhas (Bubbles) surge de um triângulo espacial e explica que Plankton não é o verdadeiro culpado.\n• A Realidade Alternativa: A imaginação de Bob Esponja e os sonhos/delírios distorcem a Fenda do Biquíni. Os heróis precisam viajar por versões alternativas da cidade — incluindo uma versão pré-histórica, uma de zona de guerra e uma feita de doces — para colocar as peças desse quebra-cabeça de volta no lugar e restaurar a paz.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 2.3,
-      "descricao": "SpongeBob HeroPants é um jogo de ação e aventura em plataforma 3D que se passa logo após os eventos do filme Bob Esponja: Um Herói Fora D'Água.\n\nSinopse e Enredo\n\n• O Início: A história começa quando Bob Esponja acredita que terá um dia normal de trabalho indo até o Siri Cascudo. Ao lado de Sandy e Patrick, ele descobre que o local está uma confusão e o Sr. Siriguejo, Lula Molusco e Plankton estão sendo perseguidos por objetos estranhos.\n• A Reviravolta: Bob Esponja inicialmente culpa Plankton pela bagunça, mas uma entidade chamada Bolhas (Bubbles) surge de um triângulo espacial e explica que Plankton não é o verdadeiro culpado.\n• A Realidade Alternativa: A imaginação de Bob Esponja e os sonhos/delírios distorcem a Fenda do Biquíni. Os heróis precisam viajar por versões alternativas da cidade — incluindo uma versão pré-histórica, uma de zona de guerra e uma feita de doces — para colocar as peças desse quebra-cabeça de volta no lugar e restaurar a paz.",
       "imagens": [
         "imagens/spongebob-heropants-mvtw71mrku6o.jpg"
       ],
@@ -1043,21 +1378,21 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
-      "armazenamentos": [],
+      "cod": "9c",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvtw595xbnnm",
-      "cod": "9b",
       "nome": "Resident Evil Zero",
+      "descricao": "Resident Evil Zero (lançado em versão HD Remaster para Xbox 360 e outras plataformas) serve como uma prequela direta do primeiro jogo da franquia.\n\nSinopse e Enredo\n\n• O Contexto (Julho de 1998): Uma série de assassinatos bizarros acontece nas Montanhas Arklay, perto de Raccoon City. A força policial de elite S.T.A.R.S. envia sua Equipe Bravo de helicóptero para investigar a região.\n• A Queda e o Trem: Durante o voo, o helicóptero sofre uma pane e faz um pouso forçado. Ao explorar os arredores, a jovem médica e novata Rebecca Chambers encontra um trem de luxo da Umbrella Corporation (o Ecliptic Express) parado no meio da floresta.\n• A Dupla Principal: Dentro do trem, Rebecca conhece Billy Coen, um ex-tenente da Marinha condenado à morte que estava sendo transportado por policiais (cujos corpos foram encontrados mortos no local).\n• Ameaça Biológica: O trem é tomado por sanguessugas mutantes e zumbis infectados pelo T-Vírus. Rebecca e Billy precisam unir forças para sobreviver, alternando entre os dois personagens para resolver quebra-cabeças e enfrentar criaturas.\n• O Centro de Treinamento e as Origens: O trem descontrolado bate em uma área abandonada, revelando um grande centro de treinamento subterrâneo da Umbrella. Lá, eles descobrem a verdade por trás das pesquisas da empresa e enfrentam James Marcus (um dos fundadores da Umbrella dado como morto anos atrás), que usa uma \"Rainha das Sanguessugas\" para buscar vingança contra a corporação.\n• Desfecho: Após derrotar a criatura, Billy e Rebecca se separam. Billy segue seu caminho como fugitivo, e Rebecca caminha em direção à misteriosa mansão na floresta — dando início aos eventos do Resident Evil original.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 4.1,
-      "descricao": "Resident Evil Zero (lançado em versão HD Remaster para Xbox 360 e outras plataformas) serve como uma prequela direta do primeiro jogo da franquia.\n\nSinopse e Enredo\n\n• O Contexto (Julho de 1998): Uma série de assassinatos bizarros acontece nas Montanhas Arklay, perto de Raccoon City. A força policial de elite S.T.A.R.S. envia sua Equipe Bravo de helicóptero para investigar a região.\n• A Queda e o Trem: Durante o voo, o helicóptero sofre uma pane e faz um pouso forçado. Ao explorar os arredores, a jovem médica e novata Rebecca Chambers encontra um trem de luxo da Umbrella Corporation (o Ecliptic Express) parado no meio da floresta.\n• A Dupla Principal: Dentro do trem, Rebecca conhece Billy Coen, um ex-tenente da Marinha condenado à morte que estava sendo transportado por policiais (cujos corpos foram encontrados mortos no local).\n• Ameaça Biológica: O trem é tomado por sanguessugas mutantes e zumbis infectados pelo T-Vírus. Rebecca e Billy precisam unir forças para sobreviver, alternando entre os dois personagens para resolver quebra-cabeças e enfrentar criaturas.\n• O Centro de Treinamento e as Origens: O trem descontrolado bate em uma área abandonada, revelando um grande centro de treinamento subterrâneo da Umbrella. Lá, eles descobrem a verdade por trás das pesquisas da empresa e enfrentam James Marcus (um dos fundadores da Umbrella dado como morto anos atrás), que usa uma \"Rainha das Sanguessugas\" para buscar vingança contra a corporação.\n• Desfecho: Após derrotar a criatura, Billy e Rebecca se separam. Billy segue seu caminho como fugitivo, e Rebecca caminha em direção à misteriosa mansão na floresta — dando início aos eventos do Resident Evil original.",
       "imagens": [
         "imagens/resident-evil-zero-mvtw57skejzb.jpg"
       ],
@@ -1069,21 +1404,21 @@
         "Aventura",
         "Terror"
       ],
-      "tipo": "Ação, Aventura, Terror",
-      "armazenamentos": [],
+      "cod": "9b",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Terror"
     },
     {
       "id": "mvtw2rmzq89q",
-      "cod": "9a",
       "nome": "Resident Evil Revelations 2",
+      "descricao": "Visão geral criada por IA\n      \nResident Evil Revelations 2 acompanha Claire Redfield e Moira Burton em 2011, quando são sequestradas em uma festa da ONG Terra Save e acordam em uma ilha-prisão remota infestada de criaturas mutantes.\n\nPontos principais da história\n\n• O sequestro (2011): Claire Redfield e Moira Burton (filha de Barry Burton) são capturadas por forças desconhecidas e levadas para uma ilha abandonada. Elas usam pulseiras que medem o nível de medo através de cores e tentam escapar enquanto são vigiadas por uma figura misteriosa conhecida como a \"Supervisora\" (Alex Wesker).\n• A busca de Barry (6 meses depois): Barry Burton chega à mesma ilha meio ano mais tarde para resgatar sua filha Moira. Ele encontra Natalia Korda, uma garotinha com habilidades especiais que consegue sentir a presença de monstros e do vírus.\n• Linha do tempo e revelações: A campanha alterna entre as duas duplas em momentos diferentes (Claire e Moira no passado; Barry e Natalia no presente), revelando experimentos com o vírus T-Phobos e os planos de Alex Wesker relacionados ao Projeto W.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 7.9,
-      "descricao": "Visão geral criada por IA\n      \nResident Evil Revelations 2 acompanha Claire Redfield e Moira Burton em 2011, quando são sequestradas em uma festa da ONG Terra Save e acordam em uma ilha-prisão remota infestada de criaturas mutantes.\n\nPontos principais da história\n\n• O sequestro (2011): Claire Redfield e Moira Burton (filha de Barry Burton) são capturadas por forças desconhecidas e levadas para uma ilha abandonada. Elas usam pulseiras que medem o nível de medo através de cores e tentam escapar enquanto são vigiadas por uma figura misteriosa conhecida como a \"Supervisora\" (Alex Wesker).\n• A busca de Barry (6 meses depois): Barry Burton chega à mesma ilha meio ano mais tarde para resgatar sua filha Moira. Ele encontra Natalia Korda, uma garotinha com habilidades especiais que consegue sentir a presença de monstros e do vírus.\n• Linha do tempo e revelações: A campanha alterna entre as duas duplas em momentos diferentes (Claire e Moira no passado; Barry e Natalia no presente), revelando experimentos com o vírus T-Phobos e os planos de Alex Wesker relacionados ao Projeto W.",
       "imagens": [
         "imagens/resident-evil-revelations-2-mvtw2q4qubw3.jpg"
       ],
@@ -1095,21 +1430,21 @@
         "Aventura",
         "Terror"
       ],
-      "tipo": "Ação, Aventura, Terror",
-      "armazenamentos": [],
+      "cod": "9a",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Terror"
     },
     {
       "id": "mvtw0pzv7yez",
-      "cod": "99",
       "nome": "Resident Evil Revelations 1",
+      "descricao": "A história de Resident Evil: Revelations se passa em 2005, entre os eventos de Resident Evil 4 e Resident Evil 5.\n\nPrincipais pontos da sinopse:\n\n• Contexto: Após a queda da Umbrella Corporation, é fundada a organização antiterrorista BSAA. O jogo também relembra o \"Pânico de Terragrigia\", uma cidade flutuante destruída anos antes após um ataque do grupo bioterrorista Il Veltro.\n• A Missão no Navio: Os agentes da BSAA Jill Valentine e seu parceiro Parker Luciani são enviados pelo chefe Clive R. O'Brian para o Mar Mediterrâneo. Eles vão atrás do paradeiro de Chris Redfield e da agente Jessica Sherawat, cuja última localização conhecida foi a bordo de um luxuoso navio de cruzeiro abandonado, o Queen Zenobia.\n• Ameaça Biológica: Ao entrarem no navio, Jill e Parker descobrem que a tripulação desapareceu e o local está infestado de criaturas deformadas mutadas pelo vírus T-Abyss.\n• Conspiração: Conforme a trama se desenrola — alternando entre a perspectiva de Jill no navio e outras equipes da BSAA em montanhas nevadas e bases —, os protagonistas percebem que caíram em uma armadilha e precisam desmascarar uma conspiração por trás do ressurgimento de Veltro e dos planos de contaminar os oceanos da Terra.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 8.6,
-      "descricao": "A história de Resident Evil: Revelations se passa em 2005, entre os eventos de Resident Evil 4 e Resident Evil 5.\n\nPrincipais pontos da sinopse:\n\n• Contexto: Após a queda da Umbrella Corporation, é fundada a organização antiterrorista BSAA. O jogo também relembra o \"Pânico de Terragrigia\", uma cidade flutuante destruída anos antes após um ataque do grupo bioterrorista Il Veltro.\n• A Missão no Navio: Os agentes da BSAA Jill Valentine e seu parceiro Parker Luciani são enviados pelo chefe Clive R. O'Brian para o Mar Mediterrâneo. Eles vão atrás do paradeiro de Chris Redfield e da agente Jessica Sherawat, cuja última localização conhecida foi a bordo de um luxuoso navio de cruzeiro abandonado, o Queen Zenobia.\n• Ameaça Biológica: Ao entrarem no navio, Jill e Parker descobrem que a tripulação desapareceu e o local está infestado de criaturas deformadas mutadas pelo vírus T-Abyss.\n• Conspiração: Conforme a trama se desenrola — alternando entre a perspectiva de Jill no navio e outras equipes da BSAA em montanhas nevadas e bases —, os protagonistas percebem que caíram em uma armadilha e precisam desmascarar uma conspiração por trás do ressurgimento de Veltro e dos planos de contaminar os oceanos da Terra.",
       "imagens": [
         "imagens/resident-evil-revelations-1-mvtw0ojy8o0f.jpg"
       ],
@@ -1121,21 +1456,21 @@
         "Aventura",
         "Terror"
       ],
-      "tipo": "Ação, Aventura, Terror",
-      "armazenamentos": [],
+      "cod": "99",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Terror"
     },
     {
       "id": "mvtvz18jtsju",
-      "cod": "98",
       "nome": "Resident Evil Operation Raccoon City",
+      "descricao": "Resident Evil: Operation Raccoon City é um jogo de tiro em terceira pessoa lançado em 2012 para Xbox 360, que reconta os eventos do trágico surto do T-vírus em Raccoon City (setembro de 1998) a partir de uma perspectiva inédita: a dos vilões.\n\nPrincipais pontos da sinopse e enredo:\n\n• O Lado da Umbrella: Em vez de controlar os heróis clássicos, você assume o papel de membros da Wolfpack (Equipe Delta), um esquadrão de elite do Umbrella Security Service (U.S.S.).\n• A Missão Inicial: O grupo é enviado a Raccoon City com ordens diretas da Corporação Umbrella para apagar qualquer vestígio do vazamento do T-vírus, destruir arquivos digitais e eliminar testemunhas ou sobreviventes que possam incriminar a empresa.\n• Conflito de Três Frentes: Além de lutar contra hordas de zumbis e armas biológicas (B.O.W.s), o esquadrão precisa enfrentar as US Special Ops (Equipe Echo Six), forças do governo americano enviadas ao local para coletar provas contra a Umbrella.\n• Reescrita da História: O jogo permite que o jogador tome decisões que alteram eventos canônicos da franquia, como decidir o destino de personagens clássicos como Leon S. Kennedy e Claire Redfield.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 4.8,
-      "descricao": "Resident Evil: Operation Raccoon City é um jogo de tiro em terceira pessoa lançado em 2012 para Xbox 360, que reconta os eventos do trágico surto do T-vírus em Raccoon City (setembro de 1998) a partir de uma perspectiva inédita: a dos vilões.\n\nPrincipais pontos da sinopse e enredo:\n\n• O Lado da Umbrella: Em vez de controlar os heróis clássicos, você assume o papel de membros da Wolfpack (Equipe Delta), um esquadrão de elite do Umbrella Security Service (U.S.S.).\n• A Missão Inicial: O grupo é enviado a Raccoon City com ordens diretas da Corporação Umbrella para apagar qualquer vestígio do vazamento do T-vírus, destruir arquivos digitais e eliminar testemunhas ou sobreviventes que possam incriminar a empresa.\n• Conflito de Três Frentes: Além de lutar contra hordas de zumbis e armas biológicas (B.O.W.s), o esquadrão precisa enfrentar as US Special Ops (Equipe Echo Six), forças do governo americano enviadas ao local para coletar provas contra a Umbrella.\n• Reescrita da História: O jogo permite que o jogador tome decisões que alteram eventos canônicos da franquia, como decidir o destino de personagens clássicos como Leon S. Kennedy e Claire Redfield.",
       "imagens": [
         "imagens/resident-evil-operation-raccoon-city-mvtvyzww8iz7.jpg"
       ],
@@ -1147,21 +1482,21 @@
         "Aventura",
         "Terror"
       ],
-      "tipo": "Ação, Aventura, Terror",
-      "armazenamentos": [],
+      "cod": "98",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Terror"
     },
     {
       "id": "mvtvxl5bws2j",
-      "cod": "97",
       "nome": "Resident Evil 5",
+      "descricao": "A sinopse de Resident Evil 5 para Xbox 360 gira em torno do agente Chris Redfield, que viaja até a região fictícia de Kijuju, na África Ocidental, para investigar uma nova e perigosa ameaça bioterrorista.\n\nPrincipais pontos da história:\n\n• O Contexto: Anos após a destruição da Umbrella Corporation e os eventos de Raccoon City, a proliferação de armas biológicas continuou espalhavel pelo mundo.\n• A Missão: Chris Redfield, agora um dos fundadores da organização Bioterrorism Security Assessment Alliance (BSAA), é enviado à África para impedir um tráfico de armas biológicas.\n• A Nova Parceira: Ele se junta a Sheva Alomar, agente local da BSAA, e juntos descobrem que os habitantes da cidade foram infectados pelos Majini (humanos controlados por parasitas evoluídos).\n• Conspiração e Rivais: Conforme a investigação avança, a dupla revela uma conspiração envolvendo a corporação Tricell e precisa confrontar fantasmas do passado de Chris, incluindo o retorno de seu arquinimigo Albert Wesker e o mistério envolvendo sua ex-parceira Jill Valentine.\n• Modo de Jogo: O título marcou a introdução de uma forte pegada de ação com cooperação obrigatória entre Chris e Sheva, que podia ser jogada com um amigo online ou com a inteligência artificial do jogo.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 7,
-      "descricao": "A sinopse de Resident Evil 5 para Xbox 360 gira em torno do agente Chris Redfield, que viaja até a região fictícia de Kijuju, na África Ocidental, para investigar uma nova e perigosa ameaça bioterrorista.\n\nPrincipais pontos da história:\n\n• O Contexto: Anos após a destruição da Umbrella Corporation e os eventos de Raccoon City, a proliferação de armas biológicas continuou espalhavel pelo mundo.\n• A Missão: Chris Redfield, agora um dos fundadores da organização Bioterrorism Security Assessment Alliance (BSAA), é enviado à África para impedir um tráfico de armas biológicas.\n• A Nova Parceira: Ele se junta a Sheva Alomar, agente local da BSAA, e juntos descobrem que os habitantes da cidade foram infectados pelos Majini (humanos controlados por parasitas evoluídos).\n• Conspiração e Rivais: Conforme a investigação avança, a dupla revela uma conspiração envolvendo a corporação Tricell e precisa confrontar fantasmas do passado de Chris, incluindo o retorno de seu arquinimigo Albert Wesker e o mistério envolvendo sua ex-parceira Jill Valentine.\n• Modo de Jogo: O título marcou a introdução de uma forte pegada de ação com cooperação obrigatória entre Chris e Sheva, que podia ser jogada com um amigo online ou com a inteligência artificial do jogo.",
       "imagens": [
         "imagens/resident-evil-5-mvtvxjos23mg.jpg"
       ],
@@ -1173,21 +1508,21 @@
         "Aventura",
         "Terror"
       ],
-      "tipo": "Ação, Aventura, Terror",
-      "armazenamentos": [],
+      "cod": "97",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Terror"
     },
     {
       "id": "mvtvwfvnriww",
-      "cod": "96",
       "nome": "Resident Evil 4 HD",
+      "descricao": "A sinopse de Resident Evil 4 HD para o Xbox 360 acompanha o agente especial Leon S. Kennedy (ex-policial de Raccoon City), que agora trabalha para o governo dos Estados Unidos.\n\nA História\n\n• A Missão: Seis anos após a destruição de Raccoon City, Ashley Graham, a filha do presidente dos EUA, é sequestrada por uma seita misteriosa.\n• O Local: Leon é enviado sozinho a uma vila rural e isolada na Espanha para investigar e resgatar a jovem.\n• A Ameaça: Ao chegar, ele descobre que os habitantes locais foram infectados por um parasita mental chamado Las Plagas, controlado por um culto religioso chamado Los Iluminados (liderado por Osmund Saddler).\n• O Conflito: Leon precisa lutar contra hordas de aldeãos violentos (os Ganados), monstros mutantes e desvendar os planos do culto enquanto tenta proteger Ashley e escapar do local, contando com o apoio de rostos conhecidos como a espiã Ada Wong.\n\nDetalhes da Versão HD no Xbox 360\n\n• É uma versão remasterizada em alta definição (resolução em até 1080p e suporte a conquistas / Achievements) baseada no jogo clássico de 2005.\n• Inclui os conteúdos extras tradicionais do jogo, como o modo Separate Ways (campanha da Ada Wong) e o modo Mercenaries.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 4,
-      "descricao": "A sinopse de Resident Evil 4 HD para o Xbox 360 acompanha o agente especial Leon S. Kennedy (ex-policial de Raccoon City), que agora trabalha para o governo dos Estados Unidos.\n\nA História\n\n• A Missão: Seis anos após a destruição de Raccoon City, Ashley Graham, a filha do presidente dos EUA, é sequestrada por uma seita misteriosa.\n• O Local: Leon é enviado sozinho a uma vila rural e isolada na Espanha para investigar e resgatar a jovem.\n• A Ameaça: Ao chegar, ele descobre que os habitantes locais foram infectados por um parasita mental chamado Las Plagas, controlado por um culto religioso chamado Los Iluminados (liderado por Osmund Saddler).\n• O Conflito: Leon precisa lutar contra hordas de aldeãos violentos (os Ganados), monstros mutantes e desvendar os planos do culto enquanto tenta proteger Ashley e escapar do local, contando com o apoio de rostos conhecidos como a espiã Ada Wong.\n\nDetalhes da Versão HD no Xbox 360\n\n• É uma versão remasterizada em alta definição (resolução em até 1080p e suporte a conquistas / Achievements) baseada no jogo clássico de 2005.\n• Inclui os conteúdos extras tradicionais do jogo, como o modo Separate Ways (campanha da Ada Wong) e o modo Mercenaries.",
       "imagens": [
         "imagens/resident-evil-4-hd-mvtvwec8t6ic.jpg"
       ],
@@ -1199,21 +1534,21 @@
         "Aventura",
         "Terror"
       ],
-      "tipo": "Ação, Aventura, Terror",
-      "armazenamentos": [],
+      "cod": "96",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Terror"
     },
     {
       "id": "mvtvumn1s201",
-      "cod": "95",
       "nome": "Resident Evil 1",
+      "descricao": "A sinopse de Resident Evil (lançado para Xbox 360 na versão Resident Evil HD Remaster, baseada no remake de 2002) gira em torno de uma equipe de resgate que fica presa em uma mansão cheia de criaturas.\n\nPontos principais da história:\n\n• O Contexto (Julho de 1998): Uma série de assassinatos brutais e casos de canibalismo acontece nas Montanhas Arklay, perto da cidade de Raccoon City.\n• A Missão: O departamento de polícia envia a equipe de elite S.T.A.R.S. (Dividida entre Equipe Bravo e Equipe Alpha) para investigar o sumiço dos primeiros agentes.\n• A Fuga para a Mansão: A Equipe Alpha (formada por Chris Redfield, Jill Valentine, Barry Burton, Albert Wesker, Joseph Frost e Brad Vickers) é atacada por cães mutantes na floresta e perde um dos membros. Sem o helicóptero, eles buscam refúgio em uma mansão supostamente abandonada.\n• O Pesadelo Biológico: Presos no local, eles descobrem que a mansão esconde laboratórios subterrâneos da Umbrella Corporation, responsável por criar o T-Vírus, um agente químico que transforma humanos e animais em zumbis e monstros.\n• A Traição: Os sobreviventes descobrem que o capitão Albert Wesker é um agente duplo que trabalha para a Umbrella e planeja usar a própria equipe como cobaias para armas biológicas (como o temível Tyrant).",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 6.2,
-      "descricao": "A sinopse de Resident Evil (lançado para Xbox 360 na versão Resident Evil HD Remaster, baseada no remake de 2002) gira em torno de uma equipe de resgate que fica presa em uma mansão cheia de criaturas.\n\nPontos principais da história:\n\n• O Contexto (Julho de 1998): Uma série de assassinatos brutais e casos de canibalismo acontece nas Montanhas Arklay, perto da cidade de Raccoon City.\n• A Missão: O departamento de polícia envia a equipe de elite S.T.A.R.S. (Dividida entre Equipe Bravo e Equipe Alpha) para investigar o sumiço dos primeiros agentes.\n• A Fuga para a Mansão: A Equipe Alpha (formada por Chris Redfield, Jill Valentine, Barry Burton, Albert Wesker, Joseph Frost e Brad Vickers) é atacada por cães mutantes na floresta e perde um dos membros. Sem o helicóptero, eles buscam refúgio em uma mansão supostamente abandonada.\n• O Pesadelo Biológico: Presos no local, eles descobrem que a mansão esconde laboratórios subterrâneos da Umbrella Corporation, responsável por criar o T-Vírus, um agente químico que transforma humanos e animais em zumbis e monstros.\n• A Traição: Os sobreviventes descobrem que o capitão Albert Wesker é um agente duplo que trabalha para a Umbrella e planeja usar a própria equipe como cobaias para armas biológicas (como o temível Tyrant).",
       "imagens": [
         "imagens/resident-evil-1-mvtvul5xz160.jpg"
       ],
@@ -1225,21 +1560,21 @@
         "Aventura",
         "Terror"
       ],
-      "tipo": "Ação, Aventura, Terror",
-      "armazenamentos": [],
+      "cod": "95",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Terror"
     },
     {
       "id": "mvtvq9hov9p1",
-      "cod": "94",
       "nome": "Resident Evil Code Veronica",
+      "descricao": "A história de Resident Evil Code: Veronica X (lançado em HD para o Xbox 360) se passa três meses após os eventos de Resident Evil 2 e a destruição de Raccoon City.\n\nSinopse e Enredo\n\n• A Busca de Claire: Claire Redfield continua procurando pelo seu irmão desaparecido, Chris Redfield. Ela invade uma instalação da Corporação Umbrella em Paris, mas acaba sendo capturada e enviada como prisioneira para a remota Ilha Rockfort, uma base militar e centro de detenção da empresa.\n• O Surto na Ilha: Logo após sua chegada, a ilha é atacada por forças misteriosas e o Vírus T é liberado, transformando guardas e prisioneiros em zumbis. Claire consegue escapar de sua cela e se une a outro prisioneiro chamado Steve Burnside para tentar fugir do local.\n• A Família Ashford: Durante a fuga, Claire descobre que a ilha é controlada pelos irmãos Alfred e Alexia Ashford, herdeiros de uma das famílias fundadoras da Umbrella.\n• A Chegada de Chris: Na segunda metade do jogo, o controle muda para Chris Redfield, que descobre o paradeiro da irmã e vai até a Ilha Rockfort e depois para uma base de pesquisa da Umbrella na Antártica para resgatá-la e enfrentar velhos inimigos, incluindo o retorno de Albert Wesker.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 4.3,
-      "descricao": "A história de Resident Evil Code: Veronica X (lançado em HD para o Xbox 360) se passa três meses após os eventos de Resident Evil 2 e a destruição de Raccoon City.\n\nSinopse e Enredo\n\n• A Busca de Claire: Claire Redfield continua procurando pelo seu irmão desaparecido, Chris Redfield. Ela invade uma instalação da Corporação Umbrella em Paris, mas acaba sendo capturada e enviada como prisioneira para a remota Ilha Rockfort, uma base militar e centro de detenção da empresa.\n• O Surto na Ilha: Logo após sua chegada, a ilha é atacada por forças misteriosas e o Vírus T é liberado, transformando guardas e prisioneiros em zumbis. Claire consegue escapar de sua cela e se une a outro prisioneiro chamado Steve Burnside para tentar fugir do local.\n• A Família Ashford: Durante a fuga, Claire descobre que a ilha é controlada pelos irmãos Alfred e Alexia Ashford, herdeiros de uma das famílias fundadoras da Umbrella.\n• A Chegada de Chris: Na segunda metade do jogo, o controle muda para Chris Redfield, que descobre o paradeiro da irmã e vai até a Ilha Rockfort e depois para uma base de pesquisa da Umbrella na Antártica para resgatá-la e enfrentar velhos inimigos, incluindo o retorno de Albert Wesker.",
       "imagens": [
         "imagens/resident-evil-code-veronica-mvtvq7xmopcj.jpg"
       ],
@@ -1251,21 +1586,21 @@
         "Aventura",
         "Terror"
       ],
-      "tipo": "Ação, Aventura, Terror",
-      "armazenamentos": [],
+      "cod": "94",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Terror"
     },
     {
       "id": "mvtvosac6mto",
-      "cod": "93",
       "nome": "Need For Speed Most Wanted",
+      "descricao": "A sinopse de Need for Speed: Most Wanted gira em torno de um piloto novato que chega à cidade fictícia de Rockport dirigindo uma valiosa BMW M3 GTR.\n\nA História Principal\n\n• A Traição: O protagonista é desafiado por Clarence \"Razor\" Callahan, um corredor arrogante que faz parte da Blacklist (uma lista com os 15 pilotos de rua mais procurados da cidade). Razor sabota o motor da BMW do jogador para vencer a corrida ilegal e roubar o carro.\n• A Prisão: Logo após perder o veículo, o protagonista é preso pela polícia local, liderada pelo implacável Sargento Jonathan Cross.\n• A Aliança e Vingança: Após ser solto por falta de provas, o jogador conta com a ajuda de uma misteriosa aliada chamada Mia Townsend. Ela o orienta a recomeçar do zero, vencer os rivais da Blacklist, desafiar Razor e recuperar sua BMW M3 GTR.\n• O Objetivo: Para subir na hierarquia e desafiar cada integrante da Blacklist, o jogador precisa vencer corridas clandestinas, acumular reputação e escapar de perseguições policiais cada vez mais violentas.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 3.8,
-      "descricao": "A sinopse de Need for Speed: Most Wanted gira em torno de um piloto novato que chega à cidade fictícia de Rockport dirigindo uma valiosa BMW M3 GTR.\n\nA História Principal\n\n• A Traição: O protagonista é desafiado por Clarence \"Razor\" Callahan, um corredor arrogante que faz parte da Blacklist (uma lista com os 15 pilotos de rua mais procurados da cidade). Razor sabota o motor da BMW do jogador para vencer a corrida ilegal e roubar o carro.\n• A Prisão: Logo após perder o veículo, o protagonista é preso pela polícia local, liderada pelo implacável Sargento Jonathan Cross.\n• A Aliança e Vingança: Após ser solto por falta de provas, o jogador conta com a ajuda de uma misteriosa aliada chamada Mia Townsend. Ela o orienta a recomeçar do zero, vencer os rivais da Blacklist, desafiar Razor e recuperar sua BMW M3 GTR.\n• O Objetivo: Para subir na hierarquia e desafiar cada integrante da Blacklist, o jogador precisa vencer corridas clandestinas, acumular reputação e escapar de perseguições policiais cada vez mais violentas.",
       "imagens": [
         "imagens/need-for-speed-most-wanted-mvtw9k522vhc.jpg"
       ],
@@ -1275,21 +1610,21 @@
       "tipos": [
         "Corrida"
       ],
-      "tipo": "Corrida",
-      "armazenamentos": [],
+      "cod": "93",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Corrida"
     },
     {
       "id": "mvtvmf2sgv3d",
-      "cod": "92",
       "nome": "Need For Speed Collectors Edition",
+      "descricao": "A sinopse de Need for Speed: Carbon - Collector's Edition para Xbox 360 acompanha a continuação direta dos eventos de Need for Speed: Most Wanted.\n\nSinopse e Enredo\n\n• O Retorno à Cidade: O protagonista retorna à cidade fictícia de Palmont City após os acontecimentos em Most Wanted.\n• Guerra de Territórios: O jogador precisa limpar seu nome e reconquistar o controle da cidade dominando bairros nas mãos de gangues rivais (crews).\n• Mecânica de Equipe: Pela primeira vez na franquia, você monta e gerencia sua própria equipe de corredores, usando ajudantes estratégicos (wingmen como blockers, drafters e scouts) durante as disputas.\n• O Desfecho no Cânion: O grande diferencial e ápice das disputas acontecem nas perigosas corridas de drift e duelos noturnos nos desfiladeiros (canyon duels), onde um erro de cálculo na beirada do penhasco pode ser fatal.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 5.2,
-      "descricao": "A sinopse de Need for Speed: Carbon - Collector's Edition para Xbox 360 acompanha a continuação direta dos eventos de Need for Speed: Most Wanted.\n\nSinopse e Enredo\n\n• O Retorno à Cidade: O protagonista retorna à cidade fictícia de Palmont City após os acontecimentos em Most Wanted.\n• Guerra de Territórios: O jogador precisa limpar seu nome e reconquistar o controle da cidade dominando bairros nas mãos de gangues rivais (crews).\n• Mecânica de Equipe: Pela primeira vez na franquia, você monta e gerencia sua própria equipe de corredores, usando ajudantes estratégicos (wingmen como blockers, drafters e scouts) durante as disputas.\n• O Desfecho no Cânion: O grande diferencial e ápice das disputas acontecem nas perigosas corridas de drift e duelos noturnos nos desfiladeiros (canyon duels), onde um erro de cálculo na beirada do penhasco pode ser fatal.",
       "imagens": [
         "imagens/need-for-speed-collectors-edition-mvtvmdso48q0.jpg"
       ],
@@ -1299,21 +1634,21 @@
       "tipos": [
         "Corrida"
       ],
-      "tipo": "Corrida",
-      "armazenamentos": [],
+      "cod": "92",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Corrida"
     },
     {
       "id": "mvtvizxu2seq",
-      "cod": "91",
       "nome": "NBA Street Homecourt",
+      "descricao": "NBA Street Homecourt é um jogo de basquete arcade no estilo 3 contra 3 desenvolvido pela EA Black Box e lançado em 2007 para o Xbox 360.\n\nSinopse e Proposta do Jogo\n\n• Modo Carreira (Homecourt Challenge): Você cria o seu próprio jogador de basquete. A jornada começa na sua própria quadra de origem (\"hometown\"), onde você recruta parceiros de rua locais.\n• Evolução e Desafios: À medida que você vence partidas e ganha respeito, viaja por diferentes quadras icônicas dos Estados Unidos — muitas delas inspiradas nos locais reais onde grandes estrelas da NBA cresceram e treinaram.\n• Recrutamento de Estrelas: O objetivo final é subir nos rankings do basquete de rua e conseguir recrutar lendas e astros da NBA (como LeBron James, Dwyane Wade e Shaquille O'Neal) para o seu time.\n• Estilo de Jogo: Diferente do basquete tradicional e simuladores sérios, o jogo foca em enterradas extravagantes, combos de dribles (\"Gamebreakers\"), estilo visual exagerado e regras mais relaxadas.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 4.6,
-      "descricao": "NBA Street Homecourt é um jogo de basquete arcade no estilo 3 contra 3 desenvolvido pela EA Black Box e lançado em 2007 para o Xbox 360.\n\nSinopse e Proposta do Jogo\n\n• Modo Carreira (Homecourt Challenge): Você cria o seu próprio jogador de basquete. A jornada começa na sua própria quadra de origem (\"hometown\"), onde você recruta parceiros de rua locais.\n• Evolução e Desafios: À medida que você vence partidas e ganha respeito, viaja por diferentes quadras icônicas dos Estados Unidos — muitas delas inspiradas nos locais reais onde grandes estrelas da NBA cresceram e treinaram.\n• Recrutamento de Estrelas: O objetivo final é subir nos rankings do basquete de rua e conseguir recrutar lendas e astros da NBA (como LeBron James, Dwyane Wade e Shaquille O'Neal) para o seu time.\n• Estilo de Jogo: Diferente do basquete tradicional e simuladores sérios, o jogo foca em enterradas extravagantes, combos de dribles (\"Gamebreakers\"), estilo visual exagerado e regras mais relaxadas.",
       "imagens": [
         "imagens/nba-street-homecourt-mvtviyica5bc.jpg"
       ],
@@ -1323,21 +1658,21 @@
       "tipos": [
         "Esporte"
       ],
-      "tipo": "Esporte",
-      "armazenamentos": [],
+      "cod": "91",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Esporte"
     },
     {
       "id": "mvtvhbu2bpte",
-      "cod": "90",
       "nome": "Naruto Shippuden Ultimate Ninja Storm 3 Full Burst",
+      "descricao": "A sinopse de Naruto Shippuden: Ultimate Ninja Storm 3 Full Burst acompanha os eventos da Quarta Grande Guerra Ninja e o confronto épico da Aliança Shinobi contra a Akatsuki e Madara Uchiha, além de iniciar com um flashback do ataque da Raposa de Nove-Caudas em Konoha e a Reunião dos Cinco Kage.\n\nPrincipais pontos da história e da edição:\n\n• Modo História: Focado no conflito da guerra e nas batalhas contra chefes gigantescos e marcantes do anime.\n• Capítulo Adicional (Exclusivo Full Burst): Traz um arco especial onde os irmãos Sasuke e Itachi Uchiha lutam juntos contra Kabuto Yakushi (em seu Modo Sábio / Sage Mode).\n• Conteúdo Incluso: A versão Full Burst para Xbox 360 reúne o jogo base com todas as roupas/visuais (skins) lançados anteriormente via DLC, além de um Challenge Mode com 100 missões inéditas.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 7.2,
-      "descricao": "A sinopse de Naruto Shippuden: Ultimate Ninja Storm 3 Full Burst acompanha os eventos da Quarta Grande Guerra Ninja e o confronto épico da Aliança Shinobi contra a Akatsuki e Madara Uchiha, além de iniciar com um flashback do ataque da Raposa de Nove-Caudas em Konoha e a Reunião dos Cinco Kage.\n\nPrincipais pontos da história e da edição:\n\n• Modo História: Focado no conflito da guerra e nas batalhas contra chefes gigantescos e marcantes do anime.\n• Capítulo Adicional (Exclusivo Full Burst): Traz um arco especial onde os irmãos Sasuke e Itachi Uchiha lutam juntos contra Kabuto Yakushi (em seu Modo Sábio / Sage Mode).\n• Conteúdo Incluso: A versão Full Burst para Xbox 360 reúne o jogo base com todas as roupas/visuais (skins) lançados anteriormente via DLC, além de um Challenge Mode com 100 missões inéditas.",
       "imagens": [
         "imagens/naruto-shippuden-ultimate-ninja-storm-3--mvtvha2wh3wk.jpg"
       ],
@@ -1349,21 +1684,21 @@
         "Aventura",
         "Luta"
       ],
-      "tipo": "Ação, Aventura, Luta",
-      "armazenamentos": [],
+      "cod": "90",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Luta"
     },
     {
       "id": "mvtvfr39vwm1",
-      "cod": "8z",
       "nome": "Naruto Shippuden Ultimate Ninja Storm 2",
+      "descricao": "Naruto Shippuden: Ultimate Ninja Storm 2 acompanha o retorno de Naruto Uzumaki à Vila da Folha (Konoha) após dois anos e meio de treinamento ninja com Jiraiya, cobrindo os eventos da fase Shippuden até a épica batalha contra Pain.\n\nPrincipais pontos da história:\n\n• O Retorno e a Akatsuki: Naruto reencontra seus amigos e precisa proteger a vila e seus companheiros contra a perigosa organização criminosa Akatsuki, que busca capturar as Fijas de Buda (Bijuus).\n• Resgate e Missões: A campanha principal se desenvolve ao longo de um prólogo e 9 capítulos, onde os jogadores controlam não apenas Naruto, mas também outros personagens em momentos-chave da trama.\n• O Clímax: O enredo principal se encerra no confronto devastador de Naruto contra Pain, além de contar com capítulos extras, como a luta de Sasuke contra Killer Bee.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 3.2,
-      "descricao": "Naruto Shippuden: Ultimate Ninja Storm 2 acompanha o retorno de Naruto Uzumaki à Vila da Folha (Konoha) após dois anos e meio de treinamento ninja com Jiraiya, cobrindo os eventos da fase Shippuden até a épica batalha contra Pain.\n\nPrincipais pontos da história:\n\n• O Retorno e a Akatsuki: Naruto reencontra seus amigos e precisa proteger a vila e seus companheiros contra a perigosa organização criminosa Akatsuki, que busca capturar as Fijas de Buda (Bijuus).\n• Resgate e Missões: A campanha principal se desenvolve ao longo de um prólogo e 9 capítulos, onde os jogadores controlam não apenas Naruto, mas também outros personagens em momentos-chave da trama.\n• O Clímax: O enredo principal se encerra no confronto devastador de Naruto contra Pain, além de contar com capítulos extras, como a luta de Sasuke contra Killer Bee.",
       "imagens": [
         "imagens/naruto-shippuden-ultimate-ninja-storm-2-mvtvfpfs9vou.jpg"
       ],
@@ -1375,21 +1710,21 @@
         "Aventura",
         "Luta"
       ],
-      "tipo": "Ação, Aventura, Luta",
-      "armazenamentos": [],
+      "cod": "8z",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Luta"
     },
     {
       "id": "mvtvdesmsi3b",
-      "cod": "8y",
       "nome": "Minecraft Story Mode Season 1",
+      "descricao": "A sinopse de Minecraft: Story Mode - Temporada 1 (disponível para Xbox 360 e outras plataformas) gira em torno de Jesse e seu grupo de amigos (Axel, Olivia e o porquinho Reuben).\n\nSinopse Principal\n\n• O Ponto de Partida: Durante um evento chamado EnderCon, Jesse e seus amigos competem em uma feira de construções. No entanto, um acontecimento aterrorizante dá início a uma crise grave no Overworld (Mundo Superior).\n• A Ordem da Pedra: Para tentar salvar o mundo da destruição, o grupo precisa encontrar a lendária Ordem da Pedra — quatro heróis que, no passado, derrotaram o temido Ender Dragon.\n• A Jornada: A trama se desenrola através de escolhas feitas pelo jogador em formato de \"filme interativo\", levando o grupo por diferentes dimensões do universo Minecraft, como o Nether, o Fim (The End) e as Terras Distantes (Farlands).\n\nDetalhes Importantes da Versão do Xbox 360\n\n• Formato: O jogo foi lançado em episódios (divididos em 8 capítulos no total da 1ª temporada, incluindo o arco principal e episódios extras de aventura).",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 5.6,
-      "descricao": "A sinopse de Minecraft: Story Mode - Temporada 1 (disponível para Xbox 360 e outras plataformas) gira em torno de Jesse e seu grupo de amigos (Axel, Olivia e o porquinho Reuben).\n\nSinopse Principal\n\n• O Ponto de Partida: Durante um evento chamado EnderCon, Jesse e seus amigos competem em uma feira de construções. No entanto, um acontecimento aterrorizante dá início a uma crise grave no Overworld (Mundo Superior).\n• A Ordem da Pedra: Para tentar salvar o mundo da destruição, o grupo precisa encontrar a lendária Ordem da Pedra — quatro heróis que, no passado, derrotaram o temido Ender Dragon.\n• A Jornada: A trama se desenrola através de escolhas feitas pelo jogador em formato de \"filme interativo\", levando o grupo por diferentes dimensões do universo Minecraft, como o Nether, o Fim (The End) e as Terras Distantes (Farlands).\n\nDetalhes Importantes da Versão do Xbox 360\n\n• Formato: O jogo foi lançado em episódios (divididos em 8 capítulos no total da 1ª temporada, incluindo o arco principal e episódios extras de aventura).",
       "imagens": [
         "imagens/minecraft-story-mode-season-1-mvtvdd1c0nln.jpg"
       ],
@@ -1399,21 +1734,21 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
-      "armazenamentos": [],
+      "cod": "8y",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvtvaafv4ohg",
-      "cod": "8x",
       "nome": "Midnight Club Los Angeles",
+      "descricao": "O jogador assume o controle de um recém-chegado (um homem da Costa Leste dos Estados Unidos) que se muda para Los Angeles com um único objetivo: tornar-se o maior e mais respeitado corredor de rua da cidade.\n\nPontos principais do enredo e jogabilidade:\n\n• O Início: Ao chegar em Los Angeles, o protagonista recebe uma ligação misteriosa de Booke (o campeão da cidade) e é orientado a encontrá-lo em uma lanchonete chamada Carney's Express Limited.\n• Primeiro Carro: O jogador pode escolher entre três veículos iniciais para dar os primeiros passos nas ruas: um Nissan 240SX (1998), um Volkswagen Golf GTI (1983) ou um Volkswagen Scirocco (1988).\n• Ascensão por Reputação: Conforme vence rachas, foge da polícia e ganha moral na cena local, ele desafia os chefes de diferentes categorias e regiões (como Hollywood, Downtown, Hills e Beach) para conquistar o título de campeão de cada classe de veículo até dominar a cidade.\n• Apostas e Riscos: Durante a campanha, é possível desafiar rivais piscando os faróis para corridas rápidas, participar de apostas em dinheiro (Wager Races) ou arriscar o próprio possante em disputas do tipo Pink Slip para levar o carro do perdedor.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 6.3,
-      "descricao": "O jogador assume o controle de um recém-chegado (um homem da Costa Leste dos Estados Unidos) que se muda para Los Angeles com um único objetivo: tornar-se o maior e mais respeitado corredor de rua da cidade.\n\nPontos principais do enredo e jogabilidade:\n\n• O Início: Ao chegar em Los Angeles, o protagonista recebe uma ligação misteriosa de Booke (o campeão da cidade) e é orientado a encontrá-lo em uma lanchonete chamada Carney's Express Limited.\n• Primeiro Carro: O jogador pode escolher entre três veículos iniciais para dar os primeiros passos nas ruas: um Nissan 240SX (1998), um Volkswagen Golf GTI (1983) ou um Volkswagen Scirocco (1988).\n• Ascensão por Reputação: Conforme vence rachas, foge da polícia e ganha moral na cena local, ele desafia os chefes de diferentes categorias e regiões (como Hollywood, Downtown, Hills e Beach) para conquistar o título de campeão de cada classe de veículo até dominar a cidade.\n• Apostas e Riscos: Durante a campanha, é possível desafiar rivais piscando os faróis para corridas rápidas, participar de apostas em dinheiro (Wager Races) ou arriscar o próprio possante em disputas do tipo Pink Slip para levar o carro do perdedor.",
       "imagens": [
         "imagens/midnight-club-los-angeles-mvtva8z4wnl4.jpg"
       ],
@@ -1423,21 +1758,21 @@
       "tipos": [
         "Corrida"
       ],
-      "tipo": "Corrida",
-      "armazenamentos": [],
+      "cod": "8x",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Corrida"
     },
     {
       "id": "mvtv92tb5pst",
-      "cod": "8w",
       "nome": "METAL GEAR RISING REVENGEANCE",
+      "descricao": "Metal Gear Rising: Revengeance se passa quatro anos após os eventos de Metal Gear Solid 4: Guns of the Patriots.\n\nSinopse Principal\n\n• O Contexto: Com o colapso do sistema Patriots, que controlava as sombras do poder global, a paz mundial continua frágil. A proliferação da tecnologia cibernética gerou grande instabilidade, e as Grandes Companhias Militares Privadas (PMCs) deram lugar a organizações criminosas e grupos de ciborgues renegados que tentam manipular a política e a economia.\n• O Protagonista: Você controla Raiden, um ninja ciborgue que agora trabalha para a Maverick Security, uma PMC voltada para a manutenção da paz e proteção de vidas.\n• O Conflito: Raiden é encarregado de proteger o primeiro-ministro de uma pacífica nação africana. No entanto, o grupo mercenário rival Desperado Enforcement (Desperado Enterprises) ataca, assassina o primeiro-ministro e deixa Raiden gravemente ferido.\n• A Missão de Vingança: Após ser reconstruído com uma armadura e poder de combate ainda maiores, Raiden parte em uma jornada de ação intensa ao redor do mundo para caçar a Desperado, desvendar uma conspiração militar e confrontar seu próprio passado violento como ex-criança soldado.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 7.5,
-      "descricao": "Metal Gear Rising: Revengeance se passa quatro anos após os eventos de Metal Gear Solid 4: Guns of the Patriots.\n\nSinopse Principal\n\n• O Contexto: Com o colapso do sistema Patriots, que controlava as sombras do poder global, a paz mundial continua frágil. A proliferação da tecnologia cibernética gerou grande instabilidade, e as Grandes Companhias Militares Privadas (PMCs) deram lugar a organizações criminosas e grupos de ciborgues renegados que tentam manipular a política e a economia.\n• O Protagonista: Você controla Raiden, um ninja ciborgue que agora trabalha para a Maverick Security, uma PMC voltada para a manutenção da paz e proteção de vidas.\n• O Conflito: Raiden é encarregado de proteger o primeiro-ministro de uma pacífica nação africana. No entanto, o grupo mercenário rival Desperado Enforcement (Desperado Enterprises) ataca, assassina o primeiro-ministro e deixa Raiden gravemente ferido.\n• A Missão de Vingança: Após ser reconstruído com uma armadura e poder de combate ainda maiores, Raiden parte em uma jornada de ação intensa ao redor do mundo para caçar a Desperado, desvendar uma conspiração militar e confrontar seu próprio passado violento como ex-criança soldado.",
       "imagens": [
         "imagens/metal-gear-rising-revengeance-mvtv91dgdp92.jpg"
       ],
@@ -1449,21 +1784,21 @@
         "Aventura",
         "Luta"
       ],
-      "tipo": "Ação, Aventura, Luta",
-      "armazenamentos": [],
+      "cod": "8w",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Luta"
     },
     {
       "id": "mvtv7jrzveqp",
-      "cod": "8v",
       "nome": "MAX PAYNE 3",
+      "descricao": "Max Payne 3 (lançado para Xbox 360 em 2012) acompanha Max Payne, um ex-detetive da polícia de Nova York (NYPD) e ex-agente da DEA, traumatizado, alcoólatra e viciado em analgésicos, nove anos após os eventos do segundo jogo.\n\nPrincipais pontos da sinopse:\n\n• O novo emprego no Brasil: Após se envolver em uma confusão em Nova Jersey, Max é convidado por seu antigo colega da academia, Raul Passos, para trabalhar como segurança particular de Rodrigo Branco, um rico magnata do ramo imobiliário em São Paulo.\n• A família Branco: Max passa a proteger Rodrigo, sua esposa Fabiana, o irmão festivo Marcelo e o irmão político Vitor Branco.\n• O sequestro e o caos: A rotina é interrompida quando uma gangue local de tráfico chamada Comando Sombra sequestra Fabiana e outros membros da família durante eventos sociais.\n• Conspiração e milícias: O que parece ser um simples resgate se transforma em uma trama complexa envolvendo corrupção política, forças especiais corruptas (a UF de Armando Becker), paramilitares brutais (o grupo Crachá Preto) e um esquema sombrio de tráfico de órgãos.\n• A busca pela verdade: Sozinho nas ruas e favelas de São Paulo, Max precisa lutar contra múltiplas facções criminosas e confrontar os traidores por trás da tragédia para tentar encontrar uma saída e um mínimo de redenção.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 15,
-      "descricao": "Max Payne 3 (lançado para Xbox 360 em 2012) acompanha Max Payne, um ex-detetive da polícia de Nova York (NYPD) e ex-agente da DEA, traumatizado, alcoólatra e viciado em analgésicos, nove anos após os eventos do segundo jogo.\n\nPrincipais pontos da sinopse:\n\n• O novo emprego no Brasil: Após se envolver em uma confusão em Nova Jersey, Max é convidado por seu antigo colega da academia, Raul Passos, para trabalhar como segurança particular de Rodrigo Branco, um rico magnata do ramo imobiliário em São Paulo.\n• A família Branco: Max passa a proteger Rodrigo, sua esposa Fabiana, o irmão festivo Marcelo e o irmão político Vitor Branco.\n• O sequestro e o caos: A rotina é interrompida quando uma gangue local de tráfico chamada Comando Sombra sequestra Fabiana e outros membros da família durante eventos sociais.\n• Conspiração e milícias: O que parece ser um simples resgate se transforma em uma trama complexa envolvendo corrupção política, forças especiais corruptas (a UF de Armando Becker), paramilitares brutais (o grupo Crachá Preto) e um esquema sombrio de tráfico de órgãos.\n• A busca pela verdade: Sozinho nas ruas e favelas de São Paulo, Max precisa lutar contra múltiplas facções criminosas e confrontar os traidores por trás da tragédia para tentar encontrar uma saída e um mínimo de redenção.",
       "imagens": [
         "imagens/max-payne-3-mvtv7igakzu6.jpg"
       ],
@@ -1474,21 +1809,21 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
-      "armazenamentos": [],
+      "cod": "8v",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvtv60h680t9",
-      "cod": "8u",
       "nome": "Marvel vs. Capcom 3 Fate of Two Worlds",
+      "descricao": "O jogo Marvel vs. Capcom 3: Fate of Two Worlds para Xbox 360 não foca em uma narrativa cinematográfica tradicional, mas sim em um grande crossover de luta.\n\nA Premissa / Sinopse\n\n• A Conspiração: O Doutor Destino (Doctor Doom) reúne os maiores vilões do Universo Marvel e firma uma aliança com Albert Wesker (da franquia Resident Evil, da Capcom).\n• O Objetivo: Eles planejam unir os dois universos (o da Marvel e o da Capcom) para conquistar e governar ambos.\n• A Ameaça Final: No modo Arcade, você escolhe um trio de personagens para lutar contra diversos rivais até enfrentar o grande chefe final: Galactus, o Devorador de Mundos, que ameaça destruir a realidade de ambos os lados.\n\nPrincipais Características\n\n• Jogabilidade em Equipe: Batalhas 3 contra 3 onde você pode alternar os lutadores em tempo real ou usar ataques de assistência.\n• Elenco: Reúne heróis e vilões clássicos de ambos os universos, como Homem-Aranha, Wolverine, Capitão América, Ryu, Dante e Zero.\n• Visual: Utiliza modelos tridimensionais com estilo de história em quadrinhos (estilo cel-shading), diferindo dos sprites 2D dos jogos anteriores.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 3.1,
-      "descricao": "O jogo Marvel vs. Capcom 3: Fate of Two Worlds para Xbox 360 não foca em uma narrativa cinematográfica tradicional, mas sim em um grande crossover de luta.\n\nA Premissa / Sinopse\n\n• A Conspiração: O Doutor Destino (Doctor Doom) reúne os maiores vilões do Universo Marvel e firma uma aliança com Albert Wesker (da franquia Resident Evil, da Capcom).\n• O Objetivo: Eles planejam unir os dois universos (o da Marvel e o da Capcom) para conquistar e governar ambos.\n• A Ameaça Final: No modo Arcade, você escolhe um trio de personagens para lutar contra diversos rivais até enfrentar o grande chefe final: Galactus, o Devorador de Mundos, que ameaça destruir a realidade de ambos os lados.\n\nPrincipais Características\n\n• Jogabilidade em Equipe: Batalhas 3 contra 3 onde você pode alternar os lutadores em tempo real ou usar ataques de assistência.\n• Elenco: Reúne heróis e vilões clássicos de ambos os universos, como Homem-Aranha, Wolverine, Capitão América, Ryu, Dante e Zero.\n• Visual: Utiliza modelos tridimensionais com estilo de história em quadrinhos (estilo cel-shading), diferindo dos sprites 2D dos jogos anteriores.",
       "imagens": [
         "imagens/marvel-vs-capcom-3-fate-of-two-worlds-mvtv5ywqigp0.jpg"
       ],
@@ -1499,21 +1834,21 @@
         "Luta",
         "Ação"
       ],
-      "tipo": "Luta, Ação",
-      "armazenamentos": [],
+      "cod": "8u",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Luta, Ação"
     },
     {
       "id": "mvtv0r07s4gj",
-      "cod": "8t",
       "nome": "Marvel vs Capcom 3 Ultimate",
+      "descricao": "O enredo de Ultimate Marvel vs. Capcom 3 é direto e focado na ação arcade, sem uma campanha narrativa complexa.\n\nA Sinopse\n\n• Ameaça cósmica: O devorador de mundos, Galactus, está a caminho da Terra com planos de destruir o planeta.\n• A União de Universos: Para impedir a catástrofe, os maiores heróis e vilões do universo Marvel e do universo Capcom precisam deixar suas rivalidades de lado e se unir em combates.\n• Formato das Lutas: O jogo utiliza o clássico sistema de lutas em equipes de 3 contra 3, onde o jogador escolhe um trio para enfrentar os adversários e, no clímax, tentar derrotar Galactus.\n\nPrincipais Destaques do Jogo no Xbox 360\n\n• Elenco expandido: Conta com um total de 50 personagens, unindo rostos clássicos e 12 novos integrantes (como Strider Hiryu, Motoqueiro Fantasma, Frank West, entre outros).\n• Ajustes: Traz melhorias no balanceamento de combate, novos cenários e ajustes no sistema X-Factor em relação à versão original (Fate of Two Worlds).",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 3.6,
-      "descricao": "O enredo de Ultimate Marvel vs. Capcom 3 é direto e focado na ação arcade, sem uma campanha narrativa complexa.\n\nA Sinopse\n\n• Ameaça cósmica: O devorador de mundos, Galactus, está a caminho da Terra com planos de destruir o planeta.\n• A União de Universos: Para impedir a catástrofe, os maiores heróis e vilões do universo Marvel e do universo Capcom precisam deixar suas rivalidades de lado e se unir em combates.\n• Formato das Lutas: O jogo utiliza o clássico sistema de lutas em equipes de 3 contra 3, onde o jogador escolhe um trio para enfrentar os adversários e, no clímax, tentar derrotar Galactus.\n\nPrincipais Destaques do Jogo no Xbox 360\n\n• Elenco expandido: Conta com um total de 50 personagens, unindo rostos clássicos e 12 novos integrantes (como Strider Hiryu, Motoqueiro Fantasma, Frank West, entre outros).\n• Ajustes: Traz melhorias no balanceamento de combate, novos cenários e ajustes no sistema X-Factor em relação à versão original (Fate of Two Worlds).",
       "imagens": [
         "imagens/marvel-vs-capcom-3-ultimate-mvttt65v8oh6.jpg"
       ],
@@ -1523,12 +1858,13 @@
       "tipos": [
         "Luta"
       ],
-      "tipo": "Luta",
-      "armazenamentos": [],
+      "cod": "8t",
       "outras": [],
       "formato": "2/3",
+      "proporcao": "",
       "ajuste": "cover",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Luta"
     },
     {
       "id": "mvttrfaeyy11",
