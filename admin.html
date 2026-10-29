@@ -46,6 +46,39 @@ h2{font-family:var(--cond);font-weight:700;font-size:21px;letter-spacing:.3px}
 .campo input:not([type=range]):not([type=checkbox]):not([type=color]),.campo textarea,.campo select,.inp{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;outline:none;resize:vertical}
 .campo input:focus,.campo textarea:focus,.campo select:focus,.inp:focus{border-color:var(--azul)}
 input[type=range]{width:100%;accent-color:var(--azul)}
+/* escolha de categoria em árvore (recolhível) e filtro do item */
+.arv,.tipo-sel{border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.arv.aberto,.tipo-sel.aberto{border-color:var(--azul)}
+.arv-caixa{width:100%;display:flex;justify-content:space-between;align-items:center;gap:8px;background:none;border:0;padding:10px 12px;text-align:left;cursor:pointer}
+.arv-caixa span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.arv-caixa i{font-style:normal;color:var(--mut);transition:transform .2s;flex:none}
+.aberto>.arv-caixa i{transform:rotate(180deg)}
+.arv-caixa.arv-vazio span{color:var(--mut)}
+.arv.add{border-style:dashed}
+.arv.add .arv-caixa{color:var(--azul2);font-weight:600;padding:9px 10px}
+.arv-painel{border-top:1px solid var(--line);max-height:340px;overflow:auto;padding:4px}
+.arv-it{display:flex;align-items:center;padding-left:calc(var(--n) * 18px);border-radius:8px}
+.arv-it:hover{background:var(--bg2)}
+.arv-it.on{background:color-mix(in srgb,var(--azul) 24%,transparent)}
+.arv-tg{width:30px;height:32px;flex:none;background:none;border:0;color:var(--mut);cursor:pointer;font-size:12px}
+.arv-tg:disabled{cursor:default}
+.arv-nome{flex:1;min-width:0;text-align:left;background:none;border:0;padding:6px 6px 6px 2px;cursor:pointer;font-size:14px}
+.arv-it.on .arv-nome{font-weight:700}
+.arv-nome small{color:var(--mut);font-size:11px;margin-left:6px;border:1px solid var(--line);border-radius:20px;padding:0 6px}
+.arv-nome:disabled{color:var(--mut);cursor:default;opacity:.55}
+.arv-acoes{border-top:1px solid var(--line);margin-top:4px;padding-top:4px}
+.arv-acoes:empty{display:none}
+.arv-acoes button{display:block;width:100%;text-align:left;background:none;border:0;padding:8px 10px;color:var(--azul2);font-weight:600;cursor:pointer;border-radius:8px}
+.arv-acoes button:hover{background:var(--bg2)}
+.tipo-linha{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap}
+.tipo-sel{flex:1 1 220px;min-width:0}
+.tipo-painel{border-top:1px solid var(--line);padding:8px;display:flex;flex-wrap:wrap;gap:6px;max-height:260px;overflow:auto}
+.tipo-painel button{border:1px solid var(--line);background:var(--bg2);border-radius:20px;padding:6px 12px;font-size:13px;font-weight:600;cursor:pointer}
+.tipo-painel button:hover{border-color:var(--azul)}
+.tipo-painel button.on{background:var(--azul);border-color:var(--azul);color:#fff}
+.tipo-painel button.nenhum:not(.on){color:var(--mut)}
+.tipo-novo{display:flex;gap:6px;flex:1 1 200px;max-width:280px}
+.tipo-novo .inp{flex:1;min-width:0}
 output{color:var(--txt);font-weight:700;margin-left:4px}
 .dois{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
 @media(max-width:560px){.dois{grid-template-columns:1fr}}
@@ -125,7 +158,6 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
 .arm-linha input:focus{border-color:var(--azul)}
 #add-arm{margin-bottom:4px}
 @media(max-width:560px){.arm-linha{grid-template-columns:1fr 1fr auto}.arm-linha>div:first-child{grid-column:1/-1}}
-#f-extra{width:100%;background:var(--bg);border:1px dashed var(--line);border-radius:10px;padding:9px 10px;color:var(--azul2);font-weight:600}
 .ped{border:1px solid var(--line);border-radius:12px;margin-top:10px;background:var(--bg2);overflow:hidden}
 .ped>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:11px 14px;flex-wrap:wrap}
 .ped>summary::-webkit-details-marker{display:none}
@@ -522,11 +554,11 @@ dialog form{padding:18px}
       </div>
     </div>
     <div class="campo"><label for="f-nome">Nome *</label><input id="f-nome" name="nome" required></div>
-    <div class="campo"><label for="f-cat">Categoria</label><select id="f-cat"></select></div>
+    <div class="campo"><span class="rot">Categoria</span><div id="f-cat"></div></div>
     <div class="campo">
       <span class="rot">Também mostrar em (opcional)</span>
       <div id="outras-lista"></div>
-      <select id="f-outra" aria-label="Adicionar outra categoria"></select>
+      <div id="f-outra"></div>
       <p class="dica">O <b>mesmo item</b> aparece também nessas categorias (a seleção do cliente é a mesma). Para um item separado, use <b>⧉ Duplicar</b> na lista de produtos.</p>
     </div>
     <div class="campo">
@@ -537,8 +569,15 @@ dialog form{padding:18px}
       </div>
       <p class="dica" id="valor-dica"></p>
     </div>
-    <div class="campo"><label for="f-tipo">Categoria do item <small style="font-weight:500">(aparece embaixo do nome — ex.: Ação, Aventura, Terror)</small></label>
-      <input id="f-tipo" name="tipo" list="tipos-lista" placeholder="Opcional"><datalist id="tipos-lista"></datalist></div>
+    <div class="campo"><span class="rot">Categoria do item <small style="font-weight:500">(aparece embaixo do nome e vira filtro — ex.: Ação, Aventura, Terror)</small></span>
+      <input type="hidden" id="f-tipo" name="tipo">
+      <div class="tipo-linha">
+        <div class="tipo-sel" id="tipo-sel">
+          <button type="button" class="arv-caixa arv-vazio" id="tipo-caixa"><span id="tipo-txt">Opcional</span><i>▾</i></button>
+          <div class="tipo-painel" id="tipo-painel" hidden></div>
+        </div>
+        <div class="tipo-novo"><input class="inp" id="tipo-novo" placeholder="Novo filtro (ex.: Terror)" aria-label="Novo filtro"><button type="button" class="btn sec" id="tipo-add" title="Adicionar e escolher este filtro">＋</button></div>
+      </div></div>
     <div class="campo"><label for="f-desc">Descrição</label><textarea id="f-desc" name="descricao" rows="3"></textarea></div>
     <div class="campo">
       <span class="rot">Armazenamento (versões) — opcional</span>
@@ -561,7 +600,7 @@ dialog form{padding:18px}
     <div class="campo">
       <span class="rot">Itens para o cliente escolher junto (opcional)</span>
       <div id="extras-lista"></div>
-      <select id="f-extra" aria-label="Adicionar lista de itens"></select>
+      <div id="f-extra"></div>
       <p class="dica">Escolha o caminho até a categoria (ex.: Jogos › PS4 › Mídia física) e o <b>texto do botão</b>. O cliente vê só o botão; ao clicar, abre uma nova aba já nessa lista, com este produto selecionado.</p>
     </div>
     <div class="dlg-pe">
@@ -1276,7 +1315,140 @@ function renderPrevia() {
 }
 $('f-formato').addEventListener('change', e => { formatoForm = e.target.value; renderPrevia(); });
 $('f-ajuste').addEventListener('click', e => { const b = e.target.closest('[data-aj]'); if (b) { ajusteForm = b.dataset.aj; renderPrevia(); } });
-['f-nome', 'f-tipo', 'f-valor'].forEach(id => $(id).addEventListener('input', renderPrevia));
+['f-nome', 'f-valor'].forEach(id => $(id).addEventListener('input', renderPrevia));
+
+// ---- escolha de categoria em árvore: subcategorias recolhidas, o caminho da última usada fica aberto
+function lerUltimas() { return ler('catalogo-admin-ultimas-cats', {}); }
+function criarArvoreSel(el, o) {
+  let abertos = new Set();
+  el.classList.add('arv'); if (o.add) el.classList.add('add');
+  el.innerHTML = '<button type="button" class="arv-caixa"><span></span><i>▾</i></button><div class="arv-painel" hidden><div class="arv-lista"></div><div class="arv-acoes"></div></div>';
+  const caixa = el.querySelector('.arv-caixa'), painel = el.querySelector('.arv-painel');
+  const aberto = () => !painel.hidden;
+  function abrirCaminho(id, incluirEle) {
+    const nos = nosExp(); let x = nos.find(n => n.no.id === id);
+    if (x && !incluirEle) x = x.pai ? nos.find(n => n.no === x.pai) : null;
+    while (x) { abertos.add(x.no.id); x = x.pai ? nos.find(n => n.no === x.pai) : null; }
+  }
+  function lista() {
+    const exc = new Set(o.excluir ? o.excluir() : []), atual = o.atual ? o.atual() : null;
+    let h = o.vazio ? `<div class="arv-it${!atual ? ' on' : ''}" style="--n:0"><button type="button" class="arv-tg" disabled></button><button type="button" class="arv-nome" data-id="">${esc(o.vazio)}</button></div>` : '';
+    (function andar(nos, nivel) {
+      for (const no of nos) {
+        const tem = no.filhas.length > 0, ab = abertos.has(no.id), off = exc.has(no.id);
+        h += `<div class="arv-it${no.id === atual ? ' on' : ''}" style="--n:${nivel}">
+          <button type="button" class="arv-tg" data-tg="${esc(no.id)}"${tem ? ` title="${ab ? 'Recolher' : 'Mostrar subcategorias'}"` : ' disabled'}>${tem ? (ab ? '▾' : '▸') : ''}</button>
+          <button type="button" class="arv-nome" data-id="${esc(no.id)}"${off ? ' disabled' : ''}>${esc(no.nome || 'Sem nome')}${tem ? `<small>${no.filhas.length}</small>` : ''}</button></div>`;
+        if (tem && ab) andar(no.filhas, nivel + 1);
+      }
+    })(arvoreExp(), 0);
+    el.querySelector('.arv-lista').innerHTML = h;
+    const ac = o.acoes ? o.acoes() : [];
+    el.querySelector('.arv-acoes').innerHTML = ac.map((a, i) => `<button type="button" data-acao="${i}">${esc(a.t)}</button>`).join('');
+    el._acoes = ac;
+  }
+  function atualizar() {
+    const t = o.texto(); caixa.querySelector('span').textContent = t.txt; caixa.classList.toggle('arv-vazio', !!t.vazio);
+    if (aberto()) lista();
+  }
+  function abrir() {
+    abertos = new Set();
+    const atual = o.atual ? o.atual() : null, ult = lerUltimas()[o.chave];
+    if (atual) abrirCaminho(atual, false);
+    if (ult) abrirCaminho(ult, true);
+    painel.hidden = false; el.classList.add('aberto'); lista();
+    const on = painel.querySelector('.arv-it.on') || (ult && painel.querySelector(`[data-id="${CSS.escape(ult)}"]`));
+    if (on) painel.scrollTop = Math.max(0, on.closest('.arv-it').offsetTop - painel.offsetTop - 60);
+  }
+  function fechar() { painel.hidden = true; el.classList.remove('aberto'); }
+  caixa.onclick = () => aberto() ? fechar() : abrir();
+  painel.addEventListener('click', e => {
+    const tg = e.target.closest('[data-tg]'), nm = e.target.closest('[data-id]'), ac = e.target.closest('[data-acao]');
+    if (tg) { const id = tg.dataset.tg, st = painel.scrollTop; abertos.has(id) ? abertos.delete(id) : abertos.add(id); lista(); painel.scrollTop = st; }
+    else if (nm) {
+      const id = nm.dataset.id;
+      if (id) { const u = lerUltimas(); u[o.chave] = id; gravar('catalogo-admin-ultimas-cats', u); }
+      fechar(); o.escolher(id);
+    }
+    else if (ac) { fechar(); el._acoes[+ac.dataset.acao].f(); }
+  });
+  document.addEventListener('pointerdown', e => { if (aberto() && !el.contains(e.target)) fechar(); });
+  return {atualizar, fechar};
+}
+const lembrarCat = (chave, id) => { const u = lerUltimas(); u[chave] = id; gravar('catalogo-admin-ultimas-cats', u); };
+function novaCategoriaForm(pai) {
+  const nome = prompt(pai ? `Nome da subcategoria dentro de “${pai.nome}”:` : 'Nome da nova categoria:');
+  const c = criarCategoria(nome, pai);
+  if (c) { renderCategorias(); lembrarCat('cat', c.id); }
+  preencherCats(c ? c.id : catForm);
+}
+const catSel = criarArvoreSel($('f-cat'), {
+  chave: 'cat', vazio: '— Sem categoria —',
+  atual: () => catForm,
+  texto: () => catForm ? {txt: caminhoExp(catForm)} : {txt: '— Sem categoria —', vazio: true},
+  escolher: id => preencherCats(id),
+  acoes: () => {
+    const real = catForm ? acharNo(catForm) : null;
+    return [{t: '＋ Nova categoria principal…', f: () => novaCategoriaForm(null)},
+      ...(real ? [{t: `＋ Nova subcategoria dentro de “${real.no.nome}”…`, f: () => novaCategoriaForm(real.no)}] : [])];
+  }
+});
+const outraSel = criarArvoreSel($('f-outra'), {
+  chave: 'outra', add: true,
+  excluir: () => [catForm, ...outrasForm],
+  texto: () => ({txt: '＋ Mostrar também em outra categoria…'}),
+  escolher: id => {
+    const x = acharNoExp(id), real = x ? x.no.origens[0] : '';
+    if (real && real !== catForm && !outrasForm.includes(real)) outrasForm.push(real);
+    renderOutras();
+  }
+});
+const extraSel = criarArvoreSel($('f-extra'), {
+  chave: 'extra', add: true,
+  excluir: () => extrasForm.map(e => e.cat),
+  texto: () => ({txt: '＋ Adicionar botão para outra lista (escolha o caminho)…'}),
+  escolher: v => {
+    const x = acharNoExp(v);
+    if (v && !extrasForm.some(e => e.cat === v)) extrasForm.push({cat: v, rotulo: x ? 'Adicionar ' + x.no.nome : ''});
+    renderExtras();
+  }
+});
+
+// ---- categoria do item (filtro): caixa que abre todas as opções + caixa ao lado para criar uma nova
+const tiposNovos = new Set();
+const listaTipos = () => [...new Set([...dados.produtos.map(x => x.tipo).filter(Boolean), ...tiposNovos])].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+function mostrarTipo(t) {
+  $('f-tipo').value = t || '';
+  $('tipo-txt').textContent = t || 'Opcional';
+  $('tipo-caixa').classList.toggle('arv-vazio', !t);
+  if (!$('tipo-painel').hidden) renderTipos();
+}
+function renderTipos() {
+  const atual = $('f-tipo').value, ts = listaTipos();
+  $('tipo-painel').innerHTML = `<button type="button" class="nenhum${!atual ? ' on' : ''}" data-tipo="">Nenhum</button>` +
+    ts.map(t => `<button type="button" data-tipo="${esc(t)}"${t === atual ? ' class="on"' : ''}>${esc(t)}</button>`).join('') +
+    (ts.length ? '' : '<span class="dica" style="margin:4px">Nenhum filtro ainda — crie um na caixa ao lado.</span>');
+}
+const fecharTipos = () => { $('tipo-painel').hidden = true; $('tipo-sel').classList.remove('aberto'); };
+$('tipo-caixa').onclick = () => {
+  const p = $('tipo-painel');
+  if (!p.hidden) return fecharTipos();
+  renderTipos(); p.hidden = false; $('tipo-sel').classList.add('aberto');
+};
+$('tipo-painel').addEventListener('click', e => {
+  const b = e.target.closest('[data-tipo]'); if (!b) return;
+  mostrarTipo(b.dataset.tipo); fecharTipos(); renderPrevia();
+});
+function addTipo() {
+  const t = $('tipo-novo').value.trim().replace(/\s+/g, ' ');
+  if (!t) { $('tipo-novo').focus(); return; }
+  const ja = listaTipos().find(x => norm(x) === norm(t)) || t;   // "terror" usa o "Terror" que já existe
+  tiposNovos.add(ja); $('tipo-novo').value = '';
+  mostrarTipo(ja); renderPrevia();
+}
+$('tipo-add').onclick = addTipo;
+$('tipo-novo').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); addTipo(); } });
+document.addEventListener('pointerdown', e => { if (!$('tipo-painel').hidden && !$('tipo-sel').contains(e.target)) fecharTipos(); });
 
 // ---- também mostrar em (o mesmo item em outras categorias)
 let outrasForm = [];
@@ -1284,14 +1456,8 @@ function renderOutras() {
   outrasForm = outrasForm.filter(c => c && c !== catForm && acharNo(c));
   $('outras-lista').innerHTML = outrasForm.map((id, i) => `<div class="extra-linha"><div><b>${esc(acharNo(id).no.nome)}</b><small>${esc(caminhoExp(id))}</small></div>
     <button type="button" class="ib del" data-rm-outra="${i}" title="Tirar desta categoria">✕</button></div>`).join('');
-  $('f-outra').innerHTML = '<option value="">＋ Mostrar também em outra categoria…</option>' + opcoesArvore([catForm, ...outrasForm]);
-  $('f-outra').value = '';
+  outraSel.atualizar();
 }
-$('f-outra').addEventListener('change', () => {
-  const x = acharNoExp($('f-outra').value), real = x ? x.no.origens[0] : '';
-  if (real && real !== catForm && !outrasForm.includes(real)) outrasForm.push(real);
-  renderOutras();
-});
 $('outras-lista').addEventListener('click', e => { const b = e.target.closest('[data-rm-outra]'); if (b) { outrasForm.splice(+b.dataset.rmOutra, 1); renderOutras(); } });
 
 function renderGaleria() {
@@ -1328,11 +1494,7 @@ function preencherCats(id) {
   // um caminho reaproveitado aponta para a categoria real
   const esc0 = id && acharNoExp(id);
   catForm = esc0 ? esc0.no.origens[0] : '';
-  const real = catForm ? acharNo(catForm) : null;
-  $('f-cat').innerHTML = '<option value="">— Sem categoria —</option>' + opcoesArvore() +
-    '<option value="__raiz">＋ Nova categoria principal…</option>' +
-    (real ? `<option value="__filha">＋ Nova subcategoria dentro de “${esc(real.no.nome)}”…</option>` : '');
-  $('f-cat').value = catForm;
+  catSel.atualizar();
   if (typeof renderOutras === 'function' && $('outras-lista')) renderOutras();
 }
 // listas de "escolher junto"
@@ -1344,15 +1506,9 @@ function renderExtras() {
       <input class="inp" data-rotulo="${i}" value="${esc(e.rotulo)}" placeholder="Texto do botão (ex.: Adicionar ${esc(nomeFinal)})" aria-label="Texto do botão"></div>
       <button type="button" class="ib del" data-rm-extra="${i}" title="Remover esta lista">✕</button></div>`;
   }).join('');
-  $('f-extra').innerHTML = '<option value="">＋ Adicionar botão para outra lista (escolha o caminho)…</option>' + opcoesArvore(extrasForm.map(e => e.cat));
-  $('f-extra').value = '';
+  extraSel.atualizar();
 }
 $('extras-lista').addEventListener('input', e => { const i = e.target.dataset.rotulo; if (i !== undefined) extrasForm[+i].rotulo = e.target.value; });
-$('f-extra').addEventListener('change', () => {
-  const v = $('f-extra').value, x = acharNoExp(v);
-  if (v && !extrasForm.some(e => e.cat === v)) extrasForm.push({cat: v, rotulo: x ? 'Adicionar ' + x.no.nome : ''});
-  renderExtras();
-});
 let armForm = [];             // [{id, nome, gb, valor}]
 const numBR = v => v === null || v === undefined || v === '' ? '' : Number(v).toLocaleString('pt-BR', {maximumFractionDigits: 2});
 function renderArm() {
@@ -1366,16 +1522,6 @@ $('add-arm').onclick = () => { armForm.push({id: novoId(), nome: '', gb: '', val
 $('arm-lista').addEventListener('input', e => { const l = e.target.closest('.arm-linha'); if (l) armForm[+l.dataset.i][e.target.dataset.k] = e.target.value; });
 $('arm-lista').addEventListener('click', e => { const b = e.target.closest('[data-rm-arm]'); if (b) { armForm.splice(+b.dataset.rmArm, 1); renderArm(); } });
 $('extras-lista').addEventListener('click', e => { const b = e.target.closest('[data-rm-extra]'); if (b) { extrasForm.splice(+b.dataset.rmExtra, 1); renderExtras(); } });
-$('f-cat').addEventListener('change', () => {
-  const v = $('f-cat').value;
-  if (v === '__raiz' || v === '__filha') {
-    const pai = v === '__filha' ? acharNo(catForm).no : null;
-    const nome = prompt(pai ? `Nome da subcategoria dentro de “${pai.nome}”:` : 'Nome da nova categoria:');
-    const c = criarCategoria(nome, pai);
-    if (c) renderCategorias();
-    preencherCats(c ? c.id : catForm);
-  } else preencherCats(v);
-});
 
 function definirUnidade(u) {
   unidadeForm = u;
@@ -1445,8 +1591,8 @@ function abrirForm(p) {
   medidaCapa = null; renderGaleria.ultima = undefined;
   armForm = (p?.armazenamentos || []).map(a => ({...a}));
   renderArm();
-  form.tipo.value = p?.tipo || '';
-  $('tipos-lista').innerHTML = [...new Set(dados.produtos.map(x => x.tipo).filter(Boolean))].sort().map(t => `<option value="${esc(t)}">`).join('');
+  fecharTipos(); mostrarTipo(p?.tipo || ''); $('tipo-novo').value = '';
+  catSel.fechar(); outraSel.fechar(); extraSel.fechar();
   preencherCats(p?.categoria);
   definirUnidade(p?.unidade || 'R$');
   renderGaleria(); renderEtqs();
@@ -1486,6 +1632,7 @@ form.addEventListener('submit', async e => {
   } finally {
     btn.disabled = false; btn.textContent = 'Salvar produto';
   }
+  if (catForm) lembrarCat('cat', catForm);
   const imagens = fotosForm.map(f => f.path);
   if (editando) remover.push(...editando.imagens.filter(c => !imagens.includes(c)));
 

@@ -23,6 +23,8 @@ Os produtos ficam em `data/produtos.json` e as fotos em `imagens/`, dentro do pr
 
 - O painel tem 4 abas: **Produtos** (lista agrupada e recolhida por categoria), **Categorias** (categorias dentro de categorias, sem limite de níveis), **Loja** (logo, cores, fontes, tamanhos e dados, com pré-visualização ao vivo) e **Conexão** (token e backup).
 - Clique na foto, no nome ou no ✎ de um produto para editar.
+- No cadastro, a **Categoria** abre como árvore: as subcategorias ficam recolhidas (toque na setinha ▸ para abrir) e o caminho da última categoria usada já vem aberto.
+- Em **Categoria do item**, toque na caixa para ver todos os filtros de uma vez; para criar um novo, digite na caixa ao lado e toque em ＋.
 - As **opções** no fim da edição (ex.: 90 dias de garantia, Em oferta, Último disponível) aparecem listadas embaixo do produto. Dá para renomear, apagar e criar novas.
 - Na aba **Loja**, escolha 📱 Celular ou 🖥 Computador na pré-visualização (⛶ amplia). A logo, o nome, a frase e o Instagram aparecem em caixas tracejadas: arraste para mover e puxe o quadradinho do canto para mudar o tamanho — cada aparelho guarda as suas posições. Clique em qualquer texto da pré-visualização para mudar fonte, tamanho, cor e estilo só dele. Os tamanhos de texto valem para o aparelho escolhido na pré-visualização (celular e computador são separados). O topo do site é ampliado/reduzido por igual em cada tela, então fica idêntico à prévia em qualquer celular.
 - Na aba **Categorias**, a setinha ▾ recolhe uma categoria e suas subcategorias, e o 🔗 adiciona caminhos de outras categorias (quantos quiser): "usar as subcategorias de" ou "incluir inteira". Os itens são os mesmos nos dois caminhos — cadastrar por qualquer um deles dá no mesmo.
