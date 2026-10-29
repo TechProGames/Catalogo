@@ -1030,6 +1030,48 @@
   ],
   "produtos": [
     {
+      "id": "mvttihmv731d",
+      "cod": "8o",
+      "nome": "Lego Marvel Avengers",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 6.2,
+      "descricao": "Visão geral criada por IA\n      \nO jogo Lego Marvel's Avengers adapta as histórias principais do Universo Cinematográfico Marvel (MCU), com foco nos eventos dos filmes Os Vingadores (2012) e Vingadores: Era de Ultron (2015).\n\nPrincipais pontos da sinopse e enredo:\n\n• Campanhas Principais: A trama reconta as maiores batalhas dos heróis contra ameaças globais e cósmicas, começando pela busca do cetro de Loki e a invasão Chitauri em Nova York, até a criação e o combate contra a inteligência artificial Ultron.\n• Missões Extras (Filmes Solo): Além dos dois filmes principais dos Vingadores, o jogo inclui missões inspiradas em outros sucessos da Marvel, como:\n\t• Capitão América: O Primeiro Vingador\n\t• Homem de Ferro 3\n\t• Thor: O Mundo Sombrio\n\t• Capitão América: O Soldado Invernal\n• Jogabilidade e Exploração: Você controla mais de 200 personagens icônicos (como Homem de Ferro, Capitão América, Thor, Hulk, Viúva Negra e Gavião Arqueiro), resolvendo quebra-cabeças, usando novos ataques em dupla e explorando áreas de mundo aberto como as ruas de Manhattan e o Helicarrier da SHIELD.",
+      "imagens": [
+        "imagens/lego-marvel-avengers-mvttifrxqctp.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtth0prmyli",
+      "cod": "8n",
+      "nome": "Lego Indiana Jones 2",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 5.8,
+      "descricao": "O Lego Indiana Jones 2: The Adventure Continues reconta com humor e em formato de blocos de montar as histórias dos quatro filmes da franquia:\n• Os Caçadores da Arca Perdida\n• Indiana Jones e o Templo da Perdição\n• Indiana Jones e a Última Cruzada\n• Indiana Jones e o Reino da Caveira de Cristal (destaque especial da sequência, cobrindo o quarto filme que não estava no jogo original)\n\nPrincipais Pontos da Sinopse e Estrutura:\n\n• Enredo: O arqueólogo Indiana Jones embarca em novas jornadas globais — desde escapar de armadilhas em templos antigos e perseguições de jipe no Peru até investigar os mistérios da Caveira de Cristal ao lado de seu filho, Mutt Williams, e de aliados clássicos como Marion Ravenwood.\n• Novidades do Jogo: Diferente do primeiro título, o jogo divide as campanhas em \"mundos abertos\" interconectados, introduz maior interatividade nos cenários (como brigas de bar com NPCs lutando) e inclui um modo Level Creator para criar fases personalizadas.\n• Jogadores: Suporta até 2 jogadores no modo cooperativo offline.",
+      "imagens": [
+        "imagens/lego-indiana-jones-2-mvttgz5oueur.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
       "id": "mvtt9f0u0sdn",
       "cod": "8m",
       "nome": "Lego Indiana Jones",
