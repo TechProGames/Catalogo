@@ -998,37 +998,51 @@
     {
       "id": "mvr1up8br6dt",
       "nome": "Legendado ou Dublado em Pt-Br"
-    },
-    {
-      "id": "mvrgol0q0vrl",
-      "nome": "Cabo HDMI"
-    },
-    {
-      "id": "mvrgostflpc4",
-      "nome": "Cabo de Força"
-    },
-    {
-      "id": "mvrgox0ub7t5",
-      "nome": "Cabo USB"
-    },
-    {
-      "id": "mvrgp39wy27y",
-      "nome": "1 Controle"
-    },
-    {
-      "id": "mvrgvryl02wk",
-      "nome": "HD Externo com Jogos"
-    },
-    {
-      "id": "mvrgw5m3f80l",
-      "nome": "1 Memorycard com OPL"
-    },
-    {
-      "id": "mvrh31a5j3gh",
-      "nome": "Cabo AV"
     }
   ],
   "produtos": [
+    {
+      "id": "mvttmah6nq76",
+      "cod": "8q",
+      "nome": "Madden NFL 17",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 6.5,
+      "descricao": "O Madden NFL 17 não possui uma história ou campanha narrativa tradicional, pois é um simulador esportivo de futebol americano desenvolvido pela EA Tiburon e publicado pela EA Sports.\n\nPrincipais Características e Modos de Jogo:\n\n• Modo Franchise (Franquia): É o destaque do jogo, permitindo que você assuma o controle de uma franquia da NFL como jogador, treinador ou dono. Inclui o recurso Play the Moment, que deixa você simular parte da partida e entrar em campo apenas em momentos decisivos (como terceira descidas ou red zone).\n• Ultimate Team: Permite colecionar cartas de jogadores, montar o seu próprio time dos sonhos e competir em partidas online ou desafios.\n• Draft Champions: Um modo rápido onde você escolhe um elenco através de um draft simplificado para disputar uma mini-temporada.\n• Jogabilidade e IA: Traz mecânicas aprimoradas para o jogo terrestre (corridas), novas fintas para os portadores da bola e uma inteligência artificial (IA) defensiva mais realista.\n• Versão para Xbox 360: No Xbox 360 (assim como no PS3), o jogo funciona como uma edição mais básica/atualização de plantel em comparação às versões de PlayStation 4 e Xbox One, que receberam os gráficos e recursos mais avançados da engine da época.",
+      "imagens": [
+        "imagens/madden-nfl-17-mvttm8y70ife.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Esporte",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvttk24pev2m",
+      "cod": "8p",
+      "nome": "Lego Marvel Super Heroes",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 5.2,
+      "descricao": "A sinopse de Lego Marvel Super Heroes (disponível para Xbox 360) gira em torno de uma aliança de heróis da Marvel que precisam impedir o Doutor Destino e Loki de construírem uma arma de destruição em massa.\n\nA História\n\n• O Incidente Inicial: O Surfista Prateado chega à Terra para alertar sobre a vinda do devorador de mundos, Galactus, mas é derrubado pelo Doutor Destino. Sua prancha se esmiúça em vários \"Tijolos Cósmicos\" (Cosmic Bricks).\n• A Conspiração dos Vilões: O Doutor Destino recruta vilões poderosos como Magneto, Loki, Doutor Octopus e Venom para coletarem esses tijolos e construírem o temido \"Raio da Perdição\" (Doom Ray of Doom).\n• A União dos Heróis: Para frustrar os planos malignos, Nick Fury convoca os Vingadores (como Homem de Ferro, Capitão América, Hulk e Thor), além dos X-Men e do Quarteto Fantástico, em uma aventura que mistura ação, quebra-cabeças e o humor clássico dos jogos da TT Games.\n• Locais Icônicos: Os jogadores exploram uma versão de Nova York feita de peças de Lego, além de locais como a Torre Stark, a Mansão-X, a base da HIDRA e Asgard.",
+      "imagens": [
+        "imagens/lego-marvel-super-heroes-mvttk0op8nvs.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
     {
       "id": "mvttihmv731d",
       "cod": "8o",
@@ -3126,12 +3140,7 @@
       ],
       "disponivel": true,
       "etiquetas": [
-        "mvpvkud0etok",
-        "mvrgostflpc4",
-        "mvrgp39wy27y",
-        "mvrgvryl02wk",
-        "mvrgw5m3f80l",
-        "mvrh31a5j3gh"
+        "mvpvkud0etok"
       ],
       "extras": [
         {
@@ -3171,11 +3180,7 @@
       ],
       "disponivel": true,
       "etiquetas": [
-        "mvpvkud0etok",
-        "mvrgol0q0vrl",
-        "mvrgostflpc4",
-        "mvrgox0ub7t5",
-        "mvrgp39wy27y"
+        "mvpvkud0etok"
       ],
       "extras": [
         {
@@ -3211,11 +3216,7 @@
       ],
       "disponivel": true,
       "etiquetas": [
-        "mvpvkud0etok",
-        "mvrgol0q0vrl",
-        "mvrgostflpc4",
-        "mvrgox0ub7t5",
-        "mvrgp39wy27y"
+        "mvpvkud0etok"
       ],
       "extras": [
         {
@@ -7036,11 +7037,7 @@
       ],
       "disponivel": true,
       "etiquetas": [
-        "mvpvkud0etok",
-        "mvrgol0q0vrl",
-        "mvrgostflpc4",
-        "mvrgox0ub7t5",
-        "mvrgp39wy27y"
+        "mvpvkud0etok"
       ],
       "extras": [
         {
