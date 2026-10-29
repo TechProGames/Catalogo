@@ -1030,6 +1030,69 @@
   ],
   "produtos": [
     {
+      "id": "mvtobjp2lm2z",
+      "cod": "72",
+      "nome": "Battlefield Bad Company 2",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 5.1,
+      "descricao": "Battlefield: Bad Company 2 acompanha o esquadrão de soldados renegados conhecido como B-Company (Bad Company), liderado pelo protagonista Preston Marlowe, ao lado de Sweetwater, Haggard e o Sargento Redford.\n\nSinopse da Campanha\n\n• O Início: A história começa com um prólogo ambientado na Segunda Guerra Mundial, em 1944, no Japão, mostrando uma missão secreta relacionada a uma misteriosa arma de destruição em massa.\n• A Missão Atual: No tempo presente, o esquadrão é enviado para diferentes partes do mundo — de montanhas congeladas na Rússia até a selva na América do Sul (Bolívia) — para tentar impedir que forças inimigas e a Rússia utilizem essa arma escalar de destruição em massa.\n• Tom e Estilo: Diferente de outros jogos de guerra mais sérios da época, a campanha mistura momentos intensos de combate em primeira pessoa com bastante humor, piadas e a dinâmica descontraída entre os quatro integrantes do grupo.\n• Jogabilidade no Xbox: No console, o jogo destaca-se pelo motor gráfico Frostbite 1.5, que permite a destruição quase total de construções e cenários (Destruction 2.0). (Nota: os servidores oficiais do modo multiplayer foram desligados pela EA).",
+      "imagens": [
+        "imagens/battlefield-bad-company-2-mvtobhy9l57m.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvto9s86pdqv",
+      "cod": "71",
+      "nome": "Battlefield 1943",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 0.7,
+      "descricao": "Battlefield 1943 é um jogo de tiro em primeira pessoa focado exclusivamente no modo multiplayer, ambientado no Teatro de Operações do Pacífico durante a Segunda Guerra Mundial.\n\nPrincipais Detalhes\n\n• Lado dos Combatentes: Os jogadores escolhem entre lutar pelo Corpo de Fuzileiros Navais dos Estados Unidos (US Marines) ou pela Marinha Imperial Japonesa (Imperial Japanese Navy).\n• Modo de Jogo: Possui apenas o clássico modo Conquista, onde o objetivo é capturar e defender territórios (bandeiras) no mapa para esgotar os pontos da equipe adversária.\n• Classes Disponíveis: Apenas três classes jogáveis: Rifleman (infantaria), Infantry e Scout (atirador/espião).\n• Mapas Clássicos: Conta com cenários icônicos como Wake Island, Guadalcanal, Iwo Jima e o mapa desbloqueável Coral Sea.\n• Veículos: Permite pilotar aviões, tanques e conduzir jipes ou barcos de desembarque em combates dinâmicos com ambientes destrutíveis (construído com a engine Frostbite).\n• Status Atual: Os servidores oficiais do jogo para Xbox (e outras plataformas) foram desativados pela Electronic Arts, tornando o jogo inacessível para partidas online normais.",
+      "imagens": [
+        "imagens/battlefield-1943-mvto9qqtgt71.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvto8b21r3lo",
+      "cod": "70",
+      "nome": "Assassins Creed Liberation",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 2,
+      "descricao": "A sinopse de Assassin's Creed: Liberation HD (disponível para Xbox 360 e retrocompatível no Xbox One e Xbox Series X/S) acompanha a história de Aveline de Grandpré, a primeira protagonista feminina da franquia.\n\nPontos principais da trama:\n\n• Contexto Histórico: Ambientado entre 1765 e 1780, durante o final da Guerra Franco-Indígena e a transição do controle da Louisiana da França para a Espanha.\n• A Protagonista: Aveline é uma jovem de dupla herança (filha de pai francês e mãe africana) que vive na alta sociedade de Nova Orleans, mas que usa suas habilidades para lutar contra a escravidão e a opressão na região.\n• A Ordem dos Assassinos: Ela é treinada por Agate, um líder dos Assassinos nos pântanos locais (Bayou), e descobre uma conspiração dos Templários para dominar a Louisiana.\n• Mecânica de Identidades: Na história e na jogabilidade, Aveline utiliza três personas diferentes para se infiltrar nos locais: a Assassina (focada em combate e parkour), a Escrava (capaz de passar despercebida em certas áreas) e a Dama/Cortesã (que usa charme e manipulação social).\n• O Enquadramento: O jogo é apresentado dentro do universo como um produto de entretenimento desenvolvido pelas Indústrias Abstergo, escondendo a verdadeira face do conflito entre Assassinos e Templários até ser hackeado por um grupo de resistência.",
+      "imagens": [
+        "imagens/assassins-creed-liberation-mvto89vo2sjj.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Aventura",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvto4vwg67at",
       "cod": "6z",
       "nome": "Teen Titans",
