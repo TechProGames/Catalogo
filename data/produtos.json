@@ -1030,6 +1030,111 @@
   ],
   "produtos": [
     {
+      "id": "mvtq5qeomy97",
+      "cod": "7r",
+      "nome": "Dead Space 2",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 12.7,
+      "descricao": "A história de Dead Space 2 se passa três anos após os eventos do primeiro jogo, em 2511.\n\nSinopse principal\n\n• O Despertar: O engenheiro Isaac Clarke acorda de um coma preso a uma camisa de força na Sprawl (uma grande estação espacial construída sobre Titã, uma das luas de Saturno).\n• O Experimento do Governo: Isaac foi usado como cobaia pelo governo da Terra, que extraiu dados do cérebro dele — afetado pelo contato com o artefato conhecido como Marcador (Marker) — para tentar reproduzir uma fonte de energia infinita.\n• Novo Surto: Antes que Isaac consiga se situar, a estação espacial é tomada por um novo surto de Necromorfos (criaturas grotescas feitas de cadáveres mutilados).\n• Tortura Psicológica: Além de lutar para sobreviver, Isaac sofre com graves problemas de demência e estresse pós-traumático, sendo perseguido por alucinações constantes de sua falecida namorada, Nicole.\n• A Missão Final: Para acabar com o pesadelo, parar a infecção e se livrar da influência mental do Marcador, Isaac precisa navegar pela estação caótica, enfrentar seitas religiosas como a Unitologia e destruir o artefakto na mente e no mundo real.",
+      "imagens": [
+        "imagens/dead-space-2-mvtq5ozsqr8u.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtq4l8lckob",
+      "cod": "7q",
+      "nome": "Call of Duty World At War",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 7.1,
+      "descricao": "Call of Duty: World at War é um jogo de tiro em primeira pessoa ambientado nos horrores e na brutalidade da Segunda Guerra Mundial.\n\nSinopse da Campanha\n\nA história é dividida em duas frentes de batalha principais, alternando a perspectiva entre os Aliados:\n• Frente do Pacífico (Campanha Americana): Você joga com C. Miller, um fuzileiro naval dos Estados Unidos que é resgatado de um cativeiro japonês na Ilha de Makin. Junto com seu esquadrão, ele enfrenta a resistência implacável e suicida do Império Japonês em batalhas sangrentas por ilhas como Peleliu e no ataque final a Okinawa.\n• Frente Oriental (Campanha Soviética): Você joga com Dimitri Petrenko, um soldado do Exército Vermelho. Após escapar por pouco de um massacre nazista em Stalingrado, ele se une ao carismático sargento Viktor Reznov para virar a maré contra o exército alemão, avançando implacavelmente pela Europa até a queda de Berlim e a tomada do Reichstag.",
+      "imagens": [
+        "imagens/call-of-duty-world-at-war-mvtq4jjcn7fk.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtq35vjitf0",
+      "cod": "7p",
+      "nome": "Call of Duty Modern Warfare 3",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 7.7,
+      "descricao": "O Call of Duty: Modern Warfare 3 para Xbox possui duas versões principais com sinopses distintas, dependendo se você se refere ao jogo clássico de 2011 ou ao reboot mais recente de 2023:\n\nCall of Duty: Modern Warfare 3 (2011)\n\n• Plataformas: Xbox 360 (retrocompatível com Xbox One e Xbox Series X|S)\n• Sinopse: Continua diretamente os eventos de Modern Warfare 2. O líder ultranacionalista russo Vladimir Makarov continua a manipular as forças da Federação Russa em uma invasão em grande escala aos Estados Unidos e a vários países da Europa (incluindo Inglaterra, França e Alemanha). Para impedir o colapso global, membros da Task Force 141 — como o Capitão John Price, Soap MacTavish e novos aliados da Delta Force e do SAS — precisam lutar em diferentes frentes de batalha ao redor do mundo para deter Makarov.",
+      "imagens": [
+        "imagens/call-of-duty-modern-warfare-3-mvtq34f44s8w.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtq20j13qx6",
+      "cod": "7o",
+      "nome": "Call of Duty Modern Warfare 2",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 7.9,
+      "descricao": "A sinopse de Call of Duty: Modern Warfare 2 depende de qual versão você está se referindo: o clássico de 2009 (ou sua versão Campaign Remastered) ou o jogo de 2022 (Modern Warfare II).\n\nCall of Duty: Modern Warfare 2 (2009 / Campaign Remastered)\n\n• Plataformas: Xbox 360, Xbox One e Xbox Series X|S (compatibilidade com retrocompatibilidade / remasterizado).\n• Sinopse: A história se passa cinco anos após os eventos de Call of Duty 4: Modern Warfare. Com a morte de Imran Zakhaev, os ultranacionalistas russos assumem o controle, e um líder extremista chamado Vladimir Makarov comanda uma onda de terrorismo global.\n• O General Shepherd cria a elite internacional Força-Tarefa 141 (reunindo heróis como o Capitão Price, Soap MacTavish e Ghost) para conter a ameaça. A trama envolve um atentado falso em um aeroporto de Moscou que faz a Rússia declarar guerra e invadir os Estados Unidos, levando a uma caçada global por traidores e pelo próprio Makarov.",
+      "imagens": [
+        "imagens/call-of-duty-modern-warfare-2-mvtq1z6ck6gc.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
+      "id": "mvtq11brh1x4",
+      "cod": "7n",
+      "nome": "Call of Duty Ghosts",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 9.2,
+      "descricao": "A história de Call of Duty: Ghosts se passa dez anos após um ataque devastador causado pelo ODIN (uma superarma orbital sequestrada), que destruiu grande parte dos Estados Unidos e redefiniu o equilíbrio do poder global.\nCom os EUA enfraquecidos, uma nova superpotência chamada Federação — uma aliança de países da América do Sul rica em petróleo — invade e domina a América Central e parte do território norte-americano.\nO jogador assume o controle de Logan Walker, acompanhado pelo seu irmão Hesh e pelo pai deles, Elias Walker (um veterano líder da unidade). Eles lutam ao lado dos \"Ghosts\", uma unidade de elite de operações especiais que atua nas sombras para resistir ao inimigo e caçar Gabriel Rorke, um ex-membro dos Ghosts que foi capturado e virou traidor da Federação. A campanha também conta com a ajuda de Riley, um pastor alemão de combate treinado para auxiliar a equipe.",
+      "imagens": [
+        "imagens/call-of-duty-ghosts-mvtq0zp8jsxc.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Ação",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "2/3",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
       "id": "mvtpzlmsae52",
       "cod": "7m",
       "nome": "Call of Duty Black Ops 2",
