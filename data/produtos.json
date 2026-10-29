@@ -1030,153 +1030,15 @@
   ],
   "produtos": [
     {
-      "id": "mvsg8irf8lhy",
-      "cod": "6d",
-      "nome": "Troca do conector USB",
-      "categoria": "mvpqipdnqhky",
-      "unidade": "R$",
-      "valor": 100,
-      "descricao": "Reparo no conector USB, desde não carregar ou não conectar, como mal contato.",
-      "imagens": [
-        "imagens/troca-do-conector-usb-mvsg8hbzcokh.jpg"
-      ],
-      "disponivel": true,
-      "etiquetas": [
-        "mvpvkud0etok"
-      ],
-      "extras": [],
-      "tipo": "Controle",
-      "armazenamentos": [],
-      "outras": [],
-      "formato": "3/4",
-      "ajuste": "contain",
-      "proporcao": ""
-    },
-    {
-      "id": "mvsg7ibh7iwc",
-      "cod": "6c",
-      "nome": "Analógico HALL/TMR (DOIS LADOS)",
-      "categoria": "mvpqihl84v9c",
-      "unidade": "R$",
-      "valor": 160,
-      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
-      "imagens": [
-        "imagens/analogico-hall-tmr-dois-lados-mvsg7gn5hh2h.jpg"
-      ],
-      "disponivel": true,
-      "etiquetas": [
-        "mvpvkud0etok"
-      ],
-      "extras": [],
-      "tipo": "Controle",
-      "armazenamentos": [],
-      "outras": [],
-      "formato": "3/4",
-      "ajuste": "contain",
-      "proporcao": ""
-    },
-    {
-      "id": "mvsg6qoifl9g",
-      "cod": "6b",
-      "nome": "Analógico HALL/TMR (UM LADO)",
-      "categoria": "mvpqicwxzrya",
-      "unidade": "R$",
-      "valor": 130,
-      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
-      "imagens": [
-        "imagens/analogico-hall-tmr-um-lado-mvsg6p5hu50e.jpg"
-      ],
-      "disponivel": true,
-      "etiquetas": [
-        "mvpvkud0etok"
-      ],
-      "extras": [],
-      "tipo": "Controle",
-      "armazenamentos": [],
-      "outras": [],
-      "formato": "3/4",
-      "ajuste": "contain",
-      "proporcao": ""
-    },
-    {
-      "id": "mvsg5w3k2u3s",
-      "cod": "6a",
-      "nome": "Analógico Original (DOIS LADOS)",
-      "categoria": "mvpqi1erhbfz",
-      "unidade": "R$",
-      "valor": 130,
-      "descricao": "Substituição dos dois analógicos pelo modelo original.",
-      "imagens": [
-        "imagens/analogico-original-dois-lados-mvsg5uovz5zg.jpg"
-      ],
-      "disponivel": true,
-      "etiquetas": [
-        "mvpvkud0etok"
-      ],
-      "extras": [],
-      "tipo": "Controle",
-      "armazenamentos": [],
-      "outras": [],
-      "formato": "3/4",
-      "ajuste": "contain",
-      "proporcao": ""
-    },
-    {
-      "id": "mvsg4mnq7ut0",
-      "cod": "69",
-      "nome": "Analógico Original (UM LADO)",
-      "categoria": "mvpqhwli0q1a",
-      "unidade": "R$",
-      "valor": 100,
-      "descricao": "Substituição do analógico pelo modelo original.",
-      "imagens": [
-        "imagens/analogico-original-um-lado-mvsg4la7ufli.jpg"
-      ],
-      "disponivel": true,
-      "etiquetas": [
-        "mvpvkud0etok"
-      ],
-      "extras": [],
-      "tipo": "Controle",
-      "armazenamentos": [],
-      "outras": [],
-      "formato": "3/4",
-      "ajuste": "contain",
-      "proporcao": ""
-    },
-    {
-      "id": "mvsfltngyzlu",
-      "cod": "68",
-      "nome": "Reparo de Placa",
-      "categoria": "mvpqewpbroz3",
-      "unidade": "R$",
-      "valor": 250,
-      "descricao": "Controle não liga, desligando do nada, caindo conexão. Qualquer reparo na placa.",
-      "imagens": [
-        "imagens/reparo-de-placa-mvsfls6frer5.jpg"
-      ],
-      "disponivel": true,
-      "etiquetas": [
-        "mvpvkud0etok"
-      ],
-      "extras": [],
-      "tipo": "Controle",
-      "armazenamentos": [],
-      "outras": [],
-      "formato": "3/4",
-      "ajuste": "contain",
-      "proporcao": ""
-    },
-    {
-      "id": "mvsfk0vt89e0",
-      "cod": "67",
+      "id": "mvtmp3syqw5c",
+      "cod": "6h",
       "nome": "Gatilhos L2/R2",
       "categoria": "mvpqgqqbs8ig",
       "unidade": "R$",
-      "valor": 140,
+      "valor": 110,
       "descricao": "Reparo dos gatilhos sem pressão ou não funcionando.",
       "imagens": [
-        "imagens/gatilhos-l2-r2-mvsfjz2yg90d.jpg"
+        "imagens/gatilhos-l2-r2-mvtmp2drxyya.jpg"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -1191,15 +1053,15 @@
       "proporcao": ""
     },
     {
-      "id": "mvsfh06xcw8n",
-      "cod": "66",
-      "nome": "Troca do conector USB C",
-      "categoria": "mvpqfbuc41as",
+      "id": "mvtmnq1kobks",
+      "cod": "6g",
+      "nome": "Reparo de Placa",
+      "categoria": "mvpqil4tn3xv",
       "unidade": "R$",
-      "valor": 160,
-      "descricao": "Reparo no conector USB C, desde não carregar ou não conectar, como mal contato.",
+      "valor": 180,
+      "descricao": "Controle não liga, desligando do nada, caindo conexão. Qualquer reparo na placa.",
       "imagens": [
-        "imagens/troca-do-conector-usb-c-mvsfgyt7zobt.jpg"
+        "imagens/reparo-de-placa-mvtmnok7l6jk.jpg"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -1214,38 +1076,15 @@
       "proporcao": ""
     },
     {
-      "id": "mvsf7sdw2rwq",
-      "cod": "65",
-      "nome": "Botões não FUNCIONA/FALHANDO",
-      "categoria": "mvpqfo0qzw3f",
-      "unidade": "R$",
-      "valor": 130,
-      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
-      "imagens": [
-        "imagens/botoes-nao-funciona-falhando-mvsf7r4bfef3.jpg"
-      ],
-      "disponivel": true,
-      "etiquetas": [
-        "mvpvkud0etok"
-      ],
-      "extras": [],
-      "tipo": "Controle",
-      "armazenamentos": [],
-      "outras": [],
-      "formato": "3/4",
-      "ajuste": "contain",
-      "proporcao": ""
-    },
-    {
-      "id": "mvsf378vkrdv",
-      "cod": "64",
+      "id": "mvtmmreppmpp",
+      "cod": "6f",
       "nome": "Borracha dos Analógicos (PAR)",
-      "categoria": "mvpqfynqczs3",
+      "categoria": "mvpqixfslgwu",
       "unidade": "R$",
-      "valor": 60,
+      "valor": 50,
       "descricao": "Troca das duas capinhas de borrachas dos analógicos.",
       "imagens": [
-        "imagens/borracha-dos-analogicos-par-mvsf35ppy9lh.jpg"
+        "imagens/borracha-dos-analogicos-par-mvtmmpylnohd.jpg"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1258,13 +1097,263 @@
       "proporcao": ""
     },
     {
-      "id": "mvsey36vb5pg",
-      "cod": "63",
+      "id": "mvtmlw705ytt",
+      "cod": "6e",
+      "nome": "Botões não FUNCIONA/FALHANDO",
+      "categoria": "mvpqitdgvawy",
+      "unidade": "R$",
+      "valor": 100,
+      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
+      "imagens": [
+        "imagens/botoes-nao-funciona-falhando-mvtmlulgmjod.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvsg8irf8lhy",
+      "nome": "Troca do conector USB",
+      "descricao": "Reparo no conector USB, desde não carregar ou não conectar, como mal contato.",
+      "categoria": "mvpqipdnqhky",
+      "unidade": "R$",
+      "valor": 100,
+      "imagens": [
+        "imagens/troca-do-conector-usb-mvsg8hbzcokh.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "cod": "6d",
+      "outras": [],
+      "formato": "3/4",
+      "proporcao": "",
+      "ajuste": "contain",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvsg7ibh7iwc",
       "nome": "Analógico HALL/TMR (DOIS LADOS)",
+      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
+      "categoria": "mvpqihl84v9c",
+      "unidade": "R$",
+      "valor": 160,
+      "imagens": [
+        "imagens/analogico-hall-tmr-dois-lados-mvsg7gn5hh2h.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "cod": "6c",
+      "outras": [],
+      "formato": "3/4",
+      "proporcao": "",
+      "ajuste": "contain",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvsg6qoifl9g",
+      "nome": "Analógico HALL/TMR (UM LADO)",
+      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
+      "categoria": "mvpqicwxzrya",
+      "unidade": "R$",
+      "valor": 130,
+      "imagens": [
+        "imagens/analogico-hall-tmr-um-lado-mvsg6p5hu50e.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "cod": "6b",
+      "outras": [],
+      "formato": "3/4",
+      "proporcao": "",
+      "ajuste": "contain",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvsg5w3k2u3s",
+      "nome": "Analógico Original (DOIS LADOS)",
+      "descricao": "Substituição dos dois analógicos pelo modelo original.",
+      "categoria": "mvpqi1erhbfz",
+      "unidade": "R$",
+      "valor": 130,
+      "imagens": [
+        "imagens/analogico-original-dois-lados-mvsg5uovz5zg.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "cod": "6a",
+      "outras": [],
+      "formato": "3/4",
+      "proporcao": "",
+      "ajuste": "contain",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvsg4mnq7ut0",
+      "nome": "Analógico Original (UM LADO)",
+      "descricao": "Substituição do analógico pelo modelo original.",
+      "categoria": "mvpqhwli0q1a",
+      "unidade": "R$",
+      "valor": 100,
+      "imagens": [
+        "imagens/analogico-original-um-lado-mvsg4la7ufli.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "cod": "69",
+      "outras": [],
+      "formato": "3/4",
+      "proporcao": "",
+      "ajuste": "contain",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvsfltngyzlu",
+      "nome": "Reparo de Placa",
+      "descricao": "Controle não liga, desligando do nada, caindo conexão. Qualquer reparo na placa.",
+      "categoria": "mvpqewpbroz3",
+      "unidade": "R$",
+      "valor": 250,
+      "imagens": [
+        "imagens/reparo-de-placa-mvsfls6frer5.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "cod": "68",
+      "outras": [],
+      "formato": "3/4",
+      "proporcao": "",
+      "ajuste": "contain",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvsfk0vt89e0",
+      "nome": "Gatilhos L2/R2",
+      "descricao": "Reparo dos gatilhos sem pressão ou não funcionando.",
+      "categoria": "mvpqgqqbs8ig",
+      "unidade": "R$",
+      "valor": 140,
+      "imagens": [
+        "imagens/gatilhos-l2-r2-mvsfjz2yg90d.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "cod": "67",
+      "outras": [],
+      "formato": "3/4",
+      "proporcao": "",
+      "ajuste": "contain",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvsfh06xcw8n",
+      "nome": "Troca do conector USB C",
+      "descricao": "Reparo no conector USB C, desde não carregar ou não conectar, como mal contato.",
+      "categoria": "mvpqfbuc41as",
+      "unidade": "R$",
+      "valor": 160,
+      "imagens": [
+        "imagens/troca-do-conector-usb-c-mvsfgyt7zobt.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "cod": "66",
+      "outras": [],
+      "formato": "3/4",
+      "proporcao": "",
+      "ajuste": "contain",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvsf7sdw2rwq",
+      "nome": "Botões não FUNCIONA/FALHANDO",
+      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
+      "categoria": "mvpqfo0qzw3f",
+      "unidade": "R$",
+      "valor": 130,
+      "imagens": [
+        "imagens/botoes-nao-funciona-falhando-mvsf7r4bfef3.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipo": "Controle",
+      "cod": "65",
+      "outras": [],
+      "formato": "3/4",
+      "proporcao": "",
+      "ajuste": "contain",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvsf378vkrdv",
+      "nome": "Borracha dos Analógicos (PAR)",
+      "descricao": "Troca das duas capinhas de borrachas dos analógicos.",
+      "categoria": "mvpqfynqczs3",
+      "unidade": "R$",
+      "valor": 60,
+      "imagens": [
+        "imagens/borracha-dos-analogicos-par-mvsf35ppy9lh.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipo": "Controle",
+      "cod": "64",
+      "outras": [],
+      "formato": "3/4",
+      "proporcao": "",
+      "ajuste": "contain",
+      "armazenamentos": []
+    },
+    {
+      "id": "mvsey36vb5pg",
+      "nome": "Analógico HALL/TMR (DOIS LADOS)",
+      "descricao": "Substituição dos dois analógicos originais, por outros de efeito hall, HALL EFFECT ou TMR.",
       "categoria": "mvpqep0fa7ij",
       "unidade": "R$",
       "valor": 200,
-      "descricao": "Substituição dos dois analógicos originais, por outros de efeito hall, HALL EFFECT ou TMR.",
       "imagens": [
         "imagens/analogico-hall-tmr-dois-lados-mvsey1t6elwc.jpg"
       ],
@@ -1274,20 +1363,20 @@
       ],
       "extras": [],
       "tipo": "Controle",
-      "armazenamentos": [],
+      "cod": "63",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": []
     },
     {
       "id": "mvsewztlu9na",
-      "cod": "62",
       "nome": "Analógico HALL/TMR (UM LADO)",
+      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
       "categoria": "mvpqe908tnl2",
       "unidade": "R$",
       "valor": 180,
-      "descricao": "Substituição do analógico original, por outro de efeito hall, HALL EFFECT ou TMR.",
       "imagens": [
         "imagens/analogico-hall-tmr-um-lado-mvsewycdloci.jpg"
       ],
@@ -1297,20 +1386,20 @@
       ],
       "extras": [],
       "tipo": "Controle",
-      "armazenamentos": [],
+      "cod": "62",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": []
     },
     {
       "id": "mvsetzr9c46x",
-      "cod": "61",
       "nome": "Analógico Original (DOIS LADOS)",
+      "descricao": "Substituição dos dois analógicos pelo modelo original.",
       "categoria": "mvpqe225qlv4",
       "unidade": "R$",
       "valor": 180,
-      "descricao": "Substituição dos dois analógicos pelo modelo original.",
       "imagens": [
         "imagens/analogico-original-dois-lados-mvsetyiis0d4.jpg"
       ],
@@ -1320,20 +1409,20 @@
       ],
       "extras": [],
       "tipo": "Controle",
-      "armazenamentos": [],
+      "cod": "61",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": []
     },
     {
       "id": "mvsernfssipw",
-      "cod": "60",
       "nome": "Analógico Original (UM LADO)",
+      "descricao": "Substituição do analógico pelo modelo original.",
       "categoria": "mvpqcuc8dzph",
       "unidade": "R$",
       "valor": 150,
-      "descricao": "Substituição do analógico pelo modelo original.",
       "imagens": [
         "imagens/analogico-original-1x-mvserlxzgjb9.jpg"
       ],
@@ -1343,11 +1432,12 @@
       ],
       "extras": [],
       "tipo": "Controle",
-      "armazenamentos": [],
+      "cod": "60",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": []
     },
     {
       "id": "mvrgxxb0ajdx",
