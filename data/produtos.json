@@ -1009,11 +1009,12 @@
   "produtos": [
     {
       "id": "mvv5v8nkxt00",
+      "cod": "a7",
       "nome": "Kit OPL PS2",
-      "descricao": "Kit OPL para PS2, Pen-drive + Memory Card, lotado de jogos, você escolhe quais jogos.",
       "categoria": "mvv5d02c1bb5",
       "unidade": "R$",
       "valor": null,
+      "descricao": "Kit OPL para PS2, Pen-drive + Memory Card, lotado de jogos, você escolhe quais jogos.",
       "imagens": [
         "imagens/kit-opl-ps2-mvv5v7d55pgk.jpg"
       ],
@@ -1030,13 +1031,9 @@
         "Jogos",
         "Console"
       ],
+      "tipo": "Acessórios, Jogos, Console",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "a7",
-      "outras": [],
-      "formato": "1/1",
-      "proporcao": "",
-      "ajuste": "cover",
       "armazenamentos": [
         {
           "id": "mvv5stk3f7fh",
@@ -1051,15 +1048,21 @@
           "valor": 130
         }
       ],
-      "tipo": "Acessórios, Jogos, Console"
+      "outras": [
+        "mvpxg0tpqw76"
+      ],
+      "formato": "1/1",
+      "ajuste": "cover",
+      "proporcao": ""
     },
     {
       "id": "mvv5kj120s8d",
+      "cod": "a5",
       "nome": "HD Externo de Jogos para Xbox 360",
-      "descricao": "HD Externo lotado de jogos, jogos da sua escolha.",
       "categoria": "mvv5d02c1bb5",
       "unidade": "R$",
       "valor": null,
+      "descricao": "HD Externo lotado de jogos, jogos da sua escolha.",
       "imagens": [
         "imagens/hd-externode-jogos-para-xbox-360-mvv5khifz2h3.jpg"
       ],
@@ -1076,13 +1079,9 @@
         "Jogos",
         "Acessórios"
       ],
+      "tipo": "Console, Jogos, Acessórios",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "a5",
-      "outras": [],
-      "formato": "1/1",
-      "proporcao": "",
-      "ajuste": "cover",
       "armazenamentos": [
         {
           "id": "mvv5fvli3ac4",
@@ -1103,15 +1102,21 @@
           "valor": 300
         }
       ],
-      "tipo": "Console, Jogos, Acessórios"
+      "outras": [
+        "mvpxh1dhtf84"
+      ],
+      "formato": "1/1",
+      "ajuste": "cover",
+      "proporcao": ""
     },
     {
       "id": "mvv5no38nz25",
+      "cod": "a6",
       "nome": "HD Externo de Jogos para PS2",
-      "descricao": "HD Externo lotado de Jogos para PS2 OPL.",
       "categoria": "mvv5d02c1bb5",
       "unidade": "R$",
       "valor": null,
+      "descricao": "HD Externo lotado de Jogos para PS2 OPL.",
       "imagens": [
         "imagens/hd-externo-de-jogos-para-ps2-mvv5nm6uttmh.jpg"
       ],
@@ -1128,13 +1133,9 @@
         "Acessórios",
         "Jogos"
       ],
+      "tipo": "Console, Acessórios, Jogos",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "a6",
-      "outras": [],
-      "formato": "1/1",
-      "proporcao": "",
-      "ajuste": "cover",
       "armazenamentos": [
         {
           "id": "mvv5lxdnar7i",
@@ -1161,7 +1162,12 @@
           "valor": 300
         }
       ],
-      "tipo": "Console, Acessórios, Jogos"
+      "outras": [
+        "mvpxg0tpqw76"
+      ],
+      "formato": "1/1",
+      "ajuste": "cover",
+      "proporcao": ""
     },
     {
       "id": "mvv5bbfi3iqb",
