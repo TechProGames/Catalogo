@@ -1002,6 +1002,77 @@
   ],
   "produtos": [
     {
+      "id": "mvv4x30j3mb0",
+      "cod": "9v",
+      "nome": "Reparos para Controle de Series S/X",
+      "categoria": "mvpq9plbbdnf",
+      "unidade": "R$",
+      "valor": null,
+      "descricao": "",
+      "imagens": [
+        "imagens/reparos-para-controle-de-series-s-x-mvv4x1igpobr.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [
+        "mvtwvqu9qhpv",
+        "mvtwwloi9ivp",
+        "mvtwxm9ysu86",
+        "mvtwyfgpmvx6",
+        "mvtwz2k1lw2x",
+        "mvtwzwdyxf7d",
+        "mvtx0t6baxm0",
+        "mvtx1fmzc1yc",
+        "mvtx3i1lxcme"
+      ],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvv4utv9wkoc",
+      "cod": "9u",
+      "nome": "Reparos para Controle do Xbox One",
+      "categoria": "mvpq9yw352eh",
+      "unidade": "R$",
+      "valor": null,
+      "descricao": "Lista de todos os reparos mais comuns no controle do Xbox One.",
+      "imagens": [
+        "imagens/reparos-para-controle-do-xbox-one-mvv4usjw4ly2.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [
+        "mvtx553xmez8",
+        "mvtx79x7uxlf",
+        "mvtx6r48o7fk",
+        "mvtx649gxyyv"
+      ],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvv4ojrkk8wq",
       "cod": "9t",
       "nome": "Reparos para Controle de PS3",
