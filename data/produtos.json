@@ -1002,6 +1002,44 @@
   ],
   "produtos": [
     {
+      "id": "mvv4h2ch6k0x",
+      "cod": "9s",
+      "nome": "Reparos para Controle de PS4",
+      "categoria": "mvpq9lgxexa8",
+      "unidade": "R$",
+      "valor": null,
+      "descricao": "",
+      "imagens": [
+        "imagens/reparos-para-controle-de-ps4-mvv4h15kdgw7.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [
+        "mvtmp3syqw5c",
+        "mvtmnq1kobks",
+        "mvsg4mnq7ut0",
+        "mvsg5w3k2u3s",
+        "mvsg6qoifl9g",
+        "mvsg8irf8lhy",
+        "mvtmmreppmpp",
+        "mvsg7ibh7iwc",
+        "mvtmlw705ytt"
+      ],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvv3x4wm704n",
       "cod": "9r",
       "nome": "Reparos para Controle de PS5",
@@ -1017,8 +1055,10 @@
         "mvpvkud0etok"
       ],
       "extras": [],
-      "tipos": [],
-      "tipo": "",
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
       "servicos": [
         "mvsfltngyzlu",
         "mvsfk0vt89e0",
