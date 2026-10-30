@@ -1007,6 +1007,58 @@
   ],
   "produtos": [
     {
+      "id": "mvv5kj120s8d",
+      "cod": "a5",
+      "nome": "HD Externo de Jogos para Xbox 360",
+      "categoria": "mvv5d02c1bb5",
+      "unidade": "R$",
+      "valor": null,
+      "descricao": "HD Externo lotado de jogos, jogos da sua escolha.",
+      "imagens": [
+        "imagens/hd-externode-jogos-para-xbox-360-mvv5khifz2h3.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [
+        {
+          "cat": "mvpxh616i8oa",
+          "rotulo": "Adicionar Jogos de Xbox 360"
+        }
+      ],
+      "tipos": [
+        "Console",
+        "Jogos",
+        "Acessórios"
+      ],
+      "tipo": "Console, Jogos, Acessórios",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [
+        {
+          "id": "mvv5fvli3ac4",
+          "nome": "250",
+          "gb": 225,
+          "valor": 200
+        },
+        {
+          "id": "mvv5gxfjof0a",
+          "nome": "320",
+          "gb": 295,
+          "valor": 250
+        },
+        {
+          "id": "mvv5h132ef5c",
+          "nome": "500",
+          "gb": 460,
+          "valor": 300
+        }
+      ],
+      "outras": [],
+      "formato": "1/1",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
       "id": "mvv5no38nz25",
       "cod": "a6",
       "nome": "HD Externo de Jogos para PS2",
@@ -1054,58 +1106,6 @@
         },
         {
           "id": "mvv5n5j3xzw4",
-          "nome": "500",
-          "gb": 465,
-          "valor": 300
-        }
-      ],
-      "outras": [],
-      "formato": "1/1",
-      "ajuste": "cover",
-      "proporcao": ""
-    },
-    {
-      "id": "mvv5kj120s8d",
-      "cod": "a5",
-      "nome": "HD Externo de Jogos para Xbox 360",
-      "categoria": "mvv5d02c1bb5",
-      "unidade": "R$",
-      "valor": null,
-      "descricao": "HD Externo lotado de jogos, jogos da sua escolha.",
-      "imagens": [
-        "imagens/hd-externode-jogos-para-xbox-360-mvv5khifz2h3.jpg"
-      ],
-      "disponivel": true,
-      "etiquetas": [],
-      "extras": [
-        {
-          "cat": "mvpxh616i8oa",
-          "rotulo": "Adicionar Jogos de Xbox 360"
-        }
-      ],
-      "tipos": [
-        "Console",
-        "Jogos",
-        "Acessórios"
-      ],
-      "tipo": "Console, Jogos, Acessórios",
-      "servicos": [],
-      "servicosRotulo": "",
-      "armazenamentos": [
-        {
-          "id": "mvv5fvli3ac4",
-          "nome": "250",
-          "gb": 225,
-          "valor": 200
-        },
-        {
-          "id": "mvv5gxfjof0a",
-          "nome": "320",
-          "gb": 295,
-          "valor": 250
-        },
-        {
-          "id": "mvv5h132ef5c",
           "nome": "500",
           "gb": 460,
           "valor": 300
