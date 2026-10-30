@@ -317,6 +317,11 @@
       "usa": []
     },
     {
+      "id": "mvv5d02c1bb5",
+      "nome": "HD Externo - Pen-drive - Kits",
+      "filhas": []
+    },
+    {
       "id": "mvpowg5l0tnt",
       "nome": "Serviços",
       "filhas": [
@@ -980,11 +985,6 @@
         }
       ],
       "usa": []
-    },
-    {
-      "id": "mvv5d02c1bb5",
-      "nome": "HD Externo - Pen-drive - Kits",
-      "filhas": []
     }
   ],
   "etiquetas": [
