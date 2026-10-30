@@ -319,7 +319,8 @@
     {
       "id": "mvv5d02c1bb5",
       "nome": "HD Externo - Pen-drive - Kits",
-      "filhas": []
+      "filhas": [],
+      "usa": []
     },
     {
       "id": "mvpowg5l0tnt",
@@ -1008,12 +1009,11 @@
   "produtos": [
     {
       "id": "mvv5v8nkxt00",
-      "cod": "a7",
       "nome": "Kit OPL PS2",
+      "descricao": "Kit OPL para PS2, Pen-drive + Memory Card, lotado de jogos, você escolhe quais jogos.",
       "categoria": "mvv5d02c1bb5",
       "unidade": "R$",
       "valor": null,
-      "descricao": "Kit OPL para PS2, Pen-drive + Memory Card, lotado de jogos, você escolhe quais jogos.",
       "imagens": [
         "imagens/kit-opl-ps2-mvv5v7d55pgk.jpg"
       ],
@@ -1030,9 +1030,13 @@
         "Jogos",
         "Console"
       ],
-      "tipo": "Acessórios, Jogos, Console",
       "servicos": [],
       "servicosRotulo": "",
+      "cod": "a7",
+      "outras": [],
+      "formato": "1/1",
+      "proporcao": "",
+      "ajuste": "cover",
       "armazenamentos": [
         {
           "id": "mvv5stk3f7fh",
@@ -1047,19 +1051,15 @@
           "valor": 130
         }
       ],
-      "outras": [],
-      "formato": "1/1",
-      "ajuste": "cover",
-      "proporcao": ""
+      "tipo": "Acessórios, Jogos, Console"
     },
     {
       "id": "mvv5kj120s8d",
-      "cod": "a5",
       "nome": "HD Externo de Jogos para Xbox 360",
+      "descricao": "HD Externo lotado de jogos, jogos da sua escolha.",
       "categoria": "mvv5d02c1bb5",
       "unidade": "R$",
       "valor": null,
-      "descricao": "HD Externo lotado de jogos, jogos da sua escolha.",
       "imagens": [
         "imagens/hd-externode-jogos-para-xbox-360-mvv5khifz2h3.jpg"
       ],
@@ -1076,9 +1076,13 @@
         "Jogos",
         "Acessórios"
       ],
-      "tipo": "Console, Jogos, Acessórios",
       "servicos": [],
       "servicosRotulo": "",
+      "cod": "a5",
+      "outras": [],
+      "formato": "1/1",
+      "proporcao": "",
+      "ajuste": "cover",
       "armazenamentos": [
         {
           "id": "mvv5fvli3ac4",
@@ -1099,19 +1103,15 @@
           "valor": 300
         }
       ],
-      "outras": [],
-      "formato": "1/1",
-      "ajuste": "cover",
-      "proporcao": ""
+      "tipo": "Console, Jogos, Acessórios"
     },
     {
       "id": "mvv5no38nz25",
-      "cod": "a6",
       "nome": "HD Externo de Jogos para PS2",
+      "descricao": "HD Externo lotado de Jogos para PS2 OPL.",
       "categoria": "mvv5d02c1bb5",
       "unidade": "R$",
       "valor": null,
-      "descricao": "HD Externo lotado de Jogos para PS2 OPL.",
       "imagens": [
         "imagens/hd-externo-de-jogos-para-ps2-mvv5nm6uttmh.jpg"
       ],
@@ -1128,9 +1128,13 @@
         "Acessórios",
         "Jogos"
       ],
-      "tipo": "Console, Acessórios, Jogos",
       "servicos": [],
       "servicosRotulo": "",
+      "cod": "a6",
+      "outras": [],
+      "formato": "1/1",
+      "proporcao": "",
+      "ajuste": "cover",
       "armazenamentos": [
         {
           "id": "mvv5lxdnar7i",
@@ -1157,10 +1161,7 @@
           "valor": 300
         }
       ],
-      "outras": [],
-      "formato": "1/1",
-      "ajuste": "cover",
-      "proporcao": ""
+      "tipo": "Console, Acessórios, Jogos"
     },
     {
       "id": "mvv5bbfi3iqb",
@@ -1174,7 +1175,9 @@
         "imagens/reparos-para-controle-do-xbox-360-mvv5b9x43r3y.jpg"
       ],
       "disponivel": true,
-      "etiquetas": [],
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
       "extras": [],
       "tipos": [
         "Controle"
@@ -1194,12 +1197,11 @@
     },
     {
       "id": "mvv58jrm89w6",
-      "cod": "a3",
       "nome": "Botões não FUNCIONA/FALHANDO",
+      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
       "categoria": "mvpqm83tqc79",
       "unidade": "R$",
       "valor": 100,
-      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
       "imagens": [
         "imagens/botoes-nao-funciona-falhando-mvv58ia06y5b.jpg"
       ],
@@ -1211,23 +1213,23 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "a3",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv57v6eignm",
-      "cod": "a2",
       "nome": "Analógico Original (DOIS LADOS)",
+      "descricao": "Substituição dos dois analógicos pelo modelo original.",
       "categoria": "mvpqlwrylmau",
       "unidade": "R$",
       "valor": 110,
-      "descricao": "Substituição dos dois analógicos pelo modelo original.",
       "imagens": [
         "imagens/analogico-original-dois-lados-mvv57tpoholj.jpg"
       ],
@@ -1239,23 +1241,23 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "a2",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv576q4oj3l",
-      "cod": "a1",
       "nome": "Analógico Original (UM LADO)",
+      "descricao": "Substituição do analógico pelo modelo original.",
       "categoria": "mvpqlsli7c8x",
       "unidade": "R$",
       "valor": 80,
-      "descricao": "Substituição do analógico pelo modelo original.",
       "imagens": [
         "imagens/analogico-original-um-lado-mvv574wd62x1.jpg"
       ],
@@ -1267,23 +1269,23 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "a1",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv563auuuy8",
-      "cod": "a0",
       "nome": "Gatilhos L2/R2",
+      "descricao": "Reparo dos gatilhos sem pressão ou não funcionando.",
       "categoria": "mvpqloidgm1r",
       "unidade": "R$",
       "valor": 120,
-      "descricao": "Reparo dos gatilhos sem pressão ou não funcionando.",
       "imagens": [
         "imagens/gatilhos-l2-r2-mvv561ts7yhl.jpg"
       ],
@@ -1295,23 +1297,23 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "a0",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv54v9l8b1t",
-      "cod": "9z",
       "nome": "Borracha dos Analógicos (PAR)",
+      "descricao": "Troca das duas capinhas de borrachas dos analógicos.",
       "categoria": "mvpqlljil752",
       "unidade": "R$",
       "valor": 60,
-      "descricao": "Troca das duas capinhas de borrachas dos analógicos.",
       "imagens": [
         "imagens/borracha-dos-analogicos-par-mvv54u01svd2.jpg"
       ],
@@ -1321,23 +1323,23 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "9z",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv543pojlnd",
-      "cod": "9y",
       "nome": "Botões não FUNCIONA/FALHANDO",
+      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
       "categoria": "mvpqlj3r0vd1",
       "unidade": "R$",
       "valor": 120,
-      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
       "imagens": [
         "imagens/botoes-nao-funciona-falhando-mvv542fz4jxo.jpg"
       ],
@@ -1349,23 +1351,23 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "9y",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv52vtk4g86",
-      "cod": "9x",
       "nome": "Troca do conector USB",
+      "descricao": "Reparo no conector USB, desde não carregar ou não conectar, como mal contato.",
       "categoria": "mvpqlfd7o0s3",
       "unidade": "R$",
       "valor": 120,
-      "descricao": "Reparo no conector USB, desde não carregar ou não conectar, como mal contato.",
       "imagens": [
         "imagens/troca-do-conector-usb-mvv52ue50rlb.jpg"
       ],
@@ -1377,23 +1379,23 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "9x",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv51iy8uo3k",
-      "cod": "9w",
       "nome": "Reparo de Placa",
+      "descricao": "Controle não liga, desligando do nada, caindo conexão. Qualquer reparo na placa.",
       "categoria": "mvpqld4is4hq",
       "unidade": "R$",
       "valor": 220,
-      "descricao": "Controle não liga, desligando do nada, caindo conexão. Qualquer reparo na placa.",
       "imagens": [
         "imagens/reparo-de-placa-mvv51hg89vip.jpg"
       ],
@@ -1405,23 +1407,23 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "9w",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv4x30j3mb0",
-      "cod": "9v",
       "nome": "Reparos para Controle de Series S/X",
+      "descricao": "",
       "categoria": "mvpq9plbbdnf",
       "unidade": "R$",
       "valor": null,
-      "descricao": "",
       "imagens": [
         "imagens/reparos-para-controle-de-series-s-x-mvv4x1igpobr.jpg"
       ],
@@ -1433,7 +1435,6 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [
         "mvtwvqu9qhpv",
         "mvtwwloi9ivp",
@@ -1446,20 +1447,21 @@
         "mvtx3i1lxcme"
       ],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "9v",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv4utv9wkoc",
-      "cod": "9u",
       "nome": "Reparos para Controle do Xbox One",
+      "descricao": "Lista de todos os reparos mais comuns no controle do Xbox One.",
       "categoria": "mvpq9yw352eh",
       "unidade": "R$",
       "valor": null,
-      "descricao": "Lista de todos os reparos mais comuns no controle do Xbox One.",
       "imagens": [
         "imagens/reparos-para-controle-do-xbox-one-mvv4usjw4ly2.jpg"
       ],
@@ -1471,7 +1473,6 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [
         "mvtx553xmez8",
         "mvtx79x7uxlf",
@@ -1484,20 +1485,21 @@
         "mvv54v9l8b1t"
       ],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "9u",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv4ojrkk8wq",
-      "cod": "9t",
       "nome": "Reparos para Controle de PS3",
+      "descricao": "Lista de todos os reparos mais comuns no controle do Playstation 3.",
       "categoria": "mvpq9nobmp51",
       "unidade": "R$",
       "valor": null,
-      "descricao": "Lista de todos os reparos mais comuns no controle do Playstation 3.",
       "imagens": [
         "imagens/reparos-para-controle-de-ps3-mvv4oieo62tn.jpg"
       ],
@@ -1509,7 +1511,6 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [
         "mvtn213tqz2o",
         "mvtn30loenge",
@@ -1520,20 +1521,21 @@
         "mvtn4ed4d7ry"
       ],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "9t",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv4h2ch6k0x",
-      "cod": "9s",
       "nome": "Reparos para Controle de PS4",
+      "descricao": "Lista de todos os reparos mais comuns no controle do Playstation 4.",
       "categoria": "mvpq9lgxexa8",
       "unidade": "R$",
       "valor": null,
-      "descricao": "Lista de todos os reparos mais comuns no controle do Playstation 4.",
       "imagens": [
         "imagens/reparos-para-controle-de-ps4-mvv4h15kdgw7.jpg"
       ],
@@ -1545,7 +1547,6 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [
         "mvtmp3syqw5c",
         "mvtmnq1kobks",
@@ -1558,11 +1559,13 @@
         "mvtmlw705ytt"
       ],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "9s",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv3x4wm704n",
