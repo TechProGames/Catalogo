@@ -1008,6 +1008,269 @@
   ],
   "produtos": [
     {
+      "id": "mvvazw3pa673",
+      "cod": "ah",
+      "nome": "Need For Speed Underground 2",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 4.4,
+      "descricao": "A sinopse de Need for Speed: Underground 2 gira em torno de uma nova jornada no mundo das corridas de rua ilegais.\n• O ponto de partida: O protagonista (que é o mesmo vencedor do primeiro jogo) chega à cidade de Bayview após receber uma mensagem de boas-vindas de Samantha, mas logo sofre uma emboscada e perde o controle do seu carro para uma figura misteriosa ligada a Caleb Reece.\n• A aliada: Sem carro e sem reputação na nova cidade, o jogador conhece Rachel Teller (dublada por Brooke Burke), que lhe empresta um carro básico e serve como guia, apresentando as pistas, as oficinas de tuning e o cenário local.\n• O objetivo: O jogador precisa vencer as disputas de rua, ganhar respeito (rep), assinar com patrocinadores e tunar seus veículos para subir na hierarquia do underground, culminando no confronto direto contra Caleb e sua gangue para dominar a cidade de Bayview.\n• Formato: A história é narrada em estilo de quadrinhos (histórias em quadrinhos/cutscenes estilizadas) e mensagens de texto/e-mails recebidos no celular do piloto.",
+      "imagens": [
+        "imagens/need-for-speed-underground-2-mvvazuvp07rx.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Corrida"
+      ],
+      "tipo": "Corrida",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvay2v7tt0t",
+      "cod": "ag",
+      "nome": "Midnight Club 3 DUB Edition Remix",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 4.7,
+      "descricao": "Visão geral criada por IA\n      \nMidnight Club 3: DUB Edition Remix é um jogo de corrida arcade em mundo aberto desenvolvido pela Rockstar San Diego e publicado pela Rockstar Games.\n\nSinopse e Proposta do Jogo\n\nA premissa gira em torno do submundo das corridas de rua ilegais nos Estados Unidos. O jogador assume o papel de um piloto novato que precisa desafiar gangues locais, pilotos de elite e clubes de tunagem para conquistar respeito, dinheiro e os veículos mais desejados do planeta.\nDiferente de simuladores, o foco aqui é a liberdade absoluta de pilotagem: não há barreiras fixas nas pistas, permitindo que você escolha os melhores atalhos por entre o tráfego urbano em alta velocidade para cruzar a linha de chegada.\n\nO que a versão \"Remix\" adiciona ao Xbox Clássico:\n\n• Novas Cidades: Mantém as cidades originais de San Diego, Atlanta e Detroit, e adiciona a icônica Tóquio (inspirada e repaginada de Midnight Club 2).\n• Mais Veículos: Expande a garagem para um total de 94 veículos licenciados (carros, tunados de luxo, SUVs, muscle cars e motos), incluindo marcas como Dodge, Lamborghini, Saleen e Ducati.\n• Customização DUB Magazine: Ampla variedade de peças visuais e de performance (aros maiores, kits aerodinâmicos, pinturas, neon e melhorias de motor) em parceria com a revista DUB.\n• Trilha Sonora Expandida: Adiciona mais 25 músicas licenciadas (focadas em rap, hip-hop e rock), totalizando mais de 120 faixas.",
+      "imagens": [
+        "imagens/midnight-club-3-dub-edition-remix-mvvay1lvo6a9.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Corrida"
+      ],
+      "tipo": "Corrida",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvawzwtu671",
+      "cod": "af",
+      "nome": "Medal of Honor Frontline",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 3.2,
+      "descricao": "Medal of Honor: Frontline é um jogo de tiro em primeira pessoa clássico ambientado na Segunda Guerra Mundial, lançado originalmente em 2002 para o Xbox Clássico (além de outras plataformas).\n\nSinopse e Enredo\n\n• Protagonista: Você assume o papel do Tenente Jimmy Patterson, um condecorado agente da OSS (Office of Strategic Services, o serviço de inteligência dos Estados Unidos) e ex-piloto.\n• Missão Principal: Patterson é enviado atrás das linhas inimigas na Europa ocupada com a missão de se infiltrar em bases nazistas, sabotar operações do Eixo e, por fim, impedir os planos alemães de concluir o desenvolvimento da Horten Ho 229 (asa voadora HO-IX) — uma arma experimental secreta e devastadora que poderia mudar o rumo da Segunda Guerra Mundial.\n• Estrutura da Campanha: A campanha é dividida em 6 missões principais e 20 níveis lineares baseados em eventos históricos reais do conflito.",
+      "imagens": [
+        "imagens/medal-of-honor-frontline-mvvawyggu9hv.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Aventura"
+      ],
+      "tipo": "Ação, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvavzyy5ziz",
+      "cod": "ae",
+      "nome": "Hitman Contracts",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 2.5,
+      "descricao": "O Hitman: Contracts começa de forma misteriosa com o Agente 47 ferido e preso em um quarto de hotel em Paris após uma missão que deu errado.\nEnquanto está gravemente ferido e delirando de dor, o assassino passa a reviver mentalmente várias de suas missões mais perigosas e marcantes do passado. Boa parte do jogo funciona como uma releitura (ou remake parcial) dos eventos do primeiro jogo da franquia (Hitman: Codename 47), misturado com lembranças de novos contratos sombrios pelo mundo.\n\nPrincipais pontos da sinopse:\n\n• O Presente (Paris): O Agente 47 tenta se recuperar dos ferimentos no hotel e escapar da polícia local que cercou o prédio.\n• As Lembranças/Missões: Cada fase jogável é uma memória do passado de 47 — eliminando alvos da máfia, traficantes e criminosos internacionais em climas sombrios, chuvosos e claustrofóbicos.\n• O desfecho: No final, 47 consegue se recuperar e eliminar a ameaça no hotel antes de escapar das autoridades, conectando os eventos diretamente ao arco da franquia.",
+      "imagens": [
+        "imagens/hitman-contracts-mvvavygripe4.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação"
+      ],
+      "tipo": "Ação",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvav0iglbq1",
+      "cod": "ad",
+      "nome": "Harry Potte Azkaban",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 2.2,
+      "descricao": "Visão geral criada por IA\n      \nA sinopse de Harry Potter e o Prisioneiro de Azkaban para o Xbox Clássico acompanha o terceiro ano de Harry Potter e seus amigos na Escola de Magia e Bruxaria de Hogwarts.\n\nEnredo Principal\n\n• A Fuga de Sirius Black: O perigoso bruxo Sirius Black escapou da prisão de Azkaban e está atrás de Harry.\n• Controle de Trio: Pela primeira vez no jogo, você pode alternar livremente e controlar Harry Potter, Rony Weasley e Hermione Granger, usando as habilidades únicas de cada um para resolver quebra-cabeças e avançar na história.\n• Exploração e Magia: O jogo começa no Expresso de Hogwarts e leva os jogadores por terrenos detalhados do castelo, aulas de magia, voos nas costas do hipogrifo Bicuço e confrontos contra os temíveis Dementadores.\n• Novos Feitiços: É possível aprender e conjurar magias como Carpe Retractum, Glacius e o poderoso Expecto Patronum.",
+      "imagens": [
+        "imagens/harry-potte-azkaban-mvvauyv2er1a.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Aventura"
+      ],
+      "tipo": "Ação, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvathpdz5r8",
+      "cod": "ac",
+      "nome": "Halo 2",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 4.7,
+      "descricao": "Halo 2 é um jogo de tiro em primeira pessoa lançado pela Bungie e pela Microsoft Game Studios em 2004 para o console Xbox original.\n\nSinopse da Campanha\n\nA história se passa no outono de 2552 e narra o clímax da Guerra Humano-Covenant:\n• O Ataque à Terra: Após os eventos do primeiro jogo (Halo: Combat Evolved), o supersoldado Master Chief (Spartan-117) e a inteligência artificial Cortana retornam triunfantes à Terra. No entanto, a trégua dura pouco: uma frota invasora do grupo alienígena Covenant ataca o planeta, forçando uma batalha desesperada para proteger a humanidade.\n• Perspectiva Dupla (O Árbitro): Uma das grandes marcas do jogo é permitir que o jogador assuma o controle de dois protagonistas diferentes. Além de Master Chief, você joga como o Árbitro (The Arbiter), um comandante Elite que foi desonrado pelos líderes religiosos do Covenant (os Profetas) após a destruição do primeiro anel Halo. A narrativa alterna entre os dois lados, mostrando as intrigas políticas e religiosas dos alienígenas e a luta pela sobrevivência dos humanos.\n• Novos Anels e o Flood: Durante a perseguição às frotas inimigas, os personagens descobrem a existência de um segundo anel Halo e precisam lidar com a ameaça parasitária e descontrolada do Flood, uma força antiga que consome toda forma de vida inteligente.",
+      "imagens": [
+        "imagens/halo-2-mvvatg7zyh3s.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Aventura"
+      ],
+      "tipo": "Ação, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvarrcds6n8",
+      "cod": "ab",
+      "nome": "FIFA Street",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 1.8,
+      "descricao": "O FIFA Street original (lançado para o Xbox Clássico em 2005) não possui uma campanha com roteiro cinematográfico complexo; sua premissa é focada na cultura do futebol de rua e no estilo freestyle.\n\nSinopse e Proposta do Jogo\n\n• Foco no Estilo e Respeito: Você começa com uma equipe amadora e precisa desafiar lendas e times de rua ao redor do mundo. O objetivo não é apenas vencer as partidas, mas acumular respeito através de dribles ousados, humilhações nos adversários e truques espetaculares.\n• Sem Regras Tradicionais: O jogo elimina as regras do futebol de campo convencional (não há laterais, faltas formais ou cartões vermelhos que parem o jogo de forma chata), transformando as partidas em duelos rápidos de 4 contra 4 (mais 1 goleiro ou sem goleiro dependendo do formato).\n• Jogadores Reais e Quadras Urbanas: Você pode jogar com grandes estrelas do futebol mundial da época (como Ronaldinho Gaúcho, Adriano e Zidane) adaptados para o estilo de quadras improvisadas em favelas, ruas de cidades famosas, coberturas e quadras de concreto pelo globo.\n• Mecânica de Game Breaker: Conforme você acerta sequências de dribles e combos, acumula energia para desferir jogadas especiais chamadas de Game Breaker, que ajudam a virar o placar ou marcar gols de forma estilosa.",
+      "imagens": [
+        "imagens/fifa-street-mvvarpsw1w85.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Esporte"
+      ],
+      "tipo": "Esporte",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvaoimyqswl",
+      "cod": "aa",
+      "nome": "Disney Era do Gelo 2",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 1.9,
+      "descricao": "A Era do Gelo 2: O Degelo (Ice Age 2: The Meltdown), lançado para o Xbox clássico em 2006, é um jogo de aventura e plataforma 3D baseado no filme homônimo. Embora o filme seja da Blue Sky/20th Century Fox (atualmente parte da Disney), o jogo foi desenvolvido pela Eurocom e distribuído pela Vivendi Universal.\n\nSinopse do Jogo\n\nA história acompanha o avanço do aquecimento global na pré-história. O vale congelado onde os animais vivem corre o risco de sofrer uma inundação catastrófica devido ao derretimento de uma gigantesca represa de gelo. Para sobreviverem, todos os animais precisam migrar para o outro lado do vale em busca de uma suposta embarcação salvadora.\nDiferente do longa-metragem, o jogo adota uma perspectiva focada nas desventuras de Scrat, o esquilo dente-de-sabre obstinado. Enquanto tenta escapar do grande dilúvio, Scrat cruza o caminho do famoso trio principal — o mamute Manny, a preguiça Sid e o tigre Diego —, além de novos personagens como a mamute Ellie e os gambás Crash e Eddie. Em sua jornada para coletar suas preciosas nozes e bolotas, o esquilo precisa resolver quebra-cabeças, enfrentar predadores locais e ajudar outros animais em perigo ao longo de cenários que vão de cavernas glaciais a pântanos perigosos.\n\nDetalhes da Jogabilidade",
+      "imagens": [
+        "imagens/disney-era-do-gelo-2-mvvaogx0exud.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Aventura"
+      ],
+      "tipo": "Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvakyeb18t4",
+      "cod": "a9",
+      "nome": "Call Of Duty 1 Finest Hour",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 2.2,
+      "descricao": "Call of Duty: Finest Hour é um jogo de tiro em primeira pessoa de 2004 ambientado na Segunda Guerra Mundial, desenvolvido pela Spark Unlimited e publicado pela Activision. Embora compartilhe o tema com o primeiro jogo da franquia para PC, ele traz uma história independente baseada em seis perspectivas cruzadas de soldados Aliados (Soviéticos, Britânicos e Americanos).\n\nSinopse e Campanhas\n\nO jogo divide-se em três campanhas principais que retratam diferentes frentes de batalha:\n• Campanha Soviética:\n\t• Protagonistas: O soldado Aleksandr Sokolov, a franco-atiradora Tenente Tania Pavelovna (a primeira protagonista feminina jogável da franquia) e o Major Nikolai Badanov.\n\t• Enredo: Começa na sangrenta e caótica Batalha de Stalingrado, combatendo em prédios destruídos, esgotos e até controlando tanques soviéticos contra as forças alemãs.\n• Campanha Britânica:\n\t• Protagonistas: O sargento Edward Carlyle (comandado pelo Sargento Bob Starkey, dublado por Brian Johnson, vocalista do AC/DC).\n\t• Enredo: Uma campanha mais curta focada em operações de comandos e combates táticos no Norte da África.\n• Campanha Americana:\n\t• Protagonistas: O sargento Chuck Walker e o sargento Sam Rivers (em missões com tanques).\n\t• Enredo: Acompanha o avanço aliado na Europa Ocidental, retratando a captura de Aken, combates urbanos em Tilet e a importante tomada da ponte sobre o rio Reno.",
+      "imagens": [
+        "imagens/call-of-duty-1-finest-hour-mvvakwugjhoq.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação"
+      ],
+      "tipo": "Ação",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvaj7ovq980",
+      "cod": "a8",
+      "nome": "Black",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 2.2,
+      "descricao": "O Black é um clássico jogo de tiro em primeira pessoa (FPS) desenvolvido pela Criterion Games e publicado pela Electronic Arts (EA).\n\nSinopse e Enredo\n\nA história acompanha o Sargento Jack Kellar, um agente das operações especiais e da CIA que está sendo duramente interrogado por um oficial misterioso sobre missões secretas em regiões da Europa Oriental (como a Rússia e a Chechênia).\nAtravés das lembranças e dos relatos de Kellar durante o interrogatório, o jogador revive e participa de combates contra uma organização terrorista internacional chamada Seventh Wave (Sétima Onda). O esquadrão tático secreto conhecido como BLACK opera sob total anonimato e negação oficial para proteger os Estados Unidos de ameaças extremas.",
+      "imagens": [
+        "imagens/black-mvvaj5s5hv5v.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação"
+      ],
+      "tipo": "Ação",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvv5v8nkxt00",
       "cod": "a7",
       "nome": "Kit OPL PS2",
