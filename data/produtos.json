@@ -1002,6 +1002,36 @@
   ],
   "produtos": [
     {
+      "id": "mvv5bbfi3iqb",
+      "cod": "a4",
+      "nome": "Reparos para Controle do Xbox 360",
+      "categoria": "mvpqa3ftrhwo",
+      "unidade": "R$",
+      "valor": null,
+      "descricao": "Lista de todos os reparos mais comuns no controle do Xbox One.",
+      "imagens": [
+        "imagens/reparos-para-controle-do-xbox-360-mvv5b9x43r3y.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [
+        "mvv58jrm89w6",
+        "mvv576q4oj3l",
+        "mvv57v6eignm"
+      ],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvv58jrm89w6",
       "cod": "a3",
       "nome": "Botões não FUNCIONA/FALHANDO",
