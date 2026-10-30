@@ -193,6 +193,12 @@ body:not(.previa) #logo,body:not(.previa) #marca{cursor:pointer}
 .servs-volta{font-size:.6875rem;color:var(--mut)}
 .serv-de{font-size:.6875rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--azul2)}
 .det .serv-de{font-size:.8125rem}
+.btn-add .t-rm{display:none}
+@media (hover:hover){
+  .btn-add.on[data-a="x"]:hover{background:color-mix(in srgb,#ff4d4d 16%,transparent);border-color:#ff5c5c;color:#ff8a8a}
+  .btn-add.on[data-a="x"]:hover .t-on{display:none}
+  .btn-add.on[data-a="x"]:hover .t-rm{display:inline}
+}
 .serv-dica{text-align:center;font-size:.8125rem;color:var(--mut);padding:8px 4px;border:1px dashed var(--line);border-radius:10px}
 /* botões "escolher junto" */
 .extras-bts{display:flex;flex-direction:column;gap:8px}
@@ -355,8 +361,8 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=23"></script>
-<script src="pedido.js?v=23"></script>
+<script src="comum.js?v=24"></script>
+<script src="pedido.js?v=24"></script>
 <script>
 // link de pedido aberto no endereço do catálogo ("…/Catalogo/#3.…"): vai para a página do pedido
 if (/^#[23]\./.test(location.hash)) location.replace('pedido.html' + location.hash);
@@ -656,7 +662,7 @@ function botao(p) {
   if (p.servicos.length && !temValorP(p)) return `<p class="serv-dica">👆 Toque em um${p.servicosRotulo ? 'a opção' : ' serviço'} acima</p>`;
   const q = sel[p.id] || 0, id = esc(p.id);
   if (ehGB(p)) {
-    if (q) return `<button class="btn-add on" data-a="x" data-id="${id}">✓ Adicionado</button>`;
+    if (q) return `<button class="btn-add on" data-a="x" data-id="${id}" title="Remover da seleção"><span class="t-on">✓ Adicionado</span><span class="t-rm">✕ Remover</span></button>`;
     const t = somas(itensSel());
     if (t.limite && temValor(p) && t.gb + p.valor > t.limite)
       return `<button class="btn-add nao-cabe" data-a="+" data-id="${id}" aria-disabled="true" title="Restam ${num(Math.max(0, t.limite - t.gb))} GB">NÃO CABE</button>`;
@@ -685,8 +691,13 @@ function blocoServ(p) {
       <span>${sel[s.id] ? '✓ ' : ''}${esc(s.nome)}</span><small>${!s.disponivel ? 'esgotado' : ehGB(s) ? '' : temValorP(s) ? brl(valorDe(s)) : 'consulta'}</small></button>`).join('')}</div>
     ${a ? '<small class="servs-volta">Toque de novo no marcado para voltar</small>' : ''}</div>`;
 }
+// botão do cartão de um anúncio com serviços: abre a janela com as opções
+function botaoOpcoes(p) {
+  const n = p.servicos.filter(s => sel[s]).length;
+  return `<button class="btn-add${n ? ' on' : ''}" data-abrir="${esc(p.id)}">${n ? `✓ ${n} ${n === 1 ? 'escolhido' : 'escolhidos'} · ver opções` : 'Clique para ver as opções'}</button>`;
+}
 function card(p, rank = 0) {
-  const v = vista(p), marcado = sel[p.id] || p.servicos.some(s => sel[s]);
+  const temServ = p.servicos.length > 0, v = temServ ? p : vista(p), marcado = sel[p.id] || p.servicos.some(s => sel[s]);
   return `
     <article class="card${marcado ? ' sel' : ''}${v.disponivel ? '' : ' off'}" data-id="${esc(p.id)}" data-rank="${rank}" tabindex="0" aria-label="Ver detalhes de ${esc(v.nome)}">
       <div class="foto" style="${estiloFoto(v)}">${fotos(v)}${v.disponivel ? '' : '<span class="tag">Esgotado</span>'}${rank ? `<span class="rank">★ ${rank}º</span>` : ''}</div>
@@ -696,9 +707,8 @@ function card(p, rank = 0) {
         ${metaLinha(v)}
         ${listaOpcoes(v)}
         ${textoValor(v, true)}
-        ${blocoServ(p)}
       </div>
-      <div class="acao" data-acao-de="${esc(v.id)}">${botao(v)}</div>
+      <div class="acao"${temServ ? '' : ` data-acao-de="${esc(v.id)}"`}>${temServ && v.disponivel ? botaoOpcoes(p) : botao(v)}</div>
     </article>`;
 }
 // troca o cartão (e a janela de detalhes) de um anúncio depois de escolher/desmarcar um serviço
@@ -947,6 +957,8 @@ document.addEventListener('click', e => {
     else el.scrollBy({left: d * w, behavior: 'smooth'});
     return;
   }
+  const ab = e.target.closest('[data-abrir]');
+  if (ab) { const p = produtos.find(x => x.id === ab.dataset.abrir); if (p) { ativo[p.id] = null; abrirDetalhe(p); } return; }
   const sv = e.target.closest('[data-serv]');
   if (sv) {
     const p = produtos.find(x => x.id === sv.dataset.prod); if (!p) return;
@@ -956,7 +968,7 @@ document.addEventListener('click', e => {
   const b = e.target.closest('[data-a]');
   if (!b) {
     const c = e.target.closest('.card');
-    if (c && !e.target.closest('button')) { const p = produtos.find(x => x.id === c.dataset.id); if (p) abrirDetalhe(p); }
+    if (c && !e.target.closest('button')) { const p = produtos.find(x => x.id === c.dataset.id); if (p) { ativo[p.id] = null; abrirDetalhe(p); } }
     return;
   }
   const id = b.dataset.id, p = produtos.find(x => x.id === id);
