@@ -99,6 +99,24 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
 .ib{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:var(--bg);cursor:pointer;display:grid;place-items:center;color:var(--mut);flex:none}
 .ib:hover{color:var(--txt);border-color:var(--azul)}
 .ib.del:hover{border-color:var(--verm);color:var(--verm)}
+.serv-linha{display:flex;align-items:center;gap:10px;padding:7px 8px;border:1px solid var(--line);border-radius:10px;background:var(--bg);margin-bottom:6px}
+.serv-linha img,.serv-linha .th,.serv-cand img,.serv-cand .th{width:40px;height:40px;border-radius:8px;object-fit:cover;flex:none;font-size:15px}
+.serv-linha>div:not(.th){flex:1;min-width:0}
+.serv-linha b,.serv-cand b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.serv-linha small,.serv-cand small{color:var(--mut);font-size:12px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.serv-busca{margin-top:8px;border:1px solid var(--azul);border-radius:10px;padding:8px;background:var(--bg)}
+.serv-res{max-height:320px;overflow:auto;margin-top:8px;display:flex;flex-direction:column;gap:4px}
+.serv-cand{display:flex;align-items:center;gap:10px;text-align:left;border:1px solid var(--line);background:var(--bg2);border-radius:9px;padding:6px 8px;cursor:pointer;width:100%}
+.serv-cand span{flex:1;min-width:0}
+.serv-cand:hover{border-color:var(--azul)}
+.serv-cand.on{border-color:var(--azul);background:color-mix(in srgb,var(--azul) 18%,transparent)}
+.serv-cand.on b{color:var(--azul2)}
+.serv-cand:disabled{opacity:.45;cursor:default}
+.serv-busca-pe{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:8px}
+.subs{margin:0 0 4px 30px;border-left:2px solid var(--line);padding-left:10px}
+.subs .linha{padding:6px 0}
+.subs .th{width:40px;height:40px;font-size:15px}
+.linha .t small .em{color:var(--azul2);font-weight:700}
 /* lista de produtos agrupada */
 .filtro{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;outline:none;margin:12px 0 4px}
 .grupo{border:1px solid var(--line);border-radius:12px;margin-top:10px;background:var(--bg2);overflow:hidden}
@@ -589,6 +607,21 @@ dialog form{padding:18px}
       <button type="button" class="btn sec" id="add-arm">+ Adicionar versão (ex.: 500 GB, 1 TB)</button>
       <p class="dica">O cliente escolhe a versão. O <b>espaço livre</b> limita a soma dos itens em GB (jogos) que ele pode escolher. Preço vazio = usa o valor do produto.</p>
     </div>
+    <div class="campo" id="serv-campo">
+      <span class="rot">Serviços / variações com foto — opcional</span>
+      <p class="dica" id="serv-dentro" hidden></p>
+      <div id="serv-area">
+        <div id="serv-lista"></div>
+        <div class="campo" id="serv-rot-campo" style="margin-top:8px" hidden><label for="serv-rot">Título da lista no site</label><input id="serv-rot" placeholder="Serviços"></div>
+        <button type="button" class="btn sec" id="serv-puxar">＋ Puxar itens já cadastrados para dentro deste anúncio</button>
+        <div class="serv-busca" id="serv-busca-caixa" hidden>
+          <input class="inp" id="serv-busca" type="search" placeholder="Buscar item (ex.: conector, analógico, PS5)…" aria-label="Buscar item">
+          <div class="serv-res" id="serv-res"></div>
+          <div class="serv-busca-pe"><span class="dica" id="serv-qtd"></span><button type="button" class="btn" id="serv-ok">Pronto</button></div>
+        </div>
+        <p class="dica">Cada item puxado sai da lista solta e passa a aparecer <b>dentro deste anúncio</b>, com a foto, nome, descrição e valor dele. No site, ao tocar no serviço o anúncio mostra esse serviço; tocando de novo volta para este produto. Se este anúncio ficar <b>sem valor</b>, o cliente escolhe só os serviços (aparece "a partir de"). Para devolver um item à lista, toque no ✕.</p>
+      </div>
+    </div>
     <div class="campo">
       <span class="rot">Opções</span>
       <div class="opcoes">
@@ -614,8 +647,8 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=22"></script>
-<script src="pedido.js?v=22"></script>
+<script src="comum.js?v=23"></script>
+<script src="pedido.js?v=23"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -1202,22 +1235,23 @@ $('arvore').addEventListener('click', e => {
 });
 
 // ---------- aba Produtos (lista agrupada e recolhida) ----------
-function linhaProduto(p) {
+function linhaProduto(p, sub = false) {
   const nomesEtq = dados.etiquetas.filter(e => p.etiquetas.includes(e.id)).map(e => e.nome);
-  const info = [p.tipo, textoValor(p), p.outras && p.outras.length ? '+' + p.outras.length + (p.outras.length === 1 ? ' categoria' : ' categorias') : '', p.armazenamentos && p.armazenamentos.length ? p.armazenamentos.map(a => a.nome).join(' / ') : '', p.imagens.length > 1 ? p.imagens.length + ' fotos' : '', ...nomesEtq, p.disponivel ? '' : 'esgotado'].filter(Boolean).join(' · ');
+  const servs = (p.servicos || []).map(id => dados.produtos.find(x => x.id === id)).filter(Boolean);
+  const info = [servs.length ? `${servs.length} ${(p.servicosRotulo || 'serviços').toLowerCase()} dentro` : '', p.tipo, textoValor(p), p.outras && p.outras.length ? '+' + p.outras.length + (p.outras.length === 1 ? ' categoria' : ' categorias') : '', p.armazenamentos && p.armazenamentos.length ? p.armazenamentos.map(a => a.nome).join(' / ') : '', p.imagens.length > 1 ? p.imagens.length + ' fotos' : '', ...nomesEtq, p.disponivel ? '' : 'esgotado'].filter(Boolean).join(' · ');
   return `
     <div class="linha${p.disponivel ? '' : ' off'}" data-id="${esc(p.id)}">
       ${p.imagens[0] ? `<img class="th" data-acao="editar" src="${esc(urlFoto(p.imagens[0]))}" alt="Editar ${esc(p.nome)}">` : `<div class="th" data-acao="editar">${esc(iniciais(p.nome))}</div>`}
       <div class="t" data-acao="editar"><b>${esc(p.nome)}</b><small>${esc(info)}</small></div>
       <div class="mini-btns">
         <label class="sw" title="Disponível"><input type="checkbox" data-acao="disp" ${p.disponivel ? 'checked' : ''}><span></span></label>
-        <button class="ib" data-acao="sobe" title="Subir">↑</button>
-        <button class="ib" data-acao="desce" title="Descer">↓</button>
+        ${sub ? '' : `<button class="ib" data-acao="sobe" title="Subir">↑</button>
+        <button class="ib" data-acao="desce" title="Descer">↓</button>`}
         <button class="ib" data-acao="editar" title="Editar">✎</button>
-        <button class="ib" data-acao="duplicar" title="Duplicar (criar uma cópia para usar em outra categoria)">⧉</button>
+        ${sub ? '' : '<button class="ib" data-acao="duplicar" title="Duplicar (criar uma cópia para usar em outra categoria)">⧉</button>'}
         <button class="ib del" data-acao="apagar" title="Apagar">✕</button>
       </div>
-    </div>`;
+    </div>${servs.length ? `<div class="subs">${servs.map(s => linhaProduto(s, true)).join('')}</div>` : ''}`;
 }
 function htmlGrupo(no, vis, termo) {
   const ids = new Set(idsDe(no)), total = vis.filter(p => ids.has(p.categoria)).length;
@@ -1231,7 +1265,10 @@ function renderLista() {
   const termo = norm($('filtro').value), ps = dados.produtos;
   $('contagem').textContent = ps.length;
   if (!ps.length) { $('lista').innerHTML = '<p class="vazio">Nenhum produto ainda. Clique em “+ Novo produto”.</p>'; return; }
-  const vis = ps.filter(p => !termo || norm(p.nome + ' ' + p.descricao).includes(termo));
+  // itens que estão dentro de um anúncio aparecem embaixo dele (e não soltos na categoria)
+  const dentro = new Set(ps.flatMap(m => m.servicos || []));
+  const bate = p => norm(p.nome + ' ' + p.descricao).includes(termo);
+  const vis = ps.filter(p => !dentro.has(p.id) && (!termo || bate(p) || (p.servicos || []).some(id => { const s = ps.find(x => x.id === id); return s && bate(s); })));
   if (!vis.length) { $('lista').innerHTML = '<p class="vazio">Nada encontrado.</p>'; return; }
   const existentes = new Set(todosNos().map(x => x.no.id));     // aqui cada produto aparece uma vez, no lugar real
   let html = dados.categorias.map(c => htmlGrupo(c, vis, termo)).join('');
@@ -1256,14 +1293,15 @@ $('lista').addEventListener('click', e => {
   if (a === 'editar') return abrirForm(p);
   if (a === 'duplicar') {
     const c = JSON.parse(JSON.stringify(p));
-    c.id = novoId(); c.nome = p.nome + ' (cópia)'; c.cod = proximoCod(); delete c.vendidos;
+    c.id = novoId(); c.nome = p.nome + ' (cópia)'; c.cod = proximoCod(); delete c.vendidos; c.servicos = [];
     ps.splice(i + 1, 0, c); marcarSujo(); renderLista();
     aviso('Cópia criada. Escolha a categoria dela e salve.', 'ok');
     return abrirForm(c);
   }
   if (a === 'apagar') {
-    if (!confirm(`Apagar "${p.nome}"?`)) return;
+    if (!confirm((p.servicos || []).length ? `Apagar o anúncio "${p.nome}"? Os itens que estão dentro dele voltam a ficar soltos.` : `Apagar "${p.nome}"?`)) return;
     remover.push(...p.imagens); ps.splice(i, 1);
+    ps.forEach(m => { if (m.servicos) m.servicos = m.servicos.filter(x => x !== p.id); });
   } else if (a === 'sobe' || a === 'desce') {
     let j = i;
     do { j += a === 'sobe' ? -1 : 1; } while (j >= 0 && j < ps.length && ps[j].categoria !== p.categoria);
@@ -1524,6 +1562,58 @@ function renderExtras() {
   extraSel.atualizar();
 }
 $('extras-lista').addEventListener('input', e => { const i = e.target.dataset.rotulo; if (i !== undefined) extrasForm[+i].rotulo = e.target.value; });
+// ---- serviços / variações com foto: outros produtos que passam a ficar DENTRO deste anúncio
+let servForm = [];
+const paiDe = id => dados.produtos.find(m => m.id !== id && (m.servicos || []).includes(id));
+const miniFoto = p => p.imagens[0] ? `<img src="${esc(urlFoto(p.imagens[0]))}" alt="">` : `<div class="th">${esc(iniciais(p.nome))}</div>`;
+function renderServ() {
+  const meu = editando?.id, dono = meu ? paiDe(meu) : null;
+  $('serv-dentro').hidden = !dono; $('serv-area').hidden = !!dono;
+  if (dono) $('serv-dentro').innerHTML = `Este item está <b>dentro do anúncio “${esc(dono.nome)}”</b>. Para tirar, abra aquele anúncio e toque no ✕ deste item.`;
+  $('serv-lista').innerHTML = servForm.map((id, i) => {
+    const s = dados.produtos.find(x => x.id === id); if (!s) return '';
+    return `<div class="serv-linha">${miniFoto(s)}<div><b>${esc(s.nome)}</b><small>${esc(textoValor(s))}</small></div>
+      <button type="button" class="ib" data-serv-sobe="${i}" title="Subir"${i ? '' : ' disabled'}>↑</button>
+      <button type="button" class="ib del" data-serv-rm="${i}" title="Tirar deste anúncio (volta a ser um item solto)">✕</button></div>`;
+  }).join('');
+  $('serv-rot-campo').hidden = !servForm.length;
+  $('serv-puxar').textContent = servForm.length ? '＋ Puxar mais itens' : '＋ Puxar itens já cadastrados para dentro deste anúncio';
+  if (!$('serv-busca-caixa').hidden) renderServBusca();
+}
+function renderServBusca() {
+  const t = norm($('serv-busca').value), meu = editando?.id;
+  const cand = dados.produtos.filter(p => p.id !== meu && !(p.servicos || []).length &&
+    (!t || norm(p.nome + ' ' + p.descricao + ' ' + caminhoExp(p.categoria)).includes(t)));
+  // os já marcados primeiro
+  cand.sort((a, b) => servForm.includes(b.id) - servForm.includes(a.id));
+  $('serv-res').innerHTML = cand.slice(0, 120).map(p => {
+    const dono = paiDe(p.id), dentro = servForm.includes(p.id), outro = dono && dono.id !== meu;
+    return `<button type="button" class="serv-cand${dentro ? ' on' : ''}" data-serv-add="${esc(p.id)}"${outro ? ' disabled' : ''}>${miniFoto(p)}
+      <span><b>${dentro ? '✓ ' : ''}${esc(p.nome)}</b><small>${esc(outro ? `já está em “${dono.nome}”` : [caminhoExp(p.categoria), textoValor(p)].filter(Boolean).join(' · '))}</small></span></button>`;
+  }).join('') || '<p class="dica">Nada encontrado.</p>';
+  $('serv-qtd').textContent = servForm.length ? `${servForm.length} ${servForm.length === 1 ? 'item' : 'itens'} neste anúncio` : 'Toque nos itens para puxar';
+}
+$('serv-puxar').onclick = () => {
+  const c = $('serv-busca-caixa'); c.hidden = !c.hidden;
+  if (!c.hidden) { renderServBusca(); $('serv-busca').focus(); }
+};
+$('serv-ok').onclick = () => { $('serv-busca-caixa').hidden = true; };
+$('serv-busca').addEventListener('input', renderServBusca);
+$('serv-busca').addEventListener('keydown', e => { if (e.key === 'Enter') e.preventDefault(); });
+$('serv-res').addEventListener('click', e => {
+  const b = e.target.closest('[data-serv-add]'); if (!b || b.disabled) return;
+  const id = b.dataset.servAdd, i = servForm.indexOf(id);
+  i >= 0 ? servForm.splice(i, 1) : servForm.push(id);
+  const st = $('serv-res').scrollTop; renderServ(); $('serv-res').scrollTop = st;
+});
+$('serv-lista').addEventListener('click', e => {
+  const rm = e.target.closest('[data-serv-rm]'), up = e.target.closest('[data-serv-sobe]');
+  if (rm) servForm.splice(+rm.dataset.servRm, 1);
+  else if (up) { const i = +up.dataset.servSobe; [servForm[i - 1], servForm[i]] = [servForm[i], servForm[i - 1]]; }
+  else return;
+  renderServ();
+});
+
 let armForm = [];             // [{id, nome, gb, valor}]
 const numBR = v => v === null || v === undefined || v === '' ? '' : Number(v).toLocaleString('pt-BR', {maximumFractionDigits: 2});
 function renderArm() {
@@ -1596,6 +1686,8 @@ function abrirForm(p) {
   etqForm = new Set(p?.etiquetas || []);
   extrasForm = (p?.extras || []).map(e => ({...e}));
   renderExtras();
+  servForm = [...(p?.servicos || [])]; $('serv-rot').value = p?.servicosRotulo || '';
+  $('serv-busca').value = ''; $('serv-busca-caixa').hidden = true; renderServ();
   outrasForm = [...(p?.outras || [])];
   const ultimo = ler('catalogo-admin-ultima-capa', null), t = dados.loja.tema;
   if (p) {                                 // produto existente: o dele (ou o padrão antigo da loja)
@@ -1658,6 +1750,7 @@ form.addEventListener('submit', async e => {
     etiquetas: dados.etiquetas.filter(x => etqForm.has(x.id)).map(x => x.id),
     extras: extrasForm.filter(e => acharNoExp(e.cat)).map(e => ({cat: e.cat, rotulo: String(e.rotulo || '').trim()})),
     tipos: [...tiposForm], tipo: tiposForm.join(', '),
+    servicos: servForm.filter(id => dados.produtos.some(x => x.id === id)), servicosRotulo: $('serv-rot').value.trim(),
     armazenamentos: arms,
     outras: outrasForm.filter(c => c && c !== catForm),
     formato: formatoForm, ajuste: ajusteForm,

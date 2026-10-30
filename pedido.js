@@ -74,16 +74,18 @@ const Pedidos = (() => {
   function montar(cat, c) {
     const nos = percorrer(cat.categorias), porId = new Map(nos.map(x => [x.no.id, x]));
     const caminho = id => { const n = []; let x = porId.get(id); while (x) { n.unshift(x.no.nome); x = x.pai ? porId.get(x.pai.id) : null; } return n.join(' › '); };
+    const pais = paisServicos(cat.produtos);
     const linhas = c.it.map(([pid, q, vid, vSnap]) => {
       const p = cat.produtos.find(x => x.id === pid || (x.cod && 'c:' + x.cod === pid));
       if (!p) return null;
+      const pai = pais.get(p.id);          // serviço de um anúncio: "Controle PS5 — Troca do conector
       const v = (typeof vid === 'number' ? p.armazenamentos[vid] : p.armazenamentos.find(a => a.id === vid)) || (p.armazenamentos.length ? p.armazenamentos[0] : null);
       const valorAtual = v && v.valor !== null ? v.valor : p.valor;
       return {
-        id: p.id, nome: p.nome, qtd: Math.max(1, +q || 1), versao: v ? v.nome : '', versaoGB: v ? v.gb : 0,
+        id: p.id, nome: pai ? `${pai.nome} — ${p.nome}` : p.nome, qtd: Math.max(1, +q || 1), versao: v ? v.nome : '', versaoGB: v ? v.gb : 0,
         unidade: p.unidade, valor: ehGB(p) ? null : (temNum(vSnap) ? vSnap : (temNum(valorAtual) ? valorAtual : null)),
         gb: ehGB(p) && temNum(p.valor) ? p.valor : null, imagem: p.imagens[0] || '', tipo: p.tipo || '',
-        grupo: caminho(p.categoria) || 'Outros', adicional: '', _p: p
+        grupo: caminho((pai || p).categoria) || 'Outros', adicional: '', _p: p
       };
     }).filter(Boolean);
     // itens que entraram pelo botão "Adicionar …" de outro item escolhido viram "adicionais"

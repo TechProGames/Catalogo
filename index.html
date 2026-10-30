@@ -173,6 +173,27 @@ body:not(.previa) #logo,body:not(.previa) #marca{cursor:pointer}
 .var.on{border-color:var(--azul);background:color-mix(in srgb,var(--azul) 16%,transparent);box-shadow:0 0 0 1px var(--azul)}
 .var.on small{color:var(--azul2)}
 .var-info{color:var(--azul2);font-weight:600;font-size:.8125rem}
+/* serviços dentro de um anúncio */
+.servs{display:flex;flex-direction:column;gap:5px;margin-top:4px}
+.servs .var-rot small{font-weight:600;letter-spacing:0}
+.servs-lista{display:flex;flex-direction:column;gap:4px}
+.card .servs-lista{max-height:178px;overflow:auto;padding-right:2px}
+.serv{display:flex;justify-content:space-between;align-items:center;gap:8px;text-align:left;border:1px solid var(--line);background:var(--bg);border-radius:9px;padding:7px 9px;cursor:pointer;color:var(--txt);font-size:.8125rem;line-height:1.2}
+.serv span{font-weight:700;min-width:0}
+.serv small{flex:none;color:var(--mut);font-size:.75rem;font-weight:600}
+.serv:hover{border-color:color-mix(in srgb,var(--azul) 55%,var(--line))}
+.serv.sel{border-color:color-mix(in srgb,var(--azul) 70%,var(--line))}
+.serv.sel span{color:var(--azul2)}
+.serv.on{border-color:var(--azul);background:color-mix(in srgb,var(--azul) 18%,transparent);box-shadow:0 0 0 1px var(--azul)}
+.serv.on small{color:var(--azul2)}
+.serv.off{opacity:.55}
+.card .serv{flex-direction:column;align-items:flex-start;gap:1px;padding:6px 8px}
+.det .serv{font-size:.9375rem;padding:10px 12px}
+.det .serv small{font-size:.8125rem}
+.servs-volta{font-size:.6875rem;color:var(--mut)}
+.serv-de{font-size:.6875rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--azul2)}
+.det .serv-de{font-size:.8125rem}
+.serv-dica{text-align:center;font-size:.8125rem;color:var(--mut);padding:8px 4px;border:1px dashed var(--line);border-radius:10px}
 /* botões "escolher junto" */
 .extras-bts{display:flex;flex-direction:column;gap:8px}
 .btn-extra{width:100%;border:0;border-radius:10px;padding:12px;font-weight:800;cursor:pointer;background:var(--verm);color:var(--sobre-verm);font-size:.9375rem;box-shadow:0 6px 20px color-mix(in srgb,var(--verm) 35%,transparent)}
@@ -334,8 +355,8 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=22"></script>
-<script src="pedido.js?v=22"></script>
+<script src="comum.js?v=23"></script>
+<script src="pedido.js?v=23"></script>
 <script>
 // link de pedido aberto no endereço do catálogo ("…/Catalogo/#3.…"): vai para a página do pedido
 if (/^#[23]\./.test(location.hash)) location.replace('pedido.html' + location.hash);
@@ -353,12 +374,18 @@ const PREVIA = new URLSearchParams(location.search).has('previa');
 let loja = {}, categorias = [], etiquetas = [], produtos = [], caminhoSel = [], termo = '';
 let sel = ler('catalogo-selecao', {});
 let detalheId = null, paraProduto = null, parametrosLidos = false;
+let pais = new Map(), listaveis = [], ativo = {};   // serviços ficam dentro do anúncio (não aparecem soltos)
+const servDe = p => (p.servicos || []).map(id => produtos.find(x => x.id === id)).filter(Boolean);
+const vista = p => (ativo[p.id] && p.servicos.includes(ativo[p.id]) && produtos.find(x => x.id === ativo[p.id])) || p;
+const txtBusca = p => norm([p.nome, p.descricao, p.tipo, ...servDe(p).map(s => s.nome + ' ' + s.descricao + ' ' + s.tipo)].join(' '));
+const tiposDe = p => [...p.tipos, ...servDe(p).flatMap(s => s.tipos)];
 const mapa = () => new Map(percorrer(categorias).map(x => [x.no.id, x]));
 const nomesOpcoes = p => etiquetas.filter(e => p.etiquetas.includes(e.id) && e.nome.trim()).map(e => e.nome);
 
 function usarDados(d) {
   ({loja, categorias, etiquetas, produtos} = normalizarCatalogo(d));
   categorias = expandirArvore(categorias);
+  pais = paisServicos(produtos); listaveis = produtos.filter(p => !pais.has(p.id));
   const m = mapa();
   const i = caminhoSel.findIndex(id => !m.has(id));
   if (i >= 0) caminhoSel = caminhoSel.slice(0, i);
@@ -478,7 +505,7 @@ function cabecalho() {
 
 // ---------- navegação: categorias numa linha, subcategorias numa segunda linha com o caminho ----------
 let listaAberta = false;
-const contarNo = no => { const ids = new Set(origensDe(no)); return produtos.filter(p => catsDe(p).some(c => ids.has(c))).length; };
+const contarNo = no => { const ids = new Set(origensDe(no)); return listaveis.filter(p => catsDe(p).some(c => ids.has(c))).length; };
 const itens = n => n === 1 ? '1 item' : n + ' itens';
 function niveis() {
   if (!categorias.length) { $('niveis').innerHTML = ''; $('lista-sub').hidden = true; return; }
@@ -588,7 +615,9 @@ function salvarSel() { if (!PREVIA) { gravar('catalogo-selecao', sel); gravar('c
 const varDe = p => p.armazenamentos.length ? (p.armazenamentos.find(a => a.id === selVar[p.id]) || p.armazenamentos[0]) : null;
 const valorDe = p => { const v = varDe(p); return v && v.valor !== null ? v.valor : p.valor; };
 const temValorP = p => typeof valorDe(p) === 'number' && isFinite(valorDe(p));
-const nomeCompleto = p => { const v = varDe(p); return p.nome + (v && v.nome ? ` (${v.nome})` : ''); };
+const nomeCompleto = p => { const v = varDe(p), pai = pais.get(p.id); return (pai ? pai.nome + ' — ' : '') + p.nome + (v && v.nome ? ` (${v.nome})` : ''); };
+// menor preço entre os serviços de um anúncio (para "a partir de" e para ordenar)
+const menorServ = p => { const vs = servDe(p).filter(s => !ehGB(s) && temValorP(s)).map(valorDe); return vs.length ? Math.min(...vs) : null; };
 // outras abas do catálogo (ex.: a aba de jogos aberta pelo botão) mantêm a seleção sincronizada
 addEventListener('storage', e => {
   if (e.key !== 'catalogo-selecao' && e.key !== 'catalogo-variantes') return;
@@ -608,6 +637,7 @@ function avisoCliente(msg) {
 
 // ---------- cards ----------
 function textoValor(p, compacto) {
+  if (p.servicos.length && !temValorP(p) && menorServ(p) !== null) return `<div class="preco"><small class="apartir">a partir de</small> ${brl(menorServ(p))}</div>`;
   if (ehGB(p)) return compacto ? '' : (temValor(p) ? `<div class="preco gb">${num(p.valor)} GB</div>` : '');
   if (compacto && p.armazenamentos.some(a => a.valor !== null)) {
     const vs = [p.valor, ...p.armazenamentos.map(a => a.valor)].filter(v => typeof v === 'number');
@@ -623,6 +653,7 @@ function metaLinha(p) {
 }
 function botao(p) {
   if (!p.disponivel) return '<button class="btn-add" disabled>Indisponível</button>';
+  if (p.servicos.length && !temValorP(p)) return `<p class="serv-dica">👆 Toque em um${p.servicosRotulo ? 'a opção' : ' serviço'} acima</p>`;
   const q = sel[p.id] || 0, id = esc(p.id);
   if (ehGB(p)) {
     if (q) return `<button class="btn-add on" data-a="x" data-id="${id}">✓ Adicionado</button>`;
@@ -646,18 +677,38 @@ function fotos(p) {
     <div class="pontos">${im.map((_, i) => `<i${i ? '' : ' class="on"'}></i>`).join('')}</div>`;
 }
 const listaOpcoes = p => { const o = nomesOpcoes(p); return o.length ? `<ul class="opcoes">${o.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''; };
+function blocoServ(p) {
+  const ss = servDe(p); if (!ss.length) return '';
+  const a = ativo[p.id];
+  return `<div class="servs"><span class="var-rot">${esc(p.servicosRotulo || 'Serviços')} <small>(${ss.length})</small></span>
+    <div class="servs-lista">${ss.map(s => `<button class="serv${s.id === a ? ' on' : ''}${sel[s.id] ? ' sel' : ''}${s.disponivel ? '' : ' off'}" data-serv="${esc(s.id)}" data-prod="${esc(p.id)}" aria-pressed="${s.id === a}">
+      <span>${sel[s.id] ? '✓ ' : ''}${esc(s.nome)}</span><small>${!s.disponivel ? 'esgotado' : ehGB(s) ? '' : temValorP(s) ? brl(valorDe(s)) : 'consulta'}</small></button>`).join('')}</div>
+    ${a ? '<small class="servs-volta">Toque de novo no marcado para voltar</small>' : ''}</div>`;
+}
 function card(p, rank = 0) {
+  const v = vista(p), marcado = sel[p.id] || p.servicos.some(s => sel[s]);
   return `
-    <article class="card${sel[p.id] ? ' sel' : ''}${p.disponivel ? '' : ' off'}" data-id="${esc(p.id)}" tabindex="0" aria-label="Ver detalhes de ${esc(p.nome)}">
-      <div class="foto" style="${estiloFoto(p)}">${fotos(p)}${p.disponivel ? '' : '<span class="tag">Esgotado</span>'}${rank ? `<span class="rank">★ ${rank}º</span>` : ''}</div>
+    <article class="card${marcado ? ' sel' : ''}${v.disponivel ? '' : ' off'}" data-id="${esc(p.id)}" data-rank="${rank}" tabindex="0" aria-label="Ver detalhes de ${esc(v.nome)}">
+      <div class="foto" style="${estiloFoto(v)}">${fotos(v)}${v.disponivel ? '' : '<span class="tag">Esgotado</span>'}${rank ? `<span class="rank">★ ${rank}º</span>` : ''}</div>
       <div class="info">
-        <h3 class="nome">${esc(p.nome)}</h3>
-        ${metaLinha(p)}
-        ${listaOpcoes(p)}
-        ${textoValor(p, true)}
+        ${v !== p ? `<small class="serv-de">${esc(p.nome)}</small>` : ''}
+        <h3 class="nome">${esc(v.nome)}</h3>
+        ${metaLinha(v)}
+        ${listaOpcoes(v)}
+        ${textoValor(v, true)}
+        ${blocoServ(p)}
       </div>
-      <div class="acao" data-acao-de="${esc(p.id)}">${botao(p)}</div>
+      <div class="acao" data-acao-de="${esc(v.id)}">${botao(v)}</div>
     </article>`;
+}
+// troca o cartão (e a janela de detalhes) de um anúncio depois de escolher/desmarcar um serviço
+function redesenhar(p) {
+  document.querySelectorAll(`.card[data-id="${CSS.escape(p.id)}"]`).forEach(c => {
+    const t = document.createElement('div'); t.innerHTML = card(p, +c.dataset.rank || 0);
+    const n = t.firstElementChild; c.replaceWith(n); ligarSlides(n);
+  });
+  if ($('det').open && detalheId === p.id) abrirDetalhe(p);
+  requestAnimationFrame(arrumarRotulos);
 }
 function ligarSlides(raiz) {
   raiz.querySelectorAll('.slides').forEach(el => el.addEventListener('scroll', () => {
@@ -713,9 +764,9 @@ function montarFerramentas() {
   let html = paraProduto ? '<div class="para" id="banner-para"></div>' : '';
   if (atual) {
     const ids = new Set(origensDe(atual));
-    const daqui = produtos.filter(p => catsDe(p).some(c => ids.has(c)));
-    const tipos = [...new Set(daqui.flatMap(p => p.tipos))].sort((a, b) => a.localeCompare(b, 'pt'));
-    const temR = daqui.some(p => !ehGB(p) && temValorP(p)), temG = daqui.some(p => ehGB(p) && temValor(p));
+    const daqui = listaveis.filter(p => catsDe(p).some(c => ids.has(c)));
+    const tipos = [...new Set(daqui.flatMap(tiposDe))].sort((a, b) => a.localeCompare(b, 'pt'));
+    const temR = daqui.some(p => (!ehGB(p) && temValorP(p)) || menorServ(p) !== null), temG = daqui.some(p => ehGB(p) && temValor(p));
     if ((!temR && ['menor', 'maior'].includes(ordem)) || (!temG && ['gbmenor', 'gbmaior'].includes(ordem))) ordem = 'az';
     html += `<div class="ferr-linha">
       <div class="campo-busca mini"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
@@ -745,7 +796,7 @@ $('ferramentas').addEventListener('change', e => {
 });
 function ordenar(lista) {
   const l = [...lista], nome = (a, b) => a.nome.localeCompare(b.nome, 'pt');
-  const reais = p => (!ehGB(p) && temValorP(p) ? valorDe(p) : null), gb = p => (ehGB(p) && temValor(p) ? p.valor : null);
+  const reais = p => (!ehGB(p) && temValorP(p) ? valorDe(p) : menorServ(p)), gb = p => (ehGB(p) && temValor(p) ? p.valor : null);
   // crescente/decrescente; itens sem esse tipo de valor vão para o fim
   const por = (f, dir) => (a, b) => { const x = f(a), y = f(b); return (x === null) - (y === null) || (x !== null && dir * (x - y)) || nome(a, b); };
   if (ordem === 'az') l.sort(nome);
@@ -754,7 +805,8 @@ function ordenar(lista) {
   if (ordem === 'maior') l.sort(por(reais, -1));
   if (ordem === 'gbmenor') l.sort(por(gb, 1));
   if (ordem === 'gbmaior') l.sort(por(gb, -1));
-  if (ordem === 'vendidos') l.sort((a, b) => (b.vendidos || 0) - (a.vendidos || 0) || a.nome.localeCompare(b.nome, 'pt'));
+  const vend = p => (p.vendidos || 0) + servDe(p).reduce((s, x) => s + (x.vendidos || 0), 0);
+  if (ordem === 'vendidos') l.sort((a, b) => vend(b) - vend(a) || a.nome.localeCompare(b.nome, 'pt'));
   return l;
 }
 // A→Z / Z→A / ordem da loja: ordena dentro de cada subcategoria, mantendo os grupos (e o caminho em cima)
@@ -769,10 +821,10 @@ function ordenarDentro(itens) {
 function render() {
   const m = mapa(), atual = noAtual();
   const permitidos = atual ? new Set(origensDe(atual)) : null;
-  const lista = produtos.filter(p => (!permitidos || catsDe(p).some(c => permitidos.has(c))) &&
-    (!termo || norm(p.nome + ' ' + p.descricao + ' ' + p.tipo).includes(termo)) &&
-    (!atual || !termoCat || norm(p.nome + ' ' + p.descricao + ' ' + p.tipo).includes(termoCat)) &&
-    (!atual || !tipoF || p.tipos.includes(tipoF)));
+  const lista = listaveis.filter(p => (!permitidos || catsDe(p).some(c => permitidos.has(c))) &&
+    (!termo || txtBusca(p).includes(termo)) &&
+    (!atual || !termoCat || txtBusca(p).includes(termoCat)) &&
+    (!atual || !tipoF || tiposDe(p).includes(tipoF)));
   if (!lista.length) {
     $('conteudo').innerHTML = `<p class="vazio">${termo || termoCat || tipoF ? 'Nenhum produto encontrado.' : atual ? 'Ainda não há produtos nesta categoria.' : 'Nenhum produto ainda.'}</p>`;
     return;
@@ -782,7 +834,7 @@ function render() {
     // com busca, filtro, mais vendidos ou preço: uma lista só, sem subtítulos
     const ord = ordenar(lista.filter((p, i, a) => a.indexOf(p) === i));
     let r = 0;
-    html = `<div class="grade">${ord.map(p => card(p, ordem === 'vendidos' && p.vendidos ? ++r : 0)).join('')}</div>`;
+    html = `<div class="grade">${ord.map(p => card(p, ordem === 'vendidos' && (p.vendidos || p.servicos.some(s => (produtos.find(x => x.id === s) || {}).vendidos)) ? ++r : 0)).join('')}</div>`;
   } else if (atual) html = gradeContinua(ordenarDentro(itensDoNo(atual, lista, [])));
   else {
     for (const c of categorias) {
@@ -834,21 +886,25 @@ function infoSelecao(n, t) {
   return h;
 }
 function abrirDetalhe(p) {
+  const pai = pais.get(p.id);
+  if (pai) { ativo[pai.id] = p.id; p = pai; }        // um serviço abre dentro do anúncio dele
   detalheId = p.id;
-  const d = $('det');
+  const d = $('det'), v = vista(p);
   d.innerHTML = `
     <button class="det-fechar" data-fechar-det aria-label="Fechar">×</button>
-    <div class="foto">${fotos(p)}${p.disponivel ? '' : '<span class="tag">Esgotado</span>'}</div>
+    <div class="foto">${fotos(v)}${v.disponivel ? '' : '<span class="tag">Esgotado</span>'}</div>
     <div class="det-corpo">
       ${p.categoria ? `<span class="cat-cam">${caminhoAte(p.categoria).map(id => linkCat(mapa().get(id).no)).join('<span class="sep-cam">›</span>')}</span>` : ''}
-      <h2 class="nome">${esc(p.nome)}</h2>
-      ${metaLinha(p)}
-      ${textoValor(p)}
-      ${blocoVariantes(p)}
-      ${listaOpcoes(p)}
-      <div class="acao" data-acao-de="${esc(p.id)}">${botao(p)}</div>
-      ${botoesExtras(p)}
-      ${p.descricao ? `<p class="desc">${esc(p.descricao)}</p>` : ''}
+      ${v !== p ? `<small class="serv-de">${esc(p.nome)}</small>` : ''}
+      <h2 class="nome">${esc(v.nome)}</h2>
+      ${metaLinha(v)}
+      ${textoValor(v)}
+      ${blocoServ(p)}
+      ${blocoVariantes(v)}
+      ${listaOpcoes(v)}
+      <div class="acao" data-acao-de="${esc(v.id)}">${botao(v)}</div>
+      ${botoesExtras(v)}
+      ${v.descricao ? `<p class="desc">${esc(v.descricao)}</p>` : ''}
       <div class="det-resumo" id="det-resumo" hidden></div>
     </div>`;
   ligarSlides(d);
@@ -891,6 +947,12 @@ document.addEventListener('click', e => {
     else el.scrollBy({left: d * w, behavior: 'smooth'});
     return;
   }
+  const sv = e.target.closest('[data-serv]');
+  if (sv) {
+    const p = produtos.find(x => x.id === sv.dataset.prod); if (!p) return;
+    ativo[p.id] = ativo[p.id] === sv.dataset.serv ? null : sv.dataset.serv;    // tocar de novo volta para o anúncio
+    redesenhar(p); return;
+  }
   const b = e.target.closest('[data-a]');
   if (!b) {
     const c = e.target.closest('.card');
@@ -914,6 +976,7 @@ document.addEventListener('click', e => {
   salvarSel();
   document.querySelectorAll(`.card[data-id="${CSS.escape(id)}"]`).forEach(c => c.classList.toggle('sel', !!q));
   document.querySelectorAll(`[data-acao-de="${CSS.escape(id)}"]`).forEach(el => el.innerHTML = botao(p));
+  if (pais.has(id)) redesenhar(pais.get(id));
   atualizar();
 });
 document.addEventListener('keydown', e => {

@@ -178,6 +178,12 @@ function percorrer(lista, pai = null, nivel = 0, out = []) {
   for (const no of lista) { out.push({no, pai, nivel}); percorrer(no.filhas, no, nivel + 1, out); }
   return out;
 }
+// serviço -> anúncio onde ele está
+function paisServicos(produtos) {
+  const m = new Map();
+  for (const p of produtos) for (const s of p.servicos || []) if (!m.has(s)) m.set(s, p);
+  return m;
+}
 const idsDe = no => [no.id, ...no.filhas.flatMap(idsDe)];
 const origensDe = no => [...(no.origens || [no.id]), ...no.filhas.flatMap(origensDe)];
 
@@ -232,6 +238,9 @@ function normalizarCatalogo(d) {
       }).filter((x, i, a) => x.cat && a.findIndex(y => y.cat === x.cat) === i),
       // categorias do item (Ação, Aventura…) — pode ter várias; "tipo" é o texto pronto para mostrar
       tipos: (Array.isArray(p.tipos) ? p.tipos : String(p.tipo || '').split(',')).map(t => String(t || '').trim()).filter((t, i, a) => t && a.indexOf(t) === i),
+      // serviços / variações com foto: outros produtos que ficam DENTRO deste anúncio
+      servicos: Array.isArray(p.servicos) ? p.servicos.map(String) : [],
+      servicosRotulo: String(p.servicosRotulo || '').trim(),
       cod: /^[0-9a-z]{1,6}$/.test(String(p.cod || '')) ? String(p.cod) : '',     // código curto (usado no link do pedido)
       vendidos: Number.isInteger(p.vendidos) && p.vendidos > 0 ? p.vendidos : 0,   // quantas vezes foi pedido (ranking "Mais vendidos")
       // outras categorias onde o MESMO item também aparece
@@ -249,6 +258,10 @@ function normalizarCatalogo(d) {
     };
   });
   produtos.forEach(p => { p.outras = p.outras.filter(c => c !== p.categoria); p.tipo = p.tipos.join(', '); });
+  // cada serviço fica em um anúncio só, e um anúncio que está dentro de outro não tem serviços próprios
+  const porId = new Set(produtos.map(p => p.id)), usados = new Set();
+  produtos.forEach(p => { p.servicos = p.servicos.filter(s => s !== p.id && porId.has(s) && !usados.has(s) && usados.add(s)); });
+  produtos.forEach(p => { if (usados.has(p.id)) p.servicos = []; });
   return {loja, categorias, etiquetas, produtos};
 }
 // todas as categorias (reais) em que o produto aparece
