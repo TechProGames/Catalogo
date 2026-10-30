@@ -1008,6 +1008,33 @@
   ],
   "produtos": [
     {
+      "id": "mvvc6clwa7xq",
+      "cod": "b4",
+      "nome": "Call of Duty 3",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "R$",
+      "valor": null,
+      "descricao": "O Call of Duty 3 (lançado em 2006 para o Xbox 360) é um jogo de tiro em primeira pessoa ambientado na Segunda Guerra Mundial, focado nos eventos de 1944 durante a histórica Rompimento da Normandia e o Bolso de Falaise (Normandy Breakout), que abriram caminho para a libertação de Paris.\n\nSinopse e Enredo\n\nDiferente de muitos jogos do gênero onde você controla um único herói americano, a campanha de 14 missões coloca o jogador na pele de quatro nacionalidades aliadas diferentes, alternando entre as perspectivas de:\n• Exército dos Estados Unidos: Foca em combates intensos na floresta e campos normandos para assegurar posições estratégicas e avançar contra as linhas alemãs.\n• Exército Britânico e Resistência Francesa: Envolve missões de sabotagem, apoio tático e combate em áreas urbanas e rurais para enfraquecer o controle nazista na França.\n• Exército Canadense: Participa de cercos pesados e batalhas de resistência para fechar o cerco às tropas alemãs em retirada.\n• Exército Polonês (1ª Divisão Blindada): Desempenha um papel crucial e heroico na contenção e destruição de forças inimigas encurraladas na Batalha de Falaise.\nO enredo destaca o trabalho em equipe e a forte relação de camaradagem entre os soldados e seus superiores, mostrando o esforço coletivo de várias frentes para empurrar as forças do Eixo em direção a Berlim.",
+      "imagens": [
+        "imagens/call-of-duty-3-mvvc6b7qr6m1.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Aventura"
+      ],
+      "tipo": "Ação, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvvc2byjvfka",
       "cod": "b3",
       "nome": "Call of Duty - Black Ops II",
