@@ -1008,6 +1008,432 @@
   ],
   "produtos": [
     {
+      "id": "mvvbsebuxmc2",
+      "cod": "ax",
+      "nome": "Resident Evil 6",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 8,
+      "descricao": "Lançado em 2012 para o Xbox 360 e outras plataformas, Resident Evil 6 apresenta uma narrativa global em grande escala impulsionada pelo vazamento do letal C-Vírus, unindo rostos clássicos da franquia e novos personagens em quatro campanhas interligadas.\n\nAs Campanhas e Protagonistas\n\n• Campanha de Leon S. Kennedy e Helena Harper:\n\t• Onde se passa: Tall Oaks (EUA) e China.\n\t• Sinopse: O Presidente dos EUA decide revelar a verdade sobre o incidente de Raccoon City, mas sofre um ataque bioterrorista e se transforma em zumbi, obrigando Leon a eliminá-lo. Acusados injustamente do assassinato do presidente, Leon e a agente do governo Helena Harper precisam fugir de uma cidade infestada e investigar os responsáveis por trás do caos.\n• Campanha de Chris Redfield e Piers Nivans:\n\t• Onde se passa: Edônia (Europa do Leste) e China.\n\t• Sinopse: O capitão da BSAA Chris Redfield sofreu um trauma severo no passado que o deixou com amnésia temporária. De volta à ativa ao lado de seu parceiro Piers Nivans, ele lidera um esquadrão em uma cruzada de vingança e dever contra a organização Neo-Umbrella e Carla Radames (uma mulher idêntica a Ada Wong) após perder vários de seus subordinados para as criaturas J'avo.\n• Campanha de Jake Muller e Sherry Birkin:\n\t• Onde se passa: Edônia e China.\n\t• Sinopse: Jake Muller é um mercenário na Europa do Leste e filho do icônico vilão Albert Wesker. Ele possui um sangue especial com anticorpos naturais contra o C-Vírus. Sherry Birkin (agora uma agente adulta do governo dos EUA) é enviada para resgatá-á-lo, pois o sangue dele é a chave para criar uma vacina global. Ambos são implacavelmente caçados pela gigantesca arma biológica Ustanak.\n• Campanha de Ada Wong:\n\t• Onde se passa: Vários locais cruzando as tramas dos outros personagens.\n\t• Sinopse: Jogada individualmente como uma campanha de espionagem, acompanha Ada investigando os bastidores das conspirações da Neo-Umbrella, revelando os segredos e as conexões ocultas por trás do antagonista principal, Derek C. Simmons.",
+      "imagens": [
+        "imagens/resident-evil-6-mvvbsczksc9e.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Aventura"
+      ],
+      "tipo": "Ação, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvbqrmdh33k",
+      "cod": "aw",
+      "nome": "Monopoly Plus",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 1,
+      "descricao": "Visão geral criada por IA\n      \nO Monopoly Plus para Xbox 360 é uma versão moderna e dinâmica do clássico jogo de tabuleiro Banco Imobiliário.\n\nSinopse e Principais Características\n\n• Tabuleiro em 3D Vivos: O centro do tabuleiro traz uma cidade em miniatura completa que se movimenta e evolui conforme você joga. Os moradores interagem com seu progresso e celebram suas conquistas.\n• Personalização de Regras: Você pode jogar com as regras clássicas ou adaptar a partida ao seu estilo escolhendo entre as 6 principais \"Regras da Casa\" oficiais.\n• Multijogador: Suporta partidas locais e online para múltiplos jogadores competirem entre si para construir seus impérios imobiliários.\n• Experiência Social: O jogo permite registrar e exibir capturas de tela (screenshots) em momentos-chave da partida.",
+      "imagens": [
+        "imagens/monopoly-plus-mvvbqqbvtisp.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Aventura"
+      ],
+      "tipo": "Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvbpio28uyf",
+      "cod": "av",
+      "nome": "Minesweeper Flags",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 0.5,
+      "descricao": "Minesweeper Flags é um jogo de quebra-cabeça e estratégia lançado em 11 de fevereiro de 2009 para o Xbox Live Arcade no Xbox 360, desenvolvido pela TikGames e publicado pela Microsoft Corporation.\n\nSinopse e Modos de Jogo\n\nO jogo reinventa a clássica fórmula do tradicional Campo Minado do Windows, transformando-o em uma experiência tridimensional e competitiva:\n• Modo Clássico (Classic Mode): O formato tradicional em três níveis de dificuldade, onde você deve abrir as casas seguras do tabuleiro sem detonar as minas.\n• Modo Bandeiras (Flags Mode): Uma reviravolta no jogo em que, em vez de apenas evitar as bombas, você compete para encontrar e sinalizar (bandeirar) as minas primeiro. Pode ser jogado contra o computador ou com até 4 jogadores (localmente ou via multiplayer online).\n• Modo Campanha (Campaign Mode): Uma jornada single-player ambientada em paisagens 3D, onde o jogador viaja por 7 continentes diferentes e precisa limpar tabuleiros irregulares (totalizando 140 campos minados) tendo um limite de 3 vidas.",
+      "imagens": [
+        "imagens/minesweeper-flags-mvvbph42n739.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação"
+      ],
+      "tipo": "Ação",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvbnyyt9j51",
+      "cod": "au",
+      "nome": "Medal of Honor Airborne",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 4.9,
+      "descricao": "Medal of Honor: Airborne é um jogo de tiro em primeira pessoa ambientado na Segunda Guerra Mundial.\n\nSinopse e Enredo\n\n• Protagonista: Você assume o papel de Boyd Travers, um soldado (Primeira Classe Privada) da lendária 82ª Divisão Aerotransportada (82nd Airborne Division) do Exército dos Estados Unidos.\n• Premissa: Diferente dos jogos lineares tradicionais da franquia, cada missão começa com Travers e seu esquadrão saltando de um avião de transporte C-47 direto para o meio de zonas de combate na Europa.\n• Liberdade de Pouso: O grande diferencial da história e da jogabilidade é que você controla o paraquedas durante a queda. Você pode escolher onde aterrissar: em telhados estratégicos, atrás das linhas inimigas ou no meio do fogo cruzado.\n• Teatro de Operações: A campanha acompanha a segunda metade da Segunda Guerra Mundial na Europa, passando por seis operações históricas icônicas:\n\t• Invasão da Sicília (Operation Husky)\n\t• Normandia pós-Dia D\n\t• Operação Market Garden (Arnhem)\n\t• Batalha das Ardenas, entre outras frentes de avanço aliado até a Alemanha.\n• Progressão: Conforme você utiliza suas armas autênticas da época em combate, ganha pontos para desbloquear melhorias e personalizações para o seu arsenal.",
+      "imagens": [
+        "imagens/medal-of-honor-airborne-mvvbnxga5hxf.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Aventura"
+      ],
+      "tipo": "Ação, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvbm9mf6et7",
+      "cod": "at",
+      "nome": "Hitman Blood Money",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 5.1,
+      "descricao": "Hitman: Blood Money acompanha o Agente 47, um assassino de elite que trabalha para a ICA (Agência Internacional de Contratos).\n\nSinopse e Enredo\n\n• Ameaça à Agência: A história é contada através de flashbacks por um ex-diretor do FBI, Alexander Leland Cayne, que conversa com um jornalista. O fio central mostra que uma misteriosa organização rival — conhecida como The Franchise (A Franquia) — está caçando e eliminando sistematicamente os agentes da ICA, um por um.\n• Sobrevivência e Dinheiro (\"Blood Money\"): Com a ICA à beira do colapso e o próprio Agente 47 como alvo, ele precisa agir por conta própria. O dinheiro que ganha nos contratos é usado entre as missões para subornar testemunhas (reduzindo a notoriedade) ou aprimorar seu arsenal de armas e equipamentos.\n• O Clímax: O jogo culmina em um funeral fingido do Agente 47, onde o jogador pode controlar o personagem (mesmo \"morto\" no chão) para acordar e eliminar todos os inimigos presentes na cerimônia.",
+      "imagens": [
+        "imagens/hitman-blood-money-mvvbm880hsqe.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Aventura"
+      ],
+      "tipo": "Ação, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvbla92jika",
+      "cod": "as",
+      "nome": "Halo 3",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 5.9,
+      "descricao": "O Halo 3 (lançado em 2007 para o Xbox 360 pela Bungie Studios) é o capítulo final da trilogia original de tiro em primeira pessoa.\n\nSinopse\n\nA história se passa no ano de 2552. O super-soldado Master Chief (Spartan-117) retorna à Terra após os eventos de Halo 2 para impedir o avanço da Covenant — uma aliança de raças alienígenas fanáticas que deseja exterminar a humanidade e ativar os Halos, estruturas anulares alienígenas capazes de destruir toda a vida inteligente da galáxia para conter o Flood, um parasita alienígena devastador e implacável.\nCom a Terra sob ataque e as defesas humanas à beira do colapso, Master Chief se une a aliados humanos (como o Sargento Johnson e a inteligência artificial Cortana) e a ex-membros da Covenant (os Elites, que se rebelaram contra os líderes religiosos de sua própria facção). Juntos, eles precisam travar uma batalha desesperada para impedir os planos da Covenant, destruir o Flood e conduzir o conflito a um clímax definitivo para salvar a raça humana.",
+      "imagens": [
+        "imagens/halo-3-mvvbl8gaejp4.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Aventura"
+      ],
+      "tipo": "Ação, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvbjz3h35wk",
+      "cod": "ar",
+      "nome": "Guitar Hero Aerosmith",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 4.7,
+      "descricao": "Guitar Hero: Aerosmith é um jogo de ritmo lançado em 2008 pela Neversoft e Activision, sendo o primeiro título da franquia Guitar Hero dedicado inteiramente à carreira de uma banda específica.\n\nSinopse e Modo Carreira\n\nO jogo narra a ascensão e a história do Aerosmith como uma linha do tempo do rock and roll:\n• O Começo: A campanha começa no primeiro show oficial da banda na Nipmuc High School, passando por locais históricos como o Max's Kansas City.\n• Estrutura dos Shows: Em cada nível/localidade, o jogador normalmente toca algumas músicas de bandas de apoio ou influências do Aerosmith para \"aquecer o público\", antes de subir ao palco com o próprio Aerosmith para tocar seus grandes clássicos e um bis (encore).\n• Evolução: Conforme o jogador avança pelos locais e estádios cada vez maiores, desbloqueia novos visuais, roupas clássicas dos integrantes, vídeos de bastidores e conteúdos bônus.",
+      "imagens": [
+        "imagens/guitar-hero-aerosmith-mvvbjxlezx4v.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Música"
+      ],
+      "tipo": "Música",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvbizfzcvbs",
+      "cod": "aq",
+      "nome": "Game Of Thrones",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 2.6,
+      "descricao": "O jogo de Game of Thrones disponível para o Xbox 360 com mais destaque é Game of Thrones: A Telltale Games Series (um jogo de drama interativo e estilo point-and-click), embora também exista um RPG de ação lançado em 2012 pela Cyanide Studios.\nAqui está a sinopse do principal título (A Telltale Games Series):\n\nSinopse de Game of Thrones: A Telltale Games Series\n\n• Contexto e Início: A história se passa durante os eventos da série de TV da HBO, começando logo após os trágicos acontecimentos do Casamento Vermelho (no final da 3ª temporada).\n• A Família Forrester: Você controla vários membros da Casa Forrester, uma nobre família leal à Casa Stark que governa Ironrath, nas florestas do norte de Westeros.\n• O Conflito: Apanhados no meio da Guerra dos Cinco Reis, os Forresters precisam lutar para proteger sua terra natal, sua família e seus recursos contra inimigos ambiciosos (como a Casa Whitehill) e as consequências políticas de Westeros.\n• Mecânica de Escolhas: Ao longo de 6 episódios, suas decisões, diálogos e ações influenciam diretamente o destino da família, determinando quem sobrevive ou morre, além de contar com aparições de personagens clássicos da série (como Jon Snow, Cersei Lannister, Tyrion Targaryen e Daenerys Targaryen).",
+      "imagens": [
+        "imagens/game-of-thrones-mvvbixpmkrxl.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Aventura"
+      ],
+      "tipo": "Ação, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvbg05x7mrr",
+      "cod": "ap",
+      "nome": "FIFA 14 Copa do Mundo",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 5.6,
+      "descricao": "O jogo 2014 FIFA World Cup Brazil (lançado para Xbox 360 e PlayStation 3) não possui uma história linear com personagens ou enredo fixo, mas sim uma sinopse focada em simular a experiência completa da Copa do Mundo FIFA de 2014.\n\nO que acontece no jogo (Sinopse / Proposta)\n\n• A Grande Competição: O título coloca o jogador no comando de uma das mais de 202 seleções nacionais oficiais disponíveis para disputar o torneio desde as eliminatórias até a grande final no Brasil.\n• Modo \"Road to the FIFA World Cup\": Você pode escolher uma seleção e percorrer todo o caminho real das eliminatórias continentais antes de tentar garantir uma vaga e levantar a taça no solo brasileiro.\n• Atmosfera de Copa do Mundo: O foco do jogo é recriar o clima festivo do evento real, com estádios licenciados do Brasil, torcidas vibrantes com bandeiras e mosaicos, hinos nacionais e comentários dinâmicos que relete a pressão de uma partida de mata-mata.\n• Novas Mecânicas de Jogabilidade: Desenvolvido pela EA Canada, ele aprimorou o motor de jogo do FIFA 14 com dribles responsivos, passes precisos e novas animações de controle de bola para simular o ritmo e a tensão de um torneio de seleções.",
+      "imagens": [
+        "imagens/fifa-14-copa-do-mundo-mvvbfyqrfqk0.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Esporte"
+      ],
+      "tipo": "Esporte",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvbe2ttyn24",
+      "cod": "ao",
+      "nome": "F1 Race Stars",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 1.5,
+      "descricao": "F1 Race Stars para Xbox 360 é um jogo de corrida arcade em estilo kart (semelhante a Mario Kart) desenvolvido e publicado pela Codemasters em novembro de 2012.\n\nSinopse e Proposta do Jogo\n\nO jogo não possui uma narrativa profunda ou campanha com história dramática; em vez disso, ele transforma o universo oficial da Temporada da Fórmula 1 de 2012 em um parque de diversões temático e caricaturado (cartunizado).\n• Pilotos e Equipes: Pilotos reais da época — como Lewis Hamilton, Fernando Alonso, Sebastian Vettel, Michael Schumacher, Felipe Massa e Bruno Senna — foram transformados em heróis carismáticos com traços de caricatura, dirigindo versões miniaturizadas de seus carros oficiais pelas equipes da F1.\n• Pistas Fantásticas: Os circuitos oficiais (como Mônaco, Brasil, Itália, entre outros) foram redesenhados com elementos de fantasia, incluindo saltos gigantescos, loopings, atalhos secretos e montanhas-russas.\n• Mecânicas e Power-ups: Durante as corridas, os jogadores coletam itens especiais (power-ups) para atrapalhar os rivais ou ganhar vantagens, como bolhas de energia, nuvens de chuva e turbos. O diferencial em relação a outros jogos de kart é a inclusão de um sistema de danos: bater com força no carro pode quebrar peças, obrigando o jogador a passar pelos boxes da pista para fazer reparos.\n• Modos de Jogo: Inclui campeonatos variados, contra-relógio (time trials), partidas em tela dividida para até 4 jogadores no mesmo console e multiplayer online para até 12 jogadores.",
+      "imagens": [
+        "imagens/f1-race-stars-mvvbe1i2wruw.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Corrida",
+        "Aventura"
+      ],
+      "tipo": "Corrida, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvbco5a201i",
+      "cod": "an",
+      "nome": "Dragon Ball Z Ultimate Tenkaichi",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 6,
+      "descricao": "O Dragon Ball Z: Ultimate Tenkaichi é um jogo de luta lançado em outubro de 2011 pela Spike e pela Namco Bandai para o Xbox 360 e PlayStation 3.\n\nSinopse e Modos de Jogo\n\n• Modo História (Saiyan Saga / Saga Z): Reconta os principais acontecimentos do anime Dragon Ball Z, cobrindo desde a Saga Saiyajin até a Saga Majin Buu, além de incluir batalhas extras como o especial de Bardock, Metal Cooler, Janemba, Hirudegarn e Gogeta contra Omega Shenron. O jogador explora um mapa de voo livre (semelhante ao estilo de Budokai Tenkaichi 2) entre os combates.\n• Modo Hero (Herói): É um dos grandes diferenciais do jogo. Nele, você cria e personaliza o seu próprio guerreiro (um Saiyajin com opções de customização) para viver uma campanha original pós-Cell, viajando pelo mundo, coletando Esferas do Dragão, escolhendo mentores clássicos da série e subindo de nível.\n• Jogabilidade e Estilo: O título é famoso por focar em uma apresentação altamente cinematográfica, recriando lutas em grande escala, com cenários totalmente destrutíveis, gráficos em cel-shading que imitam perfeitamente o traço do anime e confrontos contra chefes colossais.",
+      "imagens": [
+        "imagens/dragon-ball-z-ultimate-tenkaichi-mvvbcm9qmfb0.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Luta"
+      ],
+      "tipo": "Ação, Luta",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvbabqscidj",
+      "cod": "am",
+      "nome": "Disney Universe",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 5.8,
+      "descricao": "Disney Universe é um jogo eletrônico cooperativo de ação e aventura em plataforma 3D, desenvolvido pela Eurocom e publicado pela Disney Interactive Studios em 2011.\n\nSinopse e Enredo\n\nO jogo se passa em um mundo virtual de entretenimento de massa supervisionado por um assistente robótico chamado VICTREX. A confusão começa quando um personagem misterioso e corrompido chamado HEX assume o controle do sistema, alterando os mundos virtuais e transformando os cenários e personagens familiares em confusões caóticas e perigosas.\nPara salvar o universo virtual, os jogadores assumem o papel de agentes/funcionários que precisam vestir fantasias icônicas de heróis da Disney e da Pixar, restaurar a ordem em cada um dos mundos e derrotar as forças corrompidas de HEX.",
+      "imagens": [
+        "imagens/disney-universe-mvvbaa3xh4ow.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Aventura"
+      ],
+      "tipo": "Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvb95rlnu9n",
+      "cod": "al",
+      "nome": "Call of Duty 4 Modern Warfare",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 6.7,
+      "descricao": "Sinopse de Call of Duty 4: Modern Warfare\n\nA história de Call of Duty 4: Modern Warfare (lançado originalmente em 2007) abandona os cenários da Segunda Guerra Mundial e coloca o jogador em um conflito geopolítico moderno no ano de 2011:\n• O Duplo Conflito: A trama gira em torno de duas frentes principais que se cruzam: um golpe de Estado violento no Oriente Médio, liderado pelo radical Khaled Al-Asad (que executa o presidente Al-Fulani em rede nacional), e uma guerra civil na Rússia fomentada por separatistas ultranacionalistas liderados por Imran Zakhaev.\n• Perspectivas dos Personagens: O jogador alterna entre diferentes pontos de vista ao longo da campanha:\n\t• Sgt. John \"Soap\" MacTavish: Um recruta da unidade de elite britânica SAS, liderada pelo carismático Capitão Price.\n\t• Sgt. Paul Jackson: Um fuzileiro naval (Marine) dos Estados Unidos que atua diretamente nas invasões terrestres no Oriente Médio.\n• O Desenrolar da Trama: A Força Tarefa britânica e as tropas americanas tentam conter o caos, rastreando Al-Asad e descobrindo a aliança secreta com os ultranacionalistas russos de Zakhaev. Após eventos catastróficos envolvendo ogivas nucleares e emboscadas brutais, a missão culmina em uma corrida contra o tempo para impedir um lançamento de mísseis contra os Estados Unidos e confrontar Zakhaev diretamente.",
+      "imagens": [
+        "imagens/call-of-duty-4-modern-warfare-mvvb949i87jq.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Aventura"
+      ],
+      "tipo": "Ação, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvb7t7d9k6e",
+      "cod": "ak",
+      "nome": "Battlefield Bad Company",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 5.1,
+      "descricao": "Battlefield: Bad Company é um jogo de tiro em primeira pessoa desenvolvido pela DICE e publicado pela Electronic Arts em 2008 para o Xbox 360.\n\nSinopse\n\nA história acompanha o Soldado Preston Marlowe, um militar transferido para a \"B\" Company (Bad Company) da 222ª Batalhão do Exército dos Estados Unidos. Esse esquadrão é basicamente o \"lixo\" da corporação: um grupo formado por soldados problemáticos, indisciplinados ou que cometeram erros graves, sendo usados em missões suicidas e de alto risco na linha de frente.\nDurante um conflito fictício em escala global entre os Estados Unidos e a Federação Russa, Marlowe e seus companheiros de esquadrão — o sargento Samuel D. Redford, o operador de rádio George Sweetwater e o especialista em explosivos Haggard — descobrem por acaso que o exército mercenário inimigo (a Legião) está sendo pago com barras de ouro maciço.\nVendo a chance de ficarem ricos e se aposentarem antes do fim do tempo de serviço, o grupo decide abandonar temporariamente as ordens oficiais e embarcar em uma caçada particular atrás do ouro russo, transformando a guerra em uma missão cheia de humor ácido, explosões e destruição em massa.",
+      "imagens": [
+        "imagens/battlefield-bad-company-mvvb7rq0j2zm.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Acessórios"
+      ],
+      "tipo": "Ação, Acessórios",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvb6adxvny7",
+      "cod": "aj",
+      "nome": "Battlefield 2 Modern Combat",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 6.6,
+      "descricao": "A campanha de Battlefield 2: Modern Combat (lançado para Xbox 360 em 2006) gira em torno de um conflito fictício na região do Cazaquistão entre a OTAN e a China.\n\nSinopse e Enredo\n\n• O Conflito: A história começa com uma guerra de grande escala entre a OTAN e a China no Cazaquistão. Ambas as potências trocam acusações de crimes de guerra através de suas respectivas propagandas na mídia.\n• A Jogabilidade na Campanha: Durante o jogo, você alterna o controle entre soldados de ambos os lados (OTAN e China) para vivenciar os dois pontos de vista da mesma guerra.\n• O Verdheiro Inimigo: Conforme a trama avança, descobre-se que uma organização terrorista chamada Bandeira Ardente (The Burning Flag) orquestrou os eventos por trás dos panos. Ela sabotou as negociações de paz e cometeu os crimes de guerra disfarçada, manipulando a OTAN e a China para entrarem em guerra uma contra a outra.\n\nPrincipais Destaques do Jogo\n\n• Mecânica HotSwap: Permite que você aponte para qualquer soldado aliado no campo de batalha e assuma o controle dele instantaneamente (por exemplo, trocando de um soldado a pé para o piloto de um tanque ou artilheiro de um helicóptero).\n• Classes de Soldados: Dividido em Assault, Sniper, Support, Engineer e Special Ops, cada uma com funções e armamentos específicos.\n• Veículos: Mais de 30 veículos militares controláveis, incluindo tanques, jipes e helicópteros.",
+      "imagens": [
+        "imagens/battlefield-2-modern-combat-mvvb690lt8w8.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação"
+      ],
+      "tipo": "Ação",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvvb40xdw0qn",
+      "cod": "ai",
+      "nome": "Batman Arkham Origins Blackgate",
+      "categoria": "mvpxh616i8oa",
+      "unidade": "GB",
+      "valor": 2.8,
+      "descricao": "A sinopse de Batman: Arkham Origins Blackgate (lançado para o Xbox 360 como a Deluxe Edition) gira em torno de uma rebelião em uma penitenciária de segurança máxima logo após os eventos de Batman: Arkham Origins.\n\nSinopse da História\n\n• O Motim: Três meses após o final de Arkham Origins, uma misteriosa explosão e uma grande rebelião eclodem na Penitenciária de Blackgate.\n• Territórios Divididos: A prisão é tomada e dividida em três grandes territórios, cada um controlado por um dos chefes do crime de Gotham City: Coringa, Pinguim e Máscara Negra.\n• A Aliança com a Mulher-Gato: Ao chegar para conter o caos, Batman encontra a Mulher-Gato (em seu primeiro encontro cronológico com o Cavaleiro das Trevas na série Arkham), que está no local com motivações próprias e acaba forçando uma aliança instável com ele para resgatar reféns presos na Ala Arkham.\n• A Missão: Batman precisa se infiltrar sozinho nas diferentes alas da prisão (Industrial, Administrativa e Celulas), desvendar os planos dos vilões, recuperar códigos de acesso e restaurar a ordem antes que a situação em Blackgate ameace toda a cidade de Gotham.",
+      "imagens": [
+        "imagens/batman-arkham-origins-blackgate-mvvb3ze9zndz.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação",
+        "Aventura"
+      ],
+      "tipo": "Ação, Aventura",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvvazw3pa673",
       "cod": "ah",
       "nome": "Need For Speed Underground 2",
