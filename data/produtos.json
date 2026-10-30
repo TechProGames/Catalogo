@@ -1002,13 +1002,49 @@
   ],
   "produtos": [
     {
+      "id": "mvv4ojrkk8wq",
+      "cod": "9t",
+      "nome": "Reparos para Controle de PS3",
+      "categoria": "mvpq9nobmp51",
+      "unidade": "R$",
+      "valor": null,
+      "descricao": "Lista de todos os reparos mais comuns no controle do Playstation 3.",
+      "imagens": [
+        "imagens/reparos-para-controle-de-ps3-mvv4oieo62tn.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [
+        "mvtn213tqz2o",
+        "mvtn30loenge",
+        "mvtn5d93qh93",
+        "mvtn6wv3ag1q",
+        "mvtn878i7ac8",
+        "mvtn64hjehr9",
+        "mvtn4ed4d7ry"
+      ],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvv4h2ch6k0x",
       "cod": "9s",
       "nome": "Reparos para Controle de PS4",
       "categoria": "mvpq9lgxexa8",
       "unidade": "R$",
       "valor": null,
-      "descricao": "",
+      "descricao": "Lista de todos os reparos mais comuns no controle do Playstation 4.",
       "imagens": [
         "imagens/reparos-para-controle-de-ps4-mvv4h15kdgw7.jpg"
       ],
@@ -1041,12 +1077,11 @@
     },
     {
       "id": "mvv3x4wm704n",
-      "cod": "9r",
       "nome": "Reparos para Controle de PS5",
+      "descricao": "Lista de todos os reparos mais comuns no controle do Playstation 5.",
       "categoria": "mvpq9f7nxdp3",
       "unidade": "R$",
       "valor": null,
-      "descricao": "Lista de todos os reparos mais comuns no controle do Playstation 5.",
       "imagens": [
         "imagens/reparos-para-controle-de-ps5-mvv3x3jw7hn7.jpg"
       ],
@@ -1058,7 +1093,6 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [
         "mvsfltngyzlu",
         "mvsfk0vt89e0",
@@ -1071,11 +1105,13 @@
         "mvsewztlu9na"
       ],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "9r",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvtx79x7uxlf",
