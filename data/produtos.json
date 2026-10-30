@@ -1002,6 +1002,144 @@
   ],
   "produtos": [
     {
+      "id": "mvv563auuuy8",
+      "cod": "a0",
+      "nome": "Gatilhos L2/R2",
+      "categoria": "mvpqloidgm1r",
+      "unidade": "R$",
+      "valor": 120,
+      "descricao": "Reparo dos gatilhos sem pressão ou não funcionando.",
+      "imagens": [
+        "imagens/gatilhos-l2-r2-mvv561ts7yhl.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvv54v9l8b1t",
+      "cod": "9z",
+      "nome": "Borracha dos Analógicos (PAR)",
+      "categoria": "mvpqlljil752",
+      "unidade": "R$",
+      "valor": 60,
+      "descricao": "Troca das duas capinhas de borrachas dos analógicos.",
+      "imagens": [
+        "imagens/borracha-dos-analogicos-par-mvv54u01svd2.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvv543pojlnd",
+      "cod": "9y",
+      "nome": "Botões não FUNCIONA/FALHANDO",
+      "categoria": "mvpqlj3r0vd1",
+      "unidade": "R$",
+      "valor": 120,
+      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
+      "imagens": [
+        "imagens/botoes-nao-funciona-falhando-mvv542fz4jxo.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvv52vtk4g86",
+      "cod": "9x",
+      "nome": "Troca do conector USB",
+      "categoria": "mvpqlfd7o0s3",
+      "unidade": "R$",
+      "valor": 120,
+      "descricao": "Reparo no conector USB, desde não carregar ou não conectar, como mal contato.",
+      "imagens": [
+        "imagens/troca-do-conector-usb-mvv52ue50rlb.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvv51iy8uo3k",
+      "cod": "9w",
+      "nome": "Reparo de Placa",
+      "categoria": "mvpqld4is4hq",
+      "unidade": "R$",
+      "valor": 220,
+      "descricao": "Controle não liga, desligando do nada, caindo conexão. Qualquer reparo na placa.",
+      "imagens": [
+        "imagens/reparo-de-placa-mvv51hg89vip.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvv4x30j3mb0",
       "cod": "9v",
       "nome": "Reparos para Controle de Series S/X",
