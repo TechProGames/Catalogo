@@ -104,6 +104,10 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
 .serv-linha>div:not(.th){flex:1;min-width:0}
 .serv-linha b,.serv-cand b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .serv-linha small,.serv-cand small{color:var(--mut);font-size:12px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.serv-bts{display:flex;gap:8px;flex-wrap:wrap}
+.serv-bts .btn{flex:1 1 220px;white-space:normal;text-align:center}
+.sub-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:-4px 0 12px;padding:10px 12px;border:1px solid var(--azul);border-radius:10px;background:color-mix(in srgb,var(--azul) 14%,transparent);font-size:13px}
+.sub-banner b{color:var(--azul2)}
 .serv-busca{margin-top:8px;border:1px solid var(--azul);border-radius:10px;padding:8px;background:var(--bg)}
 .serv-res{max-height:320px;overflow:auto;margin-top:8px;display:flex;flex-direction:column;gap:4px}
 .serv-cand{display:flex;align-items:center;gap:10px;text-align:left;border:1px solid var(--line);background:var(--bg2);border-radius:9px;padding:6px 8px;cursor:pointer;width:100%}
@@ -559,6 +563,7 @@ dialog form{padding:18px}
 
 <dialog id="dlg">
   <form id="form" method="dialog" novalidate>
+    <div class="sub-banner" id="sub-banner" hidden></div>
     <h2 id="dlg-tit">Novo produto</h2>
     <div class="campo">
       <span class="rot">Fotos — a primeira é a capa</span>
@@ -613,7 +618,10 @@ dialog form{padding:18px}
       <div id="serv-area">
         <div id="serv-lista"></div>
         <div class="campo" id="serv-rot-campo" style="margin-top:8px" hidden><label for="serv-rot">Título da lista no site</label><input id="serv-rot" placeholder="Serviços"></div>
-        <button type="button" class="btn sec" id="serv-puxar">＋ Puxar itens já cadastrados para dentro deste anúncio</button>
+        <div class="serv-bts">
+          <button type="button" class="btn" id="serv-novo">＋ Cadastrar novo serviço / subproduto</button>
+          <button type="button" class="btn sec" id="serv-puxar">＋ Puxar itens já cadastrados para dentro deste anúncio</button>
+        </div>
         <div class="serv-busca" id="serv-busca-caixa" hidden>
           <input class="inp" id="serv-busca" type="search" placeholder="Buscar item (ex.: conector, analógico, PS5)…" aria-label="Buscar item">
           <div class="serv-res" id="serv-res"></div>
@@ -647,8 +655,8 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=25"></script>
-<script src="pedido.js?v=25"></script>
+<script src="comum.js?v=26"></script>
+<script src="pedido.js?v=26"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -1673,9 +1681,50 @@ function adicionarEtq() {
 $('add-etq').onclick = adicionarEtq;
 $('nova-etq').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); adicionarEtq(); } });
 
-function abrirForm(p) {
+// ---- cadastrar um serviço/subproduto NOVO de dentro do produto principal:
+// o principal fica "pausado" (com tudo o que já foi preenchido), abre o cadastro do serviço e, ao salvar, volta para o principal
+let pilhaForm = [];
+function guardarForm() {
+  return {editando, nome: form.nome.value, valor: form.valor.value, descricao: form.descricao.value, disponivel: form.disponivel.checked,
+    fotos: fotosForm, etq: new Set(etqForm), extras: extrasForm, serv: [...servForm], servRot: $('serv-rot').value, outras: [...outrasForm],
+    formato: formatoForm, ajuste: ajusteForm, proporcao: proporcaoForm, arm: armForm, tipos: [...tiposForm], cat: catForm, un: unidadeForm,
+    titulo: $('dlg-tit').textContent, nomePai: form.nome.value.trim() || 'produto principal'};
+}
+function voltarForm(s, novo) {
+  editando = s.editando; form.reset();
+  $('dlg-tit').textContent = s.titulo;
+  form.nome.value = s.nome; form.valor.value = s.valor; form.descricao.value = s.descricao; form.disponivel.checked = s.disponivel;
+  fotosForm = s.fotos; etqForm = s.etq; extrasForm = s.extras; renderExtras();
+  servForm = s.serv; if (novo && !servForm.includes(novo)) servForm.push(novo);
+  $('serv-rot').value = s.servRot; $('serv-busca').value = ''; $('serv-busca-caixa').hidden = true;
+  outrasForm = s.outras; formatoForm = s.formato; ajusteForm = s.ajuste; proporcaoForm = s.proporcao;
+  medidaCapa = null; renderGaleria.ultima = undefined;
+  armForm = s.arm; renderArm();
+  fecharTipos(); mostrarTipo(s.tipos); $('tipo-novo').value = '';
+  catSel.fechar(); outraSel.fechar(); extraSel.fechar();
+  preencherCats(s.cat); definirUnidade(s.un);
+  modoSub(); renderServ(); renderGaleria(); renderEtqs();
+  $('dlg').scrollTop = 0;
+  if (novo) setTimeout(() => $('serv-campo').scrollIntoView({block: 'center'}), 50);
+}
+function modoSub() {
+  const s = pilhaForm[pilhaForm.length - 1];
+  $('sub-banner').hidden = !s;
+  $('serv-campo').hidden = !!s;          // um serviço não tem serviços dentro dele
+  $('salvar').textContent = s ? 'Salvar e voltar ao principal' : 'Salvar produto';
+  $('cancelar').textContent = s ? '← Voltar sem salvar' : 'Cancelar';
+  if (s) $('sub-banner').innerHTML = `<span>Cadastrando um serviço / subproduto <b>dentro de “${esc(s.nomePai)}”</b>. Ao salvar, ele entra na lista desse anúncio.</span>`;
+}
+$('serv-novo').onclick = () => {
+  const s = guardarForm();
+  pilhaForm.push(s);
+  abrirForm(null, true);
+  preencherCats(s.cat);                  // fica na mesma categoria do principal
+};
+function abrirForm(p, sub = false) {
+  if (!sub) pilhaForm = [];
   editando = p || null; form.reset();
-  $('dlg-tit').textContent = p ? 'Editar produto' : 'Novo produto';
+  $('dlg-tit').textContent = sub ? 'Novo serviço / subproduto' : p ? 'Editar produto' : 'Novo produto';
   form.nome.value = p?.nome || '';
   form.valor.value = p?.valor != null ? p.valor.toLocaleString('pt-BR', {minimumFractionDigits: p.unidade === 'GB' ? 0 : 2, maximumFractionDigits: 2}) : '';
   form.descricao.value = p?.descricao || '';
@@ -1700,12 +1749,14 @@ function abrirForm(p) {
   catSel.fechar(); outraSel.fechar(); extraSel.fechar();
   preencherCats(p?.categoria);
   definirUnidade(p?.unidade || 'R$');
+  modoSub();
   renderGaleria(); renderEtqs();
-  $('dlg').showModal();
+  if (!$('dlg').open) $('dlg').showModal();
+  $('dlg').scrollTop = 0;
   if (!p) form.nome.focus();
 }
 $('novo').onclick = () => abrirForm(null);
-$('cancelar').onclick = () => $('dlg').close();
+$('cancelar').onclick = () => { if (pilhaForm.length) voltarForm(pilhaForm.pop()); else $('dlg').close(); };
 
 form.addEventListener('submit', async e => {
   e.preventDefault();
@@ -1735,7 +1786,7 @@ form.addEventListener('submit', async e => {
   } catch (err) {
     aviso(err.message, 'erro'); renderGaleria(); return;
   } finally {
-    btn.disabled = false; btn.textContent = 'Salvar produto';
+    btn.disabled = false; btn.textContent = pilhaForm.length ? 'Salvar e voltar ao principal' : 'Salvar produto';
   }
   if (catForm) lembrarCat('cat', catForm);
   const imagens = fotosForm.map(f => f.path);
@@ -1763,6 +1814,12 @@ form.addEventListener('submit', async e => {
   if (!x) abertos.add('_');
   while (x) { abertos.add(x.no.id); const pai = x.pai; x = pai ? nosE.find(n => n.no === pai) : null; }
   gravar('catalogo-admin-abertos', [...abertos]);
+  if (pilhaForm.length) {                // era um serviço novo: volta para o produto principal, já com ele na lista
+    const s = pilhaForm.pop();
+    marcarSujo(); renderLista(); voltarForm(s, p.id);
+    aviso(`“${p.nome}” cadastrado dentro de “${s.nomePai}”. Agora salve o produto principal.`, 'ok');
+    return;
+  }
   $('dlg').close(); marcarSujo(); renderLista(); renderCategorias();
   aviso(editando ? 'Produto atualizado. Lembre de publicar.' : 'Produto adicionado. Lembre de publicar.');
 });

@@ -361,8 +361,8 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=25"></script>
-<script src="pedido.js?v=25"></script>
+<script src="comum.js?v=26"></script>
+<script src="pedido.js?v=26"></script>
 <script>
 // link de pedido aberto no endereço do catálogo ("…/Catalogo/#3.…"): vai para a página do pedido
 if (/^#[23]\./.test(location.hash)) location.replace('pedido.html' + location.hash);
@@ -694,9 +694,18 @@ function blocoServ(p) {
     ${a ? '<small class="servs-volta">Toque de novo no marcado para voltar</small>' : ''}</div>`;
 }
 // botão do cartão de um anúncio com serviços: abre a janela com as opções
+// (também para itens com versões de armazenamento)
+const temOpcoes = p => p.servicos.length > 0 || p.armazenamentos.length > 0;
 function botaoOpcoes(p) {
-  const n = p.servicos.filter(s => sel[s]).length;
-  return `<button class="btn-add${n ? ' on' : ''}" data-abrir="${esc(p.id)}">${n ? `✓ ${n} ${n === 1 ? 'escolhido' : 'escolhidos'} · ver opções` : 'Clique para ver as opções'}</button>`;
+  let txt = 'Clique para ver as opções', on = false;
+  if (p.servicos.length) {
+    const n = p.servicos.filter(s => sel[s]).length;
+    if (n) { on = true; txt = `✓ ${n} ${n === 1 ? 'escolhido' : 'escolhidos'} · ver opções`; }
+  } else if (sel[p.id]) {
+    const v = varDe(p); on = true;
+    txt = `✓ ${sel[p.id] > 1 ? sel[p.id] + 'x ' : ''}${v && v.nome ? esc(v.nome) : 'Selecionado'} · ver opções`;
+  }
+  return `<button class="btn-add${on ? ' on' : ''}" data-abrir="${esc(p.id)}">${txt}</button>`;
 }
 function card(p, rank = 0) {
   const temServ = p.servicos.length > 0, v = temServ ? p : vista(p), marcado = sel[p.id] || p.servicos.some(s => sel[s]);
@@ -710,7 +719,7 @@ function card(p, rank = 0) {
         ${listaOpcoes(v)}
         ${textoValor(v, true)}
       </div>
-      <div class="acao"${temServ ? '' : ` data-acao-de="${esc(v.id)}"`}>${temServ && v.disponivel ? botaoOpcoes(p) : botao(v)}</div>
+      <div class="acao"${temOpcoes(p) ? '' : ` data-acao-de="${esc(v.id)}"`}>${temOpcoes(p) && v.disponivel ? botaoOpcoes(p) : botao(v)}</div>
     </article>`;
 }
 // troca o cartão (e a janela de detalhes) de um anúncio depois de escolher/desmarcar um serviço
@@ -932,7 +941,7 @@ $('det').addEventListener('click', e => {
     selVar[p.id] = v.dataset.var; salvarSel();
     const t = somas(itensSel());
     if (t.limite && t.gb > t.limite) avisoCliente(`Atenção: os jogos escolhidos (${num(t.gb)} GB) passam do espaço dessa versão (${num(t.limite)} GB).`);
-    abrirDetalhe(p); return;
+    redesenhar(p); return;
   }
   const x = e.target.closest('[data-extra]');
   if (x) {
@@ -943,6 +952,7 @@ $('det').addEventListener('click', e => {
     salvarSel(); atualizar();
     document.querySelectorAll(`[data-acao-de="${CSS.escape(p.id)}"]`).forEach(el => el.innerHTML = botao(p));
     document.querySelectorAll(`.card[data-id="${CSS.escape(p.id)}"]`).forEach(c => c.classList.add('sel'));
+    redesenhar(p);
     const url = `${location.pathname}?cat=${encodeURIComponent(x.dataset.extra)}&com=${encodeURIComponent(p.id)}${v ? '&var=' + encodeURIComponent(v.id) : ''}`;
     window.open(url, '_blank');
   }
@@ -991,6 +1001,7 @@ document.addEventListener('click', e => {
   document.querySelectorAll(`.card[data-id="${CSS.escape(id)}"]`).forEach(c => c.classList.toggle('sel', !!q));
   document.querySelectorAll(`[data-acao-de="${CSS.escape(id)}"]`).forEach(el => el.innerHTML = botao(p));
   if (pais.has(id)) redesenhar(pais.get(id));
+  else if (p.armazenamentos.length) redesenhar(p);
   atualizar();
 });
 document.addEventListener('keydown', e => {
