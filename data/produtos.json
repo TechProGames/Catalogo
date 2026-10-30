@@ -1002,6 +1002,90 @@
   ],
   "produtos": [
     {
+      "id": "mvv58jrm89w6",
+      "cod": "a3",
+      "nome": "Botões não FUNCIONA/FALHANDO",
+      "categoria": "mvpqm83tqc79",
+      "unidade": "R$",
+      "valor": 100,
+      "descricao": "Qualquer botão que não esteja funcionando ou falhando.",
+      "imagens": [
+        "imagens/botoes-nao-funciona-falhando-mvv58ia06y5b.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvv57v6eignm",
+      "cod": "a2",
+      "nome": "Analógico Original (DOIS LADOS)",
+      "categoria": "mvpqlwrylmau",
+      "unidade": "R$",
+      "valor": 110,
+      "descricao": "Substituição dos dois analógicos pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-dois-lados-mvv57tpoholj.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
+      "id": "mvv576q4oj3l",
+      "cod": "a1",
+      "nome": "Analógico Original (UM LADO)",
+      "categoria": "mvpqlsli7c8x",
+      "unidade": "R$",
+      "valor": 80,
+      "descricao": "Substituição do analógico pelo modelo original.",
+      "imagens": [
+        "imagens/analogico-original-um-lado-mvv574wd62x1.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [
+        "mvpvkud0etok"
+      ],
+      "extras": [],
+      "tipos": [
+        "Controle"
+      ],
+      "tipo": "Controle",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "3/4",
+      "ajuste": "contain",
+      "proporcao": ""
+    },
+    {
       "id": "mvv563auuuy8",
       "cod": "a0",
       "nome": "Gatilhos L2/R2",
