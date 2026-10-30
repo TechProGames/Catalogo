@@ -1036,13 +1036,13 @@
       "armazenamentos": [
         {
           "id": "mvv5stk3f7fh",
-          "nome": "32",
+          "nome": "32GB",
           "gb": 28,
           "valor": 100
         },
         {
           "id": "mvv5t01p2ore",
-          "nome": "64",
+          "nome": "64GB",
           "gb": 57,
           "valor": 130
         }
@@ -1082,19 +1082,19 @@
       "armazenamentos": [
         {
           "id": "mvv5fvli3ac4",
-          "nome": "250",
+          "nome": "250GB",
           "gb": 225,
           "valor": 200
         },
         {
           "id": "mvv5gxfjof0a",
-          "nome": "320",
+          "nome": "320GB",
           "gb": 295,
           "valor": 250
         },
         {
           "id": "mvv5h132ef5c",
-          "nome": "500",
+          "nome": "500GB",
           "gb": 460,
           "valor": 300
         }
@@ -1134,25 +1134,25 @@
       "armazenamentos": [
         {
           "id": "mvv5lxdnar7i",
-          "nome": "120",
+          "nome": "120GB",
           "gb": 105,
           "valor": 150
         },
         {
           "id": "mvv5maqcqs1o",
-          "nome": "250",
+          "nome": "250GB",
           "gb": 225,
           "valor": 200
         },
         {
           "id": "mvv5mzrva3si",
-          "nome": "320",
+          "nome": "320GB",
           "gb": 295,
           "valor": 250
         },
         {
           "id": "mvv5n5j3xzw4",
-          "nome": "500",
+          "nome": "500GB",
           "gb": 460,
           "valor": 300
         }
