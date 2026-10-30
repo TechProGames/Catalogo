@@ -647,8 +647,8 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=24"></script>
-<script src="pedido.js?v=24"></script>
+<script src="comum.js?v=25"></script>
+<script src="pedido.js?v=25"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -1237,7 +1237,7 @@ $('arvore').addEventListener('click', e => {
 // ---------- aba Produtos (lista agrupada e recolhida) ----------
 function linhaProduto(p, sub = false) {
   const nomesEtq = dados.etiquetas.filter(e => p.etiquetas.includes(e.id)).map(e => e.nome);
-  const servs = (p.servicos || []).map(id => dados.produtos.find(x => x.id === id)).filter(Boolean);
+  const servs = ordemServ(p.servicos || []);
   const info = [servs.length ? `${servs.length} ${(p.servicosRotulo || 'serviços').toLowerCase()} dentro` : '', p.tipo, textoValor(p), p.outras && p.outras.length ? '+' + p.outras.length + (p.outras.length === 1 ? ' categoria' : ' categorias') : '', p.armazenamentos && p.armazenamentos.length ? p.armazenamentos.map(a => a.nome).join(' / ') : '', p.imagens.length > 1 ? p.imagens.length + ' fotos' : '', ...nomesEtq, p.disponivel ? '' : 'esgotado'].filter(Boolean).join(' · ');
   return `
     <div class="linha${p.disponivel ? '' : ' off'}" data-id="${esc(p.id)}">
@@ -1566,16 +1566,16 @@ $('extras-lista').addEventListener('input', e => { const i = e.target.dataset.ro
 let servForm = [];
 const paiDe = id => dados.produtos.find(m => m.id !== id && (m.servicos || []).includes(id));
 const miniFoto = p => p.imagens[0] ? `<img src="${esc(urlFoto(p.imagens[0]))}" alt="">` : `<div class="th">${esc(iniciais(p.nome))}</div>`;
+// mesma ordem do site: do menor para o maior valor
+const ordemServ = ids => ids.map(id => dados.produtos.find(x => x.id === id)).filter(Boolean)
+  .sort((a, b) => (a.valor ?? Infinity) - (b.valor ?? Infinity) || a.nome.localeCompare(b.nome, 'pt'));
 function renderServ() {
   const meu = editando?.id, dono = meu ? paiDe(meu) : null;
   $('serv-dentro').hidden = !dono; $('serv-area').hidden = !!dono;
   if (dono) $('serv-dentro').innerHTML = `Este item está <b>dentro do anúncio “${esc(dono.nome)}”</b>. Para tirar, abra aquele anúncio e toque no ✕ deste item.`;
-  $('serv-lista').innerHTML = servForm.map((id, i) => {
-    const s = dados.produtos.find(x => x.id === id); if (!s) return '';
-    return `<div class="serv-linha">${miniFoto(s)}<div><b>${esc(s.nome)}</b><small>${esc(textoValor(s))}</small></div>
-      <button type="button" class="ib" data-serv-sobe="${i}" title="Subir"${i ? '' : ' disabled'}>↑</button>
-      <button type="button" class="ib del" data-serv-rm="${i}" title="Tirar deste anúncio (volta a ser um item solto)">✕</button></div>`;
-  }).join('');
+  $('serv-lista').innerHTML = ordemServ(servForm).map(s =>
+    `<div class="serv-linha">${miniFoto(s)}<div><b>${esc(s.nome)}</b><small>${esc(textoValor(s))}</small></div>
+      <button type="button" class="ib del" data-serv-rm="${esc(s.id)}" title="Tirar deste anúncio (volta a ser um item solto)">✕</button></div>`).join('');
   $('serv-rot-campo').hidden = !servForm.length;
   $('serv-puxar').textContent = servForm.length ? '＋ Puxar mais itens' : '＋ Puxar itens já cadastrados para dentro deste anúncio';
   if (!$('serv-busca-caixa').hidden) renderServBusca();
@@ -1607,10 +1607,8 @@ $('serv-res').addEventListener('click', e => {
   const st = $('serv-res').scrollTop; renderServ(); $('serv-res').scrollTop = st;
 });
 $('serv-lista').addEventListener('click', e => {
-  const rm = e.target.closest('[data-serv-rm]'), up = e.target.closest('[data-serv-sobe]');
-  if (rm) servForm.splice(+rm.dataset.servRm, 1);
-  else if (up) { const i = +up.dataset.servSobe; [servForm[i - 1], servForm[i]] = [servForm[i], servForm[i - 1]]; }
-  else return;
+  const rm = e.target.closest('[data-serv-rm]'); if (!rm) return;
+  servForm = servForm.filter(id => id !== rm.dataset.servRm);
   renderServ();
 });
 

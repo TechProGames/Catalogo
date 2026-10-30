@@ -361,8 +361,8 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=24"></script>
-<script src="pedido.js?v=24"></script>
+<script src="comum.js?v=25"></script>
+<script src="pedido.js?v=25"></script>
 <script>
 // link de pedido aberto no endereço do catálogo ("…/Catalogo/#3.…"): vai para a página do pedido
 if (/^#[23]\./.test(location.hash)) location.replace('pedido.html' + location.hash);
@@ -684,7 +684,9 @@ function fotos(p) {
 }
 const listaOpcoes = p => { const o = nomesOpcoes(p); return o.length ? `<ul class="opcoes">${o.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''; };
 function blocoServ(p) {
-  const ss = servDe(p); if (!ss.length) return '';
+  // do menor para o maior valor (sem valor vai para o fim)
+  const pr = s => !ehGB(s) && temValorP(s) ? valorDe(s) : Infinity;
+  const ss = servDe(p).sort((a, b) => pr(a) - pr(b) || a.nome.localeCompare(b.nome, 'pt')); if (!ss.length) return '';
   const a = ativo[p.id];
   return `<div class="servs"><span class="var-rot">${esc(p.servicosRotulo || 'Serviços')} <small>(${ss.length})</small></span>
     <div class="servs-lista">${ss.map(s => `<button class="serv${s.id === a ? ' on' : ''}${sel[s.id] ? ' sel' : ''}${s.disponivel ? '' : ' off'}" data-serv="${esc(s.id)}" data-prod="${esc(p.id)}" aria-pressed="${s.id === a}">
