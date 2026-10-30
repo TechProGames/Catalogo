@@ -1007,6 +1007,52 @@
   ],
   "produtos": [
     {
+      "id": "mvv5v8nkxt00",
+      "cod": "a7",
+      "nome": "Kit OPL PS2",
+      "categoria": "mvv5d02c1bb5",
+      "unidade": "R$",
+      "valor": null,
+      "descricao": "Kit OPL para PS2, Pen-drive + Memory Card, lotado de jogos, você escolhe quais jogos.",
+      "imagens": [
+        "imagens/kit-opl-ps2-mvv5v7d55pgk.jpg"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [
+        {
+          "cat": "mvpxg7ivwzt9",
+          "rotulo": "Adicionar Jogos de PS2"
+        }
+      ],
+      "tipos": [
+        "Acessórios",
+        "Jogos",
+        "Console"
+      ],
+      "tipo": "Acessórios, Jogos, Console",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [
+        {
+          "id": "mvv5stk3f7fh",
+          "nome": "32",
+          "gb": 28,
+          "valor": 100
+        },
+        {
+          "id": "mvv5t01p2ore",
+          "nome": "64",
+          "gb": 57,
+          "valor": 130
+        }
+      ],
+      "outras": [],
+      "formato": "1/1",
+      "ajuste": "cover",
+      "proporcao": ""
+    },
+    {
       "id": "mvv5kj120s8d",
       "cod": "a5",
       "nome": "HD Externo de Jogos para Xbox 360",
