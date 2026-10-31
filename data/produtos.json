@@ -1009,12 +1009,11 @@
   "produtos": [
     {
       "id": "mvvc6clwa7xq",
-      "cod": "b4",
       "nome": "Call of Duty 3",
+      "descricao": "O Call of Duty 3 (lançado em 2006 para o Xbox 360) é um jogo de tiro em primeira pessoa ambientado na Segunda Guerra Mundial, focado nos eventos de 1944 durante a histórica Rompimento da Normandia e o Bolso de Falaise (Normandy Breakout), que abriram caminho para a libertação de Paris.\n\nSinopse e Enredo\n\nDiferente de muitos jogos do gênero onde você controla um único herói americano, a campanha de 14 missões coloca o jogador na pele de quatro nacionalidades aliadas diferentes, alternando entre as perspectivas de:\n• Exército dos Estados Unidos: Foca em combates intensos na floresta e campos normandos para assegurar posições estratégicas e avançar contra as linhas alemãs.\n• Exército Britânico e Resistência Francesa: Envolve missões de sabotagem, apoio tático e combate em áreas urbanas e rurais para enfraquecer o controle nazista na França.\n• Exército Canadense: Participa de cercos pesados e batalhas de resistência para fechar o cerco às tropas alemãs em retirada.\n• Exército Polonês (1ª Divisão Blindada): Desempenha um papel crucial e heroico na contenção e destruição de forças inimigas encurraladas na Batalha de Falaise.\nO enredo destaca o trabalho em equipe e a forte relação de camaradagem entre os soldados e seus superiores, mostrando o esforço coletivo de várias frentes para empurrar as forças do Eixo em direção a Berlim.",
       "categoria": "mvpxh616i8oa",
       "unidade": "R$",
       "valor": null,
-      "descricao": "O Call of Duty 3 (lançado em 2006 para o Xbox 360) é um jogo de tiro em primeira pessoa ambientado na Segunda Guerra Mundial, focado nos eventos de 1944 durante a histórica Rompimento da Normandia e o Bolso de Falaise (Normandy Breakout), que abriram caminho para a libertação de Paris.\n\nSinopse e Enredo\n\nDiferente de muitos jogos do gênero onde você controla um único herói americano, a campanha de 14 missões coloca o jogador na pele de quatro nacionalidades aliadas diferentes, alternando entre as perspectivas de:\n• Exército dos Estados Unidos: Foca em combates intensos na floresta e campos normandos para assegurar posições estratégicas e avançar contra as linhas alemãs.\n• Exército Britânico e Resistência Francesa: Envolve missões de sabotagem, apoio tático e combate em áreas urbanas e rurais para enfraquecer o controle nazista na França.\n• Exército Canadense: Participa de cercos pesados e batalhas de resistência para fechar o cerco às tropas alemãs em retirada.\n• Exército Polonês (1ª Divisão Blindada): Desempenha um papel crucial e heroico na contenção e destruição de forças inimigas encurraladas na Batalha de Falaise.\nO enredo destaca o trabalho em equipe e a forte relação de camaradagem entre os soldados e seus superiores, mostrando o esforço coletivo de várias frentes para empurrar as forças do Eixo em direção a Berlim.",
       "imagens": [
         "imagens/call-of-duty-3-mvvc6b7qr6m1.jpg"
       ],
@@ -1025,23 +1024,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "b4",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvc2byjvfka",
-      "cod": "b3",
       "nome": "Call of Duty - Black Ops II",
+      "descricao": "A sinopse de Call of Duty: Black Ops II para Xbox 360 alterna entre dois períodos temporais interligados: a Guerra Fria nos anos 1980 e um futuro próximo em 2025.\n\nEnredo Principal\n\n• Passado (Década de 1980): Acompanha as missões secretas de Alex Mason, Frank Woods e Jason Hudson em conflitos como as guerras civis na África e a América Latina. Nesse período, eles cruzam o caminho de Raul Menendez, um traficante de armas nicaraguense que nutre um ódio profundo pelos Estados Unidos após uma tragédia pessoal envolvendo sua irmã Josefina.\n• Futuro (Ano de 2025): Uma Nova Guerra Fria eclode entre a China (SDC) e os Estados Unidos (OTAN). Menendez ressurge como o carismático líder do grupo terrorista e populista Cordis Die, usando redes sociais e um ataque cibernético massivo para sequestrar o controle dos drones militares automatizados dos EUA e provocar caos global.\n• O Protagonista do Futuro: Você assume o controle de David Mason (codinome Section), filho de Alex Mason, que lidera uma equipe de operações especiais da Joint Special Operations Command (JSOC) para caçar Menendez e impedir o colapso mundial.\n• Estrutura: O jogo utiliza um sistema de narrativa ramificada com múltiplos finais, onde as escolhas do jogador e o sucesso (ou fracasso) em missões especiais chamadas Strikeforce alteram diretamente o desfecho da trama.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 7.3,
-      "descricao": "A sinopse de Call of Duty: Black Ops II para Xbox 360 alterna entre dois períodos temporais interligados: a Guerra Fria nos anos 1980 e um futuro próximo em 2025.\n\nEnredo Principal\n\n• Passado (Década de 1980): Acompanha as missões secretas de Alex Mason, Frank Woods e Jason Hudson em conflitos como as guerras civis na África e a América Latina. Nesse período, eles cruzam o caminho de Raul Menendez, um traficante de armas nicaraguense que nutre um ódio profundo pelos Estados Unidos após uma tragédia pessoal envolvendo sua irmã Josefina.\n• Futuro (Ano de 2025): Uma Nova Guerra Fria eclode entre a China (SDC) e os Estados Unidos (OTAN). Menendez ressurge como o carismático líder do grupo terrorista e populista Cordis Die, usando redes sociais e um ataque cibernético massivo para sequestrar o controle dos drones militares automatizados dos EUA e provocar caos global.\n• O Protagonista do Futuro: Você assume o controle de David Mason (codinome Section), filho de Alex Mason, que lidera uma equipe de operações especiais da Joint Special Operations Command (JSOC) para caçar Menendez e impedir o colapso mundial.\n• Estrutura: O jogo utiliza um sistema de narrativa ramificada com múltiplos finais, onde as escolhas do jogador e o sucesso (ou fracasso) em missões especiais chamadas Strikeforce alteram diretamente o desfecho da trama.",
       "imagens": [
         "imagens/call-of-duty-black-ops-ii-mvvc2a7o57zs.jpg"
       ],
@@ -1051,23 +1050,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "b3",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvvc11eyld06",
-      "cod": "b2",
       "nome": "Bully Scholarship Edition",
+      "descricao": "Bully: Scholarship Edition é um jogo de ação e aventura em mundo aberto desenvolvido pela Rockstar Games.\n\nSinopse e Enredo\n\nA história acompanha Jimmy Hopkins, um garoto de 15 anos rebelde e problemático. Após a sua mãe se casar novamente com um homem rico e partir em uma longa lua de mel de cruzeiro, Jimmy é abandonado na Bullworth Academy, um internato severo e caótico localizado na região de New England (Estados Unidos).\nSozinho e sem apoio familiar, Jimmy precisa aprender a sobreviver em um ambiente hostil. Para isso, ele deve navegar pela complexa hierarquia social da escola, lidando com diferentes \"panelinhas\" (valentões, nerds, patricinhas, esportistas e mauricinhos), enfrentando professores corruptos e tentando impor seu próprio respeito nos corredores.\n\nO que há de novo na Scholarship Edition (Xbox 360)\n\nLançada de forma aprimorada em relação ao clássico original de PlayStation 2, a versão para Xbox 360 traz conteúdos exclusivos:\n• Novas missões: Adiciona 8 missões inéditas à história principal.\n• Novas matérias escolares: 4 novos tipos de aulas (Biologia, Geografia, Música e Matemática).\n• Melhorias visuais e técnicas: Gráficos atualizados e maior detalhamento do cenário de Bullworth.\n• Novos itens e roupas: Mais opções de vestuário e minijogos.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 3.2,
-      "descricao": "Bully: Scholarship Edition é um jogo de ação e aventura em mundo aberto desenvolvido pela Rockstar Games.\n\nSinopse e Enredo\n\nA história acompanha Jimmy Hopkins, um garoto de 15 anos rebelde e problemático. Após a sua mãe se casar novamente com um homem rico e partir em uma longa lua de mel de cruzeiro, Jimmy é abandonado na Bullworth Academy, um internato severo e caótico localizado na região de New England (Estados Unidos).\nSozinho e sem apoio familiar, Jimmy precisa aprender a sobreviver em um ambiente hostil. Para isso, ele deve navegar pela complexa hierarquia social da escola, lidando com diferentes \"panelinhas\" (valentões, nerds, patricinhas, esportistas e mauricinhos), enfrentando professores corruptos e tentando impor seu próprio respeito nos corredores.\n\nO que há de novo na Scholarship Edition (Xbox 360)\n\nLançada de forma aprimorada em relação ao clássico original de PlayStation 2, a versão para Xbox 360 traz conteúdos exclusivos:\n• Novas missões: Adiciona 8 missões inéditas à história principal.\n• Novas matérias escolares: 4 novos tipos de aulas (Biologia, Geografia, Música e Matemática).\n• Melhorias visuais e técnicas: Gráficos atualizados e maior detalhamento do cenário de Bullworth.\n• Novos itens e roupas: Mais opções de vestuário e minijogos.",
       "imagens": [
         "imagens/bully-scholarship-edition-mvvc100y63cv.jpg"
       ],
@@ -1079,23 +1078,23 @@
         "Ação",
         "Luta"
       ],
-      "tipo": "Aventura, Ação, Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "b2",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Aventura, Ação, Luta"
     },
     {
       "id": "mvvbzt77fy2i",
-      "cod": "b1",
       "nome": "Bayonetta",
+      "descricao": "A sinopse de Bayonetta para o Xbox 360 acompanha a protagonista homônima, uma bruxa poderosa e a última sobrevivente de um antigo clã que equilibrava as forças da luz, das trevas e do caos.\n\nPrincipais pontos da história:\n\n• O Despertar: Bayonetta acorda após um longo sono de 500 anos sem lembranças claras sobre o seu passado.\n• A Jornada: Com apenas poucas pistas sobre sua origem, ela precisa lutar contra hordas de criaturas celestiais (anjos e forças divinas) e chefes gigantescos em uma cidade fictícia chamada Vigard.\n• A Verdade: À medida que avança na batalha e recupera suas memórias através de flashbacks, ela descobre a verdade sobre suas origens e percebe que é a peça central para salvar toda a criação.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 7,
-      "descricao": "A sinopse de Bayonetta para o Xbox 360 acompanha a protagonista homônima, uma bruxa poderosa e a última sobrevivente de um antigo clã que equilibrava as forças da luz, das trevas e do caos.\n\nPrincipais pontos da história:\n\n• O Despertar: Bayonetta acorda após um longo sono de 500 anos sem lembranças claras sobre o seu passado.\n• A Jornada: Com apenas poucas pistas sobre sua origem, ela precisa lutar contra hordas de criaturas celestiais (anjos e forças divinas) e chefes gigantescos em uma cidade fictícia chamada Vigard.\n• A Verdade: À medida que avança na batalha e recupera suas memórias através de flashbacks, ela descobre a verdade sobre suas origens e percebe que é a peça central para salvar toda a criação.",
       "imagens": [
         "imagens/bayonetta-mvvbzrcg9ihs.jpg"
       ],
@@ -1107,23 +1106,23 @@
         "Aventura",
         "Luta"
       ],
-      "tipo": "Ação, Aventura, Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "b1",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura, Luta"
     },
     {
       "id": "mvvbyoufy5pg",
-      "cod": "b0",
       "nome": "Avatar The Game",
+      "descricao": "Visão geral criada por IA\n      \nJames Cameron's Avatar: The Game para Xbox 360 (lançado em 2009 pela Ubisoft) é um jogo de ação e tiro em terceira pessoa cuja história se passa em 2152, dois anos antes dos eventos do filme original de James Cameron.\n\nSinopse e Enredo\n\n• O Protagonista: Você assume o papel de Able Ryder, um especialista em comunicações da SecOps (força de segurança da corporação RDA) que chega a Pandora designado para o programa Avatar.\n• O Conflito de Pandora: A lua alienígena de Pandora é rica em recursos valiosos cobiçados pela corporação RDA, o que gera uma guerra violenta contra os nativos humanóides, os Na'vi (do clã Omaticaya).\n• A Escolha de Lado: No início da campanha, Ryder opera como um humano/Avatar ligado aos interesses da RDA. No entanto, ao longo da trama, o jogador pode escolher seu lado: continuar lutando pela RDA com armas de fogo modernas e veículos pesados ou desertar e se aliar aos Na'vi, utilizando arcos, lanças e a fauna local para defender o planeta.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 3.2,
-      "descricao": "Visão geral criada por IA\n      \nJames Cameron's Avatar: The Game para Xbox 360 (lançado em 2009 pela Ubisoft) é um jogo de ação e tiro em terceira pessoa cuja história se passa em 2152, dois anos antes dos eventos do filme original de James Cameron.\n\nSinopse e Enredo\n\n• O Protagonista: Você assume o papel de Able Ryder, um especialista em comunicações da SecOps (força de segurança da corporação RDA) que chega a Pandora designado para o programa Avatar.\n• O Conflito de Pandora: A lua alienígena de Pandora é rica em recursos valiosos cobiçados pela corporação RDA, o que gera uma guerra violenta contra os nativos humanóides, os Na'vi (do clã Omaticaya).\n• A Escolha de Lado: No início da campanha, Ryder opera como um humano/Avatar ligado aos interesses da RDA. No entanto, ao longo da trama, o jogador pode escolher seu lado: continuar lutando pela RDA com armas de fogo modernas e veículos pesados ou desertar e se aliar aos Na'vi, utilizando arcos, lanças e a fauna local para defender o planeta.",
       "imagens": [
         "imagens/avatar-the-game-mvvbyng56dji.jpg"
       ],
@@ -1134,23 +1133,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "b0",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvbxme67hfn",
-      "cod": "az",
       "nome": "Assassins Creed 4 Black Flag",
+      "descricao": "Assassin's Creed IV: Black Flag acompanha a história de Edward Kenway, um jovem capitão pirata galês, carismático, impulsivo e ambicioso, durante a Era de Ouro da Pirataria no século XVIII (a partir de 1715).\n\nPrincipais pontos da sinopse:\n\n• O Protagonista: Edward é um marinheiro que deixa a Marinha Real Britânica para se aventurar nos mares em busca de fortuna, fama e glória.\n• O Conflito: Através de uma reviravolta, ele acaba roubando as roupas e a identidade de um Assassino. Com isso, é arrastado para a antiga e oculta guerra entre a Ordem dos Assassinos e a Ordem dos Templários.\n• O Cenário e Personagens Históricos: A trama se passa no Caribe — com cidades como Havana, Nassau e Kingston — e cruza o caminho de piratas lendários e reais, como Barba Negra, Charles Vane, Benjamin Hornigold, Calico Jack e Anne Bonny.\n• Jogabilidade no Xbox 360: Além da exploração a pé e do combate tradicional da franquia, o jogo destaca a navegação livre pelo oceano a bordo do navio Galeão Jackdaw, comandando batalhas navais, caça e o gerenciamento da própria tripulação.\n• Camada do Presente: Fora do Animus (na versão original do Xbox 360), o jogador controla um analista de pesquisa da Abstergo Entertainment que investiga as memórias genéticas de Edward (que é avô de Ratonhnhaké:ton/Connor e pai de Haytham Kenway de Assassin's Creed III).",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 6.4,
-      "descricao": "Assassin's Creed IV: Black Flag acompanha a história de Edward Kenway, um jovem capitão pirata galês, carismático, impulsivo e ambicioso, durante a Era de Ouro da Pirataria no século XVIII (a partir de 1715).\n\nPrincipais pontos da sinopse:\n\n• O Protagonista: Edward é um marinheiro que deixa a Marinha Real Britânica para se aventurar nos mares em busca de fortuna, fama e glória.\n• O Conflito: Através de uma reviravolta, ele acaba roubando as roupas e a identidade de um Assassino. Com isso, é arrastado para a antiga e oculta guerra entre a Ordem dos Assassinos e a Ordem dos Templários.\n• O Cenário e Personagens Históricos: A trama se passa no Caribe — com cidades como Havana, Nassau e Kingston — e cruza o caminho de piratas lendários e reais, como Barba Negra, Charles Vane, Benjamin Hornigold, Calico Jack e Anne Bonny.\n• Jogabilidade no Xbox 360: Além da exploração a pé e do combate tradicional da franquia, o jogo destaca a navegação livre pelo oceano a bordo do navio Galeão Jackdaw, comandando batalhas navais, caça e o gerenciamento da própria tripulação.\n• Camada do Presente: Fora do Animus (na versão original do Xbox 360), o jogador controla um analista de pesquisa da Abstergo Entertainment que investiga as memórias genéticas de Edward (que é avô de Ratonhnhaké:ton/Connor e pai de Haytham Kenway de Assassin's Creed III).",
       "imagens": [
         "imagens/assassins-creed-4-black-flag-mvvbxkvllnx4.jpg"
       ],
@@ -1161,23 +1160,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "az",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvbuo9mzjq0",
-      "cod": "ay",
       "nome": "Alan Wake",
+      "descricao": "Alan Wake é um jogo de suspense e terror psicológico que acompanha o renomado escritor de romances de suspense Alan Wake.\n\nSinopse Principal\n\n• A viagem: Sofrendo de um grave bloqueio criativo, Alan viaja com sua esposa, Alice, para a pacífica e isolada cidade de Bright Falls, no estado de Washington, para tirarem férias e tentarem recomeçar.\n• O desaparecimento: Durante uma discussão na cabana em que estão hospedados no Lago Caldron, as luzes piscam e Alice é puxada para a água por uma força sobrenatural. Alan mergulha para salvá-la, mas apaga.\n• O pesadelo: Ele acorda dias depois em um carro acidentado, sem se lembrar do que aconteceu naquele intervalo. Para piorar, ele encontra páginas de um manuscrito chamado \"Partida\" que ele não se lembra de ter escrito — e descobre com horror que os eventos descritos nessas páginas estão acontecendo na vida real.\n• A ameaça: A cidade é tomada por uma presença maligna que corrompe moradores e animais (os chamados \"Possuídos\" / Taken), e a única forma de enfraquecê-los antes de atacá-los com armas de fogo é utilizando fontes de luz, como lanternas e sinalizadores.\n• Estrutura: A campanha é dividida em episódios no estilo de uma série de TV de suspense, onde Alan precisa desvendar os mistérios da cidade e resgatar sua esposa antes de ser consumido pela escuridão.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 6.4,
-      "descricao": "Alan Wake é um jogo de suspense e terror psicológico que acompanha o renomado escritor de romances de suspense Alan Wake.\n\nSinopse Principal\n\n• A viagem: Sofrendo de um grave bloqueio criativo, Alan viaja com sua esposa, Alice, para a pacífica e isolada cidade de Bright Falls, no estado de Washington, para tirarem férias e tentarem recomeçar.\n• O desaparecimento: Durante uma discussão na cabana em que estão hospedados no Lago Caldron, as luzes piscam e Alice é puxada para a água por uma força sobrenatural. Alan mergulha para salvá-la, mas apaga.\n• O pesadelo: Ele acorda dias depois em um carro acidentado, sem se lembrar do que aconteceu naquele intervalo. Para piorar, ele encontra páginas de um manuscrito chamado \"Partida\" que ele não se lembra de ter escrito — e descobre com horror que os eventos descritos nessas páginas estão acontecendo na vida real.\n• A ameaça: A cidade é tomada por uma presença maligna que corrompe moradores e animais (os chamados \"Possuídos\" / Taken), e a única forma de enfraquecê-los antes de atacá-los com armas de fogo é utilizando fontes de luz, como lanternas e sinalizadores.\n• Estrutura: A campanha é dividida em episódios no estilo de uma série de TV de suspense, onde Alan precisa desvendar os mistérios da cidade e resgatar sua esposa antes de ser consumido pela escuridão.",
       "imagens": [
         "imagens/alan-wake-mvvbumx8vu3i.jpg"
       ],
@@ -1189,23 +1188,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Terror, Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ay",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Terror, Ação, Aventura"
     },
     {
       "id": "mvvbsebuxmc2",
-      "cod": "ax",
       "nome": "Resident Evil 6",
+      "descricao": "Lançado em 2012 para o Xbox 360 e outras plataformas, Resident Evil 6 apresenta uma narrativa global em grande escala impulsionada pelo vazamento do letal C-Vírus, unindo rostos clássicos da franquia e novos personagens em quatro campanhas interligadas.\n\nAs Campanhas e Protagonistas\n\n• Campanha de Leon S. Kennedy e Helena Harper:\n\t• Onde se passa: Tall Oaks (EUA) e China.\n\t• Sinopse: O Presidente dos EUA decide revelar a verdade sobre o incidente de Raccoon City, mas sofre um ataque bioterrorista e se transforma em zumbi, obrigando Leon a eliminá-lo. Acusados injustamente do assassinato do presidente, Leon e a agente do governo Helena Harper precisam fugir de uma cidade infestada e investigar os responsáveis por trás do caos.\n• Campanha de Chris Redfield e Piers Nivans:\n\t• Onde se passa: Edônia (Europa do Leste) e China.\n\t• Sinopse: O capitão da BSAA Chris Redfield sofreu um trauma severo no passado que o deixou com amnésia temporária. De volta à ativa ao lado de seu parceiro Piers Nivans, ele lidera um esquadrão em uma cruzada de vingança e dever contra a organização Neo-Umbrella e Carla Radames (uma mulher idêntica a Ada Wong) após perder vários de seus subordinados para as criaturas J'avo.\n• Campanha de Jake Muller e Sherry Birkin:\n\t• Onde se passa: Edônia e China.\n\t• Sinopse: Jake Muller é um mercenário na Europa do Leste e filho do icônico vilão Albert Wesker. Ele possui um sangue especial com anticorpos naturais contra o C-Vírus. Sherry Birkin (agora uma agente adulta do governo dos EUA) é enviada para resgatá-á-lo, pois o sangue dele é a chave para criar uma vacina global. Ambos são implacavelmente caçados pela gigantesca arma biológica Ustanak.\n• Campanha de Ada Wong:\n\t• Onde se passa: Vários locais cruzando as tramas dos outros personagens.\n\t• Sinopse: Jogada individualmente como uma campanha de espionagem, acompanha Ada investigando os bastidores das conspirações da Neo-Umbrella, revelando os segredos e as conexões ocultas por trás do antagonista principal, Derek C. Simmons.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 8,
-      "descricao": "Lançado em 2012 para o Xbox 360 e outras plataformas, Resident Evil 6 apresenta uma narrativa global em grande escala impulsionada pelo vazamento do letal C-Vírus, unindo rostos clássicos da franquia e novos personagens em quatro campanhas interligadas.\n\nAs Campanhas e Protagonistas\n\n• Campanha de Leon S. Kennedy e Helena Harper:\n\t• Onde se passa: Tall Oaks (EUA) e China.\n\t• Sinopse: O Presidente dos EUA decide revelar a verdade sobre o incidente de Raccoon City, mas sofre um ataque bioterrorista e se transforma em zumbi, obrigando Leon a eliminá-lo. Acusados injustamente do assassinato do presidente, Leon e a agente do governo Helena Harper precisam fugir de uma cidade infestada e investigar os responsáveis por trás do caos.\n• Campanha de Chris Redfield e Piers Nivans:\n\t• Onde se passa: Edônia (Europa do Leste) e China.\n\t• Sinopse: O capitão da BSAA Chris Redfield sofreu um trauma severo no passado que o deixou com amnésia temporária. De volta à ativa ao lado de seu parceiro Piers Nivans, ele lidera um esquadrão em uma cruzada de vingança e dever contra a organização Neo-Umbrella e Carla Radames (uma mulher idêntica a Ada Wong) após perder vários de seus subordinados para as criaturas J'avo.\n• Campanha de Jake Muller e Sherry Birkin:\n\t• Onde se passa: Edônia e China.\n\t• Sinopse: Jake Muller é um mercenário na Europa do Leste e filho do icônico vilão Albert Wesker. Ele possui um sangue especial com anticorpos naturais contra o C-Vírus. Sherry Birkin (agora uma agente adulta do governo dos EUA) é enviada para resgatá-á-lo, pois o sangue dele é a chave para criar uma vacina global. Ambos são implacavelmente caçados pela gigantesca arma biológica Ustanak.\n• Campanha de Ada Wong:\n\t• Onde se passa: Vários locais cruzando as tramas dos outros personagens.\n\t• Sinopse: Jogada individualmente como uma campanha de espionagem, acompanha Ada investigando os bastidores das conspirações da Neo-Umbrella, revelando os segredos e as conexões ocultas por trás do antagonista principal, Derek C. Simmons.",
       "imagens": [
         "imagens/resident-evil-6-mvvbsczksc9e.jpg"
       ],
@@ -1216,23 +1215,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ax",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvbqrmdh33k",
-      "cod": "aw",
       "nome": "Monopoly Plus",
+      "descricao": "Visão geral criada por IA\n      \nO Monopoly Plus para Xbox 360 é uma versão moderna e dinâmica do clássico jogo de tabuleiro Banco Imobiliário.\n\nSinopse e Principais Características\n\n• Tabuleiro em 3D Vivos: O centro do tabuleiro traz uma cidade em miniatura completa que se movimenta e evolui conforme você joga. Os moradores interagem com seu progresso e celebram suas conquistas.\n• Personalização de Regras: Você pode jogar com as regras clássicas ou adaptar a partida ao seu estilo escolhendo entre as 6 principais \"Regras da Casa\" oficiais.\n• Multijogador: Suporta partidas locais e online para múltiplos jogadores competirem entre si para construir seus impérios imobiliários.\n• Experiência Social: O jogo permite registrar e exibir capturas de tela (screenshots) em momentos-chave da partida.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 1,
-      "descricao": "Visão geral criada por IA\n      \nO Monopoly Plus para Xbox 360 é uma versão moderna e dinâmica do clássico jogo de tabuleiro Banco Imobiliário.\n\nSinopse e Principais Características\n\n• Tabuleiro em 3D Vivos: O centro do tabuleiro traz uma cidade em miniatura completa que se movimenta e evolui conforme você joga. Os moradores interagem com seu progresso e celebram suas conquistas.\n• Personalização de Regras: Você pode jogar com as regras clássicas ou adaptar a partida ao seu estilo escolhendo entre as 6 principais \"Regras da Casa\" oficiais.\n• Multijogador: Suporta partidas locais e online para múltiplos jogadores competirem entre si para construir seus impérios imobiliários.\n• Experiência Social: O jogo permite registrar e exibir capturas de tela (screenshots) em momentos-chave da partida.",
       "imagens": [
         "imagens/monopoly-plus-mvvbqqbvtisp.jpg"
       ],
@@ -1242,23 +1241,23 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "aw",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvvbpio28uyf",
-      "cod": "av",
       "nome": "Minesweeper Flags",
+      "descricao": "Minesweeper Flags é um jogo de quebra-cabeça e estratégia lançado em 11 de fevereiro de 2009 para o Xbox Live Arcade no Xbox 360, desenvolvido pela TikGames e publicado pela Microsoft Corporation.\n\nSinopse e Modos de Jogo\n\nO jogo reinventa a clássica fórmula do tradicional Campo Minado do Windows, transformando-o em uma experiência tridimensional e competitiva:\n• Modo Clássico (Classic Mode): O formato tradicional em três níveis de dificuldade, onde você deve abrir as casas seguras do tabuleiro sem detonar as minas.\n• Modo Bandeiras (Flags Mode): Uma reviravolta no jogo em que, em vez de apenas evitar as bombas, você compete para encontrar e sinalizar (bandeirar) as minas primeiro. Pode ser jogado contra o computador ou com até 4 jogadores (localmente ou via multiplayer online).\n• Modo Campanha (Campaign Mode): Uma jornada single-player ambientada em paisagens 3D, onde o jogador viaja por 7 continentes diferentes e precisa limpar tabuleiros irregulares (totalizando 140 campos minados) tendo um limite de 3 vidas.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 0.5,
-      "descricao": "Minesweeper Flags é um jogo de quebra-cabeça e estratégia lançado em 11 de fevereiro de 2009 para o Xbox Live Arcade no Xbox 360, desenvolvido pela TikGames e publicado pela Microsoft Corporation.\n\nSinopse e Modos de Jogo\n\nO jogo reinventa a clássica fórmula do tradicional Campo Minado do Windows, transformando-o em uma experiência tridimensional e competitiva:\n• Modo Clássico (Classic Mode): O formato tradicional em três níveis de dificuldade, onde você deve abrir as casas seguras do tabuleiro sem detonar as minas.\n• Modo Bandeiras (Flags Mode): Uma reviravolta no jogo em que, em vez de apenas evitar as bombas, você compete para encontrar e sinalizar (bandeirar) as minas primeiro. Pode ser jogado contra o computador ou com até 4 jogadores (localmente ou via multiplayer online).\n• Modo Campanha (Campaign Mode): Uma jornada single-player ambientada em paisagens 3D, onde o jogador viaja por 7 continentes diferentes e precisa limpar tabuleiros irregulares (totalizando 140 campos minados) tendo um limite de 3 vidas.",
       "imagens": [
         "imagens/minesweeper-flags-mvvbph42n739.jpg"
       ],
@@ -1268,23 +1267,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "av",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvvbnyyt9j51",
-      "cod": "au",
       "nome": "Medal of Honor Airborne",
+      "descricao": "Medal of Honor: Airborne é um jogo de tiro em primeira pessoa ambientado na Segunda Guerra Mundial.\n\nSinopse e Enredo\n\n• Protagonista: Você assume o papel de Boyd Travers, um soldado (Primeira Classe Privada) da lendária 82ª Divisão Aerotransportada (82nd Airborne Division) do Exército dos Estados Unidos.\n• Premissa: Diferente dos jogos lineares tradicionais da franquia, cada missão começa com Travers e seu esquadrão saltando de um avião de transporte C-47 direto para o meio de zonas de combate na Europa.\n• Liberdade de Pouso: O grande diferencial da história e da jogabilidade é que você controla o paraquedas durante a queda. Você pode escolher onde aterrissar: em telhados estratégicos, atrás das linhas inimigas ou no meio do fogo cruzado.\n• Teatro de Operações: A campanha acompanha a segunda metade da Segunda Guerra Mundial na Europa, passando por seis operações históricas icônicas:\n\t• Invasão da Sicília (Operation Husky)\n\t• Normandia pós-Dia D\n\t• Operação Market Garden (Arnhem)\n\t• Batalha das Ardenas, entre outras frentes de avanço aliado até a Alemanha.\n• Progressão: Conforme você utiliza suas armas autênticas da época em combate, ganha pontos para desbloquear melhorias e personalizações para o seu arsenal.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 4.9,
-      "descricao": "Medal of Honor: Airborne é um jogo de tiro em primeira pessoa ambientado na Segunda Guerra Mundial.\n\nSinopse e Enredo\n\n• Protagonista: Você assume o papel de Boyd Travers, um soldado (Primeira Classe Privada) da lendária 82ª Divisão Aerotransportada (82nd Airborne Division) do Exército dos Estados Unidos.\n• Premissa: Diferente dos jogos lineares tradicionais da franquia, cada missão começa com Travers e seu esquadrão saltando de um avião de transporte C-47 direto para o meio de zonas de combate na Europa.\n• Liberdade de Pouso: O grande diferencial da história e da jogabilidade é que você controla o paraquedas durante a queda. Você pode escolher onde aterrissar: em telhados estratégicos, atrás das linhas inimigas ou no meio do fogo cruzado.\n• Teatro de Operações: A campanha acompanha a segunda metade da Segunda Guerra Mundial na Europa, passando por seis operações históricas icônicas:\n\t• Invasão da Sicília (Operation Husky)\n\t• Normandia pós-Dia D\n\t• Operação Market Garden (Arnhem)\n\t• Batalha das Ardenas, entre outras frentes de avanço aliado até a Alemanha.\n• Progressão: Conforme você utiliza suas armas autênticas da época em combate, ganha pontos para desbloquear melhorias e personalizações para o seu arsenal.",
       "imagens": [
         "imagens/medal-of-honor-airborne-mvvbnxga5hxf.jpg"
       ],
@@ -1295,23 +1294,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "au",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvbm9mf6et7",
-      "cod": "at",
       "nome": "Hitman Blood Money",
+      "descricao": "Hitman: Blood Money acompanha o Agente 47, um assassino de elite que trabalha para a ICA (Agência Internacional de Contratos).\n\nSinopse e Enredo\n\n• Ameaça à Agência: A história é contada através de flashbacks por um ex-diretor do FBI, Alexander Leland Cayne, que conversa com um jornalista. O fio central mostra que uma misteriosa organização rival — conhecida como The Franchise (A Franquia) — está caçando e eliminando sistematicamente os agentes da ICA, um por um.\n• Sobrevivência e Dinheiro (\"Blood Money\"): Com a ICA à beira do colapso e o próprio Agente 47 como alvo, ele precisa agir por conta própria. O dinheiro que ganha nos contratos é usado entre as missões para subornar testemunhas (reduzindo a notoriedade) ou aprimorar seu arsenal de armas e equipamentos.\n• O Clímax: O jogo culmina em um funeral fingido do Agente 47, onde o jogador pode controlar o personagem (mesmo \"morto\" no chão) para acordar e eliminar todos os inimigos presentes na cerimônia.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 5.1,
-      "descricao": "Hitman: Blood Money acompanha o Agente 47, um assassino de elite que trabalha para a ICA (Agência Internacional de Contratos).\n\nSinopse e Enredo\n\n• Ameaça à Agência: A história é contada através de flashbacks por um ex-diretor do FBI, Alexander Leland Cayne, que conversa com um jornalista. O fio central mostra que uma misteriosa organização rival — conhecida como The Franchise (A Franquia) — está caçando e eliminando sistematicamente os agentes da ICA, um por um.\n• Sobrevivência e Dinheiro (\"Blood Money\"): Com a ICA à beira do colapso e o próprio Agente 47 como alvo, ele precisa agir por conta própria. O dinheiro que ganha nos contratos é usado entre as missões para subornar testemunhas (reduzindo a notoriedade) ou aprimorar seu arsenal de armas e equipamentos.\n• O Clímax: O jogo culmina em um funeral fingido do Agente 47, onde o jogador pode controlar o personagem (mesmo \"morto\" no chão) para acordar e eliminar todos os inimigos presentes na cerimônia.",
       "imagens": [
         "imagens/hitman-blood-money-mvvbm880hsqe.jpg"
       ],
@@ -1322,23 +1321,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "at",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvbla92jika",
-      "cod": "as",
       "nome": "Halo 3",
+      "descricao": "O Halo 3 (lançado em 2007 para o Xbox 360 pela Bungie Studios) é o capítulo final da trilogia original de tiro em primeira pessoa.\n\nSinopse\n\nA história se passa no ano de 2552. O super-soldado Master Chief (Spartan-117) retorna à Terra após os eventos de Halo 2 para impedir o avanço da Covenant — uma aliança de raças alienígenas fanáticas que deseja exterminar a humanidade e ativar os Halos, estruturas anulares alienígenas capazes de destruir toda a vida inteligente da galáxia para conter o Flood, um parasita alienígena devastador e implacável.\nCom a Terra sob ataque e as defesas humanas à beira do colapso, Master Chief se une a aliados humanos (como o Sargento Johnson e a inteligência artificial Cortana) e a ex-membros da Covenant (os Elites, que se rebelaram contra os líderes religiosos de sua própria facção). Juntos, eles precisam travar uma batalha desesperada para impedir os planos da Covenant, destruir o Flood e conduzir o conflito a um clímax definitivo para salvar a raça humana.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 5.9,
-      "descricao": "O Halo 3 (lançado em 2007 para o Xbox 360 pela Bungie Studios) é o capítulo final da trilogia original de tiro em primeira pessoa.\n\nSinopse\n\nA história se passa no ano de 2552. O super-soldado Master Chief (Spartan-117) retorna à Terra após os eventos de Halo 2 para impedir o avanço da Covenant — uma aliança de raças alienígenas fanáticas que deseja exterminar a humanidade e ativar os Halos, estruturas anulares alienígenas capazes de destruir toda a vida inteligente da galáxia para conter o Flood, um parasita alienígena devastador e implacável.\nCom a Terra sob ataque e as defesas humanas à beira do colapso, Master Chief se une a aliados humanos (como o Sargento Johnson e a inteligência artificial Cortana) e a ex-membros da Covenant (os Elites, que se rebelaram contra os líderes religiosos de sua própria facção). Juntos, eles precisam travar uma batalha desesperada para impedir os planos da Covenant, destruir o Flood e conduzir o conflito a um clímax definitivo para salvar a raça humana.",
       "imagens": [
         "imagens/halo-3-mvvbl8gaejp4.jpg"
       ],
@@ -1349,23 +1348,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "as",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvbjz3h35wk",
-      "cod": "ar",
       "nome": "Guitar Hero Aerosmith",
+      "descricao": "Guitar Hero: Aerosmith é um jogo de ritmo lançado em 2008 pela Neversoft e Activision, sendo o primeiro título da franquia Guitar Hero dedicado inteiramente à carreira de uma banda específica.\n\nSinopse e Modo Carreira\n\nO jogo narra a ascensão e a história do Aerosmith como uma linha do tempo do rock and roll:\n• O Começo: A campanha começa no primeiro show oficial da banda na Nipmuc High School, passando por locais históricos como o Max's Kansas City.\n• Estrutura dos Shows: Em cada nível/localidade, o jogador normalmente toca algumas músicas de bandas de apoio ou influências do Aerosmith para \"aquecer o público\", antes de subir ao palco com o próprio Aerosmith para tocar seus grandes clássicos e um bis (encore).\n• Evolução: Conforme o jogador avança pelos locais e estádios cada vez maiores, desbloqueia novos visuais, roupas clássicas dos integrantes, vídeos de bastidores e conteúdos bônus.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 4.7,
-      "descricao": "Guitar Hero: Aerosmith é um jogo de ritmo lançado em 2008 pela Neversoft e Activision, sendo o primeiro título da franquia Guitar Hero dedicado inteiramente à carreira de uma banda específica.\n\nSinopse e Modo Carreira\n\nO jogo narra a ascensão e a história do Aerosmith como uma linha do tempo do rock and roll:\n• O Começo: A campanha começa no primeiro show oficial da banda na Nipmuc High School, passando por locais históricos como o Max's Kansas City.\n• Estrutura dos Shows: Em cada nível/localidade, o jogador normalmente toca algumas músicas de bandas de apoio ou influências do Aerosmith para \"aquecer o público\", antes de subir ao palco com o próprio Aerosmith para tocar seus grandes clássicos e um bis (encore).\n• Evolução: Conforme o jogador avança pelos locais e estádios cada vez maiores, desbloqueia novos visuais, roupas clássicas dos integrantes, vídeos de bastidores e conteúdos bônus.",
       "imagens": [
         "imagens/guitar-hero-aerosmith-mvvbjxlezx4v.jpg"
       ],
@@ -1375,23 +1374,23 @@
       "tipos": [
         "Música"
       ],
-      "tipo": "Música",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ar",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Música"
     },
     {
       "id": "mvvbizfzcvbs",
-      "cod": "aq",
       "nome": "Game Of Thrones",
+      "descricao": "O jogo de Game of Thrones disponível para o Xbox 360 com mais destaque é Game of Thrones: A Telltale Games Series (um jogo de drama interativo e estilo point-and-click), embora também exista um RPG de ação lançado em 2012 pela Cyanide Studios.\nAqui está a sinopse do principal título (A Telltale Games Series):\n\nSinopse de Game of Thrones: A Telltale Games Series\n\n• Contexto e Início: A história se passa durante os eventos da série de TV da HBO, começando logo após os trágicos acontecimentos do Casamento Vermelho (no final da 3ª temporada).\n• A Família Forrester: Você controla vários membros da Casa Forrester, uma nobre família leal à Casa Stark que governa Ironrath, nas florestas do norte de Westeros.\n• O Conflito: Apanhados no meio da Guerra dos Cinco Reis, os Forresters precisam lutar para proteger sua terra natal, sua família e seus recursos contra inimigos ambiciosos (como a Casa Whitehill) e as consequências políticas de Westeros.\n• Mecânica de Escolhas: Ao longo de 6 episódios, suas decisões, diálogos e ações influenciam diretamente o destino da família, determinando quem sobrevive ou morre, além de contar com aparições de personagens clássicos da série (como Jon Snow, Cersei Lannister, Tyrion Targaryen e Daenerys Targaryen).",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 2.6,
-      "descricao": "O jogo de Game of Thrones disponível para o Xbox 360 com mais destaque é Game of Thrones: A Telltale Games Series (um jogo de drama interativo e estilo point-and-click), embora também exista um RPG de ação lançado em 2012 pela Cyanide Studios.\nAqui está a sinopse do principal título (A Telltale Games Series):\n\nSinopse de Game of Thrones: A Telltale Games Series\n\n• Contexto e Início: A história se passa durante os eventos da série de TV da HBO, começando logo após os trágicos acontecimentos do Casamento Vermelho (no final da 3ª temporada).\n• A Família Forrester: Você controla vários membros da Casa Forrester, uma nobre família leal à Casa Stark que governa Ironrath, nas florestas do norte de Westeros.\n• O Conflito: Apanhados no meio da Guerra dos Cinco Reis, os Forresters precisam lutar para proteger sua terra natal, sua família e seus recursos contra inimigos ambiciosos (como a Casa Whitehill) e as consequências políticas de Westeros.\n• Mecânica de Escolhas: Ao longo de 6 episódios, suas decisões, diálogos e ações influenciam diretamente o destino da família, determinando quem sobrevive ou morre, além de contar com aparições de personagens clássicos da série (como Jon Snow, Cersei Lannister, Tyrion Targaryen e Daenerys Targaryen).",
       "imagens": [
         "imagens/game-of-thrones-mvvbixpmkrxl.jpg"
       ],
@@ -1402,23 +1401,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "aq",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvbg05x7mrr",
-      "cod": "ap",
       "nome": "FIFA 14 Copa do Mundo",
+      "descricao": "O jogo 2014 FIFA World Cup Brazil (lançado para Xbox 360 e PlayStation 3) não possui uma história linear com personagens ou enredo fixo, mas sim uma sinopse focada em simular a experiência completa da Copa do Mundo FIFA de 2014.\n\nO que acontece no jogo (Sinopse / Proposta)\n\n• A Grande Competição: O título coloca o jogador no comando de uma das mais de 202 seleções nacionais oficiais disponíveis para disputar o torneio desde as eliminatórias até a grande final no Brasil.\n• Modo \"Road to the FIFA World Cup\": Você pode escolher uma seleção e percorrer todo o caminho real das eliminatórias continentais antes de tentar garantir uma vaga e levantar a taça no solo brasileiro.\n• Atmosfera de Copa do Mundo: O foco do jogo é recriar o clima festivo do evento real, com estádios licenciados do Brasil, torcidas vibrantes com bandeiras e mosaicos, hinos nacionais e comentários dinâmicos que relete a pressão de uma partida de mata-mata.\n• Novas Mecânicas de Jogabilidade: Desenvolvido pela EA Canada, ele aprimorou o motor de jogo do FIFA 14 com dribles responsivos, passes precisos e novas animações de controle de bola para simular o ritmo e a tensão de um torneio de seleções.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 5.6,
-      "descricao": "O jogo 2014 FIFA World Cup Brazil (lançado para Xbox 360 e PlayStation 3) não possui uma história linear com personagens ou enredo fixo, mas sim uma sinopse focada em simular a experiência completa da Copa do Mundo FIFA de 2014.\n\nO que acontece no jogo (Sinopse / Proposta)\n\n• A Grande Competição: O título coloca o jogador no comando de uma das mais de 202 seleções nacionais oficiais disponíveis para disputar o torneio desde as eliminatórias até a grande final no Brasil.\n• Modo \"Road to the FIFA World Cup\": Você pode escolher uma seleção e percorrer todo o caminho real das eliminatórias continentais antes de tentar garantir uma vaga e levantar a taça no solo brasileiro.\n• Atmosfera de Copa do Mundo: O foco do jogo é recriar o clima festivo do evento real, com estádios licenciados do Brasil, torcidas vibrantes com bandeiras e mosaicos, hinos nacionais e comentários dinâmicos que relete a pressão de uma partida de mata-mata.\n• Novas Mecânicas de Jogabilidade: Desenvolvido pela EA Canada, ele aprimorou o motor de jogo do FIFA 14 com dribles responsivos, passes precisos e novas animações de controle de bola para simular o ritmo e a tensão de um torneio de seleções.",
       "imagens": [
         "imagens/fifa-14-copa-do-mundo-mvvbfyqrfqk0.jpg"
       ],
@@ -1428,23 +1427,23 @@
       "tipos": [
         "Esporte"
       ],
-      "tipo": "Esporte",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ap",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Esporte"
     },
     {
       "id": "mvvbe2ttyn24",
-      "cod": "ao",
       "nome": "F1 Race Stars",
+      "descricao": "F1 Race Stars para Xbox 360 é um jogo de corrida arcade em estilo kart (semelhante a Mario Kart) desenvolvido e publicado pela Codemasters em novembro de 2012.\n\nSinopse e Proposta do Jogo\n\nO jogo não possui uma narrativa profunda ou campanha com história dramática; em vez disso, ele transforma o universo oficial da Temporada da Fórmula 1 de 2012 em um parque de diversões temático e caricaturado (cartunizado).\n• Pilotos e Equipes: Pilotos reais da época — como Lewis Hamilton, Fernando Alonso, Sebastian Vettel, Michael Schumacher, Felipe Massa e Bruno Senna — foram transformados em heróis carismáticos com traços de caricatura, dirigindo versões miniaturizadas de seus carros oficiais pelas equipes da F1.\n• Pistas Fantásticas: Os circuitos oficiais (como Mônaco, Brasil, Itália, entre outros) foram redesenhados com elementos de fantasia, incluindo saltos gigantescos, loopings, atalhos secretos e montanhas-russas.\n• Mecânicas e Power-ups: Durante as corridas, os jogadores coletam itens especiais (power-ups) para atrapalhar os rivais ou ganhar vantagens, como bolhas de energia, nuvens de chuva e turbos. O diferencial em relação a outros jogos de kart é a inclusão de um sistema de danos: bater com força no carro pode quebrar peças, obrigando o jogador a passar pelos boxes da pista para fazer reparos.\n• Modos de Jogo: Inclui campeonatos variados, contra-relógio (time trials), partidas em tela dividida para até 4 jogadores no mesmo console e multiplayer online para até 12 jogadores.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 1.5,
-      "descricao": "F1 Race Stars para Xbox 360 é um jogo de corrida arcade em estilo kart (semelhante a Mario Kart) desenvolvido e publicado pela Codemasters em novembro de 2012.\n\nSinopse e Proposta do Jogo\n\nO jogo não possui uma narrativa profunda ou campanha com história dramática; em vez disso, ele transforma o universo oficial da Temporada da Fórmula 1 de 2012 em um parque de diversões temático e caricaturado (cartunizado).\n• Pilotos e Equipes: Pilotos reais da época — como Lewis Hamilton, Fernando Alonso, Sebastian Vettel, Michael Schumacher, Felipe Massa e Bruno Senna — foram transformados em heróis carismáticos com traços de caricatura, dirigindo versões miniaturizadas de seus carros oficiais pelas equipes da F1.\n• Pistas Fantásticas: Os circuitos oficiais (como Mônaco, Brasil, Itália, entre outros) foram redesenhados com elementos de fantasia, incluindo saltos gigantescos, loopings, atalhos secretos e montanhas-russas.\n• Mecânicas e Power-ups: Durante as corridas, os jogadores coletam itens especiais (power-ups) para atrapalhar os rivais ou ganhar vantagens, como bolhas de energia, nuvens de chuva e turbos. O diferencial em relação a outros jogos de kart é a inclusão de um sistema de danos: bater com força no carro pode quebrar peças, obrigando o jogador a passar pelos boxes da pista para fazer reparos.\n• Modos de Jogo: Inclui campeonatos variados, contra-relógio (time trials), partidas em tela dividida para até 4 jogadores no mesmo console e multiplayer online para até 12 jogadores.",
       "imagens": [
         "imagens/f1-race-stars-mvvbe1i2wruw.jpg"
       ],
@@ -1455,23 +1454,23 @@
         "Corrida",
         "Aventura"
       ],
-      "tipo": "Corrida, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ao",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Corrida, Aventura"
     },
     {
       "id": "mvvbco5a201i",
-      "cod": "an",
       "nome": "Dragon Ball Z Ultimate Tenkaichi",
+      "descricao": "O Dragon Ball Z: Ultimate Tenkaichi é um jogo de luta lançado em outubro de 2011 pela Spike e pela Namco Bandai para o Xbox 360 e PlayStation 3.\n\nSinopse e Modos de Jogo\n\n• Modo História (Saiyan Saga / Saga Z): Reconta os principais acontecimentos do anime Dragon Ball Z, cobrindo desde a Saga Saiyajin até a Saga Majin Buu, além de incluir batalhas extras como o especial de Bardock, Metal Cooler, Janemba, Hirudegarn e Gogeta contra Omega Shenron. O jogador explora um mapa de voo livre (semelhante ao estilo de Budokai Tenkaichi 2) entre os combates.\n• Modo Hero (Herói): É um dos grandes diferenciais do jogo. Nele, você cria e personaliza o seu próprio guerreiro (um Saiyajin com opções de customização) para viver uma campanha original pós-Cell, viajando pelo mundo, coletando Esferas do Dragão, escolhendo mentores clássicos da série e subindo de nível.\n• Jogabilidade e Estilo: O título é famoso por focar em uma apresentação altamente cinematográfica, recriando lutas em grande escala, com cenários totalmente destrutíveis, gráficos em cel-shading que imitam perfeitamente o traço do anime e confrontos contra chefes colossais.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 6,
-      "descricao": "O Dragon Ball Z: Ultimate Tenkaichi é um jogo de luta lançado em outubro de 2011 pela Spike e pela Namco Bandai para o Xbox 360 e PlayStation 3.\n\nSinopse e Modos de Jogo\n\n• Modo História (Saiyan Saga / Saga Z): Reconta os principais acontecimentos do anime Dragon Ball Z, cobrindo desde a Saga Saiyajin até a Saga Majin Buu, além de incluir batalhas extras como o especial de Bardock, Metal Cooler, Janemba, Hirudegarn e Gogeta contra Omega Shenron. O jogador explora um mapa de voo livre (semelhante ao estilo de Budokai Tenkaichi 2) entre os combates.\n• Modo Hero (Herói): É um dos grandes diferenciais do jogo. Nele, você cria e personaliza o seu próprio guerreiro (um Saiyajin com opções de customização) para viver uma campanha original pós-Cell, viajando pelo mundo, coletando Esferas do Dragão, escolhendo mentores clássicos da série e subindo de nível.\n• Jogabilidade e Estilo: O título é famoso por focar em uma apresentação altamente cinematográfica, recriando lutas em grande escala, com cenários totalmente destrutíveis, gráficos em cel-shading que imitam perfeitamente o traço do anime e confrontos contra chefes colossais.",
       "imagens": [
         "imagens/dragon-ball-z-ultimate-tenkaichi-mvvbcm9qmfb0.jpg"
       ],
@@ -1482,23 +1481,23 @@
         "Ação",
         "Luta"
       ],
-      "tipo": "Ação, Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "an",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Luta"
     },
     {
       "id": "mvvbabqscidj",
-      "cod": "am",
       "nome": "Disney Universe",
+      "descricao": "Disney Universe é um jogo eletrônico cooperativo de ação e aventura em plataforma 3D, desenvolvido pela Eurocom e publicado pela Disney Interactive Studios em 2011.\n\nSinopse e Enredo\n\nO jogo se passa em um mundo virtual de entretenimento de massa supervisionado por um assistente robótico chamado VICTREX. A confusão começa quando um personagem misterioso e corrompido chamado HEX assume o controle do sistema, alterando os mundos virtuais e transformando os cenários e personagens familiares em confusões caóticas e perigosas.\nPara salvar o universo virtual, os jogadores assumem o papel de agentes/funcionários que precisam vestir fantasias icônicas de heróis da Disney e da Pixar, restaurar a ordem em cada um dos mundos e derrotar as forças corrompidas de HEX.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 5.8,
-      "descricao": "Disney Universe é um jogo eletrônico cooperativo de ação e aventura em plataforma 3D, desenvolvido pela Eurocom e publicado pela Disney Interactive Studios em 2011.\n\nSinopse e Enredo\n\nO jogo se passa em um mundo virtual de entretenimento de massa supervisionado por um assistente robótico chamado VICTREX. A confusão começa quando um personagem misterioso e corrompido chamado HEX assume o controle do sistema, alterando os mundos virtuais e transformando os cenários e personagens familiares em confusões caóticas e perigosas.\nPara salvar o universo virtual, os jogadores assumem o papel de agentes/funcionários que precisam vestir fantasias icônicas de heróis da Disney e da Pixar, restaurar a ordem em cada um dos mundos e derrotar as forças corrompidas de HEX.",
       "imagens": [
         "imagens/disney-universe-mvvbaa3xh4ow.jpg"
       ],
@@ -1508,23 +1507,23 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "am",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvvb95rlnu9n",
-      "cod": "al",
       "nome": "Call of Duty 4 Modern Warfare",
+      "descricao": "Sinopse de Call of Duty 4: Modern Warfare\n\nA história de Call of Duty 4: Modern Warfare (lançado originalmente em 2007) abandona os cenários da Segunda Guerra Mundial e coloca o jogador em um conflito geopolítico moderno no ano de 2011:\n• O Duplo Conflito: A trama gira em torno de duas frentes principais que se cruzam: um golpe de Estado violento no Oriente Médio, liderado pelo radical Khaled Al-Asad (que executa o presidente Al-Fulani em rede nacional), e uma guerra civil na Rússia fomentada por separatistas ultranacionalistas liderados por Imran Zakhaev.\n• Perspectivas dos Personagens: O jogador alterna entre diferentes pontos de vista ao longo da campanha:\n\t• Sgt. John \"Soap\" MacTavish: Um recruta da unidade de elite britânica SAS, liderada pelo carismático Capitão Price.\n\t• Sgt. Paul Jackson: Um fuzileiro naval (Marine) dos Estados Unidos que atua diretamente nas invasões terrestres no Oriente Médio.\n• O Desenrolar da Trama: A Força Tarefa britânica e as tropas americanas tentam conter o caos, rastreando Al-Asad e descobrindo a aliança secreta com os ultranacionalistas russos de Zakhaev. Após eventos catastróficos envolvendo ogivas nucleares e emboscadas brutais, a missão culmina em uma corrida contra o tempo para impedir um lançamento de mísseis contra os Estados Unidos e confrontar Zakhaev diretamente.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 6.7,
-      "descricao": "Sinopse de Call of Duty 4: Modern Warfare\n\nA história de Call of Duty 4: Modern Warfare (lançado originalmente em 2007) abandona os cenários da Segunda Guerra Mundial e coloca o jogador em um conflito geopolítico moderno no ano de 2011:\n• O Duplo Conflito: A trama gira em torno de duas frentes principais que se cruzam: um golpe de Estado violento no Oriente Médio, liderado pelo radical Khaled Al-Asad (que executa o presidente Al-Fulani em rede nacional), e uma guerra civil na Rússia fomentada por separatistas ultranacionalistas liderados por Imran Zakhaev.\n• Perspectivas dos Personagens: O jogador alterna entre diferentes pontos de vista ao longo da campanha:\n\t• Sgt. John \"Soap\" MacTavish: Um recruta da unidade de elite britânica SAS, liderada pelo carismático Capitão Price.\n\t• Sgt. Paul Jackson: Um fuzileiro naval (Marine) dos Estados Unidos que atua diretamente nas invasões terrestres no Oriente Médio.\n• O Desenrolar da Trama: A Força Tarefa britânica e as tropas americanas tentam conter o caos, rastreando Al-Asad e descobrindo a aliança secreta com os ultranacionalistas russos de Zakhaev. Após eventos catastróficos envolvendo ogivas nucleares e emboscadas brutais, a missão culmina em uma corrida contra o tempo para impedir um lançamento de mísseis contra os Estados Unidos e confrontar Zakhaev diretamente.",
       "imagens": [
         "imagens/call-of-duty-4-modern-warfare-mvvb949i87jq.jpg"
       ],
@@ -1535,23 +1534,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "al",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvb7t7d9k6e",
-      "cod": "ak",
       "nome": "Battlefield Bad Company",
+      "descricao": "Battlefield: Bad Company é um jogo de tiro em primeira pessoa desenvolvido pela DICE e publicado pela Electronic Arts em 2008 para o Xbox 360.\n\nSinopse\n\nA história acompanha o Soldado Preston Marlowe, um militar transferido para a \"B\" Company (Bad Company) da 222ª Batalhão do Exército dos Estados Unidos. Esse esquadrão é basicamente o \"lixo\" da corporação: um grupo formado por soldados problemáticos, indisciplinados ou que cometeram erros graves, sendo usados em missões suicidas e de alto risco na linha de frente.\nDurante um conflito fictício em escala global entre os Estados Unidos e a Federação Russa, Marlowe e seus companheiros de esquadrão — o sargento Samuel D. Redford, o operador de rádio George Sweetwater e o especialista em explosivos Haggard — descobrem por acaso que o exército mercenário inimigo (a Legião) está sendo pago com barras de ouro maciço.\nVendo a chance de ficarem ricos e se aposentarem antes do fim do tempo de serviço, o grupo decide abandonar temporariamente as ordens oficiais e embarcar em uma caçada particular atrás do ouro russo, transformando a guerra em uma missão cheia de humor ácido, explosões e destruição em massa.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 5.1,
-      "descricao": "Battlefield: Bad Company é um jogo de tiro em primeira pessoa desenvolvido pela DICE e publicado pela Electronic Arts em 2008 para o Xbox 360.\n\nSinopse\n\nA história acompanha o Soldado Preston Marlowe, um militar transferido para a \"B\" Company (Bad Company) da 222ª Batalhão do Exército dos Estados Unidos. Esse esquadrão é basicamente o \"lixo\" da corporação: um grupo formado por soldados problemáticos, indisciplinados ou que cometeram erros graves, sendo usados em missões suicidas e de alto risco na linha de frente.\nDurante um conflito fictício em escala global entre os Estados Unidos e a Federação Russa, Marlowe e seus companheiros de esquadrão — o sargento Samuel D. Redford, o operador de rádio George Sweetwater e o especialista em explosivos Haggard — descobrem por acaso que o exército mercenário inimigo (a Legião) está sendo pago com barras de ouro maciço.\nVendo a chance de ficarem ricos e se aposentarem antes do fim do tempo de serviço, o grupo decide abandonar temporariamente as ordens oficiais e embarcar em uma caçada particular atrás do ouro russo, transformando a guerra em uma missão cheia de humor ácido, explosões e destruição em massa.",
       "imagens": [
         "imagens/battlefield-bad-company-mvvb7rq0j2zm.jpg"
       ],
@@ -1562,23 +1561,23 @@
         "Ação",
         "Acessórios"
       ],
-      "tipo": "Ação, Acessórios",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ak",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Acessórios"
     },
     {
       "id": "mvvb6adxvny7",
-      "cod": "aj",
       "nome": "Battlefield 2 Modern Combat",
+      "descricao": "A campanha de Battlefield 2: Modern Combat (lançado para Xbox 360 em 2006) gira em torno de um conflito fictício na região do Cazaquistão entre a OTAN e a China.\n\nSinopse e Enredo\n\n• O Conflito: A história começa com uma guerra de grande escala entre a OTAN e a China no Cazaquistão. Ambas as potências trocam acusações de crimes de guerra através de suas respectivas propagandas na mídia.\n• A Jogabilidade na Campanha: Durante o jogo, você alterna o controle entre soldados de ambos os lados (OTAN e China) para vivenciar os dois pontos de vista da mesma guerra.\n• O Verdheiro Inimigo: Conforme a trama avança, descobre-se que uma organização terrorista chamada Bandeira Ardente (The Burning Flag) orquestrou os eventos por trás dos panos. Ela sabotou as negociações de paz e cometeu os crimes de guerra disfarçada, manipulando a OTAN e a China para entrarem em guerra uma contra a outra.\n\nPrincipais Destaques do Jogo\n\n• Mecânica HotSwap: Permite que você aponte para qualquer soldado aliado no campo de batalha e assuma o controle dele instantaneamente (por exemplo, trocando de um soldado a pé para o piloto de um tanque ou artilheiro de um helicóptero).\n• Classes de Soldados: Dividido em Assault, Sniper, Support, Engineer e Special Ops, cada uma com funções e armamentos específicos.\n• Veículos: Mais de 30 veículos militares controláveis, incluindo tanques, jipes e helicópteros.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 6.6,
-      "descricao": "A campanha de Battlefield 2: Modern Combat (lançado para Xbox 360 em 2006) gira em torno de um conflito fictício na região do Cazaquistão entre a OTAN e a China.\n\nSinopse e Enredo\n\n• O Conflito: A história começa com uma guerra de grande escala entre a OTAN e a China no Cazaquistão. Ambas as potências trocam acusações de crimes de guerra através de suas respectivas propagandas na mídia.\n• A Jogabilidade na Campanha: Durante o jogo, você alterna o controle entre soldados de ambos os lados (OTAN e China) para vivenciar os dois pontos de vista da mesma guerra.\n• O Verdheiro Inimigo: Conforme a trama avança, descobre-se que uma organização terrorista chamada Bandeira Ardente (The Burning Flag) orquestrou os eventos por trás dos panos. Ela sabotou as negociações de paz e cometeu os crimes de guerra disfarçada, manipulando a OTAN e a China para entrarem em guerra uma contra a outra.\n\nPrincipais Destaques do Jogo\n\n• Mecânica HotSwap: Permite que você aponte para qualquer soldado aliado no campo de batalha e assuma o controle dele instantaneamente (por exemplo, trocando de um soldado a pé para o piloto de um tanque ou artilheiro de um helicóptero).\n• Classes de Soldados: Dividido em Assault, Sniper, Support, Engineer e Special Ops, cada uma com funções e armamentos específicos.\n• Veículos: Mais de 30 veículos militares controláveis, incluindo tanques, jipes e helicópteros.",
       "imagens": [
         "imagens/battlefield-2-modern-combat-mvvb690lt8w8.jpg"
       ],
@@ -1588,23 +1587,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "aj",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvvb40xdw0qn",
-      "cod": "ai",
       "nome": "Batman Arkham Origins Blackgate",
+      "descricao": "A sinopse de Batman: Arkham Origins Blackgate (lançado para o Xbox 360 como a Deluxe Edition) gira em torno de uma rebelião em uma penitenciária de segurança máxima logo após os eventos de Batman: Arkham Origins.\n\nSinopse da História\n\n• O Motim: Três meses após o final de Arkham Origins, uma misteriosa explosão e uma grande rebelião eclodem na Penitenciária de Blackgate.\n• Territórios Divididos: A prisão é tomada e dividida em três grandes territórios, cada um controlado por um dos chefes do crime de Gotham City: Coringa, Pinguim e Máscara Negra.\n• A Aliança com a Mulher-Gato: Ao chegar para conter o caos, Batman encontra a Mulher-Gato (em seu primeiro encontro cronológico com o Cavaleiro das Trevas na série Arkham), que está no local com motivações próprias e acaba forçando uma aliança instável com ele para resgatar reféns presos na Ala Arkham.\n• A Missão: Batman precisa se infiltrar sozinho nas diferentes alas da prisão (Industrial, Administrativa e Celulas), desvendar os planos dos vilões, recuperar códigos de acesso e restaurar a ordem antes que a situação em Blackgate ameace toda a cidade de Gotham.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 2.8,
-      "descricao": "A sinopse de Batman: Arkham Origins Blackgate (lançado para o Xbox 360 como a Deluxe Edition) gira em torno de uma rebelião em uma penitenciária de segurança máxima logo após os eventos de Batman: Arkham Origins.\n\nSinopse da História\n\n• O Motim: Três meses após o final de Arkham Origins, uma misteriosa explosão e uma grande rebelião eclodem na Penitenciária de Blackgate.\n• Territórios Divididos: A prisão é tomada e dividida em três grandes territórios, cada um controlado por um dos chefes do crime de Gotham City: Coringa, Pinguim e Máscara Negra.\n• A Aliança com a Mulher-Gato: Ao chegar para conter o caos, Batman encontra a Mulher-Gato (em seu primeiro encontro cronológico com o Cavaleiro das Trevas na série Arkham), que está no local com motivações próprias e acaba forçando uma aliança instável com ele para resgatar reféns presos na Ala Arkham.\n• A Missão: Batman precisa se infiltrar sozinho nas diferentes alas da prisão (Industrial, Administrativa e Celulas), desvendar os planos dos vilões, recuperar códigos de acesso e restaurar a ordem antes que a situação em Blackgate ameace toda a cidade de Gotham.",
       "imagens": [
         "imagens/batman-arkham-origins-blackgate-mvvb3ze9zndz.jpg"
       ],
@@ -1615,23 +1614,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ai",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvazw3pa673",
-      "cod": "ah",
       "nome": "Need For Speed Underground 2",
+      "descricao": "A sinopse de Need for Speed: Underground 2 gira em torno de uma nova jornada no mundo das corridas de rua ilegais.\n• O ponto de partida: O protagonista (que é o mesmo vencedor do primeiro jogo) chega à cidade de Bayview após receber uma mensagem de boas-vindas de Samantha, mas logo sofre uma emboscada e perde o controle do seu carro para uma figura misteriosa ligada a Caleb Reece.\n• A aliada: Sem carro e sem reputação na nova cidade, o jogador conhece Rachel Teller (dublada por Brooke Burke), que lhe empresta um carro básico e serve como guia, apresentando as pistas, as oficinas de tuning e o cenário local.\n• O objetivo: O jogador precisa vencer as disputas de rua, ganhar respeito (rep), assinar com patrocinadores e tunar seus veículos para subir na hierarquia do underground, culminando no confronto direto contra Caleb e sua gangue para dominar a cidade de Bayview.\n• Formato: A história é narrada em estilo de quadrinhos (histórias em quadrinhos/cutscenes estilizadas) e mensagens de texto/e-mails recebidos no celular do piloto.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 4.4,
-      "descricao": "A sinopse de Need for Speed: Underground 2 gira em torno de uma nova jornada no mundo das corridas de rua ilegais.\n• O ponto de partida: O protagonista (que é o mesmo vencedor do primeiro jogo) chega à cidade de Bayview após receber uma mensagem de boas-vindas de Samantha, mas logo sofre uma emboscada e perde o controle do seu carro para uma figura misteriosa ligada a Caleb Reece.\n• A aliada: Sem carro e sem reputação na nova cidade, o jogador conhece Rachel Teller (dublada por Brooke Burke), que lhe empresta um carro básico e serve como guia, apresentando as pistas, as oficinas de tuning e o cenário local.\n• O objetivo: O jogador precisa vencer as disputas de rua, ganhar respeito (rep), assinar com patrocinadores e tunar seus veículos para subir na hierarquia do underground, culminando no confronto direto contra Caleb e sua gangue para dominar a cidade de Bayview.\n• Formato: A história é narrada em estilo de quadrinhos (histórias em quadrinhos/cutscenes estilizadas) e mensagens de texto/e-mails recebidos no celular do piloto.",
       "imagens": [
         "imagens/need-for-speed-underground-2-mvvb1c9s6paz.jpg"
       ],
@@ -1641,23 +1640,23 @@
       "tipos": [
         "Corrida"
       ],
-      "tipo": "Corrida",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ah",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Corrida"
     },
     {
       "id": "mvvay2v7tt0t",
-      "cod": "ag",
       "nome": "Midnight Club 3 DUB Edition Remix",
+      "descricao": "Visão geral criada por IA\n      \nMidnight Club 3: DUB Edition Remix é um jogo de corrida arcade em mundo aberto desenvolvido pela Rockstar San Diego e publicado pela Rockstar Games.\n\nSinopse e Proposta do Jogo\n\nA premissa gira em torno do submundo das corridas de rua ilegais nos Estados Unidos. O jogador assume o papel de um piloto novato que precisa desafiar gangues locais, pilotos de elite e clubes de tunagem para conquistar respeito, dinheiro e os veículos mais desejados do planeta.\nDiferente de simuladores, o foco aqui é a liberdade absoluta de pilotagem: não há barreiras fixas nas pistas, permitindo que você escolha os melhores atalhos por entre o tráfego urbano em alta velocidade para cruzar a linha de chegada.\n\nO que a versão \"Remix\" adiciona ao Xbox Clássico:\n\n• Novas Cidades: Mantém as cidades originais de San Diego, Atlanta e Detroit, e adiciona a icônica Tóquio (inspirada e repaginada de Midnight Club 2).\n• Mais Veículos: Expande a garagem para um total de 94 veículos licenciados (carros, tunados de luxo, SUVs, muscle cars e motos), incluindo marcas como Dodge, Lamborghini, Saleen e Ducati.\n• Customização DUB Magazine: Ampla variedade de peças visuais e de performance (aros maiores, kits aerodinâmicos, pinturas, neon e melhorias de motor) em parceria com a revista DUB.\n• Trilha Sonora Expandida: Adiciona mais 25 músicas licenciadas (focadas em rap, hip-hop e rock), totalizando mais de 120 faixas.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 4.7,
-      "descricao": "Visão geral criada por IA\n      \nMidnight Club 3: DUB Edition Remix é um jogo de corrida arcade em mundo aberto desenvolvido pela Rockstar San Diego e publicado pela Rockstar Games.\n\nSinopse e Proposta do Jogo\n\nA premissa gira em torno do submundo das corridas de rua ilegais nos Estados Unidos. O jogador assume o papel de um piloto novato que precisa desafiar gangues locais, pilotos de elite e clubes de tunagem para conquistar respeito, dinheiro e os veículos mais desejados do planeta.\nDiferente de simuladores, o foco aqui é a liberdade absoluta de pilotagem: não há barreiras fixas nas pistas, permitindo que você escolha os melhores atalhos por entre o tráfego urbano em alta velocidade para cruzar a linha de chegada.\n\nO que a versão \"Remix\" adiciona ao Xbox Clássico:\n\n• Novas Cidades: Mantém as cidades originais de San Diego, Atlanta e Detroit, e adiciona a icônica Tóquio (inspirada e repaginada de Midnight Club 2).\n• Mais Veículos: Expande a garagem para um total de 94 veículos licenciados (carros, tunados de luxo, SUVs, muscle cars e motos), incluindo marcas como Dodge, Lamborghini, Saleen e Ducati.\n• Customização DUB Magazine: Ampla variedade de peças visuais e de performance (aros maiores, kits aerodinâmicos, pinturas, neon e melhorias de motor) em parceria com a revista DUB.\n• Trilha Sonora Expandida: Adiciona mais 25 músicas licenciadas (focadas em rap, hip-hop e rock), totalizando mais de 120 faixas.",
       "imagens": [
         "imagens/midnight-club-3-dub-edition-remix-mvvay1lvo6a9.jpg"
       ],
@@ -1667,23 +1666,23 @@
       "tipos": [
         "Corrida"
       ],
-      "tipo": "Corrida",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ag",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Corrida"
     },
     {
       "id": "mvvawzwtu671",
-      "cod": "af",
       "nome": "Medal of Honor Frontline",
+      "descricao": "Medal of Honor: Frontline é um jogo de tiro em primeira pessoa clássico ambientado na Segunda Guerra Mundial, lançado originalmente em 2002 para o Xbox Clássico (além de outras plataformas).\n\nSinopse e Enredo\n\n• Protagonista: Você assume o papel do Tenente Jimmy Patterson, um condecorado agente da OSS (Office of Strategic Services, o serviço de inteligência dos Estados Unidos) e ex-piloto.\n• Missão Principal: Patterson é enviado atrás das linhas inimigas na Europa ocupada com a missão de se infiltrar em bases nazistas, sabotar operações do Eixo e, por fim, impedir os planos alemães de concluir o desenvolvimento da Horten Ho 229 (asa voadora HO-IX) — uma arma experimental secreta e devastadora que poderia mudar o rumo da Segunda Guerra Mundial.\n• Estrutura da Campanha: A campanha é dividida em 6 missões principais e 20 níveis lineares baseados em eventos históricos reais do conflito.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 3.2,
-      "descricao": "Medal of Honor: Frontline é um jogo de tiro em primeira pessoa clássico ambientado na Segunda Guerra Mundial, lançado originalmente em 2002 para o Xbox Clássico (além de outras plataformas).\n\nSinopse e Enredo\n\n• Protagonista: Você assume o papel do Tenente Jimmy Patterson, um condecorado agente da OSS (Office of Strategic Services, o serviço de inteligência dos Estados Unidos) e ex-piloto.\n• Missão Principal: Patterson é enviado atrás das linhas inimigas na Europa ocupada com a missão de se infiltrar em bases nazistas, sabotar operações do Eixo e, por fim, impedir os planos alemães de concluir o desenvolvimento da Horten Ho 229 (asa voadora HO-IX) — uma arma experimental secreta e devastadora que poderia mudar o rumo da Segunda Guerra Mundial.\n• Estrutura da Campanha: A campanha é dividida em 6 missões principais e 20 níveis lineares baseados em eventos históricos reais do conflito.",
       "imagens": [
         "imagens/medal-of-honor-frontline-mvvawyggu9hv.jpg"
       ],
@@ -1694,23 +1693,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "af",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvavzyy5ziz",
-      "cod": "ae",
       "nome": "Hitman Contracts",
+      "descricao": "O Hitman: Contracts começa de forma misteriosa com o Agente 47 ferido e preso em um quarto de hotel em Paris após uma missão que deu errado.\nEnquanto está gravemente ferido e delirando de dor, o assassino passa a reviver mentalmente várias de suas missões mais perigosas e marcantes do passado. Boa parte do jogo funciona como uma releitura (ou remake parcial) dos eventos do primeiro jogo da franquia (Hitman: Codename 47), misturado com lembranças de novos contratos sombrios pelo mundo.\n\nPrincipais pontos da sinopse:\n\n• O Presente (Paris): O Agente 47 tenta se recuperar dos ferimentos no hotel e escapar da polícia local que cercou o prédio.\n• As Lembranças/Missões: Cada fase jogável é uma memória do passado de 47 — eliminando alvos da máfia, traficantes e criminosos internacionais em climas sombrios, chuvosos e claustrofóbicos.\n• O desfecho: No final, 47 consegue se recuperar e eliminar a ameaça no hotel antes de escapar das autoridades, conectando os eventos diretamente ao arco da franquia.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 2.5,
-      "descricao": "O Hitman: Contracts começa de forma misteriosa com o Agente 47 ferido e preso em um quarto de hotel em Paris após uma missão que deu errado.\nEnquanto está gravemente ferido e delirando de dor, o assassino passa a reviver mentalmente várias de suas missões mais perigosas e marcantes do passado. Boa parte do jogo funciona como uma releitura (ou remake parcial) dos eventos do primeiro jogo da franquia (Hitman: Codename 47), misturado com lembranças de novos contratos sombrios pelo mundo.\n\nPrincipais pontos da sinopse:\n\n• O Presente (Paris): O Agente 47 tenta se recuperar dos ferimentos no hotel e escapar da polícia local que cercou o prédio.\n• As Lembranças/Missões: Cada fase jogável é uma memória do passado de 47 — eliminando alvos da máfia, traficantes e criminosos internacionais em climas sombrios, chuvosos e claustrofóbicos.\n• O desfecho: No final, 47 consegue se recuperar e eliminar a ameaça no hotel antes de escapar das autoridades, conectando os eventos diretamente ao arco da franquia.",
       "imagens": [
         "imagens/hitman-contracts-mvvavygripe4.jpg"
       ],
@@ -1720,23 +1719,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ae",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvvav0iglbq1",
-      "cod": "ad",
       "nome": "Harry Potte Azkaban",
+      "descricao": "Visão geral criada por IA\n      \nA sinopse de Harry Potter e o Prisioneiro de Azkaban para o Xbox Clássico acompanha o terceiro ano de Harry Potter e seus amigos na Escola de Magia e Bruxaria de Hogwarts.\n\nEnredo Principal\n\n• A Fuga de Sirius Black: O perigoso bruxo Sirius Black escapou da prisão de Azkaban e está atrás de Harry.\n• Controle de Trio: Pela primeira vez no jogo, você pode alternar livremente e controlar Harry Potter, Rony Weasley e Hermione Granger, usando as habilidades únicas de cada um para resolver quebra-cabeças e avançar na história.\n• Exploração e Magia: O jogo começa no Expresso de Hogwarts e leva os jogadores por terrenos detalhados do castelo, aulas de magia, voos nas costas do hipogrifo Bicuço e confrontos contra os temíveis Dementadores.\n• Novos Feitiços: É possível aprender e conjurar magias como Carpe Retractum, Glacius e o poderoso Expecto Patronum.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 2.2,
-      "descricao": "Visão geral criada por IA\n      \nA sinopse de Harry Potter e o Prisioneiro de Azkaban para o Xbox Clássico acompanha o terceiro ano de Harry Potter e seus amigos na Escola de Magia e Bruxaria de Hogwarts.\n\nEnredo Principal\n\n• A Fuga de Sirius Black: O perigoso bruxo Sirius Black escapou da prisão de Azkaban e está atrás de Harry.\n• Controle de Trio: Pela primeira vez no jogo, você pode alternar livremente e controlar Harry Potter, Rony Weasley e Hermione Granger, usando as habilidades únicas de cada um para resolver quebra-cabeças e avançar na história.\n• Exploração e Magia: O jogo começa no Expresso de Hogwarts e leva os jogadores por terrenos detalhados do castelo, aulas de magia, voos nas costas do hipogrifo Bicuço e confrontos contra os temíveis Dementadores.\n• Novos Feitiços: É possível aprender e conjurar magias como Carpe Retractum, Glacius e o poderoso Expecto Patronum.",
       "imagens": [
         "imagens/harry-potte-azkaban-mvvauyv2er1a.jpg"
       ],
@@ -1747,23 +1746,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ad",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvathpdz5r8",
-      "cod": "ac",
       "nome": "Halo 2",
+      "descricao": "Halo 2 é um jogo de tiro em primeira pessoa lançado pela Bungie e pela Microsoft Game Studios em 2004 para o console Xbox original.\n\nSinopse da Campanha\n\nA história se passa no outono de 2552 e narra o clímax da Guerra Humano-Covenant:\n• O Ataque à Terra: Após os eventos do primeiro jogo (Halo: Combat Evolved), o supersoldado Master Chief (Spartan-117) e a inteligência artificial Cortana retornam triunfantes à Terra. No entanto, a trégua dura pouco: uma frota invasora do grupo alienígena Covenant ataca o planeta, forçando uma batalha desesperada para proteger a humanidade.\n• Perspectiva Dupla (O Árbitro): Uma das grandes marcas do jogo é permitir que o jogador assuma o controle de dois protagonistas diferentes. Além de Master Chief, você joga como o Árbitro (The Arbiter), um comandante Elite que foi desonrado pelos líderes religiosos do Covenant (os Profetas) após a destruição do primeiro anel Halo. A narrativa alterna entre os dois lados, mostrando as intrigas políticas e religiosas dos alienígenas e a luta pela sobrevivência dos humanos.\n• Novos Anels e o Flood: Durante a perseguição às frotas inimigas, os personagens descobrem a existência de um segundo anel Halo e precisam lidar com a ameaça parasitária e descontrolada do Flood, uma força antiga que consome toda forma de vida inteligente.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 4.7,
-      "descricao": "Halo 2 é um jogo de tiro em primeira pessoa lançado pela Bungie e pela Microsoft Game Studios em 2004 para o console Xbox original.\n\nSinopse da Campanha\n\nA história se passa no outono de 2552 e narra o clímax da Guerra Humano-Covenant:\n• O Ataque à Terra: Após os eventos do primeiro jogo (Halo: Combat Evolved), o supersoldado Master Chief (Spartan-117) e a inteligência artificial Cortana retornam triunfantes à Terra. No entanto, a trégua dura pouco: uma frota invasora do grupo alienígena Covenant ataca o planeta, forçando uma batalha desesperada para proteger a humanidade.\n• Perspectiva Dupla (O Árbitro): Uma das grandes marcas do jogo é permitir que o jogador assuma o controle de dois protagonistas diferentes. Além de Master Chief, você joga como o Árbitro (The Arbiter), um comandante Elite que foi desonrado pelos líderes religiosos do Covenant (os Profetas) após a destruição do primeiro anel Halo. A narrativa alterna entre os dois lados, mostrando as intrigas políticas e religiosas dos alienígenas e a luta pela sobrevivência dos humanos.\n• Novos Anels e o Flood: Durante a perseguição às frotas inimigas, os personagens descobrem a existência de um segundo anel Halo e precisam lidar com a ameaça parasitária e descontrolada do Flood, uma força antiga que consome toda forma de vida inteligente.",
       "imagens": [
         "imagens/halo-2-mvvatg7zyh3s.jpg"
       ],
@@ -1774,23 +1773,23 @@
         "Ação",
         "Aventura"
       ],
-      "tipo": "Ação, Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ac",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação, Aventura"
     },
     {
       "id": "mvvarrcds6n8",
-      "cod": "ab",
       "nome": "FIFA Street",
+      "descricao": "O FIFA Street original (lançado para o Xbox Clássico em 2005) não possui uma campanha com roteiro cinematográfico complexo; sua premissa é focada na cultura do futebol de rua e no estilo freestyle.\n\nSinopse e Proposta do Jogo\n\n• Foco no Estilo e Respeito: Você começa com uma equipe amadora e precisa desafiar lendas e times de rua ao redor do mundo. O objetivo não é apenas vencer as partidas, mas acumular respeito através de dribles ousados, humilhações nos adversários e truques espetaculares.\n• Sem Regras Tradicionais: O jogo elimina as regras do futebol de campo convencional (não há laterais, faltas formais ou cartões vermelhos que parem o jogo de forma chata), transformando as partidas em duelos rápidos de 4 contra 4 (mais 1 goleiro ou sem goleiro dependendo do formato).\n• Jogadores Reais e Quadras Urbanas: Você pode jogar com grandes estrelas do futebol mundial da época (como Ronaldinho Gaúcho, Adriano e Zidane) adaptados para o estilo de quadras improvisadas em favelas, ruas de cidades famosas, coberturas e quadras de concreto pelo globo.\n• Mecânica de Game Breaker: Conforme você acerta sequências de dribles e combos, acumula energia para desferir jogadas especiais chamadas de Game Breaker, que ajudam a virar o placar ou marcar gols de forma estilosa.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 1.8,
-      "descricao": "O FIFA Street original (lançado para o Xbox Clássico em 2005) não possui uma campanha com roteiro cinematográfico complexo; sua premissa é focada na cultura do futebol de rua e no estilo freestyle.\n\nSinopse e Proposta do Jogo\n\n• Foco no Estilo e Respeito: Você começa com uma equipe amadora e precisa desafiar lendas e times de rua ao redor do mundo. O objetivo não é apenas vencer as partidas, mas acumular respeito através de dribles ousados, humilhações nos adversários e truques espetaculares.\n• Sem Regras Tradicionais: O jogo elimina as regras do futebol de campo convencional (não há laterais, faltas formais ou cartões vermelhos que parem o jogo de forma chata), transformando as partidas em duelos rápidos de 4 contra 4 (mais 1 goleiro ou sem goleiro dependendo do formato).\n• Jogadores Reais e Quadras Urbanas: Você pode jogar com grandes estrelas do futebol mundial da época (como Ronaldinho Gaúcho, Adriano e Zidane) adaptados para o estilo de quadras improvisadas em favelas, ruas de cidades famosas, coberturas e quadras de concreto pelo globo.\n• Mecânica de Game Breaker: Conforme você acerta sequências de dribles e combos, acumula energia para desferir jogadas especiais chamadas de Game Breaker, que ajudam a virar o placar ou marcar gols de forma estilosa.",
       "imagens": [
         "imagens/fifa-street-mvvarpsw1w85.jpg"
       ],
@@ -1800,23 +1799,23 @@
       "tipos": [
         "Esporte"
       ],
-      "tipo": "Esporte",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "ab",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Esporte"
     },
     {
       "id": "mvvaoimyqswl",
-      "cod": "aa",
       "nome": "Disney Era do Gelo 2",
+      "descricao": "A Era do Gelo 2: O Degelo (Ice Age 2: The Meltdown), lançado para o Xbox clássico em 2006, é um jogo de aventura e plataforma 3D baseado no filme homônimo. Embora o filme seja da Blue Sky/20th Century Fox (atualmente parte da Disney), o jogo foi desenvolvido pela Eurocom e distribuído pela Vivendi Universal.\n\nSinopse do Jogo\n\nA história acompanha o avanço do aquecimento global na pré-história. O vale congelado onde os animais vivem corre o risco de sofrer uma inundação catastrófica devido ao derretimento de uma gigantesca represa de gelo. Para sobreviverem, todos os animais precisam migrar para o outro lado do vale em busca de uma suposta embarcação salvadora.\nDiferente do longa-metragem, o jogo adota uma perspectiva focada nas desventuras de Scrat, o esquilo dente-de-sabre obstinado. Enquanto tenta escapar do grande dilúvio, Scrat cruza o caminho do famoso trio principal — o mamute Manny, a preguiça Sid e o tigre Diego —, além de novos personagens como a mamute Ellie e os gambás Crash e Eddie. Em sua jornada para coletar suas preciosas nozes e bolotas, o esquilo precisa resolver quebra-cabeças, enfrentar predadores locais e ajudar outros animais em perigo ao longo de cenários que vão de cavernas glaciais a pântanos perigosos.\n\nDetalhes da Jogabilidade",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 1.9,
-      "descricao": "A Era do Gelo 2: O Degelo (Ice Age 2: The Meltdown), lançado para o Xbox clássico em 2006, é um jogo de aventura e plataforma 3D baseado no filme homônimo. Embora o filme seja da Blue Sky/20th Century Fox (atualmente parte da Disney), o jogo foi desenvolvido pela Eurocom e distribuído pela Vivendi Universal.\n\nSinopse do Jogo\n\nA história acompanha o avanço do aquecimento global na pré-história. O vale congelado onde os animais vivem corre o risco de sofrer uma inundação catastrófica devido ao derretimento de uma gigantesca represa de gelo. Para sobreviverem, todos os animais precisam migrar para o outro lado do vale em busca de uma suposta embarcação salvadora.\nDiferente do longa-metragem, o jogo adota uma perspectiva focada nas desventuras de Scrat, o esquilo dente-de-sabre obstinado. Enquanto tenta escapar do grande dilúvio, Scrat cruza o caminho do famoso trio principal — o mamute Manny, a preguiça Sid e o tigre Diego —, além de novos personagens como a mamute Ellie e os gambás Crash e Eddie. Em sua jornada para coletar suas preciosas nozes e bolotas, o esquilo precisa resolver quebra-cabeças, enfrentar predadores locais e ajudar outros animais em perigo ao longo de cenários que vão de cavernas glaciais a pântanos perigosos.\n\nDetalhes da Jogabilidade",
       "imagens": [
         "imagens/disney-era-do-gelo-2-mvvaogx0exud.jpg"
       ],
@@ -1826,23 +1825,23 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "aa",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvvakyeb18t4",
-      "cod": "a9",
       "nome": "Call Of Duty 1 Finest Hour",
+      "descricao": "Call of Duty: Finest Hour é um jogo de tiro em primeira pessoa de 2004 ambientado na Segunda Guerra Mundial, desenvolvido pela Spark Unlimited e publicado pela Activision. Embora compartilhe o tema com o primeiro jogo da franquia para PC, ele traz uma história independente baseada em seis perspectivas cruzadas de soldados Aliados (Soviéticos, Britânicos e Americanos).\n\nSinopse e Campanhas\n\nO jogo divide-se em três campanhas principais que retratam diferentes frentes de batalha:\n• Campanha Soviética:\n\t• Protagonistas: O soldado Aleksandr Sokolov, a franco-atiradora Tenente Tania Pavelovna (a primeira protagonista feminina jogável da franquia) e o Major Nikolai Badanov.\n\t• Enredo: Começa na sangrenta e caótica Batalha de Stalingrado, combatendo em prédios destruídos, esgotos e até controlando tanques soviéticos contra as forças alemãs.\n• Campanha Britânica:\n\t• Protagonistas: O sargento Edward Carlyle (comandado pelo Sargento Bob Starkey, dublado por Brian Johnson, vocalista do AC/DC).\n\t• Enredo: Uma campanha mais curta focada em operações de comandos e combates táticos no Norte da África.\n• Campanha Americana:\n\t• Protagonistas: O sargento Chuck Walker e o sargento Sam Rivers (em missões com tanques).\n\t• Enredo: Acompanha o avanço aliado na Europa Ocidental, retratando a captura de Aken, combates urbanos em Tilet e a importante tomada da ponte sobre o rio Reno.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 2.2,
-      "descricao": "Call of Duty: Finest Hour é um jogo de tiro em primeira pessoa de 2004 ambientado na Segunda Guerra Mundial, desenvolvido pela Spark Unlimited e publicado pela Activision. Embora compartilhe o tema com o primeiro jogo da franquia para PC, ele traz uma história independente baseada em seis perspectivas cruzadas de soldados Aliados (Soviéticos, Britânicos e Americanos).\n\nSinopse e Campanhas\n\nO jogo divide-se em três campanhas principais que retratam diferentes frentes de batalha:\n• Campanha Soviética:\n\t• Protagonistas: O soldado Aleksandr Sokolov, a franco-atiradora Tenente Tania Pavelovna (a primeira protagonista feminina jogável da franquia) e o Major Nikolai Badanov.\n\t• Enredo: Começa na sangrenta e caótica Batalha de Stalingrado, combatendo em prédios destruídos, esgotos e até controlando tanques soviéticos contra as forças alemãs.\n• Campanha Britânica:\n\t• Protagonistas: O sargento Edward Carlyle (comandado pelo Sargento Bob Starkey, dublado por Brian Johnson, vocalista do AC/DC).\n\t• Enredo: Uma campanha mais curta focada em operações de comandos e combates táticos no Norte da África.\n• Campanha Americana:\n\t• Protagonistas: O sargento Chuck Walker e o sargento Sam Rivers (em missões com tanques).\n\t• Enredo: Acompanha o avanço aliado na Europa Ocidental, retratando a captura de Aken, combates urbanos em Tilet e a importante tomada da ponte sobre o rio Reno.",
       "imagens": [
         "imagens/call-of-duty-1-finest-hour-mvvakwugjhoq.jpg"
       ],
@@ -1852,23 +1851,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "a9",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvvaj7ovq980",
-      "cod": "a8",
       "nome": "Black",
+      "descricao": "O Black é um clássico jogo de tiro em primeira pessoa (FPS) desenvolvido pela Criterion Games e publicado pela Electronic Arts (EA).\n\nSinopse e Enredo\n\nA história acompanha o Sargento Jack Kellar, um agente das operações especiais e da CIA que está sendo duramente interrogado por um oficial misterioso sobre missões secretas em regiões da Europa Oriental (como a Rússia e a Chechênia).\nAtravés das lembranças e dos relatos de Kellar durante o interrogatório, o jogador revive e participa de combates contra uma organização terrorista internacional chamada Seventh Wave (Sétima Onda). O esquadrão tático secreto conhecido como BLACK opera sob total anonimato e negação oficial para proteger os Estados Unidos de ameaças extremas.",
       "categoria": "mvpxh616i8oa",
       "unidade": "GB",
       "valor": 2.2,
-      "descricao": "O Black é um clássico jogo de tiro em primeira pessoa (FPS) desenvolvido pela Criterion Games e publicado pela Electronic Arts (EA).\n\nSinopse e Enredo\n\nA história acompanha o Sargento Jack Kellar, um agente das operações especiais e da CIA que está sendo duramente interrogado por um oficial misterioso sobre missões secretas em regiões da Europa Oriental (como a Rússia e a Chechênia).\nAtravés das lembranças e dos relatos de Kellar durante o interrogatório, o jogador revive e participa de combates contra uma organização terrorista internacional chamada Seventh Wave (Sétima Onda). O esquadrão tático secreto conhecido como BLACK opera sob total anonimato e negação oficial para proteger os Estados Unidos de ameaças extremas.",
       "imagens": [
         "imagens/black-mvvaj5s5hv5v.jpg"
       ],
@@ -1878,23 +1877,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "a8",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvv5v8nkxt00",
-      "cod": "a7",
       "nome": "Kit OPL PS2",
+      "descricao": "Kit OPL para PS2, Pen-drive + Memory Card, lotado de jogos, você escolhe quais jogos.",
       "categoria": "mvv5d02c1bb5",
       "unidade": "R$",
       "valor": null,
-      "descricao": "Kit OPL para PS2, Pen-drive + Memory Card, lotado de jogos, você escolhe quais jogos.",
       "imagens": [
         "imagens/kit-opl-ps2-mvv5v7d55pgk.jpg"
       ],
@@ -1911,9 +1910,15 @@
         "Jogos",
         "Console"
       ],
-      "tipo": "Acessórios, Jogos, Console",
       "servicos": [],
       "servicosRotulo": "",
+      "cod": "a7",
+      "outras": [
+        "mvpxg0tpqw76"
+      ],
+      "formato": "1/1",
+      "proporcao": "",
+      "ajuste": "cover",
       "armazenamentos": [
         {
           "id": "mvv5stk3f7fh",
@@ -1928,21 +1933,15 @@
           "valor": 130
         }
       ],
-      "outras": [
-        "mvpxg0tpqw76"
-      ],
-      "formato": "1/1",
-      "ajuste": "cover",
-      "proporcao": ""
+      "tipo": "Acessórios, Jogos, Console"
     },
     {
       "id": "mvv5kj120s8d",
-      "cod": "a5",
       "nome": "HD Externo de Jogos para Xbox 360",
+      "descricao": "HD Externo lotado de jogos, jogos da sua escolha.",
       "categoria": "mvv5d02c1bb5",
       "unidade": "R$",
       "valor": null,
-      "descricao": "HD Externo lotado de jogos, jogos da sua escolha.",
       "imagens": [
         "imagens/hd-externode-jogos-para-xbox-360-mvv5khifz2h3.jpg"
       ],
@@ -1959,9 +1958,15 @@
         "Jogos",
         "Acessórios"
       ],
-      "tipo": "Console, Jogos, Acessórios",
       "servicos": [],
       "servicosRotulo": "",
+      "cod": "a5",
+      "outras": [
+        "mvpxh1dhtf84"
+      ],
+      "formato": "1/1",
+      "proporcao": "",
+      "ajuste": "cover",
       "armazenamentos": [
         {
           "id": "mvv5fvli3ac4",
@@ -1982,21 +1987,15 @@
           "valor": 300
         }
       ],
-      "outras": [
-        "mvpxh1dhtf84"
-      ],
-      "formato": "1/1",
-      "ajuste": "cover",
-      "proporcao": ""
+      "tipo": "Console, Jogos, Acessórios"
     },
     {
       "id": "mvv5no38nz25",
-      "cod": "a6",
       "nome": "HD Externo de Jogos para PS2",
+      "descricao": "HD Externo lotado de Jogos para PS2 OPL.",
       "categoria": "mvv5d02c1bb5",
       "unidade": "R$",
       "valor": null,
-      "descricao": "HD Externo lotado de Jogos para PS2 OPL.",
       "imagens": [
         "imagens/hd-externo-de-jogos-para-ps2-mvv5nm6uttmh.jpg"
       ],
@@ -2013,9 +2012,15 @@
         "Acessórios",
         "Jogos"
       ],
-      "tipo": "Console, Acessórios, Jogos",
       "servicos": [],
       "servicosRotulo": "",
+      "cod": "a6",
+      "outras": [
+        "mvpxg0tpqw76"
+      ],
+      "formato": "1/1",
+      "proporcao": "",
+      "ajuste": "cover",
       "armazenamentos": [
         {
           "id": "mvv5lxdnar7i",
@@ -2042,21 +2047,15 @@
           "valor": 300
         }
       ],
-      "outras": [
-        "mvpxg0tpqw76"
-      ],
-      "formato": "1/1",
-      "ajuste": "cover",
-      "proporcao": ""
+      "tipo": "Console, Acessórios, Jogos"
     },
     {
       "id": "mvv5bbfi3iqb",
-      "cod": "a4",
       "nome": "Reparos para Controle do Xbox 360",
+      "descricao": "Lista de todos os reparos mais comuns no controle do Xbox One.",
       "categoria": "mvpqa3ftrhwo",
       "unidade": "R$",
       "valor": null,
-      "descricao": "Lista de todos os reparos mais comuns no controle do Xbox One.",
       "imagens": [
         "imagens/reparos-para-controle-do-xbox-360-mvv5b9x43r3y.jpg"
       ],
@@ -2068,18 +2067,19 @@
       "tipos": [
         "Controle"
       ],
-      "tipo": "Controle",
       "servicos": [
         "mvv58jrm89w6",
         "mvv576q4oj3l",
         "mvv57v6eignm"
       ],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "a4",
       "outras": [],
       "formato": "3/4",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Controle"
     },
     {
       "id": "mvv58jrm89w6",
@@ -10238,11 +10238,12 @@
     },
     {
       "id": "mvqt6htehqid",
+      "cod": "5b",
       "nome": "The Last of Us Remastered",
-      "descricao": "The Last of Us Remastered (para PS4) acompanha a jornada de Joel, um sobrevivente endurecido, e Ellie, uma adolescente corajosa de 14 anos, em um mundo pós-apocalíptico.\n\nSinopse e Enredo\n\n• O Colapso: Vinte anos após uma pandemia causada por um fungo mutante (Cordyceps) devastar a civilização moderna e transformar grande parte da população em criaturas violentas, os poucos sobreviventes vivem em zonas de quarentena militarizadas ou grupos hostis.\n• A Missão: Joel é contratado para contrabandear Ellie para fora de uma zona de quarentena opressora.\n• A Jornada: O que deveria ser um trabalho simples e rápido se transforma em uma longa e brutal travessia pelos Estados Unidos abandonados, onde ambos precisam lutar contra infectados ferozes e outros humanos desesperados por comida e armas.\n• Relação: Ao longo do caminho, a dupla desenvolve um forte laço de afeto e proteção mútua enquanto enfrentam perigos constantes.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 60,
+      "descricao": "The Last of Us Remastered (para PS4) acompanha a jornada de Joel, um sobrevivente endurecido, e Ellie, uma adolescente corajosa de 14 anos, em um mundo pós-apocalíptico.\n\nSinopse e Enredo\n\n• O Colapso: Vinte anos após uma pandemia causada por um fungo mutante (Cordyceps) devastar a civilização moderna e transformar grande parte da população em criaturas violentas, os poucos sobreviventes vivem em zonas de quarentena militarizadas ou grupos hostis.\n• A Missão: Joel é contratado para contrabandear Ellie para fora de uma zona de quarentena opressora.\n• A Jornada: O que deveria ser um trabalho simples e rápido se transforma em uma longa e brutal travessia pelos Estados Unidos abandonados, onde ambos precisam lutar contra infectados ferozes e outros humanos desesperados por comida e armas.\n• Relação: Ao longo do caminho, a dupla desenvolve um forte laço de afeto e proteção mútua enquanto enfrentam perigos constantes.",
       "imagens": [
         "imagens/the-last-of-us-remastered-mvqt6glw0jlf.jpg"
       ],
@@ -10252,23 +10253,23 @@
       "tipos": [
         "Ação"
       ],
+      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5b",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Ação"
+      "outras": [],
+      "formato": "4/5",
+      "ajuste": "contain",
+      "proporcao": ""
     },
     {
       "id": "mvqt56dogtzz",
+      "cod": "5c",
       "nome": "The Last of Us Part.2",
-      "descricao": "The Last of Us Part II (disponível para PlayStation 4) se passa cinco anos após os eventos do primeiro jogo.\n\nSinopse Principal\n\n• A Paz Inicial: Ellie e Joel estão estabelecidos em Jackson, Wyoming, vivendo em uma comunidade próspera e relativamente pacífica de sobreviventes.\n• O Incidente: Um evento violento e traumático rompe essa estabilidade e tira a vida de Joel.\n• A Vingança: Consumida pela dor e pelo ódio, Ellie (agora com 19 anos) parte em uma jornada implacável rumo às ruínas de Seattle para caçar os responsáveis e fazer justiça.\n• Duplo Ponto de Vista: Ao longo da campanha, a narrativa também é contada através dos olhos de Abby Anderson, uma misteriosa sobrevivente ligada ao grupo paramilitar WLF (Washington Liberation Front), cujos objetivos e motivações colidem diretamente com os de Ellie.\n• Conflitos Morais:",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 110,
+      "descricao": "The Last of Us Part II (disponível para PlayStation 4) se passa cinco anos após os eventos do primeiro jogo.\n\nSinopse Principal\n\n• A Paz Inicial: Ellie e Joel estão estabelecidos em Jackson, Wyoming, vivendo em uma comunidade próspera e relativamente pacífica de sobreviventes.\n• O Incidente: Um evento violento e traumático rompe essa estabilidade e tira a vida de Joel.\n• A Vingança: Consumida pela dor e pelo ódio, Ellie (agora com 19 anos) parte em uma jornada implacável rumo às ruínas de Seattle para caçar os responsáveis e fazer justiça.\n• Duplo Ponto de Vista: Ao longo da campanha, a narrativa também é contada através dos olhos de Abby Anderson, uma misteriosa sobrevivente ligada ao grupo paramilitar WLF (Washington Liberation Front), cujos objetivos e motivações colidem diretamente com os de Ellie.\n• Conflitos Morais:",
       "imagens": [
         "imagens/the-last-of-us-part-2-mvqt54qi7hjq.jpg"
       ],
@@ -10278,23 +10279,23 @@
       "tipos": [
         "Ação"
       ],
+      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5c",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Ação"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "935/1200"
     },
     {
       "id": "mvqt3rv5bv2h",
+      "cod": "5d",
       "nome": "SUPER BOMBERMAN R 2",
-      "descricao": "Em Super Bomberman R 2 para PS4, os icônicos irmãos Bomberman embarcam em uma nova aventura para salvar o universo e resgatar os Ellons (criaturas misteriosas) após uma nova ameaça e exército inimigo colocarem a paz em risco.\n\nSinopse e Enredo\n\n• Missão principal: Os Bomberman viajam por diferentes planetas explorando regiões, enfrentando chefes e protegendo o universo contra uma força maligna e uma fortaleza repleta de armadilhas.\n• Novos aliados: No caminho, você conta com a ajuda dos Ellons, seres com habilidades especiais que auxiliam na exploração e nos confrontos.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 7,
+      "descricao": "Em Super Bomberman R 2 para PS4, os icônicos irmãos Bomberman embarcam em uma nova aventura para salvar o universo e resgatar os Ellons (criaturas misteriosas) após uma nova ameaça e exército inimigo colocarem a paz em risco.\n\nSinopse e Enredo\n\n• Missão principal: Os Bomberman viajam por diferentes planetas explorando regiões, enfrentando chefes e protegendo o universo contra uma força maligna e uma fortaleza repleta de armadilhas.\n• Novos aliados: No caminho, você conta com a ajuda dos Ellons, seres com habilidades especiais que auxiliam na exploração e nos confrontos.",
       "imagens": [
         "imagens/super-bomberman-r-2-mvqt3qifnimf.jpg"
       ],
@@ -10304,23 +10305,23 @@
       "tipos": [
         "Aventura"
       ],
+      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5d",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Aventura"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "966/1200"
     },
     {
       "id": "mvqt2hyky1r9",
+      "cod": "5e",
       "nome": "SNK VS CAPCOM SVC CHAOS",
-      "descricao": "O SNK vs. Capcom: SVC Chaos para PlayStation 4 é um jogo de luta crossover que reúne 36 personagens icônicos das franquias da SNK (como The King of Fighters, Fatal Fury e Samurai Shodown) e da Capcom (como Street Fighter, Darkstalkers e Mega Man) em combates individuais 1v1.\n\nSinopse e Proposta do Jogo\n\nLançado originalmente para arcades em 2003 e relançado com melhorias para o PS4 em julho de 2024, o título não possui uma campanha narrativa complexa no estilo aventura, mas sim uma colisão de universos onde os maiores heróis e vilões de ambas as empresas se enfrentam em um torneio caótico para provar qual é o maior lutador.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 1,
+      "descricao": "O SNK vs. Capcom: SVC Chaos para PlayStation 4 é um jogo de luta crossover que reúne 36 personagens icônicos das franquias da SNK (como The King of Fighters, Fatal Fury e Samurai Shodown) e da Capcom (como Street Fighter, Darkstalkers e Mega Man) em combates individuais 1v1.\n\nSinopse e Proposta do Jogo\n\nLançado originalmente para arcades em 2003 e relançado com melhorias para o PS4 em julho de 2024, o título não possui uma campanha narrativa complexa no estilo aventura, mas sim uma colisão de universos onde os maiores heróis e vilões de ambas as empresas se enfrentam em um torneio caótico para provar qual é o maior lutador.",
       "imagens": [
         "imagens/snk-vs-capcom-svc-chaos-mvqt2glqvxa8.jpg"
       ],
@@ -10330,23 +10331,23 @@
       "tipos": [
         "Luta"
       ],
+      "tipo": "Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5e",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Luta"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "805/986"
     },
     {
       "id": "mvqt0fh54qme",
+      "cod": "5f",
       "nome": "Red Dead Redemption 2",
-      "descricao": "Sinopse\n\n• O ponto de partida: O jogo acompanha Arthur Morgan e a gangue Van der Linde (liderada por Dutch van der Linde). Após um assalto que deu errado na cidade de Blackwater, a gangue é forçada a fugir pelas montanhas e pelo interior dos Estados Unidos.\n• A fuga e a perseguição: Com agentes federais e os melhores caçadores de recompensas no encalço do grupo, eles precisam realizar novos assaltos e lutar para sobreviver.\n• Conflitos internos: À medida que a pressão aumenta, divisões internas e traições começam a despedaçar a gangue.\n• O dilema do protagonista: Arthur Morgan se vê dividido entre a lealdade à figura paterna de Dutch e o seu próprio senso de honra, enquanto o estilo de vida fora da lei dá lugar ao avanço inevitável da civilização moderna.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 98,
+      "descricao": "Sinopse\n\n• O ponto de partida: O jogo acompanha Arthur Morgan e a gangue Van der Linde (liderada por Dutch van der Linde). Após um assalto que deu errado na cidade de Blackwater, a gangue é forçada a fugir pelas montanhas e pelo interior dos Estados Unidos.\n• A fuga e a perseguição: Com agentes federais e os melhores caçadores de recompensas no encalço do grupo, eles precisam realizar novos assaltos e lutar para sobreviver.\n• Conflitos internos: À medida que a pressão aumenta, divisões internas e traições começam a despedaçar a gangue.\n• O dilema do protagonista: Arthur Morgan se vê dividido entre a lealdade à figura paterna de Dutch e o seu próprio senso de honra, enquanto o estilo de vida fora da lei dá lugar ao avanço inevitável da civilização moderna.",
       "imagens": [
         "imagens/red-dead-redemption-2-mvqt0dr1ubvw.jpg"
       ],
@@ -10356,23 +10357,23 @@
       "tipos": [
         "Ação"
       ],
+      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5f",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Ação"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "963/1200"
     },
     {
       "id": "mvqsynz4pesz",
+      "cod": "5g",
       "nome": "MultiVersus",
-      "descricao": "O MultiVersus é um jogo eletrônico de luta de plataforma (estilo crossover) gratuito desenvolvido pela Player First Games e publicado pela Warner Bros. Interactive Entertainment.\n\nSinopse e Premissa\n\nO jogo não possui uma campanha narrativa tradicional com uma única história linear fechada, mas reúne um elenco gigantesco e icônico de várias franquias da Warner Bros. Discovery (como DC Comics, Scooby-Doo, Hora da Aventura, Tom e Jerry, Game of Thrones, Looney Tunes, entre outras) lutando entre si em arenas dinâmicas.\nPara quem busca conteúdo individual ou com história, o jogo conta com o modo \"Fendas\" (Rifts), que funciona como uma experiência PvE (jogador contra inteligência artificial) com desafios temáticos, missões e pequenas narrativas crossover (como o Caos Multiversal).",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 12,
+      "descricao": "O MultiVersus é um jogo eletrônico de luta de plataforma (estilo crossover) gratuito desenvolvido pela Player First Games e publicado pela Warner Bros. Interactive Entertainment.\n\nSinopse e Premissa\n\nO jogo não possui uma campanha narrativa tradicional com uma única história linear fechada, mas reúne um elenco gigantesco e icônico de várias franquias da Warner Bros. Discovery (como DC Comics, Scooby-Doo, Hora da Aventura, Tom e Jerry, Game of Thrones, Looney Tunes, entre outras) lutando entre si em arenas dinâmicas.\nPara quem busca conteúdo individual ou com história, o jogo conta com o modo \"Fendas\" (Rifts), que funciona como uma experiência PvE (jogador contra inteligência artificial) com desafios temáticos, missões e pequenas narrativas crossover (como o Caos Multiversal).",
       "imagens": [
         "imagens/multiversus-mvqsyl51swal.jpg"
       ],
@@ -10382,23 +10383,23 @@
       "tipos": [
         "Luta"
       ],
+      "tipo": "Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5g",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Luta"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "805/986"
     },
     {
       "id": "mvqsx7eabo9a",
+      "cod": "5h",
       "nome": "Minecraft Dungeons",
-      "descricao": "O Minecraft Dungeons para PS4 é um jogo de ação e aventura no estilo dungeon crawler (exploração de masmorras) ambientado no universo de Minecraft, lançado em 26 de maio de 2020.\n\nSinopse e Enredo\n\nA história acompanha um Illager solitário e rejeitado chamado Arch-Illager (Arce-Illager / Arquivilão), que encontra um artefato mágico e corrompido de grande poder conhecido como o Orbe da Dominação.\nCom a influência maligna do orbe, ele ganha poderes sombrios, forma um exército de lacaios e começa a oprimir e expulsar os aldeões de suas vilas por todo o Mundo Superior. O jogador assume o papel de um herói cuja missão é atravessar diferentes regiões, enfrentar hordas de monstros, libertar os aldeões e derrotar o Arch-Illager para destruir o poder do orb",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 4,
+      "descricao": "O Minecraft Dungeons para PS4 é um jogo de ação e aventura no estilo dungeon crawler (exploração de masmorras) ambientado no universo de Minecraft, lançado em 26 de maio de 2020.\n\nSinopse e Enredo\n\nA história acompanha um Illager solitário e rejeitado chamado Arch-Illager (Arce-Illager / Arquivilão), que encontra um artefato mágico e corrompido de grande poder conhecido como o Orbe da Dominação.\nCom a influência maligna do orbe, ele ganha poderes sombrios, forma um exército de lacaios e começa a oprimir e expulsar os aldeões de suas vilas por todo o Mundo Superior. O jogador assume o papel de um herói cuja missão é atravessar diferentes regiões, enfrentar hordas de monstros, libertar os aldeões e derrotar o Arch-Illager para destruir o poder do orb",
       "imagens": [
         "imagens/minecraft-dungeons-mvqsx5sab1nu.jpg"
       ],
@@ -10408,23 +10409,23 @@
       "tipos": [
         "Aventura"
       ],
+      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5h",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Aventura"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "948/1171"
     },
     {
       "id": "mvqsviau2rxo",
+      "cod": "5i",
       "nome": "Marvels Spider Man",
-      "descricao": "Em Marvel's Spider-Man para PlayStation 4, você controla um Peter Parker de 23 anos com oito anos de experiência combatendo o crime em Nova York, que precisa equilibrar sua vida pessoal caótica com a proteção da cidade enquanto enfrenta uma nova e perigosa onda de vilões.\n\nPrincipais pontos da história\n\n• O Início: O jogo começa com Peter conseguindo prender o chefão do crime Wilson Fisk (o Rei do Crime), o que deixa um vácuo de poder no submundo de Nova York.\n• Novos Inimigos: Um novo grupo criminoso chamado Os Demônios Internos (liderado por um vilão misterioso) surge para tomar o controle da cidade.\n• Conexões Pessoais: Peter precisa lidar com sua relação com Mary Jane Watson (que investiga os crimes como jornalista) e com o Dr. Otto Octavius, seu mentor e figura paterna, cuja vida toma um rumo sombrio.\n• O Grande Conflito: A trama se expande com a formação do Sististro Sexteto, forçando o Homem-Aranha a usar toda a sua experiência e sacrifícios pessoais para salvar a metrópole.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 55,
+      "descricao": "Em Marvel's Spider-Man para PlayStation 4, você controla um Peter Parker de 23 anos com oito anos de experiência combatendo o crime em Nova York, que precisa equilibrar sua vida pessoal caótica com a proteção da cidade enquanto enfrenta uma nova e perigosa onda de vilões.\n\nPrincipais pontos da história\n\n• O Início: O jogo começa com Peter conseguindo prender o chefão do crime Wilson Fisk (o Rei do Crime), o que deixa um vácuo de poder no submundo de Nova York.\n• Novos Inimigos: Um novo grupo criminoso chamado Os Demônios Internos (liderado por um vilão misterioso) surge para tomar o controle da cidade.\n• Conexões Pessoais: Peter precisa lidar com sua relação com Mary Jane Watson (que investiga os crimes como jornalista) e com o Dr. Otto Octavius, seu mentor e figura paterna, cuja vida toma um rumo sombrio.\n• O Grande Conflito: A trama se expande com a formação do Sististro Sexteto, forçando o Homem-Aranha a usar toda a sua experiência e sacrifícios pessoais para salvar a metrópole.",
       "imagens": [
         "imagens/marvels-spider-man-mvqsvguz47ic.jpg"
       ],
@@ -10434,23 +10435,23 @@
       "tipos": [
         "Aventura"
       ],
+      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5i",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Aventura"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "969/1200"
     },
     {
       "id": "mvqstdnuwl8s",
+      "cod": "5j",
       "nome": "LEGO Marvel Super Heroes 2​",
-      "descricao": "Sinopse do Jogo\n\nA história principal gira em torno do vilão viajante do tempo Kang, o Conquistador, que invade e rouba diversas realidades, cidades e locais icônicos do universo Marvel de diferentes épocas e dimensões. Kang une todos esses fragmentos espaciais e temporais para criar um imenso mundo aberto central chamado Chronopolis.\nPara impedir os planos de dominação de Kang, os Super-Heróis e Super-Vilões mais icônicos da Marvel de diferentes eras e realidades — incluindo os Guardiões da Galáxia, Homem-Aranha, Thor, Hulk, Pantera Negra, Capitã Marvel, Doutor Estranho e os heróis de Spider-Gwen e Marvel 2099 — precisam unir forças. Os jogadores viajam por Chronopolis, desde o Antigo Egito e o Velho Oeste até Sakaar e a Nova York de 2099, em uma batalha cósmica para restaurar a ordem no tempo e no espaço.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 22,
+      "descricao": "Sinopse do Jogo\n\nA história principal gira em torno do vilão viajante do tempo Kang, o Conquistador, que invade e rouba diversas realidades, cidades e locais icônicos do universo Marvel de diferentes épocas e dimensões. Kang une todos esses fragmentos espaciais e temporais para criar um imenso mundo aberto central chamado Chronopolis.\nPara impedir os planos de dominação de Kang, os Super-Heróis e Super-Vilões mais icônicos da Marvel de diferentes eras e realidades — incluindo os Guardiões da Galáxia, Homem-Aranha, Thor, Hulk, Pantera Negra, Capitã Marvel, Doutor Estranho e os heróis de Spider-Gwen e Marvel 2099 — precisam unir forças. Os jogadores viajam por Chronopolis, desde o Antigo Egito e o Velho Oeste até Sakaar e a Nova York de 2099, em uma batalha cósmica para restaurar a ordem no tempo e no espaço.",
       "imagens": [
         "imagens/lego-marvel-super-heroes-2-mvqstc8lffsj.jpg"
       ],
@@ -10460,23 +10461,23 @@
       "tipos": [
         "Aventura"
       ],
+      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5j",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Aventura"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "978/1200"
     },
     {
       "id": "mvqsqfqnjw8b",
+      "cod": "5k",
       "nome": "It Takes Two",
-      "descricao": "Sinopse e Enredo\n\nA história acompanha Cody e May, um casal em forte crise que decide se divorciar. Quando comunicam a decisão à filha, Rose, a menina fica muito triste e, com duas bonecas que ela mesma fez (uma que se parece com o pai e outra com a mãe) e um livro de autoajuda chamado O Livro do Amor (escrito pelo Dr. Hakim), ela faz um pedido para que eles fiquem juntos.\nMagicamente, a consciência de Cody e May é transportada para os bonecos. Presos nessa nova forma e guiados pelo excêntrico Dr. Hakim — que age como um \"guru do relacionamento\" —, os dois precisam aprender a deixar as diferenças de lado, cooperar e passar por diversos desafios em um mundo fantástico (que transforma a própria casa e o quintal em cenários gigantescos e perigosos) para tentar reverter o feitiço, alcançar a filha e decidir o futuro do casamento.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 44,
+      "descricao": "Sinopse e Enredo\n\nA história acompanha Cody e May, um casal em forte crise que decide se divorciar. Quando comunicam a decisão à filha, Rose, a menina fica muito triste e, com duas bonecas que ela mesma fez (uma que se parece com o pai e outra com a mãe) e um livro de autoajuda chamado O Livro do Amor (escrito pelo Dr. Hakim), ela faz um pedido para que eles fiquem juntos.\nMagicamente, a consciência de Cody e May é transportada para os bonecos. Presos nessa nova forma e guiados pelo excêntrico Dr. Hakim — que age como um \"guru do relacionamento\" —, os dois precisam aprender a deixar as diferenças de lado, cooperar e passar por diversos desafios em um mundo fantástico (que transforma a própria casa e o quintal em cenários gigantescos e perigosos) para tentar reverter o feitiço, alcançar a filha e decidir o futuro do casamento.",
       "imagens": [
         "imagens/it-takes-two-mvqsqebp9hsv.jpg"
       ],
@@ -10486,23 +10487,23 @@
       "tipos": [
         "Aventura"
       ],
+      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5k",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Aventura"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "805/986"
     },
     {
       "id": "mvqsovqu08il",
+      "cod": "5l",
       "nome": "Hollow Knight Silksong",
-      "descricao": "Sinopse\n\nNa continuação de Hollow Knight, você joga como Hornet, a princesa protetora de Hallownest. Ela é capturada e levada para Pharloom (Fiarlongo), um reino antigo e arruinado, regido por seda e música.\nDiferente do jogo anterior, Hornet consegue falar e é muito mais acrobática. Sua missão é desvendar os mistérios por trás do seu sequestro, lutar contra centenas de novos inimigos e chefes, e escalar o reino perigoso até alcançar a sua superfície.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 4,
+      "descricao": "Sinopse\n\nNa continuação de Hollow Knight, você joga como Hornet, a princesa protetora de Hallownest. Ela é capturada e levada para Pharloom (Fiarlongo), um reino antigo e arruinado, regido por seda e música.\nDiferente do jogo anterior, Hornet consegue falar e é muito mais acrobática. Sua missão é desvendar os mistérios por trás do seu sequestro, lutar contra centenas de novos inimigos e chefes, e escalar o reino perigoso até alcançar a sua superfície.",
       "imagens": [
         "imagens/hollow-knight-silksong-mvqsoujad0fr.jpg"
       ],
@@ -10512,23 +10513,23 @@
       "tipos": [
         "Aventura"
       ],
+      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5l",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Aventura"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "239/300"
     },
     {
       "id": "mvqsn193bgm7",
+      "cod": "5m",
       "nome": "GTA V",
-      "descricao": "Grand Theft Auto V (GTA V) é um jogo de ação e aventura em mundo aberto desenvolvido pela Rockstar Games.\n\nSinopse\n\nA história acompanha três protagonistas muito diferentes que precisam unir forças para sobreviver em uma cidade implacável:\n• Michael De Santa: Um ladrão de bancos aposentado que vive na alta sociedade de Los Santos em um acordo de proteção a testemunhas, mas com uma vida familiar infeliz.\n• Franklin Clinton: Um jovem malandro de rua que trabalha cobrando dívidas e busca uma oportunidade maior para mudar de vida.\n• Trevor Philips: Um psicopata violento e imprevisível, antigo parceiro de crimes de Michael, que vive à margem da sociedade.\nQuando os caminhos dos três se cruzam, eles se envolvem com figuras perigosas do submundo do crime, agências corruptas do governo dos EUA e a indústria do entretenimento. Para continuarem vivos e garantirem o futuro, eles precisam planejar e executar uma série de assaltos ousados (golpes) em Los Santos e na região de Blaine County, enquanto lidam com a desconfiança mútua.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 55,
+      "descricao": "Grand Theft Auto V (GTA V) é um jogo de ação e aventura em mundo aberto desenvolvido pela Rockstar Games.\n\nSinopse\n\nA história acompanha três protagonistas muito diferentes que precisam unir forças para sobreviver em uma cidade implacável:\n• Michael De Santa: Um ladrão de bancos aposentado que vive na alta sociedade de Los Santos em um acordo de proteção a testemunhas, mas com uma vida familiar infeliz.\n• Franklin Clinton: Um jovem malandro de rua que trabalha cobrando dívidas e busca uma oportunidade maior para mudar de vida.\n• Trevor Philips: Um psicopata violento e imprevisível, antigo parceiro de crimes de Michael, que vive à margem da sociedade.\nQuando os caminhos dos três se cruzam, eles se envolvem com figuras perigosas do submundo do crime, agências corruptas do governo dos EUA e a indústria do entretenimento. Para continuarem vivos e garantirem o futuro, eles precisam planejar e executar uma série de assaltos ousados (golpes) em Los Santos e na região de Blaine County, enquanto lidam com a desconfiança mútua.",
       "imagens": [
         "imagens/gta-v-mvqsmzjj326u.jpg"
       ],
@@ -10538,23 +10539,23 @@
       "tipos": [
         "Ação"
       ],
+      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5m",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Ação"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "955/1200"
     },
     {
       "id": "mvqsky506dpp",
+      "cod": "5n",
       "nome": "Ghost of Tsushima",
-      "descricao": "Ghost of Tsushima (lançado para PS4 em 17 de julho de 2020) é um jogo de ação e aventura em mundo aberto ambientado no Japão feudal, em 1274.\n\nSinopse\n\n• O Contexto: O ano é 1274 e o Império Mongol, liderado pelo implacável general Khotun Khan, inicia uma campanha de conquista e invade a ilha de Tsushima.\n• O Protagonista: Você assume o controle de Jin Sakai, um dos últimos samurais sobreviventes do clã Sakai após a devastadora primeira onda de ataques.\n• O Conflito: Com a derrota inicial e a captura de seu tio, o Lorde Shimura, Jin percebe que as táticas tradicionais e honradas do código samurai não são suficientes para vencer um exército numeroso e impiedoso.\n• A Transformação: Para salvar seu povo e recuperar sua terra, Jin precisa sacrificar suas crenças e sua honra, abandonando o caminho do samurai para abraçar as sombras, táticas furtivas e métodos não convencionais, transformando-se na lenda conhecida como o \"Fantasma\" (Ghost).",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 55,
+      "descricao": "Ghost of Tsushima (lançado para PS4 em 17 de julho de 2020) é um jogo de ação e aventura em mundo aberto ambientado no Japão feudal, em 1274.\n\nSinopse\n\n• O Contexto: O ano é 1274 e o Império Mongol, liderado pelo implacável general Khotun Khan, inicia uma campanha de conquista e invade a ilha de Tsushima.\n• O Protagonista: Você assume o controle de Jin Sakai, um dos últimos samurais sobreviventes do clã Sakai após a devastadora primeira onda de ataques.\n• O Conflito: Com a derrota inicial e a captura de seu tio, o Lorde Shimura, Jin percebe que as táticas tradicionais e honradas do código samurai não são suficientes para vencer um exército numeroso e impiedoso.\n• A Transformação: Para salvar seu povo e recuperar sua terra, Jin precisa sacrificar suas crenças e sua honra, abandonando o caminho do samurai para abraçar as sombras, táticas furtivas e métodos não convencionais, transformando-se na lenda conhecida como o \"Fantasma\" (Ghost).",
       "imagens": [
         "imagens/ghost-of-tsushima-mvqskx063ask.jpg"
       ],
@@ -10564,23 +10565,23 @@
       "tipos": [
         "Ação"
       ],
+      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5n",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Ação"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "645/800"
     },
     {
       "id": "mvqsircnmu7l",
+      "cod": "5o",
       "nome": "Far Cry 3 Classic Edition",
-      "descricao": "Far Cry 3 Classic Edition é um jogo de tiro em primeira pessoa (FPS) em mundo aberto desenvolvido pela Ubisoft.\n\nSinopse\n\nVocê assume o papel de Jason Brody, um jovem que está de férias em uma ilha tropical com seus amigos. Durante uma atividade de paraquedismo, eles pousam em uma ilha isolada e perigosa (as Rook Islands) e são capturados por uma milícia de piratas liderada pelo sádico e instável Vaas Montenegro.\nJason consegue escapar, mas seus amigos continuam reféns. Para salvá-los e sobreviver ao ambiente selvagem, ele precisa deixar de lado sua vida comum, aprender táticas de combate com a tribo nativa Rakyat e se transformar em um guerreiro implacável, descobrindo até onde a própria mente consegue ir em meio à loucura da ilha.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 12,
+      "descricao": "Far Cry 3 Classic Edition é um jogo de tiro em primeira pessoa (FPS) em mundo aberto desenvolvido pela Ubisoft.\n\nSinopse\n\nVocê assume o papel de Jason Brody, um jovem que está de férias em uma ilha tropical com seus amigos. Durante uma atividade de paraquedismo, eles pousam em uma ilha isolada e perigosa (as Rook Islands) e são capturados por uma milícia de piratas liderada pelo sádico e instável Vaas Montenegro.\nJason consegue escapar, mas seus amigos continuam reféns. Para salvá-los e sobreviver ao ambiente selvagem, ele precisa deixar de lado sua vida comum, aprender táticas de combate com a tribo nativa Rakyat e se transformar em um guerreiro implacável, descobrindo até onde a própria mente consegue ir em meio à loucura da ilha.",
       "imagens": [
         "imagens/far-cry-3-classic-edition-mvqsipnkqeoe.jpg"
       ],
@@ -10590,23 +10591,23 @@
       "tipos": [
         "Ação"
       ],
+      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5o",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Ação"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "800/998"
     },
     {
       "id": "mvqsgutrreja",
+      "cod": "5p",
       "nome": "eFootball PES 2027",
-      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 102,
+      "descricao": "",
       "imagens": [
         "imagens/efootball-pes-2027-mvqsgsuxg4l3.jpg"
       ],
@@ -10616,23 +10617,23 @@
       "tipos": [
         "Esporte"
       ],
+      "tipo": "Esporte",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5p",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Esporte"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "916/1187"
     },
     {
       "id": "mvqs8veqdm09",
+      "cod": "5q",
       "nome": "Demon Slayer 2",
-      "descricao": "O jogo Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 acompanha Tanjiro Kamado e seus aliados em confrontos contra demônios.\n\nSinopse e Enredo do Modo História\n\n• Arcos Adaptações: O modo história percorre as principais fases recentes do anime:\n\t• O arco do Distrito de Entretenimento.\n\t• O arco da Aldeia dos Ferreiros.\n\t• O arco do Treinamento dos Hashiras.\n• Modo \"The Path of a Demon Slayer\": Inclui uma recapitulação dos eventos do primeiro jogo (do treinamento de Tanjiro até a batalha no Trem Infinito) para quem deseja relembrar ou conhecer a história inicial.\n• Jogabilidade na História: Campanha individual com exploração leve de mapas, missões secundárias, itens, cutscenes fiéis ao estilo do anime e intensas batalhas contra chefes (Demônios Superiores).",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 25,
+      "descricao": "O jogo Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 acompanha Tanjiro Kamado e seus aliados em confrontos contra demônios.\n\nSinopse e Enredo do Modo História\n\n• Arcos Adaptações: O modo história percorre as principais fases recentes do anime:\n\t• O arco do Distrito de Entretenimento.\n\t• O arco da Aldeia dos Ferreiros.\n\t• O arco do Treinamento dos Hashiras.\n• Modo \"The Path of a Demon Slayer\": Inclui uma recapitulação dos eventos do primeiro jogo (do treinamento de Tanjiro até a batalha no Trem Infinito) para quem deseja relembrar ou conhecer a história inicial.\n• Jogabilidade na História: Campanha individual com exploração leve de mapas, missões secundárias, itens, cutscenes fiéis ao estilo do anime e intensas batalhas contra chefes (Demônios Superiores).",
       "imagens": [
         "imagens/demon-slayer-2-mvqs8tsufbpp.jpg"
       ],
@@ -10642,23 +10643,23 @@
       "tipos": [
         "Ação"
       ],
+      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5q",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Ação"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "920/1148"
     },
     {
       "id": "mvqs5r17z6ha",
+      "cod": "5r",
       "nome": "Cuphead",
-      "descricao": "Sinopse do Jogo\n\n• Enredo: Os irmãos Xicrinho (Cuphead) e Caneco (Mugman) moram na fictícia Ilha do Tinteiro (Inkwell Isle) sob os cuidados do Vovô Chaleira.\n• A dívida: Após fazerem uma aposta arriscada e perderem no Cassino do Diabo, eles precisam entregar suas próprias almas ao Diabo.\n• A missão: Para salvar a si mesmos, eles fazem um acordo e saem em uma jornada de tiro e plataforma (run and gun) para coletar os contratos de alma de diversos chefões poderosos da ilha.\n• Expansão: No conteúdo adicional The Delicious Last Curse (A Deliciosa Última Ceia), os irmãos se unem à nova aventureira Srta. Cálice para ajudar o Chef Pitadinha em uma nova missão.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 5,
+      "descricao": "Sinopse do Jogo\n\n• Enredo: Os irmãos Xicrinho (Cuphead) e Caneco (Mugman) moram na fictícia Ilha do Tinteiro (Inkwell Isle) sob os cuidados do Vovô Chaleira.\n• A dívida: Após fazerem uma aposta arriscada e perderem no Cassino do Diabo, eles precisam entregar suas próprias almas ao Diabo.\n• A missão: Para salvar a si mesmos, eles fazem um acordo e saem em uma jornada de tiro e plataforma (run and gun) para coletar os contratos de alma de diversos chefões poderosos da ilha.\n• Expansão: No conteúdo adicional The Delicious Last Curse (A Deliciosa Última Ceia), os irmãos se unem à nova aventureira Srta. Cálice para ajudar o Chef Pitadinha em uma nova missão.",
       "imagens": [
         "imagens/cuphead-mvqs5p91fi6k.jpg"
       ],
@@ -10668,23 +10669,23 @@
       "tipos": [
         "Aventura"
       ],
+      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5r",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Aventura"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "800/1000"
     },
     {
       "id": "mvqrv7qg1mfd",
+      "cod": "5s",
       "nome": "Adventure Time Pirates of the Enchiridion",
-      "descricao": "Adventure Time: Pirates of the Enchiridion é um jogo de RPG e aventura de 2018 desenvolvido pela Climax Studios e publicado pela Outright Games, baseado na série Hora de Aventura do Cartoon Network.\n\nSinopse e Premissa\n\n• O Inundamento: Finn e Jake acordam e descobrem que a pacífica Terra de Ooo foi misteriosamente inundada e está submersa.\n• O Mistério: Alguém roubou ou colocou as mãos em um Enchiridion (o lendário livro dos heróis), e a água tomou conta dos reinos — incluindo o Reino Gelado, que começou a derreter.\n• Navegação e Exploração: Para resolver o enigma, a dupla constrói ou pilota um barco (batizado pelos fãs de \"Jeff\") para navegar pelos mares, investigar pistas e interrogar piratas espalhados por ilhas e territórios inexplorados.\n• Equipe e Combate: Ao longo da jornada, Finn e Jake se juntam a outros personagens icônicos, como BMO e Marceline, utilizando combates táticos em turnos, habilidades especiais e táticas de \"policial bom e policial ruim\" durante interrogatórios para salvar o dia.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 2,
+      "descricao": "Adventure Time: Pirates of the Enchiridion é um jogo de RPG e aventura de 2018 desenvolvido pela Climax Studios e publicado pela Outright Games, baseado na série Hora de Aventura do Cartoon Network.\n\nSinopse e Premissa\n\n• O Inundamento: Finn e Jake acordam e descobrem que a pacífica Terra de Ooo foi misteriosamente inundada e está submersa.\n• O Mistério: Alguém roubou ou colocou as mãos em um Enchiridion (o lendário livro dos heróis), e a água tomou conta dos reinos — incluindo o Reino Gelado, que começou a derreter.\n• Navegação e Exploração: Para resolver o enigma, a dupla constrói ou pilota um barco (batizado pelos fãs de \"Jeff\") para navegar pelos mares, investigar pistas e interrogar piratas espalhados por ilhas e territórios inexplorados.\n• Equipe e Combate: Ao longo da jornada, Finn e Jake se juntam a outros personagens icônicos, como BMO e Marceline, utilizando combates táticos em turnos, habilidades especiais e táticas de \"policial bom e policial ruim\" durante interrogatórios para salvar o dia.",
       "imagens": [
         "imagens/adventure-time-pirates-of-the-enchiridio-mvqrv694ogi8.jpg"
       ],
@@ -10694,23 +10695,23 @@
       "tipos": [
         "Aventura"
       ],
+      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5s",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Aventura"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "969/1200"
     },
     {
       "id": "mvqrrq2dbhd4",
+      "cod": "5t",
       "nome": "Assassin's Creed Valhalla",
-      "descricao": "Assassin’s Creed Valhalla acompanha a jornada de Eivor Varinsdottir, um(a) guerreiro(a) viking que deixa a Noruega no século IX (por volta de 872–873 d.C.) rumo às Ilhas Britânicas.\n\nPontos Principais da História\n\n• A Expansão Viking: Após ver seus pais serem assassinados por Kjotve e buscar vingança, Eivor e seu irmão adotivo, Sigurd, lideram seu clã em busca de novas terras e um novo lar na Inglaterra.\n• Alianças e Assentamento: Para sobreviver e prosperar na Britânia, Eivor precisa construir o assentamento de Ravensthorpe e forjar alianças políticas com diferentes reinos anglo-saxões.\n• O Conflito Oculto: O grupo se envolve na luta milenar entre os Ocultos (os futuros Assassinos) e a Ordem dos Anciões (os futuros Templários).\n• Mitologia e Revelações: A trama mistura eventos históricos com a mitologia nórdica e elementos da civilização Isu (os \"Precursores\"), revelando laços profundos entre Eivor, Sigurd, Basim e figuras divinas como Odin e Loki.\n• Presente: No mundo moderno, a história dá continuidade ao arco de Layla Hassan lidando com instabilidades no campo magnético da Terra.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 98,
+      "descricao": "Assassin’s Creed Valhalla acompanha a jornada de Eivor Varinsdottir, um(a) guerreiro(a) viking que deixa a Noruega no século IX (por volta de 872–873 d.C.) rumo às Ilhas Britânicas.\n\nPontos Principais da História\n\n• A Expansão Viking: Após ver seus pais serem assassinados por Kjotve e buscar vingança, Eivor e seu irmão adotivo, Sigurd, lideram seu clã em busca de novas terras e um novo lar na Inglaterra.\n• Alianças e Assentamento: Para sobreviver e prosperar na Britânia, Eivor precisa construir o assentamento de Ravensthorpe e forjar alianças políticas com diferentes reinos anglo-saxões.\n• O Conflito Oculto: O grupo se envolve na luta milenar entre os Ocultos (os futuros Assassinos) e a Ordem dos Anciões (os futuros Templários).\n• Mitologia e Revelações: A trama mistura eventos históricos com a mitologia nórdica e elementos da civilização Isu (os \"Precursores\"), revelando laços profundos entre Eivor, Sigurd, Basim e figuras divinas como Odin e Loki.\n• Presente: No mundo moderno, a história dá continuidade ao arco de Layla Hassan lidando com instabilidades no campo magnético da Terra.",
       "imagens": [
         "imagens/assassin-s-creed-valhalla-mvqrronyuu72.jpg"
       ],
@@ -10720,23 +10721,23 @@
       "tipos": [
         "Ação"
       ],
+      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5t",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Ação"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "580/739"
     },
     {
       "id": "mvpz9fo3vqv1",
+      "cod": "5u",
       "nome": "Spider Man Miles Morales",
-      "descricao": "A sinopse de Marvel's Spider-Man: Miles Morales gira em torno de Miles Morales, que se muda com a mãe para o bairro de East Harlem e precisa assumir o papel de único Homem-Aranha de Nova York enquanto Peter Parker viaja.\n\nPontos principais da história:\n\n• O Contexto: A história acontece cerca de um ano após os eventos do primeiro jogo da Insomniac Games. Miles está se adaptando à nova vida e aprendendo a usar seus poderes únicos, que incluem descargas bioelétricas (Venom Blast) e camuflagem (invisibilidade).\n• A Ausência de Peter: Peter Parker sai de Nova York por algumas semanas para acompanhar Mary Jane em uma viagem, deixando a responsabilidade de proteger a cidade nas mãos do jovem herói.\n• A Guerra de Facções: O conflito principal envolve uma guerra pelo poder entre a corrupta Roxxon Energy Corporation (que promove um novo combustível chamado Nuforme) e o Underground, um exército criminoso de alta tecnologia liderado por uma vilã conhecida como Tinker (Tinkerer).\n• Conexões Pessoais: Miles descobre que a líder do Underground é, na verdade, Fin Mason, uma amiga de infância. Além disso, ele precisa lidar com interesses corporativos perigosos liderados por Simon Krieger e segredos envolvendo seu tio, Aaron Davis (o Gatuno).",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 50,
+      "descricao": "A sinopse de Marvel's Spider-Man: Miles Morales gira em torno de Miles Morales, que se muda com a mãe para o bairro de East Harlem e precisa assumir o papel de único Homem-Aranha de Nova York enquanto Peter Parker viaja.\n\nPontos principais da história:\n\n• O Contexto: A história acontece cerca de um ano após os eventos do primeiro jogo da Insomniac Games. Miles está se adaptando à nova vida e aprendendo a usar seus poderes únicos, que incluem descargas bioelétricas (Venom Blast) e camuflagem (invisibilidade).\n• A Ausência de Peter: Peter Parker sai de Nova York por algumas semanas para acompanhar Mary Jane em uma viagem, deixando a responsabilidade de proteger a cidade nas mãos do jovem herói.\n• A Guerra de Facções: O conflito principal envolve uma guerra pelo poder entre a corrupta Roxxon Energy Corporation (que promove um novo combustível chamado Nuforme) e o Underground, um exército criminoso de alta tecnologia liderado por uma vilã conhecida como Tinker (Tinkerer).\n• Conexões Pessoais: Miles descobre que a líder do Underground é, na verdade, Fin Mason, uma amiga de infância. Além disso, ele precisa lidar com interesses corporativos perigosos liderados por Simon Krieger e segredos envolvendo seu tio, Aaron Davis (o Gatuno).",
       "imagens": [
         "imagens/spider-man-miles-morales-mvpz9ecjma1c.jpg"
       ],
@@ -10746,23 +10747,23 @@
       "tipos": [
         "Aventura"
       ],
+      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5u",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Aventura"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "950/1200"
     },
     {
       "id": "mvpz83njabho",
+      "cod": "5v",
       "nome": "Need For Speed Payback",
-      "descricao": "A sinopse de Need for Speed Payback gira em torno de uma história de traição e vingança ambientada no submundo de Fortune Valley (uma cidade inspirada em Las Vegas).\n\nO Enredo Principal\n\n• A Traição: O jogo acompanha um trio de pilotos e amigos — Tyler Morgan (o piloto), Mac (o especialista em drift e off-road) e Jess (a especialista em fugas). Durante um grande golpe para roubar um supercarro (Koenigsegg Regera) de Lina Navarro, o grupo é traído por ela.\n• O Cartel \"A Casa\": Lina Navarro trabalha para A Casa (The House), um cartel criminoso e poderoso que domina os cassinos, o submundo do crime e até a polícia de Fortune Valley.\n• A Missão de Vingança: Após serem separados pela traição, Tyler e sua equipe se reúnem com um objetivo em comum: derrubar o monopólio de \"A Casa\", vencer as ligas de corridas clandestinas da região e se vingar de Lina Navarro e do cartel.\n• Estilo Cinematográfico: A narrativa tem uma forte pegada de \"filme de ação\" estilo Velozes e Furiosos, com missões explosivas, perseguições policiais e cenas de ação em ritmo acelerado.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 30,
+      "descricao": "A sinopse de Need for Speed Payback gira em torno de uma história de traição e vingança ambientada no submundo de Fortune Valley (uma cidade inspirada em Las Vegas).\n\nO Enredo Principal\n\n• A Traição: O jogo acompanha um trio de pilotos e amigos — Tyler Morgan (o piloto), Mac (o especialista em drift e off-road) e Jess (a especialista em fugas). Durante um grande golpe para roubar um supercarro (Koenigsegg Regera) de Lina Navarro, o grupo é traído por ela.\n• O Cartel \"A Casa\": Lina Navarro trabalha para A Casa (The House), um cartel criminoso e poderoso que domina os cassinos, o submundo do crime e até a polícia de Fortune Valley.\n• A Missão de Vingança: Após serem separados pela traição, Tyler e sua equipe se reúnem com um objetivo em comum: derrubar o monopólio de \"A Casa\", vencer as ligas de corridas clandestinas da região e se vingar de Lina Navarro e do cartel.\n• Estilo Cinematográfico: A narrativa tem uma forte pegada de \"filme de ação\" estilo Velozes e Furiosos, com missões explosivas, perseguições policiais e cenas de ação em ritmo acelerado.",
       "imagens": [
         "imagens/need-for-speed-payback-mvpz8285g5eg.jpg"
       ],
@@ -10772,23 +10773,23 @@
       "tipos": [
         "Corrida"
       ],
+      "tipo": "Corrida",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5v",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Corrida"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "800/1002"
     },
     {
       "id": "mvpz6pp1mqcz",
+      "cod": "5w",
       "nome": "Uncharted 4",
-      "descricao": "Uncharted 4: A Thief's End (lançado pela Naughty Dog e publicado pela Sony Interactive Entertainment) acompanha Nathan Drake, um caçador de tesouros que está aposentado e vive uma vida tranquila com sua esposa, Elena Fischer.\n\nPontos principais da história:\n\n• O retorno de Sam: A aposentadoria de Nathan é interrompida pelo reaparecimento de seu irmão mais velho, Samuel (Sam), que ele acreditava estar morto há 15 anos após uma fuga de prisão.\n• A dívida perigosa: Sam revela que precisa encontrar o tesouro perdido do pirata Henry Avery na cidade perdida de Libertalia (Madagascar) para pagar uma dívida com um senhor do crime e salvar sua própria vida.\n• A jornada pelo mundo: Junto com seu velho amigo Victor \"Sully\" Sullivan, os irmãos embarcam em uma caça ao tesouro global que os coloca em conflito com outros mercenários rivais, como Rafe Adler e Nadine Ross.\n• Conflito pessoal: A trama equilibra a ação eletrizante com dramas familiares, testando a lealdade de Nathan e forçando-o a decidir o que ele está disposto a sacrificar para salvar quem ama e se reconciliar com o irmão.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 65,
+      "descricao": "Uncharted 4: A Thief's End (lançado pela Naughty Dog e publicado pela Sony Interactive Entertainment) acompanha Nathan Drake, um caçador de tesouros que está aposentado e vive uma vida tranquila com sua esposa, Elena Fischer.\n\nPontos principais da história:\n\n• O retorno de Sam: A aposentadoria de Nathan é interrompida pelo reaparecimento de seu irmão mais velho, Samuel (Sam), que ele acreditava estar morto há 15 anos após uma fuga de prisão.\n• A dívida perigosa: Sam revela que precisa encontrar o tesouro perdido do pirata Henry Avery na cidade perdida de Libertalia (Madagascar) para pagar uma dívida com um senhor do crime e salvar sua própria vida.\n• A jornada pelo mundo: Junto com seu velho amigo Victor \"Sully\" Sullivan, os irmãos embarcam em uma caça ao tesouro global que os coloca em conflito com outros mercenários rivais, como Rafe Adler e Nadine Ross.\n• Conflito pessoal: A trama equilibra a ação eletrizante com dramas familiares, testando a lealdade de Nathan e forçando-o a decidir o que ele está disposto a sacrificar para salvar quem ama e se reconciliar com o irmão.",
       "imagens": [
         "imagens/uncharted-4-mvpz6o4s59xf.jpg"
       ],
@@ -10798,23 +10799,23 @@
       "tipos": [
         "Ação"
       ],
+      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5w",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Ação"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "963/1200"
     },
     {
       "id": "mvpz34r1vvd8",
+      "cod": "5x",
       "nome": "God of War 2018",
-      "descricao": "A sinopse de God of War (2018) gira em torno de Kratos, o antigo Deus da Guerra grego, que vive exilado no reino nórdico de Midgard.\nApós a morte de sua esposa, Faye, Kratos e seu filho, Atreus, embarcam em uma jornada difícil para cumprir o último desejo dela: espalhar as cinzas no pico mais alto de todos os Nove Reinos.\n\nPrincipais pontos da história:\n\n• O ponto de partida: Logo no início, a paz da dupla é interrompida por um estranho misterioso e extremamente forte com poderes divinos (mais tarde revelado ser Baldur, filho de Odin).\n• A dinâmica de pai e filho: A viagem serve como um teste de convivência. Kratos tenta esconder seu passado violento e ensina o garoto a sobreviver, enquanto Atreus desconhece sua própria natureza divina.\n• Aliados e obstáculos: Ao longo do caminho, eles contam com a ajuda de figuras como a bruxa Freya, os anões ferreiros Brok e Sindri, e a cabeça viva de Mimir (o homem mais inteligente do mundo), além de enfrentarem criaturas mitológicas e deuses nórdicos.\n• A revelação final: Ao chegarem ao destino em Jotunheim (o reino dos gigantes), eles descobrem murais que contam toda a jornada antecipadamente. Atreus descobre que é parte deus, parte mortal e parte gigante, e que seu nome original dado por sua mãe era Loki.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 45,
+      "descricao": "A sinopse de God of War (2018) gira em torno de Kratos, o antigo Deus da Guerra grego, que vive exilado no reino nórdico de Midgard.\nApós a morte de sua esposa, Faye, Kratos e seu filho, Atreus, embarcam em uma jornada difícil para cumprir o último desejo dela: espalhar as cinzas no pico mais alto de todos os Nove Reinos.\n\nPrincipais pontos da história:\n\n• O ponto de partida: Logo no início, a paz da dupla é interrompida por um estranho misterioso e extremamente forte com poderes divinos (mais tarde revelado ser Baldur, filho de Odin).\n• A dinâmica de pai e filho: A viagem serve como um teste de convivência. Kratos tenta esconder seu passado violento e ensina o garoto a sobreviver, enquanto Atreus desconhece sua própria natureza divina.\n• Aliados e obstáculos: Ao longo do caminho, eles contam com a ajuda de figuras como a bruxa Freya, os anões ferreiros Brok e Sindri, e a cabeça viva de Mimir (o homem mais inteligente do mundo), além de enfrentarem criaturas mitológicas e deuses nórdicos.\n• A revelação final: Ao chegarem ao destino em Jotunheim (o reino dos gigantes), eles descobrem murais que contam toda a jornada antecipadamente. Atreus descobre que é parte deus, parte mortal e parte gigante, e que seu nome original dado por sua mãe era Loki.",
       "imagens": [
         "imagens/god-of-war-2018-mvpz336xfn4b.jpg"
       ],
@@ -10824,23 +10825,23 @@
       "tipos": [
         "Ação"
       ],
+      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5x",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Ação"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "646/800"
     },
     {
       "id": "mvpvevqzvat1",
+      "cod": "5y",
       "nome": "Fifa 27",
-      "descricao": "O EA Sports FC 27 (sucessor da antiga franquia FIFA) não possui uma história linear ou sinopse de campanha tradicional, mas gira em torno de uma grande inovação narrativa e social: The Grounds.\n\nO Conceito e \"Sinopse\" da Experiência\n\n• The Grounds: É um novo hub social em mundo aberto que une ruas, quadras e grandes estádios em uma cidade virtual. Nele, os jogadores criam seus próprios avatares personalizados, interagem com outras pessoas, compram roupas e participam de partidas casuais e minigames (como futebol 2x2 ou 3x3).\n• Presença de Mentores: O modo conta com a aparição e orientação de craques do futebol mundial (como Kylian Mbappé, Chloe Kelly, Paulo Dybala e referências ao clássico Alex Hunter) que atuam como mentores na jornada do seu atleta.\n\nOutros Modos Principais\n\n• Modo Carreira (Manager e Jogador): Recebeu uma reformulação no Mercado de Transferências (com parcerias do TransferRoom), interface de gestão mais densa e o sistema de GER Dinâmico, que reflete a moral, a fase e o preparo físico em tempo real.\n• Football Ultimate Team (FUT): Introduz a Galeria FUT para exibir cartas em 3D/holográficas, além de ajustes nos desafios de montagem de elenco.\n• Clubs: Integrado ao ambiente de mundo aberto do The Grounds com novos arquétipos e amplificadores de atributos.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 50,
+      "descricao": "O EA Sports FC 27 (sucessor da antiga franquia FIFA) não possui uma história linear ou sinopse de campanha tradicional, mas gira em torno de uma grande inovação narrativa e social: The Grounds.\n\nO Conceito e \"Sinopse\" da Experiência\n\n• The Grounds: É um novo hub social em mundo aberto que une ruas, quadras e grandes estádios em uma cidade virtual. Nele, os jogadores criam seus próprios avatares personalizados, interagem com outras pessoas, compram roupas e participam de partidas casuais e minigames (como futebol 2x2 ou 3x3).\n• Presença de Mentores: O modo conta com a aparição e orientação de craques do futebol mundial (como Kylian Mbappé, Chloe Kelly, Paulo Dybala e referências ao clássico Alex Hunter) que atuam como mentores na jornada do seu atleta.\n\nOutros Modos Principais\n\n• Modo Carreira (Manager e Jogador): Recebeu uma reformulação no Mercado de Transferências (com parcerias do TransferRoom), interface de gestão mais densa e o sistema de GER Dinâmico, que reflete a moral, a fase e o preparo físico em tempo real.\n• Football Ultimate Team (FUT): Introduz a Galeria FUT para exibir cartas em 3D/holográficas, além de ajustes nos desafios de montagem de elenco.\n• Clubs: Integrado ao ambiente de mundo aberto do The Grounds com novos arquétipos e amplificadores de atributos.",
       "imagens": [
         "imagens/fifa-27-mvpvf2h5gakz.jpg"
       ],
@@ -10850,15 +10851,14 @@
       "tipos": [
         "Esporte"
       ],
+      "tipo": "Esporte",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5y",
-      "outras": [],
-      "formato": "",
-      "proporcao": "",
-      "ajuste": "",
       "armazenamentos": [],
-      "tipo": "Esporte"
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "963/1200"
     },
     {
       "id": "ps4slim",
