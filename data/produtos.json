@@ -6,6 +6,7 @@
     "instagram": "tech_pro_rj",
     "rodape": "Pagamento: Pix, dinheiro ou cartão em até 12x.\nAceitamos video game inferior ou com defeito como parte do pagamento.",
     "logo": "imagens/logo-mvpt91fuc59c.png",
+    "logoMini": "imagens/mini/logo-mvpt91fuc59c.webp",
     "ocultarNome": false,
     "tema": {
       "fonteTitulo": "Press Start 2P",
@@ -1017,6 +1018,9 @@
       "imagens": [
         "imagens/call-of-duty-3-mvvc6b7qr6m1.jpg"
       ],
+      "minis": [
+        "imagens/mini/call-of-duty-3-mvvc6b7qr6m1.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1044,6 +1048,9 @@
       "imagens": [
         "imagens/call-of-duty-black-ops-ii-mvvc2a7o57zs.jpg"
       ],
+      "minis": [
+        "imagens/mini/call-of-duty-black-ops-ii-mvvc2a7o57zs.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1069,6 +1076,9 @@
       "valor": 3.2,
       "imagens": [
         "imagens/bully-scholarship-edition-mvvc100y63cv.jpg"
+      ],
+      "minis": [
+        "imagens/mini/bully-scholarship-edition-mvvc100y63cv.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1098,6 +1108,9 @@
       "imagens": [
         "imagens/bayonetta-mvvbzrcg9ihs.jpg"
       ],
+      "minis": [
+        "imagens/mini/bayonetta-mvvbzrcg9ihs.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1126,6 +1139,9 @@
       "imagens": [
         "imagens/avatar-the-game-mvvbyng56dji.jpg"
       ],
+      "minis": [
+        "imagens/mini/avatar-the-game-mvvbyng56dji.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1153,6 +1169,9 @@
       "imagens": [
         "imagens/assassins-creed-4-black-flag-mvvbxkvllnx4.jpg"
       ],
+      "minis": [
+        "imagens/mini/assassins-creed-4-black-flag-mvvbxkvllnx4.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1179,6 +1198,9 @@
       "valor": 6.4,
       "imagens": [
         "imagens/alan-wake-mvvbumx8vu3i.jpg"
+      ],
+      "minis": [
+        "imagens/mini/alan-wake-mvvbumx8vu3i.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1208,6 +1230,9 @@
       "imagens": [
         "imagens/resident-evil-6-mvvbsczksc9e.jpg"
       ],
+      "minis": [
+        "imagens/mini/resident-evil-6-mvvbsczksc9e.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1235,6 +1260,9 @@
       "imagens": [
         "imagens/monopoly-plus-mvvbqqbvtisp.jpg"
       ],
+      "minis": [
+        "imagens/mini/monopoly-plus-mvvbqqbvtisp.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1261,6 +1289,9 @@
       "imagens": [
         "imagens/minesweeper-flags-mvvbph42n739.jpg"
       ],
+      "minis": [
+        "imagens/mini/minesweeper-flags-mvvbph42n739.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1286,6 +1317,9 @@
       "valor": 4.9,
       "imagens": [
         "imagens/medal-of-honor-airborne-mvvbnxga5hxf.jpg"
+      ],
+      "minis": [
+        "imagens/mini/medal-of-honor-airborne-mvvbnxga5hxf.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1314,6 +1348,9 @@
       "imagens": [
         "imagens/hitman-blood-money-mvvbm880hsqe.jpg"
       ],
+      "minis": [
+        "imagens/mini/hitman-blood-money-mvvbm880hsqe.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1340,6 +1377,9 @@
       "valor": 5.9,
       "imagens": [
         "imagens/halo-3-mvvbl8gaejp4.jpg"
+      ],
+      "minis": [
+        "imagens/mini/halo-3-mvvbl8gaejp4.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1368,6 +1408,9 @@
       "imagens": [
         "imagens/guitar-hero-aerosmith-mvvbjxlezx4v.jpg"
       ],
+      "minis": [
+        "imagens/mini/guitar-hero-aerosmith-mvvbjxlezx4v.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1393,6 +1436,9 @@
       "valor": 2.6,
       "imagens": [
         "imagens/game-of-thrones-mvvbixpmkrxl.jpg"
+      ],
+      "minis": [
+        "imagens/mini/game-of-thrones-mvvbixpmkrxl.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1421,6 +1467,9 @@
       "imagens": [
         "imagens/fifa-14-copa-do-mundo-mvvbfyqrfqk0.jpg"
       ],
+      "minis": [
+        "imagens/mini/fifa-14-copa-do-mundo-mvvbfyqrfqk0.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1446,6 +1495,9 @@
       "valor": 1.5,
       "imagens": [
         "imagens/f1-race-stars-mvvbe1i2wruw.jpg"
+      ],
+      "minis": [
+        "imagens/mini/f1-race-stars-mvvbe1i2wruw.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1474,6 +1526,9 @@
       "imagens": [
         "imagens/dragon-ball-z-ultimate-tenkaichi-mvvbcm9qmfb0.jpg"
       ],
+      "minis": [
+        "imagens/mini/dragon-ball-z-ultimate-tenkaichi-mvvbcm9qmfb0.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1501,6 +1556,9 @@
       "imagens": [
         "imagens/disney-universe-mvvbaa3xh4ow.jpg"
       ],
+      "minis": [
+        "imagens/mini/disney-universe-mvvbaa3xh4ow.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1526,6 +1584,9 @@
       "valor": 6.7,
       "imagens": [
         "imagens/call-of-duty-4-modern-warfare-mvvb949i87jq.jpg"
+      ],
+      "minis": [
+        "imagens/mini/call-of-duty-4-modern-warfare-mvvb949i87jq.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1554,6 +1615,9 @@
       "imagens": [
         "imagens/battlefield-bad-company-mvvb7rq0j2zm.jpg"
       ],
+      "minis": [
+        "imagens/mini/battlefield-bad-company-mvvb7rq0j2zm.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1581,6 +1645,9 @@
       "imagens": [
         "imagens/battlefield-2-modern-combat-mvvb690lt8w8.jpg"
       ],
+      "minis": [
+        "imagens/mini/battlefield-2-modern-combat-mvvb690lt8w8.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1606,6 +1673,9 @@
       "valor": 2.8,
       "imagens": [
         "imagens/batman-arkham-origins-blackgate-mvvb3ze9zndz.jpg"
+      ],
+      "minis": [
+        "imagens/mini/batman-arkham-origins-blackgate-mvvb3ze9zndz.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1634,6 +1704,9 @@
       "imagens": [
         "imagens/need-for-speed-underground-2-mvvb1c9s6paz.jpg"
       ],
+      "minis": [
+        "imagens/mini/need-for-speed-underground-2-mvvb1c9s6paz.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1660,6 +1733,9 @@
       "imagens": [
         "imagens/midnight-club-3-dub-edition-remix-mvvay1lvo6a9.jpg"
       ],
+      "minis": [
+        "imagens/mini/midnight-club-3-dub-edition-remix-mvvay1lvo6a9.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1685,6 +1761,9 @@
       "valor": 3.2,
       "imagens": [
         "imagens/medal-of-honor-frontline-mvvawyggu9hv.jpg"
+      ],
+      "minis": [
+        "imagens/mini/medal-of-honor-frontline-mvvawyggu9hv.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1713,6 +1792,9 @@
       "imagens": [
         "imagens/hitman-contracts-mvvavygripe4.jpg"
       ],
+      "minis": [
+        "imagens/mini/hitman-contracts-mvvavygripe4.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1738,6 +1820,9 @@
       "valor": 2.2,
       "imagens": [
         "imagens/harry-potte-azkaban-mvvauyv2er1a.jpg"
+      ],
+      "minis": [
+        "imagens/mini/harry-potte-azkaban-mvvauyv2er1a.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1766,6 +1851,9 @@
       "imagens": [
         "imagens/halo-2-mvvatg7zyh3s.jpg"
       ],
+      "minis": [
+        "imagens/mini/halo-2-mvvatg7zyh3s.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1793,6 +1881,9 @@
       "imagens": [
         "imagens/fifa-street-mvvarpsw1w85.jpg"
       ],
+      "minis": [
+        "imagens/mini/fifa-street-mvvarpsw1w85.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1818,6 +1909,9 @@
       "valor": 1.9,
       "imagens": [
         "imagens/disney-era-do-gelo-2-mvvaogx0exud.jpg"
+      ],
+      "minis": [
+        "imagens/mini/disney-era-do-gelo-2-mvvaogx0exud.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1845,6 +1939,9 @@
       "imagens": [
         "imagens/call-of-duty-1-finest-hour-mvvakwugjhoq.jpg"
       ],
+      "minis": [
+        "imagens/mini/call-of-duty-1-finest-hour-mvvakwugjhoq.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1871,6 +1968,9 @@
       "imagens": [
         "imagens/black-mvvaj5s5hv5v.jpg"
       ],
+      "minis": [
+        "imagens/mini/black-mvvaj5s5hv5v.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -1896,6 +1996,9 @@
       "valor": null,
       "imagens": [
         "imagens/kit-opl-ps2-mvv5v7d55pgk.jpg"
+      ],
+      "minis": [
+        "imagens/mini/kit-opl-ps2-mvv5v7d55pgk.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1944,6 +2047,9 @@
       "valor": null,
       "imagens": [
         "imagens/hd-externode-jogos-para-xbox-360-mvv5khifz2h3.jpg"
+      ],
+      "minis": [
+        "imagens/mini/hd-externode-jogos-para-xbox-360-mvv5khifz2h3.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -1998,6 +2104,9 @@
       "valor": null,
       "imagens": [
         "imagens/hd-externo-de-jogos-para-ps2-mvv5nm6uttmh.jpg"
+      ],
+      "minis": [
+        "imagens/mini/hd-externo-de-jogos-para-ps2-mvv5nm6uttmh.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -2059,6 +2168,9 @@
       "imagens": [
         "imagens/reparos-para-controle-do-xbox-360-mvv5b9x43r3y.jpg"
       ],
+      "minis": [
+        "imagens/mini/reparos-para-controle-do-xbox-360-mvv5b9x43r3y.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2091,6 +2203,9 @@
       "imagens": [
         "imagens/botoes-nao-funciona-falhando-mvv58ia06y5b.jpg"
       ],
+      "minis": [
+        "imagens/mini/botoes-nao-funciona-falhando-mvv58ia06y5b.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2118,6 +2233,9 @@
       "valor": 110,
       "imagens": [
         "imagens/analogico-original-dois-lados-mvv57tpoholj.jpg"
+      ],
+      "minis": [
+        "imagens/mini/analogico-original-dois-lados-mvv57tpoholj.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -2147,6 +2265,9 @@
       "imagens": [
         "imagens/analogico-original-um-lado-mvv574wd62x1.jpg"
       ],
+      "minis": [
+        "imagens/mini/analogico-original-um-lado-mvv574wd62x1.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2174,6 +2295,9 @@
       "valor": 120,
       "imagens": [
         "imagens/gatilhos-l2-r2-mvv561ts7yhl.jpg"
+      ],
+      "minis": [
+        "imagens/mini/gatilhos-l2-r2-mvv561ts7yhl.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -2203,6 +2327,9 @@
       "imagens": [
         "imagens/borracha-dos-analogicos-par-mvv54u01svd2.jpg"
       ],
+      "minis": [
+        "imagens/mini/borracha-dos-analogicos-par-mvv54u01svd2.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -2228,6 +2355,9 @@
       "valor": 120,
       "imagens": [
         "imagens/botoes-nao-funciona-falhando-mvv542fz4jxo.jpg"
+      ],
+      "minis": [
+        "imagens/mini/botoes-nao-funciona-falhando-mvv542fz4jxo.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -2257,6 +2387,9 @@
       "imagens": [
         "imagens/troca-do-conector-usb-mvv52ue50rlb.jpg"
       ],
+      "minis": [
+        "imagens/mini/troca-do-conector-usb-mvv52ue50rlb.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2285,6 +2418,9 @@
       "imagens": [
         "imagens/reparo-de-placa-mvv51hg89vip.jpg"
       ],
+      "minis": [
+        "imagens/mini/reparo-de-placa-mvv51hg89vip.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2312,6 +2448,9 @@
       "valor": null,
       "imagens": [
         "imagens/reparos-para-controle-de-series-s-x-mvv4x1igpobr.jpg"
+      ],
+      "minis": [
+        "imagens/mini/reparos-para-controle-de-series-s-x-mvv4x1igpobr.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -2351,6 +2490,9 @@
       "imagens": [
         "imagens/reparos-para-controle-do-xbox-one-mvv4usjw4ly2.jpg"
       ],
+      "minis": [
+        "imagens/mini/reparos-para-controle-do-xbox-one-mvv4usjw4ly2.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2389,6 +2531,9 @@
       "imagens": [
         "imagens/reparos-para-controle-de-ps3-mvv4oieo62tn.jpg"
       ],
+      "minis": [
+        "imagens/mini/reparos-para-controle-de-ps3-mvv4oieo62tn.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2424,6 +2569,9 @@
       "valor": null,
       "imagens": [
         "imagens/reparos-para-controle-de-ps4-mvv4h15kdgw7.jpg"
+      ],
+      "minis": [
+        "imagens/mini/reparos-para-controle-de-ps4-mvv4h15kdgw7.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -2463,6 +2611,9 @@
       "imagens": [
         "imagens/reparos-para-controle-de-ps5-mvv3x3jw7hn7.jpg"
       ],
+      "minis": [
+        "imagens/mini/reparos-para-controle-de-ps5-mvv3x3jw7hn7.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2501,6 +2652,9 @@
       "imagens": [
         "imagens/analogico-hall-tmr-dois-lados-mvtx78qkn4jf.jpg"
       ],
+      "minis": [
+        "imagens/mini/analogico-hall-tmr-dois-lados-mvtx78qkn4jf.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2528,6 +2682,9 @@
       "valor": 180,
       "imagens": [
         "imagens/analogico-hall-tmr-um-lado-mvtx6ps695oj.jpg"
+      ],
+      "minis": [
+        "imagens/mini/analogico-hall-tmr-um-lado-mvtx6ps695oj.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -2557,6 +2714,9 @@
       "imagens": [
         "imagens/analogico-original-dois-lados-mvtx633czusq.jpg"
       ],
+      "minis": [
+        "imagens/mini/analogico-original-dois-lados-mvtx633czusq.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2584,6 +2744,9 @@
       "valor": 110,
       "imagens": [
         "imagens/analogico-original-um-lado-mvtx53lxew59.jpg"
+      ],
+      "minis": [
+        "imagens/mini/analogico-original-um-lado-mvtx53lxew59.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -2613,6 +2776,9 @@
       "imagens": [
         "imagens/gatilhos-l2-r2-mvtx3go6n6v1.jpg"
       ],
+      "minis": [
+        "imagens/mini/gatilhos-l2-r2-mvtx3go6n6v1.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2641,6 +2807,9 @@
       "imagens": [
         "imagens/borracha-dos-analogicos-par-mvtx1ebl5dp3.jpg"
       ],
+      "minis": [
+        "imagens/mini/borracha-dos-analogicos-par-mvtx1ebl5dp3.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -2666,6 +2835,9 @@
       "valor": 130,
       "imagens": [
         "imagens/botoes-nao-funciona-falhando-mvtx0rk9dv8c.jpg"
+      ],
+      "minis": [
+        "imagens/mini/botoes-nao-funciona-falhando-mvtx0rk9dv8c.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -2695,6 +2867,9 @@
       "imagens": [
         "imagens/troca-do-conector-usb-c-mvtwzv2mbijt.jpg"
       ],
+      "minis": [
+        "imagens/mini/troca-do-conector-usb-c-mvtwzv2mbijt.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2722,6 +2897,9 @@
       "valor": 250,
       "imagens": [
         "imagens/reparo-de-placa-mvtwz14puum1.jpg"
+      ],
+      "minis": [
+        "imagens/mini/reparo-de-placa-mvtwz14puum1.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -2751,6 +2929,9 @@
       "imagens": [
         "imagens/analogico-hall-tmr-dois-lados-mvtwye6u2mxh.jpg"
       ],
+      "minis": [
+        "imagens/mini/analogico-hall-tmr-dois-lados-mvtwye6u2mxh.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2778,6 +2959,9 @@
       "valor": 180,
       "imagens": [
         "imagens/analogico-hall-tmr-um-lado-mvtwxkws8kmc.jpg"
+      ],
+      "minis": [
+        "imagens/mini/analogico-hall-tmr-um-lado-mvtwxkws8kmc.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -2807,6 +2991,9 @@
       "imagens": [
         "imagens/analogico-original-dois-lados-mvtwwkecps6a.jpg"
       ],
+      "minis": [
+        "imagens/mini/analogico-original-dois-lados-mvtwwkecps6a.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -2834,6 +3021,9 @@
       "valor": 150,
       "imagens": [
         "imagens/analogico-original-um-lado-mvtwvpc4shgq.jpg"
+      ],
+      "minis": [
+        "imagens/mini/analogico-original-um-lado-mvtwvpc4shgq.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -2863,6 +3053,9 @@
       "imagens": [
         "imagens/ufc-undisputed-3-mvtw8zcwi56p.jpg"
       ],
+      "minis": [
+        "imagens/mini/ufc-undisputed-3-mvtw8zcwi56p.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -2890,6 +3083,9 @@
       "imagens": [
         "imagens/spongebob-heropants-mvtw71mrku6o.jpg"
       ],
+      "minis": [
+        "imagens/mini/spongebob-heropants-mvtw71mrku6o.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -2915,6 +3111,9 @@
       "valor": 4.1,
       "imagens": [
         "imagens/resident-evil-zero-mvtw57skejzb.jpg"
+      ],
+      "minis": [
+        "imagens/mini/resident-evil-zero-mvtw57skejzb.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -2944,6 +3143,9 @@
       "imagens": [
         "imagens/resident-evil-revelations-2-mvtw2q4qubw3.jpg"
       ],
+      "minis": [
+        "imagens/mini/resident-evil-revelations-2-mvtw2q4qubw3.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -2971,6 +3173,9 @@
       "valor": 8.6,
       "imagens": [
         "imagens/resident-evil-revelations-1-mvtw0ojy8o0f.jpg"
+      ],
+      "minis": [
+        "imagens/mini/resident-evil-revelations-1-mvtw0ojy8o0f.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3000,6 +3205,9 @@
       "imagens": [
         "imagens/resident-evil-operation-raccoon-city-mvtvyzww8iz7.jpg"
       ],
+      "minis": [
+        "imagens/mini/resident-evil-operation-raccoon-city-mvtvyzww8iz7.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3027,6 +3235,9 @@
       "valor": 7,
       "imagens": [
         "imagens/resident-evil-5-mvtvxjos23mg.jpg"
+      ],
+      "minis": [
+        "imagens/mini/resident-evil-5-mvtvxjos23mg.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3056,6 +3267,9 @@
       "imagens": [
         "imagens/resident-evil-4-hd-mvtvwec8t6ic.jpg"
       ],
+      "minis": [
+        "imagens/mini/resident-evil-4-hd-mvtvwec8t6ic.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3083,6 +3297,9 @@
       "valor": 6.2,
       "imagens": [
         "imagens/resident-evil-1-mvtvul5xz160.jpg"
+      ],
+      "minis": [
+        "imagens/mini/resident-evil-1-mvtvul5xz160.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3112,6 +3329,9 @@
       "imagens": [
         "imagens/resident-evil-code-veronica-mvtvq7xmopcj.jpg"
       ],
+      "minis": [
+        "imagens/mini/resident-evil-code-veronica-mvtvq7xmopcj.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3140,6 +3360,9 @@
       "imagens": [
         "imagens/need-for-speed-most-wanted-mvtw9k522vhc.jpg"
       ],
+      "minis": [
+        "imagens/mini/need-for-speed-most-wanted-mvtw9k522vhc.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3165,6 +3388,9 @@
       "valor": 5.2,
       "imagens": [
         "imagens/need-for-speed-collectors-edition-mvtvmdso48q0.jpg"
+      ],
+      "minis": [
+        "imagens/mini/need-for-speed-collectors-edition-mvtvmdso48q0.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3192,6 +3418,9 @@
       "imagens": [
         "imagens/nba-street-homecourt-mvtviyica5bc.jpg"
       ],
+      "minis": [
+        "imagens/mini/nba-street-homecourt-mvtviyica5bc.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3217,6 +3446,9 @@
       "valor": 7.2,
       "imagens": [
         "imagens/naruto-shippuden-ultimate-ninja-storm-3--mvtvha2wh3wk.jpg"
+      ],
+      "minis": [
+        "imagens/mini/naruto-shippuden-ultimate-ninja-storm-3--mvtvha2wh3wk.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3246,6 +3478,9 @@
       "imagens": [
         "imagens/naruto-shippuden-ultimate-ninja-storm-2-mvtvfpfs9vou.jpg"
       ],
+      "minis": [
+        "imagens/mini/naruto-shippuden-ultimate-ninja-storm-2-mvtvfpfs9vou.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3274,6 +3509,9 @@
       "imagens": [
         "imagens/minecraft-story-mode-season-1-mvtvdd1c0nln.jpg"
       ],
+      "minis": [
+        "imagens/mini/minecraft-story-mode-season-1-mvtvdd1c0nln.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3300,6 +3538,9 @@
       "imagens": [
         "imagens/midnight-club-los-angeles-mvtva8z4wnl4.jpg"
       ],
+      "minis": [
+        "imagens/mini/midnight-club-los-angeles-mvtva8z4wnl4.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3325,6 +3566,9 @@
       "valor": 7.5,
       "imagens": [
         "imagens/metal-gear-rising-revengeance-mvtv91dgdp92.jpg"
+      ],
+      "minis": [
+        "imagens/mini/metal-gear-rising-revengeance-mvtv91dgdp92.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3354,6 +3598,9 @@
       "imagens": [
         "imagens/max-payne-3-mvtv7igakzu6.jpg"
       ],
+      "minis": [
+        "imagens/mini/max-payne-3-mvtv7igakzu6.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3380,6 +3627,9 @@
       "valor": 3.1,
       "imagens": [
         "imagens/marvel-vs-capcom-3-fate-of-two-worlds-mvtv5ywqigp0.jpg"
+      ],
+      "minis": [
+        "imagens/mini/marvel-vs-capcom-3-fate-of-two-worlds-mvtv5ywqigp0.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3408,6 +3658,9 @@
       "imagens": [
         "imagens/marvel-vs-capcom-3-ultimate-mvttt65v8oh6.jpg"
       ],
+      "minis": [
+        "imagens/mini/marvel-vs-capcom-3-ultimate-mvttt65v8oh6.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3433,6 +3686,9 @@
       "valor": 6.7,
       "imagens": [
         "imagens/mafia-2-mvttrdnvwzep.jpg"
+      ],
+      "minis": [
+        "imagens/mini/mafia-2-mvttrdnvwzep.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3460,6 +3716,9 @@
       "imagens": [
         "imagens/madden-nfl-17-mvttm8y70ife.jpg"
       ],
+      "minis": [
+        "imagens/mini/madden-nfl-17-mvttm8y70ife.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3485,6 +3744,9 @@
       "valor": 5.2,
       "imagens": [
         "imagens/lego-marvel-super-heroes-mvttk0op8nvs.jpg"
+      ],
+      "minis": [
+        "imagens/mini/lego-marvel-super-heroes-mvttk0op8nvs.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3512,6 +3774,9 @@
       "imagens": [
         "imagens/lego-marvel-avengers-mvttifrxqctp.jpg"
       ],
+      "minis": [
+        "imagens/mini/lego-marvel-avengers-mvttifrxqctp.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3537,6 +3802,9 @@
       "valor": 5.8,
       "imagens": [
         "imagens/lego-indiana-jones-2-mvttgz5oueur.jpg"
+      ],
+      "minis": [
+        "imagens/mini/lego-indiana-jones-2-mvttgz5oueur.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3564,6 +3832,9 @@
       "imagens": [
         "imagens/lego-indiana-jones-mvtt9dbzze3a.jpg"
       ],
+      "minis": [
+        "imagens/mini/lego-indiana-jones-mvtt9dbzze3a.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3589,6 +3860,9 @@
       "valor": 4.2,
       "imagens": [
         "imagens/lego-batman-2-mvtt63od8f5y.jpg"
+      ],
+      "minis": [
+        "imagens/mini/lego-batman-2-mvtt63od8f5y.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3616,6 +3890,9 @@
       "imagens": [
         "imagens/left-4-dead-2-mvtt1u35iuv7.jpg"
       ],
+      "minis": [
+        "imagens/mini/left-4-dead-2-mvtt1u35iuv7.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3641,6 +3918,9 @@
       "valor": 1.7,
       "imagens": [
         "imagens/kung-fu-panda-showdown-mvtsvyfuplh3.jpg"
+      ],
+      "minis": [
+        "imagens/mini/kung-fu-panda-showdown-mvtsvyfuplh3.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3668,6 +3948,9 @@
       "imagens": [
         "imagens/just-dance-2019-necessario-knect-mvtsupf90n3m.jpg"
       ],
+      "minis": [
+        "imagens/mini/just-dance-2019-necessario-knect-mvtsupf90n3m.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3693,6 +3976,9 @@
       "valor": 6.1,
       "imagens": [
         "imagens/hulk-mvtssvwgcxkx.jpg"
+      ],
+      "minis": [
+        "imagens/mini/hulk-mvtssvwgcxkx.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3720,6 +4006,9 @@
       "imagens": [
         "imagens/halo-wars-mvtsrnz1t7e3.jpg"
       ],
+      "minis": [
+        "imagens/mini/halo-wars-mvtsrnz1t7e3.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3745,6 +4034,9 @@
       "valor": 6.8,
       "imagens": [
         "imagens/halo-reach-mvtsq5ao68rj.jpg"
+      ],
+      "minis": [
+        "imagens/mini/halo-reach-mvtsq5ao68rj.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3772,6 +4064,9 @@
       "imagens": [
         "imagens/guitar-hero-6-warriors-of-rock-mvtsp46q3n8m.jpg"
       ],
+      "minis": [
+        "imagens/mini/guitar-hero-6-warriors-of-rock-mvtsp46q3n8m.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3797,6 +4092,9 @@
       "valor": 4.7,
       "imagens": [
         "imagens/guitar-hero-van-halen-mvtsn5ed7oah.jpg"
+      ],
+      "minis": [
+        "imagens/mini/guitar-hero-van-halen-mvtsn5ed7oah.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3824,6 +4122,9 @@
       "imagens": [
         "imagens/guitar-hero-smash-hits-mvtsm5sngf3i.jpg"
       ],
+      "minis": [
+        "imagens/mini/guitar-hero-smash-hits-mvtsm5sngf3i.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3849,6 +4150,9 @@
       "valor": 2.6,
       "imagens": [
         "imagens/guitar-hero-2-mvtskdfq54t1.jpg"
+      ],
+      "minis": [
+        "imagens/mini/guitar-hero-2-mvtskdfq54t1.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3876,6 +4180,9 @@
       "imagens": [
         "imagens/gta-4-mvtsipag26xq.jpg"
       ],
+      "minis": [
+        "imagens/mini/gta-4-mvtsipag26xq.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3901,6 +4208,9 @@
       "valor": 6.5,
       "imagens": [
         "imagens/gears-of-war-2-mvtsgw9s2puw.jpg"
+      ],
+      "minis": [
+        "imagens/mini/gears-of-war-2-mvtsgw9s2puw.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3928,6 +4238,9 @@
       "imagens": [
         "imagens/gears-judgment-mvtsfctvem09.jpg"
       ],
+      "minis": [
+        "imagens/mini/gears-judgment-mvtsfctvem09.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -3953,6 +4266,9 @@
       "valor": 7,
       "imagens": [
         "imagens/forza-horizon-mvtscoju2u5w.jpg"
+      ],
+      "minis": [
+        "imagens/mini/forza-horizon-mvtscoju2u5w.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -3980,6 +4296,9 @@
       "imagens": [
         "imagens/fifa-street-mvtsaqiu3a9a.jpg"
       ],
+      "minis": [
+        "imagens/mini/fifa-street-mvtsaqiu3a9a.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4005,6 +4324,9 @@
       "valor": 6.7,
       "imagens": [
         "imagens/fifa-street-3-mvts9ht3n84w.jpg"
+      ],
+      "minis": [
+        "imagens/mini/fifa-street-3-mvts9ht3n84w.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4032,6 +4354,9 @@
       "imagens": [
         "imagens/fifa-19-mvts7n9x8yzx.jpg"
       ],
+      "minis": [
+        "imagens/mini/fifa-19-mvts7n9x8yzx.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4057,6 +4382,9 @@
       "valor": 6.6,
       "imagens": [
         "imagens/fifa-17-mvts2oggssu2.jpg"
+      ],
+      "minis": [
+        "imagens/mini/fifa-17-mvts2oggssu2.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4084,6 +4412,9 @@
       "imagens": [
         "imagens/fifa-16-mvts1br8xvdg.jpg"
       ],
+      "minis": [
+        "imagens/mini/fifa-16-mvts1br8xvdg.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4109,6 +4440,9 @@
       "valor": 6.8,
       "imagens": [
         "imagens/fifa-15-mvtrzpvd0qxw.jpg"
+      ],
+      "minis": [
+        "imagens/mini/fifa-15-mvtrzpvd0qxw.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4136,6 +4470,9 @@
       "imagens": [
         "imagens/far-cry-instincts-predator-mvtrxzig6vsw.jpg"
       ],
+      "minis": [
+        "imagens/mini/far-cry-instincts-predator-mvtrxzig6vsw.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4161,6 +4498,9 @@
       "valor": 1.5,
       "imagens": [
         "imagens/far-cry-3-blood-dragon-mvtrwm0c176j.jpg"
+      ],
+      "minis": [
+        "imagens/mini/far-cry-3-blood-dragon-mvtrwm0c176j.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4188,6 +4528,9 @@
       "imagens": [
         "imagens/f1-2014-mvtrtn86oi5l.jpg"
       ],
+      "minis": [
+        "imagens/mini/f1-2014-mvtrtn86oi5l.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4213,6 +4556,9 @@
       "valor": 1.5,
       "imagens": [
         "imagens/emulador-snes-mvtrrbb09qu3.jpg"
+      ],
+      "minis": [
+        "imagens/mini/emulador-snes-mvtrrbb09qu3.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4240,6 +4586,9 @@
       "imagens": [
         "imagens/dragon-ball-z-burst-limit-mvtrle6gd79n.jpg"
       ],
+      "minis": [
+        "imagens/mini/dragon-ball-z-burst-limit-mvtrle6gd79n.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4265,6 +4614,9 @@
       "valor": 3.8,
       "imagens": [
         "imagens/dragon-ball-z-budokai-hd-collection-mvtrkahgsd3m.jpg"
+      ],
+      "minis": [
+        "imagens/mini/dragon-ball-z-budokai-hd-collection-mvtrkahgsd3m.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4292,6 +4644,9 @@
       "imagens": [
         "imagens/disney-up-altas-aventuras-mvtrioiwkdr6.jpg"
       ],
+      "minis": [
+        "imagens/mini/disney-up-altas-aventuras-mvtrioiwkdr6.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4317,6 +4672,9 @@
       "valor": 4.5,
       "imagens": [
         "imagens/disney-g-force-mvtrd9zktivi.jpg"
+      ],
+      "minis": [
+        "imagens/mini/disney-g-force-mvtrd9zktivi.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4344,6 +4702,9 @@
       "imagens": [
         "imagens/disney-bolt-mvtrbtlq7dcp.jpg"
       ],
+      "minis": [
+        "imagens/mini/disney-bolt-mvtrbtlq7dcp.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4369,6 +4730,9 @@
       "valor": 12.7,
       "imagens": [
         "imagens/dead-space-2-mvtq5ozsqr8u.jpg"
+      ],
+      "minis": [
+        "imagens/mini/dead-space-2-mvtq5ozsqr8u.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4396,6 +4760,9 @@
       "imagens": [
         "imagens/call-of-duty-world-at-war-mvtq4jjcn7fk.jpg"
       ],
+      "minis": [
+        "imagens/mini/call-of-duty-world-at-war-mvtq4jjcn7fk.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4421,6 +4788,9 @@
       "valor": 7.7,
       "imagens": [
         "imagens/call-of-duty-modern-warfare-3-mvtq34f44s8w.jpg"
+      ],
+      "minis": [
+        "imagens/mini/call-of-duty-modern-warfare-3-mvtq34f44s8w.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4448,6 +4818,9 @@
       "imagens": [
         "imagens/call-of-duty-modern-warfare-2-mvtq1z6ck6gc.jpg"
       ],
+      "minis": [
+        "imagens/mini/call-of-duty-modern-warfare-2-mvtq1z6ck6gc.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4473,6 +4846,9 @@
       "valor": 9.2,
       "imagens": [
         "imagens/call-of-duty-ghosts-mvtq0zp8jsxc.jpg"
+      ],
+      "minis": [
+        "imagens/mini/call-of-duty-ghosts-mvtq0zp8jsxc.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4500,6 +4876,9 @@
       "imagens": [
         "imagens/call-of-duty-black-ops-2-mvtpzkceugcp.jpg"
       ],
+      "minis": [
+        "imagens/mini/call-of-duty-black-ops-2-mvtpzkceugcp.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4525,6 +4904,9 @@
       "valor": 6.9,
       "imagens": [
         "imagens/call-of-duty-black-ops-mvtpy5z38ysa.jpg"
+      ],
+      "minis": [
+        "imagens/mini/call-of-duty-black-ops-mvtpy5z38ysa.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4552,6 +4934,9 @@
       "imagens": [
         "imagens/bomberman-act-zero-mvtpwd0wccpx.jpg"
       ],
+      "minis": [
+        "imagens/mini/bomberman-act-zero-mvtpwd0wccpx.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4577,6 +4962,9 @@
       "valor": 7.5,
       "imagens": [
         "imagens/battlefield-4-mvtptu043ua5.jpg"
+      ],
+      "minis": [
+        "imagens/mini/battlefield-4-mvtptu043ua5.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4604,6 +4992,9 @@
       "imagens": [
         "imagens/batman-arkham-city-mvtpradsj08j.jpg"
       ],
+      "minis": [
+        "imagens/mini/batman-arkham-city-mvtpradsj08j.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4629,6 +5020,9 @@
       "valor": 5.6,
       "imagens": [
         "imagens/assassins-creed-2-mvtpnk3edq4b.jpg"
+      ],
+      "minis": [
+        "imagens/mini/assassins-creed-2-mvtpnk3edq4b.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4656,6 +5050,9 @@
       "imagens": [
         "imagens/adventure-time-finn-jake-investigations-mvtpkiim1raw.jpg"
       ],
+      "minis": [
+        "imagens/mini/adventure-time-finn-jake-investigations-mvtpkiim1raw.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4681,6 +5078,9 @@
       "valor": 1.1,
       "imagens": [
         "imagens/the-walking-dead-season-two-mvtpi1tkwodu.jpg"
+      ],
+      "minis": [
+        "imagens/mini/the-walking-dead-season-two-mvtpi1tkwodu.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4708,6 +5108,9 @@
       "imagens": [
         "imagens/minecraft-story-mode-season-2-mvtpbskoz8dg.jpg"
       ],
+      "minis": [
+        "imagens/mini/minecraft-story-mode-season-2-mvtpbskoz8dg.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4733,6 +5136,9 @@
       "valor": 0.5,
       "imagens": [
         "imagens/marvel-vs-capcom-origins-mvtp8kkog9vz.jpg"
+      ],
+      "minis": [
+        "imagens/mini/marvel-vs-capcom-origins-mvtp8kkog9vz.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4760,6 +5166,9 @@
       "imagens": [
         "imagens/harry-potter-and-the-half-blood-prince-mvtoyro54u2x.jpg"
       ],
+      "minis": [
+        "imagens/mini/harry-potter-and-the-half-blood-prince-mvtoyro54u2x.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4785,6 +5194,9 @@
       "valor": 2.4,
       "imagens": [
         "imagens/halo-spartan-assault-mvtox3d71mjn.jpg"
+      ],
+      "minis": [
+        "imagens/mini/halo-spartan-assault-mvtox3d71mjn.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4812,6 +5224,9 @@
       "imagens": [
         "imagens/far-cry-classic-mvtot18njyun.jpg"
       ],
+      "minis": [
+        "imagens/mini/far-cry-classic-mvtot18njyun.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4837,6 +5252,9 @@
       "valor": 6,
       "imagens": [
         "imagens/far-cry-3-mvtoo0w3mukj.jpg"
+      ],
+      "minis": [
+        "imagens/mini/far-cry-3-mvtoo0w3mukj.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4864,6 +5282,9 @@
       "imagens": [
         "imagens/far-cry-2-br-mvtolzsdapmk.jpg"
       ],
+      "minis": [
+        "imagens/mini/far-cry-2-br-mvtolzsdapmk.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4889,6 +5310,9 @@
       "valor": 5.2,
       "imagens": [
         "imagens/dragon-ball-z-raging-blast-2-mvtokjji9u2l.jpg"
+      ],
+      "minis": [
+        "imagens/mini/dragon-ball-z-raging-blast-2-mvtokjji9u2l.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -4916,6 +5340,9 @@
       "imagens": [
         "imagens/dragon-ball-z-raging-blast-mvtojbeh3kd9.jpg"
       ],
+      "minis": [
+        "imagens/mini/dragon-ball-z-raging-blast-mvtojbeh3kd9.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4941,6 +5368,9 @@
       "valor": 2.9,
       "imagens": [
         "imagens/disney-carros-3-br-mvtoh62pvq7e.jpg"
+      ],
+      "minis": [
+        "imagens/mini/disney-carros-3-br-mvtoh62pvq7e.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -4970,6 +5400,9 @@
       "imagens": [
         "imagens/disney-carros-2-mvtofha5gh0u.jpg"
       ],
+      "minis": [
+        "imagens/mini/disney-carros-2-mvtofha5gh0u.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -4995,6 +5428,9 @@
       "valor": 3.2,
       "imagens": [
         "imagens/cartoon-network-punch-mvtocryhd6es.jpg"
+      ],
+      "minis": [
+        "imagens/mini/cartoon-network-punch-mvtocryhd6es.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -5022,6 +5458,9 @@
       "imagens": [
         "imagens/battlefield-bad-company-2-mvtobhy9l57m.jpg"
       ],
+      "minis": [
+        "imagens/mini/battlefield-bad-company-2-mvtobhy9l57m.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -5047,6 +5486,9 @@
       "valor": 0.7,
       "imagens": [
         "imagens/battlefield-1943-mvto9qqtgt71.jpg"
+      ],
+      "minis": [
+        "imagens/mini/battlefield-1943-mvto9qqtgt71.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -5074,6 +5516,9 @@
       "imagens": [
         "imagens/assassins-creed-liberation-mvto89vo2sjj.jpg"
       ],
+      "minis": [
+        "imagens/mini/assassins-creed-liberation-mvto89vo2sjj.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -5100,6 +5545,9 @@
       "imagens": [
         "imagens/teen-titans-mvto4u8hc4j6.jpg"
       ],
+      "minis": [
+        "imagens/mini/teen-titans-mvto4u8hc4j6.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -5123,6 +5571,9 @@
       "valor": 1.8,
       "imagens": [
         "imagens/nfs-underground-1-mvto1vn9hbty.jpg"
+      ],
+      "minis": [
+        "imagens/mini/nfs-underground-1-mvto1vn9hbty.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -5150,6 +5601,9 @@
       "imagens": [
         "imagens/nfs-hot-pursuit-2-mvto0a79kjd5.jpg"
       ],
+      "minis": [
+        "imagens/mini/nfs-hot-pursuit-2-mvto0a79kjd5.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -5175,6 +5629,9 @@
       "valor": 2.2,
       "imagens": [
         "imagens/medal-of-honor-europian-assault-mvtnyuz347u2.jpg"
+      ],
+      "minis": [
+        "imagens/mini/medal-of-honor-europian-assault-mvtnyuz347u2.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -5202,6 +5659,9 @@
       "imagens": [
         "imagens/marvel-vs-capcom-2-mvtnwkvztuo8.jpg"
       ],
+      "minis": [
+        "imagens/mini/marvel-vs-capcom-2-mvtnwkvztuo8.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -5227,6 +5687,9 @@
       "valor": 1.1,
       "imagens": [
         "imagens/hitman-2-silent-assassin-mvtnvfs3tqid.jpg"
+      ],
+      "minis": [
+        "imagens/mini/hitman-2-silent-assassin-mvtnvfs3tqid.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -5254,6 +5717,9 @@
       "imagens": [
         "imagens/harry-potter-and-the-sorcerers-stone-mvtnucnt3j20.jpg"
       ],
+      "minis": [
+        "imagens/mini/harry-potter-and-the-sorcerers-stone-mvtnucnt3j20.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -5279,6 +5745,9 @@
       "valor": 1.2,
       "imagens": [
         "imagens/harry-potter-and-the-goblet-of-fire-mvtns3zrgzsg.jpg"
+      ],
+      "minis": [
+        "imagens/mini/harry-potter-and-the-goblet-of-fire-mvtns3zrgzsg.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -5306,6 +5775,9 @@
       "imagens": [
         "imagens/harry-potter-and-the-chamber-of-secrets-mvtnqiyxv2sb.jpg"
       ],
+      "minis": [
+        "imagens/mini/harry-potter-and-the-chamber-of-secrets-mvtnqiyxv2sb.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -5331,6 +5803,9 @@
       "valor": 1.9,
       "imagens": [
         "imagens/halo-1-combat-evolved-mvtnp9qxh3r8.jpg"
+      ],
+      "minis": [
+        "imagens/mini/halo-1-combat-evolved-mvtnp9qxh3r8.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -5358,6 +5833,9 @@
       "imagens": [
         "imagens/far-cry-instincts-evolution-mvtnn0nscywb.jpg"
       ],
+      "minis": [
+        "imagens/mini/far-cry-instincts-evolution-mvtnn0nscywb.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -5383,6 +5861,9 @@
       "valor": 100,
       "imagens": [
         "imagens/gatilhos-l2-r2-mvtn85t7k7jv.jpg"
+      ],
+      "minis": [
+        "imagens/mini/gatilhos-l2-r2-mvtn85t7k7jv.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -5412,6 +5893,9 @@
       "imagens": [
         "imagens/borracha-dos-analogicos-par-mvtn6vijmpqq.jpg"
       ],
+      "minis": [
+        "imagens/mini/borracha-dos-analogicos-par-mvtn6vijmpqq.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -5437,6 +5921,9 @@
       "valor": 100,
       "imagens": [
         "imagens/botoes-nao-funciona-falhando-mvtn62wbt771.jpg"
+      ],
+      "minis": [
+        "imagens/mini/botoes-nao-funciona-falhando-mvtn62wbt771.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -5466,6 +5953,9 @@
       "imagens": [
         "imagens/troca-do-conector-usb-mvtn5bs9txp7.jpg"
       ],
+      "minis": [
+        "imagens/mini/troca-do-conector-usb-mvtn5bs9txp7.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -5493,6 +5983,9 @@
       "valor": 150,
       "imagens": [
         "imagens/reparo-de-placa-mvtn4ctzf9bh.jpg"
+      ],
+      "minis": [
+        "imagens/mini/reparo-de-placa-mvtn4ctzf9bh.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -5522,6 +6015,9 @@
       "imagens": [
         "imagens/analogico-original-dois-lados-mvtn2z3nnhnx.jpg"
       ],
+      "minis": [
+        "imagens/mini/analogico-original-dois-lados-mvtn2z3nnhnx.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -5549,6 +6045,9 @@
       "valor": 80,
       "imagens": [
         "imagens/analogico-original-um-lado-mvtn1zqdm5v6.jpg"
+      ],
+      "minis": [
+        "imagens/mini/analogico-original-um-lado-mvtn1zqdm5v6.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -5578,6 +6077,9 @@
       "imagens": [
         "imagens/gatilhos-l2-r2-mvtmp2drxyya.jpg"
       ],
+      "minis": [
+        "imagens/mini/gatilhos-l2-r2-mvtmp2drxyya.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -5605,6 +6107,9 @@
       "valor": 180,
       "imagens": [
         "imagens/reparo-de-placa-mvtmnok7l6jk.jpg"
+      ],
+      "minis": [
+        "imagens/mini/reparo-de-placa-mvtmnok7l6jk.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -5634,6 +6139,9 @@
       "imagens": [
         "imagens/borracha-dos-analogicos-par-mvtmmpylnohd.jpg"
       ],
+      "minis": [
+        "imagens/mini/borracha-dos-analogicos-par-mvtmmpylnohd.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -5659,6 +6167,9 @@
       "valor": 100,
       "imagens": [
         "imagens/botoes-nao-funciona-falhando-mvtmlulgmjod.jpg"
+      ],
+      "minis": [
+        "imagens/mini/botoes-nao-funciona-falhando-mvtmlulgmjod.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -5688,6 +6199,9 @@
       "imagens": [
         "imagens/troca-do-conector-usb-mvsg8hbzcokh.jpg"
       ],
+      "minis": [
+        "imagens/mini/troca-do-conector-usb-mvsg8hbzcokh.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -5715,6 +6229,9 @@
       "valor": 160,
       "imagens": [
         "imagens/analogico-hall-tmr-dois-lados-mvsg7gn5hh2h.jpg"
+      ],
+      "minis": [
+        "imagens/mini/analogico-hall-tmr-dois-lados-mvsg7gn5hh2h.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -5744,6 +6261,9 @@
       "imagens": [
         "imagens/analogico-hall-tmr-um-lado-mvsg6p5hu50e.jpg"
       ],
+      "minis": [
+        "imagens/mini/analogico-hall-tmr-um-lado-mvsg6p5hu50e.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -5771,6 +6291,9 @@
       "valor": 130,
       "imagens": [
         "imagens/analogico-original-dois-lados-mvsg5uovz5zg.jpg"
+      ],
+      "minis": [
+        "imagens/mini/analogico-original-dois-lados-mvsg5uovz5zg.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -5800,6 +6323,9 @@
       "imagens": [
         "imagens/analogico-original-um-lado-mvsg4la7ufli.jpg"
       ],
+      "minis": [
+        "imagens/mini/analogico-original-um-lado-mvsg4la7ufli.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -5827,6 +6353,9 @@
       "valor": 250,
       "imagens": [
         "imagens/reparo-de-placa-mvsfls6frer5.jpg"
+      ],
+      "minis": [
+        "imagens/mini/reparo-de-placa-mvsfls6frer5.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -5856,6 +6385,9 @@
       "imagens": [
         "imagens/gatilhos-l2-r2-mvsfjz2yg90d.jpg"
       ],
+      "minis": [
+        "imagens/mini/gatilhos-l2-r2-mvsfjz2yg90d.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -5883,6 +6415,9 @@
       "valor": 160,
       "imagens": [
         "imagens/troca-do-conector-usb-c-mvsfgyt7zobt.jpg"
+      ],
+      "minis": [
+        "imagens/mini/troca-do-conector-usb-c-mvsfgyt7zobt.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -5912,6 +6447,9 @@
       "imagens": [
         "imagens/botoes-nao-funciona-falhando-mvsf7r4bfef3.jpg"
       ],
+      "minis": [
+        "imagens/mini/botoes-nao-funciona-falhando-mvsf7r4bfef3.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -5940,6 +6478,9 @@
       "imagens": [
         "imagens/borracha-dos-analogicos-par-mvsf35ppy9lh.jpg"
       ],
+      "minis": [
+        "imagens/mini/borracha-dos-analogicos-par-mvsf35ppy9lh.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -5965,6 +6506,9 @@
       "valor": 200,
       "imagens": [
         "imagens/analogico-hall-tmr-dois-lados-mvsey1t6elwc.jpg"
+      ],
+      "minis": [
+        "imagens/mini/analogico-hall-tmr-dois-lados-mvsey1t6elwc.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -5994,6 +6538,9 @@
       "imagens": [
         "imagens/analogico-hall-tmr-um-lado-mvsewycdloci.jpg"
       ],
+      "minis": [
+        "imagens/mini/analogico-hall-tmr-um-lado-mvsewycdloci.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -6022,6 +6569,9 @@
       "imagens": [
         "imagens/analogico-original-dois-lados-mvsetyiis0d4.jpg"
       ],
+      "minis": [
+        "imagens/mini/analogico-original-dois-lados-mvsetyiis0d4.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -6049,6 +6599,9 @@
       "valor": 150,
       "imagens": [
         "imagens/analogico-original-1x-mvserlxzgjb9.jpg"
+      ],
+      "minis": [
+        "imagens/mini/analogico-original-1x-mvserlxzgjb9.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -6079,6 +6632,11 @@
         "imagens/ps2-tunado-opl-mvrhh62a8geg.jpg",
         "imagens/ps2-tunado-opl-mvrgxw55ijhe.jpg",
         "imagens/ps2-tunado-opl-mvrgxv0shhoo.jpg"
+      ],
+      "minis": [
+        "imagens/mini/ps2-tunado-opl-mvrhh62a8geg.webp",
+        "imagens/mini/ps2-tunado-opl-mvrgxw55ijhe.webp",
+        "imagens/mini/ps2-tunado-opl-mvrgxv0shhoo.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -6125,6 +6683,14 @@
         "imagens/ps3-slim-ou-super-slim-desbloqueado-mvrguel6dh3q.jpg",
         "imagens/ps3-slim-ou-super-slim-desbloqueado-mvrgufz0x7xp.jpg"
       ],
+      "minis": [
+        "imagens/mini/ps3-slim-ou-super-slim-desbloqueado-mvrgu91zelw1.webp",
+        "imagens/mini/ps3-slim-ou-super-slim-desbloqueado-mvrguaimgfm5.webp",
+        "imagens/mini/ps3-slim-ou-super-slim-desbloqueado-mvrguc16i9q6.webp",
+        "imagens/mini/ps3-slim-ou-super-slim-desbloqueado-mvrgud3m5137.webp",
+        "imagens/mini/ps3-slim-ou-super-slim-desbloqueado-mvrguel6dh3q.webp",
+        "imagens/mini/ps3-slim-ou-super-slim-desbloqueado-mvrgufz0x7xp.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvpvkud0etok"
@@ -6165,6 +6731,10 @@
       "imagens": [
         "imagens/ps4-fat-desbloqueado-mvrgry67avwz.jpg",
         "imagens/ps4-fat-desbloqueado-mvrgrwzc27rg.jpg"
+      ],
+      "minis": [
+        "imagens/mini/ps4-fat-desbloqueado-mvrgry67avwz.webp",
+        "imagens/mini/ps4-fat-desbloqueado-mvrgrwzc27rg.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -6207,6 +6777,9 @@
       "imagens": [
         "imagens/yakuza-2-mvrgb3b0dcw8.jpg"
       ],
+      "minis": [
+        "imagens/mini/yakuza-2-mvrgb3b0dcw8.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6232,6 +6805,9 @@
       "valor": 1.7,
       "imagens": [
         "imagens/x-men-origins-wolverine-mvrga7qy3dya.jpg"
+      ],
+      "minis": [
+        "imagens/mini/x-men-origins-wolverine-mvrga7qy3dya.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -6259,6 +6835,9 @@
       "imagens": [
         "imagens/wwe-all-stars-mvrg9bw2tukb.jpg"
       ],
+      "minis": [
+        "imagens/mini/wwe-all-stars-mvrg9bw2tukb.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6284,6 +6863,9 @@
       "valor": 2,
       "imagens": [
         "imagens/wall-e-mvrg84t4cdmy.jpg"
+      ],
+      "minis": [
+        "imagens/mini/wall-e-mvrg84t4cdmy.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -6313,6 +6895,9 @@
       "imagens": [
         "imagens/urban-reign-mvrg7g55iivm.jpg"
       ],
+      "minis": [
+        "imagens/mini/urban-reign-mvrg7g55iivm.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6338,6 +6923,9 @@
       "valor": 2.6,
       "imagens": [
         "imagens/transformers-the-game-mvrg6jubpz56.jpg"
+      ],
+      "minis": [
+        "imagens/mini/transformers-the-game-mvrg6jubpz56.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -6365,6 +6953,9 @@
       "imagens": [
         "imagens/toy-story-3-mvrg5u98uc95.jpg"
       ],
+      "minis": [
+        "imagens/mini/toy-story-3-mvrg5u98uc95.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6390,6 +6981,9 @@
       "valor": 3,
       "imagens": [
         "imagens/tony-hawk-s-american-wasteland-mvrg52bbmdsl.jpg"
+      ],
+      "minis": [
+        "imagens/mini/tony-hawk-s-american-wasteland-mvrg52bbmdsl.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -6417,6 +7011,9 @@
       "imagens": [
         "imagens/tomb-raider-underworld-mvrg4aeakfx3.jpg"
       ],
+      "minis": [
+        "imagens/mini/tomb-raider-underworld-mvrg4aeakfx3.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6443,6 +7040,9 @@
       "imagens": [
         "imagens/tmnt-mvrg3dl5c54s.jpg"
       ],
+      "minis": [
+        "imagens/mini/tmnt-mvrg3dl5c54s.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6468,6 +7068,9 @@
       "valor": 1.2,
       "imagens": [
         "imagens/the-simpsons-hit-run-mvrg2ms0lza0.jpg"
+      ],
+      "minis": [
+        "imagens/mini/the-simpsons-hit-run-mvrg2ms0lza0.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -6497,6 +7100,9 @@
       "imagens": [
         "imagens/the-punisher-mvrg1oiqc1be.jpg"
       ],
+      "minis": [
+        "imagens/mini/the-punisher-mvrg1oiqc1be.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6523,6 +7129,9 @@
       "imagens": [
         "imagens/the-king-of-fighters-2002-mvrg0see9mx4.jpg"
       ],
+      "minis": [
+        "imagens/mini/the-king-of-fighters-2002-mvrg0see9mx4.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6548,6 +7157,9 @@
       "valor": 1,
       "imagens": [
         "imagens/the-incredibles-mvrg004bsg4l.jpg"
+      ],
+      "minis": [
+        "imagens/mini/the-incredibles-mvrg004bsg4l.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -6577,6 +7189,9 @@
       "imagens": [
         "imagens/the-godfather-mvrfz9sbpzbn.jpg"
       ],
+      "minis": [
+        "imagens/mini/the-godfather-mvrfz9sbpzbn.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6602,6 +7217,9 @@
       "valor": 1,
       "imagens": [
         "imagens/terminator-3-the-redemption-mvrfyidd2sw6.jpg"
+      ],
+      "minis": [
+        "imagens/mini/terminator-3-the-redemption-mvrfyidd2sw6.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -6629,6 +7247,9 @@
       "imagens": [
         "imagens/tekken-5-mvrfxqyq7hjd.jpg"
       ],
+      "minis": [
+        "imagens/mini/tekken-5-mvrfxqyq7hjd.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6654,6 +7275,9 @@
       "valor": 1.2,
       "imagens": [
         "imagens/teen-titans-mvrfx174nx6p.jpg"
+      ],
+      "minis": [
+        "imagens/mini/teen-titans-mvrfx174nx6p.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -6681,6 +7305,9 @@
       "imagens": [
         "imagens/syphon-filter-dark-mirror-mvrfvsolqgco.jpg"
       ],
+      "minis": [
+        "imagens/mini/syphon-filter-dark-mirror-mvrfvsolqgco.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6706,6 +7333,9 @@
       "valor": 1.2,
       "imagens": [
         "imagens/superman-returns-mvrfuyx5co0s.jpg"
+      ],
+      "minis": [
+        "imagens/mini/superman-returns-mvrfuyx5co0s.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -6733,6 +7363,9 @@
       "imagens": [
         "imagens/ssx-3-mvrfu6fz7mml.jpg"
       ],
+      "minis": [
+        "imagens/mini/ssx-3-mvrfu6fz7mml.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6758,6 +7391,9 @@
       "valor": 1.5,
       "imagens": [
         "imagens/spongebob-squarepants-featuring-nicktoon-mvrftckqn1u5.jpg"
+      ],
+      "minis": [
+        "imagens/mini/spongebob-squarepants-featuring-nicktoon-mvrftckqn1u5.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -6785,6 +7421,9 @@
       "imagens": [
         "imagens/spider-man-2-mvrfsjt7hywi.jpg"
       ],
+      "minis": [
+        "imagens/mini/spider-man-2-mvrfsjt7hywi.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6810,6 +7449,9 @@
       "valor": 3.5,
       "imagens": [
         "imagens/soulcalibur-3-mvrfrof5uf29.jpg"
+      ],
+      "minis": [
+        "imagens/mini/soulcalibur-3-mvrfrof5uf29.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -6837,6 +7479,9 @@
       "imagens": [
         "imagens/sonic-unleashed-mvrfqplgeeo8.jpg"
       ],
+      "minis": [
+        "imagens/mini/sonic-unleashed-mvrfqplgeeo8.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6862,6 +7507,9 @@
       "valor": 3.1,
       "imagens": [
         "imagens/sonic-riders-zero-gravity-mvrfpzqqbgde.jpg"
+      ],
+      "minis": [
+        "imagens/mini/sonic-riders-zero-gravity-mvrfpzqqbgde.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -6891,6 +7539,9 @@
       "imagens": [
         "imagens/sonic-mega-collection-plus-mvrfp9i54suu.jpg"
       ],
+      "minis": [
+        "imagens/mini/sonic-mega-collection-plus-mvrfp9i54suu.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6916,6 +7567,9 @@
       "valor": 2.8,
       "imagens": [
         "imagens/shadow-of-the-colossus-mvrfoagnz7bi.jpg"
+      ],
+      "minis": [
+        "imagens/mini/shadow-of-the-colossus-mvrfoagnz7bi.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -6945,6 +7599,9 @@
       "imagens": [
         "imagens/scooby-doo-and-the-spooky-swamp-mvrfncvpxjjw.jpg"
       ],
+      "minis": [
+        "imagens/mini/scooby-doo-and-the-spooky-swamp-mvrfncvpxjjw.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -6970,6 +7627,9 @@
       "valor": 1.7,
       "imagens": [
         "imagens/saint-seiya-the-sanctuary-mvrfmlz0jpjr.jpg"
+      ],
+      "minis": [
+        "imagens/mini/saint-seiya-the-sanctuary-mvrfmlz0jpjr.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -6999,6 +7659,9 @@
       "imagens": [
         "imagens/resident-evil-4-mvrflskcecu4.jpg"
       ],
+      "minis": [
+        "imagens/mini/resident-evil-4-mvrflskcecu4.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -7026,6 +7689,9 @@
       "valor": 1.5,
       "imagens": [
         "imagens/ratatouille-mvrfkg7869tb.jpg"
+      ],
+      "minis": [
+        "imagens/mini/ratatouille-mvrfkg7869tb.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -7055,6 +7721,9 @@
       "imagens": [
         "imagens/prince-of-persia-warrior-within-mvrfjl763bdg.jpg"
       ],
+      "minis": [
+        "imagens/mini/prince-of-persia-warrior-within-mvrfjl763bdg.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7080,6 +7749,9 @@
       "valor": 1.6,
       "imagens": [
         "imagens/prince-of-persia-the-two-thrones-mvrfimjksyqz.jpg"
+      ],
+      "minis": [
+        "imagens/mini/prince-of-persia-the-two-thrones-mvrfimjksyqz.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -7107,6 +7779,9 @@
       "imagens": [
         "imagens/prince-of-persia-the-sands-of-time-mvrfhxoaj8n8.jpg"
       ],
+      "minis": [
+        "imagens/mini/prince-of-persia-the-sands-of-time-mvrfhxoaj8n8.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7132,6 +7807,9 @@
       "valor": 1.5,
       "imagens": [
         "imagens/pirates-of-the-caribbean-at-world-s-end-mvrfh5adshuj.jpg"
+      ],
+      "minis": [
+        "imagens/mini/pirates-of-the-caribbean-at-world-s-end-mvrfh5adshuj.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -7159,6 +7837,9 @@
       "imagens": [
         "imagens/peter-jackson-s-king-kong-mvrfg8vkx4r4.jpg"
       ],
+      "minis": [
+        "imagens/mini/peter-jackson-s-king-kong-mvrfg8vkx4r4.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7184,6 +7865,9 @@
       "valor": 2.2,
       "imagens": [
         "imagens/obscure-2-mvrffakamriq.jpg"
+      ],
+      "minis": [
+        "imagens/mini/obscure-2-mvrffakamriq.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -7213,6 +7897,9 @@
       "imagens": [
         "imagens/need-for-speed-underground-2-mvrfcy957dhs.jpg"
       ],
+      "minis": [
+        "imagens/mini/need-for-speed-underground-2-mvrfcy957dhs.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -7241,6 +7928,9 @@
       "imagens": [
         "imagens/need-for-speed-most-wanted-black-edition-mvrfbzkho18a.jpg"
       ],
+      "minis": [
+        "imagens/mini/need-for-speed-most-wanted-black-edition-mvrfbzkho18a.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -7268,6 +7958,9 @@
       "valor": 2,
       "imagens": [
         "imagens/naruto-shippuden-ultimate-ninja-5-mvrfapodpj1y.jpg"
+      ],
+      "minis": [
+        "imagens/mini/naruto-shippuden-ultimate-ninja-5-mvrfapodpj1y.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -7298,6 +7991,9 @@
       "imagens": [
         "imagens/mortal-kombat-shaolin-monks-mvrf9khwahwr.jpg"
       ],
+      "minis": [
+        "imagens/mini/mortal-kombat-shaolin-monks-mvrf9khwahwr.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7323,6 +8019,9 @@
       "valor": 2.7,
       "imagens": [
         "imagens/mortal-kombat-armageddon-mvrf8t4augte.jpg"
+      ],
+      "minis": [
+        "imagens/mini/mortal-kombat-armageddon-mvrf8t4augte.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -7350,6 +8049,9 @@
       "imagens": [
         "imagens/midnight-club-3-dub-edition-remix-mvrf7u5ngzpt.jpg"
       ],
+      "minis": [
+        "imagens/mini/midnight-club-3-dub-edition-remix-mvrf7u5ngzpt.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7376,6 +8078,9 @@
       "imagens": [
         "imagens/metal-slug-3-mvrf735lj9h2.jpg"
       ],
+      "minis": [
+        "imagens/mini/metal-slug-3-mvrf735lj9h2.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7401,6 +8106,9 @@
       "valor": 2.8,
       "imagens": [
         "imagens/mega-man-x8-mvrf6cjxxhym.jpg"
+      ],
+      "minis": [
+        "imagens/mini/mega-man-x8-mvrf6cjxxhym.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -7430,6 +8138,9 @@
       "imagens": [
         "imagens/max-payne-mvrf5j0woo77.jpg"
       ],
+      "minis": [
+        "imagens/mini/max-payne-mvrf5j0woo77.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -7458,6 +8169,9 @@
       "imagens": [
         "imagens/marvel-ultimate-alliance-mvrf4fza8tax.jpg"
       ],
+      "minis": [
+        "imagens/mini/marvel-ultimate-alliance-mvrf4fza8tax.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7483,6 +8197,9 @@
       "valor": 2.8,
       "imagens": [
         "imagens/manhunt-2-mvrf3c9cfbl2.jpg"
+      ],
+      "minis": [
+        "imagens/mini/manhunt-2-mvrf3c9cfbl2.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -7512,6 +8229,9 @@
       "imagens": [
         "imagens/fantastic-four-mvrf2fbv117z.jpg"
       ],
+      "minis": [
+        "imagens/mini/fantastic-four-mvrf2fbv117z.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7537,6 +8257,9 @@
       "valor": 2.3,
       "imagens": [
         "imagens/lego-batman-mvrezjqu5va9.jpg"
+      ],
+      "minis": [
+        "imagens/mini/lego-batman-mvrezjqu5va9.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -7564,6 +8287,9 @@
       "imagens": [
         "imagens/kung-fu-panda-mvreyjbtgu3a.jpg"
       ],
+      "minis": [
+        "imagens/mini/kung-fu-panda-mvreyjbtgu3a.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7589,6 +8315,9 @@
       "valor": 2.7,
       "imagens": [
         "imagens/justice-league-heroes-mvrexknpgezw.jpg"
+      ],
+      "minis": [
+        "imagens/mini/justice-league-heroes-mvrexknpgezw.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -7618,6 +8347,9 @@
       "imagens": [
         "imagens/just-cause-mvrewmctksrr.jpg"
       ],
+      "minis": [
+        "imagens/mini/just-cause-mvrewmctksrr.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7643,6 +8375,9 @@
       "valor": 3.2,
       "imagens": [
         "imagens/james-cameron-s-dark-angel-mvrevr7njuvy.jpg"
+      ],
+      "minis": [
+        "imagens/mini/james-cameron-s-dark-angel-mvrevr7njuvy.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -7670,6 +8405,9 @@
       "imagens": [
         "imagens/indiana-jones-and-the-emperor-s-tomb-mvreu54w48eo.jpg"
       ],
+      "minis": [
+        "imagens/mini/indiana-jones-and-the-emperor-s-tomb-mvreu54w48eo.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7696,6 +8434,9 @@
       "imagens": [
         "imagens/hot-wheels-beat-that-mvret4a6vyo9.jpg"
       ],
+      "minis": [
+        "imagens/mini/hot-wheels-beat-that-mvret4a6vyo9.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7721,6 +8462,9 @@
       "valor": 1.5,
       "imagens": [
         "imagens/hitman-2-silent-assassin-mvres5fso66a.jpg"
+      ],
+      "minis": [
+        "imagens/mini/hitman-2-silent-assassin-mvres5fso66a.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -7750,6 +8494,9 @@
       "imagens": [
         "imagens/harry-potter-and-the-half-blood-prince-mvrerdb5rlj0.jpg"
       ],
+      "minis": [
+        "imagens/mini/harry-potter-and-the-half-blood-prince-mvrerdb5rlj0.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7775,6 +8522,9 @@
       "valor": 0.5,
       "imagens": [
         "imagens/half-life-mvreqlvi46ju.jpg"
+      ],
+      "minis": [
+        "imagens/mini/half-life-mvreqlvi46ju.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -7804,6 +8554,9 @@
       "imagens": [
         "imagens/gun-mvreozid8cic.jpg"
       ],
+      "minis": [
+        "imagens/mini/gun-mvreozid8cic.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7829,6 +8582,9 @@
       "valor": 2.7,
       "imagens": [
         "imagens/guitar-hero-3-mvrenrygponk.jpg"
+      ],
+      "minis": [
+        "imagens/mini/guitar-hero-3-mvrenrygponk.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -7858,6 +8614,9 @@
       "imagens": [
         "imagens/gta-vice-city-stories-mvrem46t6tto.jpg"
       ],
+      "minis": [
+        "imagens/mini/gta-vice-city-stories-mvrem46t6tto.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -7883,6 +8642,9 @@
       "valor": 3.9,
       "imagens": [
         "imagens/gta-san-andreas-mvrel7nlllsl.jpg"
+      ],
+      "minis": [
+        "imagens/mini/gta-san-andreas-mvrel7nlllsl.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -7913,6 +8675,9 @@
       "imagens": [
         "imagens/god-of-war-2-mvrek7ag4b8y.jpg"
       ],
+      "minis": [
+        "imagens/mini/god-of-war-2-mvrek7ag4b8y.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -7940,6 +8705,9 @@
       "valor": 4.2,
       "imagens": [
         "imagens/god-of-war-mvrej5vzs3o6.jpg"
+      ],
+      "minis": [
+        "imagens/mini/god-of-war-mvrej5vzs3o6.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -7969,6 +8737,9 @@
       "imagens": [
         "imagens/ghost-rider-mvrei83rg8ys.jpg"
       ],
+      "minis": [
+        "imagens/mini/ghost-rider-mvrei83rg8ys.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -7997,6 +8768,9 @@
       "imagens": [
         "imagens/freekstyle-mvreh8urkv0o.jpg"
       ],
+      "minis": [
+        "imagens/mini/freekstyle-mvreh8urkv0o.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8022,6 +8796,9 @@
       "valor": 1,
       "imagens": [
         "imagens/fight-club-mvreg56r8zvg.jpg"
+      ],
+      "minis": [
+        "imagens/mini/fight-club-mvreg56r8zvg.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -8049,6 +8826,9 @@
       "imagens": [
         "imagens/enter-the-matrix-mvredwnox2ik.jpg"
       ],
+      "minis": [
+        "imagens/mini/enter-the-matrix-mvredwnox2ik.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8075,6 +8855,9 @@
       "imagens": [
         "imagens/driver-parallel-lines-mvred2tj3kkb.jpg"
       ],
+      "minis": [
+        "imagens/mini/driver-parallel-lines-mvred2tj3kkb.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8100,6 +8883,9 @@
       "valor": 4.3,
       "imagens": [
         "imagens/dragon-ball-z-budokai-tenkaichi-3-mvrec6y3c74h.jpg"
+      ],
+      "minis": [
+        "imagens/mini/dragon-ball-z-budokai-tenkaichi-3-mvrec6y3c74h.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -8129,6 +8915,9 @@
       "imagens": [
         "imagens/downhill-domination-mvreah0g3vyd.jpg"
       ],
+      "minis": [
+        "imagens/mini/downhill-domination-mvreah0g3vyd.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8154,6 +8943,9 @@
       "valor": 2.9,
       "imagens": [
         "imagens/devil-may-cry-3-dante-s-awakening-especi-mvre8iws0is0.jpg"
+      ],
+      "minis": [
+        "imagens/mini/devil-may-cry-3-dante-s-awakening-especi-mvre8iws0is0.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -8181,6 +8973,9 @@
       "imagens": [
         "imagens/def-jam-fight-for-ny-mvre7d0nvtof.jpg"
       ],
+      "minis": [
+        "imagens/mini/def-jam-fight-for-ny-mvre7d0nvtof.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8207,6 +9002,9 @@
       "imagens": [
         "imagens/darkwatch-mvre62vxm51u.jpg"
       ],
+      "minis": [
+        "imagens/mini/darkwatch-mvre62vxm51u.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8232,6 +9030,9 @@
       "valor": 0.5,
       "imagens": [
         "imagens/d-o-n-battle-stadium-mvre49uu84bd.jpg"
+      ],
+      "minis": [
+        "imagens/mini/d-o-n-battle-stadium-mvre49uu84bd.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -8261,6 +9062,9 @@
       "imagens": [
         "imagens/crash-nitro-kart-mvre2se85ckw.jpg"
       ],
+      "minis": [
+        "imagens/mini/crash-nitro-kart-mvre2se85ckw.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8286,6 +9090,9 @@
       "valor": 0.5,
       "imagens": [
         "imagens/crash-bandicoot-the-wrath-of-cortex-mvre1orknm5t.jpg"
+      ],
+      "minis": [
+        "imagens/mini/crash-bandicoot-the-wrath-of-cortex-mvre1orknm5t.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -8315,6 +9122,9 @@
       "imagens": [
         "imagens/cold-fear-mvre0s6pwt8u.jpg"
       ],
+      "minis": [
+        "imagens/mini/cold-fear-mvre0s6pwt8u.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8340,6 +9150,9 @@
       "valor": null,
       "imagens": [
         "imagens/castlevania-curse-of-darkness-mvrdzlx3o94i.jpg"
+      ],
+      "minis": [
+        "imagens/mini/castlevania-curse-of-darkness-mvrdzlx3o94i.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -8369,6 +9182,9 @@
       "imagens": [
         "imagens/carros-mvrdy6thy229.jpg"
       ],
+      "minis": [
+        "imagens/mini/carros-mvrdy6thy229.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -8397,6 +9213,9 @@
       "imagens": [
         "imagens/capcom-vs-snk-2-millionaire-fighting-200-mvrdwxw2j85r.jpg"
       ],
+      "minis": [
+        "imagens/mini/capcom-vs-snk-2-millionaire-fighting-200-mvrdwxw2j85r.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8423,6 +9242,9 @@
       "imagens": [
         "imagens/burnout-3-takedown-mvrdte8nysj7.jpg"
       ],
+      "minis": [
+        "imagens/mini/burnout-3-takedown-mvrdte8nysj7.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8448,6 +9270,9 @@
       "valor": 3.8,
       "imagens": [
         "imagens/bully-mvrdqteht9nq.jpg"
+      ],
+      "minis": [
+        "imagens/mini/bully-mvrdqteht9nq.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -8477,6 +9302,9 @@
       "imagens": [
         "imagens/blade-2-mvrdpct9m4ff.jpg"
       ],
+      "minis": [
+        "imagens/mini/blade-2-mvrdpct9m4ff.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8502,6 +9330,9 @@
       "valor": 2,
       "imagens": [
         "imagens/black-mvrdn58tiwzo.jpg"
+      ],
+      "minis": [
+        "imagens/mini/black-mvrdn58tiwzo.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -8531,6 +9362,9 @@
       "imagens": [
         "imagens/berserk-millennium-falcon-mvrdll7hpgdk.jpg"
       ],
+      "minis": [
+        "imagens/mini/berserk-millennium-falcon-mvrdll7hpgdk.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -8559,6 +9393,9 @@
       "imagens": [
         "imagens/ben-10-alien-force-vilgax-attacks-mvrdk7eylrx5.jpg"
       ],
+      "minis": [
+        "imagens/mini/ben-10-alien-force-vilgax-attacks-mvrdk7eylrx5.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8584,6 +9421,9 @@
       "valor": 3.5,
       "imagens": [
         "imagens/ben-10-protector-of-earth-mvrdi7e5e5q7.jpg"
+      ],
+      "minis": [
+        "imagens/mini/ben-10-protector-of-earth-mvrdi7e5e5q7.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -8613,6 +9453,9 @@
       "imagens": [
         "imagens/batman-begins-mvrdfz6o8t4z.jpg"
       ],
+      "minis": [
+        "imagens/mini/batman-begins-mvrdfz6o8t4z.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8638,6 +9481,9 @@
       "valor": 0.5,
       "imagens": [
         "imagens/agent-hugo-hula-holiday-mvrdea86uz64.jpg"
+      ],
+      "minis": [
+        "imagens/mini/agent-hugo-hula-holiday-mvrdea86uz64.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -8667,6 +9513,9 @@
       "imagens": [
         "imagens/50-cent-bulletproof-game-mvrdc1absqq7.jpg"
       ],
+      "minis": [
+        "imagens/mini/50-cent-bulletproof-game-mvrdc1absqq7.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8692,6 +9541,9 @@
       "valor": 2.2,
       "imagens": [
         "imagens/007-from-russia-with-love-mvrdaqhmq3u0.jpg"
+      ],
+      "minis": [
+        "imagens/mini/007-from-russia-with-love-mvrdaqhmq3u0.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -8719,6 +9571,9 @@
       "imagens": [
         "imagens/ultra-street-fighter-iv-mvr3shbudspk.jpg"
       ],
+      "minis": [
+        "imagens/mini/ultra-street-fighter-iv-mvr3shbudspk.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8744,6 +9599,9 @@
       "valor": 17,
       "imagens": [
         "imagens/tomb-raider-mvr3rcr4nm3n.jpg"
+      ],
+      "minis": [
+        "imagens/mini/tomb-raider-mvr3rcr4nm3n.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -8771,6 +9629,9 @@
       "imagens": [
         "imagens/resident-evil-6-mvr3onlu024s.jpg"
       ],
+      "minis": [
+        "imagens/mini/resident-evil-6-mvr3onlu024s.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8796,6 +9657,9 @@
       "valor": 12,
       "imagens": [
         "imagens/red-dead-redemption-mvr3nf4r8rn4.jpg"
+      ],
+      "minis": [
+        "imagens/mini/red-dead-redemption-mvr3nf4r8rn4.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -8823,6 +9687,9 @@
       "imagens": [
         "imagens/pes-2018-pro-evolution-soccer-mvr3mbvfunlz.jpg"
       ],
+      "minis": [
+        "imagens/mini/pes-2018-pro-evolution-soccer-mvr3mbvfunlz.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8848,6 +9715,9 @@
       "valor": 11,
       "imagens": [
         "imagens/naruto-ultimate-ninja-storm-3-mvr3l2wyqqja.jpg"
+      ],
+      "minis": [
+        "imagens/mini/naruto-ultimate-ninja-storm-3-mvr3l2wyqqja.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -8875,6 +9745,9 @@
       "imagens": [
         "imagens/mortal-kombat-mvr3iro71qqc.jpg"
       ],
+      "minis": [
+        "imagens/mini/mortal-kombat-mvr3iro71qqc.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8900,6 +9773,9 @@
       "valor": 1,
       "imagens": [
         "imagens/minecraft-mvr3gktbolwu.jpg"
+      ],
+      "minis": [
+        "imagens/mini/minecraft-mvr3gktbolwu.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -8927,6 +9803,9 @@
       "imagens": [
         "imagens/max-payne-3-mvr3ew4dfrc7.jpg"
       ],
+      "minis": [
+        "imagens/mini/max-payne-3-mvr3ew4dfrc7.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -8952,6 +9831,9 @@
       "valor": 8,
       "imagens": [
         "imagens/lego-star-wars-the-complete-saga-mvr3dha5io0c.jpg"
+      ],
+      "minis": [
+        "imagens/mini/lego-star-wars-the-complete-saga-mvr3dha5io0c.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -8979,6 +9861,9 @@
       "imagens": [
         "imagens/lego-harry-potter-mvr3c831ahrx.jpg"
       ],
+      "minis": [
+        "imagens/mini/lego-harry-potter-mvr3c831ahrx.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9004,6 +9889,9 @@
       "valor": 28,
       "imagens": [
         "imagens/lego-batman-3-beyond-gotham-mvr3b0sheh3v.jpg"
+      ],
+      "minis": [
+        "imagens/mini/lego-batman-3-beyond-gotham-mvr3b0sheh3v.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9031,6 +9919,9 @@
       "imagens": [
         "imagens/the-last-of-us-mvr39ow1ylso.jpg"
       ],
+      "minis": [
+        "imagens/mini/the-last-of-us-mvr39ow1ylso.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9056,6 +9947,9 @@
       "valor": 21,
       "imagens": [
         "imagens/grand-theft-auto-v-mvr37zr3ha9m.jpg"
+      ],
+      "minis": [
+        "imagens/mini/grand-theft-auto-v-mvr37zr3ha9m.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9083,6 +9977,9 @@
       "imagens": [
         "imagens/grand-theft-auto-san-andreas-mvr36nd7m5v1.jpg"
       ],
+      "minis": [
+        "imagens/mini/grand-theft-auto-san-andreas-mvr36nd7m5v1.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9108,6 +10005,9 @@
       "valor": 48,
       "imagens": [
         "imagens/god-of-war-iii-mvr357qffm3r.jpg"
+      ],
+      "minis": [
+        "imagens/mini/god-of-war-iii-mvr357qffm3r.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9135,6 +10035,9 @@
       "imagens": [
         "imagens/god-of-war-collection-1-2-mvr343q19tkj.jpg"
       ],
+      "minis": [
+        "imagens/mini/god-of-war-collection-1-2-mvr343q19tkj.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9160,6 +10063,9 @@
       "valor": 42,
       "imagens": [
         "imagens/god-of-war-ascension-mvr328ajwxjt.jpg"
+      ],
+      "minis": [
+        "imagens/mini/god-of-war-ascension-mvr328ajwxjt.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9187,6 +10093,9 @@
       "imagens": [
         "imagens/fifa-19-mvr2zg3rfzmw.jpg"
       ],
+      "minis": [
+        "imagens/mini/fifa-19-mvr2zg3rfzmw.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9212,6 +10121,9 @@
       "valor": 10,
       "imagens": [
         "imagens/devil-may-cry-4-mvr2y32dbh1y.jpg"
+      ],
+      "minis": [
+        "imagens/mini/devil-may-cry-4-mvr2y32dbh1y.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9239,6 +10151,9 @@
       "imagens": [
         "imagens/assassin-s-creed-iv-black-flag-mvr2wy6bzxzw.jpg"
       ],
+      "minis": [
+        "imagens/mini/assassin-s-creed-iv-black-flag-mvr2wy6bzxzw.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9264,6 +10179,9 @@
       "valor": 9,
       "imagens": [
         "imagens/amazing-spider-man-2-mvr2uwatab4y.jpg"
+      ],
+      "minis": [
+        "imagens/mini/amazing-spider-man-2-mvr2uwatab4y.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9291,6 +10209,9 @@
       "imagens": [
         "imagens/need-for-speed-underground-2-mvr2s78bvbg3.jpg"
       ],
+      "minis": [
+        "imagens/mini/need-for-speed-underground-2-mvr2s78bvbg3.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9316,6 +10237,9 @@
       "valor": 5,
       "imagens": [
         "imagens/mortal-kombat-shaolin-monks-mvr2rchbxarc.jpg"
+      ],
+      "minis": [
+        "imagens/mini/mortal-kombat-shaolin-monks-mvr2rchbxarc.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9343,6 +10267,9 @@
       "imagens": [
         "imagens/midnight-club-3-dub-edition-remix-mvr2qb33keqx.jpg"
       ],
+      "minis": [
+        "imagens/mini/midnight-club-3-dub-edition-remix-mvr2qb33keqx.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9368,6 +10295,9 @@
       "valor": 1.5,
       "imagens": [
         "imagens/medal-of-honor-vanguard-mvr2pahdxj06.jpg"
+      ],
+      "minis": [
+        "imagens/mini/medal-of-honor-vanguard-mvr2pahdxj06.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9395,6 +10325,9 @@
       "imagens": [
         "imagens/guitar-hero-mvr2nyktej1m.jpg"
       ],
+      "minis": [
+        "imagens/mini/guitar-hero-mvr2nyktej1m.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9420,6 +10353,9 @@
       "valor": 4.5,
       "imagens": [
         "imagens/driv3r-mvr2lpbbqt0r.jpg"
+      ],
+      "minis": [
+        "imagens/mini/driv3r-mvr2lpbbqt0r.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9447,6 +10383,9 @@
       "imagens": [
         "imagens/downhill-domination-mvr2hsorgdau.jpg"
       ],
+      "minis": [
+        "imagens/mini/downhill-domination-mvr2hsorgdau.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9472,6 +10411,9 @@
       "valor": 3.5,
       "imagens": [
         "imagens/crash-nitro-kart-mvr2g9cfe0mp.jpg"
+      ],
+      "minis": [
+        "imagens/mini/crash-nitro-kart-mvr2g9cfe0mp.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9499,6 +10441,9 @@
       "imagens": [
         "imagens/call-of-duty-world-at-war-final-fronts-mvr2f3fzmbx0.jpg"
       ],
+      "minis": [
+        "imagens/mini/call-of-duty-world-at-war-final-fronts-mvr2f3fzmbx0.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9524,6 +10469,9 @@
       "valor": 5,
       "imagens": [
         "imagens/burnout-mvr2dmyxbw0u.jpg"
+      ],
+      "minis": [
+        "imagens/mini/burnout-mvr2dmyxbw0u.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9551,6 +10499,9 @@
       "imagens": [
         "imagens/bully-mvr2c9iv1ck7.jpg"
       ],
+      "minis": [
+        "imagens/mini/bully-mvr2c9iv1ck7.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9577,6 +10528,9 @@
       "imagens": [
         "imagens/black-mvr2agwbceem.jpg"
       ],
+      "minis": [
+        "imagens/mini/black-mvr2agwbceem.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9602,6 +10556,9 @@
       "valor": 1,
       "imagens": [
         "imagens/yu-gi-oh-forbidden-memories-mvr284nnrezz.jpg"
+      ],
+      "minis": [
+        "imagens/mini/yu-gi-oh-forbidden-memories-mvr284nnrezz.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -9631,6 +10588,9 @@
       "imagens": [
         "imagens/woody-woodpecker-racing-mvr26rvs4ihg.jpg"
       ],
+      "minis": [
+        "imagens/mini/woody-woodpecker-racing-mvr26rvs4ihg.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -9659,6 +10619,9 @@
       "imagens": [
         "imagens/toy-story-2-buzz-lightyear-to-the-rescue-mvr25cbt76z1.jpg"
       ],
+      "minis": [
+        "imagens/mini/toy-story-2-buzz-lightyear-to-the-rescue-mvr25cbt76z1.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9684,6 +10647,9 @@
       "valor": 0.5,
       "imagens": [
         "imagens/the-king-of-fighters-98-mvr23l7hok3j.jpg"
+      ],
+      "minis": [
+        "imagens/mini/the-king-of-fighters-98-mvr23l7hok3j.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -9713,6 +10679,9 @@
       "imagens": [
         "imagens/spider-man-mvr204d51xm4.jpg"
       ],
+      "minis": [
+        "imagens/mini/spider-man-mvr204d51xm4.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -9740,6 +10709,9 @@
       "valor": 1.5,
       "imagens": [
         "imagens/silent-hill-mvr1y23zukyr.jpg"
+      ],
+      "minis": [
+        "imagens/mini/silent-hill-mvr1y23zukyr.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -9769,6 +10741,9 @@
       "imagens": [
         "imagens/resident-evil-2-mvr1uuklg1gc.jpg"
       ],
+      "minis": [
+        "imagens/mini/resident-evil-2-mvr1uuklg1gc.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -9796,6 +10771,9 @@
       "valor": 1.5,
       "imagens": [
         "imagens/medal-of-honor-mvr1rl1n427l.jpg"
+      ],
+      "minis": [
+        "imagens/mini/medal-of-honor-mvr1rl1n427l.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -9825,6 +10803,9 @@
       "imagens": [
         "imagens/jackie-chan-stuntmaster-mvr1q97jlbr3.jpg"
       ],
+      "minis": [
+        "imagens/mini/jackie-chan-stuntmaster-mvr1q97jlbr3.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -9852,6 +10833,9 @@
       "valor": 1.5,
       "imagens": [
         "imagens/gran-turismo-mvr1nwbnv2kw.jpg"
+      ],
+      "minis": [
+        "imagens/mini/gran-turismo-mvr1nwbnv2kw.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -9881,6 +10865,9 @@
       "imagens": [
         "imagens/crash-bandicoot-2-mvr1k9fzn6h9.jpg"
       ],
+      "minis": [
+        "imagens/mini/crash-bandicoot-2-mvr1k9fzn6h9.webp"
+      ],
       "disponivel": true,
       "etiquetas": [
         "mvr1up8br6dt"
@@ -9908,6 +10895,9 @@
       "valor": 1,
       "imagens": [
         "imagens/tekken-3-mvr1iesr7evc.jpg"
+      ],
+      "minis": [
+        "imagens/mini/tekken-3-mvr1iesr7evc.webp"
       ],
       "disponivel": true,
       "etiquetas": [
@@ -9937,6 +10927,9 @@
       "imagens": [
         "imagens/the-simpsons-hit-and-run-mvqtqq6dglg8.jpg"
       ],
+      "minis": [
+        "imagens/mini/the-simpsons-hit-and-run-mvqtqq6dglg8.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -9963,6 +10956,9 @@
       "valor": 5,
       "imagens": [
         "imagens/need-for-speed-underground-2-mvqtp8jn6exr.jpg"
+      ],
+      "minis": [
+        "imagens/mini/need-for-speed-underground-2-mvqtp8jn6exr.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -9991,6 +10987,9 @@
       "imagens": [
         "imagens/need-for-speed-most-wanted-mvqtnwm32kof.jpg"
       ],
+      "minis": [
+        "imagens/mini/need-for-speed-most-wanted-mvqtnwm32kof.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10016,6 +11015,9 @@
       "valor": 3,
       "imagens": [
         "imagens/naruto-shippuden-ultimate-ninja-5-mvqtmcibz6fo.jpg"
+      ],
+      "minis": [
+        "imagens/mini/naruto-shippuden-ultimate-ninja-5-mvqtmcibz6fo.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10044,6 +11046,9 @@
       "imagens": [
         "imagens/mortal-kombat-shaolin-monks-mvqtkp4nuu0r.jpg"
       ],
+      "minis": [
+        "imagens/mini/mortal-kombat-shaolin-monks-mvqtkp4nuu0r.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10070,6 +11075,9 @@
       "valor": 5,
       "imagens": [
         "imagens/midnight-club-3-dub-edition-remix-mvqtj64r1ord.jpg"
+      ],
+      "minis": [
+        "imagens/mini/midnight-club-3-dub-edition-remix-mvqtj64r1ord.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10098,6 +11106,9 @@
       "imagens": [
         "imagens/fifa-street-mvqthpnbdfew.jpg"
       ],
+      "minis": [
+        "imagens/mini/fifa-street-mvqthpnbdfew.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10123,6 +11134,9 @@
       "valor": 4,
       "imagens": [
         "imagens/dragon-ball-z-budokai-tenkaichi-3-mvqtgaabz32i.jpg"
+      ],
+      "minis": [
+        "imagens/mini/dragon-ball-z-budokai-tenkaichi-3-mvqtgaabz32i.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10151,6 +11165,9 @@
       "imagens": [
         "imagens/def-jam-fight-for-new-york-mvqtczefqctx.jpg"
       ],
+      "minis": [
+        "imagens/mini/def-jam-fight-for-new-york-mvqtczefqctx.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10176,6 +11193,9 @@
       "valor": 4,
       "imagens": [
         "imagens/crash-mind-over-mutant-mvqtayday66e.jpg"
+      ],
+      "minis": [
+        "imagens/mini/crash-mind-over-mutant-mvqtayday66e.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10204,6 +11224,9 @@
       "imagens": [
         "imagens/bully-mvqt9oc8trj0.jpg"
       ],
+      "minis": [
+        "imagens/mini/bully-mvqt9oc8trj0.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10229,6 +11252,9 @@
       "valor": 1,
       "imagens": [
         "imagens/battle-stadium-d-o-n-mvqt8f63ei5o.jpg"
+      ],
+      "minis": [
+        "imagens/mini/battle-stadium-d-o-n-mvqt8f63ei5o.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10257,6 +11283,9 @@
       "imagens": [
         "imagens/the-last-of-us-remastered-mvqt6glw0jlf.jpg"
       ],
+      "minis": [
+        "imagens/mini/the-last-of-us-remastered-mvqt6glw0jlf.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10282,6 +11311,9 @@
       "valor": 110,
       "imagens": [
         "imagens/the-last-of-us-part-2-mvqt54qi7hjq.jpg"
+      ],
+      "minis": [
+        "imagens/mini/the-last-of-us-part-2-mvqt54qi7hjq.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10310,6 +11342,9 @@
       "imagens": [
         "imagens/super-bomberman-r-2-mvqt3qifnimf.jpg"
       ],
+      "minis": [
+        "imagens/mini/super-bomberman-r-2-mvqt3qifnimf.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10335,6 +11370,9 @@
       "valor": 1,
       "imagens": [
         "imagens/snk-vs-capcom-svc-chaos-mvqt2glqvxa8.jpg"
+      ],
+      "minis": [
+        "imagens/mini/snk-vs-capcom-svc-chaos-mvqt2glqvxa8.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10362,6 +11400,9 @@
       "imagens": [
         "imagens/red-dead-redemption-2-mvqt0dr1ubvw.jpg"
       ],
+      "minis": [
+        "imagens/mini/red-dead-redemption-2-mvqt0dr1ubvw.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10388,6 +11429,9 @@
       "imagens": [
         "imagens/multiversus-mvqsyl51swal.jpg"
       ],
+      "minis": [
+        "imagens/mini/multiversus-mvqsyl51swal.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10413,6 +11457,9 @@
       "valor": 4,
       "imagens": [
         "imagens/minecraft-dungeons-mvqsx5sab1nu.jpg"
+      ],
+      "minis": [
+        "imagens/mini/minecraft-dungeons-mvqsx5sab1nu.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10441,6 +11488,9 @@
       "imagens": [
         "imagens/marvels-spider-man-mvqsvguz47ic.jpg"
       ],
+      "minis": [
+        "imagens/mini/marvels-spider-man-mvqsvguz47ic.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10467,6 +11517,9 @@
       "valor": 22,
       "imagens": [
         "imagens/lego-marvel-super-heroes-2-mvqstc8lffsj.jpg"
+      ],
+      "minis": [
+        "imagens/mini/lego-marvel-super-heroes-2-mvqstc8lffsj.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10495,6 +11548,9 @@
       "imagens": [
         "imagens/it-takes-two-mvqsqebp9hsv.jpg"
       ],
+      "minis": [
+        "imagens/mini/it-takes-two-mvqsqebp9hsv.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10520,6 +11576,9 @@
       "valor": 4,
       "imagens": [
         "imagens/hollow-knight-silksong-mvqsoujad0fr.jpg"
+      ],
+      "minis": [
+        "imagens/mini/hollow-knight-silksong-mvqsoujad0fr.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10548,6 +11607,9 @@
       "imagens": [
         "imagens/gta-v-mvqsmzjj326u.jpg"
       ],
+      "minis": [
+        "imagens/mini/gta-v-mvqsmzjj326u.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10574,6 +11636,9 @@
       "valor": 55,
       "imagens": [
         "imagens/ghost-of-tsushima-mvqskx063ask.jpg"
+      ],
+      "minis": [
+        "imagens/mini/ghost-of-tsushima-mvqskx063ask.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10602,6 +11667,9 @@
       "imagens": [
         "imagens/far-cry-3-classic-edition-mvqsipnkqeoe.jpg"
       ],
+      "minis": [
+        "imagens/mini/far-cry-3-classic-edition-mvqsipnkqeoe.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10628,6 +11696,9 @@
       "imagens": [
         "imagens/efootball-pes-2027-mvqsgsuxg4l3.jpg"
       ],
+      "minis": [
+        "imagens/mini/efootball-pes-2027-mvqsgsuxg4l3.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10653,6 +11724,9 @@
       "valor": 25,
       "imagens": [
         "imagens/demon-slayer-2-mvqs8tsufbpp.jpg"
+      ],
+      "minis": [
+        "imagens/mini/demon-slayer-2-mvqs8tsufbpp.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10681,6 +11755,9 @@
       "imagens": [
         "imagens/cuphead-mvqs5p91fi6k.jpg"
       ],
+      "minis": [
+        "imagens/mini/cuphead-mvqs5p91fi6k.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10706,6 +11783,9 @@
       "valor": 2,
       "imagens": [
         "imagens/adventure-time-pirates-of-the-enchiridio-mvqrv694ogi8.jpg"
+      ],
+      "minis": [
+        "imagens/mini/adventure-time-pirates-of-the-enchiridio-mvqrv694ogi8.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10733,6 +11813,9 @@
       "imagens": [
         "imagens/assassin-s-creed-valhalla-mvqrronyuu72.jpg"
       ],
+      "minis": [
+        "imagens/mini/assassin-s-creed-valhalla-mvqrronyuu72.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10758,6 +11841,9 @@
       "valor": 50,
       "imagens": [
         "imagens/spider-man-miles-morales-mvpz9ecjma1c.jpg"
+      ],
+      "minis": [
+        "imagens/mini/spider-man-miles-morales-mvpz9ecjma1c.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10785,6 +11871,9 @@
       "imagens": [
         "imagens/need-for-speed-payback-mvpz8285g5eg.jpg"
       ],
+      "minis": [
+        "imagens/mini/need-for-speed-payback-mvpz8285g5eg.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10810,6 +11899,9 @@
       "valor": 65,
       "imagens": [
         "imagens/uncharted-4-mvpz6o4s59xf.jpg"
+      ],
+      "minis": [
+        "imagens/mini/uncharted-4-mvpz6o4s59xf.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10837,6 +11929,9 @@
       "imagens": [
         "imagens/god-of-war-2018-mvpz336xfn4b.jpg"
       ],
+      "minis": [
+        "imagens/mini/god-of-war-2018-mvpz336xfn4b.webp"
+      ],
       "disponivel": true,
       "etiquetas": [],
       "extras": [],
@@ -10862,6 +11957,9 @@
       "valor": 50,
       "imagens": [
         "imagens/fifa-27-mvpvf2h5gakz.jpg"
+      ],
+      "minis": [
+        "imagens/mini/fifa-27-mvpvf2h5gakz.webp"
       ],
       "disponivel": true,
       "etiquetas": [],
@@ -10890,6 +11988,11 @@
         "imagens/ps4-slim-desbloqueado-mvrgps4dj6ge.jpg",
         "imagens/ps4-slim-desbloqueado-mvrgptix9eva.jpg",
         "imagens/ps4-slim-desbloqueado-mvrgpund7ns9.jpg"
+      ],
+      "minis": [
+        "imagens/mini/ps4-slim-desbloqueado-mvrgps4dj6ge.webp",
+        "imagens/mini/ps4-slim-desbloqueado-mvrgptix9eva.webp",
+        "imagens/mini/ps4-slim-desbloqueado-mvrgpund7ns9.webp"
       ],
       "disponivel": true,
       "etiquetas": [
