@@ -6182,6 +6182,7 @@
       "servicos": [],
       "servicosRotulo": "",
       "cod": "12",
+      "vendidos": 1,
       "outras": [],
       "formato": "4/5",
       "proporcao": "",
@@ -7279,6 +7280,7 @@
       "servicos": [],
       "servicosRotulo": "",
       "cod": "27",
+      "vendidos": 1,
       "outras": [],
       "formato": "",
       "proporcao": "",
@@ -7893,6 +7895,7 @@
       "servicos": [],
       "servicosRotulo": "",
       "cod": "2u",
+      "vendidos": 1,
       "outras": [],
       "formato": "",
       "proporcao": "",
@@ -9926,12 +9929,11 @@
     },
     {
       "id": "mvqtqrnhcxvv",
-      "cod": "4z",
       "nome": "The Simpsons Hit and Run",
+      "descricao": "A sinopse de The Simpsons: Hit & Run gira em torno de estranhos acontecimentos em Springfield — como vans pretas misteriosas, câmeras em formato de vespa e círculos nas plantações — que a família Simpson e Apu descobrem ser um plano maligno de controle mental.\n\nPrincipais pontos da história:\n\n• A Conspiração: Os alienígenas Kang e Kodos estão distribuindo uma nova versão viciante e ensandecedora do refrigerante Buzz Cola para deixar os moradores loucos.\n• O Reality Show Espacial: O objetivo dos alienígenas é gravar o caos e a destruição em massa em Springfield para transmitir em um reality show intergaláctico.\n• O Plano de Defesa:",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 2,
-      "descricao": "A sinopse de The Simpsons: Hit & Run gira em torno de estranhos acontecimentos em Springfield — como vans pretas misteriosas, câmeras em formato de vespa e círculos nas plantações — que a família Simpson e Apu descobrem ser um plano maligno de controle mental.\n\nPrincipais pontos da história:\n\n• A Conspiração: Os alienígenas Kang e Kodos estão distribuindo uma nova versão viciante e ensandecedora do refrigerante Buzz Cola para deixar os moradores loucos.\n• O Reality Show Espacial: O objetivo dos alienígenas é gravar o caos e a destruição em massa em Springfield para transmitir em um reality show intergaláctico.\n• O Plano de Defesa:",
       "imagens": [
         "imagens/the-simpsons-hit-and-run-mvqtqq6dglg8.jpg"
       ],
@@ -9941,23 +9943,24 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "4z",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "859/1200",
       "ajuste": "contain",
-      "proporcao": "859/1200"
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvqtpa08a3bn",
-      "cod": "50",
       "nome": "Need For Speed Underground 2",
+      "descricao": "A sinopse de Need for Speed: Underground 2 gira em torno de uma nova jornada no mundo das corridas de rua ilegais.\n• O ponto de partida: O protagonista (que é o mesmo vencedor do primeiro jogo) chega à cidade de Bayview após receber uma mensagem de boas-vindas de Samantha, mas logo sofre uma emboscada e perde o controle do seu carro para uma figura misteriosa ligada a Caleb Reece.\n• A aliada: Sem carro e sem reputação na nova cidade, o jogador conhece Rachel Teller (dublada por Brooke Burke), que lhe empresta um carro básico e serve como guia, apresentando as pistas, as oficinas de tuning e o cenário local.\n• O objetivo: O jogador precisa vencer as disputas de rua, ganhar respeito (rep), assinar com patrocinadores e tunar seus veículos para subir na hierarquia do underground, culminando no confronto direto contra Caleb e sua gangue para dominar a cidade de Bayview.\n• Formato: A história é narrada em estilo de quadrinhos (histórias em quadrinhos/cutscenes estilizadas) e mensagens de texto/e-mails recebidos no celular do piloto.",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 5,
-      "descricao": "A sinopse de Need for Speed: Underground 2 gira em torno de uma nova jornada no mundo das corridas de rua ilegais.\n• O ponto de partida: O protagonista (que é o mesmo vencedor do primeiro jogo) chega à cidade de Bayview após receber uma mensagem de boas-vindas de Samantha, mas logo sofre uma emboscada e perde o controle do seu carro para uma figura misteriosa ligada a Caleb Reece.\n• A aliada: Sem carro e sem reputação na nova cidade, o jogador conhece Rachel Teller (dublada por Brooke Burke), que lhe empresta um carro básico e serve como guia, apresentando as pistas, as oficinas de tuning e o cenário local.\n• O objetivo: O jogador precisa vencer as disputas de rua, ganhar respeito (rep), assinar com patrocinadores e tunar seus veículos para subir na hierarquia do underground, culminando no confronto direto contra Caleb e sua gangue para dominar a cidade de Bayview.\n• Formato: A história é narrada em estilo de quadrinhos (histórias em quadrinhos/cutscenes estilizadas) e mensagens de texto/e-mails recebidos no celular do piloto.",
       "imagens": [
         "imagens/need-for-speed-underground-2-mvqtp8jn6exr.jpg"
       ],
@@ -9967,23 +9970,24 @@
       "tipos": [
         "Corrida"
       ],
-      "tipo": "Corrida",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "50",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "750/1070",
       "ajuste": "contain",
-      "proporcao": "750/1070"
+      "armazenamentos": [],
+      "tipo": "Corrida"
     },
     {
       "id": "mvqtny5dm3sx",
-      "cod": "51",
       "nome": "Need For Speed Most Wanted",
+      "descricao": "A sinopse de Need for Speed: Most Wanted (2005) gira em torno de um piloto de rua que chega à cidade fictícia de Rockport dirigindo uma valiosa BMW M3 GTR.\n\nA História\n\n• A Traição: Durante uma corrida, o protagonista é sabotado por um rival arrogante chamado Razor, que sabota o motor da BMW e a rouba.\n• A Lista Negra (Blacklist): Com o carro e o respeito da cidade, Razor assume o posto número 1 da \"Blacklist\" (a famosa lista dos corredores mais procurados e respeitados de Rockport).\n• A Missão: Sem carro e detido brevemente pela polícia, o protagonista é solto por falta de provas com a ajuda de uma misteriosa mulher chamada Mia. Ela o orienta a conseguir um carro novo, vencer os corredores da Blacklist um por um e recuperar a sua BMW M3 GTR das mãos de Razor.\n• A Perseguição: Além de vencer os rivais nas pistas, o jogador precisa acumular \"reputação\" enfrentando intensas perseguições policiais comandadas pelo implacável Sargento Cross.\n• O Clímax: Após derrotar Razor e recuperar o seu carro, o protagonista vira o alvo máximo da polícia de Rockport, escapando em um salto espetacular de uma ponte antes de sumir do mapa.",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 6,
-      "descricao": "A sinopse de Need for Speed: Most Wanted (2005) gira em torno de um piloto de rua que chega à cidade fictícia de Rockport dirigindo uma valiosa BMW M3 GTR.\n\nA História\n\n• A Traição: Durante uma corrida, o protagonista é sabotado por um rival arrogante chamado Razor, que sabota o motor da BMW e a rouba.\n• A Lista Negra (Blacklist): Com o carro e o respeito da cidade, Razor assume o posto número 1 da \"Blacklist\" (a famosa lista dos corredores mais procurados e respeitados de Rockport).\n• A Missão: Sem carro e detido brevemente pela polícia, o protagonista é solto por falta de provas com a ajuda de uma misteriosa mulher chamada Mia. Ela o orienta a conseguir um carro novo, vencer os corredores da Blacklist um por um e recuperar a sua BMW M3 GTR das mãos de Razor.\n• A Perseguição: Além de vencer os rivais nas pistas, o jogador precisa acumular \"reputação\" enfrentando intensas perseguições policiais comandadas pelo implacável Sargento Cross.\n• O Clímax: Após derrotar Razor e recuperar o seu carro, o protagonista vira o alvo máximo da polícia de Rockport, escapando em um salto espetacular de uma ponte antes de sumir do mapa.",
       "imagens": [
         "imagens/need-for-speed-most-wanted-mvqtnwm32kof.jpg"
       ],
@@ -9993,23 +9997,23 @@
       "tipos": [
         "Corrida"
       ],
-      "tipo": "Corrida",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "51",
       "outras": [],
       "formato": "auto",
+      "proporcao": "800/1132",
       "ajuste": "contain",
-      "proporcao": "800/1132"
+      "armazenamentos": [],
+      "tipo": "Corrida"
     },
     {
       "id": "mvqtme1586cw",
-      "cod": "52",
       "nome": "Naruto Shippuden - Ultimate Ninja 5",
+      "descricao": "O jogo Naruto Shippuden: Ultimate Ninja 5 (lançado originalmente em 2007) adapta a história do anime desde o retorno de Naruto Uzumaki à Vila da Folha (Konoha) até o confronto com Sasuke Uchiha no esconderijo de Orochimaru.\n\nPontos principais da sinopse e enredo:\n\n• Ponto de Partida: O jogo começa com o retorno de Naruto a Konoha após dois anos e meio de treinamento intenso com Jiraiya.\n• Arcos Abordados: O modo história é dividido em atos principais que cobrem:\n\t• A Missão de Resgate do Kazekage (salvar Gaara das garras da Akatsuki).\n\t• A Missão de Reconhecimento da Ponte Tenchi / Arco de Sasuke e Sai (a busca por informações sobre Sasuke).\n• Desenvolvimento: Naruto, Sakura e novos aliados (como Sai e o capitão Yamato) enfrentam membros da organização Akatsuki, reencontram Sasuke em circunstâncias dramáticas e tentam trazê-lo de volta.\n• Estrutura: A campanha no \"Master Mode\" mistura elementos de exploração estilo RPG linear com batalhas clássicas de arena.",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 3,
-      "descricao": "O jogo Naruto Shippuden: Ultimate Ninja 5 (lançado originalmente em 2007) adapta a história do anime desde o retorno de Naruto Uzumaki à Vila da Folha (Konoha) até o confronto com Sasuke Uchiha no esconderijo de Orochimaru.\n\nPontos principais da sinopse e enredo:\n\n• Ponto de Partida: O jogo começa com o retorno de Naruto a Konoha após dois anos e meio de treinamento intenso com Jiraiya.\n• Arcos Abordados: O modo história é dividido em atos principais que cobrem:\n\t• A Missão de Resgate do Kazekage (salvar Gaara das garras da Akatsuki).\n\t• A Missão de Reconhecimento da Ponte Tenchi / Arco de Sasuke e Sai (a busca por informações sobre Sasuke).\n• Desenvolvimento: Naruto, Sakura e novos aliados (como Sai e o capitão Yamato) enfrentam membros da organização Akatsuki, reencontram Sasuke em circunstâncias dramáticas e tentam trazê-lo de volta.\n• Estrutura: A campanha no \"Master Mode\" mistura elementos de exploração estilo RPG linear com batalhas clássicas de arena.",
       "imagens": [
         "imagens/naruto-shippuden-ultimate-ninja-5-mvqtmcibz6fo.jpg"
       ],
@@ -10019,23 +10023,24 @@
       "tipos": [
         "Luta"
       ],
-      "tipo": "Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "52",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "873/1200",
       "ajuste": "contain",
-      "proporcao": "873/1200"
+      "armazenamentos": [],
+      "tipo": "Luta"
     },
     {
       "id": "mvqtkqmmfvcn",
-      "cod": "53",
       "nome": "Mortal Kombat Shaolin Monks",
+      "descricao": "Mortal Kombat: Shaolin Monks é um jogo de ação e aventura (beat 'em up) lançado em 2005 para PlayStation 2 e Xbox pela Midway.\n\nSinopse\n\nA história reconta e expande os acontecimentos de Mortal Kombat II, começando logo após o final do primeiro torneio:\n• O Começo: Após ser derrotado por Liu Kang no torneio da Ilha de Shang Tsung, o feiticeiro Shang Tsung, o príncipe Goro e outros vilões escapam para a Dimensão Exterior (Outworld).\n• A Missão: Os monges guerreiros e protagonistas Liu Kang e Kung Lao — membros da Ordem da Luz — decidem perseguir os inimigos para impedir um novo plano maquiavélico.\n• A Jornada: A dupla precisa viajar por diversos cenários hostis da Outworld e de Earthrealm (como a Floresta Viva e o Templo do Fogo), enfrentando hordas de tarkatans, ninjas e chefes icônicos (como Reptile, Baraka e Goro) para frustrar Shang Tsung e, no clímax, derrotar o imperador Shao Kahn e salvar os reinos.",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 5,
-      "descricao": "Mortal Kombat: Shaolin Monks é um jogo de ação e aventura (beat 'em up) lançado em 2005 para PlayStation 2 e Xbox pela Midway.\n\nSinopse\n\nA história reconta e expande os acontecimentos de Mortal Kombat II, começando logo após o final do primeiro torneio:\n• O Começo: Após ser derrotado por Liu Kang no torneio da Ilha de Shang Tsung, o feiticeiro Shang Tsung, o príncipe Goro e outros vilões escapam para a Dimensão Exterior (Outworld).\n• A Missão: Os monges guerreiros e protagonistas Liu Kang e Kung Lao — membros da Ordem da Luz — decidem perseguir os inimigos para impedir um novo plano maquiavélico.\n• A Jornada: A dupla precisa viajar por diversos cenários hostis da Outworld e de Earthrealm (como a Floresta Viva e o Templo do Fogo), enfrentando hordas de tarkatans, ninjas e chefes icônicos (como Reptile, Baraka e Goro) para frustrar Shang Tsung e, no clímax, derrotar o imperador Shao Kahn e salvar os reinos.",
       "imagens": [
         "imagens/mortal-kombat-shaolin-monks-mvqtkp4nuu0r.jpg"
       ],
@@ -10045,23 +10050,24 @@
       "tipos": [
         "Luta"
       ],
-      "tipo": "Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "53",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "850/1200",
       "ajuste": "contain",
-      "proporcao": "850/1200"
+      "armazenamentos": [],
+      "tipo": "Luta"
     },
     {
       "id": "mvqtj7ue4xvg",
-      "cod": "54",
       "nome": "Midnight Club 3 DUB Edition Remix",
+      "descricao": "Midnight Club 3: DUB Edition Remix é um jogo de corrida arcade em mundo aberto desenvolvido pela Rockstar San Diego e publicado pela Rockstar Games.\n\nSinopse e Premissa do Jogo\n\nO jogo não possui uma narrativa cinematográfica linear ou complexa com um protagonista fixo de passado trágico. Em vez disso, a história é focada na cultura de rachas urbanas e na ascensão do jogador no mundo do automobilismo ilegal:\n• O Início em San Diego: O jogador começa sua jornada em San Diego como um piloto novato que chama a atenção de oficinas locais e pilotos de rua ao vencer pequenas disputas.\n• Expansão por Outras Cidades: Conforme ganha reputação, dinheiro e veículos melhores, o jogador viaja para outras capitais importantes do automobilismo nos Estados Unidos: Atlanta e Detroit (além de Tóquio, adicionada exclusivamente na versão Remix).\n• Clubes e Rivalidades: Em cada cidade, o jogador interage com mecânicos, líderes de gangues e pilotos patrocinados (muitos associados à famosa revista de customização automotiva DUB Magazine). Para provar que é o melhor, ele precisa desafiar e derrotar diferentes clubes de corrida, participar de campeonatos de rua e dominar torneios de elite.\n• O Objetivo Final: O ápice da carreira é vencer a US Championship Series e os torneios finais de cada localidade, consolidando-se como o rei das ruas da meia-noite.",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 5,
-      "descricao": "Midnight Club 3: DUB Edition Remix é um jogo de corrida arcade em mundo aberto desenvolvido pela Rockstar San Diego e publicado pela Rockstar Games.\n\nSinopse e Premissa do Jogo\n\nO jogo não possui uma narrativa cinematográfica linear ou complexa com um protagonista fixo de passado trágico. Em vez disso, a história é focada na cultura de rachas urbanas e na ascensão do jogador no mundo do automobilismo ilegal:\n• O Início em San Diego: O jogador começa sua jornada em San Diego como um piloto novato que chama a atenção de oficinas locais e pilotos de rua ao vencer pequenas disputas.\n• Expansão por Outras Cidades: Conforme ganha reputação, dinheiro e veículos melhores, o jogador viaja para outras capitais importantes do automobilismo nos Estados Unidos: Atlanta e Detroit (além de Tóquio, adicionada exclusivamente na versão Remix).\n• Clubes e Rivalidades: Em cada cidade, o jogador interage com mecânicos, líderes de gangues e pilotos patrocinados (muitos associados à famosa revista de customização automotiva DUB Magazine). Para provar que é o melhor, ele precisa desafiar e derrotar diferentes clubes de corrida, participar de campeonatos de rua e dominar torneios de elite.\n• O Objetivo Final: O ápice da carreira é vencer a US Championship Series e os torneios finais de cada localidade, consolidando-se como o rei das ruas da meia-noite.",
       "imagens": [
         "imagens/midnight-club-3-dub-edition-remix-mvqtj64r1ord.jpg"
       ],
@@ -10071,23 +10077,24 @@
       "tipos": [
         "Corrida"
       ],
-      "tipo": "Corrida",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "54",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "857/1200",
       "ajuste": "contain",
-      "proporcao": "857/1200"
+      "armazenamentos": [],
+      "tipo": "Corrida"
     },
     {
       "id": "mvqthr3pehlr",
-      "cod": "55",
       "nome": "Fifa Street",
+      "descricao": "O FIFA Street (lançado em 2005 para PlayStation 2) é um jogo de futebol arcade que troca as grandes arenas profissionais pelas ruas, focando em estilo, dribles e atitude freestyle em vez de táticas e regras oficiais.\n\nSinopse e Proposta do Jogo\n\n• Foco no Futebol de Rua: O jogo dispensa juízes, laterais e faltas tradicionais, apostando em partidas rápidas de 4 contra 4 (quatro jogadores de linha e o goleiro) em quadras de cimento, asfalto, areia e gaiolas urbanas ao redor do mundo.\n• Reputação e Reseto: Em vez de uma campanha com uma história linear densa, o objetivo é ganhar respeito e reputação nas ruas. Você cria e gerencia sua própria equipe, desafiando e derrotando craques mundiais da época — como Ronaldinho Gaúcho, Adriano, Zinedine Zidane e Cristiano Ronaldo — para recrutá-los para o seu time.\n• Sistema de \"Tricks\" (Truques): A vitória não depende apenas de fazer mais gols, mas de humilhar o adversário com dribles estilizados, embaixadinhas e combos (chamados de Gamebreaker), onde aplicar uma sequência de fintas vale pontos extras e abre chances para gols decisivos.",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 3,
-      "descricao": "O FIFA Street (lançado em 2005 para PlayStation 2) é um jogo de futebol arcade que troca as grandes arenas profissionais pelas ruas, focando em estilo, dribles e atitude freestyle em vez de táticas e regras oficiais.\n\nSinopse e Proposta do Jogo\n\n• Foco no Futebol de Rua: O jogo dispensa juízes, laterais e faltas tradicionais, apostando em partidas rápidas de 4 contra 4 (quatro jogadores de linha e o goleiro) em quadras de cimento, asfalto, areia e gaiolas urbanas ao redor do mundo.\n• Reputação e Reseto: Em vez de uma campanha com uma história linear densa, o objetivo é ganhar respeito e reputação nas ruas. Você cria e gerencia sua própria equipe, desafiando e derrotando craques mundiais da época — como Ronaldinho Gaúcho, Adriano, Zinedine Zidane e Cristiano Ronaldo — para recrutá-los para o seu time.\n• Sistema de \"Tricks\" (Truques): A vitória não depende apenas de fazer mais gols, mas de humilhar o adversário com dribles estilizados, embaixadinhas e combos (chamados de Gamebreaker), onde aplicar uma sequência de fintas vale pontos extras e abre chances para gols decisivos.",
       "imagens": [
         "imagens/fifa-street-mvqthpnbdfew.jpg"
       ],
@@ -10097,23 +10104,23 @@
       "tipos": [
         "Esporte"
       ],
-      "tipo": "Esporte",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "55",
       "outras": [],
       "formato": "auto",
+      "proporcao": "850/1200",
       "ajuste": "contain",
-      "proporcao": "850/1200"
+      "armazenamentos": [],
+      "tipo": "Esporte"
     },
     {
       "id": "mvqtgbu3j4cc",
-      "cod": "56",
       "nome": "Dragon Ball Z Budokai Tenkaichi 3",
+      "descricao": "O Dragon Ball Z: Budokai Tenkaichi 3 (lançado no Japão como Dragon Ball Z: Sparking! METEOR) é um jogo de luta em arenas 3D para PlayStation 2 e Wii que não possui uma sinopse linear única, mas sim um modo história que reconta toda a cronologia da franquia.\n\nO que o modo história aborda:\n\n• Dragon Ball Clássico: As aventuras de Goku quando criança.\n• Dragon Ball Z: Passa pelas principais sagas, incluindo a Saga dos Saiyajins, Freeza, Cell e Majin Boo.\n• Dragon Ball GT: Enfrenta as ameaças do universo GT, culminando em batalhas como as de Super Saiyajin 4.\n• Filmes e Especiais: Inclui batalhas icônicas baseadas nos filmes animados de Dragon Ball Z (como os do Broly) e OVAs.",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 4,
-      "descricao": "O Dragon Ball Z: Budokai Tenkaichi 3 (lançado no Japão como Dragon Ball Z: Sparking! METEOR) é um jogo de luta em arenas 3D para PlayStation 2 e Wii que não possui uma sinopse linear única, mas sim um modo história que reconta toda a cronologia da franquia.\n\nO que o modo história aborda:\n\n• Dragon Ball Clássico: As aventuras de Goku quando criança.\n• Dragon Ball Z: Passa pelas principais sagas, incluindo a Saga dos Saiyajins, Freeza, Cell e Majin Boo.\n• Dragon Ball GT: Enfrenta as ameaças do universo GT, culminando em batalhas como as de Super Saiyajin 4.\n• Filmes e Especiais: Inclui batalhas icônicas baseadas nos filmes animados de Dragon Ball Z (como os do Broly) e OVAs.",
       "imagens": [
         "imagens/dragon-ball-z-budokai-tenkaichi-3-mvqtgaabz32i.jpg"
       ],
@@ -10123,23 +10130,24 @@
       "tipos": [
         "Luta"
       ],
-      "tipo": "Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "56",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "796/1123",
       "ajuste": "contain",
-      "proporcao": "796/1123"
+      "armazenamentos": [],
+      "tipo": "Luta"
     },
     {
       "id": "mvqtd116naqw",
-      "cod": "57",
       "nome": "Def Jam Fight for New York",
+      "descricao": "Def Jam: Fight for NY (lançado em 2004 para o PlayStation 2) é um jogo de luta e wrestling que mistura o submundo do hip-hop com brigas de rua brutais.\n\nSinopse e Enredo\n\n• O Início: A história começa logo após os eventos do primeiro jogo (Def Jam Vendetta), quando o chefão do crime D-Mob (dublado por Christopher Judge) é preso pela polícia de Nova York.\n• A Ascensão do Vilão: Enquanto D-Mob está detido, um novo e impiedoso líder do crime chamado Crow (interpretado por Snoop Dogg) aproveita o vácuo de poder para dominar as ruas e os clubes clandestinos da cidade.\n• O Protagonista: O jogador cria seu próprio lutador personalizado do zero. No começo da trama, você é salvo de uma situação perigosa nas ruas pela gangue de D-Mob e, a partir daí, precisa ganhar respeito lutando em vários clubes.\n• O Conflito Principal: Conforme você ganha renome e ajuda D-Mob a recuperar seu império territorial, a guerra de gangues contra Crow e seus aliados fica pessoal. Em um ponto crítico, Crow chega a sequestrar a namorada do seu personagem, chantageando você para entregar os territórios conquistados ou cooperar com ele.\n• O Desfecho: Você precisa equilibrar a lealdade à crew de D-Mob, enfrentar grandes nomes do rap e do hip-hop (como Method Man, Busta Rhymes, Redman e Fat Joe) em combates extremos até o confronto final contra Crow para salvar sua namorada e definir quem controla o submundo de Nova York.",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 4,
-      "descricao": "Def Jam: Fight for NY (lançado em 2004 para o PlayStation 2) é um jogo de luta e wrestling que mistura o submundo do hip-hop com brigas de rua brutais.\n\nSinopse e Enredo\n\n• O Início: A história começa logo após os eventos do primeiro jogo (Def Jam Vendetta), quando o chefão do crime D-Mob (dublado por Christopher Judge) é preso pela polícia de Nova York.\n• A Ascensão do Vilão: Enquanto D-Mob está detido, um novo e impiedoso líder do crime chamado Crow (interpretado por Snoop Dogg) aproveita o vácuo de poder para dominar as ruas e os clubes clandestinos da cidade.\n• O Protagonista: O jogador cria seu próprio lutador personalizado do zero. No começo da trama, você é salvo de uma situação perigosa nas ruas pela gangue de D-Mob e, a partir daí, precisa ganhar respeito lutando em vários clubes.\n• O Conflito Principal: Conforme você ganha renome e ajuda D-Mob a recuperar seu império territorial, a guerra de gangues contra Crow e seus aliados fica pessoal. Em um ponto crítico, Crow chega a sequestrar a namorada do seu personagem, chantageando você para entregar os territórios conquistados ou cooperar com ele.\n• O Desfecho: Você precisa equilibrar a lealdade à crew de D-Mob, enfrentar grandes nomes do rap e do hip-hop (como Method Man, Busta Rhymes, Redman e Fat Joe) em combates extremos até o confronto final contra Crow para salvar sua namorada e definir quem controla o submundo de Nova York.",
       "imagens": [
         "imagens/def-jam-fight-for-new-york-mvqtczefqctx.jpg"
       ],
@@ -10149,23 +10157,23 @@
       "tipos": [
         "Luta"
       ],
-      "tipo": "Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "57",
       "outras": [],
       "formato": "auto",
+      "proporcao": "850/1200",
       "ajuste": "contain",
-      "proporcao": "850/1200"
+      "armazenamentos": [],
+      "tipo": "Luta"
     },
     {
       "id": "mvqtazrkelo9",
-      "cod": "58",
       "nome": "Crash mind over mutant",
+      "descricao": "Crash: Mind Over Mutant (lançado em 2008) é um jogo de plataforma e ação para o PlayStation 2 que continua a história de Crash of the Titans.\n\nSinopse\n\n• A Aliança Vilã: O Dr. Neo Cortex se reconcilia com seu antigo parceiro, o Dr. Nitrus Brio. Juntos, eles criam um novo dispositivo chamado NV (um fone de ouvido de realidade virtual movido a energia negativa).\n• O Plano de Controle: Apresentado como um assistente pessoal e sistema de entretenimento gratuito para a população da Ilha Wumpa, o aparelho na verdade serve para lavar o cérebro de todos que o usam, transformando-os em criaturas desmioladas e controláveis.\n• O Envolvimento da Família Bandicoot: Coco e Crunch acabam caindo no golpe e são controlados pelo dispositivo. O aparelho de Crash dá defeito e o de Aku Aku não serve nele, fazendo com que os dois fiquem imunes.\n• A Missão: Sobrevivendo ao plano, Crash Bandicoot precisa usar sua agilidade, força e a ajuda dos chamados Titãs (monstros que ele pode dominar e controlar) para libertar seus amigos, derrotar Cortex e Brio e salvar a Ilha Wumpa.",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 4,
-      "descricao": "Crash: Mind Over Mutant (lançado em 2008) é um jogo de plataforma e ação para o PlayStation 2 que continua a história de Crash of the Titans.\n\nSinopse\n\n• A Aliança Vilã: O Dr. Neo Cortex se reconcilia com seu antigo parceiro, o Dr. Nitrus Brio. Juntos, eles criam um novo dispositivo chamado NV (um fone de ouvido de realidade virtual movido a energia negativa).\n• O Plano de Controle: Apresentado como um assistente pessoal e sistema de entretenimento gratuito para a população da Ilha Wumpa, o aparelho na verdade serve para lavar o cérebro de todos que o usam, transformando-os em criaturas desmioladas e controláveis.\n• O Envolvimento da Família Bandicoot: Coco e Crunch acabam caindo no golpe e são controlados pelo dispositivo. O aparelho de Crash dá defeito e o de Aku Aku não serve nele, fazendo com que os dois fiquem imunes.\n• A Missão: Sobrevivendo ao plano, Crash Bandicoot precisa usar sua agilidade, força e a ajuda dos chamados Titãs (monstros que ele pode dominar e controlar) para libertar seus amigos, derrotar Cortex e Brio e salvar a Ilha Wumpa.",
       "imagens": [
         "imagens/crash-mind-over-mutant-mvqtayday66e.jpg"
       ],
@@ -10175,23 +10183,24 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "58",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "846/1200",
       "ajuste": "contain",
-      "proporcao": "846/1200"
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvqt9pqfiqcz",
-      "cod": "59",
       "nome": "Bully",
+      "descricao": "Bully acompanha Jimmy Hopkins, um adolescente de 15 anos rebelde e indisciplinado que é abandonado por sua mãe na Bullworth Academy enquanto ela sai em sua quinta lua de mel.\n\nEnredo e Premissa\n\n• O Protagonista: Expulso de várias escolas anteriores, Jimmy precisa sobreviver a um ano letivo caótico em um colégio interno repleto de regras rígidas e professores negligentes.\n• As Facções da Escola: A Bullworth Academy é dividida em grupos sociais rivais que dominam os corredores:\n\t• Valentões (Bullies): Agressores focados em intimidar os mais fracos.\n\t• Nerds: Estudantes inteligentes, franzinos e alvos frequentes de zueira.\n\t• Mauricinhos (Preppies): Filhos de famílias ricas e arrogantes.\n\t• Descolados (Greasers): Estilo rebelde inspirado nos anos 50 e motociclistas.\n\t• Atletas (Jocks): Jogadores de futebol americano populares evalentões com apoio da diretoria.\n\t• Baderneiros (Townies): Jovens expulsos e moradores locais que odeiam os alunos da academia.\n• A Traição e Conquista: Jimmy faz alianças iniciais com o manipulador Gary Smith e o tímido Pete Kowalski. No entanto, Gary trai Jimmy e o incrimina em um plano para tomar o controle de toda a escola. Jimmy é temporariamente expulso, mas retorna para ganhar o respeito de todas as facções, derrotar Gary e restaurar a ordem na academia.",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 4,
-      "descricao": "Bully acompanha Jimmy Hopkins, um adolescente de 15 anos rebelde e indisciplinado que é abandonado por sua mãe na Bullworth Academy enquanto ela sai em sua quinta lua de mel.\n\nEnredo e Premissa\n\n• O Protagonista: Expulso de várias escolas anteriores, Jimmy precisa sobreviver a um ano letivo caótico em um colégio interno repleto de regras rígidas e professores negligentes.\n• As Facções da Escola: A Bullworth Academy é dividida em grupos sociais rivais que dominam os corredores:\n\t• Valentões (Bullies): Agressores focados em intimidar os mais fracos.\n\t• Nerds: Estudantes inteligentes, franzinos e alvos frequentes de zueira.\n\t• Mauricinhos (Preppies): Filhos de famílias ricas e arrogantes.\n\t• Descolados (Greasers): Estilo rebelde inspirado nos anos 50 e motociclistas.\n\t• Atletas (Jocks): Jogadores de futebol americano populares evalentões com apoio da diretoria.\n\t• Baderneiros (Townies): Jovens expulsos e moradores locais que odeiam os alunos da academia.\n• A Traição e Conquista: Jimmy faz alianças iniciais com o manipulador Gary Smith e o tímido Pete Kowalski. No entanto, Gary trai Jimmy e o incrimina em um plano para tomar o controle de toda a escola. Jimmy é temporariamente expulso, mas retorna para ganhar o respeito de todas as facções, derrotar Gary e restaurar a ordem na academia.",
       "imagens": [
         "imagens/bully-mvqt9oc8trj0.jpg"
       ],
@@ -10201,23 +10210,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "59",
       "outras": [],
       "formato": "auto",
+      "proporcao": "640/905",
       "ajuste": "contain",
-      "proporcao": "640/905"
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvqt8gtafiqt",
-      "cod": "5a",
       "nome": "Battle Stadium D.O.N",
+      "descricao": "Battle Stadium D.O.N é um jogo eletrônico de luta crossover lançado em 2006 para o PlayStation 2 (e GameCube), mas ele não possui uma história ou campanha com sinopse tradicional.\n\nO que é o jogo?\n\n• O Crossover: O nome \"D.O.N.\" é a sigla que representa as três grandes franquias da revista Shonen Jump reunidas no título: Dragon Ball (Z), One Piece e Naruto.\n• Estilo de Jogo: É um jogo de luta em arena no estilo de Super Smash Bros., permitindo batalhas de até 4 jogadores simultâneos.\n• Mecânica Principal: Diferente dos jogos de luta comuns, o combate funciona como um \"cabo de guerra\" por orbes. Ao golpear os rivais, esferas brilhantes se soltam deles. Vence quem acumular a maioria das orbes ou atingir 100% delas no cenário. Há também o Burst Mode, que aumenta a velocidade e o poder do personagem quando ele junta muitas esferas.\n\nModos de Jogo (Sem Enredo Fixo)\n\n• Modo Arcade: Você escolhe seu lutador e enfrenta uma sequência de adversários até chegar a um chefe final (como Freeza, Cell ou Majin Buu). Ao zerar, exibe-se apenas uma cena genérica de interação entre os personagens, sem uma narrativa profunda ou roteiro elaborado.\n• Modo Survival: Batalhas contínuas contra vários oponentes com a barra de vida persistente.\n• Modo Tickets: Permite usar tickets ganhos em uma roleta para ativar regras e condições especiais nas lutas (como deixar personagens gigantes ou impor restrições de ataques).",
       "categoria": "mvpxdzzqmgjx",
       "unidade": "GB",
       "valor": 1,
-      "descricao": "Battle Stadium D.O.N é um jogo eletrônico de luta crossover lançado em 2006 para o PlayStation 2 (e GameCube), mas ele não possui uma história ou campanha com sinopse tradicional.\n\nO que é o jogo?\n\n• O Crossover: O nome \"D.O.N.\" é a sigla que representa as três grandes franquias da revista Shonen Jump reunidas no título: Dragon Ball (Z), One Piece e Naruto.\n• Estilo de Jogo: É um jogo de luta em arena no estilo de Super Smash Bros., permitindo batalhas de até 4 jogadores simultâneos.\n• Mecânica Principal: Diferente dos jogos de luta comuns, o combate funciona como um \"cabo de guerra\" por orbes. Ao golpear os rivais, esferas brilhantes se soltam deles. Vence quem acumular a maioria das orbes ou atingir 100% delas no cenário. Há também o Burst Mode, que aumenta a velocidade e o poder do personagem quando ele junta muitas esferas.\n\nModos de Jogo (Sem Enredo Fixo)\n\n• Modo Arcade: Você escolhe seu lutador e enfrenta uma sequência de adversários até chegar a um chefe final (como Freeza, Cell ou Majin Buu). Ao zerar, exibe-se apenas uma cena genérica de interação entre os personagens, sem uma narrativa profunda ou roteiro elaborado.\n• Modo Survival: Batalhas contínuas contra vários oponentes com a barra de vida persistente.\n• Modo Tickets: Permite usar tickets ganhos em uma roleta para ativar regras e condições especiais nas lutas (como deixar personagens gigantes ou impor restrições de ataques).",
       "imagens": [
         "imagens/battle-stadium-d-o-n-mvqt8f63ei5o.jpg"
       ],
@@ -10227,23 +10236,24 @@
       "tipos": [
         "Luta"
       ],
-      "tipo": "Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5a",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "852/1200",
       "ajuste": "contain",
-      "proporcao": "852/1200"
+      "armazenamentos": [],
+      "tipo": "Luta"
     },
     {
       "id": "mvqt6htehqid",
-      "cod": "5b",
       "nome": "The Last of Us Remastered",
+      "descricao": "The Last of Us Remastered (para PS4) acompanha a jornada de Joel, um sobrevivente endurecido, e Ellie, uma adolescente corajosa de 14 anos, em um mundo pós-apocalíptico.\n\nSinopse e Enredo\n\n• O Colapso: Vinte anos após uma pandemia causada por um fungo mutante (Cordyceps) devastar a civilização moderna e transformar grande parte da população em criaturas violentas, os poucos sobreviventes vivem em zonas de quarentena militarizadas ou grupos hostis.\n• A Missão: Joel é contratado para contrabandear Ellie para fora de uma zona de quarentena opressora.\n• A Jornada: O que deveria ser um trabalho simples e rápido se transforma em uma longa e brutal travessia pelos Estados Unidos abandonados, onde ambos precisam lutar contra infectados ferozes e outros humanos desesperados por comida e armas.\n• Relação: Ao longo do caminho, a dupla desenvolve um forte laço de afeto e proteção mútua enquanto enfrentam perigos constantes.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 60,
-      "descricao": "The Last of Us Remastered (para PS4) acompanha a jornada de Joel, um sobrevivente endurecido, e Ellie, uma adolescente corajosa de 14 anos, em um mundo pós-apocalíptico.\n\nSinopse e Enredo\n\n• O Colapso: Vinte anos após uma pandemia causada por um fungo mutante (Cordyceps) devastar a civilização moderna e transformar grande parte da população em criaturas violentas, os poucos sobreviventes vivem em zonas de quarentena militarizadas ou grupos hostis.\n• A Missão: Joel é contratado para contrabandear Ellie para fora de uma zona de quarentena opressora.\n• A Jornada: O que deveria ser um trabalho simples e rápido se transforma em uma longa e brutal travessia pelos Estados Unidos abandonados, onde ambos precisam lutar contra infectados ferozes e outros humanos desesperados por comida e armas.\n• Relação: Ao longo do caminho, a dupla desenvolve um forte laço de afeto e proteção mútua enquanto enfrentam perigos constantes.",
       "imagens": [
         "imagens/the-last-of-us-remastered-mvqt6glw0jlf.jpg"
       ],
@@ -10253,23 +10263,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5b",
       "outras": [],
       "formato": "4/5",
+      "proporcao": "",
       "ajuste": "contain",
-      "proporcao": ""
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvqt56dogtzz",
-      "cod": "5c",
       "nome": "The Last of Us Part.2",
+      "descricao": "The Last of Us Part II (disponível para PlayStation 4) se passa cinco anos após os eventos do primeiro jogo.\n\nSinopse Principal\n\n• A Paz Inicial: Ellie e Joel estão estabelecidos em Jackson, Wyoming, vivendo em uma comunidade próspera e relativamente pacífica de sobreviventes.\n• O Incidente: Um evento violento e traumático rompe essa estabilidade e tira a vida de Joel.\n• A Vingança: Consumida pela dor e pelo ódio, Ellie (agora com 19 anos) parte em uma jornada implacável rumo às ruínas de Seattle para caçar os responsáveis e fazer justiça.\n• Duplo Ponto de Vista: Ao longo da campanha, a narrativa também é contada através dos olhos de Abby Anderson, uma misteriosa sobrevivente ligada ao grupo paramilitar WLF (Washington Liberation Front), cujos objetivos e motivações colidem diretamente com os de Ellie.\n• Conflitos Morais:",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 110,
-      "descricao": "The Last of Us Part II (disponível para PlayStation 4) se passa cinco anos após os eventos do primeiro jogo.\n\nSinopse Principal\n\n• A Paz Inicial: Ellie e Joel estão estabelecidos em Jackson, Wyoming, vivendo em uma comunidade próspera e relativamente pacífica de sobreviventes.\n• O Incidente: Um evento violento e traumático rompe essa estabilidade e tira a vida de Joel.\n• A Vingança: Consumida pela dor e pelo ódio, Ellie (agora com 19 anos) parte em uma jornada implacável rumo às ruínas de Seattle para caçar os responsáveis e fazer justiça.\n• Duplo Ponto de Vista: Ao longo da campanha, a narrativa também é contada através dos olhos de Abby Anderson, uma misteriosa sobrevivente ligada ao grupo paramilitar WLF (Washington Liberation Front), cujos objetivos e motivações colidem diretamente com os de Ellie.\n• Conflitos Morais:",
       "imagens": [
         "imagens/the-last-of-us-part-2-mvqt54qi7hjq.jpg"
       ],
@@ -10279,23 +10289,24 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5c",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "935/1200",
       "ajuste": "contain",
-      "proporcao": "935/1200"
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvqt3rv5bv2h",
-      "cod": "5d",
       "nome": "SUPER BOMBERMAN R 2",
+      "descricao": "Em Super Bomberman R 2 para PS4, os icônicos irmãos Bomberman embarcam em uma nova aventura para salvar o universo e resgatar os Ellons (criaturas misteriosas) após uma nova ameaça e exército inimigo colocarem a paz em risco.\n\nSinopse e Enredo\n\n• Missão principal: Os Bomberman viajam por diferentes planetas explorando regiões, enfrentando chefes e protegendo o universo contra uma força maligna e uma fortaleza repleta de armadilhas.\n• Novos aliados: No caminho, você conta com a ajuda dos Ellons, seres com habilidades especiais que auxiliam na exploração e nos confrontos.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 7,
-      "descricao": "Em Super Bomberman R 2 para PS4, os icônicos irmãos Bomberman embarcam em uma nova aventura para salvar o universo e resgatar os Ellons (criaturas misteriosas) após uma nova ameaça e exército inimigo colocarem a paz em risco.\n\nSinopse e Enredo\n\n• Missão principal: Os Bomberman viajam por diferentes planetas explorando regiões, enfrentando chefes e protegendo o universo contra uma força maligna e uma fortaleza repleta de armadilhas.\n• Novos aliados: No caminho, você conta com a ajuda dos Ellons, seres com habilidades especiais que auxiliam na exploração e nos confrontos.",
       "imagens": [
         "imagens/super-bomberman-r-2-mvqt3qifnimf.jpg"
       ],
@@ -10305,23 +10316,23 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5d",
       "outras": [],
       "formato": "auto",
+      "proporcao": "966/1200",
       "ajuste": "contain",
-      "proporcao": "966/1200"
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvqt2hyky1r9",
-      "cod": "5e",
       "nome": "SNK VS CAPCOM SVC CHAOS",
+      "descricao": "O SNK vs. Capcom: SVC Chaos para PlayStation 4 é um jogo de luta crossover que reúne 36 personagens icônicos das franquias da SNK (como The King of Fighters, Fatal Fury e Samurai Shodown) e da Capcom (como Street Fighter, Darkstalkers e Mega Man) em combates individuais 1v1.\n\nSinopse e Proposta do Jogo\n\nLançado originalmente para arcades em 2003 e relançado com melhorias para o PS4 em julho de 2024, o título não possui uma campanha narrativa complexa no estilo aventura, mas sim uma colisão de universos onde os maiores heróis e vilões de ambas as empresas se enfrentam em um torneio caótico para provar qual é o maior lutador.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 1,
-      "descricao": "O SNK vs. Capcom: SVC Chaos para PlayStation 4 é um jogo de luta crossover que reúne 36 personagens icônicos das franquias da SNK (como The King of Fighters, Fatal Fury e Samurai Shodown) e da Capcom (como Street Fighter, Darkstalkers e Mega Man) em combates individuais 1v1.\n\nSinopse e Proposta do Jogo\n\nLançado originalmente para arcades em 2003 e relançado com melhorias para o PS4 em julho de 2024, o título não possui uma campanha narrativa complexa no estilo aventura, mas sim uma colisão de universos onde os maiores heróis e vilões de ambas as empresas se enfrentam em um torneio caótico para provar qual é o maior lutador.",
       "imagens": [
         "imagens/snk-vs-capcom-svc-chaos-mvqt2glqvxa8.jpg"
       ],
@@ -10331,23 +10342,23 @@
       "tipos": [
         "Luta"
       ],
-      "tipo": "Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5e",
       "outras": [],
       "formato": "auto",
+      "proporcao": "805/986",
       "ajuste": "contain",
-      "proporcao": "805/986"
+      "armazenamentos": [],
+      "tipo": "Luta"
     },
     {
       "id": "mvqt0fh54qme",
-      "cod": "5f",
       "nome": "Red Dead Redemption 2",
+      "descricao": "Sinopse\n\n• O ponto de partida: O jogo acompanha Arthur Morgan e a gangue Van der Linde (liderada por Dutch van der Linde). Após um assalto que deu errado na cidade de Blackwater, a gangue é forçada a fugir pelas montanhas e pelo interior dos Estados Unidos.\n• A fuga e a perseguição: Com agentes federais e os melhores caçadores de recompensas no encalço do grupo, eles precisam realizar novos assaltos e lutar para sobreviver.\n• Conflitos internos: À medida que a pressão aumenta, divisões internas e traições começam a despedaçar a gangue.\n• O dilema do protagonista: Arthur Morgan se vê dividido entre a lealdade à figura paterna de Dutch e o seu próprio senso de honra, enquanto o estilo de vida fora da lei dá lugar ao avanço inevitável da civilização moderna.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 98,
-      "descricao": "Sinopse\n\n• O ponto de partida: O jogo acompanha Arthur Morgan e a gangue Van der Linde (liderada por Dutch van der Linde). Após um assalto que deu errado na cidade de Blackwater, a gangue é forçada a fugir pelas montanhas e pelo interior dos Estados Unidos.\n• A fuga e a perseguição: Com agentes federais e os melhores caçadores de recompensas no encalço do grupo, eles precisam realizar novos assaltos e lutar para sobreviver.\n• Conflitos internos: À medida que a pressão aumenta, divisões internas e traições começam a despedaçar a gangue.\n• O dilema do protagonista: Arthur Morgan se vê dividido entre a lealdade à figura paterna de Dutch e o seu próprio senso de honra, enquanto o estilo de vida fora da lei dá lugar ao avanço inevitável da civilização moderna.",
       "imagens": [
         "imagens/red-dead-redemption-2-mvqt0dr1ubvw.jpg"
       ],
@@ -10357,23 +10368,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5f",
       "outras": [],
       "formato": "auto",
+      "proporcao": "963/1200",
       "ajuste": "contain",
-      "proporcao": "963/1200"
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvqsynz4pesz",
-      "cod": "5g",
       "nome": "MultiVersus",
+      "descricao": "O MultiVersus é um jogo eletrônico de luta de plataforma (estilo crossover) gratuito desenvolvido pela Player First Games e publicado pela Warner Bros. Interactive Entertainment.\n\nSinopse e Premissa\n\nO jogo não possui uma campanha narrativa tradicional com uma única história linear fechada, mas reúne um elenco gigantesco e icônico de várias franquias da Warner Bros. Discovery (como DC Comics, Scooby-Doo, Hora da Aventura, Tom e Jerry, Game of Thrones, Looney Tunes, entre outras) lutando entre si em arenas dinâmicas.\nPara quem busca conteúdo individual ou com história, o jogo conta com o modo \"Fendas\" (Rifts), que funciona como uma experiência PvE (jogador contra inteligência artificial) com desafios temáticos, missões e pequenas narrativas crossover (como o Caos Multiversal).",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 12,
-      "descricao": "O MultiVersus é um jogo eletrônico de luta de plataforma (estilo crossover) gratuito desenvolvido pela Player First Games e publicado pela Warner Bros. Interactive Entertainment.\n\nSinopse e Premissa\n\nO jogo não possui uma campanha narrativa tradicional com uma única história linear fechada, mas reúne um elenco gigantesco e icônico de várias franquias da Warner Bros. Discovery (como DC Comics, Scooby-Doo, Hora da Aventura, Tom e Jerry, Game of Thrones, Looney Tunes, entre outras) lutando entre si em arenas dinâmicas.\nPara quem busca conteúdo individual ou com história, o jogo conta com o modo \"Fendas\" (Rifts), que funciona como uma experiência PvE (jogador contra inteligência artificial) com desafios temáticos, missões e pequenas narrativas crossover (como o Caos Multiversal).",
       "imagens": [
         "imagens/multiversus-mvqsyl51swal.jpg"
       ],
@@ -10383,23 +10394,23 @@
       "tipos": [
         "Luta"
       ],
-      "tipo": "Luta",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5g",
       "outras": [],
       "formato": "auto",
+      "proporcao": "805/986",
       "ajuste": "contain",
-      "proporcao": "805/986"
+      "armazenamentos": [],
+      "tipo": "Luta"
     },
     {
       "id": "mvqsx7eabo9a",
-      "cod": "5h",
       "nome": "Minecraft Dungeons",
+      "descricao": "O Minecraft Dungeons para PS4 é um jogo de ação e aventura no estilo dungeon crawler (exploração de masmorras) ambientado no universo de Minecraft, lançado em 26 de maio de 2020.\n\nSinopse e Enredo\n\nA história acompanha um Illager solitário e rejeitado chamado Arch-Illager (Arce-Illager / Arquivilão), que encontra um artefato mágico e corrompido de grande poder conhecido como o Orbe da Dominação.\nCom a influência maligna do orbe, ele ganha poderes sombrios, forma um exército de lacaios e começa a oprimir e expulsar os aldeões de suas vilas por todo o Mundo Superior. O jogador assume o papel de um herói cuja missão é atravessar diferentes regiões, enfrentar hordas de monstros, libertar os aldeões e derrotar o Arch-Illager para destruir o poder do orb",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 4,
-      "descricao": "O Minecraft Dungeons para PS4 é um jogo de ação e aventura no estilo dungeon crawler (exploração de masmorras) ambientado no universo de Minecraft, lançado em 26 de maio de 2020.\n\nSinopse e Enredo\n\nA história acompanha um Illager solitário e rejeitado chamado Arch-Illager (Arce-Illager / Arquivilão), que encontra um artefato mágico e corrompido de grande poder conhecido como o Orbe da Dominação.\nCom a influência maligna do orbe, ele ganha poderes sombrios, forma um exército de lacaios e começa a oprimir e expulsar os aldeões de suas vilas por todo o Mundo Superior. O jogador assume o papel de um herói cuja missão é atravessar diferentes regiões, enfrentar hordas de monstros, libertar os aldeões e derrotar o Arch-Illager para destruir o poder do orb",
       "imagens": [
         "imagens/minecraft-dungeons-mvqsx5sab1nu.jpg"
       ],
@@ -10409,23 +10420,24 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5h",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "948/1171",
       "ajuste": "contain",
-      "proporcao": "948/1171"
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvqsviau2rxo",
-      "cod": "5i",
       "nome": "Marvels Spider Man",
+      "descricao": "Em Marvel's Spider-Man para PlayStation 4, você controla um Peter Parker de 23 anos com oito anos de experiência combatendo o crime em Nova York, que precisa equilibrar sua vida pessoal caótica com a proteção da cidade enquanto enfrenta uma nova e perigosa onda de vilões.\n\nPrincipais pontos da história\n\n• O Início: O jogo começa com Peter conseguindo prender o chefão do crime Wilson Fisk (o Rei do Crime), o que deixa um vácuo de poder no submundo de Nova York.\n• Novos Inimigos: Um novo grupo criminoso chamado Os Demônios Internos (liderado por um vilão misterioso) surge para tomar o controle da cidade.\n• Conexões Pessoais: Peter precisa lidar com sua relação com Mary Jane Watson (que investiga os crimes como jornalista) e com o Dr. Otto Octavius, seu mentor e figura paterna, cuja vida toma um rumo sombrio.\n• O Grande Conflito: A trama se expande com a formação do Sististro Sexteto, forçando o Homem-Aranha a usar toda a sua experiência e sacrifícios pessoais para salvar a metrópole.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 55,
-      "descricao": "Em Marvel's Spider-Man para PlayStation 4, você controla um Peter Parker de 23 anos com oito anos de experiência combatendo o crime em Nova York, que precisa equilibrar sua vida pessoal caótica com a proteção da cidade enquanto enfrenta uma nova e perigosa onda de vilões.\n\nPrincipais pontos da história\n\n• O Início: O jogo começa com Peter conseguindo prender o chefão do crime Wilson Fisk (o Rei do Crime), o que deixa um vácuo de poder no submundo de Nova York.\n• Novos Inimigos: Um novo grupo criminoso chamado Os Demônios Internos (liderado por um vilão misterioso) surge para tomar o controle da cidade.\n• Conexões Pessoais: Peter precisa lidar com sua relação com Mary Jane Watson (que investiga os crimes como jornalista) e com o Dr. Otto Octavius, seu mentor e figura paterna, cuja vida toma um rumo sombrio.\n• O Grande Conflito: A trama se expande com a formação do Sististro Sexteto, forçando o Homem-Aranha a usar toda a sua experiência e sacrifícios pessoais para salvar a metrópole.",
       "imagens": [
         "imagens/marvels-spider-man-mvqsvguz47ic.jpg"
       ],
@@ -10435,23 +10447,24 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5i",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "969/1200",
       "ajuste": "contain",
-      "proporcao": "969/1200"
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvqstdnuwl8s",
-      "cod": "5j",
       "nome": "LEGO Marvel Super Heroes 2​",
+      "descricao": "Sinopse do Jogo\n\nA história principal gira em torno do vilão viajante do tempo Kang, o Conquistador, que invade e rouba diversas realidades, cidades e locais icônicos do universo Marvel de diferentes épocas e dimensões. Kang une todos esses fragmentos espaciais e temporais para criar um imenso mundo aberto central chamado Chronopolis.\nPara impedir os planos de dominação de Kang, os Super-Heróis e Super-Vilões mais icônicos da Marvel de diferentes eras e realidades — incluindo os Guardiões da Galáxia, Homem-Aranha, Thor, Hulk, Pantera Negra, Capitã Marvel, Doutor Estranho e os heróis de Spider-Gwen e Marvel 2099 — precisam unir forças. Os jogadores viajam por Chronopolis, desde o Antigo Egito e o Velho Oeste até Sakaar e a Nova York de 2099, em uma batalha cósmica para restaurar a ordem no tempo e no espaço.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 22,
-      "descricao": "Sinopse do Jogo\n\nA história principal gira em torno do vilão viajante do tempo Kang, o Conquistador, que invade e rouba diversas realidades, cidades e locais icônicos do universo Marvel de diferentes épocas e dimensões. Kang une todos esses fragmentos espaciais e temporais para criar um imenso mundo aberto central chamado Chronopolis.\nPara impedir os planos de dominação de Kang, os Super-Heróis e Super-Vilões mais icônicos da Marvel de diferentes eras e realidades — incluindo os Guardiões da Galáxia, Homem-Aranha, Thor, Hulk, Pantera Negra, Capitã Marvel, Doutor Estranho e os heróis de Spider-Gwen e Marvel 2099 — precisam unir forças. Os jogadores viajam por Chronopolis, desde o Antigo Egito e o Velho Oeste até Sakaar e a Nova York de 2099, em uma batalha cósmica para restaurar a ordem no tempo e no espaço.",
       "imagens": [
         "imagens/lego-marvel-super-heroes-2-mvqstc8lffsj.jpg"
       ],
@@ -10461,23 +10474,24 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5j",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "978/1200",
       "ajuste": "contain",
-      "proporcao": "978/1200"
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvqsqfqnjw8b",
-      "cod": "5k",
       "nome": "It Takes Two",
+      "descricao": "Sinopse e Enredo\n\nA história acompanha Cody e May, um casal em forte crise que decide se divorciar. Quando comunicam a decisão à filha, Rose, a menina fica muito triste e, com duas bonecas que ela mesma fez (uma que se parece com o pai e outra com a mãe) e um livro de autoajuda chamado O Livro do Amor (escrito pelo Dr. Hakim), ela faz um pedido para que eles fiquem juntos.\nMagicamente, a consciência de Cody e May é transportada para os bonecos. Presos nessa nova forma e guiados pelo excêntrico Dr. Hakim — que age como um \"guru do relacionamento\" —, os dois precisam aprender a deixar as diferenças de lado, cooperar e passar por diversos desafios em um mundo fantástico (que transforma a própria casa e o quintal em cenários gigantescos e perigosos) para tentar reverter o feitiço, alcançar a filha e decidir o futuro do casamento.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 44,
-      "descricao": "Sinopse e Enredo\n\nA história acompanha Cody e May, um casal em forte crise que decide se divorciar. Quando comunicam a decisão à filha, Rose, a menina fica muito triste e, com duas bonecas que ela mesma fez (uma que se parece com o pai e outra com a mãe) e um livro de autoajuda chamado O Livro do Amor (escrito pelo Dr. Hakim), ela faz um pedido para que eles fiquem juntos.\nMagicamente, a consciência de Cody e May é transportada para os bonecos. Presos nessa nova forma e guiados pelo excêntrico Dr. Hakim — que age como um \"guru do relacionamento\" —, os dois precisam aprender a deixar as diferenças de lado, cooperar e passar por diversos desafios em um mundo fantástico (que transforma a própria casa e o quintal em cenários gigantescos e perigosos) para tentar reverter o feitiço, alcançar a filha e decidir o futuro do casamento.",
       "imagens": [
         "imagens/it-takes-two-mvqsqebp9hsv.jpg"
       ],
@@ -10487,23 +10501,23 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5k",
       "outras": [],
       "formato": "auto",
+      "proporcao": "805/986",
       "ajuste": "contain",
-      "proporcao": "805/986"
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvqsovqu08il",
-      "cod": "5l",
       "nome": "Hollow Knight Silksong",
+      "descricao": "Sinopse\n\nNa continuação de Hollow Knight, você joga como Hornet, a princesa protetora de Hallownest. Ela é capturada e levada para Pharloom (Fiarlongo), um reino antigo e arruinado, regido por seda e música.\nDiferente do jogo anterior, Hornet consegue falar e é muito mais acrobática. Sua missão é desvendar os mistérios por trás do seu sequestro, lutar contra centenas de novos inimigos e chefes, e escalar o reino perigoso até alcançar a sua superfície.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 4,
-      "descricao": "Sinopse\n\nNa continuação de Hollow Knight, você joga como Hornet, a princesa protetora de Hallownest. Ela é capturada e levada para Pharloom (Fiarlongo), um reino antigo e arruinado, regido por seda e música.\nDiferente do jogo anterior, Hornet consegue falar e é muito mais acrobática. Sua missão é desvendar os mistérios por trás do seu sequestro, lutar contra centenas de novos inimigos e chefes, e escalar o reino perigoso até alcançar a sua superfície.",
       "imagens": [
         "imagens/hollow-knight-silksong-mvqsoujad0fr.jpg"
       ],
@@ -10513,23 +10527,24 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5l",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "239/300",
       "ajuste": "contain",
-      "proporcao": "239/300"
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvqsn193bgm7",
-      "cod": "5m",
       "nome": "GTA V",
+      "descricao": "Grand Theft Auto V (GTA V) é um jogo de ação e aventura em mundo aberto desenvolvido pela Rockstar Games.\n\nSinopse\n\nA história acompanha três protagonistas muito diferentes que precisam unir forças para sobreviver em uma cidade implacável:\n• Michael De Santa: Um ladrão de bancos aposentado que vive na alta sociedade de Los Santos em um acordo de proteção a testemunhas, mas com uma vida familiar infeliz.\n• Franklin Clinton: Um jovem malandro de rua que trabalha cobrando dívidas e busca uma oportunidade maior para mudar de vida.\n• Trevor Philips: Um psicopata violento e imprevisível, antigo parceiro de crimes de Michael, que vive à margem da sociedade.\nQuando os caminhos dos três se cruzam, eles se envolvem com figuras perigosas do submundo do crime, agências corruptas do governo dos EUA e a indústria do entretenimento. Para continuarem vivos e garantirem o futuro, eles precisam planejar e executar uma série de assaltos ousados (golpes) em Los Santos e na região de Blaine County, enquanto lidam com a desconfiança mútua.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 55,
-      "descricao": "Grand Theft Auto V (GTA V) é um jogo de ação e aventura em mundo aberto desenvolvido pela Rockstar Games.\n\nSinopse\n\nA história acompanha três protagonistas muito diferentes que precisam unir forças para sobreviver em uma cidade implacável:\n• Michael De Santa: Um ladrão de bancos aposentado que vive na alta sociedade de Los Santos em um acordo de proteção a testemunhas, mas com uma vida familiar infeliz.\n• Franklin Clinton: Um jovem malandro de rua que trabalha cobrando dívidas e busca uma oportunidade maior para mudar de vida.\n• Trevor Philips: Um psicopata violento e imprevisível, antigo parceiro de crimes de Michael, que vive à margem da sociedade.\nQuando os caminhos dos três se cruzam, eles se envolvem com figuras perigosas do submundo do crime, agências corruptas do governo dos EUA e a indústria do entretenimento. Para continuarem vivos e garantirem o futuro, eles precisam planejar e executar uma série de assaltos ousados (golpes) em Los Santos e na região de Blaine County, enquanto lidam com a desconfiança mútua.",
       "imagens": [
         "imagens/gta-v-mvqsmzjj326u.jpg"
       ],
@@ -10539,23 +10554,24 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5m",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "955/1200",
       "ajuste": "contain",
-      "proporcao": "955/1200"
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvqsky506dpp",
-      "cod": "5n",
       "nome": "Ghost of Tsushima",
+      "descricao": "Ghost of Tsushima (lançado para PS4 em 17 de julho de 2020) é um jogo de ação e aventura em mundo aberto ambientado no Japão feudal, em 1274.\n\nSinopse\n\n• O Contexto: O ano é 1274 e o Império Mongol, liderado pelo implacável general Khotun Khan, inicia uma campanha de conquista e invade a ilha de Tsushima.\n• O Protagonista: Você assume o controle de Jin Sakai, um dos últimos samurais sobreviventes do clã Sakai após a devastadora primeira onda de ataques.\n• O Conflito: Com a derrota inicial e a captura de seu tio, o Lorde Shimura, Jin percebe que as táticas tradicionais e honradas do código samurai não são suficientes para vencer um exército numeroso e impiedoso.\n• A Transformação: Para salvar seu povo e recuperar sua terra, Jin precisa sacrificar suas crenças e sua honra, abandonando o caminho do samurai para abraçar as sombras, táticas furtivas e métodos não convencionais, transformando-se na lenda conhecida como o \"Fantasma\" (Ghost).",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 55,
-      "descricao": "Ghost of Tsushima (lançado para PS4 em 17 de julho de 2020) é um jogo de ação e aventura em mundo aberto ambientado no Japão feudal, em 1274.\n\nSinopse\n\n• O Contexto: O ano é 1274 e o Império Mongol, liderado pelo implacável general Khotun Khan, inicia uma campanha de conquista e invade a ilha de Tsushima.\n• O Protagonista: Você assume o controle de Jin Sakai, um dos últimos samurais sobreviventes do clã Sakai após a devastadora primeira onda de ataques.\n• O Conflito: Com a derrota inicial e a captura de seu tio, o Lorde Shimura, Jin percebe que as táticas tradicionais e honradas do código samurai não são suficientes para vencer um exército numeroso e impiedoso.\n• A Transformação: Para salvar seu povo e recuperar sua terra, Jin precisa sacrificar suas crenças e sua honra, abandonando o caminho do samurai para abraçar as sombras, táticas furtivas e métodos não convencionais, transformando-se na lenda conhecida como o \"Fantasma\" (Ghost).",
       "imagens": [
         "imagens/ghost-of-tsushima-mvqskx063ask.jpg"
       ],
@@ -10565,23 +10581,24 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5n",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "645/800",
       "ajuste": "contain",
-      "proporcao": "645/800"
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvqsircnmu7l",
-      "cod": "5o",
       "nome": "Far Cry 3 Classic Edition",
+      "descricao": "Far Cry 3 Classic Edition é um jogo de tiro em primeira pessoa (FPS) em mundo aberto desenvolvido pela Ubisoft.\n\nSinopse\n\nVocê assume o papel de Jason Brody, um jovem que está de férias em uma ilha tropical com seus amigos. Durante uma atividade de paraquedismo, eles pousam em uma ilha isolada e perigosa (as Rook Islands) e são capturados por uma milícia de piratas liderada pelo sádico e instável Vaas Montenegro.\nJason consegue escapar, mas seus amigos continuam reféns. Para salvá-los e sobreviver ao ambiente selvagem, ele precisa deixar de lado sua vida comum, aprender táticas de combate com a tribo nativa Rakyat e se transformar em um guerreiro implacável, descobrindo até onde a própria mente consegue ir em meio à loucura da ilha.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 12,
-      "descricao": "Far Cry 3 Classic Edition é um jogo de tiro em primeira pessoa (FPS) em mundo aberto desenvolvido pela Ubisoft.\n\nSinopse\n\nVocê assume o papel de Jason Brody, um jovem que está de férias em uma ilha tropical com seus amigos. Durante uma atividade de paraquedismo, eles pousam em uma ilha isolada e perigosa (as Rook Islands) e são capturados por uma milícia de piratas liderada pelo sádico e instável Vaas Montenegro.\nJason consegue escapar, mas seus amigos continuam reféns. Para salvá-los e sobreviver ao ambiente selvagem, ele precisa deixar de lado sua vida comum, aprender táticas de combate com a tribo nativa Rakyat e se transformar em um guerreiro implacável, descobrindo até onde a própria mente consegue ir em meio à loucura da ilha.",
       "imagens": [
         "imagens/far-cry-3-classic-edition-mvqsipnkqeoe.jpg"
       ],
@@ -10591,23 +10608,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5o",
       "outras": [],
       "formato": "auto",
+      "proporcao": "800/998",
       "ajuste": "contain",
-      "proporcao": "800/998"
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvqsgutrreja",
-      "cod": "5p",
       "nome": "eFootball PES 2027",
+      "descricao": "",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 102,
-      "descricao": "",
       "imagens": [
         "imagens/efootball-pes-2027-mvqsgsuxg4l3.jpg"
       ],
@@ -10617,23 +10634,23 @@
       "tipos": [
         "Esporte"
       ],
-      "tipo": "Esporte",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5p",
       "outras": [],
       "formato": "auto",
+      "proporcao": "916/1187",
       "ajuste": "contain",
-      "proporcao": "916/1187"
+      "armazenamentos": [],
+      "tipo": "Esporte"
     },
     {
       "id": "mvqs8veqdm09",
-      "cod": "5q",
       "nome": "Demon Slayer 2",
+      "descricao": "O jogo Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 acompanha Tanjiro Kamado e seus aliados em confrontos contra demônios.\n\nSinopse e Enredo do Modo História\n\n• Arcos Adaptações: O modo história percorre as principais fases recentes do anime:\n\t• O arco do Distrito de Entretenimento.\n\t• O arco da Aldeia dos Ferreiros.\n\t• O arco do Treinamento dos Hashiras.\n• Modo \"The Path of a Demon Slayer\": Inclui uma recapitulação dos eventos do primeiro jogo (do treinamento de Tanjiro até a batalha no Trem Infinito) para quem deseja relembrar ou conhecer a história inicial.\n• Jogabilidade na História: Campanha individual com exploração leve de mapas, missões secundárias, itens, cutscenes fiéis ao estilo do anime e intensas batalhas contra chefes (Demônios Superiores).",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 25,
-      "descricao": "O jogo Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 acompanha Tanjiro Kamado e seus aliados em confrontos contra demônios.\n\nSinopse e Enredo do Modo História\n\n• Arcos Adaptações: O modo história percorre as principais fases recentes do anime:\n\t• O arco do Distrito de Entretenimento.\n\t• O arco da Aldeia dos Ferreiros.\n\t• O arco do Treinamento dos Hashiras.\n• Modo \"The Path of a Demon Slayer\": Inclui uma recapitulação dos eventos do primeiro jogo (do treinamento de Tanjiro até a batalha no Trem Infinito) para quem deseja relembrar ou conhecer a história inicial.\n• Jogabilidade na História: Campanha individual com exploração leve de mapas, missões secundárias, itens, cutscenes fiéis ao estilo do anime e intensas batalhas contra chefes (Demônios Superiores).",
       "imagens": [
         "imagens/demon-slayer-2-mvqs8tsufbpp.jpg"
       ],
@@ -10643,23 +10660,24 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5q",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
+      "proporcao": "920/1148",
       "ajuste": "contain",
-      "proporcao": "920/1148"
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvqs5r17z6ha",
-      "cod": "5r",
       "nome": "Cuphead",
+      "descricao": "Sinopse do Jogo\n\n• Enredo: Os irmãos Xicrinho (Cuphead) e Caneco (Mugman) moram na fictícia Ilha do Tinteiro (Inkwell Isle) sob os cuidados do Vovô Chaleira.\n• A dívida: Após fazerem uma aposta arriscada e perderem no Cassino do Diabo, eles precisam entregar suas próprias almas ao Diabo.\n• A missão: Para salvar a si mesmos, eles fazem um acordo e saem em uma jornada de tiro e plataforma (run and gun) para coletar os contratos de alma de diversos chefões poderosos da ilha.\n• Expansão: No conteúdo adicional The Delicious Last Curse (A Deliciosa Última Ceia), os irmãos se unem à nova aventureira Srta. Cálice para ajudar o Chef Pitadinha em uma nova missão.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 5,
-      "descricao": "Sinopse do Jogo\n\n• Enredo: Os irmãos Xicrinho (Cuphead) e Caneco (Mugman) moram na fictícia Ilha do Tinteiro (Inkwell Isle) sob os cuidados do Vovô Chaleira.\n• A dívida: Após fazerem uma aposta arriscada e perderem no Cassino do Diabo, eles precisam entregar suas próprias almas ao Diabo.\n• A missão: Para salvar a si mesmos, eles fazem um acordo e saem em uma jornada de tiro e plataforma (run and gun) para coletar os contratos de alma de diversos chefões poderosos da ilha.\n• Expansão: No conteúdo adicional The Delicious Last Curse (A Deliciosa Última Ceia), os irmãos se unem à nova aventureira Srta. Cálice para ajudar o Chef Pitadinha em uma nova missão.",
       "imagens": [
         "imagens/cuphead-mvqs5p91fi6k.jpg"
       ],
@@ -10669,23 +10687,23 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5r",
       "outras": [],
       "formato": "auto",
+      "proporcao": "800/1000",
       "ajuste": "contain",
-      "proporcao": "800/1000"
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvqrv7qg1mfd",
-      "cod": "5s",
       "nome": "Adventure Time Pirates of the Enchiridion",
+      "descricao": "Adventure Time: Pirates of the Enchiridion é um jogo de RPG e aventura de 2018 desenvolvido pela Climax Studios e publicado pela Outright Games, baseado na série Hora de Aventura do Cartoon Network.\n\nSinopse e Premissa\n\n• O Inundamento: Finn e Jake acordam e descobrem que a pacífica Terra de Ooo foi misteriosamente inundada e está submersa.\n• O Mistério: Alguém roubou ou colocou as mãos em um Enchiridion (o lendário livro dos heróis), e a água tomou conta dos reinos — incluindo o Reino Gelado, que começou a derreter.\n• Navegação e Exploração: Para resolver o enigma, a dupla constrói ou pilota um barco (batizado pelos fãs de \"Jeff\") para navegar pelos mares, investigar pistas e interrogar piratas espalhados por ilhas e territórios inexplorados.\n• Equipe e Combate: Ao longo da jornada, Finn e Jake se juntam a outros personagens icônicos, como BMO e Marceline, utilizando combates táticos em turnos, habilidades especiais e táticas de \"policial bom e policial ruim\" durante interrogatórios para salvar o dia.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 2,
-      "descricao": "Adventure Time: Pirates of the Enchiridion é um jogo de RPG e aventura de 2018 desenvolvido pela Climax Studios e publicado pela Outright Games, baseado na série Hora de Aventura do Cartoon Network.\n\nSinopse e Premissa\n\n• O Inundamento: Finn e Jake acordam e descobrem que a pacífica Terra de Ooo foi misteriosamente inundada e está submersa.\n• O Mistério: Alguém roubou ou colocou as mãos em um Enchiridion (o lendário livro dos heróis), e a água tomou conta dos reinos — incluindo o Reino Gelado, que começou a derreter.\n• Navegação e Exploração: Para resolver o enigma, a dupla constrói ou pilota um barco (batizado pelos fãs de \"Jeff\") para navegar pelos mares, investigar pistas e interrogar piratas espalhados por ilhas e territórios inexplorados.\n• Equipe e Combate: Ao longo da jornada, Finn e Jake se juntam a outros personagens icônicos, como BMO e Marceline, utilizando combates táticos em turnos, habilidades especiais e táticas de \"policial bom e policial ruim\" durante interrogatórios para salvar o dia.",
       "imagens": [
         "imagens/adventure-time-pirates-of-the-enchiridio-mvqrv694ogi8.jpg"
       ],
@@ -10695,23 +10713,23 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5s",
       "outras": [],
       "formato": "auto",
+      "proporcao": "969/1200",
       "ajuste": "contain",
-      "proporcao": "969/1200"
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvqrrq2dbhd4",
-      "cod": "5t",
       "nome": "Assassin's Creed Valhalla",
+      "descricao": "Assassin’s Creed Valhalla acompanha a jornada de Eivor Varinsdottir, um(a) guerreiro(a) viking que deixa a Noruega no século IX (por volta de 872–873 d.C.) rumo às Ilhas Britânicas.\n\nPontos Principais da História\n\n• A Expansão Viking: Após ver seus pais serem assassinados por Kjotve e buscar vingança, Eivor e seu irmão adotivo, Sigurd, lideram seu clã em busca de novas terras e um novo lar na Inglaterra.\n• Alianças e Assentamento: Para sobreviver e prosperar na Britânia, Eivor precisa construir o assentamento de Ravensthorpe e forjar alianças políticas com diferentes reinos anglo-saxões.\n• O Conflito Oculto: O grupo se envolve na luta milenar entre os Ocultos (os futuros Assassinos) e a Ordem dos Anciões (os futuros Templários).\n• Mitologia e Revelações: A trama mistura eventos históricos com a mitologia nórdica e elementos da civilização Isu (os \"Precursores\"), revelando laços profundos entre Eivor, Sigurd, Basim e figuras divinas como Odin e Loki.\n• Presente: No mundo moderno, a história dá continuidade ao arco de Layla Hassan lidando com instabilidades no campo magnético da Terra.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 98,
-      "descricao": "Assassin’s Creed Valhalla acompanha a jornada de Eivor Varinsdottir, um(a) guerreiro(a) viking que deixa a Noruega no século IX (por volta de 872–873 d.C.) rumo às Ilhas Britânicas.\n\nPontos Principais da História\n\n• A Expansão Viking: Após ver seus pais serem assassinados por Kjotve e buscar vingança, Eivor e seu irmão adotivo, Sigurd, lideram seu clã em busca de novas terras e um novo lar na Inglaterra.\n• Alianças e Assentamento: Para sobreviver e prosperar na Britânia, Eivor precisa construir o assentamento de Ravensthorpe e forjar alianças políticas com diferentes reinos anglo-saxões.\n• O Conflito Oculto: O grupo se envolve na luta milenar entre os Ocultos (os futuros Assassinos) e a Ordem dos Anciões (os futuros Templários).\n• Mitologia e Revelações: A trama mistura eventos históricos com a mitologia nórdica e elementos da civilização Isu (os \"Precursores\"), revelando laços profundos entre Eivor, Sigurd, Basim e figuras divinas como Odin e Loki.\n• Presente: No mundo moderno, a história dá continuidade ao arco de Layla Hassan lidando com instabilidades no campo magnético da Terra.",
       "imagens": [
         "imagens/assassin-s-creed-valhalla-mvqrronyuu72.jpg"
       ],
@@ -10721,23 +10739,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5t",
       "outras": [],
       "formato": "auto",
+      "proporcao": "580/739",
       "ajuste": "contain",
-      "proporcao": "580/739"
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvpz9fo3vqv1",
-      "cod": "5u",
       "nome": "Spider Man Miles Morales",
+      "descricao": "A sinopse de Marvel's Spider-Man: Miles Morales gira em torno de Miles Morales, que se muda com a mãe para o bairro de East Harlem e precisa assumir o papel de único Homem-Aranha de Nova York enquanto Peter Parker viaja.\n\nPontos principais da história:\n\n• O Contexto: A história acontece cerca de um ano após os eventos do primeiro jogo da Insomniac Games. Miles está se adaptando à nova vida e aprendendo a usar seus poderes únicos, que incluem descargas bioelétricas (Venom Blast) e camuflagem (invisibilidade).\n• A Ausência de Peter: Peter Parker sai de Nova York por algumas semanas para acompanhar Mary Jane em uma viagem, deixando a responsabilidade de proteger a cidade nas mãos do jovem herói.\n• A Guerra de Facções: O conflito principal envolve uma guerra pelo poder entre a corrupta Roxxon Energy Corporation (que promove um novo combustível chamado Nuforme) e o Underground, um exército criminoso de alta tecnologia liderado por uma vilã conhecida como Tinker (Tinkerer).\n• Conexões Pessoais: Miles descobre que a líder do Underground é, na verdade, Fin Mason, uma amiga de infância. Além disso, ele precisa lidar com interesses corporativos perigosos liderados por Simon Krieger e segredos envolvendo seu tio, Aaron Davis (o Gatuno).",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 50,
-      "descricao": "A sinopse de Marvel's Spider-Man: Miles Morales gira em torno de Miles Morales, que se muda com a mãe para o bairro de East Harlem e precisa assumir o papel de único Homem-Aranha de Nova York enquanto Peter Parker viaja.\n\nPontos principais da história:\n\n• O Contexto: A história acontece cerca de um ano após os eventos do primeiro jogo da Insomniac Games. Miles está se adaptando à nova vida e aprendendo a usar seus poderes únicos, que incluem descargas bioelétricas (Venom Blast) e camuflagem (invisibilidade).\n• A Ausência de Peter: Peter Parker sai de Nova York por algumas semanas para acompanhar Mary Jane em uma viagem, deixando a responsabilidade de proteger a cidade nas mãos do jovem herói.\n• A Guerra de Facções: O conflito principal envolve uma guerra pelo poder entre a corrupta Roxxon Energy Corporation (que promove um novo combustível chamado Nuforme) e o Underground, um exército criminoso de alta tecnologia liderado por uma vilã conhecida como Tinker (Tinkerer).\n• Conexões Pessoais: Miles descobre que a líder do Underground é, na verdade, Fin Mason, uma amiga de infância. Além disso, ele precisa lidar com interesses corporativos perigosos liderados por Simon Krieger e segredos envolvendo seu tio, Aaron Davis (o Gatuno).",
       "imagens": [
         "imagens/spider-man-miles-morales-mvpz9ecjma1c.jpg"
       ],
@@ -10747,23 +10765,23 @@
       "tipos": [
         "Aventura"
       ],
-      "tipo": "Aventura",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5u",
       "outras": [],
       "formato": "auto",
+      "proporcao": "950/1200",
       "ajuste": "contain",
-      "proporcao": "950/1200"
+      "armazenamentos": [],
+      "tipo": "Aventura"
     },
     {
       "id": "mvpz83njabho",
-      "cod": "5v",
       "nome": "Need For Speed Payback",
+      "descricao": "A sinopse de Need for Speed Payback gira em torno de uma história de traição e vingança ambientada no submundo de Fortune Valley (uma cidade inspirada em Las Vegas).\n\nO Enredo Principal\n\n• A Traição: O jogo acompanha um trio de pilotos e amigos — Tyler Morgan (o piloto), Mac (o especialista em drift e off-road) e Jess (a especialista em fugas). Durante um grande golpe para roubar um supercarro (Koenigsegg Regera) de Lina Navarro, o grupo é traído por ela.\n• O Cartel \"A Casa\": Lina Navarro trabalha para A Casa (The House), um cartel criminoso e poderoso que domina os cassinos, o submundo do crime e até a polícia de Fortune Valley.\n• A Missão de Vingança: Após serem separados pela traição, Tyler e sua equipe se reúnem com um objetivo em comum: derrubar o monopólio de \"A Casa\", vencer as ligas de corridas clandestinas da região e se vingar de Lina Navarro e do cartel.\n• Estilo Cinematográfico: A narrativa tem uma forte pegada de \"filme de ação\" estilo Velozes e Furiosos, com missões explosivas, perseguições policiais e cenas de ação em ritmo acelerado.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 30,
-      "descricao": "A sinopse de Need for Speed Payback gira em torno de uma história de traição e vingança ambientada no submundo de Fortune Valley (uma cidade inspirada em Las Vegas).\n\nO Enredo Principal\n\n• A Traição: O jogo acompanha um trio de pilotos e amigos — Tyler Morgan (o piloto), Mac (o especialista em drift e off-road) e Jess (a especialista em fugas). Durante um grande golpe para roubar um supercarro (Koenigsegg Regera) de Lina Navarro, o grupo é traído por ela.\n• O Cartel \"A Casa\": Lina Navarro trabalha para A Casa (The House), um cartel criminoso e poderoso que domina os cassinos, o submundo do crime e até a polícia de Fortune Valley.\n• A Missão de Vingança: Após serem separados pela traição, Tyler e sua equipe se reúnem com um objetivo em comum: derrubar o monopólio de \"A Casa\", vencer as ligas de corridas clandestinas da região e se vingar de Lina Navarro e do cartel.\n• Estilo Cinematográfico: A narrativa tem uma forte pegada de \"filme de ação\" estilo Velozes e Furiosos, com missões explosivas, perseguições policiais e cenas de ação em ritmo acelerado.",
       "imagens": [
         "imagens/need-for-speed-payback-mvpz8285g5eg.jpg"
       ],
@@ -10773,23 +10791,23 @@
       "tipos": [
         "Corrida"
       ],
-      "tipo": "Corrida",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5v",
       "outras": [],
       "formato": "auto",
+      "proporcao": "800/1002",
       "ajuste": "contain",
-      "proporcao": "800/1002"
+      "armazenamentos": [],
+      "tipo": "Corrida"
     },
     {
       "id": "mvpz6pp1mqcz",
-      "cod": "5w",
       "nome": "Uncharted 4",
+      "descricao": "Uncharted 4: A Thief's End (lançado pela Naughty Dog e publicado pela Sony Interactive Entertainment) acompanha Nathan Drake, um caçador de tesouros que está aposentado e vive uma vida tranquila com sua esposa, Elena Fischer.\n\nPontos principais da história:\n\n• O retorno de Sam: A aposentadoria de Nathan é interrompida pelo reaparecimento de seu irmão mais velho, Samuel (Sam), que ele acreditava estar morto há 15 anos após uma fuga de prisão.\n• A dívida perigosa: Sam revela que precisa encontrar o tesouro perdido do pirata Henry Avery na cidade perdida de Libertalia (Madagascar) para pagar uma dívida com um senhor do crime e salvar sua própria vida.\n• A jornada pelo mundo: Junto com seu velho amigo Victor \"Sully\" Sullivan, os irmãos embarcam em uma caça ao tesouro global que os coloca em conflito com outros mercenários rivais, como Rafe Adler e Nadine Ross.\n• Conflito pessoal: A trama equilibra a ação eletrizante com dramas familiares, testando a lealdade de Nathan e forçando-o a decidir o que ele está disposto a sacrificar para salvar quem ama e se reconciliar com o irmão.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 65,
-      "descricao": "Uncharted 4: A Thief's End (lançado pela Naughty Dog e publicado pela Sony Interactive Entertainment) acompanha Nathan Drake, um caçador de tesouros que está aposentado e vive uma vida tranquila com sua esposa, Elena Fischer.\n\nPontos principais da história:\n\n• O retorno de Sam: A aposentadoria de Nathan é interrompida pelo reaparecimento de seu irmão mais velho, Samuel (Sam), que ele acreditava estar morto há 15 anos após uma fuga de prisão.\n• A dívida perigosa: Sam revela que precisa encontrar o tesouro perdido do pirata Henry Avery na cidade perdida de Libertalia (Madagascar) para pagar uma dívida com um senhor do crime e salvar sua própria vida.\n• A jornada pelo mundo: Junto com seu velho amigo Victor \"Sully\" Sullivan, os irmãos embarcam em uma caça ao tesouro global que os coloca em conflito com outros mercenários rivais, como Rafe Adler e Nadine Ross.\n• Conflito pessoal: A trama equilibra a ação eletrizante com dramas familiares, testando a lealdade de Nathan e forçando-o a decidir o que ele está disposto a sacrificar para salvar quem ama e se reconciliar com o irmão.",
       "imagens": [
         "imagens/uncharted-4-mvpz6o4s59xf.jpg"
       ],
@@ -10799,23 +10817,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5w",
       "outras": [],
       "formato": "auto",
+      "proporcao": "963/1200",
       "ajuste": "contain",
-      "proporcao": "963/1200"
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvpz34r1vvd8",
-      "cod": "5x",
       "nome": "God of War 2018",
+      "descricao": "A sinopse de God of War (2018) gira em torno de Kratos, o antigo Deus da Guerra grego, que vive exilado no reino nórdico de Midgard.\nApós a morte de sua esposa, Faye, Kratos e seu filho, Atreus, embarcam em uma jornada difícil para cumprir o último desejo dela: espalhar as cinzas no pico mais alto de todos os Nove Reinos.\n\nPrincipais pontos da história:\n\n• O ponto de partida: Logo no início, a paz da dupla é interrompida por um estranho misterioso e extremamente forte com poderes divinos (mais tarde revelado ser Baldur, filho de Odin).\n• A dinâmica de pai e filho: A viagem serve como um teste de convivência. Kratos tenta esconder seu passado violento e ensina o garoto a sobreviver, enquanto Atreus desconhece sua própria natureza divina.\n• Aliados e obstáculos: Ao longo do caminho, eles contam com a ajuda de figuras como a bruxa Freya, os anões ferreiros Brok e Sindri, e a cabeça viva de Mimir (o homem mais inteligente do mundo), além de enfrentarem criaturas mitológicas e deuses nórdicos.\n• A revelação final: Ao chegarem ao destino em Jotunheim (o reino dos gigantes), eles descobrem murais que contam toda a jornada antecipadamente. Atreus descobre que é parte deus, parte mortal e parte gigante, e que seu nome original dado por sua mãe era Loki.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 45,
-      "descricao": "A sinopse de God of War (2018) gira em torno de Kratos, o antigo Deus da Guerra grego, que vive exilado no reino nórdico de Midgard.\nApós a morte de sua esposa, Faye, Kratos e seu filho, Atreus, embarcam em uma jornada difícil para cumprir o último desejo dela: espalhar as cinzas no pico mais alto de todos os Nove Reinos.\n\nPrincipais pontos da história:\n\n• O ponto de partida: Logo no início, a paz da dupla é interrompida por um estranho misterioso e extremamente forte com poderes divinos (mais tarde revelado ser Baldur, filho de Odin).\n• A dinâmica de pai e filho: A viagem serve como um teste de convivência. Kratos tenta esconder seu passado violento e ensina o garoto a sobreviver, enquanto Atreus desconhece sua própria natureza divina.\n• Aliados e obstáculos: Ao longo do caminho, eles contam com a ajuda de figuras como a bruxa Freya, os anões ferreiros Brok e Sindri, e a cabeça viva de Mimir (o homem mais inteligente do mundo), além de enfrentarem criaturas mitológicas e deuses nórdicos.\n• A revelação final: Ao chegarem ao destino em Jotunheim (o reino dos gigantes), eles descobrem murais que contam toda a jornada antecipadamente. Atreus descobre que é parte deus, parte mortal e parte gigante, e que seu nome original dado por sua mãe era Loki.",
       "imagens": [
         "imagens/god-of-war-2018-mvpz336xfn4b.jpg"
       ],
@@ -10825,23 +10843,23 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5x",
       "outras": [],
       "formato": "auto",
+      "proporcao": "646/800",
       "ajuste": "contain",
-      "proporcao": "646/800"
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvpvevqzvat1",
-      "cod": "5y",
       "nome": "Fifa 27",
+      "descricao": "O EA Sports FC 27 (sucessor da antiga franquia FIFA) não possui uma história linear ou sinopse de campanha tradicional, mas gira em torno de uma grande inovação narrativa e social: The Grounds.\n\nO Conceito e \"Sinopse\" da Experiência\n\n• The Grounds: É um novo hub social em mundo aberto que une ruas, quadras e grandes estádios em uma cidade virtual. Nele, os jogadores criam seus próprios avatares personalizados, interagem com outras pessoas, compram roupas e participam de partidas casuais e minigames (como futebol 2x2 ou 3x3).\n• Presença de Mentores: O modo conta com a aparição e orientação de craques do futebol mundial (como Kylian Mbappé, Chloe Kelly, Paulo Dybala e referências ao clássico Alex Hunter) que atuam como mentores na jornada do seu atleta.\n\nOutros Modos Principais\n\n• Modo Carreira (Manager e Jogador): Recebeu uma reformulação no Mercado de Transferências (com parcerias do TransferRoom), interface de gestão mais densa e o sistema de GER Dinâmico, que reflete a moral, a fase e o preparo físico em tempo real.\n• Football Ultimate Team (FUT): Introduz a Galeria FUT para exibir cartas em 3D/holográficas, além de ajustes nos desafios de montagem de elenco.\n• Clubs: Integrado ao ambiente de mundo aberto do The Grounds com novos arquétipos e amplificadores de atributos.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 50,
-      "descricao": "O EA Sports FC 27 (sucessor da antiga franquia FIFA) não possui uma história linear ou sinopse de campanha tradicional, mas gira em torno de uma grande inovação narrativa e social: The Grounds.\n\nO Conceito e \"Sinopse\" da Experiência\n\n• The Grounds: É um novo hub social em mundo aberto que une ruas, quadras e grandes estádios em uma cidade virtual. Nele, os jogadores criam seus próprios avatares personalizados, interagem com outras pessoas, compram roupas e participam de partidas casuais e minigames (como futebol 2x2 ou 3x3).\n• Presença de Mentores: O modo conta com a aparição e orientação de craques do futebol mundial (como Kylian Mbappé, Chloe Kelly, Paulo Dybala e referências ao clássico Alex Hunter) que atuam como mentores na jornada do seu atleta.\n\nOutros Modos Principais\n\n• Modo Carreira (Manager e Jogador): Recebeu uma reformulação no Mercado de Transferências (com parcerias do TransferRoom), interface de gestão mais densa e o sistema de GER Dinâmico, que reflete a moral, a fase e o preparo físico em tempo real.\n• Football Ultimate Team (FUT): Introduz a Galeria FUT para exibir cartas em 3D/holográficas, além de ajustes nos desafios de montagem de elenco.\n• Clubs: Integrado ao ambiente de mundo aberto do The Grounds com novos arquétipos e amplificadores de atributos.",
       "imagens": [
         "imagens/fifa-27-mvpvf2h5gakz.jpg"
       ],
@@ -10851,14 +10869,15 @@
       "tipos": [
         "Esporte"
       ],
-      "tipo": "Esporte",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "5y",
       "outras": [],
       "formato": "auto",
+      "proporcao": "963/1200",
       "ajuste": "contain",
-      "proporcao": "963/1200"
+      "armazenamentos": [],
+      "tipo": "Esporte"
     },
     {
       "id": "ps4slim",
