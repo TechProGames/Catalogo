@@ -44,7 +44,7 @@ header.wrap>.livre{position:absolute;margin:0;z-index:4;max-width:calc(100% - 32
 .slogan{color:var(--mut);margin-top:10px;max-width:560px;font-size:calc(1rem * var(--e-slogan,1))}
 .insta{display:block;width:fit-content;margin-top:10px;color:var(--azul2);text-decoration:none;font-weight:700;font-size:calc(.875rem * var(--e-insta,1))}
 /* filtros e navegação */
-.filtros{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 0}
+.filtros{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0}
 .campo-busca{position:relative}
 .campo-busca svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--mut)}
 .busca{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px 14px 12px 40px;outline:none}
@@ -74,6 +74,7 @@ header.wrap>.livre{position:absolute;margin:0;z-index:4;max-width:calc(100% - 32
 .grade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:10px 0 4px}
 /* grade contínua: cada cartão leva em cima o caminho da subcategoria (mostrado no 1º de cada grupo e no início de cada linha) */
 .cel{display:flex;flex-direction:column;min-width:0}
+.cel>.card,.grade>.card{content-visibility:auto;contain-intrinsic-size:auto 320px}
 .cel>.card{flex:1}
 .cel-rot{position:relative;z-index:1;height:1.45em;line-height:1.45em;margin-bottom:3px;font-size:calc(.6875rem * var(--e-subsecao,1));font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--azul2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;visibility:hidden}
 .cel-rot.ver{visibility:visible}
@@ -254,7 +255,7 @@ body:not(.previa) #logo,body:not(.previa) #marca{cursor:pointer}
 /* barra e gaveta da seleção */
 .barra{position:fixed;left:0;right:0;bottom:0;z-index:10;padding:14px 16px calc(14px + env(safe-area-inset-bottom));background:linear-gradient(transparent,color-mix(in srgb,var(--bg) 96%,transparent) 35%);transform:translateY(130%);transition:transform .25s}
 .barra.on{transform:none}
-.espaco-rodape{max-width:560px;margin:0 auto 8px;background:color-mix(in srgb,var(--bg2) 94%,transparent);border:1px solid var(--line);border-radius:12px;padding:8px 12px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.espaco-rodape{max-width:560px;margin:0 auto 8px;background:color-mix(in srgb,var(--bg2) 94%,transparent);border:1px solid var(--line);border-radius:12px;padding:8px 12px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
 .espaco-rodape[hidden]{display:none}
 body.com-espaco{padding-bottom:200px}
 .b-info{display:flex;align-items:baseline;gap:4px 8px;flex-wrap:wrap;min-width:0;text-align:left}
@@ -263,7 +264,7 @@ body.com-espaco{padding-bottom:200px}
 .b-info b+b::before{content:"+";margin-right:6px;opacity:.6;font-weight:600}
 .barra button>span:last-child{white-space:nowrap;flex:none}
 .barra-linha{max-width:560px;margin:0 auto;display:flex;gap:8px;align-items:stretch}
-.limpar-barra{flex:none;width:54px;border:1px solid var(--line);border-radius:14px;background:color-mix(in srgb,var(--bg2) 94%,transparent);color:var(--txt);font-size:1.15rem;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.limpar-barra{flex:none;width:54px;border:1px solid var(--line);border-radius:14px;background:color-mix(in srgb,var(--bg2) 94%,transparent);color:var(--txt);font-size:1.15rem;cursor:pointer}
 .limpar-barra:hover{border-color:#ff4d4d;color:#ff7b7b}
 .barra #abrir{flex:1;min-width:0;max-width:560px;margin:0 auto;width:100%;display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--azul);color:var(--sobre-azul);border:0;border-radius:14px;padding:15px 18px;font-weight:700;cursor:pointer;box-shadow:0 8px 30px color-mix(in srgb,var(--azul) 45%,transparent)}
 .fundo{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:20;opacity:0;pointer-events:none;transition:opacity .2s}
@@ -361,8 +362,8 @@ body.previa .logo{-webkit-user-drag:none;user-select:none}
   </div>
 </aside>
 
-<script src="comum.js?v=26"></script>
-<script src="pedido.js?v=26"></script>
+<script src="comum.js?v=27"></script>
+<script src="pedido.js?v=27"></script>
 <script>
 // link de pedido aberto no endereço do catálogo ("…/Catalogo/#3.…"): vai para a página do pedido
 if (/^#[23]\./.test(location.hash)) location.replace('pedido.html' + location.hash);
@@ -497,7 +498,8 @@ function cabecalho() {
   const nome = loja.nome || 'Catálogo';
   document.title = nome + ' · Catálogo';
   $('logo').hidden = !loja.logo;
-  if (loja.logo) { if ($('logo').getAttribute('src') !== loja.logo) $('logo').src = loja.logo; $('logo').alt = nome; }
+  const srcLogo = loja.logoMini || loja.logo;     // versão leve, quando existe
+  if (loja.logo) { if ($('logo').getAttribute('src') !== srcLogo) $('logo').src = srcLogo; $('logo').alt = nome; }
   $('marca').hidden = !!(loja.logo && loja.ocultarNome);
   const partes = esc(nome).split(' ');
   $('marca').innerHTML = partes.length > 1 ? partes.slice(0, -1).join(' ') + ' <span>' + partes[partes.length - 1] + '</span>' : partes[0];
@@ -672,8 +674,9 @@ function botao(p) {
     ? `<div class="qtd"><button data-a="-" data-id="${id}" aria-label="Diminuir">−</button><span>${q}</span><button data-a="+" data-id="${id}" aria-label="Aumentar">+</button></div>`
     : `<button class="btn-add" data-a="+" data-id="${id}">Selecionar</button>`;
 }
-function fotos(p) {
-  const im = p.imagens, alt = esc(p.nome);
+// grande = janela de detalhes (fotos originais); nos cartões vão as versões leves
+function fotos(p, grande) {
+  const im = grande ? p.imagens : p.imagens.map((s, i) => p.minis[i] || s), alt = esc(p.nome);
   if (!im.length) return `<div class="semfoto">${esc(iniciais(p.nome))}</div>`;
   if (im.length === 1) return `<img src="${esc(im[0])}" alt="${alt}" loading="lazy">`;
   return `<div class="slides">${im.map((s, i) => `<img src="${esc(s)}" alt="${alt} — foto ${i + 1}" loading="lazy">`).join('')}</div>
@@ -759,23 +762,31 @@ function gradeContinua(itens) {
 }
 // mostra o caminho no 1º cartão de cada grupo e no começo de cada linha; o texto pode ocupar a largura do grupo naquela linha
 function arrumarRotulos() {
-  document.querySelectorAll('#conteudo .grade').forEach(g => {
+  // primeiro lê todas as posições, depois escreve (muito mais rápido no celular)
+  const grades = [...document.querySelectorAll('#conteudo .grade')].map(g => {
     const cels = [...g.children];
-    cels.forEach((c, i) => {
-      const r = c.querySelector('.cel-rot'); if (!r) return;
-      const ant = cels[i - 1];
-      const inicio = !ant || ant.dataset.grupo !== c.dataset.grupo || ant.offsetTop !== c.offsetTop;
-      r.classList.toggle('ver', inicio && !!c.dataset.grupo);
-      r.style.width = '';
-      if (inicio) {
-        let fim = c;
-        for (let j = i + 1; j < cels.length && cels[j].dataset.grupo === c.dataset.grupo && cels[j].offsetTop === c.offsetTop; j++) fim = cels[j];
-        r.style.width = (fim.offsetLeft + fim.offsetWidth - c.offsetLeft) + 'px';
-      }
-    });
+    return {cels, pos: cels.map(c => ({t: c.offsetTop, l: c.offsetLeft, w: c.offsetWidth, g: c.dataset.grupo, r: c.querySelector('.cel-rot')}))};
+  });
+  for (const {pos} of grades) pos.forEach((c, i) => {
+    if (!c.r) return;
+    const ant = pos[i - 1];
+    const inicio = !ant || ant.g !== c.g || ant.t !== c.t;
+    c.r.classList.toggle('ver', inicio && !!c.g);
+    let w = '';
+    if (inicio) {
+      let fim = c;
+      for (let j = i + 1; j < pos.length && pos[j].g === c.g && pos[j].t === c.t; j++) fim = pos[j];
+      w = (fim.l + fim.w - c.l) + 'px';
+    }
+    if (c.r.style.width !== w) c.r.style.width = w;
   });
 }
-addEventListener('resize', () => requestAnimationFrame(arrumarRotulos));
+// no celular a barra de endereço some/aparece ao rolar e dispara "resize" sem mudar a largura: ignora
+let largRot = innerWidth, tRot;
+addEventListener('resize', () => {
+  if (innerWidth === largRot) return;
+  largRot = innerWidth; clearTimeout(tRot); tRot = setTimeout(arrumarRotulos, 120);
+});
 
 // ---------- busca, ordem e filtro dentro da categoria ----------
 let termoCat = '', ordem = 'az', tipoF = '';      // os itens começam em ordem alfabética
@@ -913,7 +924,7 @@ function abrirDetalhe(p) {
   const d = $('det'), v = vista(p);
   d.innerHTML = `
     <button class="det-fechar" data-fechar-det aria-label="Fechar">×</button>
-    <div class="foto">${fotos(v)}${v.disponivel ? '' : '<span class="tag">Esgotado</span>'}</div>
+    <div class="foto">${fotos(v, true)}${v.disponivel ? '' : '<span class="tag">Esgotado</span>'}</div>
     <div class="det-corpo">
       ${p.categoria ? `<span class="cat-cam">${caminhoAte(p.categoria).map(id => linkCat(mapa().get(id).no)).join('<span class="sep-cam">›</span>')}</span>` : ''}
       ${v !== p ? `<small class="serv-de">${esc(p.nome)}</small>` : ''}
@@ -1060,7 +1071,7 @@ function atualizar() {
   $('totais').innerHTML = tot;
   $('lista').innerHTML = it.map(({p}) => `
     <div class="item">
-      ${p.imagens[0] ? `<img src="${esc(p.imagens[0])}" alt="">` : '<div class="mini"></div>'}
+      ${p.imagens[0] ? `<img src="${esc(p.minis[0] || p.imagens[0])}" alt="" loading="lazy">` : '<div class="mini"></div>'}
       <div class="t"><b>${esc(nomeCompleto(p))}</b><small>${ehGB(p) ? (temValor(p) ? num(p.valor) + ' GB' : '') : temValorP(p) ? brl(valorDe(p)) + ' cada' : 'Sob consulta'}</small></div>
       ${ehGB(p) ? `<button class="rm" data-a="x" data-id="${esc(p.id)}" aria-label="Remover">✕</button>` : `<div data-acao-de="${esc(p.id)}">${botao(p)}</div>`}
     </div>`).join('');

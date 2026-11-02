@@ -49,6 +49,7 @@ Os produtos ficam em `data/produtos.json` e as fotos em `imagens/`, dentro do pr
 - Depois de mexer, clique em **Publicar no site**. O catálogo dos clientes atualiza em cerca de 1 minuto.
 - Valor em R$ vazio aparece como "Preço sob consulta". Itens em GB mostram a soma de GB do que o cliente escolheu.
 - Desligar a chave (ou desmarcar "Disponível") de um produto deixa ele como **Esgotado** (aparece, mas não dá para selecionar).
+- **Fotos leves (celular)**: cada foto ganha uma versão leve em `imagens/mini/`, usada nos cartões do site (a janela do produto continua com a original). Fotos novas já ganham a versão leve ao salvar; para as antigas, use o aviso **⚡ Gerar agora** na aba Produtos e depois **Publicar**.
 - As fotos são reduzidas automaticamente (máx. 1000 px) antes de subir.
 - Mande para os clientes só o link do catálogo (sem `admin.html`).
 

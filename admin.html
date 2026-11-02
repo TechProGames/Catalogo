@@ -104,6 +104,8 @@ output{color:var(--txt);font-weight:700;margin-left:4px}
 .serv-linha>div:not(.th){flex:1;min-width:0}
 .serv-linha b,.serv-cand b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .serv-linha small,.serv-cand small{color:var(--mut);font-size:12px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini-aviso{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:0 0 12px;padding:10px 12px;border:1px solid color-mix(in srgb,var(--alerta) 55%,var(--line));border-radius:10px;background:color-mix(in srgb,var(--alerta) 10%,transparent);font-size:13px}
+.mini-aviso b{color:var(--alerta)}
 .serv-bts{display:flex;gap:8px;flex-wrap:wrap}
 .serv-bts .btn{flex:1 1 220px;white-space:normal;text-align:center}
 .sub-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:-4px 0 12px;padding:10px 12px;border:1px solid var(--azul);border-radius:10px;background:color-mix(in srgb,var(--azul) 14%,transparent);font-size:13px}
@@ -341,6 +343,7 @@ dialog form{padding:18px}
         <h2>Produtos <span class="pill" id="contagem">0</span></h2>
         <button class="btn" id="novo">+ Novo produto</button>
       </div>
+      <div class="mini-aviso" id="mini-aviso" hidden></div>
       <input class="filtro" id="filtro" type="search" placeholder="Buscar produto…">
       <div id="lista"><p class="vazio">Carregando…</p></div>
     </div>
@@ -655,8 +658,8 @@ dialog form{padding:18px}
   </form>
 </dialog>
 
-<script src="comum.js?v=26"></script>
-<script src="pedido.js?v=26"></script>
+<script src="comum.js?v=27"></script>
+<script src="pedido.js?v=27"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -739,6 +742,84 @@ function urlFoto(c) {
   if (ehExterna(c)) return c;
   if (cfg.owner && cfg.repo && conectado) return `https://raw.githubusercontent.com/${cfg.owner}/${cfg.repo}/${cfg.branch}/${c}`;
   return c;
+}
+// ---------- versões leves das fotos (miniaturas) para os cartões do site ----------
+const MINI_MAX = 520;                      // px do maior lado (cartão no celular com tela de alta resolução)
+function carregarImg(src) {
+  return new Promise((ok, erro) => { const im = new Image(); im.crossOrigin = 'anonymous'; im.onload = () => ok(im); im.onerror = () => erro(new Error('Não consegui abrir ' + src)); im.src = src; });
+}
+// devolve um dataURL leve (WebP; se o navegador não gerar WebP, JPG). alfa = manter transparência (logo)
+function encolher(im, max, alfa) {
+  const k = Math.min(1, max / Math.max(im.naturalWidth, im.naturalHeight));
+  const c = document.createElement('canvas');
+  c.width = Math.max(1, Math.round(im.naturalWidth * k)); c.height = Math.max(1, Math.round(im.naturalHeight * k));
+  const g = c.getContext('2d'); g.imageSmoothingQuality = 'high';
+  if (!alfa) { g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); }
+  g.drawImage(im, 0, 0, c.width, c.height);
+  const w = c.toDataURL('image/webp', alfa ? 0.88 : 0.8);
+  return w.startsWith('data:image/webp') ? w : c.toDataURL(alfa ? 'image/png' : 'image/jpeg', 0.8);
+}
+const extDe = d => d.startsWith('data:image/webp') ? 'webp' : d.startsWith('data:image/png') ? 'png' : 'jpg';
+const caminhoMini = (orig, d) => 'imagens/mini/' + orig.split('/').pop().replace(/\.[a-z0-9]+$/i, '') + '.' + extDe(d);
+async function subirMini(orig, dataURL, alfa) {
+  const d = encolher(await carregarImg(dataURL), alfa ? 900 : MINI_MAX, alfa), caminho = caminhoMini(orig, d);
+  await gh(caminho, {method: 'PUT', body: {message: 'Adiciona miniatura', content: d.split(',')[1], branch: cfg.branch}});
+  previewLocal[caminho] = d;
+  return caminho;
+}
+// fotos já publicadas que ainda não têm versão leve
+function semMini() {
+  const l = [];
+  for (const p of dados.produtos) p.imagens.forEach((c, i) => { if (!ehExterna(c) && !(p.minis && p.minis[i])) l.push({p, i, c}); });
+  if (dados.loja.logo && !ehExterna(dados.loja.logo) && !dados.loja.logoMini) l.push({logo: true, c: dados.loja.logo});
+  return l;
+}
+function renderMiniAviso() {
+  const n = conectado ? semMini().length : 0, el = $('mini-aviso');
+  el.hidden = !n;
+  if (n) el.innerHTML = `<span>⚡ <b>${n} ${n === 1 ? 'foto está' : 'fotos estão'} sem versão leve.</b> Gerar deixa o site bem mais rápido no celular (as fotos originais continuam na janela do produto).</span><button class="btn" id="mini-gerar">Gerar agora</button>`;
+}
+document.addEventListener('click', e => { if (e.target.id === 'mini-gerar') gerarMinis(); });
+// gera todas de uma vez e envia em poucos commits (API Git do GitHub)
+async function gerarMinis() {
+  if (!exigirConexao()) return;
+  const lista = semMini(); if (!lista.length) return;
+  const bt = $('mini-gerar'); bt.disabled = true;
+  const api = (c, opt = {}) => fetch(repoURL() + c, {method: opt.method || 'GET', cache: 'no-store',
+    headers: {Authorization: 'Bearer ' + cfg.token, Accept: 'application/vnd.github+json'}, body: opt.body ? JSON.stringify(opt.body) : undefined})
+    .then(async r => { if (!r.ok) { let m = ''; try { m = (await r.json()).message } catch (e) {} throw new Error(erroGH(r.status, m)); } return r.json(); });
+  let feitas = 0, falhas = 0;
+  try {
+    for (let ini = 0; ini < lista.length; ini += 40) {
+      const lote = lista.slice(ini, ini + 40), arvore = [], aplicar = [];
+      for (const x of lote) {
+        bt.textContent = `Gerando ${feitas + aplicar.length + 1} de ${lista.length}…`;
+        try {
+          let im;
+          try { im = await carregarImg(new URL(x.c, urlCatalogo() || location.href).href); }
+          catch (e) { im = await carregarImg(`https://raw.githubusercontent.com/${cfg.owner}/${cfg.repo}/${cfg.branch}/${x.c}`); }
+          const d = encolher(im, x.logo ? 900 : MINI_MAX, !!x.logo), caminho = caminhoMini(x.c, d);
+          const blob = await api('/git/blobs', {method: 'POST', body: {content: d.split(',')[1], encoding: 'base64'}});
+          arvore.push({path: caminho, mode: '100644', type: 'blob', sha: blob.sha});
+          previewLocal[caminho] = d; aplicar.push({x, caminho});
+        } catch (e) { falhas++; }
+      }
+      if (!arvore.length) continue;
+      bt.textContent = 'Enviando…';
+      const ref = await api('/git/ref/heads/' + encodeURIComponent(cfg.branch));
+      const base = await api('/git/commits/' + ref.object.sha);
+      const tree = await api('/git/trees', {method: 'POST', body: {base_tree: base.tree.sha, tree: arvore}});
+      const commit = await api('/git/commits', {method: 'POST', body: {message: `Miniaturas das fotos (${arvore.length})`, tree: tree.sha, parents: [ref.object.sha]}});
+      await api('/git/refs/heads/' + encodeURIComponent(cfg.branch), {method: 'PATCH', body: {sha: commit.sha}});
+      for (const {x, caminho} of aplicar) {
+        if (x.logo) dados.loja.logoMini = caminho;
+        else { x.p.minis = x.p.imagens.map((_, i) => (x.p.minis && x.p.minis[i]) || ''); x.p.minis[x.i] = caminho; }
+      }
+      feitas += aplicar.length; marcarSujo();
+    }
+    aviso(`Pronto: ${feitas} fotos leves geradas${falhas ? ` (${falhas} não abriram)` : ''}. Agora clique em Publicar no site.`, falhas ? 'erro' : 'ok');
+  } catch (err) { aviso(err.message, 'erro'); }
+  renderMiniAviso(); renderLista();
 }
 function urlCatalogo() {
   if (!cfg.owner || !cfg.repo) return '';
@@ -840,7 +921,7 @@ async function publicar() {
     const r = await gh(CAMINHO, {method: 'PUT', body: corpo});
     sha = r.content.sha;
     marcarSujo(false);
-    const emUso = new Set([dados.loja.logo, ...dados.produtos.flatMap(p => p.imagens), ...pedidosCache.flatMap(p => p.itens.map(l => l.imagem))]);   // capas usadas no histórico não são apagadas
+    const emUso = new Set([dados.loja.logo, dados.loja.logoMini, ...dados.produtos.flatMap(p => [...p.imagens, ...(p.minis || [])]), ...pedidosCache.flatMap(p => p.itens.map(l => l.imagem))]);   // capas usadas no histórico não são apagadas
     const lixo = [...new Set(remover.splice(0))].filter(c => c && !ehExterna(c) && !emUso.has(c));
     for (const c of lixo) {
       try { const f = await gh(c); if (f) await gh(c, {method: 'DELETE', body: {message: 'Remove imagem', sha: f.sha, branch: cfg.branch}}); } catch (e) {}
@@ -1104,9 +1185,12 @@ $('logo-arq').addEventListener('change', async e => {
   if (!exigirConexao()) return;
   $('logo-prev').textContent = 'Enviando…';
   try {
-    const caminho = await subirImagem(await reduzir(f, 1600, f.type !== 'image/jpeg'), 'logo');
+    const d = await reduzir(f, 1600, f.type !== 'image/jpeg');
+    const caminho = await subirImagem(d, 'logo');
+    let mini = ''; try { mini = await subirMini(caminho, d, true); } catch (e) {}
     if (dados.loja.logo) remover.push(dados.loja.logo);
-    dados.loja.logo = caminho; marcarSujo();
+    if (dados.loja.logoMini) remover.push(dados.loja.logoMini);
+    dados.loja.logo = caminho; dados.loja.logoMini = mini; marcarSujo();
     aviso('Logo enviada. Clique em Publicar para aparecer no site.', 'ok');
   } catch (err) { aviso(err.message, 'erro'); }
   renderLoja();
@@ -1124,7 +1208,7 @@ $('topo-arq').addEventListener('change', async e => {
   renderLoja();
 });
 $('topo-rem').onclick = () => { if (dados.loja.topoPdf) remover.push(dados.loja.topoPdf); dados.loja.topoPdf = ''; marcarSujo(); renderLoja(); };
-$('logo-rem').onclick = () => { if (dados.loja.logo) remover.push(dados.loja.logo); dados.loja.logo = ''; marcarSujo(); renderLoja(); };
+$('logo-rem').onclick = () => { if (dados.loja.logo) remover.push(dados.loja.logo); if (dados.loja.logoMini) remover.push(dados.loja.logoMini); dados.loja.logo = dados.loja.logoMini = ''; marcarSujo(); renderLoja(); };
 
 // ---------- aba Categorias (árvore) ----------
 const fechadosCat = new Set(ler('catalogo-admin-cat-fechadas', []));
@@ -1249,7 +1333,7 @@ function linhaProduto(p, sub = false) {
   const info = [servs.length ? `${servs.length} ${(p.servicosRotulo || 'serviços').toLowerCase()} dentro` : '', p.tipo, textoValor(p), p.outras && p.outras.length ? '+' + p.outras.length + (p.outras.length === 1 ? ' categoria' : ' categorias') : '', p.armazenamentos && p.armazenamentos.length ? p.armazenamentos.map(a => a.nome).join(' / ') : '', p.imagens.length > 1 ? p.imagens.length + ' fotos' : '', ...nomesEtq, p.disponivel ? '' : 'esgotado'].filter(Boolean).join(' · ');
   return `
     <div class="linha${p.disponivel ? '' : ' off'}" data-id="${esc(p.id)}">
-      ${p.imagens[0] ? `<img class="th" data-acao="editar" src="${esc(urlFoto(p.imagens[0]))}" alt="Editar ${esc(p.nome)}">` : `<div class="th" data-acao="editar">${esc(iniciais(p.nome))}</div>`}
+      ${p.imagens[0] ? `<img class="th" data-acao="editar" src="${esc(urlFoto((p.minis && p.minis[0]) || p.imagens[0]))}" loading="lazy" alt="Editar ${esc(p.nome)}">` : `<div class="th" data-acao="editar">${esc(iniciais(p.nome))}</div>`}
       <div class="t" data-acao="editar"><b>${esc(p.nome)}</b><small>${esc(info)}</small></div>
       <div class="mini-btns">
         <label class="sw" title="Disponível"><input type="checkbox" data-acao="disp" ${p.disponivel ? 'checked' : ''}><span></span></label>
@@ -1270,6 +1354,7 @@ function htmlGrupo(no, vis, termo) {
     <div class="corpo">${diretos.map(linhaProduto).join('')}${no.filhas.map(f => htmlGrupo(f, vis, termo)).join('')}</div></details>`;
 }
 function renderLista() {
+  renderMiniAviso();
   const termo = norm($('filtro').value), ps = dados.produtos;
   $('contagem').textContent = ps.length;
   if (!ps.length) { $('lista').innerHTML = '<p class="vazio">Nenhum produto ainda. Clique em “+ Novo produto”.</p>'; return; }
@@ -1573,7 +1658,7 @@ $('extras-lista').addEventListener('input', e => { const i = e.target.dataset.ro
 // ---- serviços / variações com foto: outros produtos que passam a ficar DENTRO deste anúncio
 let servForm = [];
 const paiDe = id => dados.produtos.find(m => m.id !== id && (m.servicos || []).includes(id));
-const miniFoto = p => p.imagens[0] ? `<img src="${esc(urlFoto(p.imagens[0]))}" alt="">` : `<div class="th">${esc(iniciais(p.nome))}</div>`;
+const miniFoto = p => p.imagens[0] ? `<img src="${esc(urlFoto((p.minis && p.minis[0]) || p.imagens[0]))}" alt="" loading="lazy">` : `<div class="th">${esc(iniciais(p.nome))}</div>`;
 // mesma ordem do site: do menor para o maior valor
 const ordemServ = ids => ids.map(id => dados.produtos.find(x => x.id === id)).filter(Boolean)
   .sort((a, b) => (a.valor ?? Infinity) - (b.valor ?? Infinity) || a.nome.localeCompare(b.nome, 'pt'));
@@ -1729,7 +1814,7 @@ function abrirForm(p, sub = false) {
   form.valor.value = p?.valor != null ? p.valor.toLocaleString('pt-BR', {minimumFractionDigits: p.unidade === 'GB' ? 0 : 2, maximumFractionDigits: 2}) : '';
   form.descricao.value = p?.descricao || '';
   form.disponivel.checked = p ? p.disponivel : true;
-  fotosForm = (p?.imagens || []).map(path => ({path}));
+  fotosForm = (p?.imagens || []).map((path, i) => ({path, mini: (p.minis && p.minis[i]) || ''}));
   etqForm = new Set(p?.etiquetas || []);
   extrasForm = (p?.extras || []).map(e => ({...e}));
   renderExtras();
@@ -1781,6 +1866,7 @@ form.addEventListener('submit', async e => {
       if (!f.data) continue;
       btn.textContent = `Enviando foto ${++n} de ${novas.length}…`;
       f.path = await subirImagem(f.data, nome);
+      try { f.mini = await subirMini(f.path, f.data, false); } catch (e) { f.mini = ''; }   // versão leve para o cartão
       delete f.data;
     }
   } catch (err) {
@@ -1789,12 +1875,12 @@ form.addEventListener('submit', async e => {
     btn.disabled = false; btn.textContent = pilhaForm.length ? 'Salvar e voltar ao principal' : 'Salvar produto';
   }
   if (catForm) lembrarCat('cat', catForm);
-  const imagens = fotosForm.map(f => f.path);
-  if (editando) remover.push(...editando.imagens.filter(c => !imagens.includes(c)));
+  const imagens = fotosForm.map(f => f.path), minis = fotosForm.map(f => f.mini || '');
+  if (editando) remover.push(...editando.imagens.filter(c => !imagens.includes(c)), ...(editando.minis || []).filter(c => c && !minis.includes(c)));
 
   const p = {
     id: editando?.id || novoId(), cod: editando?.cod || proximoCod(), vendidos: editando?.vendidos || 0, nome, categoria: catForm,
-    unidade: unidadeForm, valor, descricao: form.descricao.value.trim(), imagens,
+    unidade: unidadeForm, valor, descricao: form.descricao.value.trim(), imagens, minis,
     disponivel: form.disponivel.checked,
     etiquetas: dados.etiquetas.filter(x => etqForm.has(x.id)).map(x => x.id),
     extras: extrasForm.filter(e => acharNoExp(e.cat)).map(e => ({cat: e.cat, rotulo: String(e.rotulo || '').trim()})),

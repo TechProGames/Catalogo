@@ -191,7 +191,7 @@ const origensDe = no => [...(no.origens || [no.id]), ...no.filhas.flatMap(origen
 function normalizarCatalogo(d) {
   d = d && typeof d === 'object' ? d : {};
   const li = d.loja || {};
-  const loja = Object.assign({nome: '', slogan: '', whatsapp: '', instagram: '', rodape: '', logo: ''}, li);
+  const loja = Object.assign({nome: '', slogan: '', whatsapp: '', instagram: '', rodape: '', logo: '', logoMini: ''}, li);
   loja.ocultarNome = !!li.ocultarNome;
   loja.tema = mesclarTema(li.tema);
 
@@ -229,6 +229,8 @@ function normalizarCatalogo(d) {
       unidade: p.unidade === 'GB' ? 'GB' : 'R$',
       valor: typeof v === 'number' && isFinite(v) ? v : null,
       imagens: Array.isArray(p.imagens) ? p.imagens.filter(Boolean) : (p.imagem ? [p.imagem] : []),
+      // versões leves das fotos (para os cartões no celular); mesma ordem das imagens, '' = ainda não tem
+      minis: Array.isArray(p.minis) ? p.minis.map(x => typeof x === 'string' ? x : '') : [],
       disponivel: p.disponivel !== false,
       etiquetas: etiquetas.filter(e => etq.includes(e.id)).map(e => e.id),
       // "escolher junto": cada entrada é um botão {cat, rotulo} que abre a lista numa nova aba
@@ -257,7 +259,7 @@ function normalizarCatalogo(d) {
       })).filter(a => a.nome || a.gb)
     };
   });
-  produtos.forEach(p => { p.outras = p.outras.filter(c => c !== p.categoria); p.tipo = p.tipos.join(', '); });
+  produtos.forEach(p => { p.outras = p.outras.filter(c => c !== p.categoria); p.tipo = p.tipos.join(', '); p.minis = p.imagens.map((_, i) => p.minis[i] || ''); });
   // cada serviço fica em um anúncio só, e um anúncio que está dentro de outro não tem serviços próprios
   const porId = new Set(produtos.map(p => p.id)), usados = new Set();
   produtos.forEach(p => { p.servicos = p.servicos.filter(s => s !== p.id && porId.has(s) && !usados.has(s) && usados.add(s)); });

@@ -84,7 +84,7 @@ const Pedidos = (() => {
       return {
         id: p.id, nome: pai ? `${pai.nome} — ${p.nome}` : p.nome, qtd: Math.max(1, +q || 1), versao: v ? v.nome : '', versaoGB: v ? v.gb : 0,
         unidade: p.unidade, valor: ehGB(p) ? null : (temNum(vSnap) ? vSnap : (temNum(valorAtual) ? valorAtual : null)),
-        gb: ehGB(p) && temNum(p.valor) ? p.valor : null, imagem: p.imagens[0] || '', tipo: p.tipo || '',
+        gb: ehGB(p) && temNum(p.valor) ? p.valor : null, imagem: (p.minis && p.minis[0]) || p.imagens[0] || '', tipo: p.tipo || '',
         grupo: caminho((pai || p).categoria) || 'Outros', adicional: '', _p: p
       };
     }).filter(Boolean);
