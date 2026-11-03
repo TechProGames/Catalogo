@@ -1009,6 +1009,35 @@
   ],
   "produtos": [
     {
+      "id": "mw1cj8mvl9gv",
+      "cod": "b5",
+      "nome": "Grand Theft Auto San Andreas",
+      "categoria": "mvpxdvp0ubk4",
+      "unidade": "GB",
+      "valor": 25,
+      "descricao": "A sinopse de Grand Theft Auto: San Andreas gira em torno de Carl \"CJ\" Johnson:\n• O Retorno: No início dos anos 1990, CJ volta para sua cidade natal, Los Santos (no estado de San Andreas), após passar cinco anos em Liberty City. Ele retorna porque sua mãe foi assassinada em um ataque a tiros contra a casa da família.\n• A Armação: Logo após chegar, CJ é interceptado por policiais corruptos do CRASH (Frank Tenpenny e Eddie Pulaski), que o chantageiam e o incriminam falsamente por um homicídio.\n• A Missão: Para salvar sua família, restaurar a antiga glória de sua gangue (a Grove Street Families) e descobrir a verdade sobre a morte da mãe, CJ é forçado a viajar por todo o estado de San Andreas — passando por cidades como Los Santos, San Fierro e Las Venturas —, enfrentando gangues rivais, traições e o tráfico de drogas.",
+      "imagens": [
+        "imagens/grand-theft-auto-san-andreas-mw1cj57no0b2.jpg"
+      ],
+      "minis": [
+        "imagens/mini/grand-theft-auto-san-andreas-mw1cj57no0b2.webp"
+      ],
+      "disponivel": true,
+      "etiquetas": [],
+      "extras": [],
+      "tipos": [
+        "Ação"
+      ],
+      "tipo": "Ação",
+      "servicos": [],
+      "servicosRotulo": "",
+      "armazenamentos": [],
+      "outras": [],
+      "formato": "auto",
+      "ajuste": "contain",
+      "proporcao": "742/942"
+    },
+    {
       "id": "mvvc6clwa7xq",
       "nome": "Call of Duty 3",
       "descricao": "O Call of Duty 3 (lançado em 2006 para o Xbox 360) é um jogo de tiro em primeira pessoa ambientado na Segunda Guerra Mundial, focado nos eventos de 1944 durante a histórica Rompimento da Normandia e o Bolso de Falaise (Normandy Breakout), que abriram caminho para a libertação de Paris.\n\nSinopse e Enredo\n\nDiferente de muitos jogos do gênero onde você controla um único herói americano, a campanha de 14 missões coloca o jogador na pele de quatro nacionalidades aliadas diferentes, alternando entre as perspectivas de:\n• Exército dos Estados Unidos: Foca em combates intensos na floresta e campos normandos para assegurar posições estratégicas e avançar contra as linhas alemãs.\n• Exército Britânico e Resistência Francesa: Envolve missões de sabotagem, apoio tático e combate em áreas urbanas e rurais para enfraquecer o controle nazista na França.\n• Exército Canadense: Participa de cercos pesados e batalhas de resistência para fechar o cerco às tropas alemãs em retirada.\n• Exército Polonês (1ª Divisão Blindada): Desempenha um papel crucial e heroico na contenção e destruição de forças inimigas encurraladas na Batalha de Falaise.\nO enredo destaca o trabalho em equipe e a forte relação de camaradagem entre os soldados e seus superiores, mostrando o esforço coletivo de várias frentes para empurrar as forças do Eixo em direção a Berlim.",
