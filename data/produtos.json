@@ -1010,12 +1010,11 @@
   "produtos": [
     {
       "id": "mw1cj8mvl9gv",
-      "cod": "b5",
       "nome": "Grand Theft Auto San Andreas",
+      "descricao": "A sinopse de Grand Theft Auto: San Andreas gira em torno de Carl \"CJ\" Johnson:\n• O Retorno: No início dos anos 1990, CJ volta para sua cidade natal, Los Santos (no estado de San Andreas), após passar cinco anos em Liberty City. Ele retorna porque sua mãe foi assassinada em um ataque a tiros contra a casa da família.\n• A Armação: Logo após chegar, CJ é interceptado por policiais corruptos do CRASH (Frank Tenpenny e Eddie Pulaski), que o chantageiam e o incriminam falsamente por um homicídio.\n• A Missão: Para salvar sua família, restaurar a antiga glória de sua gangue (a Grove Street Families) e descobrir a verdade sobre a morte da mãe, CJ é forçado a viajar por todo o estado de San Andreas — passando por cidades como Los Santos, San Fierro e Las Venturas —, enfrentando gangues rivais, traições e o tráfico de drogas.",
       "categoria": "mvpxdvp0ubk4",
       "unidade": "GB",
       "valor": 25,
-      "descricao": "A sinopse de Grand Theft Auto: San Andreas gira em torno de Carl \"CJ\" Johnson:\n• O Retorno: No início dos anos 1990, CJ volta para sua cidade natal, Los Santos (no estado de San Andreas), após passar cinco anos em Liberty City. Ele retorna porque sua mãe foi assassinada em um ataque a tiros contra a casa da família.\n• A Armação: Logo após chegar, CJ é interceptado por policiais corruptos do CRASH (Frank Tenpenny e Eddie Pulaski), que o chantageiam e o incriminam falsamente por um homicídio.\n• A Missão: Para salvar sua família, restaurar a antiga glória de sua gangue (a Grove Street Families) e descobrir a verdade sobre a morte da mãe, CJ é forçado a viajar por todo o estado de San Andreas — passando por cidades como Los Santos, San Fierro e Las Venturas —, enfrentando gangues rivais, traições e o tráfico de drogas.",
       "imagens": [
         "imagens/grand-theft-auto-san-andreas-mw1cj57no0b2.jpg"
       ],
@@ -1028,14 +1027,15 @@
       "tipos": [
         "Ação"
       ],
-      "tipo": "Ação",
       "servicos": [],
       "servicosRotulo": "",
-      "armazenamentos": [],
+      "cod": "b5",
       "outras": [],
       "formato": "auto",
+      "proporcao": "742/942",
       "ajuste": "contain",
-      "proporcao": "742/942"
+      "armazenamentos": [],
+      "tipo": "Ação"
     },
     {
       "id": "mvvc6clwa7xq",
@@ -6781,7 +6781,7 @@
       "servicos": [],
       "servicosRotulo": "",
       "cod": "12",
-      "vendidos": 1,
+      "vendidos": 2,
       "outras": [],
       "formato": "4/5",
       "proporcao": "",
@@ -11441,6 +11441,7 @@
       "servicos": [],
       "servicosRotulo": "",
       "cod": "5f",
+      "vendidos": 2,
       "outras": [],
       "formato": "auto",
       "proporcao": "963/1200",
@@ -11648,7 +11649,7 @@
       "servicos": [],
       "servicosRotulo": "",
       "cod": "5m",
-      "vendidos": 1,
+      "vendidos": 2,
       "outras": [],
       "formato": "auto",
       "proporcao": "955/1200",
@@ -11678,7 +11679,7 @@
       "servicos": [],
       "servicosRotulo": "",
       "cod": "5n",
-      "vendidos": 1,
+      "vendidos": 2,
       "outras": [],
       "formato": "auto",
       "proporcao": "645/800",
@@ -11854,6 +11855,7 @@
       "servicos": [],
       "servicosRotulo": "",
       "cod": "5t",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
       "proporcao": "580/739",
@@ -11970,6 +11972,7 @@
       "servicos": [],
       "servicosRotulo": "",
       "cod": "5x",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
       "proporcao": "646/800",
@@ -11999,6 +12002,7 @@
       "servicos": [],
       "servicosRotulo": "",
       "cod": "5y",
+      "vendidos": 1,
       "outras": [],
       "formato": "auto",
       "proporcao": "963/1200",
@@ -12008,11 +12012,13 @@
     },
     {
       "id": "ps4slim",
+      "cod": "5z",
+      "vendidos": 1,
       "nome": "PS4 Slim DESBLOQUEADO",
-      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "categoria": "mvpp04ewy3z3",
       "unidade": "R$",
       "valor": 1700,
+      "descricao": "Console revisado. Com os melhores jogos já instalados — você escolhe quais. Acompanha todos os cabos e controle.",
       "imagens": [
         "imagens/ps4-slim-desbloqueado-mvrgps4dj6ge.jpg",
         "imagens/ps4-slim-desbloqueado-mvrgptix9eva.jpg",
@@ -12036,22 +12042,27 @@
       "tipos": [
         "Console"
       ],
+      "tipo": "Console",
       "servicos": [],
       "servicosRotulo": "",
-      "cod": "5z",
-      "outras": [],
-      "formato": "4/5",
-      "proporcao": "",
-      "ajuste": "contain",
       "armazenamentos": [
         {
           "id": "mvpywib957z6",
           "nome": "500gb",
           "gb": 365,
-          "valor": null
+          "valor": 1700
+        },
+        {
+          "id": "mwdqzavzoedh",
+          "nome": "1tb",
+          "gb": 862,
+          "valor": 2000
         }
       ],
-      "tipo": "Console"
+      "outras": [],
+      "formato": "4/5",
+      "ajuste": "contain",
+      "proporcao": ""
     }
   ]
 }
